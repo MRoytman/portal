@@ -1,0 +1,10 @@
+sex	Sex	en
+sex	Sexe	fr
+age	Age, if date of birth unknown (in years)	en
+age	Age, si date de naissance inconnue (en années)	fr
+pregnancy	Pregnancy	en
+pregnancy	Grossesse	fr
+village_origin[codedList]	Address (village or area)	en
+village_origin[codedList]	Adresse (village ou quartier)	fr
+comments	Comments	en
+comments	Commentaires	fr

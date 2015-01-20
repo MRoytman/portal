@@ -1,0 +1,4 @@
+1	à terme	en
+2	prématuré	en
+1	à terme	fr
+2	prématuré	fr

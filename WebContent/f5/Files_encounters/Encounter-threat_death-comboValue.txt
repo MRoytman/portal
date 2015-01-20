@@ -1,0 +1,9 @@
+1	Direct	en
+2	Indirect	en
+3	No	en
+1	Directe	fr
+2	Indirecte	fr
+3	Aucune	fr
+1	Directa	es
+2	Indirecta	es
+3	Ninguna	es

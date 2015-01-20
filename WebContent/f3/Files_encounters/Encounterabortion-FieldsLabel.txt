@@ -1,0 +1,110 @@
+_title_ab_01	ANTECEDENTS	en
+_title_ab_01	ANTECEDENTS	fr
+_title_ab_02	Medical antecedents	en
+_title_ab_02	Antédécents médicaux	fr
+antecedents_htn	           HTN	en
+antecedents_htn	           HTA	fr
+antecedents_diabetes	           diabetes	en
+antecedents_diabetes	           diabète	fr
+antecedents_medical_other	           other medical antecedents	en
+antecedents_medical_other	           autres antécédents médicaux	fr
+_title_ab_03	Surgical antecedents	en
+_title_ab_03	Antédécents chirurgicaux	fr
+antecedents_csection	           C-section	en
+antecedents_csection	           césarienne	fr
+antecedents_surgical_other	           other surgical antecedents	en
+antecedents_surgical_other	           autres antécédents chirurgicaux	fr
+_title_ab_04	Obstetrical antecedents	en
+_title_ab_04	Antécédents obstétricaux	fr
+antecedents_gestity	Gestity	en
+antecedents_gestity	Gestité	fr
+antecedents_parity	Parity	en
+antecedents_parity	Parité	fr
+antecedents_children_born_living_nb	Nb of children born alive	en
+antecedents_children_born_living_nb	Nb enfants nés vivants	fr
+antecedents_stillbirth_nb	Nb of stillbirths	en
+antecedents_stillbirth_nb	Nb enfants morts-nés	fr
+antecedents_misscarriage_nb	Nb of misscarriages	en
+antecedents_misscarriage_nb	Nb de fausses couches	fr
+antecedents_abortion_nb	Nb of abortions	en
+antecedents_abortion_nb	Nb d'avortements	fr
+antecedents_children_living_nb	Nb of living children	en
+antecedents_children_living_nb	Nb d'enfants vivants	fr
+_title_ab_05	 	en
+_title_ab_05	 	fr
+_title_ab_06	ADMISSION / ENTRY EXAM	en
+_title_ab_06	EXAMEN D'ENTREE / D'ADMISSION	fr
+estimated_as	Estimated age of the pregnancy at admission (in AW)	en
+estimated_as	Estimation de l'âge de la grossesse à l'admission (en SA)	fr
+_title_ab_07	Cause of admission	en
+_title_ab_07	Motif d'admission	fr
+admission_cause_spontaneous_labour	           spontaneous labour	en
+admission_cause_spontaneous_labour	           travail spontané	fr
+admission_cause_rom	           ROM	en
+admission_cause_rom	           RPM	fr
+admission_cause_bleeding	           bleeding	en
+admission_cause_bleeding	           saignements	fr
+admission_cause_top_demand	           TOP demande	en
+admission_cause_top_demand	           demande d'IVG	fr
+_title_ab_08	General condition	en
+_title_ab_08	Etat général	fr
+admission_exam_htn	           HTN	en
+admission_exam_htn	           HTA	fr
+admission_exam_hypotension	           hypotension	en
+admission_exam_hypotension	           hypotension	fr
+admission_exam_fever	           fever	en
+admission_exam_fever	           fièvre	fr
+admission_exam_anemia	           anemia	en
+admission_exam_anemia	           anémie	fr
+_title_ab_09	 	en
+_title_ab_09	 	fr
+top_treatment_before_admission_details	Treatment received before admission: specify	en
+top_treatment_before_admission_details	Traitement reçu avant l'admmission: préciser	fr
+_title_ab_10	 	en
+_title_ab_10	 	fr
+_title_ab_11	Treatment received at admission	en
+_title_ab_11	Traitement reçu à l'admission	fr
+admission_treatment_misoprostol	Misoprostol	en
+admission_treatment_misoprostol	Misoprostol	fr
+admission_treatment_mifepristone	Mifepristone	en
+admission_treatment_mifepristone	Mifepristone	fr
+treatment_mva	MVA	en
+treatment_mva	MVA	fr
+treatment_mva_by	           done by:	en
+treatment_mva_by	           pratiqué par:	fr
+treatment_mva_place	           place:	en
+treatment_mva_place	           lieu:	fr
+treatment_curetage	Curetage	en
+treatment_curetage	Curetage	fr
+treatment_curetage_by	           done by:	en
+treatment_curetage_by	           pratiqué par:	fr
+treatment_curetage_place	           place:	en
+treatment_curetage_place	           lieu:	fr
+admission_treatment_anti_htn	Anti HTN	en
+admission_treatment_anti_htn	Anti-HTA	fr
+admission_treatment_antibiotics	Antibiotics	en
+admission_treatment_antibiotics	Antibiotiques	fr
+admission_treatment_other	Other treatment received at admission	en
+admission_treatment_other	Autre traitement reçu à l'admission	fr
+_title_ab_12	 	en
+_title_ab_12	 	fr
+treatment_para_cervical_block	Paracervical block	en
+treatment_para_cervical_block	Bloc paracervical	fr
+treatment_blood_transfusion	Blood transfusion	en
+treatment_blood_transfusion	Transfusion	fr
+treatment_blood_transfusion_units	           number of bags	en
+treatment_blood_transfusion_units	           nombre de pochettes	fr
+top_complication	Complications	en
+top_complication	Complications	fr
+top_complication_details	           specify:	en
+top_complication_details	           précisier:	fr
+_title_ab_13	 	en
+_title_ab_13	 	fr
+contraception_proposed	Contraception proposed	en
+contraception_proposed	Contraception proposée	fr
+contraception_accepted	Contraception accepted	en
+contraception_accepted	Contraception acceptée	fr
+contraception_method	Contraception method	en
+contraception_method	Méthode de contraception	fr
+comments	Comments	en
+comments	Commentaires	fr

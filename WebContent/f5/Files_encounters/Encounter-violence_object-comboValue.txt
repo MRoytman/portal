@@ -1,0 +1,21 @@
+1	Knives	en
+2	Guns	en
+3	Other	en
+4	No	en
+5	Sticks	en
+6	Body	en
+7	Unknown	en
+1	Arme blanche	fr
+2	Arme à feu	fr
+3	Autre	fr
+4	Aucun	fr
+5	Bâton	fr
+6	Corps	fr
+7	Inconnu	fr
+1	Arma blanca	es
+2	Arma de fuego	es
+3	Otro	es
+4	Ningun	es
+5	Baston	es
+6	Cuerpo	es
+7	No sabe	es

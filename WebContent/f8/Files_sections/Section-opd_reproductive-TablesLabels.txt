@@ -1,0 +1,92 @@
+opdrepro:title22|Label	Antenatal Care	en
+opdrepro:anc|1|Label	First ANC consultations	en
+opdrepro:anc|other|Label	Follow up ANC consultations	en
+opdrepro:anc|Tot|Label	Total	en
+opdrepro:title26|Label	 	en
+opdrepro:voucher|Label	Voucher given	en
+opdrepro:plan_delivery|Label	Plan for delivery	en
+opdrepro:title37|Label	Women who received…	en
+opdrepro:sp2|Label	SP2	en
+opdrepro:bednets|Label	Bed nets	en
+opdrepro:safe_delivery_kit|Label	Safe Delivery Kits	en
+opdrepro:title49|Label	Postnatal consultations	en
+opdrepro:pnc|1|Label	First PNC consultations	en
+opdrepro:pnc|other|Label	Second PNC consultations	en
+opdrepro:pnc|Tot|Label	Total	en
+opdrepro:title53|Label	 	en
+opdrepro:nvd|Label	NVD	en
+opdrepro:cs|Label	CS	en
+opdrepro:neonatal_death|Label	Neonatal death	en
+opdrepro:complication|Label	Complication	en
+opdrepro:title66|Label	Type of method	en
+opdrepro:fp_injection|Label	Injections	en
+opdrepro:fp_oral|Label	Oral contraceptives	en
+opdrepro:fp_iud|Label	IUD	en
+opdrepro:fp_condom|Label	Condoms	en
+opdrepro:fp_implant|Label	Implants	en
+opdrepro:fp_surgery|Label	Surgery	en
+opdrepro:fp_other|Label	Others	en
+opdrepro:fp_all|Label	TOTAL	en
+opdrepro:title66|NC	New	en
+opdrepro:title66|FUP	Follow-up	en
+opdrepro:title66|stop	Stopped	en
+opdrepro:title66|Tot	TOTAL	en
+opdrepro:title83|Label	Cause  of consultation	en
+opdrepro:post_abortion_infection|Label	Post abortion infections	en
+opdrepro:uti|Label	UTI	en
+opdrepro:menstrual_disorder|Label	Menstrual disorders	en
+opdrepro:abortion|Label	Abortion (complete or not)	en
+opdrepro:genital_infection|Label	Genital infection	en
+opdrepro:fistula|Label	Vesico-vaginal fistulas	en
+opdrepro:other|Label	Other	en
+opdrepro:consult_not_pregnant_all|Label	TOTAL	en
+opdrepro:title83|NC	New case	en
+opdrepro:title83|FUP	Follow-up	en
+opdrepro:title83|Tot	TOTAL	en
+_title_blank	 	en
+opdrepro:title22|Label	Soins prénataux	fr
+opdrepro:anc|1|Label	Premières CPN	fr
+opdrepro:anc|other|Label	CPN de suivi	fr
+opdrepro:anc|Tot|Label	Total	fr
+opdrepro:title26|Label	 	fr
+opdrepro:voucher|Label	Attestation données	fr
+opdrepro:plan_delivery|Label	Plan d'accouchement	fr
+opdrepro:title37|Label	Femmes ayant reçu…	fr
+opdrepro:sp2|Label	SP2	fr
+opdrepro:bednets|Label	Moustiquaire	fr
+opdrepro:safe_delivery_kit|Label	Safe Delivery Kits	fr
+opdrepro:title49|Label	Consultations postnatales	fr
+opdrepro:pnc|1|Label	Premières CPON	fr
+opdrepro:pnc|other|Label	CPON de suivi	fr
+opdrepro:pnc|Tot|Label	Total	fr
+opdrepro:title53|Label	 	fr
+opdrepro:nvd|Label	NVD	fr
+opdrepro:cs|Label	CS	fr
+opdrepro:neonatal_death|Label	Décès néonataux	fr
+opdrepro:complication|Label	Complication	fr
+opdrepro:title66|Label	Type de méthode	fr
+opdrepro:fp_injection|Label	Injections	fr
+opdrepro:fp_oral|Label	Contraceptifs oraux	fr
+opdrepro:fp_iud|Label	DIU	fr
+opdrepro:fp_condom|Label	Préservatifs	fr
+opdrepro:fp_implant|Label	Implants	fr
+opdrepro:fp_surgery|Label	Chirurgie	fr
+opdrepro:fp_other|Label	Autres	fr
+opdrepro:fp_all|Label	TOTAL	fr
+opdrepro:title66|NC	Nouveau	fr
+opdrepro:title66|FUP	Suivi	fr
+opdrepro:title66|stop	Arrêté	fr
+opdrepro:title66|Tot	TOTAL	fr
+opdrepro:title83|Label	Cause de consultation	fr
+opdrepro:post_abortion_infection|Label	Infection après avortement	fr
+opdrepro:uti|Label	IU	fr
+opdrepro:menstrual_disorder|Label	Troubles menstruels	fr
+opdrepro:abortion|Label	Avortement (complet ou non)	fr
+opdrepro:genital_infection|Label	Infection génitale	fr
+opdrepro:fistula|Label	Fistule vésico-vaginale	fr
+opdrepro:other|Label	Autre	fr
+opdrepro:consult_not_pregnant_all|Label	TOTAL	fr
+opdrepro:title83|NC	Nouveau cas	fr
+opdrepro:title83|FUP	Suivi	fr
+opdrepro:title83|Tot	TOTAL	fr
+_title_blank	 	fr

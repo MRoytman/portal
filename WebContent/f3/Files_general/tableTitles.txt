@@ -1,0 +1,6 @@
+patientList	en	index	Id	Surname	Name	Sex	Birth Date
+patientList	fr	index	Id	Nom de famille	Prénom	Sexe	Date de naissance
+encounterList	en	Type	Date of admission
+encounterList	fr	Type	Date d'admission
+villageAreaList	en	List of villages
+villageAreaList	fr	Liste des villages

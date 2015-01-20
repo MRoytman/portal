@@ -1,0 +1,93 @@
+html {
+	margin: 0em;
+	padding: 0em; //
+	border-style: none; //
+	border-color: blue; //
+	border-width: 1px;
+}
+
+body {
+	margin: 0em;
+	padding: 0em;
+
+}
+
+#contents {
+	margin: 5px;
+	padding: 5px;
+	height: 500px;
+	border-style: none; //
+	border-color: red; //
+	border-width: 0px;
+}
+
+a:link {color:#45363E;text-decoration:none;}    /* unvisited link */
+a:visited {color:#45363E;text-decoration:none;} /* visited link */
+a:hover {color:blue;text-decoration:none;}   /* mouse over link */
+a:active {color:#45363E;text-decoration:none;}  /* selected link */
+
+#header { //
+	margin: 1em 1em 4em 1em;
+	text-align: center; //
+	display: block;
+	background-color: #E5E5E5;
+	height: 120px;
+}
+
+header ol {
+	position: relative; //
+	margin: 0 10%;
+	list-style: none;
+}
+
+#headerLeft {
+	position: absolute;
+	left: 0%; //
+	width: 25%;
+	height: 100%;
+}
+
+#headerCenter {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	left: 30%;
+}
+
+#headerRight {
+	position: absolute;
+	width: 25%;
+	height: 100%;
+	right: 0%;
+	padding: 1em;
+}
+
+#title { //
+	margin: 4em 0em 0em 0em;
+}
+
+#logozone {
+	margin: 0em;
+	padding: 1em;
+}
+
+#msfLogo { // //
+	position: relative; // //
+	right: 1em; //
+	float: right; //
+	clear: both;
+	position: absolute;
+	left: 0px;
+	border-style: none;
+	border-color: red;
+	border-width: 2px;
+}
+
+#links {
+	padding: 0em;
+	margin: 1em auto 1em auto;
+}
+
+#links ul li {
+	margin: 1em auto 1em auto;
+}

@@ -1,0 +1,12 @@
+1	Psychologist MoH	en
+2	Psychologist MSF	en
+3	Psychiatrist MoH	en
+4	Co-consultation	en
+1	Psychologue MdS	fr
+2	Psychologue MSF	fr
+3	Psychiatre MoH	fr
+4	Co-consultation	fr
+1	Psycólogo MdS	es
+2	Psycólogo MSF	es
+3	Psiquiatra MdS	es
+4	Co-consulta	es

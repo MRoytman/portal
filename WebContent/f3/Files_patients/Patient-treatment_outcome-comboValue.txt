@@ -1,0 +1,10 @@
+1	Cured	en
+2	Not cured but released	en
+3	Left without permission	en
+4	Referred	en
+5	Dead	en
+1	Guéri	fr
+2	Non guéri mais libéré	fr
+3	Sortie sans permission	fr
+4	Référé	fr
+5	Décédé	fr

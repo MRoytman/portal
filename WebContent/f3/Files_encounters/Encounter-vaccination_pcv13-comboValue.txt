@@ -1,0 +1,6 @@
+1	fully vaccinated	en
+2	partly vaccinated	en
+3	not vaccinated	en
+1	complètement vacciné	fr
+2	partiellement vacciné	fr
+3	non vacciné	fr

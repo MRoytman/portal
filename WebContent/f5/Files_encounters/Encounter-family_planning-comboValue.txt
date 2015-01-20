@@ -1,0 +1,21 @@
+1	Condoms	en
+2	IUD	en
+3	Oral contraceptives	en
+4	Depoprovera	en
+5	Implant	en
+6	Refused	en
+7	Not offered	en
+1	Préservatifs	fr
+2	DIU	fr
+3	Contraceptif oral	fr
+4	Depoprovera	fr
+5	Implant	fr
+6	Refusé	fr
+7	Pas proposé	fr
+1	Condones	es
+2	DIU	es
+3	Anticonceptivo oral	es
+4	Depoprovera	es
+5	Implante	es
+6	Rechazado	es
+7	No propuesto	es

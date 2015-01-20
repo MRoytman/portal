@@ -1,0 +1,4 @@
+patientList	en	index	Patient ID	Surname	Name	Sex	Birth Date
+patientList	fr	index	N° patient	Nom de famille	Prénom	Sexe	Date de naissance
+encounterList	en	Type	Date
+encounterList	fr	Type	Date

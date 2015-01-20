@@ -1,0 +1,6 @@
+6	Spontaneous admission	en
+7	Patient referred	en
+unknown	Unknown	en
+6	Admission spontanée	fr
+7	Patient réféfé	fr
+unknown	Inconnu	fr

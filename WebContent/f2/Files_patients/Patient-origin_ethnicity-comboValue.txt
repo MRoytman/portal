@@ -1,0 +1,10 @@
+1	Arabic	en
+2	Azadi	en
+3	Kurdish	en
+other	Other	en
+unknown	Unknown	en
+1	Arabe	fr
+2	Azadi	fr
+3	Kurde	fr
+other	Autre	fr
+unknown	Inconnu	fr

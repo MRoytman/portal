@@ -1,0 +1,6 @@
+1	MSF	en
+2	other	en
+3	unknown	en
+1	MSF	fr
+2	autre	fr
+3	inconnu	fr

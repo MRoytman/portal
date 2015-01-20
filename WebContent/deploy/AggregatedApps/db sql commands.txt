@@ -1,0 +1,96 @@
+
+SELECT distinct agg.*   FROM AGGREGATIONCONTEXT aggCon
+inner join AGGREGATION agg on aggCon.AGC_AGGREG = agg.AGR_ID 
+inner join SELECTCOUNTRIES sc ON aggCon.AGC_SELCTY = sc.SELCTY_ID 
+inner join PROJECT prj on aggCon.AGC_SELPRJ  = prj.PRJ_ID
+inner join CARECENTER cc on aggCon.AGC_SELCCAR = cc.CCAR_ID
+where  cc.CCAR_NAME like '%Amchoca%'
+;
+
+
+
+-- RENAME SECTION ID (REMOVE QQ)
+
+
+SELECT SECT_ID , SECT_THEME_ID 
+ FROM SECTION 
+where SECT_THEME_ID like '%QQ'
+;
+
+update section set sect_theme_id = 'dressing_injections'
+where section.sect_id in
+(
+SELECT SECT_ID  
+ FROM SECTION 
+where SECT_THEME_ID like '%QQ'
+)
+-------------------------
+
+delete from CONCEPTIDVALUE  
+where CONCEPTIDVALUE.CIV_ID in
+(
+select con.CIV_ID from CONCEPTIDVALUE  con
+inner join SECTION sec  on con.CIV_SECTION  = sec.SECT_ID 
+where sec.SECT_THEME_ID ='dressing_injections'
+and con.CIV_CONCEPT_ID like '%|Tot'
+)
+ ;
+------------- section concept + section id + aggreg id
+SELECT count(*) FROM AGGREGATION 
+;
+SELECT count(*) FROM AGGREGATIONCONTEXT 
+;
+SELECT agr.AGR_ID , agr.AGR_THEME_ID, agr.AGR_STARTDATE , sec.SEC_THEME_ID , con.civ_CONCEPT_ID , con.civ_CONCEPT_VAL 
+FROM CONCEPTIDVALUE con
+inner join SECTION sec  on con.CIV_SECTION  = sec.SEC_ID 
+inner join AGGREGATION agr on sec.SEC_AGGREG   = agr.AGR_ID;
+where sec.SEC_THEME_ID ='dressing_injections'
+
+
+--------------- all concepts from a section
+
+SELECT * FROM CONCEPTIDVALUE con
+inner join SECTION sec  on con.CIV_SECTION  = sec.SECT_ID 
+where sec.SECT_THEME_ID ='dressing_injections'
+ ;
+ 
+-------------------------------------- patient, country, project, carecenter 
+
+select DISTINCT pat.PAT_ID, sc.SELCTY_CODE , prj.PRJ_CODE,  prj.PRJ_NAME ,  cc.CCAR_CODE, cc.CCAR_NAME     
+from PATIENTCONTEXT patCon
+inner join PATIENT pat ON patCon.PAC_PATIENT = pat.PAT_ID  
+inner join SELECTCOUNTRIES sc ON patCon.PAC_SELCTY = sc.SELCTY_ID 
+inner join PROJECT prj on patCon.PAC_SELPRJ  = prj.PRJ_ID
+inner join CARECENTER cc on patCon.PAC_SELCCAR = cc.CCAR_ID
+where 
+sc.SELCTY_RETIRED = false and
+prj.PRJ_RETIRED  = false and
+cc.CCAR_RETIRED  = false
+;
+
+
+------------------------- UPDATE PROJECTS
+update PROJECT prj  set prj.PRJ_RETIRED  = false
+where prj.PRJ_ID  in 
+(
+select DISTINCT  prj.PRJ_ID     from PATIENTCONTEXT patCon
+inner join SELECTCOUNTRIES sc ON patCon.PAC_SELCTY = sc.SELCTY_ID 
+inner join PROJECT prj on patCon.PAC_SELPRJ  = prj.PRJ_ID
+inner join CARECENTER cc on patCon.PAC_SELCCAR = cc.CCAR_ID
+where
+ sc.SELCTY_RETIRED = true and sc.SELCTY_CODE = 'HN'
+)
+ ;
+
+------------------------- UPDATE SELECTCOUNTRIES 
+
+update SELECTCOUNTRIES sc  set sc.SELCTY_RETIRED = false
+where sc.SELCTY_ID   in 
+(
+select DISTINCT   sc.SELCTY_ID   from PATIENTCONTEXT patCon
+inner join SELECTCOUNTRIES sc ON patCon.PAC_SELCTY = sc.SELCTY_ID 
+where
+ sc.SELCTY_RETIRED = true and sc.SELCTY_CODE = 'HN'
+)
+
+----------------------////////////////////////////  END RETIRED ITEMS

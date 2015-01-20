@@ -1,0 +1,34 @@
+1	HIE from severe fetal ashphxia	en
+2	Apnea of prematurity	en
+3	Infant respiratory distress syndrome (RDS)	en
+4	Respiratory distress with hypoxia due to meconium aspiration	en
+5	Respiratory distress with hypoxia due to other cause	en
+6	Hypvolemic shock	en
+7	Septic shock	en
+8	Hemorrhagic shock	en
+9	Intractable seizures	en
+10	Intoxication (Poisoning)	en
+11	Acidosis	en
+12	Neonatal severe malaria	en
+13	Neonatal tetanus	en
+14	Kernicterus	en
+15	Congenital malformation	en
+16	Unidentified syndrome	en
+17	other	en
+1	EHI suite à une souffrance foetale sevère	fr
+2	Bradycardies / apnées suite à prématurité	fr
+3	Détresse respiratoire avec hypoxie - insuffisance de surfactant suite à prématurité	fr
+4	Détresse respiratoire avec hypoxie - inhalation méconiale	fr
+5	Détresse respiratoire avec hypoxie - autre origine	fr
+6	Etat de choc hypovolémique	fr
+7	Etat de choc septique	fr
+8	Etat de choc hémorrhagique	fr
+9	Etat convulsif non contrôlé	fr
+10	Intoxication	fr
+11	Acidocétose	fr
+12	Paludisme congénital sevère	fr
+13	Tétanos congénital	fr
+14	Kernicterus	fr
+15	Malformation congénitale	fr
+16	Syndrome non identifié	fr
+17	autre	fr

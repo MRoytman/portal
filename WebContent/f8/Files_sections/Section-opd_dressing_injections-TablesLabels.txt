@@ -1,0 +1,44 @@
+opddressing:title01|Label	Cause of dressing	en
+_title_blank	 	en
+opddressing:wounds|Label	Wounds	en
+opddressing:burns|Label	Burns	en
+opddressing:abcess|Label	Abscesses	en
+opddressing:sutures|Label	Sutures	en
+opddressing:bullets|Label	Bullets	en
+opddressing:other|Label	Others	en
+opddressing:all|Label	Total	en
+opddressing:title01|NC|<5y	New cases	en
+opddressing:title01|NC|Tot	 	en
+opddressing:title01|FUP|<5y	Follow-up	en
+opddressing:title01|FUP|Tot	 	en
+opddressing:title01|Tot	TOTAL	en
+opddressing:title02|NC|<5y	< 5 years	en
+opddressing:title02|NC|>=5y	>= 5 years	en
+opddressing:title02|NC|Tot	Total	en
+opddressing:title02|FUP|<5y	< 5 years	en
+opddressing:title02|FUP|>=5y	>= 5 years	en
+opddressing:title02|FUP|Tot	Total	en
+opddressing:title02|Tot	 	en
+opd:injections|Label	Injections (all)	en
+opddressing:title01|Label	Cause de pansement	fr
+_title_blank	 	fr
+opddressing:wounds|Label	Blessure	fr
+opddressing:burns|Label	Brûlure	fr
+opddressing:abcess|Label	Abcès	fr
+opddressing:sutures|Label	Sutures	fr
+opddressing:bullets|Label	Balle	fr
+opddressing:other|Label	Autre	fr
+opddressing:all|Label	Total	fr
+opddressing:title01|NC|<5y	Nouveau cas	fr
+opddressing:title01|NC|Tot	 	fr
+opddressing:title01|FUP|<5y	Suivi	fr
+opddressing:title01|FUP|Tot	 	fr
+opddressing:title01|Tot	TOTAL	fr
+opddressing:title02|NC|<5y	< 5 ans	fr
+opddressing:title02|NC|>=5y	>= 5 ans	fr
+opddressing:title02|NC|Tot	Total	fr
+opddressing:title02|FUP|<5y	< 5 ans	fr
+opddressing:title02|FUP|>=5y	>= 5 ans	fr
+opddressing:title02|FUP|Tot	Total	fr
+opddressing:title02|Tot	 	fr
+opd:injections|Label	Injections (toutes)	fr

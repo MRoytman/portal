@@ -1,0 +1,92 @@
+_title_PED002	ADMISSION	en
+_title_PED002	ADMISSION	fr
+admission_time	Time of admission (HH:MM)	en
+admission_time	Heure d'admission (HH:MM)	fr
+hospitalization_cause_details	Reason for seeking cares / transfer	en
+hospitalization_cause_details	Motif de recours aux soins / transfert	fr
+_title_PED005	 	en
+_title_PED005	 	fr
+_title_PED006	WEIGHT	en
+_title_PED006	POIDS	fr
+admission_weight	Weight at admission (in Kg)	en
+admission_weight	Poids à l'admission (en Kg)	fr
+discharge_weight	Weight at discharge (in Kg)	en
+discharge_weight	Poids à la sortie (en Kg)	fr
+_title_PED009	DIAGNOSIS	en
+_title_PED009	DIAGNOSTIC	fr
+diagnosis_final_main	Final main diagnosis	en
+diagnosis_final_main	Diagnostic final principal	fr
+diagnosis_final_main_other	          if 'other', specify:	en
+diagnosis_final_main_other	          si 'autre', préciser:	fr
+diagnosis_final_secondary_1	Final secondary diagnosis 1	en
+diagnosis_final_secondary_1	Diagnostic final secondaire 1	fr
+diagnosis_final_secondary_1_other_details	          if 'other', specify:	en
+diagnosis_final_secondary_1_other_details	          si 'autre', préciser:	fr
+diagnosis_final_secondary_2	Final secondary diagnosis 2	en
+diagnosis_final_secondary_2	Diagnostic final secondaire 2	fr
+diagnosis_final_secondary_2_other_details	          if 'other', specify:	en
+diagnosis_final_secondary_2_other_details	          si 'autre', préciser:	fr
+diagnosis_final_secondary_3	Final secondary diagnosis 3	en
+diagnosis_final_secondary_3	Diagnostic final secondaire 3	fr
+diagnosis_final_secondary_3_other_details	          if 'other', specify:	en
+diagnosis_final_secondary_3_other_details	          si 'autre', préciser:	fr
+_title_PED018	 	en
+_title_PED018	 	fr
+_title_PED019	OUTCOME / DISCHARGE	en
+_title_PED019	RESULTAT / SORTIE	fr
+treatment_outcome	Hospitalisation outcome	en
+treatment_outcome	Résultat de l'hospitalisation	fr
+referral_external_place_1	     If referred, to where:	en
+referral_external_place_1	     Si référé, vers où:	fr
+referral_external_cause_details	               Cause of referral	en
+referral_external_cause_details	               Motif de référence	fr
+death_time	     If death, time of death (hh:mm)	en
+death_time	     Si décès, heure du de décès (hh:mm)	fr
+death_cause	               Death cause	en
+death_cause	               Cause de décès	fr
+death_cause_other_details	                    if 'other', specify:	en
+death_cause_other_details	                    si 'autre', préciser:	fr
+treatment_outcome_released_not_cured_details	     If released not cured, motive:	en
+treatment_outcome_released_not_cured_details	     Si libéré non guéri, motif:	fr
+_title_PED027	 	en
+_title_PED027	 	fr
+_title_PED028	TREATMENT DATA	en
+_title_PED028	DONNEES DE TRAITEMENT	fr
+treatment_intensive_case_stay	Stay in intensive care	en
+treatment_intensive_case_stay	Passage aux soins intensifs	fr
+treatment_oxygen_therapy_yesno	Oxygen therapy	en
+treatment_oxygen_therapy_yesno	Oxygénothérapie	fr
+treatment_oxygen_therapy_hours	        duration in hours	en
+treatment_oxygen_therapy_hours	        durée en heures	fr
+treatment_antibiotherapy_yesno	Antibiotherapy	en
+treatment_antibiotherapy_yesno	Antibiothérapie	fr
+treatment_antibiotherapy_days	        duration in days	en
+treatment_antibiotherapy_days	        durée en jours	fr
+treatment_antimalaria_yesno	Antimalaria treatment	en
+treatment_antimalaria_yesno	Traitement paludisme	fr
+treatment_antimalaria_type	        type	en
+treatment_antimalaria_type	        type	fr
+treatment_blood_transfusion_yesno	Blood transfusion	en
+treatment_blood_transfusion_yesno	Transfusion sanguine	fr
+test_hemoglobin	        Hb (g/dL) 	en
+test_hemoglobin	        Hb (g/dL) 	fr
+treatment_blood_transfusion_nb	        nb of transfusions	en
+treatment_blood_transfusion_nb	        nb de transfusions	fr
+_title_PED039	 	en
+_title_PED039	 	fr
+_title_PED040	TESTS	en
+_title_PED040	TESTS	fr
+hiv_test_yesno	HIV test	en
+hiv_test_yesno	Test VIH	fr
+hiv_test_result	        result	en
+hiv_test_result	        résultat	fr
+tb_test_yesno	TB screening	en
+tb_test_yesno	Dépistage TB	fr
+tb_test_result	        result	en
+tb_test_result	        résultat	fr
+_title_PED045	 	en
+_title_PED045	 	fr
+comments	Comments	en
+comments	Commentaires	fr
+_title_PED047	 	en
+_title_PED047	 	fr

@@ -1,0 +1,14 @@
+1	emergency room	en
+2	internal medicine	en
+3	maternity	en
+4	paediatrics	en
+5	OT	en
+6	recovery room	en
+7	other	en
+1	salle d'urgence	fr
+2	médecine interne	fr
+3	maternité	fr
+4	pédiatrie	fr
+5	bloc opératoire	fr
+6	salle de réveil	fr
+7	autre	fr

@@ -1,0 +1,90 @@
+_title_hiv_01	ENTRY	en
+_title_hiv_01	ENTREE	fr
+hiv_entry_mode	Mode of entry	en
+hiv_entry_mode	Mode d'entrée	fr
+hiv_entry_mode_other	          if other, specify:	en
+hiv_entry_mode_other	          si autre, préciser:	fr
+hiv_rapid_test_positive_first_date	Date of first positive rapid HIV test (dd/mm/yyyy)	en
+hiv_rapid_test_positive_first_date	Date du premier test rapide VIH positif (jj/mm/aaaa)	fr
+// pregnancy_date_last	Last date of pregnancy (dd/mm/yyyy)	en
+// pregnancy_date_last	Dernière date de grossesse (jj/mm/aaaa)	fr
+pregnancy_year_last	Last year of pregnancy (dd/mm/yyyy)	en
+pregnancy_year_last	Dernière année de grossesse (jj/mm/aaaa)	fr
+_title_hiv_02	  	en
+_title_hiv_02	  	fr
+_title_hiv_03	BASELINE CLINICAL EXAM	en
+_title_hiv_03	EXAMEN CLINIQUE INITIAL	fr
+hiv_stage	WHO staging	en
+hiv_stage	Stade OMS	fr
+weight_kg	Weight (in Kg)	en
+weight_kg	Poids (en Kg)	fr
+height	Height (in cm)	en
+height	Taille (en cm)	fr
+cd4_baseline	CD4	en
+cd4_baseline	CD4	fr
+hbv_positive	HBV +	en
+hbv_positive	HBV +	fr
+hcv_positive	HCV +	en
+hcv_positive	HCV +	fr
+_title_hiv_04	  	en
+_title_hiv_04	  	fr
+_title_hiv_05	TB COINFECTION	en
+_title_hiv_05	COINFECTION TB	fr
+hiv_tb_coinfection	TB coinfection	en
+hiv_tb_coinfection	Coinfection TB	fr
+tb_case_definition	Case definition	en
+tb_case_definition	Definition de cas	fr
+tb_treatment_start_date	AntiTB treatment - date start (dd/mm/yyyy)	en
+tb_treatment_start_date	Traitement anti-TB - date de début (jj/mm/aaaa)	fr
+tb_treatment_category	          category	en
+tb_treatment_category	          catégorie	fr
+ipt_last_date	Date of last IPT (dd/mm/yyyy)	en
+ipt_last_date	Date du dernier IPT (jj/mm/aaaa)	fr
+ipt_courses_received	Nb of IPT courses received	en
+ipt_courses_received	Nb de cycles d'IPT reçus	fr
+_title_hiv_07	  	en
+_title_hiv_07	  	fr
+_title_hiv_08	TREATMENT	en
+_title_hiv_08	TRAITEMENT	fr
+treatment_arv_start_date	ARV's starting date (dd/mm/yyyy)	en
+treatment_arv_start_date	Date de début des ARV (jj/mm/aaaa)	fr
+treatment_arv_start_regimen	First ARV regimen	en
+treatment_arv_start_regimen	Premier régime ARV	fr
+treatment_arv_current_regimen	Current ARV regimen	en
+treatment_arv_current_regimen	Régime ARV actuel	fr
+treatment_arv_line2_start_date	Second line ARV's starting date (dd/mm/yyyy)	en
+treatment_arv_line2_start_date	Date de début des ARV de 2ème ligne (jj/mm/aaaa)	fr
+treatment_arv_line2_start_regimen	Second line ARV regimen	en
+treatment_arv_line2_start_regimen	Régime ARV de deuxième ligne	fr
+prophylaxis_cotrimoxazole	Cotrimoxazole prophylaxis	en
+prophylaxis_cotrimoxazole	Prophilaxie cotrimoxazol	fr
+prophylaxis_dapsone	Dapsone prophylaxis	en
+prophylaxis_dapsone	Prophilaxie Dapsone	fr
+prophylaxis_fluconazole	Fluconazole prophylaxis	en
+prophylaxis_fluconazole	Prophylaxie fluconazol	fr
+observance_problem	Observance problem	en
+observance_problem	Problème d'observance	fr
+_title_hiv_09	  	en
+_title_hiv_09	  	fr
+_title_hiv_10	OUTCOMES	en
+_title_hiv_10	RESULTATS	fr
+treatment_outcome_lfup	Lost to follow-up	en
+treatment_outcome_lfup	Perdu de vue	fr
+treatment_outcome_lfup_date	          date (dd/mm/yyyy)	en
+treatment_outcome_lfup_date	          date (jj/mm/aaaa)	fr
+treatment_outcome_transferred	Transferred out	en
+treatment_outcome_transferred	Tranféré	fr
+treatment_outcome_transferred_date	          date (dd/mm/yyyy)	en
+treatment_outcome_transferred_date	          date (jj/mm/aaaa)	fr
+treatment_outcome_dead	Death	en
+treatment_outcome_dead	Décès	fr
+treatment_outcome_death_date	          date (dd/mm/yyyy)	en
+treatment_outcome_death_date	          date (jj/mm/aaaa)	fr
+treatment_outcome_death_hiv	          related to HIV	en
+treatment_outcome_death_hiv	          lié au VIH	fr
+_title_hiv_11	  	en
+_title_hiv_11	  	fr
+appointment_next_date	Date of next appointment	en
+appointment_next_date	Date du prochain rendez-vos	fr
+comments	Comments	en
+comments	Commentaires	fr

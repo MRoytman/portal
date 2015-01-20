@@ -1,0 +1,6 @@
+1	A	en
+2	B	en
+3	C	en
+1	A	fr
+2	B	fr
+3	C	fr

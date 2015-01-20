@@ -1,0 +1,10 @@
+1	Not received	en
+2	Group session	en
+3	Received from MD	en
+4	Received from nurse	en
+5	Received from CHW	en
+1	Pas reçue	fr
+2	Séance de groupe	fr
+3	Reçue du médecin	fr
+4	Reçue de l'infirmière	fr
+5	Reçue de l'ASC	fr

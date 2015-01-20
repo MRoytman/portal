@@ -1,0 +1,6 @@
+1	yes	en
+2	no, induced with oxytocin	en
+3	no, induced with misoprostol	en
+1	oui	fr
+2	non, induit avec ocytocine	fr
+3	non, induit avec misoprostol	fr

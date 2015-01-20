@@ -1,0 +1,6 @@
+1	no	en
+2	twins	en
+3	triplets	en
+1	non	fr
+2	jumeaux	fr
+3	triplés	fr

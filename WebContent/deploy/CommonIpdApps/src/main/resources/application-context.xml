@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+	default-lazy-init="true">
+
+	<!-- error messages utility -->
+	<bean id="messageManager" class="ch.msf.manager.MessageManagerImpl" scope="singleton">
+	</bean>
+
+	<!-- error messages utility -->
+	<bean id="actionRunnerManager" class="ch.msf.model.actionrunner.ActionRunnerManagerImpl" scope="singleton">
+	</bean>
+
+	<!-- persistence utility -->
+	<bean id="dbManager" class="ch.msf.manager.DbManagerImpl" scope="singleton">
+	</bean>
+
+	<bean id="allCountriesManager" class="ch.msf.manager.AllCountriesManagerImpl"
+		scope="singleton">
+		<property name="dbManager" ref="dbManager" />
+	</bean>
+
+	<bean id="selectedCountriesManager" class="ch.msf.manager.SelectedCountriesManagerImpl"
+		scope="singleton">
+		<property name="dbManager" ref="dbManager" />
+		<property name="allCountriesManager" ref="allCountriesManager" />
+	</bean>
+
+	<bean id="resourceManager" class="ch.msf.manager.ResourceManagerImpl"
+		scope="singleton">
+	</bean>
+
+	<bean id="entryFormConfigManager" class="ch.msf.manager.EntryFormConfigurationManagerImpl"
+		scope="singleton">
+		<property name="dbManager" ref="dbManager" />
+		<property name="allCountriesManager" ref="allCountriesManager" />
+		<property name="selectedCountriesManager" ref="selectedCountriesManager" />
+		<property name="resourceManager" ref="resourceManager" />
+	</bean>
+
+	<bean id="patientManager" class="ch.msf.manager.PatientManagerImpl"
+		scope="singleton">
+		<property name="dbManager" ref="dbManager" />
+	</bean>
+
+	<bean id="encounterManager" class="ch.msf.manager.EncounterManagerImpl"
+		scope="singleton">
+		<property name="dbManager" ref="dbManager" />
+	</bean>
+	
+	<bean id="permissionManager" class="ch.msf.manager.PermissionManagerImpl"
+		scope="singleton">
+	</bean>
+
+	<!-- services = couche d'abstraction orientée business -->
+	<!-- bean id="dataIntegratorService" class="ch.......gdt.service.DataIntegratorServiceImpl" 
+		scope="singleton" -->
+
+
+
+
+
+</beans>

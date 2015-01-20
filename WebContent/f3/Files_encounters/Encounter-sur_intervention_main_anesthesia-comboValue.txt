@@ -1,0 +1,8 @@
+1	general WITHOUT intubation	en
+2	general WITH intubation	en
+3	Loco-regional	en
+4	Local	en
+1	générale SANS intubation	fr
+2	générale AVEC intubation	fr
+3	Locorégionale	fr
+4	Locale	fr

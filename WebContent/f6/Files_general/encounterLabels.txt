@@ -1,0 +1,6 @@
+atfc	ATFC	en
+atfc	CRENAS	fr
+itfc	ITFC	en
+itfc	CRENI	fr
+paediatrics	Pediatrics	en
+paediatrics	Pédiatrie	fr

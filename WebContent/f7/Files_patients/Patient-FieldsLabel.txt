@@ -1,0 +1,44 @@
+sex	Sex	en
+sex	Sexe	fr
+age	Age, if date of birth unknown (in years)	en
+age	Age, si date de naissance inconnue (en années)	fr
+admission_date	Admission date	en
+admission_date	Date d'admission	fr
+discharge_date	Discharge date	en
+discharge_date	Date de sortie	fr
+address_village	Address (village or area)	en
+address_village	Adresse (village ou quartier)	fr
+address_village_other	Village or area name if 'other'	en
+address_village_other	Nom du village ou quartier si 'autre'	fr
+address_district	District	en
+address_district	District	fr
+address_district_other	Distict name if 'other'	en
+address_district_other	Nom du district si 'autre'	fr
+patient_phone_number	Phone number	en
+patient_phone_number	Numéro de téléphone	fr
+_title_patient_01	 	en
+_title_patient_01	 	fr
+_title_patient_02	HIV COHORT IDENTIFICATION	en
+_title_patient_02	IDENTIFIANT COHORTE VIH	fr
+hiv_cohort_id	PLWA cohort ID	en
+hiv_cohort_id	N° de cohorte PLWA	fr
+hiv_cohort_quarter	          quarter	en
+hiv_cohort_quarter	          trimestre	fr
+hiv_cohort_year	          year	en
+hiv_cohort_year	          année	fr
+_title_patient_03	 	en
+_title_patient_03	 	fr
+_title_patient_04	TB COHORT IDENTIFICATION	en
+_title_patient_04	IDENTIFIANT COHORTE TB	fr
+tb_cohort_id	TB cohort ID	en
+tb_cohort_id	N° de cohorte TB	fr
+_title_patient_05	 	en
+_title_patient_05	 	fr
+_title_patient_06	PMTCT COHORT IDENTIFICATION	en
+_title_patient_06	IDENTIFIANT COHORTE PTME	fr
+pmtct_cohort_id	PMTCT cohort ID	en
+pmtct_cohort_id	N° de cohorte PTME	fr
+pmtct_enrolment_date	Date of enrolment in PMTCT program	en
+pmtct_enrolment_date	Date d'entrée dans le programme PTME	fr
+comments	Comments	en
+comments	Commentaires	fr

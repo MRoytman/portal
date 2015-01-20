@@ -1,0 +1,1138 @@
+1	3BB	en
+2	Arcachon 31	en
+3	Arcachon 32	en
+4	Arcachon 34	en
+5	Arcachon 38	en
+6	Aubry	en
+7	Aux Parques	en
+8	Bagadère	en
+9	Bainet	en
+10	Barbeau	en
+11	Barbot	en
+12	Baré	en
+13	Barrière Battant	en
+14	Barrière Godé	en
+15	Barrière Jeudi	en
+16	Barrière Jeudi	en
+17	Barrière Rouge	en
+18	Barrière Rouge	en
+19	Barrière rouge (cf 1er)	en
+20	Bas coq Chante	en
+21	Bas Corail Lemaire	en
+22	Bas Duble	en
+23	Bas Mate	en
+24	Bas Miton	en
+25	Bas Pères	en
+26	Bassin Boeuf	en
+27	Baussan	en
+28	Bazelais	en
+29	Beau Séjour	en
+30	Beaupant	en
+31	Beauséjour	en
+32	Beauséjour (cf 8è)	en
+33	Bel Air	en
+34	Bel Air	en
+35	Bel-Air	en
+36	Bel-Air	en
+37	Belle Fortune	en
+38	Bellevue	en
+39	Bellevue	en
+40	Belloc 	en
+41	Beloc	en
+42	Belot	en
+43	Belval	en
+44	Belval - cité Boulos	en
+45	Berault	en
+46	Bergeotte	en
+47	Bernard	en
+48	Bernard	en
+49	Bernard	en
+50	Berro	en
+51	Bertin	en
+52	Bienvenue	en
+53	Bigonet	en
+54	Binot Lapointe 	en
+55	Binot l'Ester 	en
+56	Birré	en
+57	Bizoton 51	en
+58	Bizoton 53	en
+59	Blain 	en
+60	Bodin	en
+61	Bois Aganman	en
+62	Bois Carré	en
+63	Bois de Gauche	en
+64	Bois debout	en
+65	Bois Dine	en
+66	Bois Joute	en
+67	Bois lame	en
+68	Bois Lassale	en
+69	Bois l'étang 	en
+70	Bois Neuf	en
+71	Bon Crabe	en
+72	Bonyote 	en
+73	Bonyotte 	en
+74	Bordes	en
+75	Borgne	en
+76	Bossier	en
+77	Boua à Boco (Boko)	en
+78	Bouchi	en
+79	Brache	en
+80	Brochette 91	en
+81	Brochette 99	en
+82	Buteau	en
+83	Buteau	en
+84	Buteau	en
+85	Ca Ira	en
+86	Ca Mando	en
+87	Cabaret	en
+88	Cabaret (cf 11ème)	en
+89	Cabaret(cf 3è)	en
+90	Cadris	en
+91	Cadris	en
+92	Café Lompré	en
+93	Camoncil	en
+94	Campan	en
+95	Camps Crabe 	en
+96	Canbriette	en
+97	Canne à sucre	en
+98	Canne Marron	en
+99	Carrefour 	en
+100	Carrefour Baussan	en
+101	Carrefour Citron	en
+102	Carrefour croix	en
+103	Carrefour David	en
+104	Carrefour Dégan	en
+105	Carrefour Dufort	en
+106	Carrefour Durandisse	en
+107	Carrefour Feuille	en
+108	Carrefour Gabriel	en
+109	Carrefour Gardegendarme	en
+110	Carrefour Jean	en
+111	Carrefour Ranm	en
+112	Carrefour vert	en
+113	Carrefour Vert	en
+114	Cassagne	en
+115	Cassagne	en
+116	Cayes	en
+117	Centre ville	en
+118	Centre ville	en
+119	Centre ville - route des Dales	en
+120	Cercey	en
+121	Chamanthe	en
+122	Chardonnette	en
+123	Chateau Gaillard	en
+124	Chatuley	en
+125	Chavannes 	en
+126	Cheridan 	en
+127	Chéridant	en
+128	Chéridant	en
+129	Chevrine	en
+130	Christophe Chanel	en
+131	Cimetière	en
+132	Cité Bourgeois	en
+133	Cité Marcel	en
+134	Cité Napoléon	en
+135	Citronelle	en
+136	Citronier ( cf 9è )	en
+137	Citronniers	en
+138	Cogneau	en
+139	Colas	en
+140	Colin	en
+141	Colin	en
+142	Colombier	en
+143	Commisariat	en
+144	Constant	en
+145	Corail	en
+146	Corail Lemaire (centre)	en
+147	Corail Obri 	en
+148	Corail Père	en
+149	Corridor	en
+150	Cote Plage 16	en
+151	Cote Plage 18	en
+152	Cote Plage 24	en
+153	Côte Plage 26	en
+154	Cote Plage 28	en
+155	Cotin	en
+156	Croix-des-Pères 	en
+157	Cx Hilaire	en
+158	Dano	en
+159	Dantel	en
+160	Darbonne	en
+161	Daverne	en
+162	Deboché	en
+163	Dégaille	en
+164	Dégan	en
+165	Déjeandre	en
+166	Délatre	en
+167	Delmas	en
+168	Demichelle	en
+169	Demier 	en
+170	Desjendres	en
+171	Deslandes	en
+172	Destra	en
+173	Digot 	en
+174	Dimate	en
+175	Dimba	en
+176	Dodel	en
+177	Donyen	en
+178	Douyac	en
+179	Dubillon	en
+180	Duclos	en
+181	Duclos(cf 10è)	en
+182	Dufort, Rte St André	en
+183	Dumal	en
+184	Duplessy 	en
+185	Echalotte	en
+186	Egilse Saint Thomas	en
+187	Eglise St Gabriel	en
+188	Erron	en
+189	Fauché	en
+190	Fayette 	en
+191	Ficha	en
+192	Flon	en
+193	Fond Droit	en
+194	Fond Polite	en
+195	Fond Trouin	en
+196	Fond-Sable	en
+197	Fontamara	en
+198	Fossé Nord	en
+199	Fossé Sud	en
+200	Four à chaud	en
+201	Four à chaud	en
+202	Gabart	en
+203	Galaxie	en
+204	Gauthier	en
+205	Gde Savanne	en
+206	Geffrard	en
+207	Gégo	en
+208	Gérard	en
+209	Gerrard	en
+210	Glaise	en
+211	Glaise	en
+212	Goman	en
+213	Gorée	en
+214	Gougeon	en
+215	Grand Bori	en
+216	Grand Caille (côté Mapou)	en
+217	Grand Chemin	en
+218	Grand Louis	en
+219	Grand Mas	en
+220	Grand Rue	en
+221	Grande Place	en
+222	Grande Rue	en
+223	Grande Saline	en
+224	Grande Savane	en
+225	Grande Savane	en
+226	Grand-Massa	en
+227	Gressier-centre	en
+228	Gris-Gris	en
+229	Gros Morne	en
+230	Gros Saut 	en
+231	Gros Trou	en
+232	Gué Bourget	en
+233	Guerin	en
+234	Guilou Beach	en
+235	Guinnebeau	en
+236	Guirand	en
+237	Guirand	en
+238	Habitol	en
+239	Haut Coq Chante	en
+240	Haut coq chante	en
+241	Haut Corail Lemaire	en
+242	Haut Dampus	en
+243	Haut Duble	en
+244	Haut Macomme	en
+245	Haut Miton	en
+246	Icando	en
+247	Ika	en
+248	Ilette Quessant	en
+249	Ilette Sable 	en
+250	impasse tilus	en
+251	Itain	en
+252	Jack Maringoin	en
+253	Jasmin	en
+254	Jasmin	en
+255	Jean jean	en
+256	Jean Simon	en
+257	Jeanton	en
+258	Jibo 	en
+259	Jovin	en
+260	Jubilé	en
+261	K- Général	en
+262	K- kok	en
+263	K Nicolas 	en
+264	K- Tiverne	en
+265	Ka Dubois	en
+266	ka francoise	en
+267	Ka Gateau	en
+268	Ka Ignace (Kanias)	en
+269	Ka Jacques	en
+270	Ka Juste	en
+271	Ka Masson	en
+272	Ka Michel	en
+273	ka -Pity	en
+274	Ka Pity 	en
+275	Ka Tingué (Tengué)	en
+276	kada	en
+277	Kada	en
+278	Kada	en
+279	Kadera	en
+280	Kapity	en
+281	K-bonde	en
+282	k-Bordes	en
+283	K-Charles	en
+284	K-Delice	en
+285	K-Délouche	en
+286	Kernisan, Georges	en
+287	K-Fonce 	en
+288	Kfoumi 	en
+289	K-Godé	en
+290	K-Guillaume	en
+291	k-Jacques	en
+292	K-Janvye	en
+293	K-Jil	en
+294	K-Marc	en
+295	k-Mary	en
+296	k-Merotte	en
+297	K-Midi	en
+298	K-Moise	en
+299	K-Noncent	en
+300	K-paix	en
+301	K-Pantier	en
+302	K-Paul	en
+303	K-Pila	en
+304	la colline	en
+305	La Colline	en
+306	La Coudre	en
+307	La Crète	en
+308	La crète 	en
+309	La Crête (cf 4ème)	en
+310	La Ferme	en
+311	La Fleur	en
+312	La Grenade	en
+313	La Porte	en
+314	La Source	en
+315	La Source 	en
+316	La source corossole	en
+317	La Tournelle	en
+318	La Vache 	en
+319	La Vache (cf 4)	en
+320	La Vallée	en
+321	Laberger	en
+322	Labriette	en
+323	Lacoude	en
+324	L'acul	en
+325	Laférière	en
+326	Laferronay 	en
+327	Lafond	en
+328	Lalue	en
+329	Lamentin 52	en
+330	Lamentin 54	en
+331	Lamothe	en
+332	Lapointe	en
+333	Laratte	en
+334	Larouyonne	en
+335	Lasalle	en
+336	Lassale	en
+337	Lavale	en
+338	Lavange	en
+339	L'Azil 	en
+340	Le Lambi	en
+341	Lochard	en
+342	Logodé	en
+343	L'oiseau	en
+344	Lombré	en
+345	Lompré	en
+346	Lotorré Boucan	en
+347	Macombe	en
+348	Mahotière	en
+349	Mahotière	en
+350	Malanga	en
+351	Maldor 	en
+352	Mango Marion	en
+353	Mapou Buissonière	en
+354	Mapou Dampus	en
+355	Mare Charles	en
+356	Marécharles	en
+357	Mariani	en
+358	Mariani ( 1-12 )	en
+359	Marianne	en
+360	Marion	en
+361	Marotière 79	en
+362	Marotière 85	en
+363	Martin	en
+364	Martissant	en
+365	Massamba	en
+366	Masson	en
+367	Mathieu	en
+368	Mathieu	en
+369	Matnurin	en
+370	Mavier 	en
+371	Mavil	en
+372	Mayette	en
+373	Mayombé	en
+374	Melier	en
+375	Ménard	en
+376	Mercery	en
+377	Merger	en
+378	Merger 	en
+379	Meyer 	en
+380	Michel	en
+381	Miton	en
+382	Mon Repos	en
+383	Monteley	en
+384	Morel	en
+385	Morel	en
+386	Morne Barbeau	en
+387	Morne Barbeau (cf 1ère Dessources)	en
+388	Morne Bateau	en
+389	Morne Boyé	en
+390	Morne Crabe	en
+391	Morne Diable	en
+392	Morne juillet	en
+393	Morne mardi gras/bas michel	en
+394	Morne Marion	en
+395	Morne Michel	en
+396	Morne Roche	en
+397	Morne Tapion	en
+398	Mornes Chandelles	en
+399	Moudachita	en
+400	Moulin	en
+401	Moussambé	en
+402	Namavoum	en
+403	Nan 12	en
+404	Nan 50	en
+405	Nan Basin	en
+406	Nan Chateau	en
+407	Nan Colline 	en
+408	Nan John	en
+409	Nan Malgré	en
+410	Nan Melfi	en
+411	Nan Moulin 	en
+412	Nan Papette	en
+413	Nan Plaine 	en
+414	Nan Reserve	en
+415	Nan Réserve ( 3è Grande Rivière)	en
+416	Nan Timo	en
+417	Nanon	en
+418	Néply	en
+419	Nerette	en
+420	Nerette	en
+421	Nétirance	en
+422	Nolivos	en
+423	Nolivos 1	en
+424	Nolivos 2 	en
+425	Nolivos 3	en
+426	Nolivos 4	en
+427	Opak	en
+428	Oranger	en
+429	Pain de Sucre	en
+430	Pain de Sucre	en
+431	Paloma	en
+432	Pandou	en
+433	Pandou	en
+434	Papette	en
+435	Papette	en
+436	Paraison	en
+437	Pas Lacour	en
+438	Pasraison (cf 12è)	en
+439	Perdreau	en
+440	Père Briol	en
+441	Pétion Ville	en
+442	Petit Goave	en
+443	Petit Paradis	en
+444	Petit Paradis	en
+445	Petite Place	en
+446	Pioterie	en
+447	Piton	en
+448	Place Sainte-Rose	en
+449	Place Soulouque	en
+450	Plage Valou	en
+451	Plaisance 	en
+452	Platon	en
+453	Platon Tapion	en
+454	Pointe Beton	en
+455	Pokni	en
+456	Portail ça ira	en
+457	Portail Léogane	en
+458	Poulailler	en
+459	Prévo	en
+460	Raboto	en
+461	Rancroy	en
+462	Ravine à Jacques	en
+463	Rechalet	en
+464	Rivière froide	en
+465	Rivière seau	en
+466	Robe	en
+467	Roche à Pierre	en
+468	Rosseau	en
+469	Roucogne	en
+470	Route de l'Amitié	en
+471	Route Neuve	en
+472	Royot	en
+473	Rte Rail	en
+474	Rue Bienheureux	en
+475	Rue Danjour	en
+476	Rue de la paix	en
+477	Rue de l'Hôpital	en
+478	Rue d'Enfer	en
+479	Rue Des Casernes	en
+480	Rue des Fleurs	en
+481	Rue des Remparts	en
+482	Rue Dessalines	en
+483	Rue Dupont	en
+484	Rue la Croix	en
+485	Rue la source     	en
+486	Rue Lavandières	en
+487	Rue Liberté	en
+488	Rue Noire	en
+489	Rue Père Thévenot	en
+490	Rue Poudrière	en
+491	Rue Saint Laurent	en
+492	Rue Sapotille	en
+493	Rue St Yves	en
+494	Rue St-François	en
+495	Ruelle Appolon 	en
+496	Ruelle Bonne Fer	en
+497	Ruelle Corso	en
+498	Ruelle Eagle Hotel	en
+499	Ruelle Gastron	en
+500	Ruelle Haiti Ester	en
+501	Ruelle Titus	en
+502	Ruines	en
+503	Saint André	en
+504	Saint Antoine	en
+505	Saint Gérard	en
+506	Saint Mesmin	en
+507	Sainte Philomène	en
+508	Sanite 	en
+509	Santo	en
+510	Santo	en
+511	Sarbouce	en
+512	Savanne Patate	en
+513	Savien	en
+514	Ségressier	en
+515	Sentra	en
+516	Sibilot	en
+517	Siguenau	en
+518	Singe	en
+519	Soixante	en
+520	Sonson	en
+521	Soufort	en
+522	Sous Kafou 	en
+523	Sous Rail	en
+524	Sous-commisariat	en
+525	Soussaille	en
+526	St Barthelemy	en
+527	Ste Famille	en
+528	St-Etienne 	en
+529	St-Martin	en
+530	St-Pierre	en
+531	Taille fer	en
+532	Tamarin	en
+533	Tèt kazo	en
+534	Teta	en
+535	Tète à Boeuf	en
+536	Thomassin	en
+537	Thor	en
+538	Thozin	en
+539	Ti Boucan	en
+540	Ti Goave	en
+541	Ti Paradis	en
+542	Ti zilé	en
+543	Tiapon	en
+544	Tiarois	en
+545	Ti-Bassin	en
+546	Tolifo	en
+547	Tom Gato	en
+548	Toman	en
+549	Tomarin	en
+550	Toutier	en
+551	T-Rivière	en
+552	Trois Palmistes	en
+553	Trou Coffy	en
+554	Trou Fond	en
+555	Trou Tif	en
+556	Trouin 	en
+557	Value	en
+558	Veillard	en
+559	Viala	en
+560	Vialet	en
+561	Vieux Caille	en
+562	Vieux Cour - Corridor	en
+563	Village d'or	en
+564	Village du bonheur	en
+565	Waney 87	en
+566	Waney 91	en
+567	Yé Yé	en
+other	other	en
+unknown	unknown	en
+1	3BB	fr
+2	Arcachon 31	fr
+3	Arcachon 32	fr
+4	Arcachon 34	fr
+5	Arcachon 38	fr
+6	Aubry	fr
+7	Aux Parques	fr
+8	Bagadère	fr
+9	Bainet	fr
+10	Barbeau	fr
+11	Barbot	fr
+12	Baré	fr
+13	Barrière Battant	fr
+14	Barrière Godé	fr
+15	Barrière Jeudi	fr
+16	Barrière Jeudi	fr
+17	Barrière Rouge	fr
+18	Barrière Rouge	fr
+19	Barrière rouge (cf 1er)	fr
+20	Bas coq Chante	fr
+21	Bas Corail Lemaire	fr
+22	Bas Duble	fr
+23	Bas Mate	fr
+24	Bas Miton	fr
+25	Bas Pères	fr
+26	Bassin Boeuf	fr
+27	Baussan	fr
+28	Bazelais	fr
+29	Beau Séjour	fr
+30	Beaupant	fr
+31	Beauséjour	fr
+32	Beauséjour (cf 8è)	fr
+33	Bel Air	fr
+34	Bel Air	fr
+35	Bel-Air	fr
+36	Bel-Air	fr
+37	Belle Fortune	fr
+38	Bellevue	fr
+39	Bellevue	fr
+40	Belloc 	fr
+41	Beloc	fr
+42	Belot	fr
+43	Belval	fr
+44	Belval - cité Boulos	fr
+45	Berault	fr
+46	Bergeotte	fr
+47	Bernard	fr
+48	Bernard	fr
+49	Bernard	fr
+50	Berro	fr
+51	Bertin	fr
+52	Bienvenue	fr
+53	Bigonet	fr
+54	Binot Lapointe 	fr
+55	Binot l'Ester 	fr
+56	Birré	fr
+57	Bizoton 51	fr
+58	Bizoton 53	fr
+59	Blain 	fr
+60	Bodin	fr
+61	Bois Aganman	fr
+62	Bois Carré	fr
+63	Bois de Gauche	fr
+64	Bois debout	fr
+65	Bois Dine	fr
+66	Bois Joute	fr
+67	Bois lame	fr
+68	Bois Lassale	fr
+69	Bois l'étang 	fr
+70	Bois Neuf	fr
+71	Bon Crabe	fr
+72	Bonyote 	fr
+73	Bonyotte 	fr
+74	Bordes	fr
+75	Borgne	fr
+76	Bossier	fr
+77	Boua à Boco (Boko)	fr
+78	Bouchi	fr
+79	Brache	fr
+80	Brochette 91	fr
+81	Brochette 99	fr
+82	Buteau	fr
+83	Buteau	fr
+84	Buteau	fr
+85	Ca Ira	fr
+86	Ca Mando	fr
+87	Cabaret	fr
+88	Cabaret (cf 11ème)	fr
+89	Cabaret(cf 3è)	fr
+90	Cadris	fr
+91	Cadris	fr
+92	Café Lompré	fr
+93	Camoncil	fr
+94	Campan	fr
+95	Camps Crabe 	fr
+96	Canbriette	fr
+97	Canne à sucre	fr
+98	Canne Marron	fr
+99	Carrefour 	fr
+100	Carrefour Baussan	fr
+101	Carrefour Citron	fr
+102	Carrefour croix	fr
+103	Carrefour David	fr
+104	Carrefour Dégan	fr
+105	Carrefour Dufort	fr
+106	Carrefour Durandisse	fr
+107	Carrefour Feuille	fr
+108	Carrefour Gabriel	fr
+109	Carrefour Gardegendarme	fr
+110	Carrefour Jean	fr
+111	Carrefour Ranm	fr
+112	Carrefour vert	fr
+113	Carrefour Vert	fr
+114	Cassagne	fr
+115	Cassagne	fr
+116	Cayes	fr
+117	Centre ville	fr
+118	Centre ville	fr
+119	Centre ville - route des Dales	fr
+120	Cercey	fr
+121	Chamanthe	fr
+122	Chardonnette	fr
+123	Chateau Gaillard	fr
+124	Chatuley	fr
+125	Chavannes 	fr
+126	Cheridan 	fr
+127	Chéridant	fr
+128	Chéridant	fr
+129	Chevrine	fr
+130	Christophe Chanel	fr
+131	Cimetière	fr
+132	Cité Bourgeois	fr
+133	Cité Marcel	fr
+134	Cité Napoléon	fr
+135	Citronelle	fr
+136	Citronier ( cf 9è )	fr
+137	Citronniers	fr
+138	Cogneau	fr
+139	Colas	fr
+140	Colin	fr
+141	Colin	fr
+142	Colombier	fr
+143	Commisariat	fr
+144	Constant	fr
+145	Corail	fr
+146	Corail Lemaire (centre)	fr
+147	Corail Obri 	fr
+148	Corail Père	fr
+149	Corridor	fr
+150	Cote Plage 16	fr
+151	Cote Plage 18	fr
+152	Cote Plage 24	fr
+153	Côte Plage 26	fr
+154	Cote Plage 28	fr
+155	Cotin	fr
+156	Croix-des-Pères 	fr
+157	Cx Hilaire	fr
+158	Dano	fr
+159	Dantel	fr
+160	Darbonne	fr
+161	Daverne	fr
+162	Deboché	fr
+163	Dégaille	fr
+164	Dégan	fr
+165	Déjeandre	fr
+166	Délatre	fr
+167	Delmas	fr
+168	Demichelle	fr
+169	Demier 	fr
+170	Desjendres	fr
+171	Deslandes	fr
+172	Destra	fr
+173	Digot 	fr
+174	Dimate	fr
+175	Dimba	fr
+176	Dodel	fr
+177	Donyen	fr
+178	Douyac	fr
+179	Dubillon	fr
+180	Duclos	fr
+181	Duclos(cf 10è)	fr
+182	Dufort, Rte St André	fr
+183	Dumal	fr
+184	Duplessy 	fr
+185	Echalotte	fr
+186	Egilse Saint Thomas	fr
+187	Eglise St Gabriel	fr
+188	Erron	fr
+189	Fauché	fr
+190	Fayette 	fr
+191	Ficha	fr
+192	Flon	fr
+193	Fond Droit	fr
+194	Fond Polite	fr
+195	Fond Trouin	fr
+196	Fond-Sable	fr
+197	Fontamara	fr
+198	Fossé Nord	fr
+199	Fossé Sud	fr
+200	Four à chaud	fr
+201	Four à chaud	fr
+202	Gabart	fr
+203	Galaxie	fr
+204	Gauthier	fr
+205	Gde Savanne	fr
+206	Geffrard	fr
+207	Gégo	fr
+208	Gérard	fr
+209	Gerrard	fr
+210	Glaise	fr
+211	Glaise	fr
+212	Goman	fr
+213	Gorée	fr
+214	Gougeon	fr
+215	Grand Bori	fr
+216	Grand Caille (côté Mapou)	fr
+217	Grand Chemin	fr
+218	Grand Louis	fr
+219	Grand Mas	fr
+220	Grand Rue	fr
+221	Grande Place	fr
+222	Grande Rue	fr
+223	Grande Saline	fr
+224	Grande Savane	fr
+225	Grande Savane	fr
+226	Grand-Massa	fr
+227	Gressier-centre	fr
+228	Gris-Gris	fr
+229	Gros Morne	fr
+230	Gros Saut 	fr
+231	Gros Trou	fr
+232	Gué Bourget	fr
+233	Guerin	fr
+234	Guilou Beach	fr
+235	Guinnebeau	fr
+236	Guirand	fr
+237	Guirand	fr
+238	Habitol	fr
+239	Haut Coq Chante	fr
+240	Haut coq chante	fr
+241	Haut Corail Lemaire	fr
+242	Haut Dampus	fr
+243	Haut Duble	fr
+244	Haut Macomme	fr
+245	Haut Miton	fr
+246	Icando	fr
+247	Ika	fr
+248	Ilette Quessant	fr
+249	Ilette Sable 	fr
+250	impasse tilus	fr
+251	Itain	fr
+252	Jack Maringoin	fr
+253	Jasmin	fr
+254	Jasmin	fr
+255	Jean jean	fr
+256	Jean Simon	fr
+257	Jeanton	fr
+258	Jibo 	fr
+259	Jovin	fr
+260	Jubilé	fr
+261	K- Général	fr
+262	K- kok	fr
+263	K Nicolas 	fr
+264	K- Tiverne	fr
+265	Ka Dubois	fr
+266	ka francoise	fr
+267	Ka Gateau	fr
+268	Ka Ignace (Kanias)	fr
+269	Ka Jacques	fr
+270	Ka Juste	fr
+271	Ka Masson	fr
+272	Ka Michel	fr
+273	ka -Pity	fr
+274	Ka Pity 	fr
+275	Ka Tingué (Tengué)	fr
+276	kada	fr
+277	Kada	fr
+278	Kada	fr
+279	Kadera	fr
+280	Kapity	fr
+281	K-bonde	fr
+282	k-Bordes	fr
+283	K-Charles	fr
+284	K-Delice	fr
+285	K-Délouche	fr
+286	Kernisan, Georges	fr
+287	K-Fonce 	fr
+288	Kfoumi 	fr
+289	K-Godé	fr
+290	K-Guillaume	fr
+291	k-Jacques	fr
+292	K-Janvye	fr
+293	K-Jil	fr
+294	K-Marc	fr
+295	k-Mary	fr
+296	k-Merotte	fr
+297	K-Midi	fr
+298	K-Moise	fr
+299	K-Noncent	fr
+300	K-paix	fr
+301	K-Pantier	fr
+302	K-Paul	fr
+303	K-Pila	fr
+304	la colline	fr
+305	La Colline	fr
+306	La Coudre	fr
+307	La Crète	fr
+308	La crète 	fr
+309	La Crête (cf 4ème)	fr
+310	La Ferme	fr
+311	La Fleur	fr
+312	La Grenade	fr
+313	La Porte	fr
+314	La Source	fr
+315	La Source 	fr
+316	La source corossole	fr
+317	La Tournelle	fr
+318	La Vache 	fr
+319	La Vache (cf 4)	fr
+320	La Vallée	fr
+321	Laberger	fr
+322	Labriette	fr
+323	Lacoude	fr
+324	L'acul	fr
+325	Laférière	fr
+326	Laferronay 	fr
+327	Lafond	fr
+328	Lalue	fr
+329	Lamentin 52	fr
+330	Lamentin 54	fr
+331	Lamothe	fr
+332	Lapointe	fr
+333	Laratte	fr
+334	Larouyonne	fr
+335	Lasalle	fr
+336	Lassale	fr
+337	Lavale	fr
+338	Lavange	fr
+339	L'Azil 	fr
+340	Le Lambi	fr
+341	Lochard	fr
+342	Logodé	fr
+343	L'oiseau	fr
+344	Lombré	fr
+345	Lompré	fr
+346	Lotorré Boucan	fr
+347	Macombe	fr
+348	Mahotière	fr
+349	Mahotière	fr
+350	Malanga	fr
+351	Maldor 	fr
+352	Mango Marion	fr
+353	Mapou Buissonière	fr
+354	Mapou Dampus	fr
+355	Mare Charles	fr
+356	Marécharles	fr
+357	Mariani	fr
+358	Mariani ( 1-12 )	fr
+359	Marianne	fr
+360	Marion	fr
+361	Marotière 79	fr
+362	Marotière 85	fr
+363	Martin	fr
+364	Martissant	fr
+365	Massamba	fr
+366	Masson	fr
+367	Mathieu	fr
+368	Mathieu	fr
+369	Matnurin	fr
+370	Mavier 	fr
+371	Mavil	fr
+372	Mayette	fr
+373	Mayombé	fr
+374	Melier	fr
+375	Ménard	fr
+376	Mercery	fr
+377	Merger	fr
+378	Merger 	fr
+379	Meyer 	fr
+380	Michel	fr
+381	Miton	fr
+382	Mon Repos	fr
+383	Monteley	fr
+384	Morel	fr
+385	Morel	fr
+386	Morne Barbeau	fr
+387	Morne Barbeau (cf 1ère Dessources)	fr
+388	Morne Bateau	fr
+389	Morne Boyé	fr
+390	Morne Crabe	fr
+391	Morne Diable	fr
+392	Morne juillet	fr
+393	Morne mardi gras/bas michel	fr
+394	Morne Marion	fr
+395	Morne Michel	fr
+396	Morne Roche	fr
+397	Morne Tapion	fr
+398	Mornes Chandelles	fr
+399	Moudachita	fr
+400	Moulin	fr
+401	Moussambé	fr
+402	Namavoum	fr
+403	Nan 12	fr
+404	Nan 50	fr
+405	Nan Basin	fr
+406	Nan Chateau	fr
+407	Nan Colline 	fr
+408	Nan John	fr
+409	Nan Malgré	fr
+410	Nan Melfi	fr
+411	Nan Moulin 	fr
+412	Nan Papette	fr
+413	Nan Plaine 	fr
+414	Nan Reserve	fr
+415	Nan Réserve ( 3è Grande Rivière)	fr
+416	Nan Timo	fr
+417	Nanon	fr
+418	Néply	fr
+419	Nerette	fr
+420	Nerette	fr
+421	Nétirance	fr
+422	Nolivos	fr
+423	Nolivos 1	fr
+424	Nolivos 2 	fr
+425	Nolivos 3	fr
+426	Nolivos 4	fr
+427	Opak	fr
+428	Oranger	fr
+429	Pain de Sucre	fr
+430	Pain de Sucre	fr
+431	Paloma	fr
+432	Pandou	fr
+433	Pandou	fr
+434	Papette	fr
+435	Papette	fr
+436	Paraison	fr
+437	Pas Lacour	fr
+438	Pasraison (cf 12è)	fr
+439	Perdreau	fr
+440	Père Briol	fr
+441	Pétion Ville	fr
+442	Petit Goave	fr
+443	Petit Paradis	fr
+444	Petit Paradis	fr
+445	Petite Place	fr
+446	Pioterie	fr
+447	Piton	fr
+448	Place Sainte-Rose	fr
+449	Place Soulouque	fr
+450	Plage Valou	fr
+451	Plaisance 	fr
+452	Platon	fr
+453	Platon Tapion	fr
+454	Pointe Beton	fr
+455	Pokni	fr
+456	Portail ça ira	fr
+457	Portail Léogane	fr
+458	Poulailler	fr
+459	Prévo	fr
+460	Raboto	fr
+461	Rancroy	fr
+462	Ravine à Jacques	fr
+463	Rechalet	fr
+464	Rivière froide	fr
+465	Rivière seau	fr
+466	Robe	fr
+467	Roche à Pierre	fr
+468	Rosseau	fr
+469	Roucogne	fr
+470	Route de l'Amitié	fr
+471	Route Neuve	fr
+472	Royot	fr
+473	Rte Rail	fr
+474	Rue Bienheureux	fr
+475	Rue Danjour	fr
+476	Rue de la paix	fr
+477	Rue de l'Hôpital	fr
+478	Rue d'Enfer	fr
+479	Rue Des Casernes	fr
+480	Rue des Fleurs	fr
+481	Rue des Remparts	fr
+482	Rue Dessalines	fr
+483	Rue Dupont	fr
+484	Rue la Croix	fr
+485	Rue la source     	fr
+486	Rue Lavandières	fr
+487	Rue Liberté	fr
+488	Rue Noire	fr
+489	Rue Père Thévenot	fr
+490	Rue Poudrière	fr
+491	Rue Saint Laurent	fr
+492	Rue Sapotille	fr
+493	Rue St Yves	fr
+494	Rue St-François	fr
+495	Ruelle Appolon 	fr
+496	Ruelle Bonne Fer	fr
+497	Ruelle Corso	fr
+498	Ruelle Eagle Hotel	fr
+499	Ruelle Gastron	fr
+500	Ruelle Haiti Ester	fr
+501	Ruelle Titus	fr
+502	Ruines	fr
+503	Saint André	fr
+504	Saint Antoine	fr
+505	Saint Gérard	fr
+506	Saint Mesmin	fr
+507	Sainte Philomène	fr
+508	Sanite 	fr
+509	Santo	fr
+510	Santo	fr
+511	Sarbouce	fr
+512	Savanne Patate	fr
+513	Savien	fr
+514	Ségressier	fr
+515	Sentra	fr
+516	Sibilot	fr
+517	Siguenau	fr
+518	Singe	fr
+519	Soixante	fr
+520	Sonson	fr
+521	Soufort	fr
+522	Sous Kafou 	fr
+523	Sous Rail	fr
+524	Sous-commisariat	fr
+525	Soussaille	fr
+526	St Barthelemy	fr
+527	Ste Famille	fr
+528	St-Etienne 	fr
+529	St-Martin	fr
+530	St-Pierre	fr
+531	Taille fer	fr
+532	Tamarin	fr
+533	Tèt kazo	fr
+534	Teta	fr
+535	Tète à Boeuf	fr
+536	Thomassin	fr
+537	Thor	fr
+538	Thozin	fr
+539	Ti Boucan	fr
+540	Ti Goave	fr
+541	Ti Paradis	fr
+542	Ti zilé	fr
+543	Tiapon	fr
+544	Tiarois	fr
+545	Ti-Bassin	fr
+546	Tolifo	fr
+547	Tom Gato	fr
+548	Toman	fr
+549	Tomarin	fr
+550	Toutier	fr
+551	T-Rivière	fr
+552	Trois Palmistes	fr
+553	Trou Coffy	fr
+554	Trou Fond	fr
+555	Trou Tif	fr
+556	Trouin 	fr
+557	Value	fr
+558	Veillard	fr
+559	Viala	fr
+560	Vialet	fr
+561	Vieux Caille	fr
+562	Vieux Cour - Corridor	fr
+563	Village d'or	fr
+564	Village du bonheur	fr
+565	Waney 87	fr
+566	Waney 91	fr
+567	Yé Yé	fr
+other	autre	fr
+unknown	inconnu	fr

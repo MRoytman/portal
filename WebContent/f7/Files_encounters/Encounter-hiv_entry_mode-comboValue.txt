@@ -1,0 +1,14 @@
+1	TB	en
+2	IPD	en
+3	ITFC	en
+4	PMTCT	en
+5	blood transfusion	en
+6	VCT	en
+7	other	en
+1	TB	fr
+2	IPD	fr
+3	CNTH	fr
+4	PTME	fr
+5	transfusion sanguine	fr
+6	VCT	fr
+7	autre	fr

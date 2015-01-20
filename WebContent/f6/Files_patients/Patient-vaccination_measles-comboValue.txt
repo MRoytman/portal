@@ -1,0 +1,8 @@
+3	Not vaccinated	en
+5	Dose 1	en
+6	Dose 2	en
+unknown	Unknown	en
+3	Non vacciné	fr
+5	Dose 1	fr
+6	Dose 2	fr
+unknown	Inconnu 	fr

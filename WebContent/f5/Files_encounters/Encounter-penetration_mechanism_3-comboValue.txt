@@ -1,0 +1,15 @@
+1	Objects	en
+2	Fingers	en
+3	Penis	en
+4	Unknown	en
+5	No	en
+1	Objet	fr
+2	Doigts	fr
+3	Pénis	fr
+4	Inconnu	fr
+5	Aucun	fr
+1	Objeto	es
+2	Dedos	es
+3	Pene	es
+4	No sabe	es
+5	Ningun	es

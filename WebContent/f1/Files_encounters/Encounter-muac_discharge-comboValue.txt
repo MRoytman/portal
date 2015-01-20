@@ -1,0 +1,8 @@
+1	green	en
+2	yellow	en
+3	orange	en
+4	red	en
+1	vert	fr
+2	jaune	fr
+3	orange	fr
+4	rouge	fr

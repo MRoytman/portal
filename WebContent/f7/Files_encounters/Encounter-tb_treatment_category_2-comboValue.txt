@@ -1,0 +1,4 @@
+1	cat1: 2 RHZE/4RH (or 10)	en
+2	cat2: 2SRHZE/RHZE/RHE	en
+1	cat1: 2 RHZE/4RH (ou 10)	fr
+2	cat2: 2SRHZE/RHZE/RHE	fr

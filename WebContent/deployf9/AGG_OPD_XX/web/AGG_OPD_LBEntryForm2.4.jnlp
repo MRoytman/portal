@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jnlp spec="1.0+"
+      codebase="https://ftp.ocg.msf.org/webstart/AGG_OPD_LB/"
+      href="AGG_OPD_LBEntryForm2.4.jnlp">
+
+   <information >
+      <title>AGGREGATION OPD LB Liban 2.4 MSF OCG 2013</title>
+      <vendor>MSF</vendor>
+      <description>Aggregated data Java web start EntryForm V2.4 (MSF OCG 2013)</description>
+      <homepage href="https://ftp.ocg.msf.org/webstart/AGG_OPD_LB/"/>
+      
+      <description kind="short"> output is shown in java console... </description>
+
+
+      <icon kind="shortcut" href="../images/logo_msf32_32.gif" width="32" height="32"/>
+      <icon kind="shortcut" href="../images/logo_msf64_64.gif" width="64" height="64"/>
+      <offline-allowed/>
+      <shortcut>
+      		<desktop/>
+      		<menu submenu="MSF App"/>
+      </shortcut>
+   </information>      
+   
+   	
+	<!-- demande toutes les autorisations de la jvm -->
+	<security>
+		<all-permissions/> 
+	</security>
+
+
+   <resources>
+		<jar href="https://ftp.ocg.msf.org/webstart/AGG_OPD_LB/AGG_OPD_LBEntryForm2.4.jar"/>
+		<j2se version="1.6+"  />
+		<property name="jnlp.packEnabled" value="true"/>
+		<property name="webstarttest" value="dummy"/>
+		<property name="configFileName" value="entryFormConfig.xml"/>
+		<property name="defaultLanguage" value="en"/>
+
+		<property name="connectionStrategy" value="USE_OR_CREATE_DB"/>
+		<property name="applicationIconName" value="head_logo_msf.gif"/>
+
+
+		<property name="dbVersion" value="1.0"/>
+
+		<property name="msfApplicationDir" value="D:\MSFMedAppData"/>
+		<property name="mixedModeDB" value="false"/>
+
+   </resources>
+   
+   <application-desc main-class="ch.msf.form.wizard.DataEntryForm"/>
+   	
+   	<update check="timeout" policy="always"/>
+</jnlp>

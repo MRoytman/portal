@@ -1,0 +1,60 @@
+_title_SGBV04_01	CONTEXT OF CONSULTATION	en
+_title_SGBV04_01	CONTEXTE DE LA CONSULTATION	fr
+_title_SGBV04_01	CONTEXTO DE CONSULTA	es
+encounter_location	Place of consultation	en
+encounter_location	Lieu de consultation	fr
+encounter_location	Lugar de consulto	es
+encounter_number	Follow-up #	en
+encounter_number	N° de suivi	fr
+encounter_number	N° de seguimiento	es
+consultation_mental_health_provider	Consultation done by:	en
+consultation_mental_health_provider	Consultation faite par:	fr
+consultation_mental_health_provider	Consulta hecha por:	es
+intervention_psycho_type	Type of psychological intervention	en
+intervention_psycho_type	Type d'intervention psychologique	fr
+intervention_psycho_type	Tipo de intervención psicóloga	es
+_title_SGBV04_02	 	en
+_title_SGBV04_02	 	fr
+_title_SGBV04_02	 	es
+_title_SGBV04_03	FOLLOW-UP / TREATMENT	en
+_title_SGBV04_03	SUIVI / TRAITEMENT	fr
+_title_SGBV04_03	SEGUIMIENTO / TRATAMIENTO	es
+antecedents_psychiatric	Psychiatric antecedents	en
+antecedents_psychiatric	Antécédents psychiatriques	fr
+antecedents_psychiatric	Antecedentes psiquiátricos	es
+medication_psychiatric_1	Psychiatric medication 1	en
+medication_psychiatric_1	Médication psychiatrique 1	fr
+medication_psychiatric_1	Medicación psiquiátrica 1	es
+medication_psychiatric_2	Psychiatric medication 2	en
+medication_psychiatric_2	Médication psychiatrique 2	fr
+medication_psychiatric_2	Medicación psiquiátrica 2	es
+medication_psychiatric_3	Psychiatric medication 3	en
+medication_psychiatric_3	Médication psychiatrique 3	fr
+medication_psychiatric_3	Medicación psiquiátrica 3	es
+_title_SGBV04_04	 	en
+_title_SGBV04_04	 	fr
+_title_SGBV04_04	 	es
+_title_SGBV04_05	RESULTS	en
+_title_SGBV04_05	RESULTATS	fr
+_title_SGBV04_05	RESULTADOS	es
+referral_psycho	Patient referred to	en
+referral_psycho	Patient référé à	fr
+referral_psycho	Paciente referido a	es
+outcome_psycho	End of psychological support	en
+outcome_psycho	Fin du suivi psychologique	fr
+outcome_psycho	Fin de seguimiento psicológico	es
+gaf	GAF / EGF (0 - 100)	en
+gaf	GAF / EGF (0 - 100)	fr
+gaf	GAF / EGF (0 - 100)	es
+srq20	SRQ20 (1 - 20)	en
+srq20	SRQ20 (1 - 20)	fr
+srq20	SRQ20 (1 - 20)	es
+_title_SGBV04_06	 	en
+_title_SGBV04_06	 	fr
+_title_SGBV04_06	 	es
+comments	Comments	en
+comments	Commentaires	fr
+comments	Comentarios	es
+_title_SGBV04_07	 	en
+_title_SGBV04_07	 	fr
+_title_SGBV04_07	 	es

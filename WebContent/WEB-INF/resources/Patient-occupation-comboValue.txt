@@ -1,0 +1,12 @@
+1	Student	en
+1	Etudiant	fr
+14	Fixed employee	en
+14	Employé - fixe	fr
+15	Occasional employee	en
+15	Employé - temporaire	fr
+5	Unemployed	en
+5	Sans emploi	fr
+4	Housewife	en
+4	Femme au foyer	fr
+other	Other	en
+other	Autre	fr

@@ -1,0 +1,4 @@
+1	<= 48h after admission	en
+2	> 48h after admission	en
+1	<= 48h après l'admission	fr
+2	> 48h après l'admission	fr

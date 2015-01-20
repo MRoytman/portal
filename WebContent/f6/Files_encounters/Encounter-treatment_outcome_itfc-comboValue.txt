@@ -1,0 +1,18 @@
+8	Stabilized and referred to MSF ATFC	en
+9	Stabilized and referred to non-MSF nutritionnal structure	en
+1	Cured	en
+4	Non-responding	en
+2	Deceased	en
+3	Defaulter	en
+7	Referal to another structure	en
+5	Discharge on demand	en
+other	Other	en
+8	Stabilisé et référé à CRENAS MSF	fr
+9	Stabilisé et référé à structure nutritionnel non-MSF	fr
+1	Guéris	fr
+4	Non-répondant	fr
+2	Décès	fr
+3	Abandon	fr
+7	Transfère vers autre structure	fr
+5	Sortie sur demande	fr
+other	Autre	fr

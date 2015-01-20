@@ -1,0 +1,8 @@
+1	No	en
+1	Non	fr
+2	Newly diagnosed	en
+2	Nouveau diagnostic	fr
+3	Previously diagnosed	en
+3	Déjà diagnostiqué	fr
+unknown	Unknown	en
+unknown	Inconnu	fr

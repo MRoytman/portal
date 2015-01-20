@@ -1,0 +1,8 @@
+1	on time	en
+2	unplanned	en
+3	late	en
+4	death	en
+1	le jour prévu	fr
+2	non planifiée	fr
+3	en retard	fr
+4	décédé	fr

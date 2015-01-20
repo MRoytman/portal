@@ -1,0 +1,105 @@
+_title_SGBV02_01	CONSULTATION	en
+_title_SGBV02_01	CONSULTATION	fr
+_title_SGBV02_01	CONSULTA	es
+encounter_location	Place of consultation	en
+encounter_location	Lieu de consultation	fr
+encounter_location	Lugar de consulto	es
+encounter_number	Follow-up #	en
+encounter_number	N° de suivi	fr
+encounter_number	N° de seguimiento	es
+consultation_provider	Consultation done by:	en
+consultation_provider	Consultation faite par:	fr
+consultation_provider	Consulta hecha por:	es
+certificate_medical_given	Medical certificate given to patient	en
+certificate_medical_given	Certificat médical donné au patient	fr
+certificate_medical_given	Certificado médico dado al paciente	es
+_title_SGBV02_02	 	en
+_title_SGBV02_02	 	fr
+_title_SGBV02_02	 	es
+_title_SGBV02_03	TREATMENT	en
+_title_SGBV02_03	TRAITEMENT	fr
+_title_SGBV02_03	TRATAMIENTO	es
+abortion_request	Abortion requested	en
+abortion_request	Avortement demandé	fr
+abortion_request	Aborto pedido	es
+abortion_done	Abortion carried out	en
+abortion_done	Avortement effectué	fr
+abortion_done	Aborto realizado	es
+pep_done	PEP completed	en
+pep_done	PEP terminée	fr
+pep_done	PEP terminada	es
+_title_SGBV02_04	 	en
+_title_SGBV02_04	 	fr
+_title_SGBV02_04	 	es
+_title_SGBV02_05	VACCINATION	en
+_title_SGBV02_05	VACCINS	fr
+_title_SGBV02_05	VACUNACION	es
+vaccination_hepatitisb1	Hepatitis B 1	en
+vaccination_hepatitisb1	Hépatite B 1	fr
+vaccination_hepatitisb1	Hepatitis B 1	es
+vaccination_hepatitisb2	Hepatitis B 2	en
+vaccination_hepatitisb2	Hépatite B 2	fr
+vaccination_hepatitisb2	Hepatitis B 2	es
+vaccination_hepatitisb3	Hepatitis B 3	en
+vaccination_hepatitisb3	Hépatite B 3	fr
+vaccination_hepatitisb3	Hepatitis B 3	es
+vaccination_hepatitisb_booster	Hepatitis B booster	en
+vaccination_hepatitisb_booster	Hépatite B booster	fr
+vaccination_hepatitisb_booster	Hepatitis B booster	es
+vaccination_tetanus1	Tetanus 1	en
+vaccination_tetanus1	Tétanos 1	fr
+vaccination_tetanus1	Tétanos 1	es
+vaccination_tetanus2	Tetanus 2	en
+vaccination_tetanus2	Tétanos 2	fr
+vaccination_tetanus2	Tétanos 2	es
+vaccination_tetanus3	Tetanus 3	en
+vaccination_tetanus3	Tétanos 3	fr
+vaccination_tetanus3	Tétanos 3	es
+vaccination_tetanus4	Tetanus 4	en
+vaccination_tetanus4	Tétanos 4	fr
+vaccination_tetanus4	Tétanos 4	es
+vaccination_tetanus5	Tetanus 5	en
+vaccination_tetanus5	Tétanos 5	fr
+vaccination_tetanus5	Tétanos 5	es
+vaccination_tetanus_booster	Tetanus booster	en
+vaccination_tetanus_booster	Tétanos booster	fr
+vaccination_tetanus_booster	Tétanos booster	es
+_title_SGBV02_06	 	en
+_title_SGBV02_06	 	fr
+_title_SGBV02_06	 	es
+_title_SGBV02_07	TESTS	en
+_title_SGBV02_07	TESTS	fr
+_title_SGBV02_07	PRUEBAS	es
+pregnancy_test	Pregnancy test	en
+pregnancy_test	Test de grossesse	fr
+pregnancy_test	Test de embarazo	es
+hiv_test_first	HIV first test	en
+hiv_test_first	Premier test VIH	fr
+hiv_test_first	Primero test VIH	es
+hiv_test_second	     HIV confirmation test	en
+hiv_test_second	     Test VIH de confirmation	fr
+hiv_test_second	     Prueba confirmatoria VIH	es
+hiv_test_3months	HIV test 3 months	en
+hiv_test_3months	Test VIH 3 mois	fr
+hiv_test_3months	Test VIH 3 meses	es
+hiv_test_3months_second	     HIV confirmation test	en
+hiv_test_3months_second	     Test VIH de confirmation	fr
+hiv_test_3months_second	     Prueba confirmatoria VIH	es
+hiv_test_6months	HIV test 6 months	en
+hiv_test_6months	Test VIH 6 mois	fr
+hiv_test_6months	Test VIH 6 meses	es
+hiv_test_6months_second	     HIV confirmation test	en
+hiv_test_6months_second	     Test VIH de confirmation	fr
+hiv_test_6months_second	     Prueba confirmatoria VIH	es
+family_planning	Family planning	en
+family_planning	Planning familial	fr
+family_planning	Planificación familiar	es
+_title_SGBV02_08	 	en
+_title_SGBV02_08	 	fr
+_title_SGBV02_08	 	es
+comments	Comments	en
+comments	Commentaires	fr
+comments	Comentarios	es
+_title_SGBV02_09	 	en
+_title_SGBV02_09	 	fr
+_title_SGBV02_09	 	es

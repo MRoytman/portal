@@ -1,0 +1,6 @@
+1	Planned	en
+2	Non planned, non emergency 	en
+3	Emergency	en
+1	Planifiée	fr
+2	Non planifiée non urgente	fr
+3	En urgence	fr

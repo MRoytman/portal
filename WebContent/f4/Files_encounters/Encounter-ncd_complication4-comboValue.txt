@@ -1,0 +1,32 @@
+1	Arrhythmias	en
+2	COPD/asthma hospitalisation	en
+3	Episodes of hyperglycaemia (hosp.)	en
+4	Episodes of hypoglycaemia (hosp.)	en
+5	Ketoacidosis / coma hyperosmolar	en
+6	Heart failure	en
+7	Hypertensive emergencies	en
+8	Hypertensive nephrosclerosis	en
+9	Intracerebral haemorrhage	en
+10	Ischaemic heart disease	en
+11	Ischaemic stroke	en
+12	Nephropathy	en
+13	Neuropathy	en
+14	Peripheral vascular disease	en
+15	Retinopathy	en
+16	Thyroid related hospitalisation	en
+1	Arythmie	fr
+2	Hospitalisation pour BPCO/asthme	fr
+3	Episode d'hyperglycémie (hosp.)	fr
+4	Episode d'hypoglycémie (hosp.)	fr
+5	Acidocétose / coma hyperosmolaire	fr
+6	Insuffisance cardiaque	fr
+7	Hypertension maligne (?)	fr
+8	Néphroangiosclérose	fr
+9	Hémorragie intracérébrale	fr
+10	Maladie cardiaque ischémique (?)	fr
+11	AVC ischémique	fr
+12	Néphropathie	fr
+13	Neuropathie	fr
+14	Maladie vasculaire périphérique (?)	fr
+15	Rétinopathie	fr
+16	Hospitalisation pour problem thyroïdien (?)	fr

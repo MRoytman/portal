@@ -1,0 +1,10 @@
+11	No referral	en
+12	NGO	en
+13	MSF medical team	en
+14	Non-MSF psychiatrist	en
+other	Other	en
+11	Pas de référence	fr
+12	ONG	fr
+13	Equipe médicale MSF	fr
+14	Psychiatre non-MSF	fr
+other	Autre	fr

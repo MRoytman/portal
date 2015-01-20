@@ -1,0 +1,12 @@
+1	Individual	en
+2	Couple	en
+3	Family	en
+4	Group	en
+5	None	en
+other	Other	en
+1	Individuelle	fr
+2	Couple	fr
+3	Familiale	fr
+4	Groupe	fr
+5	Aucune	fr
+other	Autre	fr

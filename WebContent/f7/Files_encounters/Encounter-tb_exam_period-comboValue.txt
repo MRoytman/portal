@@ -1,0 +1,8 @@
+1	Treatment start exam	en
+2	Exam at 2-3 months	en
+3	Exam at 4-5 months	en
+4	End of treatment exam	en
+1	Examen du début du traitement	fr
+2	Examen à 2-3 mois	fr
+3	Examen à 3-4 mois	fr
+4	Examen de fin de traitement	fr

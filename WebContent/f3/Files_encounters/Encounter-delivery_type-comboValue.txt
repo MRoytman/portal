@@ -1,0 +1,4 @@
+1	eutocic	en
+2	dystocial	en
+1	eutocique	fr
+2	dystocique	fr

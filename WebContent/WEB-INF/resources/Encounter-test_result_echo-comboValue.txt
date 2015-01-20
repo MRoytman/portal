@@ -1,0 +1,4 @@
+1	Normal	en
+1	Normal	fr
+2	Abnormal	en
+2	Anormal	fr

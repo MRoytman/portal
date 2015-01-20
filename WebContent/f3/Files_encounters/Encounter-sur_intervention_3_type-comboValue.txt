@@ -1,0 +1,59 @@
+1	Osteosynthesis or internal fixation	en
+2	Osteosynthesis out (removal)	en
+3	Bone graft	en
+4	Curettage for osteomyelitis	en
+5	Ortho joint surgery	en
+6	Ortho nerve	en
+7	Amputation of a limb	en
+8	Orthopaedics various (others)	en
+9	Caesarean Section	en
+10	Extra uterine gravidity	en
+11	Vesicovaginal fistula	en
+12	Hysterectomy + variants	en
+13	Placenta + Curettage + Abortion	en
+14	Other gyn/obstetrical	en
+15	Neurosurgery	en
+16	Vascular surgery	en
+17	Plastic & reconstructive	en
+18	Thoracotomy	en
+19	Urology: small pelvis	en
+20	Ear-nose-throat	en
+21	Ophthalmology	en
+22	Maxillo - facial	en
+23	Various	en
+1	Simple, suture, abcès, circoncision	fr
+2	Pansement sous sédation, drain, insertion ou retrait	fr
+3	Pansement brûlure	fr
+4	Débridement (extensif!), fasciotomie	fr
+5	Greffe de peau ou muscle	fr
+6	Retrait de corps étranger	fr
+7	Hernie, hydrocèle, hémorrhoïdes, 	fr
+8	Laparotomie exploratrice	fr
+9	Solide visqueux: ablation/réparation	fr
+10	Viscère: ablation/réparation	fr
+11	Autre chirurgie générale/vicscérale	fr
+12	Réduction de fractures et luxations	fr
+13	Fixateur externe	fr
+14	Ostéosynthèse ou fixation interne	fr
+15	Ostéosynthèse - retrait	fr
+16	Greffe osseuse	fr
+17	Curetage pour ostéomyélite 	fr
+18	Chirurgie ortho/articulaire	fr
+19	Chirurgie ortho/nerveuse	fr
+20	Amputation d'un membre	fr
+21	Orthopédique divers (autres)	fr
+22	Césarienne	fr
+23	Grossesse extra-utérine	fr
+24	Fistule vésico-vaginale	fr
+25	Hystérectomie	fr
+26	Placenta + curetage + avortement 	fr
+27	Autre gynéco-obstétrique	fr
+28	Neurochirurgie	fr
+29	Chirurgie vasculaire	fr
+30	Plastique et reconstructive	fr
+31	Thoracotomie	fr
+32	Urologie: petit bassin	fr
+33	ORL	fr
+34	Ophtalmologie	fr
+35	Maxillo-faciale	fr
+36	Divers	fr

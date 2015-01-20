@@ -1,0 +1,244 @@
+_title_YFIPD002	ADMISSION	en
+_title_YFIPD002	ADMISSION	fr
+referred_in	Referred (from OPD)	en
+referred_in	Référé (de l'OPD)	fr
+_title_YFIPD004	 	en
+_title_YFIPD004	 	fr
+_title_YFIPD005	EPIDEMIOLOGICAL INFORMATION	en
+_title_YFIPD005	INFORMATIONS EPIDEMIOLOGIQUES	fr
+other_cases_family	Other cases reported in the family?	en
+other_cases_family	Autres cas reportés dans la famille?	fr
+other_cases_origin	Other cases reported in place of origin?	en
+other_cases_origin	Autres cas reportés dans le lieu d'origine?	fr
+onset_date	Date of onset of illness	en
+onset_date	Date d'apparition de la maladie	fr
+vaccination_history_yf	History of yellow fever vaccination	en
+vaccination_history_yf	Histoire de vaccination contre la fièvre jaune	fr
+jaundice_history	History of jaundice	en
+jaundice_history	Histoire de jaunisse	fr
+_title_YFIPD011	 	en
+_title_YFIPD011	 	fr
+_title_YFIPD012	SYMPTOMS	en
+_title_YFIPD012	SYMPTOMES	fr
+symptom_unconscious	Unconscious patient	en
+symptom_unconscious	Patient inconscient	fr
+symptom_fever	Fever	en
+symptom_fever	Fièvre	fr
+symptom_headache	Headache	en
+symptom_headache	Maux de tête	fr
+symptom_weakness	Asthenia (weakness)	en
+symptom_weakness	Asthénie (faiblesse)	fr
+symptom_muscular_pain	Myalgia	en
+symptom_muscular_pain	Myalgie	fr
+symptom_joint_pain	Arthralgia	en
+symptom_joint_pain	Arthralgie	fr
+symptom_hiccup	Hiccups	en
+symptom_hiccup	Hoquet	fr
+symptom_anorexia	Anorexia	en
+symptom_anorexia	Anorexie	fr
+symptom_nausea	Nausea	en
+symptom_nausea	Nausées	fr
+symptom_vomiting	Vomiting	en
+symptom_vomiting	Vomissements	fr
+symptom_sore_throat	Sore throat / difficulty swallowing	en
+symptom_sore_throat	Gorge douloureuse / difficulté à avaler	fr
+symptom_abdominal_pain	Stomach pain / abdominal pain	en
+symptom_abdominal_pain	Douleurs stomacales / abdominales	fr
+symptom_abdomen_tender	Tender abdomen	en
+symptom_abdomen_tender	Abdomen tendu	fr
+symptom_ruq_pain	RUQ pain 	en
+symptom_ruq_pain	Douleurs RUQ	fr
+symptom_diarrhoea	Diarrhoea	en
+symptom_diarrhoea	Diarrhée	fr
+symptom_oliguria_anuria	Oliguria / anuria	en
+symptom_oliguria_anuria	Oligurie / anurie	fr
+symptom_dyspnoea	Dyspnoea	en
+symptom_dyspnoea	Dyspnée	fr
+symptom_cough	Cough	en
+symptom_cough	Toux	fr
+symptom_chest_paine	Chest pain	en
+symptom_chest_paine	Douleurs à la poitrine	fr
+symptom_backache	Back pain	en
+symptom_backache	Douleurs dorsales	fr
+symptom_jaundice	Jaundice	en
+symptom_jaundice	Jaunisse	fr
+symptom_rash_non_haemor	Non-haemorrhagic rash	en
+symptom_rash_non_haemor	Rash non hémorragique	fr
+symptom_hepatomegaly	Hepatomegaly	en
+symptom_hepatomegaly	Hépatomégalie	fr
+symptom_splenomegaly	Splenomegaly	en
+symptom_splenomegaly	Splenomégalie	fr
+symptom_dehydration	Dehydration	en
+symptom_dehydration	Déshydratation	fr
+symptom_anemia_clinical	Clinical anemia	en
+symptom_anemia_clinical	Anémie clinique	fr
+symptom_delirium	Disorientation/Delirium	en
+symptom_delirium	Désorientation / délire	fr
+symptom_convulsions	Convulsions	en
+symptom_convulsions	Convulsions	fr
+symptom_coma	Coma	en
+symptom_coma	Coma	fr
+symptom_shock	Shock	en
+symptom_shock	Choc	fr
+symptom_dark_tip_tongue	Dark coloured tip of tongue	en
+symptom_dark_tip_tongue	Extrémité de la langue foncée	fr
+symptom_oedema_face_conjunctivae	Oedema face or conjunctivae	en
+symptom_oedema_face_conjunctivae	Oedème facial ou conjonctif	fr
+symptom_injected_haemorrhage_eyes	Red or injected eyes	en
+symptom_injected_haemorrhage_eyes	Yeux rouges ou injectés	fr
+symptom_epistaxis	Epistaxis (bleeding nose)	en
+symptom_epistaxis	Epistaxis (saignement de nez)	fr
+symptom_gingival_bleeding	Gingival/oral bleeding	en
+symptom_gingival_bleeding	Saignements gingivaux/oraux	fr
+symptom_haemoptysis	Haemoptysis (coughing blood)	en
+symptom_haemoptysis	Hémoptysie (tousser du sang)	fr
+symptom_haemotemesis	Haematemesis (black vomitus)	en
+symptom_haemotemesis	Hématémèse (vomissement de sang)	fr
+symptom_melena	Melena (black stools)	en
+symptom_melena	Méléna (selles noires)	fr
+symptom_hematuria	Hematuria	en
+symptom_hematuria	Hématurie	fr
+symptom_vaginal_bleeding_non_menstrual	Non-menstrual vaginal bleeding	en
+symptom_vaginal_bleeding_non_menstrual	Saignement vaginal non-menstruel	fr
+symptom_bleeding_injection_site	Bleeding injection site	en
+symptom_bleeding_injection_site	Saignement du site d'injection	fr
+symptom_petechia_purpura	Petechiae 	en
+symptom_petechia_purpura	Pétéchie	fr
+symptom_hypovolemic_shock	Hypovolemic shock	en
+symptom_hypovolemic_shock	Choc hypovolémique	fr
+symptom_hypoglycemia	Hypoglycaemia	en
+symptom_hypoglycemia	Hypoglycémie	fr
+symptom_hypothermia	Hypothermia	en
+symptom_hypothermia	Hypothermie	fr
+symptom_other	Other symptoms	en
+symptom_other	Autres symptômes	fr
+_title_YFIPD059	 	en
+_title_YFIPD059	 	fr
+_title_YFIPD060	CLASSIFICATION	en
+_title_YFIPD060	CLASSIFICATION	fr
+case_classification_yf	Final classification of case	en
+case_classification_yf	Classification finale du cas	fr
+severity	Severity	en
+severity	Sévérité du cas	fr
+_title_YFIPD063	Complications:	en
+_title_YFIPD063	Complications:	fr
+complication1	     complication 1	en
+complication1	     complication 1	fr
+complication2	     complication 2	en
+complication2	     complication 2	fr
+complication3	     complication 3	en
+complication3	     complication 3	fr
+comorbidity	Comorbidity	en
+comorbidity	Comorbidité	fr
+_title_YFIPD068	 	en
+_title_YFIPD068	 	fr
+diagnosis_no_yf	If not yellow fever, diagnosis	en
+diagnosis_no_yf	Si pas fièvre jaune, diagnostic	fr
+_title_YFIPD070	 	en
+_title_YFIPD070	 	fr
+_title_YFIPD071	OUTCOMES	en
+_title_YFIPD071	RESULTAT	fr
+treatment_outcome	Final outcome	en
+treatment_outcome	Résultat final	fr
+discharge_date	Discharge date	en
+discharge_date	Date de sortie	fr
+_title_YFIPD074	 	en
+_title_YFIPD074	 	fr
+_title_YFIPD075	LABORATORY TESTS	en
+_title_YFIPD075	TESTS DE LABORATOIRE	fr
+test_blood_igm	IgM	en
+test_blood_igm	IgM	fr
+test_blood_igg_acute	IgG (acute)	en
+test_blood_igg_acute	IgG (sévère)	fr
+test_blood_igg_convalescent	IgG (convalescent)	en
+test_blood_igg_convalescent	IgG (convalescent)	fr
+test_pcr_yellow_fever	PCR	en
+test_pcr_yellow_fever	PCR	fr
+_title_YFIPD080	 	en
+_title_YFIPD080	 	fr
+test_hepatitis_a	Hepatitis A	en
+test_hepatitis_a	Hépatite A	fr
+test_hepatitis_b	Hepatitis B	en
+test_hepatitis_b	Hépatite B	fr
+test_hepatitis_c	Hepatitis C	en
+test_hepatitis_c	Hépatite C	fr
+test_hepatitis_d	Hepatitis D	en
+test_hepatitis_d	Hépatite D	fr
+test_hepatitis_e	Hepatitis E	en
+test_hepatitis_e	Hépatite E	fr
+_title_YFIPD086	 	en
+_title_YFIPD086	 	fr
+rdt_malaria	Malaria Rapid Diagnosis Test	en
+rdt_malaria	Paludisme, test de diagnostic rapide	fr
+test_malaria_slide	Malaria test, microscopy	en
+test_malaria_slide	Test paludisme, microscopie	fr
+_title_YFIPD089	 	en
+_title_YFIPD089	 	fr
+test_urine_proteinuria	Proteinuria	en
+test_urine_proteinuria	Protéinurie	fr
+test_urine_bilirubinuria	Bilirubinuria	en
+test_urine_bilirubinuria	Bilirubinurie	fr
+test_urine_hematuria	Hematuria	en
+test_urine_hematuria	Hématurie	fr
+test_urine_glucosuria	Glucosuria	en
+test_urine_glucosuria	Glucosurie	fr
+test_urine_wbc	WBC	en
+test_urine_wbc	WBC	fr
+_title_YFIPD095	 	en
+_title_YFIPD095	 	fr
+test_blood_hb	Haemoglobine	en
+test_blood_hb	Hémoglobine	fr
+test_blood_leucocytes	Leucocytes	en
+test_blood_leucocytes	Leucocytes	fr
+test_blood_thrombocytes	Thrombocytes	en
+test_blood_thrombocytes	Thrombocytes	fr
+test_blood_glucose	Glucose	en
+test_blood_glucose	Glucose	fr
+test_coagulation_pt	Coagulation - PT	en
+test_coagulation_pt	Coagulation - PT	fr
+_title_YFIPD101	 	en
+_title_YFIPD101	 	fr
+test_biochem_na	NA+	en
+test_biochem_na	NA+	fr
+test_biochem_k	K+	en
+test_biochem_k	K+	fr
+test_biochem_nh	NH3 / Ammonia	en
+test_biochem_nh	NH3 / Ammonium	fr
+test_biochem_bicarbonate	Bicarbonate	en
+test_biochem_bicarbonate	Bicarbonate	fr
+_title_YFIPD106	 	en
+_title_YFIPD106	 	fr
+test_liver_asat	ASAT	en
+test_liver_asat	ASAT	fr
+test_liver_alat	ALAT	en
+test_liver_alat	ALAT	fr
+test_liver_alp	ALP	en
+test_liver_alp	ALP	fr
+test_liver_bilirubine	Bilirubine direct/indirect	en
+test_liver_bilirubine	Bilirubine directe/indirecte	fr
+_title_YFIPD111	 	en
+_title_YFIPD111	 	fr
+test_kidney_urea	Urea	en
+test_kidney_urea	Urée	fr
+test_kidney_creatinine	Creatinine	en
+test_kidney_creatinine	Créatinine	fr
+test_urine_dipstick	Urine dipstick	en
+test_urine_dipstick	Bandelette urinaire	fr
+test_glycaemia	Glycaemia	en
+test_glycaemia	Glycémie	fr
+_title_YFIPD116	 	en
+_title_YFIPD116	 	fr
+test_other_type	Other test: type	en
+test_other_type	Autre test: type	fr
+test_other_result	Other test: result	en
+test_other_result	Autre type: résultat	fr
+_title_YFIPD119	 	en
+_title_YFIPD119	 	fr
+specimens_sent_to_labo	Specimens / isolates sent to another lab?	en
+specimens_sent_to_labo	Spécimens / isolats envoyés à un autre labo?	fr
+_title_YFIPD121	 	en
+_title_YFIPD121	 	fr
+comments	Comments	en
+comments	Commentaires	fr
+_title_YFIPD123	 	en
+_title_YFIPD123	 	fr

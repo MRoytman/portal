@@ -1,0 +1,21 @@
+1	Positive	en
+2	Negative	en
+6	Done but result unknown	en
+7	Not necessary because of obvious pregnancy	en
+3	Refused	en
+4	Postponed	en
+5	Not Necessary	en
+1	Positif	fr
+2	Négatif	fr
+6	Fait mais résultat inconnu	fr
+7	Pas nécessaire car grossesse évidente	fr
+3	Refusé	fr
+4	Reporté	fr
+5	Pas nécessaire	fr
+1	Positivo	es
+2	Negativo	es
+6	Hecho pero resultado desconocido	es
+7	No necesario porque embarazo evidente	es
+3	Rechazado	es
+4	Postpuesto	es
+5	No necesario	es

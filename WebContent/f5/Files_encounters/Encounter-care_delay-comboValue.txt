@@ -1,0 +1,15 @@
+1	<72h	en
+2	72h - 1 month	en
+3	1 - 6 months	en
+4	6 months - 1 year	en
+5	>1 year	en
+1	<72h	fr
+2	72h - 1 mois	fr
+3	1 - 6 mois	fr
+4	6 mois - 1 an	fr
+5	>1 an	fr
+1	<72h	es
+2	72h - 1 mes	es
+3	1 - 6 meses	es
+4	6 meses - 1 año	es
+5	>1 año	es

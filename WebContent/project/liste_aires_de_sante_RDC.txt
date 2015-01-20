@@ -1,0 +1,6 @@
+health area 1
+health area 2
+health area 3
+health area 4
+health area 5
+health area 6

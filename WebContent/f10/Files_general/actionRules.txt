@@ -1,0 +1,609 @@
+
+// <conceptId>	<RuleRunnerModuleName>		<errorMessageCode>	<params>	
+// !! <RuleRunnerModuleName> must end with "Checker" or "Runner" !!					
+
+///////////////////////////////////////////ACTION RUNNERS///////////////////////////////////					
+
+// AGGREGATION YEAR					
+
+// check date that must be before X years compared to runtime parameter (today's year date). X can be negative.					
+//consult_date_first	date.YearDateJourMustAfterChecker	1	X		
+// check date is smaller than today's year date +0 years					
+//aggregation_year	date.YearDateJourMustBeforeChecker	1	1		
+// check date is greater than today's year date -1 years					
+// aggregation_year	date.YearDateJourMustAfterChecker	1	-1		
+
+
+
+// ATFC - Admissions ************************
+// atfc_admissions
+atfc:admission|transferred|itfc	MapperNotifierActionRunner	2000	atfc:admission|all	CalculatorActionRunner	NOTIFY
+atfc:admission|transferred|atfc	MapperNotifierActionRunner	2000	atfc:admission|all	CalculatorActionRunner	NOTIFY
+atfc:admission|spontaneous	MapperNotifierActionRunner	2000	atfc:admission|all	CalculatorActionRunner	NOTIFY
+atfc:admission|referred|chw	MapperNotifierActionRunner	2000	atfc:admission|all	CalculatorActionRunner	NOTIFY
+atfc:admission|referred|smc	MapperNotifierActionRunner	2000	atfc:admission|all	CalculatorActionRunner	NOTIFY
+atfc:admission|referred|tfc_non_msf	MapperNotifierActionRunner	2000	atfc:admission|all	CalculatorActionRunner	NOTIFY
+atfc:admission|referred|clinic	MapperNotifierActionRunner	2000	atfc:admission|all	CalculatorActionRunner	NOTIFY
+atfc:admission|other	MapperNotifierActionRunner	2000	atfc:admission|all	CalculatorActionRunner	NOTIFY
+
+atfc:admission|all	CalculatorActionRunner	2001	atfc_admissions	NOTIFY	atfc:admission|transferred|itfc	X	ADD	NOTIFY	atfc:admission|transferred|atfc	X	ADD	NOTIFY	atfc:admission|spontaneous	X	ADD	NOTIFY	atfc:admission|referred|chw	X	ADD	NOTIFY	atfc:admission|referred|smc	X	ADD	NOTIFY	atfc:admission|referred|tfc_non_msf	X	ADD	NOTIFY	atfc:admission|referred|clinic	X	ADD	NOTIFY	atfc:admission|other	X	ADD
+
+// ATFC - Discharges ************************
+// atfc_discharges
+atfc:discharge|cured	MapperNotifierActionRunner	2000	atfc:discharge|all	CalculatorActionRunner	NOTIFY
+atfc:discharge|dead	MapperNotifierActionRunner	2000	atfc:discharge|all	CalculatorActionRunner	NOTIFY
+atfc:discharge|defaulter	MapperNotifierActionRunner	2000	atfc:discharge|all	CalculatorActionRunner	NOTIFY
+atfc:discharge|non_responding	MapperNotifierActionRunner	2000	atfc:discharge|all	CalculatorActionRunner	NOTIFY
+atfc:discharge|referred|atfc_msf	MapperNotifierActionRunner	2000	atfc:discharge|all	CalculatorActionRunner	NOTIFY
+atfc:discharge|referred|atfc_non_msf	MapperNotifierActionRunner	2000	atfc:discharge|all	CalculatorActionRunner	NOTIFY
+atfc:discharge|referred|itfc	MapperNotifierActionRunner	2000	atfc:discharge|all	CalculatorActionRunner	NOTIFY
+atfc:discharge|on_demand	MapperNotifierActionRunner	2000	atfc:discharge|all	CalculatorActionRunner	NOTIFY
+atfc:discharge|cheating	MapperNotifierActionRunner	2000	atfc:discharge|all	CalculatorActionRunner	NOTIFY
+atfc:discharge|other	MapperNotifierActionRunner	2000	atfc:discharge|all	CalculatorActionRunner	NOTIFY
+
+atfc:discharge|all	CalculatorActionRunner	2001	atfc_discharges	NOTIFY	atfc:discharge|cured	X	ADD	NOTIFY	atfc:discharge|dead	X	ADD	NOTIFY	atfc:discharge|defaulter	X	ADD	NOTIFY	atfc:discharge|non_responding	X	ADD	NOTIFY	atfc:discharge|referred|atfc_msf	X	ADD	NOTIFY	atfc:discharge|referred|atfc_non_msf	X	ADD	NOTIFY	atfc:discharge|referred|itfc	X	ADD	NOTIFY	atfc:discharge|on_demand	X	ADD	NOTIFY	atfc:discharge|cheating	X	ADD	NOTIFY	atfc:discharge|other	X	ADD
+
+
+// ITFC - Admission - Rows ************************
+// itfc_admissions
+itfc:admission|old|transferred|atfc|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|old|transferred|atfc|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|old|transferred|atfc|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|old|transferred|atfc|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:admission|old|transferred|atfc|Tot	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:admission|old|transferred|atfc|6m-59m	X	ADD	NOTIFY	itfc:admission|old|transferred|atfc|1m-5m	X	ADD
+
+
+// itfc_admissions
+itfc:admission|new|spontaneous|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|new|spontaneous|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|new|spontaneous|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|new|spontaneous|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:admission|new|spontaneous|Tot	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:admission|new|spontaneous|6m-59m	X	ADD	NOTIFY	itfc:admission|new|spontaneous|1m-5m	X	ADD
+
+
+// itfc_admissions
+itfc:admission|new|referred|atfc_msf|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|new|referred|atfc_msf|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|atfc_msf|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|new|referred|atfc_msf|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:admission|new|referred|atfc_msf|Tot	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:admission|new|referred|atfc_msf|6m-59m	X	ADD	NOTIFY	itfc:admission|new|referred|atfc_msf|1m-5m	X	ADD
+
+
+// itfc_admissions
+itfc:admission|new|referred|tfc_non_msf|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|new|referred|tfc_non_msf|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|tfc_non_msf|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|new|referred|tfc_non_msf|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:admission|new|referred|tfc_non_msf|Tot	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:admission|new|referred|tfc_non_msf|6m-59m	X	ADD	NOTIFY	itfc:admission|new|referred|tfc_non_msf|1m-5m	X	ADD
+
+
+// itfc_admissions
+itfc:admission|new|referred|moh_clinic|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|new|referred|moh_clinic|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|moh_clinic|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|new|referred|moh_clinic|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:admission|new|referred|moh_clinic|Tot	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:admission|new|referred|moh_clinic|6m-59m	X	ADD	NOTIFY	itfc:admission|new|referred|moh_clinic|1m-5m	X	ADD
+
+
+// itfc_admissions
+itfc:admission|new|referred|hospital|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|new|referred|hospital|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|hospital|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|new|referred|hospital|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:admission|new|referred|hospital|Tot	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:admission|new|referred|hospital|6m-59m	X	ADD	NOTIFY	itfc:admission|new|referred|hospital|1m-5m	X	ADD
+
+
+// itfc_admissions
+itfc:admission|new|referred|other|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|new|referred|other|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|other|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|new|referred|other|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:admission|new|referred|other|Tot	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:admission|new|referred|other|6m-59m	X	ADD	NOTIFY	itfc:admission|new|referred|other|1m-5m	X	ADD
+
+
+// itfc_admissions
+itfc:admission|all|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|all|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|all|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:admission|all|Tot	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:admission|all|6m-59m	X	ADD	NOTIFY	itfc:admission|all|1m-5m	X	ADD
+
+
+// itfc_admissions
+itfc:rdt_malaria|done|6m-59m	MapperNotifierActionRunner	2000	itfc:rdt_malaria|done|Tot	CalculatorActionRunner	NOTIFY
+itfc:rdt_malaria|done|1m-5m	MapperNotifierActionRunner	2000	itfc:rdt_malaria|done|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:rdt_malaria|done|Tot	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:rdt_malaria|done|6m-59m	X	ADD	NOTIFY	itfc:rdt_malaria|done|1m-5m	X	ADD
+
+
+// itfc_admissions
+itfc:rdt_malaria|positive|6m-59m	MapperNotifierActionRunner	2000	itfc:rdt_malaria|positive|Tot	CalculatorActionRunner	NOTIFY
+itfc:rdt_malaria|positive|1m-5m	MapperNotifierActionRunner	2000	itfc:rdt_malaria|positive|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:rdt_malaria|positive|Tot	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:rdt_malaria|positive|6m-59m	X	ADD	NOTIFY	itfc:rdt_malaria|positive|1m-5m	X	ADD
+
+
+// ITFC - Admission - Columns ************************
+// itfc_admissions
+itfc:admission|old|transferred|atfc|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:admission|new|spontaneous|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|atfc_msf|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|tfc_non_msf|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|moh_clinic|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|hospital|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|other|6m-59m	MapperNotifierActionRunner	2000	itfc:admission|all|6m-59m	CalculatorActionRunner	NOTIFY
+
+itfc:admission|all|6m-59m	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:admission|old|transferred|atfc|6m-59m	X	ADD	NOTIFY	itfc:admission|new|spontaneous|6m-59m	X	ADD	NOTIFY	itfc:admission|new|referred|atfc_msf|6m-59m	X	ADD	NOTIFY	itfc:admission|new|referred|tfc_non_msf|6m-59m	X	ADD	NOTIFY	itfc:admission|new|referred|moh_clinic|6m-59m	X	ADD	NOTIFY	itfc:admission|new|referred|hospital|6m-59m	X	ADD	NOTIFY	itfc:admission|new|referred|other|6m-59m	X	ADD
+
+
+// itfc_admissions
+itfc:admission|old|transferred|atfc|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:admission|new|spontaneous|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|atfc_msf|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|tfc_non_msf|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|moh_clinic|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|hospital|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|other|1m-5m	MapperNotifierActionRunner	2000	itfc:admission|all|1m-5m	CalculatorActionRunner	NOTIFY
+
+itfc:admission|all|1m-5m	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:admission|old|transferred|atfc|1m-5m	X	ADD	NOTIFY	itfc:admission|new|spontaneous|1m-5m	X	ADD	NOTIFY	itfc:admission|new|referred|atfc_msf|1m-5m	X	ADD	NOTIFY	itfc:admission|new|referred|tfc_non_msf|1m-5m	X	ADD	NOTIFY	itfc:admission|new|referred|moh_clinic|1m-5m	X	ADD	NOTIFY	itfc:admission|new|referred|hospital|1m-5m	X	ADD	NOTIFY	itfc:admission|new|referred|other|1m-5m	X	ADD
+
+
+// itfc_admissions
+itfc:admission|old|transferred|atfc|Tot	MapperNotifierActionRunner	2000	itfc:admission|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|new|spontaneous|Tot	MapperNotifierActionRunner	2000	itfc:admission|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|atfc_msf|Tot	MapperNotifierActionRunner	2000	itfc:admission|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|tfc_non_msf|Tot	MapperNotifierActionRunner	2000	itfc:admission|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|moh_clinic|Tot	MapperNotifierActionRunner	2000	itfc:admission|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|hospital|Tot	MapperNotifierActionRunner	2000	itfc:admission|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:admission|new|referred|other|Tot	MapperNotifierActionRunner	2000	itfc:admission|all|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:admission|all|Tot	CalculatorActionRunner	2001	itfc_admissions	NOTIFY	itfc:admission|old|transferred|atfc|Tot	X	ADD	NOTIFY	itfc:admission|new|spontaneous|Tot	X	ADD	NOTIFY	itfc:admission|new|referred|atfc_msf|Tot	X	ADD	NOTIFY	itfc:admission|new|referred|tfc_non_msf|Tot	X	ADD	NOTIFY	itfc:admission|new|referred|moh_clinic|Tot	X	ADD	NOTIFY	itfc:admission|new|referred|hospital|Tot	X	ADD	NOTIFY	itfc:admission|new|referred|other|Tot	X	ADD
+
+// ITFC - Discharges - Rows ************************
+// itfc_discharges
+itfc:discharge|cured|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|cured|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|cured|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|cured|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|cured|Tot	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|cured|6m-59m	X	ADD	NOTIFY	itfc:discharge|cured|1m-5m	X	ADD
+
+
+// itfc_discharges
+itfc:discharge|stabilized|referred|atfc_msf|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|stabilized|referred|atfc_msf|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|stabilized|referred|atfc_msf|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|stabilized|referred|atfc_msf|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|stabilized|referred|atfc_msf|Tot	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|stabilized|referred|atfc_msf|6m-59m	X	ADD	NOTIFY	itfc:discharge|stabilized|referred|atfc_msf|1m-5m	X	ADD
+
+
+// itfc_discharges
+itfc:discharge|stabilized|referred|atfc_non_msf|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|stabilized|referred|atfc_non_msf|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|stabilized|referred|atfc_non_msf|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|stabilized|referred|atfc_non_msf|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|stabilized|referred|atfc_non_msf|Tot	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|stabilized|referred|atfc_non_msf|6m-59m	X	ADD	NOTIFY	itfc:discharge|stabilized|referred|atfc_non_msf|1m-5m	X	ADD
+
+
+// itfc_discharges
+itfc:discharge|non_responding|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|non_responding|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|non_responding|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|non_responding|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|non_responding|Tot	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|non_responding|6m-59m	X	ADD	NOTIFY	itfc:discharge|non_responding|1m-5m	X	ADD
+
+
+// itfc_discharges
+itfc:discharge|dead|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|dead|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|dead|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|dead|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|dead|Tot	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|dead|6m-59m	X	ADD	NOTIFY	itfc:discharge|dead|1m-5m	X	ADD
+
+
+// itfc_discharges
+itfc:discharge|defaulter|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|defaulter|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|defaulter|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|defaulter|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|defaulter|Tot	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|defaulter|6m-59m	X	ADD	NOTIFY	itfc:discharge|defaulter|1m-5m	X	ADD
+
+
+// itfc_discharges
+itfc:discharge|referred|hospital|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|referred|hospital|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|referred|hospital|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|referred|hospital|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|referred|hospital|Tot	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|referred|hospital|6m-59m	X	ADD	NOTIFY	itfc:discharge|referred|hospital|1m-5m	X	ADD
+
+
+
+
+
+// itfc_discharges
+itfc:discharge|on_demand|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|on_demand|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|on_demand|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|on_demand|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|on_demand|Tot	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|on_demand|6m-59m	X	ADD	NOTIFY	itfc:discharge|on_demand|1m-5m	X	ADD
+
+
+// itfc_discharges
+itfc:discharge|other|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|other|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|other|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|other|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|other|Tot	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|other|6m-59m	X	ADD	NOTIFY	itfc:discharge|other|1m-5m	X	ADD
+
+
+// itfc_discharges
+itfc:discharge|all|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|all|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|all|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|all|Tot	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|all|6m-59m	X	ADD	NOTIFY	itfc:discharge|all|1m-5m	X	ADD
+
+
+// ITFC - Discharges - Columns ************************
+// itfc_discharges
+itfc:discharge|cured|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:discharge|stabilized|referred|atfc_msf|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:discharge|stabilized|referred|atfc_non_msf|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:discharge|non_responding|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:discharge|dead|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:discharge|defaulter|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:discharge|referred|hospital|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:discharge|on_demand|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|all|6m-59m	CalculatorActionRunner	NOTIFY
+itfc:discharge|other|6m-59m	MapperNotifierActionRunner	2000	itfc:discharge|all|6m-59m	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|all|6m-59m	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|cured|6m-59m	X	ADD	NOTIFY	itfc:discharge|stabilized|referred|atfc_msf|6m-59m	X	ADD	NOTIFY	itfc:discharge|stabilized|referred|atfc_non_msf|6m-59m	X	ADD	NOTIFY	itfc:discharge|non_responding|6m-59m	X	ADD	NOTIFY	itfc:discharge|dead|6m-59m	X	ADD	NOTIFY	itfc:discharge|defaulter|6m-59m	X	ADD	NOTIFY	itfc:discharge|referred|hospital|6m-59m	X	ADD	NOTIFY	itfc:discharge|on_demand|6m-59m	X	ADD	NOTIFY	itfc:discharge|other|6m-59m	X	ADD
+
+
+// itfc_discharges
+itfc:discharge|cured|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:discharge|stabilized|referred|atfc_msf|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:discharge|stabilized|referred|atfc_non_msf|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:discharge|non_responding|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:discharge|dead|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:discharge|defaulter|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:discharge|referred|hospital|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:discharge|on_demand|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|all|1m-5m	CalculatorActionRunner	NOTIFY
+itfc:discharge|other|1m-5m	MapperNotifierActionRunner	2000	itfc:discharge|all|1m-5m	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|all|1m-5m	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|cured|1m-5m	X	ADD	NOTIFY	itfc:discharge|stabilized|referred|atfc_msf|1m-5m	X	ADD	NOTIFY	itfc:discharge|stabilized|referred|atfc_non_msf|1m-5m	X	ADD	NOTIFY	itfc:discharge|non_responding|1m-5m	X	ADD	NOTIFY	itfc:discharge|dead|1m-5m	X	ADD	NOTIFY	itfc:discharge|defaulter|1m-5m	X	ADD	NOTIFY	itfc:discharge|referred|hospital|1m-5m	X	ADD	NOTIFY	itfc:discharge|on_demand|1m-5m	X	ADD	NOTIFY	itfc:discharge|other|1m-5m	X	ADD
+
+
+// itfc_discharges
+itfc:discharge|cured|Tot	MapperNotifierActionRunner	2000	itfc:discharge|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|stabilized|referred|atfc_msf|Tot	MapperNotifierActionRunner	2000	itfc:discharge|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|stabilized|referred|atfc_non_msf|Tot	MapperNotifierActionRunner	2000	itfc:discharge|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|non_responding|Tot	MapperNotifierActionRunner	2000	itfc:discharge|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|dead|Tot	MapperNotifierActionRunner	2000	itfc:discharge|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|defaulter|Tot	MapperNotifierActionRunner	2000	itfc:discharge|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|referred|hospital|Tot	MapperNotifierActionRunner	2000	itfc:discharge|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|on_demand|Tot	MapperNotifierActionRunner	2000	itfc:discharge|all|Tot	CalculatorActionRunner	NOTIFY
+itfc:discharge|other|Tot	MapperNotifierActionRunner	2000	itfc:discharge|all|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:discharge|all|Tot	CalculatorActionRunner	2001	itfc_discharges	NOTIFY	itfc:discharge|cured|Tot	X	ADD	NOTIFY	itfc:discharge|stabilized|referred|atfc_msf|Tot	X	ADD	NOTIFY	itfc:discharge|stabilized|referred|atfc_non_msf|Tot	X	ADD	NOTIFY	itfc:discharge|non_responding|Tot	X	ADD	NOTIFY	itfc:discharge|dead|Tot	X	ADD	NOTIFY	itfc:discharge|defaulter|Tot	X	ADD	NOTIFY	itfc:discharge|referred|hospital|Tot	X	ADD	NOTIFY	itfc:discharge|on_demand|Tot	X	ADD	NOTIFY	itfc:discharge|other|Tot	X	ADD
+
+
+// ITFC - Patients under treatment ************************
+// itfc_under_treatment
+itfc:patients_under_tt|first_day_week|6m-59m	MapperNotifierActionRunner	2000	itfc:patients_under_tt|first_day_week|Tot	CalculatorActionRunner	NOTIFY
+itfc:patients_under_tt|first_day_week|1m-5m	MapperNotifierActionRunner	2000	itfc:patients_under_tt|first_day_week|Tot	CalculatorActionRunner	NOTIFY
+
+itfc:patients_under_tt|first_day_week|Tot	CalculatorActionRunner	2001	itfc_under_treatment	NOTIFY	itfc:patients_under_tt|first_day_week|6m-59m	X	ADD	NOTIFY	itfc:patients_under_tt|first_day_week|1m-5m	X	ADD
+
+
+// itfc_under_treatment
+itcf:patients_under_tt|last_day_week|6m-59m	MapperNotifierActionRunner	2000	itcf:patients_under_tt|last_day_week|Tot	CalculatorActionRunner	NOTIFY
+itcf:patients_under_tt|last_day_week|1m-5m	MapperNotifierActionRunner	2000	itcf:patients_under_tt|last_day_week|Tot	CalculatorActionRunner	NOTIFY
+
+itcf:patients_under_tt|last_day_week|Tot	CalculatorActionRunner	2001	itfc_under_treatment	NOTIFY	itcf:patients_under_tt|last_day_week|6m-59m	X	ADD	NOTIFY	itcf:patients_under_tt|last_day_week|1m-5m	X	ADD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

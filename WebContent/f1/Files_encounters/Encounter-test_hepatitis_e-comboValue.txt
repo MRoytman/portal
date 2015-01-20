@@ -1,0 +1,8 @@
+1	positive	en
+2	negative	en
+3	not processed	en
+4	unknown	en
+1	positif	fr
+2	négatif	fr
+3	pas fait	fr
+4	inconnu	fr

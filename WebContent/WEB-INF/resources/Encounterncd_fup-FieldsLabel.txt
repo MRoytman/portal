@@ -1,0 +1,208 @@
+_title_NCDE2002	FOLLOW-UP CONSULTATION	en
+_title_NCDE2002	CONSULTATION DE SUIVI	fr
+_title_NCDE2003	 	en
+_title_NCDE2003	 	fr
+_title_NCDE2004	Information on the consultation	en
+_title_NCDE2004	Informations sur la consultation	fr
+consultation_provider	Consultant	en
+consultation_provider	Consultant	fr
+consultation_provider_initials	     Initials of the Doctor / Nurse	en
+consultation_provider_initials	     Initiales du médecin / de l'infirmière	fr
+ncd_consultation_type	Category of consultation	en
+ncd_consultation_type	Catégorie de consultation	fr
+encounter_location_type	Place of the visit	en
+encounter_location_type	Lieu de la visite	fr
+encounter_location_other_details	     If other, specify:	en
+encounter_location_other_details	     Si autre, préciser:	fr
+_title_NCDE2010	 	en
+_title_NCDE2010	 	fr
+_title_NCDE2011	Physical exam	en
+_title_NCDE2011	Examen physique	fr
+weight_kg	Weight (kg)	en
+weight_kg	Poids (kg)	fr
+height_m	Height (m)	en
+height_m	Taille (m)	fr
+abp_diastolic	Blood pressure - diastolic (mm Hg):	en
+abp_diastolic	Tension artérielle - diastolique (mm Hg):	fr
+abp_systolic	                             systolic (mm Hg):	en
+abp_systolic	                                systolique (mm Hg):	fr
+blood_glucose	Blood glucose (mmol/L)	en
+blood_glucose	Glucose (mmol/L)	fr
+_title_NCDE2017	 	en
+_title_NCDE2017	 	fr
+_title_NCDE2018	Diagnosis	en
+_title_NCDE2018	Diagnostic	fr
+ncd_diagnostic_no_change	No change in the diagnosis	en
+ncd_diagnostic_no_change	Pas de changement de diagnostic	fr
+_title_NCDE2020	 	en
+_title_NCDE2020	 	fr
+_title_NCDE2021	If change, new diagnosis:	en
+_title_NCDE2021	Si changement, nouveau diagnostic:	fr
+diagnosis_hbp	Hypertension	en
+diagnosis_hbp	Hypertension	fr
+diagnosis_hbp_pregnancy_induced	     Pregnancy induced hypertension	en
+diagnosis_hbp_pregnancy_induced	     Hypertension gravidique	fr
+diagnosis_diabetes1	Diabetes type I	en
+diagnosis_diabetes1	Diabète type I	fr
+diagnosis_diabetes2	Diabetes type II	en
+diagnosis_diabetes2	Diabète type II	fr
+diagnosis_hypothyroidism	Hypothyroidism	en
+diagnosis_hypothyroidism	Hypothyroïdisme	fr
+diagnosis_copd_asthma	COPD / Asthma	en
+diagnosis_copd_asthma	BPCO / asthme	fr
+diagnosis_epilepsy	Epilepsy	en
+diagnosis_epilepsy	Epilepsie	fr
+_title_NCDE2029	 	en
+_title_NCDE2029	 	fr
+_title_NCDE2030	Complications (since last visit)	en
+_title_NCDE2030	Complications (depuis la dernière visite)	fr
+ncd_complication1	Observed complication 1	en
+ncd_complication1	Complication observée 1	fr
+ncd_complication2	Observed complication 2	en
+ncd_complication2	Complication observée 2	fr
+ncd_complication3	Observed complication 3	en
+ncd_complication3	Complication observée 3	fr
+ncd_complication4	Observed complication 4	en
+ncd_complication4	Complication observée 4	fr
+_title_NCDE2035	 	en
+_title_NCDE2035	 	fr
+_title_NCDE2036	Medication	en
+_title_NCDE2036	Médication	fr
+ncd_side_effect	Side effect observed	en
+ncd_side_effect	Effet secondaire observé	fr
+ncd_medication_no_change	No change in the medication	en
+ncd_medication_no_change	Pas de changement de médication	fr
+_title_NCDE2039	 	en
+_title_NCDE2039	 	fr
+_title_NCDE2040	If change, new medication:	en
+_title_NCDE2040	Si changement, nouvelle médication:	fr
+treatment_current_name_01	Medication 1	en
+treatment_current_name_01	Médicament 1	fr
+treatment_current_name_01_perday	     Nb per day	en
+treatment_current_name_01_perday	     Nb par jour	fr
+treatment_current_name_02	Medication 2	en
+treatment_current_name_02	Médicament 2	fr
+treatment_current_name_02_perday	     Nb per day	en
+treatment_current_name_02_perday	     Nb par jour	fr
+treatment_current_name_03	Medication 3	en
+treatment_current_name_03	Médicament 3	fr
+treatment_current_name_03_perday	     Nb per day	en
+treatment_current_name_03_perday	     Nb par jour	fr
+treatment_current_name_04	Medication 4	en
+treatment_current_name_04	Médicament 4	fr
+treatment_current_name_04_perday	     Nb per day	en
+treatment_current_name_04_perday	     Nb par jour	fr
+treatment_current_name_05	Medication 5	en
+treatment_current_name_05	Médicament 5	fr
+treatment_current_name_05_perday	     Nb per day	en
+treatment_current_name_05_perday	     Nb par jour	fr
+treatment_current_name_06	Medication 6	en
+treatment_current_name_06	Médicament 6	fr
+treatment_current_name_06_perday	     Nb per day	en
+treatment_current_name_06_perday	     Nb par jour	fr
+treatment_current_name_07	Medication 7	en
+treatment_current_name_07	Médicament 7	fr
+treatment_current_name_07_perday	     Nb per day	en
+treatment_current_name_07_perday	     Nb par jour	fr
+treatment_current_name_08	Medication 8	en
+treatment_current_name_08	Médicament 8	fr
+treatment_current_name_08_perday	     Nb per day	en
+treatment_current_name_08_perday	     Nb par jour	fr
+treatment_current_name_09	Medication 9	en
+treatment_current_name_09	Médicament 9	fr
+treatment_current_name_09_perday	     Nb per day	en
+treatment_current_name_09_perday	     Nb par jour	fr
+treatment_current_name_10	Medication 10	en
+treatment_current_name_10	Médicament 10	fr
+treatment_current_name_10_perday	     Nb per day	en
+treatment_current_name_10_perday	     Nb par jour	fr
+treatment_current_name_other	Other medication	en
+treatment_current_name_other	Autre médicament	fr
+treatment_current_name_other_perday	     Nb per day	en
+treatment_current_name_other_perday	     Nb par jour	fr
+_title_NCDE2063	 	en
+_title_NCDE2063	 	fr
+_title_NCDE2064	Synthesis	en
+_title_NCDE2064	Synthèse	fr
+ncd_condition_synthesis	Synthesis on patient's condition	en
+ncd_condition_synthesis	Synthèse de l'état du patient	fr
+_title_NCDE2066	 	en
+_title_NCDE2066	 	fr
+_title_NCDE2067	Patient education	en
+_title_NCDE2067	Education du patient	fr
+ncd_patient_education_by	     Patient education	en
+ncd_patient_education_by	     Education du patient	fr
+_title_NCDE2069	 	en
+_title_NCDE2069	 	fr
+_title_NCDE2070	Requested investigations	en
+_title_NCDE2070	Investigations requises	fr
+test_required_ecg	     ECG	en
+test_required_ecg	     ECG	fr
+test_required_echo	     Echo	en
+test_required_echo	     Echocardiographie	fr
+_title_NCDE1073	 	en
+_title_NCDE1073	 	fr
+test_required_hba1c	     HbA1C	en
+test_required_hba1c	     HbA1C	fr
+test_required_cholesterol_total	     Total cholesterol	en
+test_required_cholesterol_total	     Cholestérol total	fr
+test_required_creatinine	     Creatinine	en
+test_required_creatinine	     Créatinine	fr
+test_required_urine_analysis	     Urine analysis	en
+test_required_urine_analysis	     Analyse d'urine	fr
+test_required_urine_microalbumin	     Urine microalbumin	en
+test_required_urine_microalbumin	     Microalbumine (urine)	fr
+_title_NCDE1079	 	en
+_title_NCDE1079	 	fr
+test_required_alt	     ALT	en
+test_required_alt	     ALT	fr
+test_required_k	     K	en
+test_required_k	     K	fr
+test_required_tsh	     TSH	en
+test_required_tsh	     TSH	fr
+test_required_inr	     INR	en
+test_required_inr	     INR	fr
+test_required_ldl	     LDL	en
+test_required_ldl	     LDL	fr
+_title_NCDE1085	 	en
+_title_NCDE1085	 	fr
+test_required_other	     Other	en
+test_required_other	     Autre	fr
+_title_NCDE2087	 	en
+_title_NCDE2087	 	fr
+_title_NCDE2088	Referral	en
+_title_NCDE2088	Référence	fr
+referral_out_er	     Emergency ward	en
+referral_out_er	     Salle d'urgence	fr
+referral_out_surgery	     Surgery	en
+referral_out_surgery	     Chirurgie	fr
+referral_out_social_worker	     Social worker	en
+referral_out_social_worker	     Travailleur social	fr
+referral_out_other_ngo	     Other NGO	en
+referral_out_other_ngo	     Autre ONG	fr
+_title_NCDE2093	 	en
+_title_NCDE2093	 	fr
+referral_out_cardiologist	     Cardiologist	en
+referral_out_cardiologist	     Cardiologue	fr
+referral_out_endocrinologist	     Endocrinologist	en
+referral_out_endocrinologist	     Endocrinologue	fr
+referral_out_ophthalmologist	     Ophthalmologist	en
+referral_out_ophthalmologist	     Ophthalmologue	fr
+referral_out_neurologist	     Neurologist	en
+referral_out_neurologist	     Neurologue	fr
+referral_out_nephrologist	     Nephrologist	en
+referral_out_nephrologist	     Nephrologue	fr
+referral_out_specialist_other	     Other specialist	en
+referral_out_specialist_other	     Autre spécialiste	fr
+_title_NCDE2100	 	en
+_title_NCDE2100	 	fr
+_title_NCDE2101	Next appointment	en
+_title_NCDE2101	Prochain rendez-vous	fr
+appointment_next_date	Date of next appointment	en
+appointment_next_date	Date du prochain rendez-vous	fr
+_title_NCDE2103	 	en
+_title_NCDE2103	 	fr
+comments	Comments	en
+comments	Commentaires	fr
+_title_NCDE2105	 	en
+_title_NCDE2105	 	fr

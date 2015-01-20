@@ -1,0 +1,10 @@
+1	cured	en
+2	defaulter	en
+3	transferred	en
+4	dead	en
+5	other	en
+1	guéri	fr
+2	abandon	fr
+3	transféré	fr
+4	décédé	fr
+5	autre	fr

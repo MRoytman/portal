@@ -1,0 +1,285 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>MsfApps</groupId>
+	<artifactId>SGBV</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>SGBV</name>
+	<description>SGBV desc</description>
+	<dependencies>
+
+
+		<!-- <dependency> <groupId>org.eclipse.persistence</groupId> <artifactId>javax.persistence</artifactId> 
+			<version>2.0.0</version> </dependency> -->
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.1.6.Final</version>
+			<exclusions>
+
+			</exclusions>
+		</dependency>
+
+
+
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.3.167</version>
+		</dependency>
+
+		<!-- <dependency> <groupId>org.smallmind</groupId> <artifactId>smallmind-liquibase</artifactId> 
+			<version>1.4.5</version> </dependency> -->
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring</artifactId>
+			<version>2.5.6</version>
+		</dependency>
+
+
+		<!-- -->
+
+
+	</dependencies>
+
+
+	<profiles>
+		<profile>
+			<id>entryformprofile</id>
+			<build>
+
+				<plugins>
+
+
+					<!-- Just exclude install files -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jar-plugin</artifactId>
+						<version>2.3</version>
+						<configuration>
+							<excludes>
+								<exclude>**/*.jar</exclude>
+								<exclude>**/*.qvw</exclude>
+							</excludes>
+						</configuration>
+					</plugin>
+
+
+					<!-- Ignore Test Failures -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.7.2</version>
+						<configuration>
+							<testFailureIgnore>true</testFailureIgnore>
+						</configuration>
+					</plugin>
+
+
+					<plugin>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<version>2.3</version>
+
+                        <configuration>
+                                <descriptors>
+                                <!--Relative path to your descriptor -->
+                                        <descriptor>assemblypackage.xml
+                                        </descriptor>
+                                </descriptors>
+                        </configuration>
+
+
+                        <executions>
+                                <execution>
+                                        <id>make-assembly</id>
+                                        <phase>package</phase>
+                                        <goals>
+                                                <goal>attached</goal>
+                                        </goals>
+                                </execution>
+                        </executions>
+
+
+
+
+					</plugin>
+
+				</plugins>
+
+			</build>
+
+		</profile>
+
+		<profile>
+			<id>adminprofile</id>
+			<build>
+
+
+				<plugins>
+
+
+
+					<!-- Just exclude install files -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jar-plugin</artifactId>
+						<version>2.3</version>
+						<configuration>
+							<excludes>
+								<exclude>**/*.jar</exclude>
+								<exclude>**/*.qvw</exclude>
+								<exclude>**/*-comboValue.txt</exclude>
+								<exclude>**/*-FieldsIdType.txt</exclude>
+								<exclude>**/*-FieldsLabel.txt</exclude>								
+							</excludes>
+						</configuration>
+					</plugin>
+
+					<!-- Ignore Test Failures -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.7.2</version>
+						<configuration>
+							<testFailureIgnore>true</testFailureIgnore>
+						</configuration>
+					</plugin>
+
+					<plugin>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<version>2.3</version>
+						<configuration>
+							<archive>
+								<manifest>
+									<mainClass>msf.form.wizard.admin.AdminApp</mainClass>
+									<addClasspath>true</addClasspath>
+								</manifest>
+							</archive>
+							<descriptorRefs>
+								<descriptorRef>jar-with-dependencies</descriptorRef>
+							</descriptorRefs>
+							<finalName>SGBVAdmin1.0</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+
+						</configuration>
+						<executions>
+							<execution>
+								<phase>package</phase>
+								<goals>
+									<goal>single</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+
+				</plugins>
+
+			</build>
+
+		</profile>
+
+
+		<profile>
+			<id>installerprofile</id>
+			<build>
+
+				<plugins>
+					<!-- Just exclude other files than install files -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jar-plugin</artifactId>
+						<version>2.3</version>
+						<configuration>
+							<excludes>
+								<exclude>**/*.gif</exclude>
+								<exclude>**/*.csv</exclude>
+								<exclude>**/*.sql</exclude>
+							</excludes>
+						</configuration>
+					</plugin>
+
+
+					<!-- run java prog -->
+					<!-- build the list of resources file names and save it into resourceList 
+						file name -->
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<version>1.1.1</version>
+						<executions>
+							<execution>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>java</goal>
+								</goals>
+								<configuration>
+									<mainClass>ch.msf.installer.ListResources</mainClass>
+									<arguments>
+										<!-- the directory that holds the resources files -->
+										<argument>/src/main/resources/</argument>
+										<!-- resourceList file name -->
+										<argument>/resourceList.txt</argument>
+									</arguments>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+					<!-- Ignore Test Failures -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>2.7.2</version>
+						<configuration>
+							<testFailureIgnore>true</testFailureIgnore>
+						</configuration>
+					</plugin>
+
+
+					<plugin>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<version>2.3</version>
+						<configuration>
+							<archive>
+								<manifest>
+									<mainClass>ch.msf.installer.Installer</mainClass>
+									<addClasspath>true</addClasspath>
+								</manifest>
+							</archive>
+							<descriptorRefs>
+								<descriptorRef>jar-with-dependencies</descriptorRef>
+							</descriptorRefs>
+							<finalName>SGBVInstaller1.2</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+
+						</configuration>
+						<executions>
+							<execution>
+								<phase>package</phase>
+								<goals>
+									<goal>single</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+
+				</plugins>
+
+			</build>
+
+		</profile>
+
+
+	</profiles>
+
+</project>

@@ -1,0 +1,70 @@
+140	Asthme	en
+141	Bronchiolite	en
+142	Brûlure	en
+147	Choléra	en
+38	Coqueluche	en
+156	Diabète (cas connu)	en
+157	Diabète (nouveau cas)	en
+158	Diphtérie	en
+61	Drépanocytose avec syndrome aigu	en
+160	Gastro-entérite non-sanglante	en
+161	Gastro-entérite sanglante	en
+46	Infection cutanée /abcès	en
+171	Infection Respiratoire Haute (IRH) sévère (croup, épiglotite)	en
+40	Infection urinaire haute	en
+91	Malformation cardiaque congénitale	en
+26	Malnutrition aigue sévère	en
+173	Méningite infectieuse confirmée	en
+71	Noma	en
+177	Paludisme sévère cérébral	en
+178	Paludisme sévère non-cérébral	en
+179	Pathologie abdominale nécessitant une  chirurgicale	en
+76	Pneumonie	en
+57	Poliomyélite	en
+189	Rougeole compliquée	en
+192	Septicémie d'origine inconnue	en
+193	SIDA	en
+195	Syndrome néphrotique	en
+196	Tétanos 	en
+197	Trauma (accidentel))	en
+199	Trauma (intentionnel)	en
+201	Tuberculose extra-pulmonaire	en
+202	Tuberculose pulmonaire	en
+205	Violence sexuelle	en
+other	Other	en
+unknown	Unknown	en
+140	Asthme	fr
+141	Bronchiolite	fr
+142	Brûlure	fr
+147	Choléra	fr
+38	Coqueluche	fr
+156	Diabète (cas connu)	fr
+157	Diabète (nouveau cas)	fr
+158	Diphtérie	fr
+61	Drépanocytose avec syndrome aigu	fr
+160	Gastro-entérite non-sanglante	fr
+161	Gastro-entérite sanglante	fr
+46	Infection cutanée /abcès	fr
+171	Infection Respiratoire Haute (IRH) sévère (croup, épiglotite)	fr
+40	Infection urinaire haute	fr
+91	Malformation cardiaque congénitale	fr
+26	Malnutrition aigue sévère	fr
+173	Méningite infectieuse confirmée	fr
+71	Noma	fr
+177	Paludisme sévère cérébral	fr
+178	Paludisme sévère non-cérébral	fr
+179	Pathologie abdominale nécessitant une  chirurgicale	fr
+76	Pneumonie	fr
+57	Poliomyélite	fr
+189	Rougeole compliquée	fr
+192	Septicémie d'origine inconnue	fr
+193	SIDA	fr
+195	Syndrome néphrotique	fr
+196	Tétanos 	fr
+197	Trauma (accidentel))	fr
+199	Trauma (intentionnel)	fr
+201	Tuberculose extra-pulmonaire	fr
+202	Tuberculose pulmonaire	fr
+205	Violence sexuelle	fr
+other	Autre	fr
+unknown	Inconnu	fr

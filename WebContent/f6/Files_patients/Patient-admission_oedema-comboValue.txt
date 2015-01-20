@@ -1,0 +1,8 @@
+1	No	en
+2	 +	en
+3	 ++	en
+4	 +++	en
+1	Non	fr
+2	 +	fr
+3	 ++	fr
+4	 +++	fr

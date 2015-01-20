@@ -1,0 +1,24 @@
+1	Beaten	en
+2	Mutilations	en
+3	Raped in public	en
+4	Robbery	en
+5	Destruction of property	en
+6	Witness of violence	en
+7	Sexual exploitation	en
+8	Other	en
+1	Coups	fr
+2	Mutilations	fr
+3	Viol en public	fr
+4	Vol	fr
+5	Destruction de la propriété	fr
+6	Assister à des violences	fr
+7	Exploitation sexuelle	fr
+8	Autre	fr
+1	Golpes	es
+2	Mutilación	es
+3	Violación en público	es
+4	Robo	es
+5	Destrucción de propriedad	es
+6	Asistir a violencias	es
+7	Explotación sexual	es
+8	Otro	es

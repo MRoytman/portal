@@ -1,0 +1,276 @@
+AF	Afghanistan	en
+AF	Afghanistan	fr
+AL	Albania	en
+AL	Albanie	fr
+DZ	Algeria	en
+DZ	Algérie	fr
+AO	Angola	en
+AO	Angola	fr
+AI	Anguilla	en
+AI	Anguilla	fr
+AR	Argentina	en
+AR	Argentine	fr
+AM	Armenia	en
+AM	Arménie	fr
+AW	Aruba	en
+AW	Aruba	fr
+AZ	Azerbaijan	en
+AZ	Azerbaïdjan	fr
+BD	Bangladesh	en
+BD	Bangladesh	fr
+BY	Belarus	en
+BY	Bélarus	fr
+BJ	Benin	en
+BJ	Bénin	fr
+BT	Bhutan	en
+BT	Bhoutan	fr
+BO	Bolivia	en
+BO	Bolivie	fr
+BA	Bosnia and Herzegovina	en
+BA	Bosnie-Herzégovine	fr
+BW	Botswana	en
+BW	Botswana	fr
+BR	Brazil	en
+BR	Brésil	fr
+VG	British Virgin Islands	en
+VG	Iles Vierges Britanniques	fr
+BG	Bulgaria	en
+BG	Bulgarie	fr
+BF	Burkina Faso	en
+BF	Burkina Faso	fr
+BI	Burundi	en
+BI	Burundi	fr
+KH	Cambodia	en
+KH	Cambodge	fr
+CM	Cameroon	en
+CM	Cameroun	fr
+CV	Cape Verde	en
+CV	Cap-Vert	fr
+CF	Central African Republic	en
+CF	République Centrafricaine	fr
+TD	Chad	en
+TD	Tchad	fr
+CL	Chile	en
+CL	Chili	fr
+CN	China	en
+CN	Chine	fr
+CO	Colombia	en
+CO	Colombie	fr
+KM	Comoros	en
+KM	Comores	fr
+CR	Costa Rica	en
+CR	Costa Rica	fr
+CI	Côte d'Ivoire	en
+CI	Côte D'ivoire	fr
+CU	Cuba	en
+CU	Cuba	fr
+DJ	Djibouti	en
+DJ	Djibouti	fr
+DM	Dominica	en
+DM	Dominique	fr
+DO	Dominican Republic	en
+DO	République Dominicaine	fr
+CD	DRC Congo	en
+CD	Congo RDC	fr
+TL	East Timor	en
+TL	Timor-Leste (Timor Oriental)	fr
+EC	Ecuador	en
+EC	Equateur	fr
+EG	Egypt	en
+EG	Egypte	fr
+SV	El Salvador	en
+SV	El Salvador	fr
+GQ	Equatorial Guinea	en
+GQ	Guinée Equatoriale	fr
+ER	Eritrea	en
+ER	Erythrée	fr
+ET	Ethiopia	en
+ET	Ethiopie	fr
+GA	Gabon	en
+GA	Gabon	fr
+GM	Gambia	en
+GM	Gambie	fr
+GE	Georgia	en
+GE	Géorgie	fr
+GH	Ghana	en
+GH	Ghana	fr
+GU	Guam	en
+GU	Guam	fr
+GT	Guatemala	en
+GT	Guatemala	fr
+GN	Guinea	en
+GN	Guinéee	fr
+GW	Guinea-Bissau	en
+GW	Guinée-Bissau	fr
+GY	Guyana	en
+GY	Guyana	fr
+HT	Haiti	en
+HT	Haïti	fr
+HN	Honduras	en
+HN	Honduras	fr
+IN	India	en
+IN	Inde	fr
+ID	Indonesia	en
+ID	Indonésie	fr
+IR	Iran	en
+IR	République Islamique d'Iran	fr
+IQ	Iraq	en
+IQ	Iraq	fr
+JO	Jordan	en
+JO	Jordanie	fr
+KZ	Kazakhstan	en
+KZ	Kazakstan	fr
+KE	Kenya	en
+KE	Kenya	fr
+KG	Kyrgyzstan	en
+KG	Kirghizistan	fr
+LA	Laos	en
+LA	Laos	fr
+LB	Lebanon	en
+LB	Liban	fr
+LS	Lesotho	en
+LS	Lesotho	fr
+LR	Liberia	en
+LR	Libéria	fr
+LY	Libya	en
+LY	Libye	fr
+MK	Macedonia	en
+MK	Macédoine	fr
+MG	Madagascar	en
+MG	Madagascar	fr
+MW	Malawi	en
+MW	Malawi	fr
+MY	Malaysia	en
+MY	Malaisie	fr
+ML	Mali	en
+ML	Mali	fr
+MQ	Martinique	en
+MQ	Martinique	fr
+MR	Mauritania	en
+MR	Mauritanie	fr
+MU	Mauritius	en
+MU	Ile Maurice	fr
+YT	Mayotte	en
+YT	Mayotte	fr
+MX	Mexico	en
+MX	Mexique	fr
+MD	Moldova	en
+MD	Moldavie	fr
+MN	Mongolia	en
+MN	Mongolie	fr
+MA	Morocco	en
+MA	Maroc	fr
+MZ	Mozambique	en
+MZ	Mozambique	fr
+MM	Myanmar	en
+MM	Myanmar	fr
+NA	Namibia	en
+NA	Namibie	fr
+NR	Nauru	en
+NR	Nauru	fr
+NP	Nepal	en
+NP	Népal	fr
+NC	New Caledonia	en
+NC	Nouvelle-Calédonie	fr
+NI	Nicaragua	en
+NI	Nicaragua	fr
+NE	Niger	en
+NE	Niger	fr
+NG	Nigeria	en
+NG	Nigéria	fr
+KP	North Korea	en
+KP	Corée du Nord	fr
+OM	Oman	en
+OM	Oman	fr
+other	Other	en
+other	autre	fr
+PK	Pakistan	en
+PK	Pakistan	fr
+PS	Palestina	en
+PS	Autorité Nationale Palestinienne	fr
+PA	Panama	en
+PA	Panama	fr
+PG	Papua New Guinea	en
+PG	Papouasie-Nouvelle-Guinée	fr
+PY	Paraguay	en
+PY	Paraguay	fr
+PE	Peru	en
+PE	Pérou	fr
+PH	Philippines	en
+PH	Philippines	fr
+PR	Puerto Rico	en
+PR	Porto Rico	fr
+CG	Republic of Congo	en
+CG	République du Congo	fr
+RE	Reunion	en
+RE	Ile de la Réunion	fr
+RO	Romania	en
+RO	Roumanie	fr
+RW	Rwanda	en
+RW	Rwanda	fr
+WS	Samoa	en
+WS	Samoa	fr
+ST	Sao Tome and Principe	en
+ST	Sao Tomé-et-Principe	fr
+SN	Senegal	en
+SN	Sénégal	fr
+RS	Serbia	en
+RS	Serbie	fr
+SL	Sierra Leone	en
+SL	Sierra Leone	fr
+SO	Somalia	en
+SO	Somalie	fr
+ZA	South Africa	en
+ZA	Afrique du Sud	fr
+KR	South Korea	en
+KR	Corée du Sud	fr
+SS	South Sudan	en
+SS	Sud Soudan	fr
+LK	Sri Lanka	en
+LK	Sri Lanka	fr
+SD	Sudan	en
+SD	Soudan	fr
+SR	Suriname	en
+SR	Suriname	fr
+SZ	Swaziland	en
+SZ	Swaziland	fr
+CH	Switzerland	en
+CH	Suisse	fr
+SY	Syria	en
+SY	République Arabe Syrienne	fr
+TJ	Tajikistan	en
+TJ	Tadjikistan	fr
+TZ	Tanzania	en
+TZ	Tanzanie	fr
+TH	Thailand	en
+TH	Thaïlande	fr
+TG	Togo	en
+TG	Togo	fr
+TO	Tonga	en
+TO	Tonga	fr
+TN	Tunisia	en
+TN	Tunisie	fr
+TM	Turkmenistan	en
+TM	Turkménistan	fr
+UG	Uganda	en
+UG	Ouganda	fr
+UA	Ukraine	en
+UA	Ukraine	fr
+unknown	Unknown	en
+unknown	inconnu	fr
+UY	Uruguay	en
+UY	Uruguay	fr
+UZ	Uzbekistan	en
+UZ	Ouzbékistan	fr
+VE	Venezuela	en
+VE	Venezuela	fr
+VN	Vietnam	en
+VN	Viêt Nam	fr
+EH	Western Sahara	en
+EH	Sahara Occidental	fr
+YE	Yemen	en
+YE	Yémen	fr
+ZM	Zambia	en
+ZM	Zambie	fr
+ZW	Zimbabwe	en
+ZW	Zimbabwe	fr

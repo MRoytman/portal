@@ -1,0 +1,33 @@
+11	Core 7	en
+1	CS Alonso Suazo	en
+4	CS Carrizal	en
+5	CS El Chile	en
+2	CS Las Crucitas	en
+3	CS Villa Adela	en
+6	Hospital Escuela	en
+7	Hospital María	en
+10	Medicina Forense	en
+9	San Benito	en
+8	other	en
+11	Core 7	fr
+1	CS Alonso Suazo	fr
+4	CS Carrizal	fr
+5	CS El Chile	fr
+2	CS Las Crucitas	fr
+3	CS Villa Adela	fr
+6	Hospital Escuela	fr
+7	Hospital María	fr
+10	Medicina Forense	fr
+9	San Benito	fr
+8	autre	fr
+11	Core 7	es
+1	CS Alonso Suazo	es
+4	CS Carrizal	es
+5	CS El Chile	es
+2	CS Las Crucitas	es
+3	CS Villa Adela	es
+6	Hospital Escuela	es
+7	Hospital María	es
+10	Medicina Forense	es
+9	San Benito	es
+8	otro	es

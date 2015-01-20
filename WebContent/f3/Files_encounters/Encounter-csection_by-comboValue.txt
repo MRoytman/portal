@@ -1,0 +1,8 @@
+1	surgeon	en
+2	gynaecologist	en
+3	general practitioner	en
+4	other	en
+1	chirurgien	fr
+2	gynécologue	fr
+3	généraliste	fr
+4	autre	fr

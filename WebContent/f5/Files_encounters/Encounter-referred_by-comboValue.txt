@@ -1,0 +1,45 @@
+1	Self Referral	en
+2	Street Outreach Team	en
+3	Screening Tool	en
+4	Fiscalía de la Niñez	en
+5	Fiscalía de la Mujer	en
+6	Medicina Forense	en
+7	Centro Integrado	en
+8	Police	en
+9	Institutions (Church, NGO, International Agencies)	en
+10	Other Health Structure	en
+11	Sensitization	en
+12	Family / Friend / Neighbor	en
+13	School / University	en
+14	Medical team inside Health Center	en
+15	Other	en
+1	Auto-référence	fr
+2	Equipe de rue	fr
+3	Outil de screening	fr
+4	Fiscalía de la Niñez	fr
+5	Fiscalía de la Mujer	fr
+6	Medicina Forense	fr
+7	Centro Integrado	fr
+8	Police	fr
+9	Institutions (église, ONG, agences internationales)	fr
+10	Autre structure de santé	fr
+11	Sensibilisation	fr
+12	Famille / amis / voisins	fr
+13	Ecole / université	fr
+14	Equipe médicale d'un centre de santé	fr
+15	Autre	fr
+1	Autoreferencia	es
+2	Equipo de calle	es
+3	Screening Tool	es
+4	Fiscalía de la Niñez	es
+5	Fiscalía de la Mujer	es
+6	Medicina Forense	es
+7	Centro Integrado	es
+8	Policia	es
+9	Instituciones (iglesia, ONG, agencias internacionales)	es
+10	Otra estructura de salud	es
+11	Sensibilización	es
+12	Familia / amigos / vecinos	es
+13	Escuela / universidad	es
+14	Equipo médico del centro de salud	es
+15	Otro	es

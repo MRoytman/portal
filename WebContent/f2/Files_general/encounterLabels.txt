@@ -1,0 +1,4 @@
+mental_health_main_assessment	Mental health - Baseline consultation	en
+mental_health_main_assessment	Santé mentale - Consultation initiale	fr
+mental_health_fup	Mental health - Follow-up	en
+mental_health_fup	Santé mentale - Suivi	fr

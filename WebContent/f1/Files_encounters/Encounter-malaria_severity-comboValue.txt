@@ -1,0 +1,4 @@
+1	simple	en
+2	severe	en
+1	simple	fr
+2	sévère	fr

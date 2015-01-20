@@ -1,0 +1,110 @@
+1	Agok	en
+2	Abathok	en
+3	Abienhom	en
+4	Abyei	en
+5	Achei	en
+6	Achut Madit	en
+7	Ajak Cuach	en
+8	Ajak Makut	en
+9	Ajakthony	en
+10	Akanyiel	en
+11	Akech Noon	en
+12	Anet	en
+13	Anyiel Cuach	en
+14	Athony	en
+15	Ator	en
+16	Awal	en
+17	Darnara	en
+18	Dunmer	en
+19	Juljok	en
+20	Koilluoth	en
+21	Mabior	en
+22	Mabior Kot	en
+23	Mabuny	en
+24	Machbong	en
+25	Mading	en
+26	Mading Jokthiang	en
+27	Majak	en
+28	Majak	en
+29	Majak Noon	en
+30	Majankol	en
+31	Maker Anet	en
+32	Makor	en
+33	Malwal Akor	en
+34	Maper	en
+35	Marial	en
+36	Marial Ajak	en
+37	Marial Aleu	en
+38	Mayen	en
+39	Mayom	en
+40	Mayom Ngok	en
+41	Methawan	en
+42	Nyiel	en
+43	Nyiel Ngok	en
+44	Rayen	en
+45	Riak	en
+46	Rumamer	en
+47	Rumkor	en
+48	Ruothnybol	en
+49	Turalei	en
+50	Wauchin	en
+51	Wunpeth	en
+52	Wunrock	en
+53	Yom Boldit	en
+54	unknown	en
+55	other	en
+1	Agok	fr
+2	Abathok	fr
+3	Abienhom	fr
+4	Abyei	fr
+5	Achei	fr
+6	Achut Madit	fr
+7	Ajak Cuach	fr
+8	Ajak Makut	fr
+9	Ajakthony	fr
+10	Akanyiel	fr
+11	Akech Noon	fr
+12	Anet	fr
+13	Anyiel Cuach	fr
+14	Athony	fr
+15	Ator	fr
+16	Awal	fr
+17	Darnara	fr
+18	Dunmer	fr
+19	Juljok	fr
+20	Koilluoth	fr
+21	Mabior	fr
+22	Mabior Kot	fr
+23	Mabuny	fr
+24	Machbong	fr
+25	Mading	fr
+26	Mading Jokthiang	fr
+27	Majak	fr
+28	Majak	fr
+29	Majak Noon	fr
+30	Majankol	fr
+31	Maker Anet	fr
+32	Makor	fr
+33	Malwal Akor	fr
+34	Maper	fr
+35	Marial	fr
+36	Marial Ajak	fr
+37	Marial Aleu	fr
+38	Mayen	fr
+39	Mayom	fr
+40	Mayom Ngok	fr
+41	Methawan	fr
+42	Nyiel	fr
+43	Nyiel Ngok	fr
+44	Rayen	fr
+45	Riak	fr
+46	Rumamer	fr
+47	Rumkor	fr
+48	Ruothnybol	fr
+49	Turalei	fr
+50	Wauchin	fr
+51	Wunpeth	fr
+52	Wunrock	fr
+53	Yom Boldit	fr
+54	inconnu	fr
+55	autre	fr

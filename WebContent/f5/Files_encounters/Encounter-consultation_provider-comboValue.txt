@@ -1,0 +1,18 @@
+1	Nurse MoH	en
+2	Doctor MoH	en
+3	Specialist MoH	en
+4	Nurse MSF	en
+5	Doctor MSF	en
+6	Co-consultation	en
+1	Infirmière MdS	fr
+2	Médecin MdS	fr
+3	Spécialiste MdS	fr
+4	Infirmière MSF	fr
+5	Médecin MSF	fr
+6	Consultation commune	fr
+1	Enfermera MdS	es
+2	Médico MdS	es
+3	Especialista MdS	es
+4	Enfermera MSF	es
+5	Médico MSF	es
+6	Co-consulta	es

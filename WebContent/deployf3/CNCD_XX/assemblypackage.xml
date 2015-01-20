@@ -1,0 +1,45 @@
+<assembly>
+	<!-- this will create an extra resource project-1.1.1-package.zip, you can 
+		choose jar as well in the format -->
+	<id>package</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<!-- Insert here extra files as configs or, batch files, resources, docs 
+		etc -->
+	<fileSets>
+		<fileSet>
+			<directory>src/main</directory>
+			<outputDirectory>/</outputDirectory>
+			<includes>
+				<include>**/*.*</include>
+
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/assembly/files</directory>
+			<outputDirectory>/</outputDirectory>
+			<includes>
+				<include>**/conf/*.*</include>
+				<include>**/doc/*.*</include>
+			</includes>
+		</fileSet>
+		<!-- I like to integrate the jre as well... simplifies my deployement -->
+		<fileSet>
+			<directory>target/jre</directory>
+			<outputDirectory>/jre</outputDirectory>
+		</fileSet>
+	</fileSets>
+	<!-- This will scrub your dependencies and add them to your lib folder, 
+		I excluded Test stuff as it is not needed, could have declared the resource 
+		as a test only phase as well would not have had to exclude it here -->
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>lib</outputDirectory>
+			<excludes>
+				<exclude>junit:junit</exclude>
+			</excludes>
+		</dependencySet>
+	</dependencySets>
+</assembly>

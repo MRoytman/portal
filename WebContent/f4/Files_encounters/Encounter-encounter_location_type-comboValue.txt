@@ -1,0 +1,6 @@
+1	Clinic	en
+2	Home	en
+3	Other	en
+1	Clinique	fr
+2	Domicile	fr
+3	Autre	fr

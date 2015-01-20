@@ -1,0 +1,18 @@
+1	Positive	en
+2	Negative	en
+3	Indeterminate	en
+4	Refused	en
+5	Postponed	en
+6	Not Necessary	en
+1	Positif	fr
+2	Négatif	fr
+3	Indéterminé	fr
+4	Refusé	fr
+5	Reporté	fr
+6	Pas nécessaire	fr
+1	Positivo	es
+2	Negativo	es
+3	Indeterminado	es
+4	Rechazado	es
+5	Postpuesto	es
+6	No necesario	es

@@ -1,0 +1,48 @@
+sex	0) Sex	en
+sex	Sexe	fr
+_title_P003	DEMOGRAPHICS	en
+_title_P003	DONNEES DEMOGRAPHIQUES	fr
+age	Age (in years)	en
+age	Age (en années)	fr
+camp_arrival_date	Date of arrival in the camp	en
+camp_arrival_date	Date d'arrivée dans le camp	fr
+address_camp_phase	Phase	en
+address_camp_phase	Phase	fr
+address_camp_sector	Sector	en
+address_camp_sector	Secteur	fr
+origin_nationality	Nationality	en
+origin_nationality	Nationalité	fr
+origin_nationality_other_detail	     other, specify:	en
+origin_nationality_other_detail	     autre, préciser:	fr
+origin_ethnicity	Ethnicity	en
+origin_ethnicity	Ethnicité	fr
+origin_ethnicity_other_detail	     other, specify:	en
+origin_ethnicity_other_detail	     autre, préciser:	fr
+patient_phone_number	Phone number	en
+patient_phone_number	Numéro de téléphone	fr
+_title_P013	 	en
+_title_P013	 	fr
+marital_status	Marital status	en
+marital_status	Etat civil	fr
+occupation	Occupation	en
+occupation	Profession	fr
+_title_P02	For children:	en
+_title_P02	Pour les enfants:	fr
+name_father	Father's name	en
+name_father	Nom du père	fr
+name_mother	Mother's name	en
+name_mother	Nom de la mère	fr
+_title_P05	 	en
+_title_P05	 	fr
+comments01	Comments	en
+comments01	Commentaires	fr
+comments02	 	en
+comments02	 	fr
+comments03	 	en
+comments03	 	fr
+comments04	 	en
+comments04	 	fr
+comments05	 	en
+comments05	 	fr
+_title_P06	 	en
+_title_P06	 	fr

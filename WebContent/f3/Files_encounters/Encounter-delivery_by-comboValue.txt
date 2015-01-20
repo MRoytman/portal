@@ -1,0 +1,6 @@
+1	midwife	en
+2	gynaecologist	en
+3	birth attendant	en
+1	sage-femme	fr
+2	gynécologue	fr
+3	accoucheuse	fr

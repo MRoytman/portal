@@ -1,0 +1,10 @@
+1	Hospital maternity	en
+2	in another maternity	en
+3	in another health facility	en
+4	at home	en
+5	other	en
+1	à la maternité de l'hôpital	fr
+2	dans une autre maternité	fr
+3	dans une autre structure de santé	fr
+4	à domicile	fr
+5	autre	fr

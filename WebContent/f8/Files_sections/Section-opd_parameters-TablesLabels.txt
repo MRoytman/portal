@@ -1,0 +1,6 @@
+opdparam:consultants|Label	Number of consultants	en
+opdparam:workdays|Label	Number of days of work	en
+_empty	 	en
+opdparam:consultants|Label	Nombre de consultants	fr
+opdparam:workdays|Label	Nombre de jours de travail	fr
+_empty	 	fr

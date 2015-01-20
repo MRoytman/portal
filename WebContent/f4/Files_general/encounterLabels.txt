@@ -1,0 +1,8 @@
+ncd_baseline	Baseline visit	en
+ncd_baseline	Visite initiale	fr
+ncd_fup	Follow-up visit	en
+ncd_fup	Visite de suivi	fr
+ncd_tests_results	Investigation results	en
+ncd_tests_results	Résultats d'analyses	fr
+ncd_exit	Exit	en
+ncd_exit	Sortie	fr

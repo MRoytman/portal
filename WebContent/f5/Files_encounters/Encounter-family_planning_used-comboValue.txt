@@ -1,0 +1,24 @@
+1	Condoms	en
+2	IUD	en
+3	Oral contraceptives	en
+4	Depoprovera	en
+5	Implant	en
+8	Sterilization	en
+6	Refused	en
+7	Not used	en
+1	Préservatifs	fr
+2	DIU	fr
+3	Contraceptif oral	fr
+4	Depoprovera	fr
+5	Implant	fr
+8	Stérilisation	fr
+6	Refusé	fr
+7	Pas utilisé	fr
+1	Condones	es
+2	Dispositivo Intra Uterino	es
+3	Anticonceptivo oral	es
+4	Depoprovera	es
+5	Implante	es
+8	Esterilizacion	es
+6	Rechazado	es
+7	No utilizado	es

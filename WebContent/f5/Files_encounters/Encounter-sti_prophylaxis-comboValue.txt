@@ -1,0 +1,9 @@
+1	Yes	en
+2	No	en
+3	Not necessary	en
+1	Oui	fr
+2	Non	fr
+3	Pas nécessaire	fr
+1	Sí	es
+2	No	es
+3	No necesario	es

@@ -1,0 +1,10 @@
+1	hypoglycaemia	en
+2	hyperglycaemia	en
+3	normal	en
+4	not processed	en
+unknown	unknown	en
+1	hypoglycémie	fr
+2	hyperglycémie	fr
+3	normal	fr
+4	pas fait	fr
+unknown	inconnu	fr

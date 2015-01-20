@@ -1,0 +1,48 @@
+1	en	Bad parameter
+1	fr	Mauvais paramètre
+1	es	Parámetro incorrecto
+2	en	The message referenced by the number is not defined
+2	fr	Le message référencé par le numéro d'erreur n'est pas défini
+2	es	El mensaje de referencia por el número de error no está definido
+3	en	The configuration is modified but not saved yet, are you sure you want to quit the application? Please click on 'Cancel' button, then on the 'Save' button otherwise.
+3	fr	La configuration est modifiée mais pas encore enregistrée, êtes vous sûr de vouloir quitter? Veuillez cliquer sur le bouton 'Cancel' puis sur le bouton 'Save' sinon.
+3	es	La configuración se ha modificado pero no guardado, sin embargo, está seguro de que desea salir de la aplicación? Por favor, haga clic en el botón "Cancelar", y luego en el botón 'Guardar' lo contrario.
+4	en	The application is not configured properly.
+4	fr	L'application n'est pas configurée correctement
+4	es	La aplicación no está configurado correctamente
+5	en	Are you sure you want to quit this application?
+5	fr	Etes vous sur de vouloir quitter l'application?
+5	es	¿Seguro de que deseas abandonar esta aplicación
+6	en	Cancel
+6	fr	Annuler
+6	es	Cancelar
+100	en	Edit
+100	fr	Editer
+100	es	Editar
+101	en	Revert
+101	fr	Revenir à la valeur précèdente
+101	es	Revertir
+102	en	The value must be a valid date! (dd.MM.yyyy)
+102	fr	La valeur de la date saisie est invalide! (dd.MM.yyyy)
+102	es	El valor debe ser una fecha válida! (dd.MM.yyyy)
+103	en	The value must be a valid number!
+103	fr	La valeur du nombre saisi est invalide!
+103	es	El valor debe ser un número válido!
+104	en	The value must be a valid time! (HH:mm)
+104	fr	La valeur de l'heure saisie est invalide! (HH:mm)
+104	es	El valor debe ser una hora válida ! (HH:mm)
+105	en	The value must be a valid ! 
+105	fr	La valeur saisie est invalide!
+105	es	El valor debe ser una válido !
+106	en	Accept
+106	fr	Accepter
+106	es	Acceptar
+107	en	Search text is too short !
+107	fr	Le texte de recherche est trop court !
+107	es	El texto de buscar es demasiado corto
+500	en	Number is out of range
+500	fr	Le chiffre n'est pas compris dans l'intervalle
+500	es	La figura no está en el intervalo
+2121	en	Mutual exclusive value
+2121	fr	Valeur mutuellement exclusive
+2121	es	Valor mutuamente excluyentes

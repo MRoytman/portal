@@ -1,0 +1,170 @@
+_title_NLHGE002	TRIAGE	en
+_title_NLHGE002	TRIAGE	es
+er_triage_color_code	Triage Code	en
+er_triage_color_code	Codigo Triage	es
+admission_transit_method	Method of Transit	en
+admission_transit_method	Metodo de Traslado	es
+admission_transit_method_other_details	     If other, specify:	en
+admission_transit_method_other_details	     Precisar si 'Otros':	es
+referred_by	Referred to ER by	en
+referred_by	Referido al DU por	es
+_title_NLHGE007	 	en
+_title_NLHGE007	 	es
+_title_NLHGE008	ONLY YELLOW & RED PATIENTS	en
+_title_NLHGE008	SOLAMENTE PACIENTES CODIGO ROJO O AMARILLO	es
+er_time_decision_to_arrival	Time decision - arrival in the ER	en
+er_time_decision_to_arrival	Tiempo decision - llegada al DU	es
+er_triage_time	Time of Triage (HH:MM)	en
+er_triage_time	Hora de Triage (HH:MM)	es
+_title_MH011	 	en
+_title_MH011	 	es
+er_triage_impression_affected	Initial Impression - Affected systems	en
+er_triage_impression_affected	Imprecion inicial - sistemas afectados	es
+_title_MH013	 	en
+_title_MH013	 	es
+_title_MH014	CONSULTATION	en
+_title_MH014	CONSULTA	es
+er_consultation_time	Time of consultation (HH:MM)	en
+er_consultation_time	Hora de consulta (HH:MM)	es
+_title_MH016	 	en
+_title_MH016	 	es
+_title_MH017	Interventions Performed	en
+_title_MH017	Intervenciones Realizadas	es
+treatment_immobilization	     Immobilization plaster/splint	en
+treatment_immobilization	     Immobilización yeso/tabla	es
+treatment_dressing	     Dressing/bandages	en
+treatment_dressing	     Curaciónes/vendajes	es
+treatment_sutures	     Sutures	en
+treatment_sutures	     Suturas	es
+treatment_monitor_cardiac	     Cardiac Monitor	en
+treatment_monitor_cardiac	     Monitoreo Cardiaco	es
+treatment_chest_tube	     Chest Tube	en
+treatment_chest_tube	     Tubo torácico	es
+treatment_ett	     ETT	en
+treatment_ett	     Intubación endotraqueal	es
+treatment_urinary_catheter	     Urinary Catheter	en
+treatment_urinary_catheter	     Sonda urinaria	es
+treatment_cpr	     CPR	en
+treatment_cpr	     RCP	es
+treatment_blood_transfusion	     Blood Transfusion	en
+treatment_blood_transfusion	     Transfusion sangre	es
+treatment_ngog	     NG/OG Tube	en
+treatment_ngog	     Sonda gastrica	es
+treatment_other	     Others	en
+treatment_other	     Otros	es
+treatment_other_details	          If other, specify:	en
+treatment_other_details	          Precisar si 'Otros':	es
+_title_MH030	 	en
+_title_MH030	 	es
+_title_MH031	Diagnostic Tests Performed	en
+_title_MH031	Pruebas Diagnosticas Realizadas	es
+test_blood_chemistry_done	     Blood Chemistry	en
+test_blood_chemistry_done	     Química sanguinea	es
+test_blood_typing_done	     Blood Typing/Test	en
+test_blood_typing_done	     Sangre tipo/Rh para trasfusión	es
+test_blood_glucose_done	     Blood Glucose	en
+test_blood_glucose_done	     Nivel de glucosa sangre	es
+test_ct_scan_done	     CT scan	en
+test_ct_scan_done	     Escan TAC	es
+test_cbc_done	     CBC	en
+test_cbc_done	     Biometría hemática	es
+test_pregnancy_test_done	     Pregnancy Test	en
+test_pregnancy_test_done	     Prueba de embarazo	es
+test_lumbar_puncture_done	     Lumbar puncture	en
+test_lumbar_puncture_done	     Punción lumbar	es
+test_urinalysis_done	     Urinalysis	en
+test_urinalysis_done	     Análisis de orina	es
+test_cardiac_enzymes_done	     Cardiac Enzymes	en
+test_cardiac_enzymes_done	     Enzimas cardiacas	es
+test_blood_urine_done	     Blood Urine	en
+test_blood_urine_done	     Cultivos de sangre/orina	es
+test_ecg_done	     ECG	en
+test_ecg_done	     ECG	es
+test_xray_done	     X-Ray	en
+test_xray_done	     Radiografía	es
+hiv_test_done	     HIV Test	en
+hiv_test_done	     Prueba de VIH	es
+test_other_done	     Others	en
+test_other_done	     Otros	es
+test_other_done_details	          If other, specify:	en
+test_other_done_details	          Precisar si 'Otros':	es
+_title_MH047	 	en
+_title_MH047	 	es
+_title_MH048	Medications Administered	en
+_title_MH048	Medicamentos Administrados	es
+treatment_oxygen_therapy_done	     Oxygen Therapy	en
+treatment_oxygen_therapy_done	     Oxígeno suplemetario	es
+treatment_oral_antibiotics_done	     Oral antibiotics	en
+treatment_oral_antibiotics_done	     Antibiótico por via oral	es
+treatment_tetanus_vaccine_done	     Tetanus Vaccine	en
+treatment_tetanus_vaccine_done	     Vacuna Antitetánica	es
+treatment_medication_via_nebulizer_done	     Medication via Nebulizer	en
+treatment_medication_via_nebulizer_done	     Medicamento Nebulizado	es
+treatment_parenteral_antibiotics_done	     Parenteral Antibiotics	en
+treatment_parenteral_antibiotics_done	     Antibiótico parenteral	es
+treatment_parenterial_antihypertensives_done	     Parenterial antihypertensives	en
+treatment_parenterial_antihypertensives_done	     antihipertensivos parenterales	es
+treatment_antianginal_medications_done	     Anti-anginal medications	en
+treatment_antianginal_medications_done	     medicamento anti-anginal	es
+treatment_thrombolytics_done	     Thrombolytics	en
+treatment_thrombolytics_done	     Trombolitico	es
+treatment_antiarrhythmics_done	     Antiarrhythmics	en
+treatment_antiarrhythmics_done	     antiarrítmico	es
+treatment_pep_done	     PEP	en
+treatment_pep_done	     PEP	es
+treatment_corticosteroids_done	     Corticosteroids	en
+treatment_corticosteroids_done	     Corticosteroides	es
+treatment_oral_analgesics_done	     Oral analgesics	en
+treatment_oral_analgesics_done	     analgésicos por via oral	es
+treatment_parenteral_analgesics_done	     Parenteral analgesics	en
+treatment_parenteral_analgesics_done	     analgésicos parenterales	es
+treatment_antiplatelets_done	     Antiplatelets	en
+treatment_antiplatelets_done	     Anti Plaquetario	es
+treatment_other_done	     Others	en
+treatment_other_done	     Otros	es
+treatment_other_done_details	          If other, specify:	en
+treatment_other_done_details	          Precisar si 'Otros':	es
+_title_MH065	 	en
+_title_MH065	 	es
+er_outcome_death	Death	en
+er_outcome_death	Fallecio	es
+death_cause	     Cause of Death	en
+death_cause	     Causa de Fallecimiento	es
+death_cause_other	          If other, specify:	en
+death_cause_other	          Precisar si 'Otros':	es
+er_outcome_death_comments	     Comments	en
+er_outcome_death_comments	     Comentarios	es
+_title_MH070	 	en
+_title_MH070	 	es
+er_injury	Injury	en
+er_injury	Lesion o herida	es
+er_injury_cause	     Cause	en
+er_injury_cause	     Causa	es
+er_injury_cause_other_detail	          If other, specify:	en
+er_injury_cause_other_detail	          Precisar si 'Otros':	es
+er_injury_location	     Location	en
+er_injury_location	     Localizacion	es
+_title_MH075	For Burn Injuries:	en
+_title_MH075	Si quemaduras:	es
+burn_bsa	     % of BSA burned	en
+burn_bsa	     % area superficia	es
+burn_area_critical	     Critical Area Burn?	en
+burn_area_critical	     Hay quemaduras criticas?	es
+_title_MH078	 	en
+_title_MH078	 	es
+_title_MH079	DISCHARGE FROM ER	en
+_title_MH079	ALTA DEL DU	es
+er_discharge_time	Time of discharge (HH:MM)	en
+er_discharge_time	Hora de la alta (HH:MM)	es
+er_discharge_date	Date (if different from admission date)	en
+er_discharge_date	Fecha (si diferente de fecha de llegada)	es
+er_outcome	Type of Discharge	en
+er_outcome	Tipo del alta	es
+er_referred_to_unit	If Admitted, to which unit?	en
+er_referred_to_unit	Si fue internado, a cual unidad	es
+_title_MH084	 	en
+_title_MH084	 	es
+comments	Comments	en
+comments	Comentarios	es
+_title_MH086	 	en
+_title_MH086	 	es

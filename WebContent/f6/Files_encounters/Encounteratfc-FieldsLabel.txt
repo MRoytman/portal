@@ -1,0 +1,46 @@
+_title_NUTITFC002	ADMISSION / STAY IN ATFC	en
+_title_NUTITFC002	ADMISSION / SEJOUR AU CRENA	fr
+encounter_location	Name of the centre	en
+encounter_location	Nom du centre	fr
+admission_weight	Weight at admission (Kg)	en
+admission_weight	Poids à l'admission (Kg)	fr
+_title_NUTITFC005	 	en
+_title_NUTITFC005	 	fr
+_title_NUTITFC006	DISEASES treated during the stay	en
+_title_NUTITFC006	MALADIES traitées pendant le séjour	fr
+atfc_morbidity_main	Most serious	en
+atfc_morbidity_main	La plus grave	fr
+atfc_morbidity_main_other	          if 'other', specify:	en
+atfc_morbidity_main_other	          si 'autre', préciser:	fr
+atfc_morbidity_secondary_1	Secondary 1	en
+atfc_morbidity_secondary_1	Secondaire 1	fr
+atfc_morbidity_secondary_1_other_details	          if 'other', specify:	en
+atfc_morbidity_secondary_1_other_details	          si 'autre', préciser:	fr
+atfc_morbidity_secondary_2	Secondary 2	en
+atfc_morbidity_secondary_2	Secondaire 2	fr
+atfc_morbidity_secondary_2_other_details	          if 'other', specify:	en
+atfc_morbidity_secondary_2_other_details	          si 'autre', préciser:	fr
+atfc_morbidity_secondary_3	Secondary 3	en
+atfc_morbidity_secondary_3	Secondaire 3	fr
+atfc_morbidity_secondary_3_other_details	          if 'other', specify:	en
+atfc_morbidity_secondary_3_other_details	          si 'autre', préciser:	fr
+_title_NUTITFC015	 	en
+_title_NUTITFC015	 	fr
+_title_NUTITFC016	DISCHARGE	en
+_title_NUTITFC016	SORTIE	fr
+dicharge_date	Discharge date	en
+dicharge_date	Date de sortie	fr
+discharge_weight	Weight at discharge (Kg)	en
+discharge_weight	Poids à la sortie (Kg)	fr
+treatment_outcome_atfc	Outcome of the stay in ATFC	en
+treatment_outcome_atfc	Résultat du séjour au CRENAS	fr
+death_date_estimated	     If death, estimated date	en
+death_date_estimated	     Si décès, date estimée	fr
+death_cause_other_details	     Cause of death	en
+death_cause_other_details	     Cause du décès	fr
+_title_NUTITFC022	 	en
+_title_NUTITFC022	 	fr
+comments	Comments	en
+comments	Commentaires	fr
+_title_NUTITFC024	 	en
+_title_NUTITFC024	 	fr

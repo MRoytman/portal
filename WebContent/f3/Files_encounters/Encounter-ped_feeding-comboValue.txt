@@ -1,0 +1,6 @@
+1	Only breastfeeding	en
+2	Mixt feeding	en
+3	Formula milk	en
+1	Allaitement exclusif	fr
+2	Allaitement mixte	fr
+3	Lait maternisé	fr

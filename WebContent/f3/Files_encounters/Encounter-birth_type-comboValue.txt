@@ -1,0 +1,8 @@
+1	normal vaginal delivery	en
+2	complicated vaginal delivery	en
+3	caesarean section	en
+4	unknown	en
+1	par voie basse, normal	fr
+2	par voie basse, compliqué	fr
+3	par césarienne	fr
+4	inconnu	fr

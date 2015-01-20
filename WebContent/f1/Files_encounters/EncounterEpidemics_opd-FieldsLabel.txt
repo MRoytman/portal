@@ -1,0 +1,46 @@
+_title_EpidOPD002	TYPE OF CASE	en
+_title_EpidOPD002	TYPE DE CAS	fr
+malaria_case	Malaria case	en
+malaria_case	Cas de paludisme	fr
+measles_case	Measles case	en
+measles_case	Cas de rougeole	fr
+yfever_susp_case	Yellow fever case (susp.)	en
+yfever_susp_case	Cas de fièvre jaune (susp.)	fr
+meningitis_sups_case	Meningitis case (susp.)	en
+meningitis_sups_case	Cas de méningite (susp.)	fr
+_title_EpidOPD007	 	en
+_title_EpidOPD007	 	fr
+_title_EpidOPD008	NUTRITIONAL STATUS	en
+_title_EpidOPD008	STATUT NUTRITIONNEL	fr
+muac	MUAC	en
+muac	Périmètre brachial	fr
+oedema	Oedema	en
+oedema	Oedèmes	fr
+_title_EpidOPD011	 	en
+_title_EpidOPD011	 	fr
+_title_EpidOPD012	MEASLES	en
+_title_EpidOPD012	ROUGEOLE	fr
+vaccinal_status_measles	Antecedents of vaccination	en
+vaccinal_status_measles	Antécédents de vaccination	fr
+vaccinal_status_measles_card	          If yes, confirmed by a card?	en
+vaccinal_status_measles_card	          Si oui, confirmé par une carte?	fr
+_title_EpidOPD015	 	en
+_title_EpidOPD015	 	fr
+_title_EpidOPD016	MALARIA	en
+_title_EpidOPD016	PALUDISME	fr
+rdt_malaria	Rapid diagnosis test	en
+rdt_malaria	Test de diagnostic rapide	fr
+malaria_severity	Severity	en
+malaria_severity	Sévérité	fr
+_title_EpidOPD019	 	en
+_title_EpidOPD019	 	fr
+_title_EpidOPD020	REFERRAL	en
+_title_EpidOPD020	REFERENCE	fr
+referred_out	Patient referred to IPD	en
+referred_out	Patient référé vers l'IPD	fr
+_title_EpidOPD022	 	en
+_title_EpidOPD022	 	fr
+comments	Comments	en
+comments	Commentaires	fr
+_title_EpidOPD024	 	en
+_title_EpidOPD024	 	fr

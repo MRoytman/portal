@@ -1,0 +1,5 @@
+sex	Combo-sex	Sex
+age	Numeric
+pregnancy	Boolean
+village_origin[codedList]	Combo-village_origin[codedList]
+comments	Coded

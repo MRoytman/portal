@@ -1,0 +1,26 @@
+1	Cardiovascular	en
+2	GI	en
+3	Respiratory	en
+4	Neurologic	en
+5	Musculoskeletal	en
+6	Ocular	en
+7	ENT	en
+8	GU	en
+9	Male Reproductive	en
+10	Female Reproductive	en
+11	Endocrine	en
+12	Skin	en
+13	Psychologic	en
+1	Cardiovascular	es
+2	GI	es
+3	Respiratorio	es
+4	Neurologico	es
+5	Musculoesquel	es
+6	Ocular	es
+7	ORL	es
+8	Urinario	es
+9	Sist repro masc	es
+10	Sist repro fem	es
+11	Endocrino	es
+12	Piel	es
+13	Sicologico	es

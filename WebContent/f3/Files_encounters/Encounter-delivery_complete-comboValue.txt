@@ -1,0 +1,4 @@
+1	complete	en
+2	incomplete	en
+1	complète	fr
+2	incomplète	fr

@@ -1,0 +1,222 @@
+encounter_location	Place of consultation	en
+encounter_location	Lieu de consultation	fr
+encounter_location	Lugar de consulto	es
+consultation_provider	Consultation done by:	en
+consultation_provider	Consultation faite par:	fr
+consultation_provider	Consulta hecha por:	es
+_title_SGBV01_01	 	en
+_title_SGBV01_01	 	fr
+_title_SGBV01_01	 	es
+_title_SGBV01_02	CONTEXT OF AGGRESSION	en
+_title_SGBV01_02	CONTEXTE DE L'AGRESSION	fr
+_title_SGBV01_02	CONTEXTO DE AGRESION	es
+aggression_date	Date of aggression	en
+aggression_date	Date de l'agression	fr
+aggression_date	Fecha de la agresión	es
+care_delay	Time from event to care	en
+care_delay	Délai entre l'événement et les soins	fr
+care_delay	Tiempo entre acontecimiento y atención	es
+delay_cause	Cause of delay (if > 72 hours)	en
+delay_cause	Cause de délai (si > 72 heures)	fr
+delay_cause	Motivo del plazo (si > 72 horas)	es
+referred_by	Referred by	en
+referred_by	Référé par	fr
+referred_by	Referido por	es
+aggression_intention	Intention	en
+aggression_intention	Intention	fr
+aggression_intention	Intención	es
+aggressor	Aggressor	en
+aggressor	Agresseur	fr
+aggressor	Agresor	es
+aggressor_number	Number of aggressors	en
+aggressor_number	Nombre d'agresseurs	fr
+aggressor_number	Número de agresores	es
+aggression_place	Location / context of aggression	en
+aggression_place	Lieu / contexte de l'agression	fr
+aggression_place	Lugar / contexto de agreción	es
+_title_SGBV01_03	 	en
+_title_SGBV01_03	 	fr
+_title_SGBV01_03	 	es
+_title_SGBV01_04	MECHANISM OF AGGRESSION	en
+_title_SGBV01_04	MECANISME DE L'AGRESSION	fr
+_title_SGBV01_04	MECANISMO DE AGRESION	es
+aggression_mechanism1	Mechanism 1	en
+aggression_mechanism1	Mécanisme 1	fr
+aggression_mechanism1	Mecanismo 1	es
+aggression_mechanism2	Mechanism 2	en
+aggression_mechanism2	Mécanisme 2	fr
+aggression_mechanism2	Mecanismo 2	es
+aggression_mechanism3	Mechanism 3	en
+aggression_mechanism3	Mécanisme 3	fr
+aggression_mechanism3	Mecanismo 3	es
+penetration_site	Penetration site (if rape)	en
+penetration_site	Lieu de pénétration (si viol)	fr
+penetration_site	Lugar de penetración (si violación)	es
+penetration_site_2	Penetration site 2	en
+penetration_site_2	Lieu de pénétration 2	fr
+penetration_site_2	Lugar de penetración 2	es
+penetration_site_3	Penetration site 3	en
+penetration_site_3	Lieu de pénétration 3	fr
+penetration_site_3	Lugar de penetración 3	es
+penetration_mechanism	Penetration mechanism (if rape)	en
+penetration_mechanism	Mécanisme de pénétration (si viol)	fr
+penetration_mechanism	Mecanismo de penetración (si violación)	es
+penetration_mechanism_2	Penetration mechanism 2	en
+penetration_mechanism_2	Mécanisme de pénétration 2	fr
+penetration_mechanism_2	Mecanismo de penetración 2	es
+penetration_mechanism_3	Penetration mechanism 3	en
+penetration_mechanism_3	Mécanisme de pénétration 3	fr
+penetration_mechanism_3	Mecanismo de penetración 3	es
+violence_object	Object	en
+violence_object	Objet	fr
+violence_object	Objeto	es
+threat_death	Threat of death	en
+threat_death	Menace de mort	fr
+threat_death	Amenaza de muerta	es
+abduction	Abduction	en
+abduction	Enlèvement	fr
+abduction	Abducción	es
+abduction_duration	Abduction time	en
+abduction_duration	Durée de la séquestration	fr
+abduction_duration	Duración de abducción	es
+violence_associated_1	Associated violence 1	en
+violence_associated_1	Violence associée 1	fr
+violence_associated_1	Violencia asociada 1	es
+violence_associated_2	Associated violence 2	en
+violence_associated_2	Violence associée 2	fr
+violence_associated_2	Violencia asociada 2	es
+violence_associated_3	Associated violence 3	en
+violence_associated_3	Violence associée 3	fr
+violence_associated_3	Violencia asociada 3	es
+_title_SGBV01_05	 	en
+_title_SGBV01_05	 	fr
+_title_SGBV01_05	 	es
+_title_SGBV01_06	EXAMS	en
+_title_SGBV01_06	EXAMENS	fr
+_title_SGBV01_06	EXAMENES	es
+exam_physical	Physical examination	en
+exam_physical	Examen physique	fr
+exam_physical	Examen físico	es
+exam_physical_provider	Physical examination by	en
+exam_physical_provider	Examen physique par	fr
+exam_physical_provider	Examen físico por	es
+exam_genital	Genital examination	en
+exam_genital	Examen génital	fr
+exam_genital	Examen genital	es
+exam_anal	Anal examination	en
+exam_anal	Examen anal	fr
+exam_anal	Examen anal	es
+trauma_main	Main diagnosis	en
+trauma_main	Diagnostic principal	fr
+trauma_main	Diagnóstico principal	es
+trauma_secondary	Secondary diagnosis	en
+trauma_secondary	Diagnostic secondaire	fr
+trauma_secondary	Diagnóstico secundario	es
+_title_SGBV01_07	 	en
+_title_SGBV01_07	 	fr
+_title_SGBV01_07	 	es
+_title_SGBV01_08	TESTS & TREATMENTS	en
+_title_SGBV01_08	TESTS ET TRAITEMENTS	fr
+_title_SGBV01_08	PRUEBAS Y TRATAMIENTOS	es
+hiv_test_first	HIV first test	en
+hiv_test_first	Premier test VIH	fr
+hiv_test_first	Prueba de VIH	es
+hiv_test_second	HIV confirmation test	en
+hiv_test_second	Test VIH de confirmation	fr
+hiv_test_second	Prueba confirmatoria VIH	es
+pregnancy_test	Pregnancy test	en
+pregnancy_test	Test de grossesse	fr
+pregnancy_test	Test de embarazo	es
+pregnancy_due_to_rape	Pregnancy as consequence of rape	en
+pregnancy_due_to_rape	Grossesse suite à un viol	fr
+pregnancy_due_to_rape	Embarazo causado por una violación	es
+pregnancy_weeks	Pregnancy	en
+pregnancy_weeks	Grossesse	fr
+pregnancy_weeks	Embarazo	es
+sti_prophylaxis	STI Prophylaxis	en
+sti_prophylaxis	Prophylaxie MST	fr
+sti_prophylaxis	Profilaxis ETS	es
+pep_done	PEP	en
+pep_done	PEP	fr
+pep_done	PEP	es
+pep_date	          if PEP done, date:	en
+pep_date	          si PEP faite, date:	fr
+pep_date	          si PEP hecha, fecha:	es
+pep_last_year	PEP last year	en
+pep_last_year	PEP au cours de l'année passée	fr
+pep_last_year	PEP durante del año pasado	es
+contraception_emergency	Emergency contraception	en
+contraception_emergency	Contraception d'urgence	fr
+contraception_emergency	Contracepción de urgencía	es
+family_planning_used	Family planning - method used	en
+family_planning_used	Planning familial - moyen utilisé	fr
+family_planning_used	Planificación familiar - método utilizado	es
+family_planning	Family planning - method offered	en
+family_planning	Planning familial - moyen proposé	fr
+family_planning	Planificación familiar - método propuesto	es
+vaccination_tetanus	Tetanus	en
+vaccination_tetanus	Tétanos	fr
+vaccination_tetanus	Tétanos	es
+vaccination_hepatitisb	Hepatitis B	en
+vaccination_hepatitisb	Hépatite B	fr
+vaccination_hepatitisb	Hepatitis B	es
+injury_management	Injury management	en
+injury_management	Soins des plaies	fr
+injury_management	Cuidados a las herridas	es
+certificate_medical_done	Medical certificate	en
+certificate_medical_done	Certificat médical	fr
+certificate_medical_done	Certificado médico	es
+certificate_medical_given	Medical certificate given to patient	en
+certificate_medical_given	Certificat médical donné au patient	fr
+certificate_medical_given	Certificado médico dado al paciente	es
+abortion_request	Abortion requested	en
+abortion_request	Avortement demandé	fr
+abortion_request	Aborto pedido	es
+abortion_done	Abortion carried out	en
+abortion_done	Avortement effectué	fr
+abortion_done	Aborto realizado	es
+_title_SGBV01_09	 	en
+_title_SGBV01_09	 	fr
+_title_SGBV01_09	 	es
+_title_SGBV01_10	REFERRALS	en
+_title_SGBV01_10	REFERENCES	fr
+_title_SGBV01_10	REFERENCIAS	es
+referral_psychologist	Psychologist	en
+referral_psychologist	Psychologue	fr
+referral_psychologist	Psicólogo	es
+referral_social_worker	Social worker	en
+referral_social_worker	Assistant social	fr
+referral_social_worker	Asistente social	es
+referral_legal_advisor	Legal advisor	en
+referral_legal_advisor	Conseiller juridique	fr
+referral_legal_advisor	Consejero legal	es
+referral_psychiatrist	Psychiatrist	en
+referral_psychiatrist	Psychiatre	fr
+referral_psychiatrist	Psiquiatra	es
+referral_pediatrician	Pediatrician	en
+referral_pediatrician	Pédiatre	fr
+referral_pediatrician	Pediatra	es
+referral_gynecologist	Gynecologist	en
+referral_gynecologist	Gynécologue	fr
+referral_gynecologist	Ginecólogo	es
+referral_external	External referral	en
+referral_external	Référence externe	fr
+referral_external	Referencia externa	es
+referral_external_place_1	External referral: place 1	en
+referral_external_place_1	Référence externe: lieu 1	fr
+referral_external_place_1	Referencia externa: lugar 1	es
+referral_external_place_2	External referral: place 2	en
+referral_external_place_2	Référence externe: lieu 2	fr
+referral_external_place_2	Referencia externa: lugar 2	es
+referral_external_place_3	External referral: place 3	en
+referral_external_place_3	Référence externe: lieu 3	fr
+referral_external_place_3	Referencia externa: lugar 3	es
+_title_SGBV01_11	 	en
+_title_SGBV01_11	 	fr
+_title_SGBV01_11	 	es
+comments	Comments	en
+comments	Commentaires	fr
+comments	Comentarios	es
+_title_SGBV01_12	 	en
+_title_SGBV01_12	 	fr
+_title_SGBV01_12	 	es

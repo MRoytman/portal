@@ -1,0 +1,76 @@
+opdconsult:title01|Label	Number of consultations	en
+opdconsult:title02|Label	 	en
+opdconsultations:|<5y|M|Label	< 5 years - M	en
+opdconsultations:|<5y|F|Label	< 5 years - F	en
+opdconsultations:|5y-14y|M|Label	5 - 14 years - M	en
+opdconsultations:|5y-14y|F|Label	5 - 14 years - F	en
+opdconsultations:|15y-49y|M|Label	15 - 49 years - M	en
+opdconsultations:|15y-49y|F|Label	15 - 49 years - F	en
+opdconsultations:|>=50y|M|Label	>= 50 years - M	en
+opdconsultations:|>=50y|F|Label	>= 50 years - F	en
+opdconsultations:|Tot|Label	TOTAL	en
+opdconsult:title01acute|NC	ACUTE	en
+opdconsult:title01acute|FUP	 	en
+opdconsult:title01chronic|NC	CHRONIC	en
+opdconsult:title01chronic|FUP	 	en
+opdconsult:title01acute_chronic|NC	ACUTE + CHRONIC	en
+opdconsult:title01acute_chronic|FUP	 	en
+opdconsult:title01all	TOTAL	en
+opdconsult:title02acute|NC	New	en
+opdconsult:title02acute|FUP	Follow-up	en
+opdconsult:title02chronic|NC	New	en
+opdconsult:title02chronic|FUP	Follow-up	en
+opdconsult:title02acute_chronic|NC	New	en
+opdconsult:title02acute_chronic|FUP	Follow-up	en
+opdconsult:title02all	 	en
+_title_blank	 	en
+opdconsult:title010|Label	Morbidity	en
+opdreferrals:hospital_emergency|Label	Hospital emergency	en
+opdreferrals:mental_health|Label	Mental Health	en
+opdreferrals:social_worker|Label	Social worker	en
+opdreferrals:nutrition|Label	Nutrition	en
+opdreferrals:specialist|Label	Specialist	en
+opdreferrals:other|Label	Other	en
+opdreferrals:all|Label	TOTAL	en
+opdconsult:title010|opd	OPD	en
+opdconsult:title010|ncd	NCD	en
+opdconsult:title010|srh	SRH	en
+opdconsult:title010|Tot	TOTAL	en
+opdconsult:title01|Label	Nombre de consultations	fr
+opdconsult:title02|Label	 	fr
+opdconsultations:|<5y|M|Label	< 5 ans - M	fr
+opdconsultations:|<5y|F|Label	< 5 ans - F	fr
+opdconsultations:|5y-14y|M|Label	5 - 14 ans - M	fr
+opdconsultations:|5y-14y|F|Label	5 - 14 ans - F	fr
+opdconsultations:|15y-49y|M|Label	15 - 49 ans - M	fr
+opdconsultations:|15y-49y|F|Label	15 - 49 ans - F	fr
+opdconsultations:|>=50y|M|Label	>= 50 ans - M	fr
+opdconsultations:|>=50y|F|Label	>= 50 ans - F	fr
+opdconsultations:|Tot|Label	TOTAL	fr
+opdconsult:title01acute|NC	AIGU	fr
+opdconsult:title01acute|FUP	 	fr
+opdconsult:title01chronic|NC	CHRONIQUE	fr
+opdconsult:title01chronic|FUP	 	fr
+opdconsult:title01acute_chronic|NC	AIGU + CHRONIQUE	fr
+opdconsult:title01acute_chronic|FUP	 	fr
+opdconsult:title01all	TOTAL	fr
+opdconsult:title02acute|NC	Nouveau	fr
+opdconsult:title02acute|FUP	Suivi	fr
+opdconsult:title02chronic|NC	Nouveau	fr
+opdconsult:title02chronic|FUP	Suivi	fr
+opdconsult:title02acute_chronic|NC	Nouveau	fr
+opdconsult:title02acute_chronic|FUP	Suivi	fr
+opdconsult:title02all	 	fr
+_title_blank	 	fr
+opdconsult:title010|Label	Morbidité	fr
+opdreferrals:hospital_emergency|Label	Urgence hôpital	fr
+opdreferrals:mental_health|Label	Santé mentale	fr
+opdreferrals:social_worker|Label	Travailleurs sociaux	fr
+opdreferrals:nutrition|Label	Nutrition	fr
+opdreferrals:specialist|Label	Spécialiste	fr
+opdreferrals:other|Label	Autre	fr
+opdreferrals:all|Label	TOTAL	fr
+opdconsult:title010|opd	OPD	fr
+opdconsult:title010|ncd	NCD	fr
+opdconsult:title010|srh	SSR	fr
+opdconsult:title010|Tot	TOTAL	fr

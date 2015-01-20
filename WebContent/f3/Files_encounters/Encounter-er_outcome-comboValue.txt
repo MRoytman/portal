@@ -1,0 +1,12 @@
+1	Discharged to Home	en
+2	Left before consultation	en
+3	Died	en
+4	Voluntary discharge	en
+5	Transfer	en
+6	Admitted	en
+1	Dado el alta a la casa	es
+2	Salio antes consulta	es
+3	Fallecio	es
+4	Alta Vol	es
+5	Trasladado	es
+6	Internado	es

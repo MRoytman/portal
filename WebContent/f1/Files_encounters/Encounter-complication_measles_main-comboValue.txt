@@ -1,0 +1,20 @@
+1	otite moyenne aigue	en
+2	pneumonie	en
+3	laryngo-trachéo-bronchite aigue (croup)	en
+4	oculaire (conjunctivite purulente, kératitie, xerophtalmie)	en
+5	digestive (diarrhée)	en
+6	neurologique (convulsions, encéphalite, coma)	en
+7	purpura thrombopénique	en
+8	asthénie / léthargie	en
+other	other	en
+unknown	unknown	en
+1	otite moyenne aigue	fr
+2	pneumonie	fr
+3	laryngo-trachéo-bronchite aigue (croup)	fr
+4	oculaire (conjunctivite purulente, kératitie, xerophtalmie)	fr
+5	digestive (diarrhée)	fr
+6	neurologique (convulsions, encéphalite, coma)	fr
+7	purpura thrombopénique	fr
+8	asthénie / léthargie	fr
+other	autre	fr
+unknown	inconnu	fr

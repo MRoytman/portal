@@ -1,0 +1,4 @@
+7	Medical Doctor	en
+7	Médecin	fr
+8	Nurse	en
+8	Infirmière	fr

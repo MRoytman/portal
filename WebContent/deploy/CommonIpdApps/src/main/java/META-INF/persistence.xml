@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+
+	<!-- persistence-unit name="todos" transaction-type="RESOURCE_LOCAL" -->
+	<persistence-unit name="IpdOpdAdmin" transaction-type="RESOURCE_LOCAL">
+
+		<!-- <property name="hibernate.connection.isolation" value="2"/> TRANSACTION_READ_COMMITTED 
+			= 2 is default -->
+
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+		<class>ch.msf.model.SelectedCountry</class>
+		<class>ch.msf.model.Country</class>
+		<class>ch.msf.model.CountryName</class>
+		<class>ch.msf.model.Project</class>
+		<class>ch.msf.model.CareCenter</class>
+		<class>ch.msf.model.Patient</class>
+		<class>ch.msf.model.PatientIdValue</class>
+		<class>ch.msf.model.PatientContext</class>
+		<class>ch.msf.model.Encounter</class>
+		<class>ch.msf.model.ConceptIdValue</class>
+		<class>ch.msf.model.PatientIdentifier</class>
+
+
+		<properties>
+
+			<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
+			<!-- property name="javax.persistence.jdbc.url" value="jdbc:h2:D:\H2DBAdmin;MVCC=TRUE" 
+				/ -->
+			<property name="javax.persistence.jdbc.user" value="user1" />
+			<!-- property name="javax.persistence.jdbc.password" value="user1" / -->
+
+			<!-- EclipseLink should create the database schema automatically -->
+			<!-- property name="eclipselink.ddl-generation" value="create-tables" -->
+			<!-- property name="eclipselink.ddl-generation.output-mode" value="database" -->
+
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+
+			<property name="hibernate.show_sql" value="true" />
+
+		</properties>
+
+	</persistence-unit>
+
+
+	<persistence-unit name="IpdOpd" transaction-type="RESOURCE_LOCAL">
+
+		<class>ch.msf.model.SelectedCountry</class>
+		<class>ch.msf.model.Country</class>
+		<class>ch.msf.model.CountryName</class>
+		<class>ch.msf.model.Project</class>
+		<class>ch.msf.model.CareCenter</class>
+		<class>ch.msf.model.Patient</class>
+		<class>ch.msf.model.PatientIdValue</class>
+		<class>ch.msf.model.PatientContext</class>
+		<class>ch.msf.model.Encounter</class>
+		<class>ch.msf.model.ConceptIdValue</class>
+		<class>ch.msf.model.PatientIdentifier</class>
+
+
+
+		<properties>
+
+			<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />
+			<!-- do not use ;LOCK_TIMEOUT=60000 (app is blocked the time of the timeout 
+				when locking is used) -->
+			<!--MVCC=TRUE (see comment 14 http://stackoverflow.com/questions/4162557/timeout-error-trying-to-lock-table-in-h2) -->
+			<!-- property name="javax.persistence.jdbc.url" value="jdbc:h2:D:\H2DB;MVCC=TRUE" 
+				/ -->
+			<property name="javax.persistence.jdbc.user" value="user1" />
+			<!-- property name="javax.persistence.jdbc.password" value="user1" / -->
+
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<!-- property name="show_sql" value="true" / -->
+
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
+		</properties>
+
+	</persistence-unit>
+
+</persistence>

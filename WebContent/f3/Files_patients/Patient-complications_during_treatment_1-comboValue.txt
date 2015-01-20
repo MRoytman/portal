@@ -1,0 +1,166 @@
+69	Abnormal jaundice or Kernicterus	en
+66	Anaemia < 7 g/dl & Haemorrhagic shock	en
+5	Anémie sévère (quelqu’en soit la cause)	en
+71	Apnoea due to prematurity (not other causes of apnoea)	en
+29	Candidose digestive ou cutanée	en
+9	Carence en fer (anémie microcytaire)	en
+10	Carence en vitamine A (xérophtalmie clinique)	en
+11	Carence en vitamine D3 (rachitisme carentiel clinique)	en
+47	Chirurgie abdominale	en
+48	Chirurgie traumatologique	en
+6	Coma (Glasgow < 8) – Etat de mal convulsif d’UO (Unexplained Origin)	en
+74	Congenital & Neonatal malaria	en
+72	Congenital malformations (except heart congenital malformations)	en
+78	Congenital syphilis	en
+2	Déshydratation aigue grave due au cholera ou à une diarrhée cholériforme sans autre infection diagnostiquée	en
+15	Déshydratation modérée	en
+42	Diabète	en
+16	Diarrhée aiguë aqueuse	en
+17	Diarrhée aiguë sanglante	en
+18	Diarrhée chronique	en
+43	Drépanocytose (Emmel positif et Clinique évocatrice)	en
+1	Etats de choc (septique ou hypovolémique) imminent ou patent	en
+73	Heart congenital malformations & Heart failure	en
+13	Hémorragie digestive haute	en
+80	Hypoglaemia	en
+81	Hypothermia	en
+12	Ictère franc (+/– signes hémorragiques)	en
+14	Iléus paralytique	en
+76	Infant born from active hepatitis B mother	en
+79	Infant born from diabetic mother	en
+75	Infant born from HIV positive mother	en
+77	Infant born from mother with chlamydia or gonorrhea infection	en
+41	Infection autre (e.g. gale, teignes, etc…)	en
+28	Infection cutanée / abcès	en
+4	Infection fungique systémique possible / probable avec candidose digestive, cutanée ou autre	en
+30	Infection oculaire	en
+52	Infection Urinaire Basse (Cystite) probable	en
+22	Infection Urinaire Haute (Pyélonéphrite aigue) probable	en
+44	Infirmité motrice cérébrale (retard / handicap psycho-moteur d’origine cérébrale)	en
+7	Insuffisance Rénale Aigue (IRA) – Toutes causes	en
+19	IRB - Infection Respiratoire Basse (sauf coqueluche et asthme / bronchiolite)	en
+51	IRH - Infection Respiratoire Haute	en
+68	Lower gastro-intestinal haemorrhage (excluding ECUN & Bloody diarrhoea)	en
+8	Malnutrition aiguë sévère	en
+55	Meconial aspiration (severe or moderate)	en
+24	Méningite bactérienne confirmée	en
+65	Moderate and severe dehydration & Hypovolemic shock	en
+62	NEC	en
+57	Neonatal meningitis	en
+61	Neonatal tetanus	en
+53	Noma	en
+64	Nosocomial infections (> 72 h after admission)	en
+60	Omphalitis / Skin infections	en
+27	Ostéoarthrite aigue ou chronique	en
+25	Otite moyenne aiguë - OMA	en
+26	Otite moyenne persistante ou chronique - OMC	en
+32	Paludisme sévère	en
+31	Paludisme simple	en
+50	Pathologie gynéco-obstétricale	en
+54	Perinatal asphyxia & Convulsions	en
+58	Pneumonia	en
+59	Pneumothorax	en
+39	Poliomyélite (paralysie flasque)	en
+70	Respiratory complications due to prematurity (TTN; HMD)	en
+37	Rougeole	en
+56	Sepsis / Septic shock / Other severe infections including urinary tract infections	en
+3	Septicémie avec porte d’entrée respiratoire ou digestive	en
+21	Suspicion asthme / bronchiolite	en
+20	Suspicion coqueluche	en
+23	Suspicion méningite bactérienne	en
+33	Suspicion TB	en
+34	TB confirmée	en
+40	Tétanos	en
+45	Trauma / accident / brûlure accidentelle	en
+46	Trauma / accident / brûlure intentionnelle	en
+67	Upper gastro-intestinal haemorrhage	en
+38	Varicelle	en
+35	VIH-SIDA confirmé	en
+36	VIH-SIDA confirmé et Infection Opportuniste (IO)	en
+49	Violence sexuelle	en
+63	Watery & Bloody diarrhea	en
+82	Unidentified syndrome or Unkown diagnosis	en
+83	Other (not included in the above conditions)	en
+66	Anémie < 7g/dl & Choc hémorragique	fr
+5	Anémie sévère (quelqu’en soit la cause)	fr
+71	Apnées dues à la prématurité (pas les autres apnées)	fr
+54	Asphyxie périnatale & Convulsions	fr
+29	Candidose digestive ou cutanée	fr
+9	Carence en fer (anémie microcytaire)	fr
+10	Carence en vitamine A (xérophtalmie clinique)	fr
+11	Carence en vitamine D3 (rachitisme carentiel clinique)	fr
+47	Chirurgie abdominale	fr
+48	Chirurgie traumatologique	fr
+6	Coma (Glasgow < 8) – Etat de mal convulsif d’UO (Unexplained Origin)	fr
+70	Complications respiratoires de la prématurité (TTN; MMH)	fr
+2	Déshydratation aigue grave due au cholera ou à une diarrhée cholériforme sans autre infection diagnostiquée	fr
+15	Déshydratation modérée	fr
+65	Déshydratations modérées et sévères & Choc hypovolémique	fr
+42	Diabète	fr
+16	Diarrhée aiguë aqueuse	fr
+17	Diarrhée aiguë sanglante	fr
+18	Diarrhée chronique	fr
+63	Diarrhées aqueuses & sanglantes	fr
+43	Drépanocytose (Emmel positif et Clinique évocatrice)	fr
+62	ECUN	fr
+76	Enfant né de mère avec hépatite B active	fr
+77	Enfant né de mère avec infection à chlamydia ou gonorrhée	fr
+79	Enfant né de mère diabétique	fr
+75	Enfant né de mère HIV positive	fr
+1	Etats de choc (septique ou hypovolémique) imminent ou patent	fr
+13	Hémorragie digestive haute	fr
+68	Hémorragie gastro-intestinale basse (excluant ECUN & Diarrhées sanglantes)	fr
+67	Hémorragie gastro-intestinale haute	fr
+80	Hypoglycémie	fr
+81	Hypothermie	fr
+12	Ictère franc (+/– signes hémorragiques)	fr
+69	Ictère pathologique ou nucléaire	fr
+14	Iléus paralytique	fr
+41	Infection autre (e.g. gale, teignes, etc…)	fr
+28	Infection cutanée / abcès	fr
+4	Infection fungique systémique possible / probable avec candidose digestive, cutanée ou autre	fr
+30	Infection oculaire	fr
+52	Infection Urinaire Basse (Cystite) probable	fr
+22	Infection Urinaire Haute (Pyélonéphrite aigue) probable	fr
+64	Infections nosocomiales (> 72 h après l'admission)	fr
+44	Infirmité motrice cérébrale (retard / handicap psycho-moteur d’origine cérébrale)	fr
+55	Inhalation méconiale (grave ou modérée)	fr
+7	Insuffisance Rénale Aigue (IRA) – Toutes causes	fr
+19	IRB - Infection Respiratoire Basse (sauf coqueluche et asthme / bronchiolite)	fr
+51	IRH - Infection Respiratoire Haute	fr
+73	Malformations cardiaques congénitales & Insuffisance cardiaque	fr
+72	Malformations congénitales (excluant les malformations cardiaques congénitales)	fr
+8	Malnutrition aiguë sévère	fr
+24	Méningite bactérienne confirmée	fr
+57	Méningites néonatales	fr
+53	Noma	fr
+60	Omphalite / Infections cutanées	fr
+27	Ostéoarthrite aigue ou chronique	fr
+25	Otite moyenne aiguë - OMA	fr
+26	Otite moyenne persistante ou chronique - OMC	fr
+74	Paludisme congénital & néonatal	fr
+32	Paludisme sévère	fr
+31	Paludisme simple	fr
+50	Pathologie gynéco-obstétricale	fr
+58	Pneumonies	fr
+59	Pneumothorax	fr
+39	Poliomyélite (paralysie flasque)	fr
+37	Rougeole	fr
+56	Septicémie / Choc septique / Autres infections graves incluant les infections urinaires	fr
+3	Septicémie avec porte d’entrée respiratoire ou digestive	fr
+21	Suspicion asthme / bronchiolite	fr
+20	Suspicion coqueluche	fr
+23	Suspicion méningite bactérienne	fr
+33	Suspicion TB	fr
+78	Syphilis congénitale	fr
+34	TB confirmée	fr
+40	Tétanos	fr
+61	Tétanos congénital	fr
+45	Trauma / accident / brûlure accidentelle	fr
+46	Trauma / accident / brûlure intentionnelle	fr
+38	Varicelle	fr
+35	VIH-SIDA confirmé	fr
+36	VIH-SIDA confirmé et Infection Opportuniste (IO)	fr
+49	Violence sexuelle	fr
+82	Syndrome non identifié ou Diagnostic inconnu	fr
+83	Autre (non inclus dans les diagnostics ci-dessus)	fr

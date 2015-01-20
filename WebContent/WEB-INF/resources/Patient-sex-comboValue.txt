@@ -1,0 +1,4 @@
+1	male	en
+1	homme	fr
+2	female	en
+2	femme	fr

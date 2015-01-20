@@ -1,0 +1,19 @@
+aggregationList	en	Year	Week	Theme	Start date	End date
+aggregationList	fr	Année	Semaine	Theme	Date début	Date fin
+sectionList	en	Type	Saved
+sectionList	fr	Type	Sauvegardé
+
+atfc_admissions	en	ATFC ADMISSIONS	 	 	 
+atfc_admissions	fr	ADMISSIONS CRENAS	 	 	 
+atfc_discharges	en	ATFC DISCHARGES    .	 	 	 
+atfc_discharges	fr	SORTIES CRENAS      .	 	 	 
+atfc_comments	en	COMMENTS	 
+atfc_comments	fr	COMMENTAIRES	 
+itfc_admissions	en	ITFC ADMISSIONS                      .	Nut. cases ITFC	Nut. cases Infants	 
+itfc_admissions	fr	ADMISSIONS CRENI            .	Cas nut. CRENI	Cas nut. Nourrissons	 
+itfc_discharges	en	ITFC DISCHARGES                     .	Nut. cases ITFC	Nut. cases Infants	 
+itfc_discharges	fr	SORTIES CRENI                   .	Cas nut. CRENI	Cas nut. Nourrissons	 
+itfc_under_treatment	en	PATIENTS UNDER TREATMENT	Nut. cases ITFC	Nut. cases Infants	 
+itfc_under_treatment	fr	PATIENT EN TRAITEMENT	Cas nut. CRENI	Cas nut. Nourrissons	 
+itfc_comments	en	COMMENTS	 
+itfc_comments	fr	COMMENTAIRES	 

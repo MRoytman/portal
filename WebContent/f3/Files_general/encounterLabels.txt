@@ -1,0 +1,14 @@
+neonatology	Neonatology	en
+neonatology	Néonatologie	fr
+paediatrics	Paediatrics	en
+paediatrics	Pédiatrie	fr
+medicine	Medicine	en
+medicine	Médecine	fr
+delivery	Delivery	en
+delivery	Accouchement	fr
+abortion	Abortion	en
+abortion	Avortement	fr
+emergency_room	Emergency Room	en
+emergency_room	Salle d'urgence	fr
+surgery	Surgery	en
+surgery	Surgery	fr

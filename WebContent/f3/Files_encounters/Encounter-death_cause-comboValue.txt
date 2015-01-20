@@ -1,0 +1,18 @@
+1	Trauma accidental	en
+2	Violencia, including gunshot, stabbing	en
+3	Suicide	en
+4	Cardiac	en
+5	Respiratory	en
+6	CVA/Stroke	en
+7	Sepsis	en
+8	Metabólic	en
+other	Others	en
+1	Trauma accidental	es
+2	Violencia, incluidas herida de bala, puñalada, y golpe	es
+3	Suicidio	es
+4	Cardiaca	es
+5	Respiratoria	es
+6	ACV/derrame	es
+7	Sepsis	es
+8	Metabólica	es
+other	Otros	es

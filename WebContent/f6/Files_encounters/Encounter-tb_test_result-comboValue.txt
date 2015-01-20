@@ -1,0 +1,6 @@
+1	Positive	en
+2	Negative	en
+unknown	Unknown	en
+1	Positif	fr
+2	Négatif	fr
+unknown	Inconnu 	fr

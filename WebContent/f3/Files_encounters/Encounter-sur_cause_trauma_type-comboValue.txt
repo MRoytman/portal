@@ -1,0 +1,10 @@
+1	Road accident	en
+2	Other accident	en
+3	Violence	en
+4	Burn	en
+5	Other trauma	en
+1	Accident de la voie publique	fr
+2	Autre accident	fr
+3	Violence	fr
+4	Brûlure	fr
+5	Autre traumatisme	fr

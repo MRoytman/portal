@@ -1,0 +1,18 @@
+1	Family member	en
+2	Couple	en
+3	Unknown person	en
+4	Known person	en
+5	Others	en
+6	Unknown	en
+1	Membre de la famille	fr
+2	Couple	fr
+3	Personne inconnue	fr
+4	Personne connue	fr
+5	Autre	fr
+6	Inconnu	fr
+1	Familiar	es
+2	Pareja	es
+3	Persona desconocida	es
+4	Persona conocida	es
+5	Otro	es
+6	Desconocido	es

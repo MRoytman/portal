@@ -1,0 +1,20 @@
+// 1	TDF/FTC	en
+// 2	3TC/EFV	en
+9	TDF/3TC/EFV	en
+10	TDF/FTC/EFV	en
+3	AZT/3TC/EFV	en
+4	AZT/3TC/NVP	en
+5	AZT/3TC/ABC	en
+6	AZT/3TC/Lop/r	en
+7	TDF/3TC/Lop/r	en
+8	other	en
+// 1	TDF/FTC	fr
+// 2	3TC/EFV	fr
+9	TDF/3TC/EFV	fr
+10	TDF/FTC/EFV	fr
+3	AZT/3TC/EFV	fr
+4	AZT/3TC/NVP	fr
+5	AZT/3TC/ABC	fr
+6	AZT/3TC/Lop/r	fr
+7	TDF/3TC/Lop/r	fr
+8	autre	fr

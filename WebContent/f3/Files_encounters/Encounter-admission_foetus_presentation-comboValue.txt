@@ -1,0 +1,4 @@
+1	cephalic	en
+2	seat	en
+1	céphalique	fr
+2	siège	fr

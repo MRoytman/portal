@@ -1,0 +1,4 @@
+1	intact	en
+2	broken	en
+1	intactes	fr
+2	rompues	fr

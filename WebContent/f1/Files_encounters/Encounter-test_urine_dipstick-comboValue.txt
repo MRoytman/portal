@@ -1,0 +1,8 @@
+1	proteinuria	en
+2	haematuria	en
+3	not processed	en
+unknown	unknown	en
+1	protéinurie	fr
+2	hématurie	fr
+3	pas fait	fr
+unknown	inconnu	fr

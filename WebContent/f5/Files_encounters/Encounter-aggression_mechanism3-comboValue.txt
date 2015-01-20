@@ -1,0 +1,63 @@
+1	Rape	en
+2	Attempted rape	en
+3	Sexual abuse	en
+4	Incest	en
+5	Sexual harassment	en
+6	Unwanted touching	en
+7	Sexual exploitation	en
+8	Beaten	en
+9	Torture	en
+10	Self harm	en
+11	Fall	en
+12	Fire arm	en
+13	Knives	en
+14	Fire	en
+15	Strangle	en
+16	Poisoning	en
+17	Drowning	en
+18	Agression under effect of drugs	en
+19	Agression under effect alchohol	en
+20	Others	en
+21	Unknown	en
+1	Viol	fr
+2	Tentative de viol	fr
+3	Abus sexuel	fr
+4	Inceste	fr
+5	Harcèlement sexuel	fr
+6	Attouchements	fr
+7	Exploitation sexuelle	fr
+8	Coups	fr
+9	Torture	fr
+10	Dommage autoinfligé	fr
+11	Chute	fr
+12	Arme à feu	fr
+13	Arme blanche	fr
+14	Brûlure	fr
+15	Strangulation	fr
+16	Empoisonnement	fr
+17	Noyade	fr
+18	Agression sous l'effet de la drogue	fr
+19	Agression sous l'effet de l'alcool	fr
+20	Autre	fr
+21	Inconnu	fr
+1	Violación	es
+2	Intento violación	es
+3	Abuso sexual	es
+4	Incesto	es
+5	Acoso sexual	es
+6	Tocamiento	es
+7	Explotación sexual	es
+8	Golpes	es
+9	Tortura	es
+10	Autolesiones	es
+11	Caída	es
+12	Arma de fuego	es
+13	Arma blanca	es
+14	Agresión con fuego	es
+15	Estrangulación	es
+16	Envenenamiento	es
+17	Ahogo	es
+18	Agresión con drogas	es
+19	Agresión con alcohol	es
+20	Otro	es
+21	Desconocido	es

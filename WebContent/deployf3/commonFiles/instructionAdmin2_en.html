@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>MSF App portal</title>
+<link rel="stylesheet" href="template2.css" type="text/css" media="all" />
+<style>
+
+/*
+
+*/
+.appLinks { //
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	border-style: none; // solid; //
+	border-color: red; //
+	border-width: 1px;
+}
+
+.appLinks table {
+	margin: 10px auto auto auto;
+	padding: 10px;
+}
+
+.appLinks table col {
+	background-color: #CCDBDA;
+}
+
+.appLinks table col:first-child {
+	background-color: #CCC;
+}
+
+.appLinks table tr td {
+	height: 30px;
+	padding: 1em;
+}
+
+.appLinks table tr td:first-child {
+	font-size: 22px;
+}
+</style>
+
+</head>
+<body>
+	<header>
+		<div id='header'>
+			<ol>
+				<li id="headerLeft">
+					<p>
+						<img id='msfLogo' src="head_logo_msf.gif"
+							alt="head_logo_msf.gif" />
+					</p>
+				</li>
+				<li id="headerCenter">
+					<h2 id='title'>
+						MSF - Medical data
+						</h1>
+						<h2>Coordination part</h2>
+				</li>
+				<li id="headerRight">
+					<div style="height: 100%;">
+						<input type="text" id="clock" style="padding: 0em;" /> <br>
+						<br> <br> <a
+							href="http://ftp.ocg.msf.org/webstart/IPD_SS/EntryForm UserManual1.1.pdf"
+							target="_blank">Explanations</a>
+
+					</div>
+				</li>
+			</ol>
+		</div>
+	</header>
+
+	<section id="contents">
+		<article>
+			<div class='appLinks'>
+				<table>
+					<col style="" />
+					<col />
+					<tr>
+						<td><a
+							href="http://ftp.ocg.msf.org/webstart/CNCD_LB/IPDAdmin1.4.jnlp"
+							target="_blank">Database medical parameters configuration</a></td>
+						<td><a
+							href="http://ftp.ocg.msf.org/webstart/CNCD_LB/Admin UserManual1.1.pdf"
+							target="_blank">User guide</a></td>
+					</tr>
+
+				</table>
+			</div>
+		</article>
+
+
+	</section>
+
+
+	<footer> </footer>
+	<script>
+		self.setInterval(function() {
+			refreshPage()
+		}, 60000);
+		function refreshPage() {
+			var d = new Date();
+			var t = d.toString();
+			document.getElementById("clock").value = t;
+			location.reload();
+		}
+	</script>
+
+
+</body>
+</html>

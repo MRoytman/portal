@@ -1,0 +1,136 @@
+opdvacci:title01|Label	Type of vaccine	en
+vacci_routine:bcg|Label	BCG	en
+opdvacci:title02|Label	 	en
+vacci_routine:dpt1|Label	DTP1	en
+vacci_routine:dpt2|Label	DTP2	en
+vacci_routine:dpt3|Label	DTP3	en
+vacci_routine:dptbooster|Label	DTP booster	en
+opdvacci:title29|Label	 	en
+vacci_routine:pentavalent1|Label	Pentavalent 1	en
+vacci_routine:pentavalent2|Label	Pentavalent 2	en
+vacci_routine:pentavalent3|Label	Pentavalent 3	en
+vacci_routine:pentavalentbooster|Label	Pentavalent booster	en
+opdvacci:title34|Label	 	en
+vacci_routine:ipv1|Label	IPV 1	en
+vacci_routine:ipv2|Label	IPV 2	en
+vacci_routine:ipv3|Label	IPV 3	en
+opdvacci:title38|Label	 	en
+vacci_routine:polio1|Label	OPV 1	en
+vacci_routine:polio2|Label	OPV 2	en
+vacci_routine:polio3|Label	OPV 3	en
+vacci_routine:poliobooster|Label	OPV booster	en
+opdvacci:title43|Label	 	en
+vacci_routine:measles|Label	Measles	en
+opdvacci:title45|Label	 	en
+vacci_routine:yfever|Label	Yellow Fever	en
+opdvacci:title47|Label	 	en
+vacci_routine:hepb_birth|Label	Hepatitis B, at birth	en
+vacci_routine:hepb1|Label	Hepatis B 1	en
+vacci_routine:hepb2|Label	Hepatis B 2	en
+vacci_routine:hepb3|Label	Hepatis B 3	en
+vacci_routine:hepb4|Label	Hepatis B 4	en
+opdvacci:title53|Label	 	en
+vacci_routine:hib1|Label	Hib 1	en
+vacci_routine:hib2|Label	Hib 2	en
+vacci_routine:hib3|Label	Hib 3	en
+opdvacci:title57|Label	 	en
+vacci_routine:pcv1|Label	PCV 1	en
+vacci_routine:pcv2|Label	PCV 2	en
+vacci_routine:pcv3|Label	PCV 3	en
+vacci_routine:pcv4|Label	PCV 4	en
+vacci_routine:pcvbooster|Label	PCV booster	en
+opdvacci:title63|Label	 	en
+vacci_routine:rotavirus1|Label	Rotavirus 1	en
+vacci_routine:rotavirus2|Label	Rotavirus 2	en
+vacci_routine:rotavirus3|Label	Rotavirus 3	en
+opdvacci:title67|Label	 	en
+vacci_routine:rabies1|Label	Rabies 1	en
+vacci_routine:rabies2|Label	Rabies 2	en
+vacci_routine:rabies3|Label	Rabies 3	en
+vacci_routine:rabies4|Label	Rabies 4	en
+vacci_routine:rabiesbooster|Label	Rabies booster	en
+opdvacci:title01|0m-11m	0 - 11 months	en
+opdvacci:title01|12m-59m	12 - 59 months	en
+opdvacci:title01|>=60m	>= 60 months	en
+opdvacci:title01|Tot	TOTAL	en
+opdvacci:title01|doses	Doses used	en
+opdvacci:title01|days_rupt	Days of rupture	en
+opdvacci:title81|Label	Type of vaccine	en
+vacci_routine:tt1|Label	TT1	en
+vacci_routine:tt2|Label	TT2	en
+vacci_routine:tt3|Label	TT3	en
+vacci_routine:tt4|Label	TT4	en
+vacci_routine:tt5|Label	TT5	en
+vacci_routine:ttig|Label	Anti-Tetanus Ig	en
+opdvacci:title81|pregnant	Pregnant w.	en
+opdvacci:title81|15y-45y	15-45y. w.	en
+opdvacci:title81|wounded	Wounded	en
+_title_blank	 	en
+opdvacci:title01|Label	Type de vaccin	fr
+vacci_routine:bcg|Label	BCG	fr
+opdvacci:title02|Label	 	fr
+vacci_routine:dpt1|Label	DTP1	fr
+vacci_routine:dpt2|Label	DTP2	fr
+vacci_routine:dpt3|Label	DTP3	fr
+vacci_routine:dptbooster|Label	Booster DTP	fr
+opdvacci:title29|Label	 	fr
+vacci_routine:pentavalent1|Label	Pentavalent 1	fr
+vacci_routine:pentavalent2|Label	Pentavalent 2	fr
+vacci_routine:pentavalent3|Label	Pentavalent 3	fr
+vacci_routine:pentavalentbooster|Label	Booster pentavalent	fr
+opdvacci:title34|Label	 	fr
+vacci_routine:ipv1|Label	IPV 1	fr
+vacci_routine:ipv2|Label	IPV 2	fr
+vacci_routine:ipv3|Label	IPV 3	fr
+opdvacci:title38|Label	 	fr
+vacci_routine:polio1|Label	OPV 1	fr
+vacci_routine:polio2|Label	OPV 2	fr
+vacci_routine:polio3|Label	OPV 3	fr
+vacci_routine:poliobooster|Label	Booster OPV	fr
+opdvacci:title43|Label	 	fr
+vacci_routine:measles|Label	Rougeole	fr
+opdvacci:title45|Label	 	fr
+vacci_routine:yfever|Label	Fièvre jaune	fr
+opdvacci:title47|Label	 	fr
+vacci_routine:hepb_birth|Label	Hépatite B à la naissance	fr
+vacci_routine:hepb1|Label	Hépatite B 1	fr
+vacci_routine:hepb2|Label	Hépatite B 2	fr
+vacci_routine:hepb3|Label	Hépatite B 3	fr
+vacci_routine:hepb4|Label	Hépatite B 4	fr
+opdvacci:title53|Label	 	fr
+vacci_routine:hib1|Label	Hib 1	fr
+vacci_routine:hib2|Label	Hib 2	fr
+vacci_routine:hib3|Label	Hib 3	fr
+opdvacci:title57|Label	 	fr
+vacci_routine:pcv1|Label	PCV 1	fr
+vacci_routine:pcv2|Label	PCV 2	fr
+vacci_routine:pcv3|Label	PCV 3	fr
+vacci_routine:pcv4|Label	PCV 4	fr
+vacci_routine:pcvbooster|Label	Booster PCV	fr
+opdvacci:title63|Label	 	fr
+vacci_routine:rotavirus1|Label	Rotavirus 1	fr
+vacci_routine:rotavirus2|Label	Rotavirus 2	fr
+vacci_routine:rotavirus3|Label	Rotavirus 3	fr
+opdvacci:title67|Label	 	fr
+vacci_routine:rabies1|Label	Rage 1	fr
+vacci_routine:rabies2|Label	Rage 2	fr
+vacci_routine:rabies3|Label	Rage 3	fr
+vacci_routine:rabies4|Label	Rage 4	fr
+vacci_routine:rabiesbooster|Label	Booster rage	fr
+opdvacci:title01|0m-11m	0 - 11 mois	fr
+opdvacci:title01|12m-59m	12 - 59 mois	fr
+opdvacci:title01|>=60m	>= 60 mois	fr
+opdvacci:title01|Tot	TOTAL	fr
+opdvacci:title01|doses	Doses utilisées	fr
+opdvacci:title01|days_rupt	Jours de rupture	fr
+opdvacci:title81|Label	Type de vaccin	fr
+vacci_routine:tt1|Label	TT1	fr
+vacci_routine:tt2|Label	TT2	fr
+vacci_routine:tt3|Label	TT3	fr
+vacci_routine:tt4|Label	TT4	fr
+vacci_routine:tt5|Label	TT5	fr
+vacci_routine:ttig|Label	Antitétanique Ig	fr
+opdvacci:title81|pregnant	F. enceintes	fr
+opdvacci:title81|15y-45y	F. 15-45y ans	fr
+opdvacci:title81|wounded	Blessés	fr
+_title_blank	 	fr

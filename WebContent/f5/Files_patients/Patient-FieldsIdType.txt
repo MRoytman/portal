@@ -1,0 +1,6 @@
+sex	Combo-sex	Sex
+_title_01P	Title
+address_area	Combo-address_area
+consult_date_first	Date
+_title_02P	Title
+comments	Coded

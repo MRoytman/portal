@@ -1,0 +1,10 @@
+Epidemics_opd	Case in OPD	en
+Epidemics_opd	Cas en OPD	fr
+Measles_malaria_severe	IPD - Malaria/measles	en
+Measles_malaria_severe	IPD - Paludisme/rougeole	fr
+Yellow_Fever_Case	IPD - Yellow fever	en
+Yellow_Fever_Case	IPD - Fièvre jaune	fr
+Cholera_ORS	Cholera ORS	en
+Cholera_ORS	Choléra ORS	fr
+Cholera_CTC	Cholera CTU	en
+Cholera_CTC	Choléra CTU	fr

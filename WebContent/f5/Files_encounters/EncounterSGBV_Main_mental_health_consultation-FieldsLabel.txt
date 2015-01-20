@@ -1,0 +1,93 @@
+_title_SGBV03_01	CONTEXT OF CONSULTATION	en
+_title_SGBV03_01	CONTEXTE DE LA CONSULTATION	fr
+_title_SGBV03_01	CONTEXTO DE CONSULTA	es
+encounter_location	Place of consultation	en
+encounter_location	Lieu de consultation	fr
+encounter_location	Lugar de consulto	es
+consultation_mental_health_provider	Consultation done by:	en
+consultation_mental_health_provider	Consultation faite par:	fr
+consultation_mental_health_provider	Consulta hecha por:	es
+referred_by	Referred by	en
+referred_by	Référé par	fr
+referred_by	Referido por	es
+_title_SGBV03_02	 	en
+_title_SGBV03_02	 	fr
+_title_SGBV03_02	 	es
+_title_SGBV03_03	CAUSE OF CONSULTATION & DIAGNOSIS	en
+_title_SGBV03_03	CAUSE DE CONSULTATION ET DIAGNOSTIC	fr
+_title_SGBV03_03	MOTIVO DE CONSULTA Y DIAGNOSTICO	es
+encounter_motive	Motive for consultation	en
+encounter_motive	Motif de consultations	fr
+encounter_motive	Motivo de consulta	es
+trauma_event_main	Main traumatic event	en
+trauma_event_main	Evénement traumatique principal	fr
+trauma_event_main	Acontecimiento traumático principal	es
+trauma_event_date	Date of traumatic event	en
+trauma_event_date	Date de l'événement traumatique	fr
+trauma_event_date	Fecha del acontecimiento taumático	es
+care_delay	Time from event to care	en
+care_delay	Délai entre l'événement et les soins	fr
+care_delay	Tiempo entre acontecimiento y atención	es
+complaint_main	Main complaint	en
+complaint_main	Principale plainte	fr
+complaint_main	Quejido principal	es
+diagnosis_psychiatric_impression	Diagnosis impression	en
+diagnosis_psychiatric_impression	Hypothèse de diagnostic	fr
+diagnosis_psychiatric_impression	Impresión médico	es
+diagnosis_psychiatric	Diagnosis	en
+diagnosis_psychiatric	Diagnostic	fr
+diagnosis_psychiatric	Diagnóstico	es
+_title_SGBV03_04	 	en
+_title_SGBV03_04	 	fr
+_title_SGBV03_04	 	es
+_title_SGBV03_05	INTERVENTION	en
+_title_SGBV03_05	INTERVENTION	fr
+_title_SGBV03_05	INTERVENCION	es
+pfa_done	PFA	en
+pfa_done	PFA	fr
+pfa_done	PFA	es
+pfa_provider	PFA by whom?	en
+pfa_provider	PFA par qui?	fr
+pfa_provider	PFA por quién?	es
+intervention_psycho_type	Type of psychological intervention	en
+intervention_psycho_type	Type d'intervention psychologique	fr
+intervention_psycho_type	Tipo de intervención psicóloga	es
+antecedents_psychiatric	Psychiatric antecedents	en
+antecedents_psychiatric	Antécédents psychiatriques	fr
+antecedents_psychiatric	Antecedentes psiquiátricos	es
+medication_psychiatric_1	Psychiatric medication 1	en
+medication_psychiatric_1	Médication psychiatrique 1	fr
+medication_psychiatric_1	Medicación psiquiátrica 1	es
+medication_psychiatric_2	Psychiatric medication 2	en
+medication_psychiatric_2	Médication psychiatrique 2	fr
+medication_psychiatric_2	Medicación psiquiátrica 2	es
+medication_psychiatric_3	Psychiatric medication 3	en
+medication_psychiatric_3	Médication psychiatrique 3	fr
+medication_psychiatric_3	Medicación psiquiátrica 3	es
+_title_SGBV03_06	 	en
+_title_SGBV03_06	 	fr
+_title_SGBV03_06	 	es
+_title_SGBV03_07	RESULTS	en
+_title_SGBV03_07	RESULTATS	fr
+_title_SGBV03_07	RESULTADOS	es
+referral_psycho	Patient referred to	en
+referral_psycho	Patient référé à	fr
+referral_psycho	Paciente referido a	es
+outcome_psycho	End of psychological support	en
+outcome_psycho	Fin du suivi psychologique	fr
+outcome_psycho	Fin de seguimiento psicológico	es
+gaf	GAF / EGF (0 - 100)	en
+gaf	GAF / EGF (0 - 100)	fr
+gaf	GAF / EGF (0 - 100)	es
+srq20	SRQ20 (1 - 20)	en
+srq20	SRQ20 (1 - 20)	fr
+srq20	SRQ20 (1 - 20)	es
+_title_SGBV03_08	 	en
+_title_SGBV03_08	 	fr
+_title_SGBV03_08	 	es
+comments	Comments	en
+comments	Commentaires	fr
+comments	Comentarios	es
+_title_SGBV03_09	 	en
+_title_SGBV03_09	 	fr
+_title_SGBV03_09	 	es

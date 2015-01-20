@@ -1,0 +1,9 @@
+patientList	en	index	Id	Surname	Name	Sex	Birth Date
+patientList	es	index	# paciente	Apellido	Nombre	Genero	Fecha de nacimiento
+patientList	fr	index	Id	Nom de famille	Prénom	Sexe	Date de naissance
+encounterList	en	Type	Date of admission
+encounterList	es	Tipo de consulta	Fecha
+encounterList	fr	Type	Date d'admission
+villageAreaList	en	List of villages
+villageAreaList	es	Lista de pueblos
+villageAreaList	fr	Liste des villages

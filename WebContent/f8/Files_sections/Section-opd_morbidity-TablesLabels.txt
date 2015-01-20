@@ -1,0 +1,186 @@
+opdmorbacute:title022|Label	GENERAL	en
+opdmorbacute:urti|Label	Upper Respiratory Tract Infection	en
+opdmorbacute:lrti|Label	Lower Respiratory Tract Infection	en
+opdmorbacute:diarrhoea_watery|Label	Watery diarrhoea	en
+opdmorbacute:diarrhoea_bloody|Label	Bloody diarrhoea	en
+opdmorbacute:gastrointestinal_acute|Label	Gastrointestinal (acute)	en
+opdmorbacute:skin_infection|Label	Skin Infection	en
+opdmorbacute:eye_infection|Label	Eye infection	en
+opdmorbacute:ear_infection|Label	Ear infection	en
+opdmorbacute:uti|Label	UTI	en
+opdmorbacute:sti|Label	STI	en
+opdmorbacute:musculoskeletal|Label	Musculoskeletal	en
+opdmorbacute:trauma_acci|Label	Accidental trauma	en
+opdmorbacute:trauma_intent|Label	Intentional trauma	en
+opdmorbacute:violence_sexual|Label	Sexual violence	en
+opdmorbacute:malnutrition_acute|Label	Acute malnutrition	en
+opdmorbacute:fever_unknown|Label	Fever of unknown origin	en
+opdmorbacute:dental|Label	Dental problem	en
+opdmorbacute:unknown|Label	Unknown	en
+opdmorbacute:other|Label	Other	en
+opdmorbacute:all_general|Label	General total	en
+opdmorbacute:title043|Label	 	en
+opdmorbacute:title044|Label	NOTIFIABLE	en
+opdmorbacute:measles|Label	Measles	en
+opdmorbacute:meningitis_susp|Label	Meningitis (suspected)	en
+opdmorbacute:malaria_simple|Label	Malaria	en
+opdmorbacute:leishmaniasis_visceral|Label	Leishmaniasis - visceral	en
+opdmorbacute:leishmaniasis_cutaneous|Label	Leishmaniasis - cutaneous	en
+opdmorbacute:hiv_aids|Label	HIV/AIDS	en
+opdmorbacute:tb_susp|Label	Tuberculosis (suspected)	en
+opdmorbacute:afp|Label	Acute flaccid paralysis	en
+opdmorbacute:brucellosis_susp|Label	Brucellosis (suspected)	en
+opdmorbacute:typhoid_susp|Label	Typhoid (suspected)	en
+opdmorbacute:pertussis_susp|Label	Pertussis (suspected)	en
+opdmorbacute:notifiable_disease_other|Label	Notifiable disease (other)	en
+opdmorbacute:jaundice_acute_synd|Label	Acute jaundice syndrome	en
+opdmorbacute:hepatitis_a|Label	Hepatitis A	en
+opdmorbacute:hepatitis_bcde|Label	Hepatitis B/C/D/E	en
+opdmorbacute:mumps|Label	Mumps	en
+opdmorbacute:rubella|Label	Rubella	en
+opdmorbacute:scabies|Label	Scabies	en
+opdmorbacute:syphilis|Label	Syphilis	en
+opdmorbacute:tetanus|Label	Tetanus	en
+opdmorbacute:all_notifiable|Label	Notifiable total	en
+opdmorbacute:title066|Label	 	en
+opdmorbacute:title067|Label	SEPARATE DATABASES	en
+opdmorbacute:mental_health|Label	Mental health disorder	en
+opdmorbacute:cncd|Label	Chronic Non-Communicable Diseases, CNCD	en
+opdmorbacute:gynaecology|Label	Gynaecology	en
+opdmorbacute:all_separate|Label	Total separate databases	en
+opdmorbacute:title072|Label	 	en
+opdmorbacute:all|Label	TOTAL	en
+_title_blank	 	en
+opdmorbacute:title022|<5y	< 5 years	en
+opdmorbacute:title022|5y-14y	5 - 14 years	en
+opdmorbacute:title022|15y-49y	15 - 49 years	en
+opdmorbacute:title022|>=50y	>= 50 years	en
+opdmorbacute:title022|Tot	TOTAL	en
+opdmorbchronic:title090|Label	CHRONIC DISEASES	en
+opdmorbchronic:arterial_hypertension|Label	Arteriel Hypertension	en
+opdmorbchronic:diabetes1|Label	Diabetes type I	en
+opdmorbchronic:diabetes2|Label	Diabetes Type II	en
+opdmorbchronic:arterial_hypertension_diabetes|Label	Art Hypertension + diabetes	en
+opdmorbchronic:cvd_other|Label	Cardiovascular disease (other)	en
+opdmorbchronic:copd_asthma|Label	COPD / Asthma	en
+opdmorbchronic:thyroid|Label	Thyroid disease	en
+opdmorbchronic:liver_biliar|Label	Liver and biliary diseases	en
+opdmorbchronic:gastrointestinal_chronic|Label	Chronic gastro-intestinal diseases	en
+opdmorbchronic:cancer|Label	Cancer	en
+opdmorbchronic:rheumatoid_degenerative|Label	Rheumatoid and degenerative diseases	en
+opdmorbchronic:neurologic|Label	Neurologic diseases	en
+opdmorbchronic:renal|Label	Chronic renal disease	en
+opdmorbchronic:substance_abuse|Label	Substance abuse	en
+opdmorbchronic:congenital_disorder|Label	Congenital disorder	en
+opdmorbchronic:ncd_other|Label	Other non-communicable disease	en
+opdmorbchronic:all|Label	Total chronic diseases	en
+opdmorbchronic:title108|Label	 	en
+opdmorbchronic:title109|Label	MENTAL HEALTH	en
+opdmorbmh:mental_common|Label	Common mental health disorder	en
+opdmorbmh:mood_disorders|Label	Mood disorders	en
+opdmorbmh:mups|Label	MUPS	en
+opdmorbmh:personality_disorder|Label	Personality disorder	en
+opdmorbmh:schizophrenia|Label	Schizophrenia	en
+opdmorbmh:mental_severe|Label	Severe mental health disorder	en
+opdmorbmh:substance_abuse|Label	Substance abuse	en
+opdmorbmh:all|Label	Total mental health	en
+opdmorbchronic:title118|Label	 	en
+opdmorbncd:all|Label	TOTAL	en
+opdmorbchronic:title090|NC	Newly identified	en
+opdmorbchronic:title090|under_tt	Under tt.	en
+opdmorbchronic:title090|FUP	Follow-up	en
+opdmorbchronic:title090|decomp	Decompensation	en
+opdmorbchronic:title090|Tot	TOTAL	en
+opdmorbacute:title022|Label	GENERAL	fr
+opdmorbacute:urti|Label	Infections des voies respiratoires supérieures	fr
+opdmorbacute:lrti|Label	Infections des voies respiratoires inférieures	fr
+opdmorbacute:diarrhoea_watery|Label	Diarrhée acqueuse	fr
+opdmorbacute:diarrhoea_bloody|Label	Diarrhée sanglante	fr
+opdmorbacute:gastrointestinal_acute|Label	Gastro intestinal (aigü)	fr
+opdmorbacute:skin_infection|Label	Infection cutanée	fr
+opdmorbacute:eye_infection|Label	Infectio oculaire	fr
+opdmorbacute:ear_infection|Label	Otite	fr
+opdmorbacute:uti|Label	Infection urinaire	fr
+opdmorbacute:sti|Label	Infection sexuellement transmissible	fr
+opdmorbacute:musculoskeletal|Label	Troubles musculo-squelettiques	fr
+opdmorbacute:trauma_acci|Label	Traumatisme accidentel	fr
+opdmorbacute:trauma_intent|Label	Traumatisme intentionnel	fr
+opdmorbacute:violence_sexual|Label	Violence sexuelle	fr
+opdmorbacute:malnutrition_acute|Label	Malnutrition sévère	fr
+opdmorbacute:fever_unknown|Label	Fièvre d'origine inconnue	fr
+opdmorbacute:dental|Label	Problème dentaire	fr
+opdmorbacute:unknown|Label	Inconnu	fr
+opdmorbacute:other|Label	Autre	fr
+opdmorbacute:all_general|Label	Total - général	fr
+opdmorbacute:title043|Label	 	fr
+opdmorbacute:title044|Label	A DECLARATION OBLIGATOIRE	fr
+opdmorbacute:measles|Label	Rougeole	fr
+opdmorbacute:meningitis_susp|Label	Méningite (suspicion)	fr
+opdmorbacute:malaria_simple|Label	Cas de paludisme simple	fr
+opdmorbacute:leishmaniasis_visceral|Label	Leishmaniose vicérale	fr
+opdmorbacute:leishmaniasis_cutaneous|Label	Leishmaniose cutanée	fr
+opdmorbacute:hiv_aids|Label	HIV/SIDA	fr
+opdmorbacute:tb_susp|Label	Turberculose (suspicion)	fr
+opdmorbacute:afp|Label	Paralysie flasque aiguë (PFA) 	fr
+opdmorbacute:brucellosis_susp|Label	Brucellose (suspicion)	fr
+opdmorbacute:typhoid_susp|Label	Typhoïde (suspicion)	fr
+opdmorbacute:pertussis_susp|Label	Coqueluche (suspicion)	fr
+opdmorbacute:notifiable_disease_other|Label	Maladie à déclaration oblig. (autre)	fr
+opdmorbacute:jaundice_acute_synd|Label	Ictère sévère	fr
+opdmorbacute:hepatitis_a|Label	Hépatite A	fr
+opdmorbacute:hepatitis_bcde|Label	Hépatite B/C/D/E	fr
+opdmorbacute:mumps|Label	Oreillons	fr
+opdmorbacute:rubella|Label	Rubéole	fr
+opdmorbacute:scabies|Label	Gale	fr
+opdmorbacute:syphilis|Label	Syhphilis	fr
+opdmorbacute:tetanus|Label	Tétanos	fr
+opdmorbacute:all_notifiable|Label	Total - déclaration obligatoire	fr
+opdmorbacute:title066|Label	 	fr
+opdmorbacute:title067|Label	BASE DE DONNEES SEPAREES	fr
+opdmorbacute:mental_health|Label	Problème de santé mentale	fr
+opdmorbacute:cncd|Label	Mal.chroniques non-transmissibles	fr
+opdmorbacute:gynaecology|Label	Gynécologie	fr
+opdmorbacute:all_separate|Label	Total base de données séparées	fr
+opdmorbacute:title072|Label	 	fr
+opdmorbacute:all|Label	Total cas OPD	fr
+_title_blank	 	fr
+opdmorbacute:title022|<5y	< 5 ans	fr
+opdmorbacute:title022|5y-14y	5 - 14 ans	fr
+opdmorbacute:title022|15y-49y	15 - 49 ans	fr
+opdmorbacute:title022|>=50y	>= 50 ans	fr
+opdmorbacute:title022|Tot	TOTAL	fr
+opdmorbchronic:title090|Label	MALADIES CHRONIQUES	fr
+opdmorbchronic:arterial_hypertension|Label	Hypertension artérielle	fr
+opdmorbchronic:diabetes1|Label	Diabète type I	fr
+opdmorbchronic:diabetes2|Label	Diabète type II	fr
+opdmorbchronic:arterial_hypertension_diabetes|Label	Hypertension artérielle + diabètes	fr
+opdmorbchronic:cvd_other|Label	Autre maladie cardiovasculaire	fr
+opdmorbchronic:copd_asthma|Label	BPCO / asthme	fr
+opdmorbchronic:thyroid|Label	Maladie thyroïdienne	fr
+opdmorbchronic:liver_biliar|Label	Maladie hépatique et biliaire	fr
+opdmorbchronic:gastrointestinal_chronic|Label	Trouble gastrointestinal chronique	fr
+opdmorbchronic:cancer|Label	Cancer	fr
+opdmorbchronic:rheumatoid_degenerative|Label	Maladie rhumatoïde / dégénérative	fr
+opdmorbchronic:neurologic|Label	Maladies neurologiques	fr
+opdmorbchronic:renal|Label	Pathologie rénale	fr
+opdmorbchronic:substance_abuse|Label	Abus de substance	fr
+opdmorbchronic:congenital_disorder|Label	Trouble congénital	fr
+opdmorbchronic:ncd_other|Label	Autre maladie non-transmissible	fr
+opdmorbchronic:all|Label	Total maladies chroniques	fr
+opdmorbchronic:title108|Label	 	fr
+opdmorbchronic:title109|Label	SANTE MENTALE	fr
+opdmorbmh:mental_common|Label	Problème de santé mentale courant	fr
+opdmorbmh:mood_disorders|Label	Trouble de l'humeur	fr
+opdmorbmh:mups|Label	MUPS	fr
+opdmorbmh:personality_disorder|Label	Trouble de la personalité	fr
+opdmorbmh:schizophrenia|Label	Schizophrénie	fr
+opdmorbmh:mental_severe|Label	Problème de santé mentale sévère	fr
+opdmorbmh:substance_abuse|Label	Abus de substances	fr
+opdmorbmh:all|Label	Total cas de santé mentale	fr
+opdmorbchronic:title118|Label	 	fr
+opdmorbncd:all|Label	TOTAL	fr
+opdmorbchronic:title090|NC	Nouv. Identifié	fr
+opdmorbchronic:title090|under_tt	En traitement	fr
+opdmorbchronic:title090|FUP	Suivi	fr
+opdmorbchronic:title090|decomp	Décompensation	fr
+opdmorbchronic:title090|Tot	TOTAL	fr

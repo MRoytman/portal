@@ -1,0 +1,27 @@
+1	No money	en
+2	Fear of agressor	en
+3	Lack of accompaniment	en
+4	Doesn´t know there is medical treatment	en
+5	Fear of being rejected at HC	en
+6	Emotionally affected	en
+7	Long waiting time at HC	en
+8	Priority was to denounce	en
+9	Other	en
+1	Pas d'argent	fr
+2	Peur de l'agresseur	fr
+3	Besoin d'être accompagné	fr
+4	Ne sait pas qu'il y a un traitement médical	fr
+5	Peut d'être rejeté du centre de santé	fr
+6	Perturbé émotionnellement	fr
+7	Trop d'attente au centre de santé	fr
+8	La dénonciation était prioritaire	fr
+9	Autre	fr
+1	Falta de dinero	es
+2	Temor al agresor	es
+3	Falta de acompañamiento	es
+4	Desconocimiento de tratamiento	es
+5	Temor a rechazo del centro de salud	es
+6	Pertubado emocionalmiente	es
+7	Larga espera en el centro de salud	es
+8	Prioridad de denuncia en MP	es
+9	Otro	es

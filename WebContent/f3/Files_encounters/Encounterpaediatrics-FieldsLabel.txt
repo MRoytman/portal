@@ -1,0 +1,132 @@
+_title_ped_01	INFORMATION ON MOTHER	en
+_title_ped_01	INFORMATION SUR LA MERE	fr
+neo_mother_alive	16) Mother alive	en
+neo_mother_alive	16) Mère vivante	fr
+neo_mother_malnurished	17) Mother malnurished	en
+neo_mother_malnurished	17) Mère malnourie	fr
+neo_mother_hiv_positive	18) HIV + mother	en
+neo_mother_hiv_positive	18) Mère VIH +	fr
+neo_mother_tb_positive	19) Mother with TB	en
+neo_mother_tb_positive	19) Mère avec TB	fr
+_title_ped_02	20) Anti-tetanus vaccination of the mother	en
+_title_ped_02	20) Vaccin antitétanique de la mère	fr
+neo_mother_vacci_tt1	TT1	en
+neo_mother_vacci_tt1	TT1	fr
+neo_mother_vacci_tt2	TT2	en
+neo_mother_vacci_tt2	TT2	fr
+neo_mother_vacci_tt3	TT3	en
+neo_mother_vacci_tt3	TT3	fr
+neo_mother_vacci_tt4	TT4	en
+neo_mother_vacci_tt4	TT4	fr
+neo_mother_vacci_tt5	≥TT5	en
+neo_mother_vacci_tt5	≥TT5	fr
+_title_ped_03	 	en
+_title_ped_03	 	fr
+_title_ped_04	21) Nutritionnal status	en
+_title_ped_04	21) Statut nutritionnel	fr
+admission_weight	Admission weight (in kg)	en
+admission_weight	Poids à l'admission (en kg)	fr
+nutritionnal_status	Nutritionnal status	en
+nutritionnal_status	Statut nutritionnel	fr
+_title_ped_05	 	en
+_title_ped_05	 	fr
+_title_ped_06	Vaccinal status of the newborn	en
+_title_ped_06	Statut vaccinal de l’enfant	fr
+vaccination_dtc	DTCoq / DTPertussis 	en
+vaccination_dtc	DTCoq / DTPertussis 	fr
+vaccination_pentavalent	22) Pentavalent	en
+vaccination_pentavalent	22) Pentavalent	fr
+vaccination_afp	23) Polio	en
+vaccination_afp	23) Polio	fr
+vaccination_measles	24) Measles	en
+vaccination_measles	24) Rougeole	fr
+vaccination_pcv13	25) PCV13	en
+vaccination_pcv13	25) PCV13	fr
+_title_ped_07	 	en
+_title_ped_07	 	fr
+_title_ped_08	HOSPITALIZATION DATA	en
+_title_ped_08	DONNEES D’HOSPITALISATION	fr
+stay_intensive_care	26) Stay in intensive care	en
+stay_intensive_care	26) Passage aux soins intensifs 	fr
+_title_ped_09	27) Feeding	en
+_title_ped_09	27) Alimentation 	fr
+ped_feeding	Type of feeding	en
+ped_feeding	Type d'alimentation	fr
+ped_feeding_f75_f100	F-75 and/or	en
+ped_feeding_f75_f100	F-75 et/ou F-100	fr
+ped_feeding_rutf	RUTF	en
+ped_feeding_rutf	ATPE	fr
+ped_feeding_rusf	RUSF	en
+ped_feeding_rusf	ASPE	fr
+ped_feeding_standard_regimen	Standard regimen	en
+ped_feeding_standard_regimen	Régime standard	fr
+_title_ped_10	 	en
+_title_ped_10	 	fr
+_title_ped_11	28) Treatments	en
+_title_ped_11	28) Traitements	fr
+treatment_albendazole	        Albendazole	en
+treatment_albendazole	        Albendazole	fr
+treatment_vitamin_a	        vitamin A	en
+treatment_vitamin_a	        vitamine A	fr
+treatment_ventil_ambu	        ventilation ambu	en
+treatment_ventil_ambu	        ventilation ambu	fr
+treatment_adrenaline	        Adrenaline	en
+treatment_adrenaline	        Adrénaline	fr
+treatment_rehydration_bolus_15_20ml	        rehydratation bolus 15-20 ml/kg	en
+treatment_rehydration_bolus_15_20ml	        bolus de réhydratation 15-20 ml/kg	fr
+treatment_blood_transfusion	        blood transfusion	en
+treatment_blood_transfusion	        transfusion sanguine	fr
+treatment_oxygen_therapy	        oxygen therapy	en
+treatment_oxygen_therapy	        oxygénothérapie	fr
+treatment_ors_resomal	        ORS / Resomal	en
+treatment_ors_resomal	        SRO / Résomal	fr
+treatment_surgery	        surgery	en
+treatment_surgery	        chirurgie	fr
+treatment_cast	        plaster cast	en
+treatment_cast	        immobilisation/ plâtre	fr
+treatment_io	        IO	en
+treatment_io	        IO	fr
+treatment_lp	        LP	en
+treatment_lp	        PL	fr
+treatment_thoracic_drainage	        thoracic drainage	en
+treatment_thoracic_drainage	        drainage thoracique	fr
+treatment_antibiotherapy_line1	        antibiotherapy 1st line	en
+treatment_antibiotherapy_line1	        antibiothérapie 1ère ligne	fr
+treatment_antibiotherapy_line2	        antibiotherapy 2nd line	en
+treatment_antibiotherapy_line2	        antibiothérapie 2ème ligne	fr
+treatment_antibiotherapy_line3	        antibiotherapy 3rd line	en
+treatment_antibiotherapy_line3	        antibiothérapie 3ème ligne	fr
+treatment_antitb	        TB treatment	en
+treatment_antitb	        traitement TB	fr
+treatment_inh	        INH	en
+treatment_inh	        INH	fr
+treatment_arv	        ARV	en
+treatment_arv	        ARV	fr
+treatment_corticosteroids	        corticosteroids	en
+treatment_corticosteroids	        corticoides	fr
+treatment_diazepam	        Diazepam	en
+treatment_diazepam	        Diazepam	fr
+treatment_phenobarbital	        Phenobarbital	en
+treatment_phenobarbital	        Phénobarbital	fr
+treatment_phenytoin	        Phenytoin	en
+treatment_phenytoin	        Phénytoine	fr
+treatment_salbutamol	        Salbutamol	en
+treatment_salbutamol	        Salbutamol	fr
+treatment_ketamine	        Ketamine	en
+treatment_ketamine	        Kétamine	fr
+treatment_morphine	        Morphine	en
+treatment_morphine	        Morphine	fr
+treatment_artesunate	        Artesunate	en
+treatment_artesunate	        Artésunate	fr
+treatment_asaq_coartem	        ASAQ-Coartem	en
+treatment_asaq_coartem	        ASAQ-Coartem	fr
+_title_ped_12	 	en
+_title_ped_12	 	fr
+_title_ped_13	DISCHARGE DATA	en
+_title_ped_13	DONNEES DE SORTIE	fr
+discharge_weight	29) Child weight at discharge (in kg)	en
+discharge_weight	29) Poids de l’enfant à la sortie (en kg)	fr
+discharge_sequelae	30) Sequelae	en
+discharge_sequelae	30) Séquelles	fr
+comments	Comments	en
+comments	Commentaires	fr

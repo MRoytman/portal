@@ -1,0 +1,6 @@
+1	emergency	en
+2	delayed emergency	en
+3	not urgent	en
+1	urgent	fr
+2	urgence différée	fr
+3	non urgent	fr

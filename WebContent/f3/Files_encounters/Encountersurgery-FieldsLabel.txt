@@ -1,0 +1,122 @@
+_title_sur_01	ADMISSION IN SURGERY	en
+_title_sur_01	ADMISSION EN CHIRURGIE	fr
+sur_emergency_type	Degree of emergency	en
+sur_emergency_type	Degré d'urgence	fr
+sur_cause_trauma	Admission due to trauma	en
+sur_cause_trauma	Admission due à un traumatisme	fr
+sur_cause_trauma_type	          Type of trauma	en
+sur_cause_trauma_type	          Type de traumatisme	fr
+sur_cause_trauma_type_other	          Other type of trauma:	en
+sur_cause_trauma_type_other	          Autre type de traumatisme:	fr
+sur_cause_non_trauma	Other surgical pathology	en
+sur_cause_non_trauma	Autre pathologie chirurgicale	fr
+sur_cause_pathology	          Pathology	en
+sur_cause_pathology	          Pathologie	fr
+sur_cause_pathology_other	          Other pathology	en
+sur_cause_pathology_other	          Autre pathologie	fr
+sur_cause_pathology	Acute abdomen	en
+sur_cause_pathology	Abdomen aigu	fr
+sur_cause_pathology_other	Peripheral lesion	en
+sur_cause_pathology_other	Lésion périphérique	fr
+_title_sur_02	 	en
+_title_sur_02	 	fr
+_title_sur_03	PRIMARY INTERVENTION	en
+_title_sur_03	INTERVENTION PRIMAIRE	fr
+sur_intervention_main_type	Type of intervention	en
+sur_intervention_main_type	Type d'intervention	fr
+sur_intervention_main_date	Date	en
+sur_intervention_main_date	Date	fr
+sur_intervention_main_asa	ASA	en
+sur_intervention_main_asa	ASA	fr
+sur_intervention_main_anesthesia	Type of anesthesia	en
+sur_intervention_main_anesthesia	Type d'anesthésie	fr
+sur_intervention_main_transfusion_nb	Blood transfusion: number of bags	en
+sur_intervention_main_transfusion_nb	Tranfusion sanguine: nombre de pochettes	fr
+sur_intervention_main_transfusion_volume	          volume of bags	en
+sur_intervention_main_transfusion_volume	          volume des pochettes	fr
+sur_intervention_main_fixator_internal	Internal fixation	en
+sur_intervention_main_fixator_internal	Fixation interne	fr
+sur_intervention_main_fixator_external	External fixation	en
+sur_intervention_main_fixator_external	Fixation externe	fr
+sur_intervention_main_plaster	Plaster/resin	en
+sur_intervention_main_plaster	Plâtre/résine	fr
+sur_intervention_main_thoracic_drain	Thoracic drain	en
+sur_intervention_main_thoracic_drain	Redon	fr
+_title_sur_04	 	en
+_title_sur_04	 	fr
+_title_sur_05	SECONDARY INTERVENTION #1	en
+_title_sur_05	INTERVENTION SECONDAIRE n°1	fr
+sur_intervention_2_type	Type of intervention	en
+sur_intervention_2_type	Type d'intervention	fr
+sur_intervention_2_date	Date	en
+sur_intervention_2_date	Date	fr
+sur_intervention_2_plan	Planned / unplanned	en
+sur_intervention_2_plan	Programmée / non-programmée	fr
+sur_intervention_2_asa	ASA	en
+sur_intervention_2_asa	ASA	fr
+sur_intervention_2_anesthesia	Type of anesthesia	en
+sur_intervention_2_anesthesia	Type d'anesthésie	fr
+sur_intervention_2_transfusion_nb	Blood transfusion: number of bags	en
+sur_intervention_2_transfusion_nb	Tranfusion sanguine: nombre de pochettes	fr
+sur_intervention_2_transfusion_volume	          volume of bags	en
+sur_intervention_2_transfusion_volume	          volume des pochettes	fr
+sur_intervention_2_fixator_internal	Internal fixation	en
+sur_intervention_2_fixator_internal	Fixation interne	fr
+sur_intervention_2_fixator_external	External fixation	en
+sur_intervention_2_fixator_external	Fixation externe	fr
+sur_intervention_2_plaster	Plaster/resin	en
+sur_intervention_2_plaster	Plâtre/résine	fr
+sur_intervention_2_thoracic_drain	Thoracic drain	en
+sur_intervention_2_thoracic_drain	Redon	fr
+_title_sur_06	 	en
+_title_sur_06	 	fr
+_title_sur_07	SECONDARY INTERVENTION #2	en
+_title_sur_07	INTERVENTION SECONDAIRE n°2	fr
+sur_intervention_3_type	Type of intervention	en
+sur_intervention_3_type	Type d'intervention	fr
+sur_intervention_3_date	Date	en
+sur_intervention_3_date	Date	fr
+sur_intervention_3_plan	Planned / unplanned	en
+sur_intervention_3_plan	Programmée / non-programmée	fr
+sur_intervention_3_asa	ASA	en
+sur_intervention_3_asa	ASA	fr
+sur_intervention_3_anesthesia	Type of anesthesia	en
+sur_intervention_3_anesthesia	Type d'anesthésie	fr
+sur_intervention_3_transfusion_nb	Blood transfusion: number of bags	en
+sur_intervention_3_transfusion_nb	Tranfusion sanguine: nombre de pochettes	fr
+sur_intervention_3_transfusion_volume	          volume of bags	en
+sur_intervention_3_transfusion_volume	          volume des pochettes	fr
+sur_intervention_3_fixator_internal	Internal fixation	en
+sur_intervention_3_fixator_internal	Fixation interne	fr
+sur_intervention_3_fixator_external	External fixation	en
+sur_intervention_3_fixator_external	Fixation externe	fr
+sur_intervention_3_plaster	Plaster/resin	en
+sur_intervention_3_plaster	Plâtre/résine	fr
+sur_intervention_3_thoracic_drain	Thoracic drain	en
+sur_intervention_3_thoracic_drain	Redon	fr
+_title_sur_08		en
+_title_sur_08		fr
+_title_sur_09	POST-SURGERY	en
+_title_sur_09	POSTOPERATOIRE	fr
+sur_post_treatment_antibiotherapy_24h	Antibiotic therapy >24h	en
+sur_post_treatment_antibiotherapy_24h	Antibiothérapie > 24h	fr
+sur_post_treatment_anticoagulant	Anticoagulant treatment	en
+sur_post_treatment_anticoagulant	Traitement anticoagulant	fr
+sur_post_treatment_morphine_24h	Morphine > 24h	en
+sur_post_treatment_morphine_24h	Morphine > 24h	fr
+sur_post_treatment_morphino_mimetica_24h	Morphino mimetica > 24h	en
+sur_post_treatment_morphino_mimetica_24h	Morphino-mimétiques > 24h	fr
+sur_post_treatment_physiotherapy	Physiotherapy	en
+sur_post_treatment_physiotherapy	Physiothérapie	fr
+sur_post_treatment_transfusion_nb	Blood transfusion: number of bags	en
+sur_post_treatment_transfusion_nb	Tranfusion sanguine: nombre de pochettes	fr
+sur_post_treatment_transfusion_volume	          volume of bags	en
+sur_post_treatment_transfusion_volume	          volume des pochettes	fr
+_title_sur_10		en
+_title_sur_10		fr
+_title_sur_11	Post surgical complications	en
+_title_sur_11	Complications post-chirurgicales	fr
+sur_complication_bleeding_200ml	Bleeding > 200 ml	en
+sur_complication_bleeding_200ml	Hémorragie > 200 ml	fr
+surgical_site_infection	Infection of operation site	en
+surgical_site_infection	Infection du site opératoire	fr

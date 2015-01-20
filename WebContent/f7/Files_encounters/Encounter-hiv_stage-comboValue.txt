@@ -1,0 +1,8 @@
+1	1	en
+2	2	en
+3	3	en
+4	4	en
+1	1	fr
+2	2	fr
+3	3	fr
+4	4	fr

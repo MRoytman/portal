@@ -1,0 +1,9 @@
+1	Yes	en
+2	No	en
+3	Refused	en
+1	Oui	fr
+2	Non	fr
+3	Refusé	fr
+1	Sí	es
+2	No	es
+3	Rechazado	es

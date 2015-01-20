@@ -1,0 +1,6 @@
+SY	Syria	en
+IQ	Iraq	en
+other	Other	en
+SY	Syrie	fr
+IQ	Irak	fr
+other	Autre	fr

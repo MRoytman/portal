@@ -1,0 +1,12 @@
+1	Antidepressants	en
+2	Anxiolytics	en
+3	Antipsychotics	en
+4	Antiepileptic	en
+1	Antidépresseurs	fr
+2	Anxiolytiques	fr
+3	Antipsychotiques	fr
+4	Antiépiléptiques	fr
+1	Antidepresivo	es
+2	Ansiolítico	es
+3	Antipsicótico	es
+4	Antiepiléptico	es

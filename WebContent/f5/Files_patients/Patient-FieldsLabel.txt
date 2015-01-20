@@ -1,0 +1,18 @@
+sex	0) Sex	en
+sex	Sexe	fr
+sex	Sexo	es
+_title_01P	GENERAL INFORMATION	en
+_title_01P	INFORMATIONS GENERALES	fr
+_title_01P	INFORMACIONES GENERALES	es
+address_area	Address (neighborhood)	en
+address_area	Adresse (quartier)	fr
+address_area	Dirección (colonia)	es
+consult_date_first	Date of first consultation	en
+consult_date_first	Date de première consultation	fr
+consult_date_first	Fecha de primer consulto	es
+_title_02P	 	en
+_title_02P	 	fr
+_title_02P	 	es
+comments	Comments	en
+comments	Commentaires	fr
+comments	Comentarios	es

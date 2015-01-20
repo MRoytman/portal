@@ -1,0 +1,49 @@
+aggregationList	en	Year	Week	Theme	Start date	End date
+aggregationList	fr	Année	Semaine	Theme	Date début	Date fin
+sectionList	en	Type	Saved
+sectionList	fr	Type	Sauvegardé
+
+opd_general_info	en	GENERAL PARAMETERS	 	 	 
+opd_general_info	fr	PARAMETRES GENERAUX	 	 	 
+opd_morbidity_acute	en	MORBIDITY	 	 	 	 	 
+opd_morbidity_acute	fr	MORBIDITE	 	 	 	 	 
+opd_morbidity_ncd	en	NON-COMMUNICABLE DISEASES	 	 	 	 	 
+opd_morbidity_ncd	fr	MALADIES NON-TRANSMISSIBLES	 	 	 	 	 
+opd_consultations	en	NB OF CONSULTATIONS	 	 	 	 	 	 	 
+opd_consultations	fr	NB DE CONSULTATIONS	 	 	 	 	 	 	 
+opd_referrals	en	REFERRALS                     .	 	 	 	 	 	 	 
+opd_referrals	fr	REFERENCES	 	 	 	 	 	 	 
+opd_dressing	en	DRESSING	 	 	 	 	 	 	 
+opd_dressing	fr	PANSEMENTS	 	 	 	 	 	 	 
+opd_injections	en	INJECTIONS        .	 	 	 	 	 	 	 
+opd_injections	fr	INJECTIONS        .	 	 	 	 	 	 	 
+opd_malnutrition	en	MALNUTRITION SCREENING	 	 	 	 	 
+opd_malnutrition	fr	SCREENING MALNUTRITION	 	 	 	 	 
+opd_lab_routine	en	ROUTINE TESTS                                  .	 	 	 	 	 
+opd_lab_routine	fr	TESTS DE ROUTINE	 	 	 	 	 
+opd_lab_exams	en	EXAMS                                                     .	 	 	 	 	 
+opd_lab_exams	fr	EXAMENS	 	 	 	 	 
+opd_lab_pregnant	en	PREGNANT WOMEN SCREENING    .	 	 	 	 	 
+opd_lab_pregnant	fr	SCREENING FEMMES ENCEINTES	 	 	 	 	 
+opd_lab_transfusions	en	BLOOD TRANSFUSIONS                    .	 	 	 	 	 
+opd_lab_transfusions	fr	TRANSFUSIONS SANGUINES	 	 	 	 	 
+opd_lab_blood_donors_test	en	BLOOD DONORS                            .	 	 	 	 	 
+opd_lab_blood_donors_test	fr	DONNEURS DE SANG	 	 	 	 	 
+opd_lab_vct	en	VCT TESTS                                     .	 	 	 	 	 
+opd_lab_vct	fr	TESTS VCT	 	 	 	 	 
+opd_lab_other_tests	en	ADDITIONAL LAB TESTS                .	 	 	 	 	 
+opd_lab_other_tests	fr	TESTS DE LABO SUPPLEMENTAIRES	 	 	 	 	 
+opd_vacci_children	en	CHILDREN VACCINATION	 	 	 	 	 	 
+opd_vacci_children	fr	VACCINATION DES ENFANTS	 	 	 	 	 	 
+opd_vacci_tetanus	en	TETANUS VACCINATION   .	 	 	 	 	 	 
+opd_vacci_tetanus	fr	VACCINATION ANTITETANIQUE	 	 	 	 	 	 
+opd_antenatal	en	ANTENATAL                                                           .	 	 	 	 
+opd_antenatal	fr	PRENATAL	 	 	 	 
+opd_pregnancy	en	PREGNANCY RELATED ITEMS                         .	 	 	 	 
+opd_pregnancy	fr	GROSSESSES	 	 	 	 
+opd_postnatal	en	POSTNATAL                                                          .	 	 	 	 
+opd_postnatal	fr	POSTNATAL                                                          .	 	 	 	 
+opd_family_planning	en	FAMILY PLANNING                                               .	 	 	 	 
+opd_family_planning	fr	PLANNING FAMILIAL	 	 	 	 
+opd_repro_not_pregnant	en	GYNAECOLOGICAL CASES NOT PREGNANT	 	 	 	 
+opd_repro_not_pregnant	fr	CAS GYNECO - HORS GROSSESSES	 	 	 	 

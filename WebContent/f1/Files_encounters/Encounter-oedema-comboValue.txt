@@ -1,0 +1,8 @@
+1	no	en
+2	+ (feet)	en
+3	++ (feet and tibia)	en
+4	+++ (feet, tibia and face)	en
+1	non	fr
+2	+ (pieds)	fr
+3	++ (pieds et tibias)	fr
+4	+++ (pieds, tibias et visage)	fr

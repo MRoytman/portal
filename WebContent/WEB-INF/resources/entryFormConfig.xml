@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<entryFormConfig>
+	<selectedCountries>
+		<code>LB</code>
+		<projects>
+			<careCenters>
+				<code>12</code>
+				<name>Bab Al-Tabaneh</name>
+				<retired>false</retired>
+			</careCenters>
+			<careCenters>
+				<code>13</code>
+				<name>Daz</name>
+				<retired>false</retired>
+			</careCenters>
+			<careCenters>
+				<code>14</code>
+				<name>Jabal Mohsen</name>
+				<retired>false</retired>
+			</careCenters>
+			<code>LB141</code>
+			<name>Tripoli</name>
+			<retired>false</retired>
+		</projects>
+		<retired>false</retired>
+	</selectedCountries>
+</entryFormConfig>

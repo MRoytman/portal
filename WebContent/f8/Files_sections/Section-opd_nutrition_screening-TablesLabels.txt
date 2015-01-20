@@ -1,0 +1,46 @@
+opdnut:title01|Label	MUAC	en
+opdnutscreening:muac_red|Label	MUAC Red	en
+opdnutscreening:muac_orange|Label	MUAC Orange	en
+opdnutscreening:muac_yellow|Label	MUAC Yellow	en
+opdnutscreening:muac_green|Label	MUAC Green	en
+opdnutscreening:muac_all|Label	Total	en
+opdnut:title02|Label	 	en
+opdnut:title03|Label	OEDEMA	en
+opdnutscreening:oedema_3|Label	Oedema +++	en
+opdnutscreening:oedema_2|Label	Oedema ++	en
+opdnutscreening:oedema_1|Label	Oedema +	en
+opdnutscreening:oedema_0|Label	No oedema	en
+opdnutscreening:oedema_all|Label	Total	en
+opdnut:title04|Label	 	en
+opdnut:title05|Label	Z-SCORE	en
+opdnutscreening:zscore_minus3|Label	<-3Zs	en
+opdnutscreening:zscore_3_to_2|Label	-3Zs-2Zs	en
+opdnutscreening:zscore_2more|Label	>-2ZS	en
+opdnutscreening:zscore_all|Label	Total	en
+opdnut:title01|<5y	< 5 years	en
+opdnut:title01|>=5y	>= 5 years	en
+opdnut:title01|Tot	Total	en
+_title_blank	 	en
+opdnut:title01|Label	PB - Périmètre brachial (MUAC)	fr
+opdnutscreening:muac_red|Label	PB rouge	fr
+opdnutscreening:muac_orange|Label	PG orange	fr
+opdnutscreening:muac_yellow|Label	PG jaune	fr
+opdnutscreening:muac_green|Label	PB vert	fr
+opdnutscreening:muac_all|Label	Total	fr
+opdnut:title02|Label	 	fr
+opdnut:title03|Label	OEDEMES	fr
+opdnutscreening:oedema_3|Label	Oedèmes +++	fr
+opdnutscreening:oedema_2|Label	Oedèmes ++	fr
+opdnutscreening:oedema_1|Label	Oedèmes +	fr
+opdnutscreening:oedema_0|Label	Pas d'oedèmes	fr
+opdnutscreening:oedema_all|Label	Total	fr
+opdnut:title04|Label	 	fr
+opdnut:title05|Label	Z-SCORE	fr
+opdnutscreening:zscore_minus3|Label	<-3Zs	fr
+opdnutscreening:zscore_3_to_2|Label	-3Zs-2Zs	fr
+opdnutscreening:zscore_2more|Label	>-2ZS	fr
+opdnutscreening:zscore_all|Label	Total	fr
+opdnut:title01|<5y	< 5 ans	fr
+opdnut:title01|>=5y	>= 5 ans	fr
+opdnut:title01|Tot	Total	fr
+_title_blank	 	fr

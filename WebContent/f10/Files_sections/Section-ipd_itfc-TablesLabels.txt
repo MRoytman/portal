@@ -1,0 +1,68 @@
+itfc:title22|Label	 	en
+itfc:admission|all|Label	Total admissions	en
+itfc:title24|Label	Types of admission:	en
+itfc:admission|old|transferred|atfc|Label	Old cases from MSF ATFC	en
+itfc:admission|new|spontaneous|Label	New spontaneous cases	en
+itfc:title27|Label	New cases referred by:	en
+itfc:admission|new|referred|atfc_msf|Label	 - MSF ATFC	en
+itfc:admission|new|referred|tfc_non_msf|Label	 - non-MSF TFC	en
+itfc:admission|new|referred|moh_clinic|Label	 - Clinic	en
+itfc:admission|new|referred|hospital|Label	 - Hospital	en
+itfc:admission|new|referred|other|Label	 - Others	en
+_title_blank	 	en
+itfc:title34|Label	Malaria RDT	en
+itfc:rdt_malaria|done|Label	RDT done at admission	en
+itfc:rdt_malaria|positive|Label	RDT positive at admission	en
+itfc:title22|6m-59m	(6 - 59 months)	en
+itfc:title22|1m-5m	(1 <6 months)	en
+itfc:title22|Tot	TOTAL	en
+itfc:title46|Label	 	en
+itfc:discharge|all|Label	Total discharges	en
+itfc:title48|Label	Types of discharge:	en
+itfc:discharge|cured|Label	Cured	en
+itfc:discharge|stabilized|referred|atfc_msf|Label	Stabilized and referred to MSF ATFC	en
+itfc:discharge|stabilized|referred|atfc_non_msf|Label	Stabilized and referred to non-MSF TFC	en
+itfc:discharge|non_responding|Label	Non-responding	en
+itfc:discharge|dead|Label	Deaths	en
+itfc:discharge|defaulter|Label	Defaulters	en
+itfc:discharge|referred|hospital|Label	Transfers to Hospital	en
+itfc:discharge|on_demand|Label	Discharges on demand	en
+itfc:discharge|other|Label	Others	en
+itfc:under_tt|non_responding|Label	Patients under treatment	en
+itfc:patients_under_tt|first_day_week|Label	Starting of the week	en
+itcf:patients_under_tt|last_day_week|Label	End of the week	en
+itfc:comments|Label	Comments	en
+itfc:title22|Label	 	fr
+itfc:admission|all|Label	Total admissions	fr
+itfc:title24|Label	Types d'admission:	fr
+itfc:admission|old|transferred|atfc|Label	Ancien cas CRENAS MSF	fr
+itfc:admission|new|spontaneous|Label	Nouveaux cas spontanés	fr
+itfc:title27|Label	Nouveaux cas référés par:	fr
+itfc:admission|new|referred|atfc_msf|Label	 - CRENAS MSF	fr
+itfc:admission|new|referred|tfc_non_msf|Label	 - Structure nutritionnelle non-MSF	fr
+itfc:admission|new|referred|moh_clinic|Label	 - CSI/CS	fr
+itfc:admission|new|referred|hospital|Label	 - Hôpital	fr
+itfc:admission|new|referred|other|Label	 - Autres	fr
+_title_blank	 	fr
+itfc:title34|Label	TDR paludisme	fr
+itfc:rdt_malaria|done|Label	TDR faits à l'admission	fr
+itfc:rdt_malaria|positive|Label	TDR positifs à l'admission	fr
+itfc:title22|6m-59m	(6 - 59 mois)	fr
+itfc:title22|1m-5m	(1 <6 mois)	fr
+itfc:title22|Tot	TOTAL	fr
+itfc:title46|Label	 	fr
+itfc:discharge|all|Label	Total sorties	fr
+itfc:title48|Label	Types de sortie:	fr
+itfc:discharge|cured|Label	Guéris	fr
+itfc:discharge|stabilized|referred|atfc_msf|Label	Stabilisé et référé CRENAS MSF	fr
+itfc:discharge|stabilized|referred|atfc_non_msf|Label	Stabilisés et référés structures nutritionnelles non-MSF	fr
+itfc:discharge|non_responding|Label	Non-répondants	fr
+itfc:discharge|dead|Label	Décès	fr
+itfc:discharge|defaulter|Label	Abandons	fr
+itfc:discharge|referred|hospital|Label	Transferts vers hôpital	fr
+itfc:discharge|on_demand|Label	Sorties sur demande	fr
+itfc:discharge|other|Label	Autres	fr
+itfc:under_tt|non_responding|Label	Patients en traitement	fr
+itfc:patients_under_tt|first_day_week|Label	Début de la semaine	fr
+itcf:patients_under_tt|last_day_week|Label	Fin de la semaine	fr
+itfc:comments|Label	Commentaires	fr

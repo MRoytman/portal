@@ -1,0 +1,14 @@
+_title_cholera_01	Title
+rdt_cholera	Combo-rdt_cholera
+cholera_plan	Combo-cholera_plan
+comorbidity_cholera_1	Combo-comorbidity_cholera_1
+comorbidity_cholera_2	Combo-comorbidity_cholera_2
+comorbidity_cholera_other	Coded
+_title_cholera_02	Title
+_title_cholera_03	Title
+vaccinal_status_cholera_doses	Numeric
+vaccinal_status_cholera_last_date	Date
+vaccinal_status_cholera_card	Combo-vaccinal_status_cholera_card
+_title_cholera_04	Title
+transferred_out	Boolean
+comments	Coded

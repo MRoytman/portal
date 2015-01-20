@@ -1,0 +1,36 @@
+1	Unknown	en
+2	1	en
+3	2	en
+4	3	en
+5	4	en
+6	5	en
+7	6	en
+8	7	en
+9	8	en
+10	9	en
+11	10	en
+12	> 10	en
+1	Inconnu	fr
+2	1	fr
+3	2	fr
+4	3	fr
+5	4	fr
+6	5	fr
+7	6	fr
+8	7	fr
+9	8	fr
+10	9	fr
+11	10	fr
+12	> 10	fr
+1	Desconocido	es
+2	1	es
+3	2	es
+4	3	es
+5	4	es
+6	5	es
+7	6	es
+8	7	es
+9	8	es
+10	9	es
+11	10	es
+12	> 10	es

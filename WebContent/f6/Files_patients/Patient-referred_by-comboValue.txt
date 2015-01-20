@@ -1,0 +1,6 @@
+3	Non-MSF SFC	en
+4	Non-MSF ATFC	en
+other	Other	en
+3	CRENAM non-MSF	fr
+4	CRENAS non-MSF	fr
+other	Autre	fr

@@ -1,0 +1,52 @@
+_title_01	TB TREATMENT	en
+_title_01	TRAITEMENT TB	fr
+tb_treatment_category	Treatment category	en
+tb_treatment_category	Catégorie de traitement	fr
+tb_case_definition	Disease site	en
+tb_case_definition	Site de la maladie	fr
+tb_patient_type	Type of patient	en
+tb_patient_type	Type de patient	fr
+tb_exam_period	Period of the exam	en
+tb_exam_period	Période de l'examen	fr
+weight_kg	Weight (in Kg)	en
+weight_kg	Poids (en Kg)	fr
+tb_smear_result_direct	Direct smear result	en
+tb_smear_result_direct	Résultat direct de l'échantillon	fr
+tb_smear_date	          smear date	en
+tb_smear_date	          date de prélèvement	fr
+tb_smear_id	          smear nb	en
+tb_smear_id	          numéro d'échantillon	fr
+tb_culture_result	Culture - result	en
+tb_culture_result	Culture - résultat	fr
+tb_culture_date	          date	en
+tb_culture_date	          date	fr
+tb_culture_id	          culture nb	en
+tb_culture_id	          numéro de culture	fr
+tb_treatment_outcome	Treatment outcome	en
+tb_treatment_outcome	Résultat du traitement	fr
+tb_treatment_outcome_date	          date	en
+tb_treatment_outcome_date	          date	fr
+_title_02	  	en
+_title_02	  	fr
+_title_03	TB / HIV activities	en
+_title_03	Activités TB / VIH	fr
+tb_hiv_test_result	HIV test	en
+tb_hiv_test_result	Test VIH	fr
+tb_hiv_test_date	          date	en
+tb_hiv_test_date	          date	fr
+tb_art_test_result	ART test	en
+tb_art_test_result	Test ART	fr
+tb_art_test_date	          date	en
+tb_art_test_date	          date	fr
+tb_cpt_test_result	CPT test	en
+tb_cpt_test_result	Test CPT	fr
+tb_cpt_test_date	          date	en
+tb_cpt_test_date	          date	fr
+_title_04	 	en
+_title_04	 	fr
+_title_05	NEXT APPOINTMENT	en
+_title_05	PROCHAINE CONSULTATION	fr
+appointment_next_date	Date of next appointment	en
+appointment_next_date	Date du prochain rendez-vos	fr
+comments	Comments	en
+comments	Commentaires	fr

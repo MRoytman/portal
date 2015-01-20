@@ -1,0 +1,24 @@
+1	Police	en
+2	Act of war	en
+3	Self harm	en
+4	Civil unrest	en
+5	Assault / Attack	en
+6	Gangs	en
+7	Unknown	en
+8	Others	en
+1	Police	fr
+2	Acte de guerre	fr
+3	Dommage auto-infligé	fr
+4	Troubles civils	fr
+5	Agression	fr
+6	Gangs	fr
+7	Inconnu	fr
+8	Autre	fr
+1	Policia	es
+2	Acto de gerra	es
+3	Acto autodestructivo	es
+4	Disturbios	es
+5	Agresión	es
+6	Gangs	es
+7	Desconocido	es
+8	Otro	es

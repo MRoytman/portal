@@ -1,0 +1,3 @@
+SectionTable	opd_general_info	4	2
+opdparam:consultants|Label	Label1<COL>opdparam:consultants	Numeric<COL>_empty	Label1<COL>_empty	Label1
+opdparam:workdays|Label	Label1<COL>opdparam:workdays	Numeric<COL>_empty	Label1<COL>_empty	Label1

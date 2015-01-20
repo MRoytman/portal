@@ -1,0 +1,38 @@
+0	None	en
+2	Anxiety	en
+1	Depression	en
+4	Psychotic disorder	en
+8	Bipolar disorder	en
+3	Somatoform disorder	en
+9	Eating disorder	en
+18	Sexual disorder	en
+19	Relational disorder	en
+20	Grief	en
+12	Mental retardation	en
+21	Substance abuse	en
+15	Dementia	en
+13	Epilepsy	en
+11	Child behaviour disorder	en
+22	ADHD	en
+23	Autism	en
+7	Personality disorder	en
+other	Other	en
+0	Aucun	fr
+2	Anxiété	fr
+1	Dépression	fr
+4	Trouble psychotique	fr
+8	Trouble bipolaire	fr
+3	Trouble somatoforme	fr
+9	Trouble de l'alimentation	fr
+18	Trouble sexuel	fr
+19	Trouble relationnel	fr
+20	Tristesse	fr
+12	Retard mental	fr
+21	Abus de substances	fr
+15	Démence	fr
+13	Epilepsie	fr
+11	Trouble du comportement de l'enfant	fr
+22	TDAH	fr
+23	Autisme	fr
+7	Trouble de la personnalité	fr
+other	Autre	fr

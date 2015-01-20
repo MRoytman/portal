@@ -1,0 +1,422 @@
+_title_del_01	MEDICAL HISTORY	en
+_title_del_01	ANTECEDENTS	fr
+antecedents_htn	Arterial hypertension (HTE)	en
+antecedents_htn	Hypertension artérielle (HTA)	fr
+antecedents_diabetes	Diabetes	en
+antecedents_diabetes	Diabète	fr
+antecedents_hiv	HIV	en
+antecedents_hiv	VIH	fr
+antecedents_tb	TB	en
+antecedents_tb	TB	fr
+antecedents_medical_other	Other medical antecedents	en
+antecedents_medical_other	Autres antécédents médicaux	fr
+_title_del_02	 	en
+_title_del_02	 	fr
+antecedents_csection	Antecedents: C-section	en
+antecedents_csection	Antécédents: césarienne	fr
+antecedents_surgical_other	Other surgical antecedents	en
+antecedents_surgical_other	Autres antécédents chirurgicaux	fr
+_title_del_03	Obstetrical antedecends	en
+_title_del_03	Antécédents obstétriques	fr
+antecedents_gestity	Number of pregnancies	en
+antecedents_gestity	Gestité	fr
+antecedents_parity	Number of deliveries	en
+antecedents_parity	Parité	fr
+antecedents_children_born_living_nb	Nb of children born alive	en
+antecedents_children_born_living_nb	Nb enfants nés vivants	fr
+antecedents_stillbirth_nb	Nb of stillbirths	en
+antecedents_stillbirth_nb	Nb enfants morts-nés	fr
+antecedents_misscarriage_nb	Nb of misscarriages	en
+antecedents_misscarriage_nb	Nb de fausses couches	fr
+antecedents_abortion_nb	Nb of abortions	en
+antecedents_abortion_nb	Nb d'avortements	fr
+antecedents_children_living_nb	Nb of living children	en
+antecedents_children_living_nb	Nb d'enfants vivants	fr
+_title_del_04	 	en
+_title_del_04	 	fr
+_title_del_05	ACTUAL PREGNANCY	en
+_title_del_05	GROSSESSE ACTUELLE	fr
+anc_nb	Nb of ANC in this pregnancy	en
+anc_nb	Nb de CPN pour cette grossesse	fr
+pregnancy_normal	Normal pregnancy	en
+pregnancy_normal	Grossesse normale	fr
+pregnancy_hospitalisation	Hospitalisation during pregnancy	en
+pregnancy_hospitalisation	Hospitalisation pendant grossesse	fr
+pregnancy_hiv_test	HIV test	en
+pregnancy_hiv_test	Test VIH	fr
+_title_del_06	Pathology during pregnancy	en
+_title_del_06	Pathologie pendant la grossesse	fr
+pregnancy_htn	           HTN	en
+pregnancy_htn	           HTA	fr
+pregnancy_preeclampsia	           preeclampsia	en
+pregnancy_preeclampsia	           pré-eclampsie	fr
+pregnancy_eclampsia	           eclampsia	en
+pregnancy_eclampsia	           eclampsie	fr
+pregnancy_uc_pbr	           UC/PBR	en
+pregnancy_uc_pbr	           CU/MAP	fr
+pregnancy_infection	           infection	en
+pregnancy_infection	           infection	fr
+pregnancy_placenta_praevia	           placenta praevia	en
+pregnancy_placenta_praevia	           placenta praevia	fr
+pregnancy_iufd	           IUFD	en
+pregnancy_iufd	           MFIU	fr
+pregnancy_pathology_other	           other pathology during pregnancy	en
+pregnancy_pathology_other	           autre pathologie pendant la grossesse	fr
+_title_del_07	Treatment during pregnancy:	en
+_title_del_07	Traitement pendant la grossesse:	fr
+pregnancy_treatment_anti_htn	           anti-HTN	en
+pregnancy_treatment_anti_htn	           anti-HTA	fr
+pregnancy_treatment_mg_sulfate	           Mg sulfate	en
+pregnancy_treatment_mg_sulfate	           sulfate de Mg	fr
+pregnancy_treatment_corticosteroids	           corticosteroids	en
+pregnancy_treatment_corticosteroids	           corticoïdes	fr
+pregnancy_treatment_antibiotics	           antibiotics	en
+pregnancy_treatment_antibiotics	           antibiotiques	fr
+pregnancy_treatment_aspirin	           aspirin	en
+pregnancy_treatment_aspirin	           aspirine	fr
+pregnancy_treatment_pmtct	           PMTCT	en
+pregnancy_treatment_pmtct	           PTME	fr
+pregnancy_treatment_other	           other treatment during pregnancy	en
+pregnancy_treatment_other	           autre traitement pendant la grossesse	fr
+_title_del_08	 	en
+_title_del_08	 	fr
+_title_del_09	CLINICAL EXAMINATION AT ADMISSION	en
+_title_del_09	EXAMEN D'ENTREE / D'ADMISSION	fr
+pregnancy_weeks	Duration of pregnancy at admission (WA)	en
+pregnancy_weeks	Age de la grosse à l'admission (SA)	fr
+_title_del_10	Cause of admission:	en
+_title_del_10	Motif d'admission:	fr
+admission_cause_spontaneous_labour	           spontaneous labour	en
+admission_cause_spontaneous_labour	           travail spontané	fr
+admission_cause_rom	           ROM	en
+admission_cause_rom	           RPM	fr
+admission_cause_bleeding	           bleeding	en
+admission_cause_bleeding	           saignements	fr
+admission_cause_pathologic_pregnancy	           pathologic pregnancy	en
+admission_cause_pathologic_pregnancy	           grossesse pathologique	fr
+_title_del_11	General status:	en
+_title_del_11	Etat général:	fr
+admission_exam_htn	           HTN	en
+admission_exam_htn	           HTA	fr
+admission_exam_htn_clinical	           HTN clinical signs	en
+admission_exam_htn_clinical	           signes cliniques de HTA	fr
+admission_exam_proteinuria	           proteinuria	en
+admission_exam_proteinuria	           protéinurie	fr
+admission_exam_fever	           fever	en
+admission_exam_fever	           fièvre	fr
+admission_exam_rph	           RPH	en
+admission_exam_rph	           HRP	fr
+admission_exam_convulsions	           convulsions	en
+admission_exam_convulsions	           convulsions	fr
+_title_del_12	Treatment received at admission:	en
+_title_del_12	Traitement reçu à l'admission:	fr
+admission_treatment_anti_htn	           anti HTN	en
+admission_treatment_anti_htn	           anti-HTA	fr
+admission_treatment_mg_sulfate	           Mg sulfate	en
+admission_treatment_mg_sulfate	           sulfate de Mg	fr
+admission_treatment_corticosteroids	           corticosteroids	en
+admission_treatment_corticosteroids	           corticoïdes	fr
+admission_treatment_antibiotics	           antibiotics	en
+admission_treatment_antibiotics	           antibiotiques	fr
+admission_treatment_aspirin	           aspirin	en
+admission_treatment_aspirin	           aspirine	fr
+admission_treatment_other	           other treatment received at admission	en
+admission_treatment_other	           autre traitement reçu à l'admission	fr
+_title_del_13	Clinical exam:	en
+_title_del_13	Examen clinique:	fr
+admission_foetus_presentation	Presentation	en
+admission_foetus_presentation	Présentation	fr
+dilatation	Vaginal touch (VT) / Dilatation (cm)	en
+dilatation	Toucher vaginal (TV) / dilatation (en cm)	fr
+foetus_heart_noise_perceived	Foetal heart sounds heard	en
+foetus_heart_noise_perceived	Bruits du coeur foetal (BDCF) perçus	fr
+twin_pregnancy	Twin pregnancy	en
+twin_pregnancy	Grossesse gémellaire	fr
+amniotic_sac_membrane	Amniotic sac / membrane	en
+amniotic_sac_membrane	Poche des eaux/membranes	fr
+amniotic_sac_membrane_spontaneous_rupture	Spontaneous rupture of amniotic sac / membrane	en
+amniotic_sac_membrane_spontaneous_rupture	Rupture spontanée de la poche des eaux / membranes	fr
+amniotic_liquid_admission	Amniotic liquid	en
+amniotic_liquid_admission	Liquide amniotique	fr
+_title_del_14	 	en
+_title_del_14	 	fr
+_title_del_15	DELIVERY REPORT	en
+_title_del_15	COMPTE RENDU DE L'ACCOUCHEMENT	fr
+delivery_by	Delivery done by	en
+delivery_by	Accouchement réalisé par	fr
+delivery_fundal_heigth	Term (WA)	en
+delivery_fundal_heigth	Terme (en SA)	fr
+labour_spontaneous	Spontaneous labor	en
+labour_spontaneous	Travail spontané	fr
+foetus_presentation	Presentation	en
+foetus_presentation	Présentation	fr
+delivery_multiple	Multiple pregnancy	en
+delivery_multiple	Grossesse multiple	fr
+foetal_suffering	Foetal suffering	en
+foetal_suffering	Souffrance foetale	fr
+cord_prolapse	Cord prolapse	en
+cord_prolapse	Procidence du cordon	fr
+cord_circulair	Circular cord	en
+cord_circulair	Cordon circulaire	fr
+amniotic_liquid	Aspect of amniotic liquid	en
+amniotic_liquid	Aspect du liquide amniotique	fr
+amniotic_liquid_admission_small_amount	Small amount of amniotic liquid	en
+amniotic_liquid_admission_small_amount	Liquide amniotique peu abondant	fr
+partogram_used	Partogramme used	en
+partogram_used	Partogramme utilisé	fr
+_title_del_16	Treament during labour:	en
+_title_del_16	Traitement pendant le travail:	fr
+labour_treatment_oxytocin	           oxytocin	en
+labour_treatment_oxytocin	           ocytocine	fr
+labour_treatment_anti_htn	           anti HTN	en
+labour_treatment_anti_htn	           anti HTA	fr
+labour_treatment_antibiotics	           antibiotics	en
+labour_treatment_antibiotics	           antibiotiques	fr
+labour_treatment_mg_sulfate	           Mg sulfate	en
+labour_treatment_mg_sulfate	           sulfate de Mg	fr
+labour_treatment_other	           other treatment during labour	en
+labour_treatment_other	           autre traitement pendant le travail	fr
+_title_del_17	Type of delivery	en
+_title_del_17	Type d'accouchement	fr
+delivery_type	Type of delivery	en
+delivery_type	Type d'accouchement	fr
+delivery_vaginal	Vaginal delivery	en
+delivery_vaginal	Voie basse	fr
+delivery_labors_vacuum	Vacuum extractor	en
+delivery_labors_vacuum	Ventouse	fr
+delivery_labors_forceps	Forceps	en
+delivery_labors_forceps	Forceps	fr
+_title_del_18	Problems/complications during delivery	en
+_title_del_18	Problèmes/complications pendant l'accouchement	fr
+delivery_foetal_distress	Foetal distress	en
+delivery_foetal_distress	Détresse foetale	fr
+delivery_prolapsed_cord	Prolpased cord	en
+delivery_prolapsed_cord	Prolapsus du cordon	fr
+delivery_circular_cord	Circular cord	en
+delivery_circular_cord	Circulaire du cordon	fr
+delivery_meconium	Meconium	en
+delivery_meconium	Meconium	fr
+delivery_shoulder_dystocia	Shoulder dystocia	en
+delivery_shoulder_dystocia	Dystocie de l'épaule	fr
+delivery_perineum_tear	Perineum tear	en
+delivery_perineum_tear	Déchirure du périnée	fr
+delivery_cervix_tear	Cervix tear	en
+delivery_cervix_tear	Déchirure du col de l'utérus	fr
+delivery_incomplete_placenta	Incomplete placenta	en
+delivery_incomplete_placenta	Placenta incomplet	fr
+delivery_preeclampsia	Preeclampsia	en
+delivery_preeclampsia	Prééclampsie	fr
+delivery_eclampsia	Eclampsia	en
+delivery_eclampsia	Eclampsie	fr
+delivery_bleeding	Excessive bleeding	en
+delivery_bleeding	Saignement excessif	fr
+_title_del_19	 	en
+_title_del_19	 	fr
+_title_del_20	Cesarean section	en
+_title_del_20	Césarienne	fr
+csection_type	C-section	en
+csection_type	Césarienne	fr
+csection_by	           done by:	en
+csection_by	           réalisé par:	fr
+_title_del_21	Indication for C-section:	en
+_title_del_21	Indication pour la césarienne:	fr
+csection_indication_labour	           prolonged labor	en
+csection_indication_labour	           travail prolongé	fr
+csection_indication_foetal_distress	           foetal distress	en
+csection_indication_foetal_distress	           détresse foetale	fr
+csection_indication_preeclampsia	           preeclampsia	en
+csection_indication_preeclampsia	           pré-eclampsie	fr
+csection_indication_eclampsia	           eclampsia	en
+csection_indication_eclampsia	           eclampsie	fr
+csection_indication_placenta_praevia	           placenta praevia	en
+csection_indication_placenta_praevia	           placenta praevia	fr
+csection_indication_rph	           RPH	en
+csection_indication_rph	           HRP	fr
+anesthesia_type	Anesthesia	en
+anesthesia_type	Anesthésie	fr
+perinea	Perinea	en
+perinea	Périnée	fr
+cervical_tear	Cervical tear	en
+cervical_tear	Déchirure du col de l'utérus	fr
+episiotomy	Episiotomy	en
+episiotomy	Episiotomie	fr
+delivery_spontaneous	Delivery: spontaneous / directed	en
+delivery_spontaneous	Délivrance: spontanée / dirigée	fr
+delivery_complete	           complete / incomplete	en
+delivery_complete	           complète / incomplète	fr
+delivery_haemorrhage	Delivery haemorrhage	en
+delivery_haemorrhage	Hémorragie de la délivrance	fr
+treatment_uterine_massage	Uterine massage	en
+treatment_uterine_massage	Massage utérin	fr
+treatment_transfusion	Transfusion	en
+treatment_transfusion	Transfusion	fr
+treatment_bakri_balloon	Bakri Balloon	en
+treatment_bakri_balloon	Ballon de Bakri	fr
+treatment_maternal_resuscitation	Maternal resuscitation	en
+treatment_maternal_resuscitation	Réanimation maternelle	fr
+_title_del_22	 	en
+_title_del_22	 	fr
+_title_del_23	NEWBORN	en
+_title_del_23	NOUVEAU-NE	fr
+newborn_status	Status	en
+newborn_status	Statut	fr
+newborn_status_child2	          -> child 2	en
+newborn_status_child2	          -> enfant 2	fr
+newborn_status_child3	          -> child 3	en
+newborn_status_child3	          -> enfant 3	fr
+newborn_term	Term (WA)	en
+newborn_term	Terme (en SA)	fr
+newborn_term_child2	          -> child 2	en
+newborn_term_child2	          -> enfant 2	fr
+newborn_term_child3	          -> child 3	en
+newborn_term_child3	          -> enfant 3	fr
+newborn_sex	Sex	en
+newborn_sex	Sexe	fr
+newborn_sex_child2	          -> child 2	en
+newborn_sex_child2	          -> enfant 2	fr
+newborn_sex_child3	          -> child 3	en
+newborn_sex_child3	          -> enfant 3	fr
+newborn_weight_gr	Weight (in g)	en
+newborn_weight_gr	Poids (en g)	fr
+newborn_weight_gr_child2	          -> child 2	en
+newborn_weight_gr_child2	          -> enfant 2	fr
+newborn_weight_gr_child3	          -> child 3	en
+newborn_weight_gr_child3	          -> enfant 3	fr
+newborn_apgar_1min	Apgar at 1 minute	en
+newborn_apgar_1min	Apgar à 1 minute	fr
+newborn_apgar_1min_child2	          -> child 2	en
+newborn_apgar_1min_child2	          -> enfant 2	fr
+newborn_apgar_1min_child3	          -> child 3	en
+newborn_apgar_1min_child3	          -> enfant 3	fr
+newborn_apgar_5min	Apgar at 5 minutes	en
+newborn_apgar_5min	Apgar à 5 minutes	fr
+newborn_apgar_5min_child2	          -> child 2	en
+newborn_apgar_5min_child2	          -> enfant 2	fr
+newborn_apgar_5min_child3	          -> child 3	en
+newborn_apgar_5min_child3	          -> enfant 3	fr
+newborn_apgar_10min	Apgar at 10 minutes	en
+newborn_apgar_10min	Apgar à 10 minutes	fr
+newborn_apgar_10min_child2	          -> child 2	en
+newborn_apgar_10min_child2	          -> enfant 2	fr
+newborn_apgar_10min_child3	          -> child 3	en
+newborn_apgar_10min_child3	          -> enfant 3	fr
+newborn_deformity	Deformity	en
+newborn_deformity	Malformation	fr
+newborn_deformity_child2	          -> child 2	en
+newborn_deformity_child2	          -> enfant 2	fr
+newborn_deformity_child3	          -> child 3	en
+newborn_deformity_child3	          -> enfant 3	fr
+newborn_obstetrical_trauma	Obstetrical trauma	en
+newborn_obstetrical_trauma	Trauma obstétrical	fr
+newborn_obstetrical_trauma_child2	          -> child 2	en
+newborn_obstetrical_trauma_child2	          -> enfant 2	fr
+newborn_obstetrical_trauma_child3	          -> child 3	en
+newborn_obstetrical_trauma_child3	          -> enfant 3	fr
+newborn_vitamink1	Prevention - vitamin K1	en
+newborn_vitamink1	Prévention - vitamine K1	fr
+newborn_vitamink1_child2	          -> child 2	en
+newborn_vitamink1_child2	          -> enfant 2	fr
+newborn_vitamink1_child3	          -> child 3	en
+newborn_vitamink1_child3	          -> enfant 3	fr
+treatment_ophtalmic_tetracycline	Ophtalmic tetracycline	en
+treatment_ophtalmic_tetracycline	Tétracycline ophtalmique	fr
+treatment_ophtalmic_tetracycline_child2	          -> child 2	en
+treatment_ophtalmic_tetracycline_child2	          -> enfant 2	fr
+treatment_ophtalmic_tetracycline_child3	          -> child 3	en
+treatment_ophtalmic_tetracycline_child3	          -> enfant 3	fr
+neonatal_vaccination_polio	Neonatal vaccination - polio	en
+neonatal_vaccination_polio	Vaccination néonatale - polio	fr
+neonatal_vaccination_polio_child2	          -> child 2	en
+neonatal_vaccination_polio_child2	          -> enfant 2	fr
+neonatal_vaccination_polio_child3	          -> child 3	en
+neonatal_vaccination_polio_child3	          -> enfant 3	fr
+neonatal_vaccination_hepb0	Neonatal vaccination - Hep B 0	en
+neonatal_vaccination_hepb0	Vaccination néonatale - Hep B 0	fr
+neonatal_vaccination_hepb0_child2	          -> child 2	en
+neonatal_vaccination_hepb0_child2	          -> enfant 2	fr
+neonatal_vaccination_hepb0_child3	          -> child 3	en
+neonatal_vaccination_hepb0_child3	          -> enfant 3	fr
+neonatal_vaccination_bcg0	Neonatal vaccination - BCG 0	en
+neonatal_vaccination_bcg0	Vaccination néonatale - BCG 0	fr
+neonatal_vaccination_bcg0_child2	          -> child 2	en
+neonatal_vaccination_bcg0_child2	          -> enfant 2	fr
+neonatal_vaccination_bcg0_child3	          -> child 3	en
+neonatal_vaccination_bcg0_child3	          -> enfant 3	fr
+neonatal_resuscitation	Neonatal resuscitation	en
+neonatal_resuscitation	Réanimation néonatale	fr
+neonatal_resuscitation_child2	          -> child 2	en
+neonatal_resuscitation_child2	          -> enfant 2	fr
+neonatal_resuscitation_child3	          -> child 3	en
+neonatal_resuscitation_child3	          -> enfant 3	fr
+neonatal_transfer	Neonatal transfer	en
+neonatal_transfer	Transfert néonatal	fr
+neonatal_transfer_child2	          -> child 2	en
+neonatal_transfer_child2	          -> enfant 2	fr
+neonatal_transfer_child3	          -> child 3	en
+neonatal_transfer_child3	          -> enfant 3	fr
+newborn_maternal_feeding	Initial breastfeeding at birth	en
+newborn_maternal_feeding	Mise au sein à la naissance	fr
+newborn_maternal_feeding_child2	          -> child 2	en
+newborn_maternal_feeding_child2	          -> enfant 2	fr
+newborn_maternal_feeding_child3	          -> child 3	en
+newborn_maternal_feeding_child3	          -> enfant 3	fr
+newborn_puerperium_return	Return in puerperium	en
+newborn_puerperium_return	Retour en suites de couches	fr
+newborn_puerperium_return_child2	          -> child 2	en
+newborn_puerperium_return_child2	          -> enfant 2	fr
+newborn_puerperium_return_child3	          -> child 3	en
+newborn_puerperium_return_child3	          -> enfant 3	fr
+_title_del_24	 	en
+_title_del_24	 	fr
+_title_del_25	POSTPARTUM	en
+_title_del_25	POST-PARTUM	fr
+postpartum_outcome	Immediate postpartum	en
+postpartum_outcome	Post-partum immédiat	fr
+postpartum_uterine_atony	          Uterine atony	en
+postpartum_uterine_atony	          Atonie utérine	fr
+postpartum_haemorrhage	          Haemorrhage	en
+postpartum_haemorrhage	          Hémorragie	fr
+postpartum_htn	          HTN	en
+postpartum_htn	          HTA	fr
+postpartum_preeclampsia	          Preeclampsia (PE)	en
+postpartum_preeclampsia	          Pré-eclampsie (PE)	fr
+postpartum_eclampsia	          Eclampsia (E)	en
+postpartum_eclampsia	          Eclampsie (E)	fr
+postpartum_fever	          Fever	en
+postpartum_fever	          Fièvre	fr
+puerperium_outcome	Puerperium	en
+puerperium_outcome	Suites de couches	fr
+puerperium_stay_duration	          Stay duration	en
+puerperium_stay_duration	          Durée de séjour	fr
+puerperium_uterine_atony	          Uterine atony	en
+puerperium_uterine_atony	          Atonie utérine	fr
+puerperium_pph	          Haemorrhage / PPH	en
+puerperium_pph	          Hémorragie / HPP	fr
+puerperium_htn	          HTN	en
+puerperium_htn	          HTA	fr
+puerperium_preeclampsia	          Preeclampsia (PE)	en
+puerperium_preeclampsia	          Pré-eclampsie (PE)	fr
+puerperium_eclampsia	          Eclampsia (E)	en
+puerperium_eclampsia	          Eclampsie (E)	fr
+puerperium_breastfeeding	          Breast feeding	en
+puerperium_breastfeeding	          Allaitement	fr
+puerperium_infection	          Infection	en
+puerperium_infection	          Infection	fr
+puerperium_treatment_atb	Treatment received - Antibiotics (ATB)	en
+puerperium_treatment_atb	Traitement reçu - antibiotiques (ATB)	fr
+puerperium_treatment_mg_sulfate	          Mg sulfate	en
+puerperium_treatment_mg_sulfate	          Sulfate de Mg	fr
+puerperium_treatment_uterotonics	          Uterotonics	en
+puerperium_treatment_uterotonics	          Utérotoniques	fr
+puerperium_treatment_transfusion	          Transfusion	en
+puerperium_treatment_transfusion	          Transfusion	fr
+puerperium_treatment_other	          Other	en
+puerperium_treatment_other	          Autre	fr
+contraception_proposed	Contraception proposed	en
+contraception_proposed	Contraception proposée	fr
+contraception_accepted	Contraception accepted	en
+contraception_accepted	Contraception acceptée	fr
+contraception_method	Contraception method	en
+contraception_method	Méthode de contraception	fr
+comments	Comments	en
+comments	Commentaires	fr

@@ -1,0 +1,51 @@
+1	Rape with intimidation	en
+2	Rape with violence	en
+3	Other sexual violence	en
+8	Pregnancy after rape	en
+9	HIV after rape	en
+4	Physical violence	en
+11	Aggression	en
+7	Witness of physical violence	en
+12	Threat	en
+13	Violent death of family member	en
+15	Family member is victim of physical violence	en
+5	Kidnaping	en
+16	Violent attack	en
+6	Witness of sexual violence	en
+14	Family member is victim of sexual violence	en
+17	Extortion	en
+10	Other	en
+1	Viol avec intimidation	fr
+2	Viol avec violence	fr
+3	Autre violence sexuelle	fr
+8	Grossesse suite à un viole	fr
+9	VIH suite à un viol	fr
+4	Violence physique	fr
+11	Agression	fr
+7	Témoin de violences physiques	fr
+12	Menaces	fr
+13	Mort violente d'un membre de la famille	fr
+15	Membre de la famille victime de violence physique	fr
+5	Enlèvement	fr
+16	Attaque violente	fr
+6	Témoin de violences sexuelles	fr
+14	Membre de la famille victime de violence sexuelle	fr
+17	Extorsion	fr
+10	Autre	fr
+1	Violación con intimidación	es
+2	Violación con violencia	es
+3	Otra violencia sexual	es
+8	Embarazo después de una violación	es
+9	VIH después de una violación	es
+4	Violencia física	es
+11	Agresión	es
+7	Testigo de violencia fisica	es
+12	Amenazas	es
+13	Muerte violenta de familiar	es
+15	Familiar victima de violencia física	es
+5	Secuestro	es
+16	Asalto violento	es
+6	Testigo de Violencia sexual	es
+14	Familiar victima de violencia sexual	es
+17	Extorsion	es
+10	Otro	es

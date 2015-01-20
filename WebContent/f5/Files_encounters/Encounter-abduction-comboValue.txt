@@ -1,0 +1,6 @@
+1	Yes	en
+2	No	en
+1	Oui	fr
+2	Non	fr
+1	Sí	es
+2	No	es

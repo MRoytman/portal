@@ -1,0 +1,4 @@
+1	intact	en
+2	tear	en
+1	intact	fr
+2	déchirure	fr

@@ -1,0 +1,15 @@
+1	Suture	en
+2	Basic wound care	en
+3	Antibiotics given	en
+4	Other	en
+5	Not Necessary	en
+1	Suture	fr
+2	Soins de base	fr
+3	Antibiotiques	fr
+4	Autre	fr
+5	Pas nécessaire	fr
+1	Sutura	es
+2	Cuidados básicos	es
+3	Antibióticos	es
+4	Otro	es
+5	No necesario	es

@@ -1,0 +1,36 @@
+1	Home	en
+2	Work place	en
+3	Institution	en
+4	Public road / street	en
+5	Transport means	en
+6	Bar	en
+7	Jail	en
+8	School / University	en
+9	Others	en
+10	Migration	en
+11	Fight	en
+12	Unknown	en
+1	Domicile	fr
+2	Lieu de travail	fr
+3	Institution	fr
+4	Rue / route publique	fr
+5	Moyens de transport	fr
+6	Bar	fr
+7	Prison	fr
+8	Ecole / université	fr
+9	Autre	fr
+10	Migration	fr
+11	Combats	fr
+12	Inconnu	fr
+1	Hogar	es
+2	Trabajo	es
+3	Institución	es
+4	Vía pública	es
+5	Transporte	es
+6	Bar, cantina	es
+7	Prisión	es
+8	Escuela / Universidad	es
+9	Otro	es
+10	Migración	es
+11	Pelea	es
+12	Desconocido	es

@@ -1,0 +1,15 @@
+1	< 8 weeks 	en
+2	8 - 12 weeks	en
+3	12 - 20 weeks	en
+4	> 20 weeks	en
+5	Yes, term unknown	en
+1	< 8 semaines	fr
+2	8 - 12 semaines	fr
+3	12 - 20 semaines	fr
+4	> 20 semaines	fr
+5	Oui, terme inconnu	fr
+1	< 8 semanas	es
+2	8 - 12 semanas	es
+3	12 - 20 semanas	es
+4	> 20 semanas	es
+5	Sí, término desconocido	es

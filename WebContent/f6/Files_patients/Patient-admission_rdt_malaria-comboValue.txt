@@ -1,0 +1,6 @@
+1	Positive	en
+2	Negative	en
+3	Not done	en
+1	Positif	fr
+2	Négatif	fr
+3	Pas fait	fr

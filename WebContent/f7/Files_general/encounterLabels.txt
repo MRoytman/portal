@@ -1,0 +1,6 @@
+HIV_main_form	HIV Main Form	en
+HIV_main_form	HIV Main Form	fr
+HIV_follow_up	HIV Follow Up	en
+HIV_follow_up	HIV Suivi	fr
+TB	TB	en
+TB	TB	fr

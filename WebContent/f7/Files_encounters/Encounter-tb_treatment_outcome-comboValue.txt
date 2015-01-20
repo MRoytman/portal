@@ -1,0 +1,12 @@
+1	Cured	en
+2	Treatment completed	en
+3	Failure	en
+4	Death	en
+5	Treatment adapted	en
+6	Transfer out	en
+1	Guéri	fr
+2	Traitement terminé	fr
+3	Echec	fr
+4	Décès	fr
+5	Traitement adapté	fr
+6	Transféré	fr

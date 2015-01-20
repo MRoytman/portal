@@ -1,0 +1,8 @@
+1	not malnourished	en
+2	moderately malnurished	en
+3	severely malnurished	en
+4	unknown	en
+1	non malnutri	fr
+2	modérément malnutri	fr
+3	sévérement malnutri	fr
+4	inconnu	fr

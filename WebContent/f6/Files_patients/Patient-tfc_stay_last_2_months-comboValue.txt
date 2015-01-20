@@ -1,0 +1,6 @@
+1	Yes	en
+2	No	en
+unknown	Unknown	en
+1	Oui	fr
+2	Non	fr
+unknown	Inconnu	fr

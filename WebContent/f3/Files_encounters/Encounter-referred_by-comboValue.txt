@@ -1,0 +1,8 @@
+1	Spontaneously	en
+16	Private Physician	en
+17	Primary Health Center	en
+other	Other	en
+1	Por voluntad propia	es
+16	Medico privado	es
+17	Unidad de salud primaria	es
+other	Otro	es

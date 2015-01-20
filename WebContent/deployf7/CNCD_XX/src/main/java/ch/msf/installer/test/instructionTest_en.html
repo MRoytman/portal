@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>MSF App portal</title>
+<link rel="stylesheet" href="../template.css" type="text/css" media="all" />
+<style>
+</style>
+
+</head>
+<body>
+	<header>
+		<div id='header'>
+			<div id='logozone'>
+				<p>
+					<img id='msfLogo' src="../head_logo_msf.gif"
+						alt="head_logo_msf.gif" />
+				</p>
+			</div>
+
+			<h1 id='title'>IPD</h1>
+			<h2>Data entry and analysis tool</h2>
+			<h3>(for ...)</h3>
+
+
+		</div>
+	</header>
+
+
+
+	<div>
+
+		<h3>MSF Application links</h3>
+		<div id="links">
+
+			<ul>
+				<li><a
+					href="http://ftp.ocg.msf.org/webstart/IPD/IPDInstaller1.4.jnlp"
+					target="_blank">Install</a> Click on this link to setup your
+					machine for reporting. The software will automatically install
+					components necessary to run the 'Analysis' software. You must use
+					this link at each new 'Analysis' version.</li>
+				<li><a
+					href="http://ftp.ocg.msf.org/webstart/IPD/IPDAdmin1.2.jnlp"
+					target="_blank">Admin</a> Click on this link to define the scoping
+					contexts (countries, projects, care centres) that will be used for
+					the data collection software 'EntryForm'. This process has to be
+					done prior using the data collection application.<br> Usually
+					this operation is done at the coordination level, but in certain
+					cases it is done at the field level. <br>The output of this
+					process is the generation of a configuration file named
+					"d:\entryFormConfig.xml". This file should be copied to the field
+					data operator machine where the 'EntryForm' software will be run.<br>
+					For more information consult the <a
+					href="http://ftp.ocg.msf.org/webstart/IPD/Admin UserManual1.1.pdf"
+					target="_blank">Admin User Manual</a>.</li>
+				<li><a
+					href="http://ftp.ocg.msf.org/webstart/IPD/IPDEntryForm1.7.jnlp"
+					target="_blank">EntryForm</a> Click on this link to perform the
+					data collection application. Prior launching the application, you
+					must ensure the file named "d:\entryFormConfig.xml" is installed on
+					your machine (this file contains at least one context information and SHOULD NOT be edited manually).<br>For more information consult the <a
+					href="http://ftp.ocg.msf.org/webstart/IPD/EntryForm UserManual1.1.pdf"
+					target="_blank">EntryForm UserManual</a>.</li>
+				<li><a
+					href="http://ftp.ocg.msf.org/webstart/IPD/IPDReportLauncher1.3.jnlp"
+					target="_blank">Analysis</a> Click on this link to run the
+					reporting application.</li>
+				<li><a
+					href="http://ftp.ocg.msf.org/webstart/IPD/IPDImpExp1.2.jnlp"
+					target="_blank">Export</a> Click on this link to run the data
+					export toward a central repository.</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<footer>
+		<input type="text" id="clock" style="position: absolute; right: 0;" />
+	</footer>
+	<script>
+		self.setInterval(function() {
+			refreshPage()
+		}, 60000);
+		function refreshPage() {
+			var d = new Date();
+			var t = d.toString();
+			document.getElementById("clock").value = t;
+			location.reload();
+		}
+	</script>
+
+
+</body>
+</html>

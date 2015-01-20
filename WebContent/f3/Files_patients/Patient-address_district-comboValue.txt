@@ -1,0 +1,52 @@
+1	Léogâne ville & quartiers	en
+2	Beauséjour	en
+3	Carrefour	en
+4	Citronniers	en
+5	Cormiers	en
+6	Dessources	en
+7	Fond de Boudin	en
+8	Fonds d'Oie	en
+9	Grand Goave	en
+10	Grande Rivière	en
+11	Gros Morne	en
+12	Jacmel	en
+13	La Gonave (île)	en
+14	Miragoane	en
+15	Morne à Bateau	en
+16	Morne à Chandelle	en
+17	Oranger	en
+18	Palmiste à Vins	en
+19	Parques	en
+20	Petit Boucan	en
+21	Petit Goave	en
+22	Petit Harpon	en
+23	Petite Rivière	en
+24	Port-au-Prince	en
+other	other	en
+unknown	unknown	en
+1	Léogâne ville & quartiers	fr
+2	Beauséjour	fr
+3	Carrefour	fr
+4	Citronniers	fr
+5	Cormiers	fr
+6	Dessources	fr
+7	Fond de Boudin	fr
+8	Fonds d'Oie	fr
+9	Grand Goave	fr
+10	Grande Rivière	fr
+11	Gros Morne	fr
+12	Jacmel	fr
+13	La Gonave (île)	fr
+14	Miragoane	fr
+15	Morne à Bateau	fr
+16	Morne à Chandelle	fr
+17	Oranger	fr
+18	Palmiste à Vins	fr
+19	Parques	fr
+20	Petit Boucan	fr
+21	Petit Goave	fr
+22	Petit Harpon	fr
+23	Petite Rivière	fr
+24	Port-au-Prince	fr
+other	autre	fr
+unknown	inconnu	fr

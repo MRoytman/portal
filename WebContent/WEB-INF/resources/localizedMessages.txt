@@ -1,0 +1,216 @@
+1	en	Bad parameter
+1	fr	Mauvais paramètre
+1	es	Parámetro incorrecto
+2	en	The message referenced by the number is not defined
+2	fr	Le message référencé par le numéro d'erreur n'est pas défini
+2	es	El mensaje de referencia por el número de error no está definido
+3	en	The configuration is modified but not saved yet, are you sure you want to quit the application? Please click on 'Cancel' button, then on the 'Save' button otherwise.
+3	fr	La configuration est modifiée mais pas encore enregistrée, êtes vous sûr de vouloir quitter? Veuiller cliquer sur le bouton 'Cancel' puis sur le bouton 'Save' sinon.
+3	es	La configuración se ha modificado pero no guardado, sin embargo, está seguro de que desea salir de la aplicación? Por favor, haga clic en el botón "Cancelar", y luego en el botón 'Guardar' lo contrario.
+4	en	The application is not configured properly
+4	fr	L'application n'est pas configurée correctement
+4	es	La aplicación no está configurado correctamente
+5	en	Are you sure you want to quit this application?
+5	fr	Etes vous sur de vouloir quitter l'application?
+5	es	¿Seguro de que deseas abandonar esta aplicación
+6	en	Cancel
+6	fr	Annuler
+6	es	Cancelar
+8	en	Operation did not succeed
+8	fr	L'opération n'a pas réussi
+8	es	La operación no tuvo éxito
+9	en	Saving operation has failed
+9	fr	L'opération de sauvegarde a échoué
+9	es	Ahorro operación ha fallado
+30	en	Edit
+30	fr	Editer
+30	es	Editar
+31	en	Revert
+31	fr	Revenir à la valeur précèdente
+31	es	Revertir
+32	en	Accept
+32	fr	Accepter
+32	es	Acceptar
+50	en	New
+50	fr	Nouveau
+50	es	Nuevo
+51	en	Delete
+51	fr	Supprimer
+51	es	Borrar
+52	en	Cancel modifications
+52	fr	Annuler modifications
+52	es	Cancelar cambios
+53	en	Show All
+53	fr	Afficher Tous
+53	es	Borrar
+54	en	Find
+54	fr	Filtrer
+54	es	Encontrar
+55	en	Save
+55	fr	Sauvegarder
+55	es	Ahorrar
+56	en	Help
+56	fr	Aide
+56	es	Ayudar
+57	en	Are you sure you want to delete this line?
+57	fr	Êtes-vous sûr de vouloir supprimer cette ligne?
+57	es	¿Está seguro de que desea eliminar esta línea?
+58	en	Add a new village
+58	fr	Ajouter un nouveau village
+58	es	Añadir un nuevo pueblo
+59	en	New village name
+59	fr	Nom du nouveau village
+59	es	Nuevo nombre de la aldea
+60	en	Health area
+60	fr	Aire de santé
+60	es	Área de Salud
+61	en	Next
+61	fr	Suivants
+61	es	Siguiente
+62	en	Previous
+62	fr	Précédent
+62	es	Anterior
+63	en	Name/Surname/Id
+63	fr	Prénom/Nom/Id
+63	es	Nombre/Apellido/Id
+102	en	The value must be a valid date! (dd.MM.yyyy)
+102	fr	La valeur de la date saisie est invalide! (dd.MM.yyyy)
+102	es	El valor debe ser una fecha válida! (dd.MM.yyyy)
+103	en	The value must be a valid number!
+103	fr	La valeur du nombre saisi est invalide!
+103	es	El valor debe ser un número válido!
+104	en	The value must be a valid time! (HH:mm)
+104	fr	La valeur de l'heure saisie est invalide! (HH:mm)
+104	es	El valor debe ser una hora válida ! (HH:mm)
+105	en	The value must be a valid ! 
+105	fr	La valeur saisie est invalide!
+105	es	El valor debe ser una válido !
+107	en	Search text is too short !
+107	fr	Le texte de recherche est trop court !
+107	es	El texto de buscar es demasiado corto
+110	en	This identifier already exists in the database
+110	fr	Cet identifiant existe déjà dans la base de données
+110	es	Esta identificación ya existe en la base de datos
+111	en	Ask your administrator to configure the application.
+111	fr	Demander à votre administrateur de configurer l'application.
+111	es	Consulte con su administrador para configurar la aplicación.
+112	en	Data format not compatible.
+112	fr	Format de données non compatible.
+112	es	Formato de datos no compatible.
+113	en	User has no permissions on encounters.
+113	fr	Aucunes permissions n'a été définie pour cet utilisateur.
+113	es	El usuario no tiene permisos en los encuentros.
+210	en	Countries
+210	fr	Pays
+210	es	Países
+211	en	Projects & care centres
+211	fr	Projets & centres de soins
+211	es	Proyectos & centros de atención
+212	en	Consultation/stay details
+212	fr	Détails consultation/séjour
+212	es	Encuentro / stay detalles
+213	en	Consultations/stays
+213	fr	Consultations/séjours
+213	es	Encuentros/estancias
+214	en	Final
+214	fr	Final
+214	es	Final
+215	en	Context selection
+215	fr	Contexte sélection
+215	es	Contexto selección
+216	en	Patient details
+216	fr	Données du patient
+216	es	Detalles del paciente
+217	en	List of patients
+217	fr	Liste des patients
+217	es	Lista de pacientes
+218	en	Login
+218	fr	Login
+218	es	Login
+219	en	Villages of origin
+219	fr	Villages d'origine
+219	es	Pueblos de origen
+220	en	Last
+220	fr	Derniers
+220	es	Más reciente
+500	en	Number is out of range
+500	fr	Le chiffre n'est pas compris dans l'intervalle
+500	es	La figura no está en el intervalo
+1000	en	Patient id. This field is MANDATORY and MUST be UNIQ in the database
+1000	fr	Identifiant du patient. Ce champ doit être OBLIGATOIREMENT rempli ET DOIT être UNIQUE dans la base de données
+1000	es	Identificación del paciente. Este campo es OBLIGATORIO y debe ser ÚNICO en la base de datos
+1001	en	Patient name/surname. This field is not mandatory and can be skipped to go to next screen
+1001	fr	Nom/prénom patient. Ce champ n'est pas obligatoire et peut être omis pour aller à l'écran suivant
+1001	es	Nombre / apellidos del paciente. Este campo no es obligatorio y se puede saltar para ir a la siguiente pantalla
+1002	en	Patient gender. This field is MANDATORY  to go to next screen
+1002	fr	Sexe du patient. Ce champ est OBLIGATOIRE ET DOIT être UNIQUE dans la base de données
+1002	es	Género del paciente. Este campo es OBLIGATORIO para ir a la siguiente pantalla
+1003	en	Patient birthday. This field is not mandatory and can be skipped to go to next screen
+1003	fr	Date de naissance du patient. Ce champ n'est pas obligatoire et peut être omis pour aller à l'écran suivant
+1003	es	Cumpleaños paciente. Este campo no es obligatorio y se puede saltar para ir a la siguiente pantalla
+1004	en	Click on this button to add a new patient
+1004	fr	Cliquer sur ce bouton pour ajouter un nouveau patient
+1004	es	Haga clic en este botón para añadir un nuevo paciente
+1005	en	Click on this button to remove the selected patient
+1005	fr	Cliquer sur ce bouton pour supprimer le patient sélectionné
+1005	es	Haga clic en este botón para eliminar el paciente seleccionado
+1006	en	Click on this button to cancel the changed or new added patient
+1006	fr	Cliquer sur ce bouton pour annuler les changements du patient selectionné ou récemment ajouté
+1006	es	Haga clic en este botón para cancelar el paciente cambiar o añadir nuevos
+1007	en	<html><p>Add a new patient to the list by clicking on the 'New' button or select an existing line to modify a patient. <br>Then go to the next step by clicking on the 'Next' button which is enabled if all mandatory fields in the line are filled
+1007	fr	<html><p>Ajouter un nouveau patient à la liste en cliquant sur le bouton 'Nouveau' ou sélectionner une ligne existante pour modifier un patient.<br>Ensuite, aller à l'étape suivante en cliquant sur le bouton 'Next' qui est activé si tous les champs obligatoires de la ligne sont remplis
+1007	es	<html><p>Añadir un nuevo paciente a la lista haciendo clic en el botón "Nuevo" o seleccione una línea existente para modificar un paciente.<br>A continuación, vaya al siguiente paso haciendo clic en 'Next' botón Todos, que se activa si se llenan todos los campos obligatorios
+1008	en	<html><p>All the fields belong to the selected patient.<br>Fill all the information that you already know and click 'Save' to save the patient.<br>Then go to the next step by clicking on the 'Next' button
+1008	fr	<html><p>Tous les champs appartiennent au patient sélectionné. <br> Remplir toutes les informations que vous connaisser déjà et cliquer sur 'Sauvegarder' pour enregistrer le patient. <br> Ensuite, aller à l'étape suivante en cliquant sur le bouton 'Next'
+1008	es	<html><p>Añadir un nuevo paciente a la lista haciendo clic en el botón "Nuevo" o seleccione una línea existente para modificar un paciente.<br>A continuación, vaya al siguiente paso haciendo clic en 'Next' botón Todos, que se activa si se llenan todos los campos obligatorios
+1009	en	<html><p>Add a new consultation to the list by clicking on the 'New' button or select an existing line to modify a consultation. <br>Then go to the next step by clicking on the 'Next' button which is enabled if all mandatory fields in the line are filled
+1009	fr	<html><p>Ajouter une nouvealle consultation à la liste en cliquant sur le bouton 'Nouveau' ou sélectionner une ligne existante pour modifier une consultation.<br>Ensuite, aller à l'étape suivante en cliquant sur le bouton 'Next' qui est activé si tous les champs obligatoires de la ligne sont remplis
+1009	es	<html><p>Agregue una referencia a la lista haciendo clic en el botón 'Nuevo' o seleccionar una línea existente para modificar una consulta. MedlinePlus A continuación, vaya al paso siguiente haciendo clic en el botón 'Siguiente' se activa si todo Cuál campos obligatorios están llenos de la línea
+1010	en	<html><p>All the fields belong to the selected consultation.<br>Fill all the information that you already know and click 'Save' to save the consultation and go to the patient list
+1010	fr	<html><p>Tous les champs appartiennent à la consultation sélectionnée. <br> Remplisser toutes les informations que vous connaisser déjà et cliquer sur 'Sauvegarder' pour enregistrer la consultation et aller à la liste des patients
+1010	es	<html><p>Todos los campos pertenecen a la referencia seleccionada. MedlinePlus Llene toda la información que ya saben, y haga clic en "Guardar" para guardar la consulta e ir a la lista de pacientes
+1011	en	Enter a search criteria in the left cell and click on this button to find patients either on the id, the name or surname
+1011	fr	Entrez un critère de recherche dans la cellule de gauche et cliquez sur ce bouton pour trouver des patients, soit sur l'id, le nom ou le prénom
+1011	es	Introduzca un criterio de búsqueda en la celda de la izquierda y haz clic sobre este botón para buscar los pacientes, ya sea en el identificador, el nombre o el apellido
+1012	en	Click on this button to clear the search criteria and restore the whole patient list
+1012	fr	Cliquez sur ce bouton pour effacer le critère de recherche et rétablir la liste complète des patients
+1012	es	Haga clic en este botón para borrar los criterios de búsqueda y restaurar la lista de pacientes entera
+1013	en	Click on this button to add a new consultation
+1013	fr	Cliquer sur ce bouton pour ajouter une nouvelle consultation
+1013	es	Haga clic en este botón para agregar una nueva consulta
+1014	en	Click on this button to remove the selected consultation
+1014	fr	Cliquer sur ce bouton pour supprimer la consultation sélectionnée
+1014	es	Haga clic en este botón para eliminar la consulta seleccionada
+1015	en	Click on this button to cancel the changed or new added consultation
+1015	fr	Cliquer sur ce bouton pour annuler les changements de la consultation selectionnée ou récemment ajoutée
+1015	es	Haga clic en este botón para cancelar la consulta modificados o nuevos añadidos
+1016	en	This is the consultation/stay type. This field cannot be edited
+1016	fr	C'est le type de consultation / séjour. Ce champ ne peut pas être modifié
+1016	es	Este es el tipo de consulta / estancia. Este campo no se puede editar
+1017	en	This is the consultation/stay date. This field MUST be filled to go to the next screen.
+1017	fr	C'est la date de consultation / séjour. Ce champ doit être rempli pour aller à l'écran suivant
+1017	es	Esta es la fecha de consulta / estancia. Este campo deberá ser llenado para ir a la siguiente pantalla
+1018	en	Click on this button to add a new village
+1018	fr	Cliquer sur ce bouton pour ajouter un nouveau village
+1018	es	Haga clic en este botón para añadir una nueva alde
+1019	en	<html><p>The list of the villages is used to fill the patient's village origin value in the 'List of patients' screen.<p> To add a a new village type the name in the village field AND select the correct health area.<p>Then click on the 'Add' button, you should see it in the list just after. Add a new village ONLY IF YOU NEED IT AND IT DOES NOT EXIST YET in this list
+1019	fr	<html><p>La liste des villages est utilisée pour renseigner le champ du village d'origine dans l'écran de la 'Liste des patients'.<p> Pour ajouter un nouveau village à cette liste, entrer le nouveau nom dans le champ 'Village' ET sélectionner l'aire de santé.<p>Puis cliquer sur le bouton 'Ajouter' et le nouveau village va s'insérer dans la liste.<p>Ajouter un nouveau village SEULEMENT SI VOUS EN AVEZ BESOIN ET S'IL N'EXISTE PAS DEJA dans cette liste 
+1019	es	<html><p>La lista de las aldeas se utiliza para rellenar el valor origen aldea del paciente en la "Lista de los pacientes 'pantalla. <p> Para agregar aa nuevo tipo pueblo el nombre en el campo del pueblo y seleccione el área de salud correcto. <p> Continuación, haga clic en el botón "Añadir", debería ver en la lista justo después. Añadir un nuevo pueblo SOLAMENTE SI USTED LO NECESITA Y NO EXISTE PERO en esta lista
+1020	en	Click on this button to display the next records
+1020	fr	Cliquer sur ce bouton pour afficher les enregistrements qui suivent
+1020	es	Haga clic en este botón para ver los siguientes registros
+1021	en	Click this button to display previous records
+1021	fr	Cliquer sur ce bouton pour afficher les enregistrements précédents
+1021	es	Haga clic en este botón para ver los registros anteriores
+
+
+2000	en	Action rule problem: (component MapperNotifierActionRunner) 
+2000	fr	Action rule problem: (component MapperNotifierActionRunner)
+2000	es	Action rule problem: (component MapperNotifierActionRunner)
+2001	en	Action rule problem: (component CalculatorActionRunner) 
+2001	fr	Action rule problem: (component CalculatorActionRunner)
+2001	es	Action rule problem: (component CalculatorActionRunner)
+
+2121	en	Mutual exclusive value
+2121	fr	Valeur mutuellement exclusive
+2121	es	Valor mutuamente excluyentes

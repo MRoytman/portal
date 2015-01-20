@@ -1,0 +1,40 @@
+sex	Sex	en
+sex	Sexe	fr
+_title_NCDP003	DEMOGRAPHIC DATA	en
+_title_NCDP003	DONNEES DEMOGRAPHIQUES	fr
+age	Age (in years)	en
+age	Age (en années)	fr
+origin_nationality	Nationality	en
+origin_nationality	Nationalité	fr
+origin_nationality_other_detail	     other, specify:	en
+origin_nationality_other_detail	     autre, préciser:	fr
+patient_phone_number	Phone number(s)	en
+patient_phone_number	Numéro(s) de téléphone	fr
+patient_phone_number_2	 	en
+patient_phone_number_2	 	fr
+village_origin[codedList]	Village (place of living)	en
+village_origin[codedList]	Village (lieu d'habitation)	fr
+_title_NCDP010	 	en
+_title_NCDP010	 	fr
+marital_status	Marital status	en
+marital_status	Etat civil	fr
+occupation	Occupation	en
+occupation	Profession	fr
+_title_NCDP013	 	en
+_title_NCDP013	 	fr
+case_manager_name	Initials of the case manager	en
+case_manager_name	Initiales du responsable du cas	fr
+_title_NCDP015	 	en
+_title_NCDP015	 	fr
+_title_NCDP016	REFUGEES - REGISTRATION	en
+_title_NCDP016	REFUGIES - ENREGISTREMENT	fr
+refugee_registration_unhcr	UNHCR	en
+refugee_registration_unhcr	UNHCR	fr
+refugee_registration_unrwa	UNRWA	en
+refugee_registration_unrwa	UNRWA	fr
+_title_NCDP019	 	en
+_title_NCDP019	 	fr
+comments	Comments	en
+comments	Commentaires	fr
+_title_NCDP021	 	en
+_title_NCDP021	 	fr

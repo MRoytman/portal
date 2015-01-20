@@ -1,0 +1,14 @@
+1	respiratory distress	en
+2	septicemia	en
+3	dehydration	en
+4	neurologic	en
+5	severe anemia	en
+other	unknown	en
+unknown	other	en
+1	détresse respiratoire	fr
+2	septicémie	fr
+3	déshydratation sévère	fr
+4	neurologique	fr
+5	anémie sévère	fr
+other	inconnu	fr
+unknown	autre	fr

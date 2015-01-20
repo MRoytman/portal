@@ -1,0 +1,36 @@
+_title_NCDE3002	RESULTS OF LAB TESTS / INVESTIGATIONS	en
+_title_NCDE3002	RESULTAT DE TEST / INVESTIGATION	fr
+_title_NCDE3003	 	en
+_title_NCDE3003	 	fr
+ecg_result_synthesis	ECG result	en
+ecg_result_synthesis	Résultat de l'ECG	fr
+test_result_echo	Echo result	en
+test_result_echo	Résultat de l'échocardiographie	fr
+_title_NCDE3006	 	en
+_title_NCDE3006	 	fr
+test_hba1c	HbA1C value	en
+test_hba1c	HbA1C (valeur)	fr
+test_cholesterol_total_done	Total cholesterol done	en
+test_cholesterol_total_done	Cholestérol total fait	fr
+test_creatinine_done	Creatinine done	en
+test_creatinine_done	Créatinine faite	fr
+test_urine_done	Urine analysis done	en
+test_urine_done	Analyse d'urine faite	fr
+_title_NCDE2011	 	en
+_title_NCDE2011	 	fr
+test_alt_done	ALT done	en
+test_alt_done	ALT fait	fr
+test_k_done	K done	en
+test_k_done	K fait	fr
+test_tsh_done	TSH done	en
+test_tsh_done	TSH fait	fr
+test_inr_done	INR done	en
+test_inr_done	INR fait	fr
+test_ldl_done	LDL done	en
+test_ldl_done	LDL fait	fr
+_title_NCDE2017	 	en
+_title_NCDE2017	 	fr
+comments	Comments	en
+comments	Commentaires	fr
+_title_NCDE2019	 	en
+_title_NCDE2019	 	fr

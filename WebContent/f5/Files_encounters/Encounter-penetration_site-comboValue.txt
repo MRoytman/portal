@@ -1,0 +1,15 @@
+1	Mouth	en
+2	Vagina	en
+3	Anus	en
+4	Unknown	en
+5	No	en
+1	Bouche	fr
+2	Vagin	fr
+3	Anus	fr
+4	Inconnu	fr
+5	Aucun	fr
+1	Oral	es
+2	Vaginal	es
+3	Anal	es
+4	No sabe	es
+5	Ningun	es

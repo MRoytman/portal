@@ -1,0 +1,4 @@
+1	Emergency	en
+2	Non-emergency	en
+1	Urgence	fr
+2	Non-urgence	fr

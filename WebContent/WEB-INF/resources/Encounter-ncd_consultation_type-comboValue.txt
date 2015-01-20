@@ -1,0 +1,8 @@
+1	Planned visit	en
+1	Visite planifiée	fr
+2	Unplanned - patient missed last appointment	en
+2	Imprévue - dernier RDV manqué	fr
+3	Unplanned - acute episode	en
+3	Imprévue - épisode aigü	fr
+4	Unplanned - exacerbation	en
+4	Imprévue - exacerbation	fr

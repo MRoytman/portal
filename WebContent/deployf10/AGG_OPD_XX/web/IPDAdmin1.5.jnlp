@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<jnlp spec="1.0+"
+      codebase="https://ftp.ocg.msf.org/webstart/AGG_OPD_LB/" href="IPDAdmin1.5.jnlp">
+
+   <information>
+      <title>Liban Admin 1.5 MSF OCG 2013</title>
+      <vendor>MSF</vendor>
+      <description>Liban Java web start Admin V1.5 (MSF OCG 2013)</description>
+      <homepage href="https://ftp.ocg.msf.org/webstart/AGG_OPD_LB/"/>
+      
+      <description kind="short"> ... </description>
+      <offline-allowed/>
+   </information>      
+   
+   	
+	<!-- demande toutes les autorisations de la jvm -->
+	<security>
+		<all-permissions/> 
+	</security>
+
+
+   <resources>     
+		<jar href="https://ftp.ocg.msf.org/webstart/AGG_OPD_LB/AGG_OPD_LBAdmin1.5.jar"/>
+		<j2se version="1.6+"  />
+		<property name="webstarttest" value="dummy"/>
+		<property name="configFileName" value="D:\entryFormConfig.xml"/>
+		<property name="defaultLanguage" value="en"/>
+
+		<property name="connectionStrategy" value="USE_OR_CREATE_DB"/>
+		<property name="applicationIconName" value="head_logo_msf.gif"/>
+		<!-- property name="sqlStatementFileName" value="liquibase.sql"/ -->
+		<!-- property name="dbName" value="D:\H2DBAdmin"/ -->
+		<property name="dbVersion" value="1.0"/>
+
+
+		
+   </resources>
+   
+   <application-desc main-class="ch.msf.form.wizard.admin.AdminApp"/>
+      
+   <update check="always" policy="always" />
+
+</jnlp>

@@ -1,0 +1,276 @@
+AF	Afghanistan	en
+AL	Albania	en
+DZ	Algeria	en
+AO	Angola	en
+AI	Anguilla	en
+AR	Argentina	en
+AM	Armenia	en
+AW	Aruba	en
+AZ	Azerbaijan	en
+BD	Bangladesh	en
+BY	Belarus	en
+BJ	Benin	en
+BT	Bhutan	en
+BO	Bolivia	en
+BA	Bosnia and Herzegovina	en
+BW	Botswana	en
+BR	Brazil	en
+VG	British Virgin Islands	en
+BG	Bulgaria	en
+BF	Burkina Faso	en
+BI	Burundi	en
+KH	Cambodia	en
+CM	Cameroon	en
+CV	Cape Verde	en
+CF	Central African Republic	en
+TD	Chad	en
+CL	Chile	en
+CN	China	en
+CO	Colombia	en
+KM	Comoros	en
+CR	Costa Rica	en
+CI	Côte d'Ivoire	en
+CU	Cuba	en
+DJ	Djibouti	en
+DM	Dominica	en
+DO	Dominican Republic	en
+CD	DRC Congo	en
+TL	East Timor	en
+EC	Ecuador	en
+EG	Egypt	en
+SV	El Salvador	en
+GQ	Equatorial Guinea	en
+ER	Eritrea	en
+ET	Ethiopia	en
+GA	Gabon	en
+GM	Gambia	en
+GE	Georgia	en
+GH	Ghana	en
+GU	Guam	en
+GT	Guatemala	en
+GN	Guinea	en
+GW	Guinea-Bissau	en
+GY	Guyana	en
+HT	Haiti	en
+HN	Honduras	en
+IN	India	en
+ID	Indonesia	en
+IR	Iran	en
+IQ	Iraq	en
+JO	Jordan	en
+KZ	Kazakhstan	en
+KE	Kenya	en
+KG	Kyrgyzstan	en
+LA	Laos	en
+LB	Lebanon	en
+LS	Lesotho	en
+LR	Liberia	en
+LY	Libya	en
+MK	Macedonia	en
+MG	Madagascar	en
+MW	Malawi	en
+MY	Malaysia	en
+ML	Mali	en
+MQ	Martinique	en
+MR	Mauritania	en
+MU	Mauritius	en
+YT	Mayotte	en
+MX	Mexico	en
+MD	Moldova	en
+MN	Mongolia	en
+MA	Morocco	en
+MZ	Mozambique	en
+MM	Myanmar	en
+NA	Namibia	en
+NR	Nauru	en
+NP	Nepal	en
+NC	New Caledonia	en
+NI	Nicaragua	en
+NE	Niger	en
+NG	Nigeria	en
+KP	North Korea	en
+OM	Oman	en
+other	Other	en
+PK	Pakistan	en
+PS	Palestina	en
+PA	Panama	en
+PG	Papua New Guinea	en
+PY	Paraguay	en
+PE	Peru	en
+PH	Philippines	en
+PR	Puerto Rico	en
+CG	Republic of Congo	en
+RE	Reunion	en
+RO	Romania	en
+RW	Rwanda	en
+WS	Samoa	en
+ST	Sao Tome and Principe	en
+SN	Senegal	en
+RS	Serbia	en
+SL	Sierra Leone	en
+SO	Somalia	en
+ZA	South Africa	en
+KR	South Korea	en
+SS	South Sudan	en
+LK	Sri Lanka	en
+SD	Sudan	en
+SR	Suriname	en
+SZ	Swaziland	en
+CH	Switzerland	en
+SY	Syria	en
+TJ	Tajikistan	en
+TZ	Tanzania	en
+TH	Thailand	en
+TG	Togo	en
+TO	Tonga	en
+TN	Tunisia	en
+TM	Turkmenistan	en
+UG	Uganda	en
+UA	Ukraine	en
+unknown	Unknown	en
+UY	Uruguay	en
+UZ	Uzbekistan	en
+VE	Venezuela	en
+VN	Vietnam	en
+EH	Western Sahara	en
+YE	Yemen	en
+ZM	Zambia	en
+ZW	Zimbabwe	en
+AF	Afghanistan	fr
+ZA	Afrique du Sud	fr
+AL	Albanie	fr
+DZ	Algérie	fr
+AO	Angola	fr
+AI	Anguilla	fr
+AR	Argentine	fr
+AM	Arménie	fr
+AW	Aruba	fr
+PS	Autorité Nationale Palestinienne	fr
+other	autre	fr
+AZ	Azerbaïdjan	fr
+BD	Bangladesh	fr
+BY	Bélarus	fr
+BJ	Bénin	fr
+BT	Bhoutan	fr
+BO	Bolivie	fr
+BA	Bosnie-Herzégovine	fr
+BW	Botswana	fr
+BR	Brésil	fr
+BG	Bulgarie	fr
+BF	Burkina Faso	fr
+BI	Burundi	fr
+KH	Cambodge	fr
+CM	Cameroun	fr
+CV	Cap-Vert	fr
+CL	Chili	fr
+CN	Chine	fr
+CO	Colombie	fr
+KM	Comores	fr
+CD	Congo RDC	fr
+KP	Corée du Nord	fr
+KR	Corée du Sud	fr
+CR	Costa Rica	fr
+CI	Côte D'ivoire	fr
+CU	Cuba	fr
+DJ	Djibouti	fr
+DM	Dominique	fr
+EG	Egypte	fr
+SV	El Salvador	fr
+EC	Equateur	fr
+ER	Erythrée	fr
+ET	Ethiopie	fr
+GA	Gabon	fr
+GM	Gambie	fr
+GE	Géorgie	fr
+GH	Ghana	fr
+GU	Guam	fr
+GT	Guatemala	fr
+GQ	Guinée Equatoriale	fr
+GW	Guinée-Bissau	fr
+GN	Guinéee	fr
+GY	Guyana	fr
+HT	Haïti	fr
+HN	Honduras	fr
+RE	Ile de la Réunion	fr
+MU	Ile Maurice	fr
+VG	Iles Vierges Britanniques	fr
+unknown	inconnu	fr
+IN	Inde	fr
+ID	Indonésie	fr
+IQ	Iraq	fr
+JO	Jordanie	fr
+KZ	Kazakstan	fr
+KE	Kenya	fr
+KG	Kirghizistan	fr
+LA	Laos	fr
+LS	Lesotho	fr
+LB	Liban	fr
+LR	Libéria	fr
+LY	Libye	fr
+MK	Macédoine	fr
+MG	Madagascar	fr
+MY	Malaisie	fr
+MW	Malawi	fr
+ML	Mali	fr
+MA	Maroc	fr
+MQ	Martinique	fr
+MR	Mauritanie	fr
+YT	Mayotte	fr
+MX	Mexique	fr
+MD	Moldavie	fr
+MN	Mongolie	fr
+MZ	Mozambique	fr
+MM	Myanmar	fr
+NA	Namibie	fr
+NR	Nauru	fr
+NP	Népal	fr
+NI	Nicaragua	fr
+NE	Niger	fr
+NG	Nigéria	fr
+NC	Nouvelle-Calédonie	fr
+OM	Oman	fr
+UG	Ouganda	fr
+UZ	Ouzbékistan	fr
+PK	Pakistan	fr
+PA	Panama	fr
+PG	Papouasie-Nouvelle-Guinée	fr
+PY	Paraguay	fr
+PE	Pérou	fr
+PH	Philippines	fr
+PR	Porto Rico	fr
+SY	République Arabe Syrienne	fr
+CF	République Centrafricaine	fr
+DO	République Dominicaine	fr
+CG	République du Congo	fr
+IR	République Islamique d'Iran	fr
+RO	Roumanie	fr
+RW	Rwanda	fr
+EH	Sahara Occidental	fr
+WS	Samoa	fr
+ST	Sao Tomé-et-Principe	fr
+SN	Sénégal	fr
+RS	Serbie	fr
+SL	Sierra Leone	fr
+SO	Somalie	fr
+SD	Soudan	fr
+LK	Sri Lanka	fr
+SS	Sud Soudan	fr
+CH	Suisse	fr
+SR	Suriname	fr
+SZ	Swaziland	fr
+TJ	Tadjikistan	fr
+TZ	Tanzanie	fr
+TD	Tchad	fr
+TH	Thaïlande	fr
+TL	Timor-Leste (Timor Oriental)	fr
+TG	Togo	fr
+TO	Tonga	fr
+TN	Tunisie	fr
+TM	Turkménistan	fr
+UA	Ukraine	fr
+UY	Uruguay	fr
+VE	Venezuela	fr
+VN	Viêt Nam	fr
+YE	Yémen	fr
+ZM	Zambie	fr
+ZW	Zimbabwe	fr

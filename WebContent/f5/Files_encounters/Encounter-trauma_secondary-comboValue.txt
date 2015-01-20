@@ -1,0 +1,36 @@
+1	Gunshot wound	en
+2	Stab wound	en
+3	Fracture	en
+4	Burns	en
+5	Mutilation	en
+6	Bites	en
+7	Other	en
+8	Politrauma	en
+9	Head trauma	en
+10	Dislocation	en
+11	Rape	en
+12	Other types of sexual violence	en
+1	Blessure par balle	fr
+2	Blessure d'arme blanche	fr
+3	Fracture	fr
+4	Brûlure	fr
+5	Mutilation	fr
+6	Morsure	fr
+7	Autre	fr
+8	Polytraumatisme	fr
+9	Traumatisme crânien	fr
+10	Luxation	fr
+11	Viol	fr
+12	Autres types de violence sexuelle	fr
+1	Herrida de bala	es
+2	Herrida de arma blanca	es
+3	Fractura	es
+4	Quemadura	es
+5	Mutilación	es
+6	Morderdura	es
+7	Otro	es
+8	Politraumatismo	es
+9	Trauma craneal	es
+10	Luxación	es
+11	Violación	es
+12	Otro typos de violencia sexual	es

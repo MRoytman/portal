@@ -1,0 +1,68 @@
+_title_measles_01	ADMISSION	en
+_title_measles_01	ADMISSION	fr
+admission_time	Admission time (hh:mm)	en
+admission_time	Heure d'admission (hh:mm)	fr
+referred_in	Referred from OPD	en
+referred_in	Référé de l'OPD	fr
+_title_measles_02	 	en
+_title_measles_02	 	fr
+_title_measles_03	NUTRITIONAL STATUS	en
+_title_measles_03	STATUT NUTRITIONNEL	fr
+muac	MUAC at admission	en
+muac	Périmètre brachial à l'admission	fr
+muac_discharge	          at discharge	en
+muac_discharge	          à la sortie	fr
+oedema	Oedema at admission	en
+oedema	Oedèmes à l'admission	fr
+oedema_discharge	          at discharge	en
+oedema_discharge	          à la sortie	fr
+_title_measles_04	 	en
+_title_measles_04	 	fr
+_title_measles_05	MEASLES	en
+_title_measles_05	ROUGEOLE	fr
+measles_case	Measles case	en
+measles_case	Cas de rougeole	fr
+vaccinal_status_measles	Antecedents of vaccination	en
+vaccinal_status_measles	Antécédents de vaccination	fr
+vaccinal_status_measles_card	          If yes, confirmed by a card?	en
+vaccinal_status_measles_card	          Si oui, confirmé par une carte?	fr
+complication_measles_main	Complication: main	en
+complication_measles_main	Complication: principale	fr
+complication_measles_associated	Complication: associated	en
+complication_measles_associated	Complication: associée	fr
+complication_measles_other	Complication: other	en
+complication_measles_other	Complication: autre	fr
+_title_measles_06	 	en
+_title_measles_06	 	fr
+_title_measles_07	MALARIA	en
+_title_measles_07	PALUDISME	fr
+rdt_malaria	Diagnosis test	en
+rdt_malaria	Test de diagnostic	fr
+blood_transfusion_bags_nb	Number of pockets of blood	en
+blood_transfusion_bags_nb	Nombre de poches de sang	fr
+complication_malaria_main	Severity criteria: main	en
+complication_malaria_main	Critère de sévérité: principale	fr
+complication_malaria_associated	Severity criteria: associated	en
+complication_malaria_associated	Critère de sévérité: associée	fr
+complication_malaria_other	Severity criteria: other	en
+complication_malaria_other	Critère de sévérité: autre	fr
+_title_measles_10	 	en
+_title_measles_10	 	fr
+_title_measles_11	DISCHARGE	en
+_title_measles_11	SORTIE	fr
+discharge_date	Discharge date	en
+discharge_date	Date de sortie	fr
+discharge_time	Discharge time (hh:mm)	en
+discharge_time	Heure de sortie (hh:mm)	fr
+treatment_outcome	Outcome	en
+treatment_outcome	Résultat	fr
+death_cause	If death, cause	en
+death_cause	Si décès, cause	fr
+death_cause_other	          if 'other', specify:	en
+death_cause_other	          si 'autre', préciser:	fr
+_title_measles_12	 	en
+_title_measles_12	 	fr
+comments	Comments	en
+comments	Commentaires	fr
+_title_measles_13	 	en
+_title_measles_13	 	fr

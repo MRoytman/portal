@@ -1,0 +1,12 @@
+1	Colonia 1	en
+2	Colonia 2	en
+3	Colonia 3	en
+4	other	en
+1	Colonia 1	fr
+2	Colonia 2	fr
+3	Colonia 3	fr
+4	autre	fr
+1	Colonia 1	es
+2	Colonia 2	es
+3	Colonia 3	es
+4	otro	es

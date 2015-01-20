@@ -1,0 +1,18 @@
+1	other	en
+2	unknown	en
+3	iron	en
+4	multivitamines	en
+5	4% local chlorhexidine solution	en
+6	Zinc oxyde cream	en
+7	Tetracycline ophthalmic cream	en
+8	Erythromycine	en
+9	Phenobarbital	en
+1	autre	fr
+2	inconnu	fr
+3	Fer	fr
+4	Multivitamines	fr
+5	4% chlorhexidine solution locale	fr
+6	Crème d'oxyde de Zinc 	fr
+7	Tetracycline crème ophthalmique	fr
+8	Erythromycine	fr
+9	Phenobarbital	fr

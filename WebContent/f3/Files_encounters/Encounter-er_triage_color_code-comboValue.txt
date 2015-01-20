@@ -1,0 +1,6 @@
+1	Red	en
+2	Yellow	en
+3	Green	en
+1	Rojo	es
+2	Amarillo	es
+3	Verde	es

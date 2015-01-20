@@ -1,0 +1,47 @@
+atfc:admission|transferred|itfc|Label	Movements from ITFC	en
+atfc:admission|transferred|atfc|Label	Movements from MSF ATFC	en
+atfc:admission|spontaneous|Label	New spontaneous cases	en
+atfc:title25|Label	New cases referred by:	en
+atfc:admission|referred|chw|Label	      - CHW	en
+atfc:admission|referred|smc|Label	      - SMC site	en
+atfc:admission|referred|tfc_non_msf|Label	      - non-MSF TFC	en
+atfc:admission|referred|clinic|Label	      - MoH Clinic	en
+atfc:admission|other|Label	Other	en
+atfc:admission|all|Label	TOTAL	en
+_title_blank	 	en
+atfc:discharge|cured|Label	Cured	en
+atfc:discharge|dead|Label	Deaths	en
+atfc:discharge|defaulter|Label	Defaulters	en
+atfc:discharge|non_responding|Label	Non-responding	en
+atfc:title44|Label	Referred:	en
+atfc:discharge|referred|atfc_msf|Label	      - to MSF ATFC	en
+atfc:discharge|referred|atfc_non_msf|Label	      - to non-MSF ATFC	en
+atfc:discharge|referred|itfc|Label	      - to ITFC	en
+atfc:discharge|on_demand|Label	Discharges on demand	en
+atfc:discharge|cheating|Label	Cheating	en
+atfc:discharge|other|Label	Others	en
+atfc:discharge|all|Label	TOTAL	en
+atfc:comments|Label	Comments	en
+atfc:admission|transferred|itfc|Label	Mouvement du CRENI	fr
+atfc:admission|transferred|atfc|Label	Mouvement du CRENAS MSF	fr
+atfc:admission|spontaneous|Label	Nouveaux cas spontanés	fr
+atfc:title25|Label	Nouveaux cas référés par:	fr
+atfc:admission|referred|chw|Label	      - ASC	fr
+atfc:admission|referred|smc|Label	      - Site CPS	fr
+atfc:admission|referred|tfc_non_msf|Label	      - CRENAM / CRENAS non-MSF	fr
+atfc:admission|referred|clinic|Label	      - CSI/ CS	fr
+atfc:admission|other|Label	Autre	fr
+atfc:admission|all|Label	TOTAL	fr
+_title_blank	 	fr
+atfc:discharge|cured|Label	Guéris	fr
+atfc:discharge|dead|Label	Décès	fr
+atfc:discharge|defaulter|Label	Abandons	fr
+atfc:discharge|non_responding|Label	Non-répondants	fr
+atfc:title44|Label	Référés:	fr
+atfc:discharge|referred|atfc_msf|Label	      - vers CRENAS MSF	fr
+atfc:discharge|referred|atfc_non_msf|Label	      - vers CRENAS non-MSF	fr
+atfc:discharge|referred|itfc|Label	      - vers CRENI	fr
+atfc:discharge|on_demand|Label	Sorties sur demande	fr
+atfc:discharge|cheating|Label	Tricheries	fr
+atfc:discharge|other|Label	Autres	fr
+atfc:discharge|all|Label	TOTAL	fr

@@ -1,0 +1,4 @@
+1	spontaneous	en
+2	directed	en
+1	spontanée	fr
+2	dirigée	fr

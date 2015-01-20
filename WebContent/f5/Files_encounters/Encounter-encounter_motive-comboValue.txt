@@ -1,0 +1,18 @@
+1	Psychological	en
+2	Sexual violence	en
+3	Physical violence	en
+4	Abortion	en
+5	Psychiatric	en
+6	Other	en
+1	Psychologique	fr
+2	Violence sexuelle	fr
+3	Violence physique	fr
+4	Avortement	fr
+5	Psychiatrique	fr
+6	Autre	fr
+1	Psicológico	es
+2	Violencia sexual	es
+3	Violencia física	es
+4	Aborto	es
+5	Psiquiátrico	es
+6	Otro	es

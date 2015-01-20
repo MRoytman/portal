@@ -1,0 +1,6 @@
+1	local	en
+2	general	en
+3	rachi	en
+1	locale	fr
+2	générale	fr
+3	rachi	fr

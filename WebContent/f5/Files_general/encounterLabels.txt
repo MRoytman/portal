@@ -1,0 +1,12 @@
+SGBV_Main_medical_consultation	Main medical consultation	en
+SGBV_Main_medical_consultation	Consultation médicale principale	fr
+SGBV_Main_medical_consultation	Consulta médica principal	es
+SGBV_FUP_medical_consultation	Follow-up medical consultation	en
+SGBV_FUP_medical_consultation	Consultation médicale de suivi	fr
+SGBV_FUP_medical_consultation	Consulta médica de seguimiento	es
+SGBV_Main_mental_health_consultation	Main mental health consultation	en
+SGBV_Main_mental_health_consultation	Consultation de santé mentale principale	fr
+SGBV_Main_mental_health_consultation	Consulta de salud mental principal	es
+SGBV_FUP_mental_health_consultation	Follow-up mental health consultation	en
+SGBV_FUP_mental_health_consultation	Consultation de suivi en santé mentale	fr
+SGBV_FUP_mental_health_consultation	Consulta de seguimiento en salud mental	es

@@ -1,0 +1,6 @@
+1	superficial	en
+2	deep	en
+3	organ	en
+1	superficielle	fr
+2	profonde	fr
+3	organe	fr

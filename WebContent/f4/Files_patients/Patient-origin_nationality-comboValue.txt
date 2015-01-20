@@ -1,0 +1,14 @@
+IQ	Iraq	en
+LB	Lebanese	en
+LBRET	Lebanese returnee	en
+PS	Palestine	en
+PSSY	Palestinian from Syria	en
+SY	Syria	en
+other	Other	fr
+IQ	Irak	fr
+LB	Liban	fr
+LBRET	Palestine	fr
+PS	Palestine	fr
+PSSY	Palestinien de Syrie	fr
+SY	Syrie	fr
+other	Autre	fr

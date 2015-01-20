@@ -1,0 +1,8 @@
+1	malaria	en
+2	malnutrition	en
+3	HIV	en
+4	other	en
+1	paludisme	fr
+2	malnutrition	fr
+3	VIH	fr
+4	autre	fr

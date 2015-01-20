@@ -1,0 +1,70 @@
+122	Asthme	en
+123	Bronchiolite	en
+124	Brûlure	en
+129	Choléra	en
+20	Coqueluche	en
+138	Diabète (cas connu)	en
+139	Diabète (nouveau cas)	en
+140	Diphtérie	en
+43	Drépanocytose avec syndrome aigu	en
+142	Gastro-entérite non-sanglante	en
+143	Gastro-entérite sanglante	en
+28	Infection cutanée /abcès	en
+153	Infection Respiratoire Haute (IRH) sévère (croup, épiglotite)	en
+22	Infection urinaire haute	en
+73	Malformation cardiaque congénitale	en
+8	Malnutrition aigue sévère	en
+155	Méningite infectieuse confirmée	en
+53	Noma	en
+159	Paludisme sévère cérébral	en
+160	Paludisme sévère non-cérébral	en
+161	Pathologie abdominale nécessitant une  chirurgicale	en
+58	Pneumonie	en
+39	Poliomyélite	en
+171	Rougeole compliquée	en
+174	Septicémie d'origine inconnue	en
+175	SIDA	en
+177	Syndrome néphrotique	en
+178	Tétanos 	en
+179	Trauma (accidentel))	en
+181	Trauma (intentionnel)	en
+183	Tuberculose extra-pulmonaire	en
+184	Tuberculose pulmonaire	en
+187	Violence sexuelle	en
+83	Other	en
+unknown	Unknown	en
+122	Asthme	fr
+123	Bronchiolite	fr
+124	Brûlure	fr
+129	Choléra	fr
+20	Coqueluche	fr
+138	Diabète (cas connu)	fr
+139	Diabète (nouveau cas)	fr
+140	Diphtérie	fr
+43	Drépanocytose avec syndrome aigu	fr
+142	Gastro-entérite non-sanglante	fr
+143	Gastro-entérite sanglante	fr
+28	Infection cutanée /abcès	fr
+153	Infection Respiratoire Haute (IRH) sévère (croup, épiglotite)	fr
+22	Infection urinaire haute	fr
+73	Malformation cardiaque congénitale	fr
+8	Malnutrition aigue sévère	fr
+155	Méningite infectieuse confirmée	fr
+53	Noma	fr
+159	Paludisme sévère cérébral	fr
+160	Paludisme sévère non-cérébral	fr
+161	Pathologie abdominale nécessitant une  chirurgicale	fr
+58	Pneumonie	fr
+39	Poliomyélite	fr
+171	Rougeole compliquée	fr
+174	Septicémie d'origine inconnue	fr
+175	SIDA	fr
+177	Syndrome néphrotique	fr
+178	Tétanos 	fr
+179	Trauma (accidentel))	fr
+181	Trauma (intentionnel)	fr
+183	Tuberculose extra-pulmonaire	fr
+184	Tuberculose pulmonaire	fr
+187	Violence sexuelle	fr
+83	Autre	fr
+unknown	Inconnu	fr

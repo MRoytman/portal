@@ -1,0 +1,14 @@
+1	Trauma accidental, not including burns	en
+2	Domestic violence	en
+3	Attempted suicide	en
+4	Intentional gunshot wound	en
+5	Trauma penetrating intentional	en
+6	Burns	en
+other	Others	en
+1	Trauma accidental, no incluida quemadura	es
+2	Trauma de violencia domestica	es
+3	Intento a suicidio	es
+4	Herida de bala	es
+5	Trauma penetrante intencional	es
+6	Quemadura	es
+other	Otros	es

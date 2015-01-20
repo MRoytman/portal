@@ -1,0 +1,8 @@
+1	Controlled	en
+2	Uncontrolled, but stable	en
+3	Uncontrolled, improving	en
+4	Uncontrolled, worsening	en
+1	Sous contrôle	fr
+2	Non-contrôlé, mais stable	fr
+3	Non-contrôlé, en amélioration	fr
+4	Non-contrôlé, en aggravation	fr

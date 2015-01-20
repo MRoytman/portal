@@ -1,0 +1,18 @@
+1	B - Began	en
+2	C - Continue	en
+3	CI - Carry on despite Intolerance	en
+4	R - Restarted	en
+5	SF - Stopped for Failure	en
+6	SI - Stopped for Intolerance	en
+7	SO - Stopped for non Observance	en
+8	SP - Stopped by the Patient	en
+9	SS - Stopped due to drug Shortage	en
+1	B - Commencé (Began)	fr
+2	C - Continue	fr
+3	CI - Continué malgré intolérance (Carry on despite Intolerance)	fr
+4	R - Redémarré (Restarted)	fr
+5	SF - Arrêté suite à échec (Stopped for Failure)	fr
+6	SI - Arrêté pour cause d'intolérance (Stopped for Intolerance)	fr
+7	SO - Arrêté pour non-observance (Stopped for non Observance)	fr
+8	SP - Arrêté par le patient (Stopped by the Patient)	fr
+9	SS - Arrêté pour cause de rupture de stock (Stopped due to drug Shortage)	fr

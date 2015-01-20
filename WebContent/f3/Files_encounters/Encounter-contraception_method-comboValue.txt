@@ -1,0 +1,10 @@
+1	oral	en
+2	injection	en
+3	condom	en
+4	implant	en
+5	tubal ligation	en
+1	orale	fr
+2	injection	fr
+3	préservatif	fr
+4	implant	fr
+5	ligature des trompes	fr

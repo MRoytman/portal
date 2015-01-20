@@ -1,0 +1,216 @@
+_title_NCDE1002	BASELINE CONSULTATION	en
+_title_NCDE1002	CONSULTATION INITIALE	fr
+_title_NCDE1003	 	en
+_title_NCDE1003	 	fr
+_title_NCDE1004	Primary diagnosis	en
+_title_NCDE1004	Diagnostic primaire	fr
+diagnosis_hbp	Hypertension	en
+diagnosis_hbp	Hypertension	fr
+diagnosis_hbp_pregnancy_induced	     Pregnancy induced hypertension	en
+diagnosis_hbp_pregnancy_induced	     Hypertension gravidique	fr
+diagnosis_diabetes1	Diabetes type I	en
+diagnosis_diabetes1	Diabète type I	fr
+diagnosis_diabetes2	Diabetes type II	en
+diagnosis_diabetes2	Diabète type II	fr
+diagnosis_hypothyroidism	Hypothyroidism	en
+diagnosis_hypothyroidism	Hypothyroïdisme	fr
+diagnosis_copd_asthma	COPD / Asthma	en
+diagnosis_copd_asthma	BPCO / asthme	fr
+diagnosis_cardiovascular_disorder	Cardiovascular disorders (CVA, Angina, MI)	en
+diagnosis_cardiovascular_disorder	Trouble cardiovasculaire (AVC, angine, IM)	fr
+diagnosis_heart_failure	Heart failure	en
+diagnosis_heart_failure	Insuffisance cardiaque	fr
+diagnosis_epilepsy	Epilepsy	en
+diagnosis_epilepsy	Epilepsie	fr
+_title_NCDE1014	 	en
+_title_NCDE1014	 	fr
+_title_NCDE1015	Medical history	en
+_title_NCDE1015	Histoire médicale	fr
+_title_NCDE1016	     History of atherosclerotic vascular disease	en
+_title_NCDE1016	     Histoire de maladie vasculaire athérosclérotique	fr
+antecedents_angina_pectoris	     Angina	en
+antecedents_angina_pectoris	     Angine de poitrine	fr
+antecedents_myocardial_infarction	     MI	en
+antecedents_myocardial_infarction	     IDM	fr
+antecedents_cabg	     CABG	en
+antecedents_cabg	     PAC	fr
+antecedents_angioplasty	     Angioplasty	en
+antecedents_angioplasty	     Angioplastie	fr
+_title_NCDE1021	 	en
+_title_NCDE1021	 	fr
+antecedents_cva	     Stroke/TIA	en
+antecedents_cva	     Attaque/AIT	fr
+antecedents_carotid_endarterectomy	     Carotid endarterectomy	en
+antecedents_carotid_endarterectomy	     Endartériectomie de la carotide	fr
+_title_NCDE1024	 	en
+_title_NCDE1024	 	fr
+antecedents_claudication	     Claudication	en
+antecedents_claudication	     Claudication	fr
+antecedents_ischaemic_ulcer_amputation	     Ischaemic ulcer/amputation	en
+antecedents_ischaemic_ulcer_amputation	     Ulcère ischémique/amputation	fr
+_title_NCDE1027	 	en
+_title_NCDE1027	 	fr
+_title_NCDE1028	History of target organ damage	en
+_title_NCDE1028	Histoire de dommage aux organes cibles	fr
+antecedents_heart_failure	     Heart failure	en
+antecedents_heart_failure	     Insuffisance cardiaque	fr
+antecedents_left_ventricular_hypertrophy	     Left ventricular hypertrophy	en
+antecedents_left_ventricular_hypertrophy	     Hypertrophie du ventricule gauche	fr
+antecedents_retinopathy	     Retinopathy	en
+antecedents_retinopathy	     Rétinopathie	fr
+antecedents_renal_failure	     Renal failure	en
+antecedents_renal_failure	     Déficience rénale	fr
+antecedents_diabetes_renal_impairment	     Diabetes + renal impairment	en
+antecedents_diabetes_renal_impairment	     Diabètes + insuffisance rénale	fr
+antecedents_hypertension_renal_impairment	     Hypertension + renal impairment	en
+antecedents_hypertension_renal_impairment	     Hypertension + insuffisance rénale	fr
+_title_NCDE1035	 	en
+_title_NCDE1035	 	fr
+_title_NCDE1036	Cardiovascular risk score	en
+_title_NCDE1036	Score de risque cardiovasculaire	fr
+risk_score_cv_with_cholesterol	     With cholesterol	en
+risk_score_cv_with_cholesterol	     Avec cholesterol	fr
+risk_score_cv_without_cholesterol	     Without cholesterol	en
+risk_score_cv_without_cholesterol	     Sans cholesterol	fr
+_title_NCDE1039	 	en
+_title_NCDE1039	 	fr
+_title_NCDE1040	Physical exam	en
+_title_NCDE1040	Examen physique	fr
+weight_kg	Weight (kg)	en
+weight_kg	Poids (kg)	fr
+height_m	Height (m)	en
+height_m	Taille (m)	fr
+abp_diastolic	Blood pressure - diastolic (mm Hg):	en
+abp_diastolic	Tension artérielle - diastolique (mm Hg):	fr
+abp_systolic	                             systolic (mm Hg):	en
+abp_systolic	                                systolique (mm Hg):	fr
+blood_glucose	Blood glucose (mmol/L)	en
+blood_glucose	Glucose (mmol/L)	fr
+_title_NCDE1046	 	en
+_title_NCDE1046	 	fr
+_title_NCDE1047	Prescribed medication	en
+_title_NCDE1047	Médication prescrite	fr
+treatment_current_name_01	Medication 1	en
+treatment_current_name_01	Médicament 1	fr
+treatment_current_name_01_perday	     Nb per day	en
+treatment_current_name_01_perday	     Nb par jour	fr
+treatment_current_name_02	Medication 2	en
+treatment_current_name_02	Médicament 2	fr
+treatment_current_name_02_perday	     Nb per day	en
+treatment_current_name_02_perday	     Nb par jour	fr
+treatment_current_name_03	Medication 3	en
+treatment_current_name_03	Médicament 3	fr
+treatment_current_name_03_perday	     Nb per day	en
+treatment_current_name_03_perday	     Nb par jour	fr
+treatment_current_name_04	Medication 4	en
+treatment_current_name_04	Médicament 4	fr
+treatment_current_name_04_perday	     Nb per day	en
+treatment_current_name_04_perday	     Nb par jour	fr
+treatment_current_name_05	Medication 5	en
+treatment_current_name_05	Médicament 5	fr
+treatment_current_name_05_perday	     Nb per day	en
+treatment_current_name_05_perday	     Nb par jour	fr
+treatment_current_name_06	Medication 6	en
+treatment_current_name_06	Médicament 6	fr
+treatment_current_name_06_perday	     Nb per day	en
+treatment_current_name_06_perday	     Nb par jour	fr
+treatment_current_name_07	Medication 7	en
+treatment_current_name_07	Médicament 7	fr
+treatment_current_name_07_perday	     Nb per day	en
+treatment_current_name_07_perday	     Nb par jour	fr
+treatment_current_name_08	Medication 8	en
+treatment_current_name_08	Médicament 8	fr
+treatment_current_name_08_perday	     Nb per day	en
+treatment_current_name_08_perday	     Nb par jour	fr
+treatment_current_name_09	Medication 9	en
+treatment_current_name_09	Médicament 9	fr
+treatment_current_name_09_perday	     Nb per day	en
+treatment_current_name_09_perday	     Nb par jour	fr
+treatment_current_name_10	Medication 10	en
+treatment_current_name_10	Médicament 10	fr
+treatment_current_name_10_perday	     Nb per day	en
+treatment_current_name_10_perday	     Nb par jour	fr
+treatment_current_name_other	Other medication	en
+treatment_current_name_other	Autre médicament	fr
+treatment_current_name_other_perday	     Nb per day	en
+treatment_current_name_other_perday	     Nb par jour	fr
+_title_NCDE1070	 	en
+_title_NCDE1070	 	fr
+_title_NCDE1071	Patient education	en
+_title_NCDE1071	Education du patient	fr
+ncd_patient_education_by	     Patient education	en
+ncd_patient_education_by	     Education du patient	fr
+_title_NCDE1073	 	en
+_title_NCDE1073	 	fr
+_title_NCDE1074	Requested investigations	en
+_title_NCDE1074	Investigations requises	fr
+test_required_ecg	     ECG	en
+test_required_ecg	     ECG	fr
+test_required_echo	     Echo	en
+test_required_echo	     Echocardiographie	fr
+_title_NCDE1077	 	en
+_title_NCDE1077	 	fr
+test_required_hba1c	     HbA1C	en
+test_required_hba1c	     HbA1C	fr
+test_required_cholesterol_total	     Total cholesterol	en
+test_required_cholesterol_total	     Cholestérol total	fr
+test_required_creatinine	     Creatinine	en
+test_required_creatinine	     Créatinine	fr
+test_required_urine_analysis	     Urine analysis	en
+test_required_urine_analysis	     Analyse d'urine	fr
+test_required_urine_microalbumin	     Urine microalbumin	en
+test_required_urine_microalbumin	     Microalbumine (urine)	fr
+_title_NCDE1083	 	en
+_title_NCDE1083	 	fr
+test_required_alt	     ALT	en
+test_required_alt	     ALT	fr
+test_required_k	     K	en
+test_required_k	     K	fr
+test_required_tsh	     TSH	en
+test_required_tsh	     TSH	fr
+test_required_inr	     INR	en
+test_required_inr	     INR	fr
+test_required_ldl	     LDL	en
+test_required_ldl	     LDL	fr
+_title_NCDE1089	 	en
+_title_NCDE1089	 	fr
+test_required_other	     Other	en
+test_required_other	     Autre	fr
+_title_NCDE1091	 	en
+_title_NCDE1091	 	fr
+_title_NCDE1092	Referral	en
+_title_NCDE1092	Référence	fr
+referral_out_er	     Emergency ward	en
+referral_out_er	     Salle d'urgence	fr
+referral_out_surgery	     Surgery	en
+referral_out_surgery	     Chirurgie	fr
+referral_out_social_worker	     Social worker	en
+referral_out_social_worker	     Travailleur social	fr
+referral_out_other_ngo	     Other NGO	en
+referral_out_other_ngo	     Autre ONG	fr
+_title_NCDE1097	 	en
+_title_NCDE1097	 	fr
+referral_out_cardiologist	     Cardiologist	en
+referral_out_cardiologist	     Cardiologue	fr
+referral_out_endocrinologist	     Endocrinologist	en
+referral_out_endocrinologist	     Endocrinologue	fr
+referral_out_ophthalmologist	     Ophthalmologist	en
+referral_out_ophthalmologist	     Ophthalmologue	fr
+referral_out_neurologist	     Neurologist	en
+referral_out_neurologist	     Neurologue	fr
+referral_out_nephrologist	     Nephrologist	en
+referral_out_nephrologist	     Nephrologue	fr
+referral_out_specialist_other	     Other specialist	en
+referral_out_specialist_other	     Autre spécialiste	fr
+_title_NCDE1104	 	en
+_title_NCDE1104	 	fr
+_title_NCDE1105	Next appointment	en
+_title_NCDE1105	Prochain rendez-vous	fr
+appointment_next_date	Date of next appointment	en
+appointment_next_date	Date du prochain rendez-vous	fr
+_title_NCDE1107	 	en
+_title_NCDE1107	 	fr
+comments	Comments	en
+comments	Commentaires	fr
+_title_NCDE1109	 	en
+_title_NCDE1109	 	fr

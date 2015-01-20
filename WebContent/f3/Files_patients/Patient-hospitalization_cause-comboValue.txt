@@ -1,0 +1,4 @@
+1	other	en
+2	unknown	en
+1	autre	fr
+2	inconnu	fr

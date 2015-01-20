@@ -1,0 +1,28 @@
+_title_cholera_01	DIAGNOSIS & TREATMENT	en
+_title_cholera_01	DIAGNOSTIC ET TRAITEMENT	fr
+rdt_cholera	Cholera rapid test (RDT)	en
+rdt_cholera	Test rapide choléra (TDR)	fr
+cholera_plan	Treatment plan	en
+cholera_plan	Plan de traitement	fr
+comorbidity_cholera_1	Comorbidity 1	en
+comorbidity_cholera_1	Comorbidité 1	fr
+comorbidity_cholera_2	Comorbidity 2	en
+comorbidity_cholera_2	Comorbidité 2	fr
+comorbidity_cholera_other	          if 'other', specify:	en
+comorbidity_cholera_other	          si 'autre', préciser:	fr
+_title_cholera_02	 	en
+_title_cholera_02	 	fr
+_title_cholera_03	VACCINATION	en
+_title_cholera_03	VACCINATION	fr
+vaccinal_status_cholera_doses	Nb of doses	en
+vaccinal_status_cholera_doses	Nb de doses	fr
+vaccinal_status_cholera_last_date	Date of last dose	en
+vaccinal_status_cholera_last_date	Date de la dernière dose	fr
+vaccinal_status_cholera_card	Card seen	en
+vaccinal_status_cholera_card	Carte vue	fr
+_title_cholera_04	 	en
+_title_cholera_04	 	fr
+transferred_out	Referred to CTC	en
+transferred_out	Référé au CTC	fr
+comments	Comments	en
+comments	Commentaires	fr

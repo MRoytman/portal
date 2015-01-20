@@ -1,0 +1,10 @@
+1	Discharged	en
+1	Décharge	fr
+2	Transferred	en
+2	Transfert	fr
+3	Deceased	en
+3	Décès	fr
+4	Defaulter	en
+4	Abandon	fr
+5	Moved to another location	en
+5	Déplacé vers un autre site	fr

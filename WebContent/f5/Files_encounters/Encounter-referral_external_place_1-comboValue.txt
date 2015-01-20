@@ -1,0 +1,27 @@
+1	Hospital Escuela	en
+2	Hospital Mario Mendoza	en
+3	Hospital San Felipe	en
+4	Instituto Nacional del Tórax	en
+5	Hospital María	en
+6	Others	en
+7	Protection (Safe House)	en
+8	Ministerio Público	en
+9	Medicina Forense	en
+1	Hospital Escuela	fr
+2	Hospital Mario Mendoza	fr
+3	Hospital San Felipe	fr
+4	Instituto Nacional del Tórax	fr
+5	Hospital María	fr
+6	Others	fr
+7	Protection (Safe House)	fr
+8	Ministerio Público	fr
+9	Medicina Forense	fr
+1	Hospital Escuela	es
+2	Hospital Mario Mendoza	es
+3	Hospital San Felipe	es
+4	Instituto Nacional del Tórax	es
+5	Hospital María	es
+6	Others	es
+7	Protection (Safe House)	es
+8	Ministerio Público	es
+9	Medicina Forense	es

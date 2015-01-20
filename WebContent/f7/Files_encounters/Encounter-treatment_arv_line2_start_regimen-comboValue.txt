@@ -1,0 +1,4 @@
+1	AZT/3TC/Lop/r	en
+2	TDF/3TC/Lop/r	en
+1	AZT/3TC/Lop/r	fr
+2	TDF/3TC/Lop/r	fr

@@ -1,0 +1,130 @@
+119	Anémie < 4g/dl	en
+120	Anémie entre 4 et 6 g/dl	en
+121	Anémie> 6 g/dl	en
+122	Asthme	en
+123	Bronchiolite	en
+124	Brûlure	en
+125	Candidose digestive	en
+126	Choc hémorragique	en
+127	Choc hypovolémique	en
+128	Choc septique	en
+129	Choléra	en
+6	Coma (Glasgow Coma Scale < 8)	en
+132	Conjonctivite purulente/infection oculaire	en
+134	Convulsions moins de 30 minutes	en
+135	Convulsions plus de 30 minutes	en
+20	Coqueluche	en
+15	Déshydratation modérée	en
+136	Déshydratation sévère	en
+138	Diabète (cas connu)	en
+139	Diabète (nouveau cas)	en
+140	Diphtérie	en
+43	Drépanocytose avec syndrome aigu	en
+142	Gastro-entérite non-sanglante	en
+143	Gastro-entérite sanglante	en
+145	Hypoglycémie	en
+148	Ictère	en
+151	Iléus paralytique	en
+28	Infection cutanée /abcès	en
+152	Infection Respiratoire Haute (IRH) non-sévère	en
+153	Infection Respiratoire Haute (IRH) sévère (croup, épiglotite)	en
+52	Infection urinaire basse	en
+22	Infection urinaire haute	en
+73	Malformation cardiaque congénitale	en
+154	Malnutrition aigue modérée	en
+8	Malnutrition aigue sévère	en
+155	Méningite infectieuse confirmée	en
+53	Noma	en
+27	Ostéo-arthrite	en
+25	Otite moyenne aigue (OMA)	en
+26	Otite moyenne chronique (OMC)	en
+159	Paludisme sévère cérébral	en
+160	Paludisme sévère non-cérébral	en
+31	Paludisme simple	en
+161	Pathologie abdominale nécessitant une  chirurgicale	en
+58	Pneumonie	en
+39	Poliomyélite	en
+11	Rachitisme 	en
+166	Retard psychomoteur	en
+171	Rougeole compliquée	en
+172	Rougeole simple	en
+174	Septicémie d'origine inconnue	en
+175	SIDA	en
+176	Syndrome épileptique 	en
+177	Syndrome néphrotique	en
+178	Tétanos 	en
+179	Trauma (accidentel))	en
+181	Trauma (intentionnel)	en
+182	Trouble mental	en
+183	Tuberculose extra-pulmonaire	en
+184	Tuberculose pulmonaire	en
+186	VIH confirmé sans SIDA	en
+187	Violence sexuelle	en
+10	Xérophtalmie 	en
+83	Other	en
+unknown	Unknown	en
+119	Anémie < 4g/dl	fr
+120	Anémie entre 4 et 6 g/dl	fr
+121	Anémie> 6 g/dl	fr
+122	Asthme	fr
+123	Bronchiolite	fr
+124	Brûlure	fr
+125	Candidose digestive	fr
+126	Choc hémorragique	fr
+127	Choc hypovolémique	fr
+128	Choc septique	fr
+129	Choléra	fr
+6	Coma (Glasgow Coma Scale < 8)	fr
+132	Conjonctivite purulente/infection oculaire	fr
+134	Convulsions moins de 30 minutes	fr
+135	Convulsions plus de 30 minutes	fr
+20	Coqueluche	fr
+15	Déshydratation modérée	fr
+136	Déshydratation sévère	fr
+138	Diabète (cas connu)	fr
+139	Diabète (nouveau cas)	fr
+140	Diphtérie	fr
+43	Drépanocytose avec syndrome aigu	fr
+142	Gastro-entérite non-sanglante	fr
+143	Gastro-entérite sanglante	fr
+145	Hypoglycémie	fr
+148	Ictère	fr
+151	Iléus paralytique	fr
+28	Infection cutanée /abcès	fr
+152	Infection Respiratoire Haute (IRH) non-sévère	fr
+153	Infection Respiratoire Haute (IRH) sévère (croup, épiglotite)	fr
+52	Infection urinaire basse	fr
+22	Infection urinaire haute	fr
+73	Malformation cardiaque congénitale	fr
+154	Malnutrition aigue modérée	fr
+8	Malnutrition aigue sévère	fr
+155	Méningite infectieuse confirmée	fr
+53	Noma	fr
+27	Ostéo-arthrite	fr
+25	Otite moyenne aigue (OMA)	fr
+26	Otite moyenne chronique (OMC)	fr
+159	Paludisme sévère cérébral	fr
+160	Paludisme sévère non-cérébral	fr
+31	Paludisme simple	fr
+161	Pathologie abdominale nécessitant une  chirurgicale	fr
+58	Pneumonie	fr
+39	Poliomyélite	fr
+11	Rachitisme 	fr
+166	Retard psychomoteur	fr
+171	Rougeole compliquée	fr
+172	Rougeole simple	fr
+174	Septicémie d'origine inconnue	fr
+175	SIDA	fr
+176	Syndrome épileptique 	fr
+177	Syndrome néphrotique	fr
+178	Tétanos 	fr
+179	Trauma (accidentel))	fr
+181	Trauma (intentionnel)	fr
+182	Trouble mental	fr
+183	Tuberculose extra-pulmonaire	fr
+184	Tuberculose pulmonaire	fr
+186	VIH confirmé sans SIDA	fr
+187	Violence sexuelle	fr
+10	Xérophtalmie 	fr
+83	Autre	fr
+unknown	Inconnu	fr

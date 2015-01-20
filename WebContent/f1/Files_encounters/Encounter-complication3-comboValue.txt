@@ -1,0 +1,16 @@
+1	liver encephalopathy	en
+2	bleeding	en
+3	renal failure	en
+4	shock	en
+5	sepsis	en
+6	lower respiratory tract infection	en
+7	gastrointestinal infection	en
+other	other	en
+1	encéphalopathie hépatique	fr
+2	saignements	fr
+3	insuffisance rénale	fr
+4	choc	fr
+5	sepsis	fr
+6	infection respiratoire basse	fr
+7	infection gastro-intestinale	fr
+other	autre	fr

@@ -1,0 +1,9 @@
+1	Individual counseling	en
+6	Family counseling	en
+2	Group counseling	en
+1	Suivi individualisé	fr
+6	Suivi familial	fr
+2	Suivi en groupe	fr
+1	Abordaje individual	es
+6	Abordaje familiar	es
+2	Abordaje grupal	es

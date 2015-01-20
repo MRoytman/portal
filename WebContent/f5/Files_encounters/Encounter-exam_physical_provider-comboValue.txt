@@ -1,0 +1,9 @@
+1	Medical Doctor	en
+2	Nurse	en
+3	Specialist	en
+1	Médecin	fr
+2	Infirmier/ère	fr
+3	Spécialiste	fr
+1	Médico	es
+2	Enfermero/a	es
+3	Especialista	es

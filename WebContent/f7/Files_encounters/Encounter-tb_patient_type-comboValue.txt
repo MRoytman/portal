@@ -1,0 +1,12 @@
+1	New	en
+2	Relapse	en
+3	Failure	en
+4	Dead	en
+5	Treatment after Default or Interruption	en
+6	Other	en
+1	N - Nouveau	fr
+2	R - Rechute	fr
+3	F - Echec	fr
+4	D - Décès	fr
+5	T - Traitement après abandon ou interruption	fr
+6	O - Autre	fr

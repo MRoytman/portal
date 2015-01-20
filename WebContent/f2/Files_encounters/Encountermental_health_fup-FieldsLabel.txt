@@ -1,0 +1,146 @@
+_title_MHFUP002	CONSULTATION	en
+_title_MHFUP002	CONSULTATION	fr
+_title_MHFUP003	Consultation with...	en
+_title_MHFUP003	Consultation avec...	fr
+consultation_mh_with_psychiatrist_msf	     MSF psychiatrist	en
+consultation_mh_with_psychiatrist_msf	     Psychiatre MSF	fr
+consultation_mh_with_psychologist_msf	     MSF psychologist	en
+consultation_mh_with_psychologist_msf	     Psychologue MSF	fr
+consultation_mh_with_psychiatrist_nonmsf	     Non-MSF psychiatrist	en
+consultation_mh_with_psychiatrist_nonmsf	     Psychiatre non-MSF	fr
+consultation_mh_with_psychologist_nonmsf	     Non-MSF psychologist	en
+consultation_mh_with_psychologist_nonmsf	     Psychologue non-MSF	fr
+_title_MHFUP008	 	en
+_title_MHFUP008	 	fr
+_title_MHFUP009	Diagnosis	en
+_title_MHFUP009	Diagnostic	fr
+diagnosis_psychiatric_impression	          Diagnosis	en
+diagnosis_psychiatric_impression	          Diagnostic	fr
+diagnosis_psychiatric_impression_other_details	          Specify:	en
+diagnosis_psychiatric_impression_other_details	          Préciser:	fr
+_title_MHFUP012	 	en
+_title_MHFUP012	 	fr
+_title_MHFUP013	INTERVENTION	en
+_title_MHFUP013	INTERVENTION	fr
+mh_therapy_type	Type of therapy	en
+mh_therapy_type	Type de thérapie	fr
+mh_therapy_type_other_details	          Specify:	en
+mh_therapy_type_other_details	          Préciser:	fr
+_title_MHFUP016	Medication	en
+_title_MHFUP016	Médication	fr
+medication_psychiatric_1	Prescribed drug 1	en
+medication_psychiatric_1	Médicament prescrit 1	fr
+medication_psychiatric_2	Prescribed drug 2	en
+medication_psychiatric_2	Médicament prescrit 2	fr
+medication_psychiatric_3	Prescribed drug 3	en
+medication_psychiatric_3	Médicament prescrit 3	fr
+medication_psychiatric_4	Prescribed drug 4	en
+medication_psychiatric_4	Médicament prescrit 4	fr
+medication_psychiatric_5	Prescribed drug 5	en
+medication_psychiatric_5	Médicament prescrit 5	fr
+_title_MHFUP022	 	en
+_title_MHFUP022	 	fr
+_title_MHFUP023	REFERRAL & END OF FOLLOW-UP	en
+_title_MHFUP023	REFERENCE ET FIN DE SUIVI	fr
+referral_psycho	Referred to:	en
+referral_psycho	Référé à:	fr
+referral_psycho_details	          Specify:	en
+referral_psycho_details	          Préciser:	fr
+mh_end_fup	End of follow-up	en
+mh_end_fup	Fin du suivi	fr
+mh_end_fup_motive	Reason for ending	en
+mh_end_fup_motive	Motif de la fin du suivi	fr
+mh_end_fup_motive_other_details	          Specify:	en
+mh_end_fup_motive_other_details	          Préciser:	fr
+_title_MHFUP029	 	en
+_title_MHFUP029	 	fr
+_title_MHFUP030	SCORING	en
+_title_MHFUP030	SCORES	fr
+gaf	GAF	en
+gaf	GAF	fr
+srq20	SRQ 20	en
+srq20	SRQ 20	fr
+ptsd_score	PTSD score	en
+ptsd_score	Score PTSD	fr
+_title_MHFUP034	HTS Traumatic Events:	en
+_title_MHFUP034	HTS Evénements traumatiques:	fr
+mh_hts01	     Lack of shelter (sleeping in the open) 	en
+mh_hts01	     Manque d'abri (nuit à l'air libre)	fr
+mh_hts02	     Lack of food or water	en
+mh_hts02	     Manque de nourriture ou d'eau	fr
+mh_hts03	     Sickness without med. care	en
+mh_hts03	     Maladie sans soins médicaux	fr
+mh_hts04	     Confiscation of property	en
+mh_hts04	     Confiscation de propriété	fr
+mh_hts05	     Destruction of property	en
+mh_hts05	     Destruction de propriété	fr
+mh_hts06	     Combat situation	en
+mh_hts06	     Situtation de combat	fr
+mh_hts07	     Used as human shield	en
+mh_hts07	     Utilisé comme bouclier humain	fr
+mh_hts08	     Evacuation under dangerous situation	en
+mh_hts08	     Evacuation face à une situation dangereuse	fr
+mh_hts09	     Beating to the body	en
+mh_hts09	     Coups sur le corps	fr
+mh_hts10	     Rape	en
+mh_hts10	     Viol	fr
+mh_hts11	     Other sexual abuse/humiliation	en
+mh_hts11	     Autre abus sexuel / humiliation	fr
+mh_hts12	     Torture	en
+mh_hts12	     Torture	fr
+mh_hts13	     Disappearance of relative	en
+mh_hts13	     Disparition de proches	fr
+mh_hts14	     Friend Kidnapped	en
+mh_hts14	     Amis kidnappés	fr
+mh_hts15	     Serious physical injury on relative	en
+mh_hts15	     Blessure physique grave de proches	fr
+mh_hts16	     Witnessing killings	en
+mh_hts16	     Témoin d'assassinat	fr
+mh_hts17	     Witnessing someone being humiliated	en
+mh_hts17	     Témoin d'humiliations infligées à qqn	fr
+mh_hts18	     Witnessing beatings	en
+mh_hts18	     Témoin de coups portés à qqn	fr
+mh_hts19	     Combat physical injury	en
+mh_hts19	     Blessure physique au combat	fr
+mh_hts20	     Imprisonment	en
+mh_hts20	     Emprisonnement	fr
+mh_hts21	     Forced labour	en
+mh_hts21	     Travail forcé	fr
+mh_hts22	     Extortion/robbery	en
+mh_hts22	     Extortion / brigandage	fr
+mh_hts23	     Forced to hide	en
+mh_hts23	     Obligé de se cacher	fr
+mh_hts24	     Kidnapped	en
+mh_hts24	     Kidnappé	fr
+mh_hts25	     Forced separation from family	en
+mh_hts25	     Séparation forcée d'avec la famille	fr
+mh_hts26	     Forced to find or bury bodies	en
+mh_hts26	     Forcé de trouver ou d'enterrer des corps	fr
+mh_hts27	     Your house was searched by someone	en
+mh_hts27	     Maison fouillée par qqn	fr
+mh_hts28	     Confined at home because of danger	en
+mh_hts28	     Confiné la maison cause danger	fr
+mh_hts29	     Prevented from burying someone	en
+mh_hts29	     Empêcher d'enterrer qqn	fr
+mh_hts30	     Forced to harm someone you like	en
+mh_hts30	     Forcé de faire du mal à être aimé	fr
+mh_hts31	     Disappearance of friend	en
+mh_hts31	     Disparition d'amis	fr
+mh_hts32	     Relative Kidnapped	en
+mh_hts32	     Proches kidnappés	fr
+mh_hts33	     Serious physical injury on friend	en
+mh_hts33	     Blessure physique grave d'amis	fr
+mh_hts34	     Witnessing rape	en
+mh_hts34	     Témoin de viol	fr
+mh_hts35	     Witnessing torture	en
+mh_hts35	     Témoin de torture	fr
+mh_hts_other	     Other	en
+mh_hts_other	     Autre	fr
+mh_hts_other_details	          Specify:	en
+mh_hts_other_details	          Préciser:	fr
+_title_MHFUP072	 	en
+_title_MHFUP072	 	fr
+comments	Comments	en
+comments	Commentaires	fr
+_title_MHFUP074	 	en
+_title_MHFUP074	 	fr

@@ -1,0 +1,45 @@
+			BUILD DES PROJETS IPD-OPD
+			=========================
+- POUR CHAQUE PROFILE FAIRE LES ETAPES SUIVANTES: 
+			
+0) faire un delete DES projetS targets à la main dans l'explorer (LE "PRJXXX-0.0.1-SNAPSHOT.jar" DOIT ETRE DELETé ENTRE CHAQUE BUILD!)
+
+1) Si multiple projets (ex:inclusion de WizardSource)
+----------
+a)Le pom du sous projet se limite à 
+
+		<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+		  <modelVersion>4.0.0</modelVersion>
+		  <groupId>WizardSource</groupId>
+		  <artifactId>WizardSource</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+		  <name>WizardSource</name>
+	
+		</project> 
+		
+		
+b) L'install du sous projet se fait par 
+	- un clean dans eclipse de tous les projets
+	- un run maven clean install depuis eclipse
+	
+c) L'install du projet se fait par
+	- un run maven install depuis eclipse	
+	- il faut rajouter la dépendance du projet dans le pom
+	
+		<dependency>
+			<groupId>WizardSource</groupId>
+			<artifactId>WizardSource</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		
+		
+2) Si un seul projet (pas de sous-projets)
+----------		
+	- un clean dans eclipse du projet
+	- un run maven install depuis eclipse	
+
+
+
+NOTE: si clean install 
+dans les run configurations, on a un pb de compil -source 1.3 ou de création de dir sous target		

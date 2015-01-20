@@ -1,0 +1,10 @@
+1	Psychological	en
+2	Sexual violence	en
+3	Physical violence	en
+4	Psychiatric	en
+other	Other	en
+1	Psychologique	fr
+2	Violence sexuelle	fr
+3	Violence physique	fr
+4	Psychiatrique	fr
+other	Autre	fr

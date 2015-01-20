@@ -1,0 +1,8 @@
+1	Directly related  to the conflict	en
+2	Indirectly related to the conflict	en
+3	Not related  to the conflict	en
+4	Not applicable	en
+1	Directement liée au conflit	fr
+2	Indirectement liée au conflit	fr
+3	Pas liée au conflit	fr
+4	Pas applicable	fr

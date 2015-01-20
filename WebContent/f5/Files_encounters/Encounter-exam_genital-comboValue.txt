@@ -1,0 +1,15 @@
+1	Done	en
+2	Refused by patient	en
+3	Not done	en
+4	Not possible	en
+5	Not necessary	en
+1	Fait	fr
+2	Refusé par le patient	fr
+3	Pas fait	fr
+4	Impossible	fr
+5	Pas nécessaire	fr
+1	Hecho	es
+2	Rechazado por el paciente	es
+3	No hecho	es
+4	Imposible	es
+5	No necesario	es

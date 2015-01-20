@@ -1,0 +1,20 @@
+SectionTable	opd_malnutrition	6	19
+opdnut:title01|Label	Title2<COL>opdnut:title01|<5y	Title2<COL>opdnut:title01|>=5y	Title2<COL>opdnut:title01|Tot	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:muac_red|Label	Label1<COL>opdnutscreening:muac_red|<5y	Numeric<COL>opdnutscreening:muac_red|>=5y	Numeric<COL>opdnutscreening:muac_red|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:muac_orange|Label	Label1<COL>opdnutscreening:muac_orange|<5y	Numeric<COL>opdnutscreening:muac_orange|>=5y	Numeric<COL>opdnutscreening:muac_orange|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:muac_yellow|Label	Label1<COL>opdnutscreening:muac_yellow|<5y	Numeric<COL>opdnutscreening:muac_yellow|>=5y	Numeric<COL>opdnutscreening:muac_yellow|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:muac_green|Label	Label1<COL>opdnutscreening:muac_green|<5y	Numeric<COL>opdnutscreening:muac_green|>=5y	Numeric<COL>opdnutscreening:muac_green|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:muac_all|Label	Label1<COL>opdnutscreening:muac_all|<5y	Calculated<COL>opdnutscreening:muac_all|>=5y	Calculated<COL>opdnutscreening:muac_all|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnut:title02|Label	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnut:title03|Label	Title2<COL>opdnut:title01|<5y	Title2<COL>opdnut:title01|>=5y	Title2<COL>opdnut:title01|Tot	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:oedema_3|Label	Label1<COL>opdnutscreening:oedema_3|<5y	Numeric<COL>opdnutscreening:oedema_3|>=5y	Numeric<COL>opdnutscreening:oedema_3|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:oedema_2|Label	Label1<COL>opdnutscreening:oedema_2|<5y	Numeric<COL>opdnutscreening:oedema_2|>=5y	Numeric<COL>opdnutscreening:oedema_2|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:oedema_1|Label	Label1<COL>opdnutscreening:oedema_1|<5y	Numeric<COL>opdnutscreening:oedema_1|>=5y	Numeric<COL>opdnutscreening:oedema_1|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:oedema_0|Label	Label1<COL>opdnutscreening:oedema_0|<5y	Numeric<COL>opdnutscreening:oedema_0|>=5y	Numeric<COL>opdnutscreening:oedema_0|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:oedema_all|Label	Label1<COL>opdnutscreening:oedema_all|<5y	Calculated<COL>opdnutscreening:oedema_all|>=5y	Calculated<COL>opdnutscreening:oedema_all|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnut:title04|Label	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnut:title05|Label	Title2<COL>opdnut:title01|<5y	Title2<COL>opdnut:title01|>=5y	Title2<COL>opdnut:title01|Tot	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:zscore_minus3|Label	Label1<COL>opdnutscreening:zscore_minus3|<5y	Numeric<COL>opdnutscreening:zscore_minus3|>=5y	Numeric<COL>opdnutscreening:zscore_minus3|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:zscore_3_to_2|Label	Label1<COL>opdnutscreening:zscore_3_to_2|<5y	Numeric<COL>opdnutscreening:zscore_3_to_2|>=5y	Numeric<COL>opdnutscreening:zscore_3_to_2|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:zscore_2more|Label	Label1<COL>opdnutscreening:zscore_2more|<5y	Numeric<COL>opdnutscreening:zscore_2more|>=5y	Numeric<COL>opdnutscreening:zscore_2more|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdnutscreening:zscore_all|Label	Label1<COL>opdnutscreening:zscore_all|<5y	Calculated<COL>opdnutscreening:zscore_all|>=5y	Calculated<COL>opdnutscreening:zscore_all|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2

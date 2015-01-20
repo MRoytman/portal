@@ -1,0 +1,20 @@
+1	neurologic complications	en
+2	respiratory complications	en
+3	haemorrhage	en
+4	haemoglobinuria	en
+5	severe anaemia	en
+6	shock	en
+7	kidney failure	en
+8	prostration	en
+other	other	en
+unknown	unknown	en
+1	neuropaludisme	fr
+2	complications respiratoires	fr
+3	hémorragie	fr
+4	hémoglobinurie	fr
+5	anémie sévère	fr
+6	choc	fr
+7	insuffisance rénale	fr
+8	prostration	fr
+other	autre	fr
+unknown	inconnu	fr

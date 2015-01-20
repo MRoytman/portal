@@ -1,0 +1,39 @@
+6	Psychologist MoH	en
+7	Nurse/nurse aid MoH	en
+8	Medical doctor MoH	en
+9	Social worker MoH	en
+10	Medico/nurse MSF	en
+11	Psychologist MSF	en
+12	Social worker MSF	en
+13	Co-consultation	en
+1	Psychologist	en
+2	Nurse/nurse aid	en
+3	Medical doctor	en
+4	Social worker	en
+5	Other	en
+6	Psychologue MdS	fr
+7	Infirmier/aide infirmier MdS	fr
+8	Médecin MdS	fr
+9	Assistant social MdS	fr
+10	Médecin/infirmière MSF	fr
+11	Psychologue MSF	fr
+12	Assistant social MSF	fr
+13	Co-consultation	fr
+1	Psychologue	fr
+2	Infirmier/aide infirmier	fr
+3	Médecin	fr
+4	Assistant social	fr
+5	Autre	fr
+6	Psycólogo MdS	es
+7	Enfermero / auxiliar de enfermería MdS	es
+8	Médico MdS	es
+9	Asistente social MdS	es
+10	Médico/enfermera MSF	es
+11	Psycólogo MSF	es
+12	Asistente social MSF	es
+13	Co-consulta	es
+1	Psycólogo	es
+2	Enfermero / auxiliar de enfermería	es
+3	Médico	es
+4	Asistente social	es
+5	Otro	es

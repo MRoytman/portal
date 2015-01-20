@@ -1,0 +1,10 @@
+1	0	en
+2	S	en
+3	+	en
+4	++	en
+5	+++	en
+1	0	fr
+2	S	fr
+3	+	fr
+4	++	fr
+5	+++	fr

@@ -1,0 +1,6 @@
+1	Confirmed	en
+2	Negative	en
+1	Confirmé	fr
+2	Négatif	fr
+1	Confirmado	es
+2	Negativo	es

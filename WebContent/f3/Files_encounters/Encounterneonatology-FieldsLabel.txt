@@ -1,0 +1,132 @@
+_title_00E	BIRTH DATA	en
+_title_00E	DONNEES DE NAISSANCE	fr
+birth_place_type	16) Place of birth	en
+birth_place_type	16) Lieu de naissance	fr
+birth_type	17) Type of delivery	en
+birth_type	17) Type d'accouchement	fr
+birth_time	18) Birth time (hh:mm)	en
+birth_time	18) Heure de naissance (hh:mm)	fr
+birth_weight	19) Birth weight in Kg (if unknown: weight at admission)	en
+birth_weight	19) Poids de naissance en Kg (si inconnu: poids à l'admission)	fr
+gestational_age	20) Gestational age in weeks (OCG guideline score)	en
+gestational_age	20) Age gestationnel en semaines (score guideline OCG)	fr
+skull_perimeter	21) Skull perimeter	en
+skull_perimeter	21) Périmètre crânien	fr
+iugr	22) IUGR (= IntraUterin Growth Restriction)	en
+iugr	22) RCIU (= retard de croissance intra-utérin)	fr
+twinning	23) Born from multiple pregnancy	en
+twinning	23) Né de grossesse multiple	fr
+_title_01E	24) Apgar score:	en
+_title_01E	24) Score d'Apgar:	fr
+apgar_score_1minute	        at 1 minute	en
+apgar_score_1minute	        à 1 minute	fr
+apgar_score_5minutes	        at 5 minutes	en
+apgar_score_5minutes	        à 5 minutes	fr
+apgar_score_10minutes	        10 minutes	en
+apgar_score_10minutes	        10 minutes	fr
+amniotic_liquid_color	25) Amniotic liquid	en
+amniotic_liquid_color	25) Liquide amniotique	fr
+_title_02E	26) Rescucitation at birth:	en
+_title_02E	26) Réanimation à la naissance:	fr
+resuscitation_method_ventilation	        ventilation	en
+resuscitation_method_ventilation	        ventilation	fr
+resuscitation_method_heart_massage	        heart massage	en
+resuscitation_method_heart_massage	        massage cardiaque	fr
+resuscitation_method_drug	        drugs	en
+resuscitation_method_drug	        médicaments	fr
+_title_03E	27) Maternal infectious risk	en
+_title_03E	27) Risque infectieux maternel	fr
+maternal_infectious_risk_fever	        fever >37.9°C	en
+maternal_infectious_risk_fever	        fièvre >37.9°C	fr
+maternal_infectious_risk_chorioamniotitis	        Chorioamniotitis	en
+maternal_infectious_risk_chorioamniotitis	        Chorioamniotite	fr
+maternal_infectious_risk_prom	        PROM >= 18h	en
+maternal_infectious_risk_prom	        RPPE >= 18h	fr
+eclampsia_preeclampsia	28) Maternal eclampsia/preeclampsia	en
+eclampsia_preeclampsia	28) Gestose/éclampsie/pré-éclampsie maternelle	fr
+maternal_death	29) Maternal death	en
+maternal_death	29) Décès maternel	fr
+maternal_death_cause	Cause of maternal death	en
+maternal_death_cause	Cause du décès maternel	fr
+maternal_death_cause_other	        if 'other', specify:	en
+maternal_death_cause_other	        si 'autre', préciser:	fr
+_title_04E	 	en
+_title_04E	 	fr
+_title_05E	HOSPITALISATION DATA	en
+_title_05E	DONNEES D'HOSPITALISATION	fr
+admission_place	30) Unit of first admission	en
+admission_place	30) Service de première admission	fr
+kangaroo_unit_stay	Stay in Kangaroo Unit	en
+kangaroo_unit_stay	Passage en Unité Kangourou	fr
+neonatology_unit_stay	Stay in neonatology	en
+neonatology_unit_stay	Passage en néonatologie	fr
+_title_06E	31) Feeding:	en
+_title_06E	31) Alimentation:	fr
+neonate_feeding_perfusion	        IV	en
+neonate_feeding_perfusion	        perfusion	fr
+neonate_feeding_ogng	        OG/NG	en
+neonate_feeding_ogng	        SO/NG	fr
+neonate_feeding_po	        PO	en
+neonate_feeding_po	        PO	fr
+_title_07E	32) Type of milk:	en
+_title_07E	32) Type de lait:	fr
+milk_mother	        milk of mother	en
+milk_mother	        lait de mère	fr
+milk_formula	        formula milk	en
+milk_formula	        lait maternisé	fr
+milk_other	        other	en
+milk_other	        autre	fr
+_title_08E	33) Treatment:	en
+_title_08E	33) Traitement:	fr
+treatment_blood_transfusion	        blood transfusion	en
+treatment_blood_transfusion	        transfusion sanguine	fr
+treatment_oxygen_therapy	        oxygen therapy	en
+treatment_oxygen_therapy	        oxygénothérapie	fr
+treatment_surgery	        surgery	en
+treatment_surgery	        chirurgie	fr
+treatment_antibiotherapy_line1	        antibiotherapy 1st line	en
+treatment_antibiotherapy_line1	        antibiothérapie 1ère ligne	fr
+treatment_antibiotherapy_line2	        antibiotherapy 2nd line	en
+treatment_antibiotherapy_line2	        antibiothérapie 2ème ligne	fr
+treatment_pmtct	        PMTCT	en
+treatment_pmtct	        PTME	fr
+treatment_phototherapy	        phototherapy	en
+treatment_phototherapy	        photothérapie	fr
+treatment_warming_lamp	        warming lamp	en
+treatment_warming_lamp	        lampe chauffante	fr
+treatment_cafein	        cafein	en
+treatment_cafein	        caféine	fr
+treatment_phenobarbital	        Phenobarbital	en
+treatment_phenobarbital	        Phénobarbital	fr
+treatment_rehydration_bolus_10ml	        Rehydration bolus, 10 ml/kg	en
+treatment_rehydration_bolus_10ml	        Bolus de réhydratation, 10 ml/kg	fr
+treatment_artesunate	        Artesunate	en
+treatment_artesunate	        Artésunate	fr
+treatment_asaq_coartem	        ASAQ-Coartem	en
+treatment_asaq_coartem	        ASAQ-Coartem	fr
+_title_09E	34) Vaccination of the newborn:	en
+_title_09E	34) Vaccination du nouveau-né:	fr
+vaccination_afp0	        Polio 0	en
+vaccination_afp0	        Polio 0	fr
+vaccination_bcg	        BCG	en
+vaccination_bcg	        BCG	fr
+vaccination_hepb0	        Hepatitis B 0	en
+vaccination_hepb0	        Hépatite B 0	fr
+_title_10E	35) Vaccination of the mother:	en
+_title_10E	35) Vaccination de la mère:	fr
+mother_vaccination_tt1	        TT1	en
+mother_vaccination_tt1	        TT1	fr
+mother_vaccination_tt2	        TT2	en
+mother_vaccination_tt2	        TT2	fr
+mother_vaccination_tt3	        TT3	en
+mother_vaccination_tt3	        TT3	fr
+mother_vaccination_tt4	        TT4	en
+mother_vaccination_tt4	        TT4	fr
+mother_vaccination_tt5	        TT5	en
+mother_vaccination_tt5	        TT5	fr
+discharge_neurologic_status_normal	36) Normal neurologic status at discharge	en
+discharge_neurologic_status_normal	36) Etat neurologique normal à la sortie	fr
+neonatology_death_moment	37) If death, moment	en
+neonatology_death_moment	37) Si décès, moment	fr
+comments	Comments	en
+comments	Commentaires	fr

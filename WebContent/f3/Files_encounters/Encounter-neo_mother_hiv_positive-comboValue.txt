@@ -1,0 +1,6 @@
+1	yes	en
+2	no	en
+3	unknown status	en
+1	oui	fr
+2	non	fr
+3	statut inconnu	fr

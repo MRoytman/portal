@@ -1,0 +1,9 @@
+1	male	en
+2	female	en
+3	other	en
+1	homme	fr
+2	femme	fr
+3	autre	fr
+1	hombre	es
+2	mujer	es
+3	otro	es

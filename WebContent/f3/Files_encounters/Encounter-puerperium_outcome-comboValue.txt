@@ -1,0 +1,4 @@
+1	normal	en
+2	pathologic	en
+1	normal	fr
+2	pathologique	fr

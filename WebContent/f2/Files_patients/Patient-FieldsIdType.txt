@@ -1,0 +1,24 @@
+sex	Combo-sex	Sex
+_title_P003	Title
+age	Numeric
+camp_arrival_date	Date
+address_camp_phase	Combo-address_camp_phase
+address_camp_sector	Combo-address_camp_sector
+origin_nationality	Combo-origin_nationality
+origin_nationality_other_detail	Combo-origin_nationality_other_detail
+origin_ethnicity	Combo-origin_ethnicity
+origin_ethnicity_other_detail	Coded
+patient_phone_number	Coded
+_title_P013	Title
+marital_status	Combo-marital_status
+occupation	Combo-occupation
+_title_P02	Title
+name_father	Coded
+name_mother	Coded
+_title_P05	Title
+comments01	Coded
+comments02	Coded
+comments03	Coded
+comments04	Coded
+comments05	Coded
+_title_P06	Title

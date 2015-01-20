@@ -1,0 +1,2246 @@
+
+// <conceptId>	<RuleRunnerModuleName>		<errorMessageCode>	<params>	
+// !! <RuleRunnerModuleName> must end with "Checker" or "Runner" !!					
+
+///////////////////////////////////////////ACTION RUNNERS///////////////////////////////////					
+
+// AGGREGATION YEAR					
+
+// check date that must be before X years compared to runtime parameter (today's year date). X can be negative.					
+//consult_date_first	date.YearDateJourMustAfterChecker	1	X		
+// check date is smaller than today's year date +0 years					
+//aggregation_year	date.YearDateJourMustBeforeChecker	1	1		
+// check date is greater than today's year date -1 years					
+// aggregation_year	date.YearDateJourMustAfterChecker	1	-1		
+
+
+// REFERRALS - Rows ***************************
+
+// opd_referrals
+opdreferrals:hospital_emergency|opd	MapperNotifierActionRunner	2000	opdreferrals:hospital_emergency|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:hospital_emergency|ncd	MapperNotifierActionRunner	2000	opdreferrals:hospital_emergency|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:hospital_emergency|srh	MapperNotifierActionRunner	2000	opdreferrals:hospital_emergency|Tot	CalculatorActionRunner	NOTIFY
+
+opdreferrals:hospital_emergency|Tot	CalculatorActionRunner	2001	opd_referrals	NOTIFY	opdreferrals:hospital_emergency|opd	X	ADD	NOTIFY	opdreferrals:hospital_emergency|ncd	X	ADD	NOTIFY	opdreferrals:hospital_emergency|srh	X	ADD
+
+
+// opd_referrals
+opdreferrals:mental_health|opd	MapperNotifierActionRunner	2000	opdreferrals:mental_health|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:mental_health|ncd	MapperNotifierActionRunner	2000	opdreferrals:mental_health|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:mental_health|srh	MapperNotifierActionRunner	2000	opdreferrals:mental_health|Tot	CalculatorActionRunner	NOTIFY
+
+opdreferrals:mental_health|Tot	CalculatorActionRunner	2001	opd_referrals	NOTIFY	opdreferrals:mental_health|opd	X	ADD	NOTIFY	opdreferrals:mental_health|ncd	X	ADD	NOTIFY	opdreferrals:mental_health|srh	X	ADD
+
+
+// opd_referrals
+opdreferrals:social_worker|opd	MapperNotifierActionRunner	2000	opdreferrals:social_worker|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:social_worker|ncd	MapperNotifierActionRunner	2000	opdreferrals:social_worker|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:social_worker|srh	MapperNotifierActionRunner	2000	opdreferrals:social_worker|Tot	CalculatorActionRunner	NOTIFY
+
+opdreferrals:social_worker|Tot	CalculatorActionRunner	2001	opd_referrals	NOTIFY	opdreferrals:social_worker|opd	X	ADD	NOTIFY	opdreferrals:social_worker|ncd	X	ADD	NOTIFY	opdreferrals:social_worker|srh	X	ADD
+
+
+// opd_referrals
+opdreferrals:nutrition|opd	MapperNotifierActionRunner	2000	opdreferrals:nutrition|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:nutrition|ncd	MapperNotifierActionRunner	2000	opdreferrals:nutrition|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:nutrition|srh	MapperNotifierActionRunner	2000	opdreferrals:nutrition|Tot	CalculatorActionRunner	NOTIFY
+
+opdreferrals:nutrition|Tot	CalculatorActionRunner	2001	opd_referrals	NOTIFY	opdreferrals:nutrition|opd	X	ADD	NOTIFY	opdreferrals:nutrition|ncd	X	ADD	NOTIFY	opdreferrals:nutrition|srh	X	ADD
+
+
+// opd_referrals
+opdreferrals:specialist|opd	MapperNotifierActionRunner	2000	opdreferrals:specialist|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:specialist|ncd	MapperNotifierActionRunner	2000	opdreferrals:specialist|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:specialist|srh	MapperNotifierActionRunner	2000	opdreferrals:specialist|Tot	CalculatorActionRunner	NOTIFY
+
+opdreferrals:specialist|Tot	CalculatorActionRunner	2001	opd_referrals	NOTIFY	opdreferrals:specialist|opd	X	ADD	NOTIFY	opdreferrals:specialist|ncd	X	ADD	NOTIFY	opdreferrals:specialist|srh	X	ADD
+
+
+// opd_referrals
+opdreferrals:other|opd	MapperNotifierActionRunner	2000	opdreferrals:other|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:other|ncd	MapperNotifierActionRunner	2000	opdreferrals:other|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:other|srh	MapperNotifierActionRunner	2000	opdreferrals:other|Tot	CalculatorActionRunner	NOTIFY
+
+opdreferrals:other|Tot	CalculatorActionRunner	2001	opd_referrals	NOTIFY	opdreferrals:other|opd	X	ADD	NOTIFY	opdreferrals:other|ncd	X	ADD	NOTIFY	opdreferrals:other|srh	X	ADD
+
+// REFERRALS - Columns ***************************
+// opd_referrals
+opdreferrals:hospital_emergency|opd	MapperNotifierActionRunner	2000	opdreferrals:all|opd	CalculatorActionRunner	NOTIFY
+opdreferrals:mental_health|opd	MapperNotifierActionRunner	2000	opdreferrals:all|opd	CalculatorActionRunner	NOTIFY
+opdreferrals:social_worker|opd	MapperNotifierActionRunner	2000	opdreferrals:all|opd	CalculatorActionRunner	NOTIFY
+opdreferrals:nutrition|opd	MapperNotifierActionRunner	2000	opdreferrals:all|opd	CalculatorActionRunner	NOTIFY
+opdreferrals:specialist|opd	MapperNotifierActionRunner	2000	opdreferrals:all|opd	CalculatorActionRunner	NOTIFY
+opdreferrals:other|opd	MapperNotifierActionRunner	2000	opdreferrals:all|opd	CalculatorActionRunner	NOTIFY
+
+opdreferrals:all|opd	CalculatorActionRunner	2001	opd_referrals	NOTIFY	opdreferrals:hospital_emergency|opd	X	ADD	NOTIFY	opdreferrals:mental_health|opd	X	ADD	NOTIFY	opdreferrals:social_worker|opd	X	ADD	NOTIFY	opdreferrals:nutrition|opd	X	ADD	NOTIFY	opdreferrals:specialist|opd	X	ADD	NOTIFY	opdreferrals:other|opd	X	ADD
+
+
+// opd_referrals
+opdreferrals:hospital_emergency|ncd	MapperNotifierActionRunner	2000	opdreferrals:all|ncd	CalculatorActionRunner	NOTIFY
+opdreferrals:mental_health|ncd	MapperNotifierActionRunner	2000	opdreferrals:all|ncd	CalculatorActionRunner	NOTIFY
+opdreferrals:social_worker|ncd	MapperNotifierActionRunner	2000	opdreferrals:all|ncd	CalculatorActionRunner	NOTIFY
+opdreferrals:nutrition|ncd	MapperNotifierActionRunner	2000	opdreferrals:all|ncd	CalculatorActionRunner	NOTIFY
+opdreferrals:specialist|ncd	MapperNotifierActionRunner	2000	opdreferrals:all|ncd	CalculatorActionRunner	NOTIFY
+opdreferrals:other|ncd	MapperNotifierActionRunner	2000	opdreferrals:all|ncd	CalculatorActionRunner	NOTIFY
+
+opdreferrals:all|ncd	CalculatorActionRunner	2001	opd_referrals	NOTIFY	opdreferrals:hospital_emergency|ncd	X	ADD	NOTIFY	opdreferrals:mental_health|ncd	X	ADD	NOTIFY	opdreferrals:social_worker|ncd	X	ADD	NOTIFY	opdreferrals:nutrition|ncd	X	ADD	NOTIFY	opdreferrals:specialist|ncd	X	ADD	NOTIFY	opdreferrals:other|ncd	X	ADD
+
+
+// opd_referrals
+opdreferrals:hospital_emergency|srh	MapperNotifierActionRunner	2000	opdreferrals:all|srh	CalculatorActionRunner	NOTIFY
+opdreferrals:mental_health|srh	MapperNotifierActionRunner	2000	opdreferrals:all|srh	CalculatorActionRunner	NOTIFY
+opdreferrals:social_worker|srh	MapperNotifierActionRunner	2000	opdreferrals:all|srh	CalculatorActionRunner	NOTIFY
+opdreferrals:nutrition|srh	MapperNotifierActionRunner	2000	opdreferrals:all|srh	CalculatorActionRunner	NOTIFY
+opdreferrals:specialist|srh	MapperNotifierActionRunner	2000	opdreferrals:all|srh	CalculatorActionRunner	NOTIFY
+opdreferrals:other|srh	MapperNotifierActionRunner	2000	opdreferrals:all|srh	CalculatorActionRunner	NOTIFY
+
+opdreferrals:all|srh	CalculatorActionRunner	2001	opd_referrals	NOTIFY	opdreferrals:hospital_emergency|srh	X	ADD	NOTIFY	opdreferrals:mental_health|srh	X	ADD	NOTIFY	opdreferrals:social_worker|srh	X	ADD	NOTIFY	opdreferrals:nutrition|srh	X	ADD	NOTIFY	opdreferrals:specialist|srh	X	ADD	NOTIFY	opdreferrals:other|srh	X	ADD
+
+
+// opd_referrals
+opdreferrals:hospital_emergency|Tot	MapperNotifierActionRunner	2000	opdreferrals:all|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:mental_health|Tot	MapperNotifierActionRunner	2000	opdreferrals:all|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:social_worker|Tot	MapperNotifierActionRunner	2000	opdreferrals:all|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:nutrition|Tot	MapperNotifierActionRunner	2000	opdreferrals:all|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:specialist|Tot	MapperNotifierActionRunner	2000	opdreferrals:all|Tot	CalculatorActionRunner	NOTIFY
+opdreferrals:other|Tot	MapperNotifierActionRunner	2000	opdreferrals:all|Tot	CalculatorActionRunner	NOTIFY
+
+opdreferrals:all|Tot	CalculatorActionRunner	2001	opd_referrals	NOTIFY	opdreferrals:hospital_emergency|Tot	X	ADD	NOTIFY	opdreferrals:mental_health|Tot	X	ADD	NOTIFY	opdreferrals:social_worker|Tot	X	ADD	NOTIFY	opdreferrals:nutrition|Tot	X	ADD	NOTIFY	opdreferrals:specialist|Tot	X	ADD	NOTIFY	opdreferrals:other|Tot	X	ADD
+
+// CONSULTATIONS - Rows ***************************
+// opd_consultations
+opdconsultations:acute|NC|<5y|M	MapperNotifierActionRunner	2000	opdconsultations:all|<5y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|<5y|M	MapperNotifierActionRunner	2000	opdconsultations:all|<5y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|<5y|M	MapperNotifierActionRunner	2000	opdconsultations:all|<5y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|<5y|M	MapperNotifierActionRunner	2000	opdconsultations:all|<5y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|<5y|M	MapperNotifierActionRunner	2000	opdconsultations:all|<5y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|<5y|M	MapperNotifierActionRunner	2000	opdconsultations:all|<5y|M	CalculatorActionRunner	NOTIFY
+
+opdconsultations:all|<5y|M	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute|NC|<5y|M	X	ADD	NOTIFY	opdconsultations:acute|FUP|<5y|M	X	ADD	NOTIFY	opdconsultations:chronic|NC|<5y|M	X	ADD	NOTIFY	opdconsultations:chronic|FUP|<5y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|<5y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|<5y|M	X	ADD
+
+
+// opd_consultations
+opdconsultations:acute|NC|<5y|F	MapperNotifierActionRunner	2000	opdconsultations:all|<5y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|<5y|F	MapperNotifierActionRunner	2000	opdconsultations:all|<5y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|<5y|F	MapperNotifierActionRunner	2000	opdconsultations:all|<5y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|<5y|F	MapperNotifierActionRunner	2000	opdconsultations:all|<5y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|<5y|F	MapperNotifierActionRunner	2000	opdconsultations:all|<5y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|<5y|F	MapperNotifierActionRunner	2000	opdconsultations:all|<5y|F	CalculatorActionRunner	NOTIFY
+
+opdconsultations:all|<5y|F	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute|NC|<5y|F	X	ADD	NOTIFY	opdconsultations:acute|FUP|<5y|F	X	ADD	NOTIFY	opdconsultations:chronic|NC|<5y|F	X	ADD	NOTIFY	opdconsultations:chronic|FUP|<5y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|<5y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|<5y|F	X	ADD
+
+
+// opd_consultations
+opdconsultations:acute|NC|5y-14y|M	MapperNotifierActionRunner	2000	opdconsultations:all|5y-14y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|5y-14y|M	MapperNotifierActionRunner	2000	opdconsultations:all|5y-14y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|5y-14y|M	MapperNotifierActionRunner	2000	opdconsultations:all|5y-14y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|5y-14y|M	MapperNotifierActionRunner	2000	opdconsultations:all|5y-14y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|5y-14y|M	MapperNotifierActionRunner	2000	opdconsultations:all|5y-14y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|5y-14y|M	MapperNotifierActionRunner	2000	opdconsultations:all|5y-14y|M	CalculatorActionRunner	NOTIFY
+
+opdconsultations:all|5y-14y|M	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute|NC|5y-14y|M	X	ADD	NOTIFY	opdconsultations:acute|FUP|5y-14y|M	X	ADD	NOTIFY	opdconsultations:chronic|NC|5y-14y|M	X	ADD	NOTIFY	opdconsultations:chronic|FUP|5y-14y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|5y-14y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|5y-14y|M	X	ADD
+
+
+// opd_consultations
+opdconsultations:acute|NC|5y-14y|F	MapperNotifierActionRunner	2000	opdconsultations:all|5y-14y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|5y-14y|F	MapperNotifierActionRunner	2000	opdconsultations:all|5y-14y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|5y-14y|F	MapperNotifierActionRunner	2000	opdconsultations:all|5y-14y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|5y-14y|F	MapperNotifierActionRunner	2000	opdconsultations:all|5y-14y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|5y-14y|F	MapperNotifierActionRunner	2000	opdconsultations:all|5y-14y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|5y-14y|F	MapperNotifierActionRunner	2000	opdconsultations:all|5y-14y|F	CalculatorActionRunner	NOTIFY
+
+opdconsultations:all|5y-14y|F	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute|NC|5y-14y|F	X	ADD	NOTIFY	opdconsultations:acute|FUP|5y-14y|F	X	ADD	NOTIFY	opdconsultations:chronic|NC|5y-14y|F	X	ADD	NOTIFY	opdconsultations:chronic|FUP|5y-14y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|5y-14y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|5y-14y|F	X	ADD
+
+
+// opd_consultations
+opdconsultations:acute|NC|15y-49y|M	MapperNotifierActionRunner	2000	opdconsultations:all|15y-49y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|15y-49y|M	MapperNotifierActionRunner	2000	opdconsultations:all|15y-49y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|15y-49y|M	MapperNotifierActionRunner	2000	opdconsultations:all|15y-49y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|15y-49y|M	MapperNotifierActionRunner	2000	opdconsultations:all|15y-49y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|15y-49y|M	MapperNotifierActionRunner	2000	opdconsultations:all|15y-49y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|15y-49y|M	MapperNotifierActionRunner	2000	opdconsultations:all|15y-49y|M	CalculatorActionRunner	NOTIFY
+
+opdconsultations:all|15y-49y|M	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute|NC|15y-49y|M	X	ADD	NOTIFY	opdconsultations:acute|FUP|15y-49y|M	X	ADD	NOTIFY	opdconsultations:chronic|NC|15y-49y|M	X	ADD	NOTIFY	opdconsultations:chronic|FUP|15y-49y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|15y-49y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|15y-49y|M	X	ADD
+
+
+// opd_consultations
+opdconsultations:acute|NC|15y-49y|F	MapperNotifierActionRunner	2000	opdconsultations:all|15y-49y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|15y-49y|F	MapperNotifierActionRunner	2000	opdconsultations:all|15y-49y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|15y-49y|F	MapperNotifierActionRunner	2000	opdconsultations:all|15y-49y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|15y-49y|F	MapperNotifierActionRunner	2000	opdconsultations:all|15y-49y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|15y-49y|F	MapperNotifierActionRunner	2000	opdconsultations:all|15y-49y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|15y-49y|F	MapperNotifierActionRunner	2000	opdconsultations:all|15y-49y|F	CalculatorActionRunner	NOTIFY
+
+opdconsultations:all|15y-49y|F	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute|NC|15y-49y|F	X	ADD	NOTIFY	opdconsultations:acute|FUP|15y-49y|F	X	ADD	NOTIFY	opdconsultations:chronic|NC|15y-49y|F	X	ADD	NOTIFY	opdconsultations:chronic|FUP|15y-49y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|15y-49y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|15y-49y|F	X	ADD
+
+
+// opd_consultations
+opdconsultations:acute|NC|>=50y|M	MapperNotifierActionRunner	2000	opdconsultations:all|>=50y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|>=50y|M	MapperNotifierActionRunner	2000	opdconsultations:all|>=50y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|>=50y|M	MapperNotifierActionRunner	2000	opdconsultations:all|>=50y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|>=50y|M	MapperNotifierActionRunner	2000	opdconsultations:all|>=50y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|>=50y|M	MapperNotifierActionRunner	2000	opdconsultations:all|>=50y|M	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|>=50y|M	MapperNotifierActionRunner	2000	opdconsultations:all|>=50y|M	CalculatorActionRunner	NOTIFY
+
+opdconsultations:all|>=50y|M	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute|NC|>=50y|M	X	ADD	NOTIFY	opdconsultations:acute|FUP|>=50y|M	X	ADD	NOTIFY	opdconsultations:chronic|NC|>=50y|M	X	ADD	NOTIFY	opdconsultations:chronic|FUP|>=50y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|>=50y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|>=50y|M	X	ADD
+
+
+// opd_consultations
+opdconsultations:acute|NC|>=50y|F	MapperNotifierActionRunner	2000	opdconsultations:all|>=50y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|>=50y|F	MapperNotifierActionRunner	2000	opdconsultations:all|>=50y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|>=50y|F	MapperNotifierActionRunner	2000	opdconsultations:all|>=50y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|>=50y|F	MapperNotifierActionRunner	2000	opdconsultations:all|>=50y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|>=50y|F	MapperNotifierActionRunner	2000	opdconsultations:all|>=50y|F	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|>=50y|F	MapperNotifierActionRunner	2000	opdconsultations:all|>=50y|F	CalculatorActionRunner	NOTIFY
+
+opdconsultations:all|>=50y|F	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute|NC|>=50y|F	X	ADD	NOTIFY	opdconsultations:acute|FUP|>=50y|F	X	ADD	NOTIFY	opdconsultations:chronic|NC|>=50y|F	X	ADD	NOTIFY	opdconsultations:chronic|FUP|>=50y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|>=50y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|>=50y|F	X	ADD
+
+
+// opd_consultations
+opdconsultations:acute|NC|Tot	MapperNotifierActionRunner	2000	opdconsultations:all|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|Tot	MapperNotifierActionRunner	2000	opdconsultations:all|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|Tot	MapperNotifierActionRunner	2000	opdconsultations:all|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|Tot	MapperNotifierActionRunner	2000	opdconsultations:all|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|Tot	MapperNotifierActionRunner	2000	opdconsultations:all|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|Tot	MapperNotifierActionRunner	2000	opdconsultations:all|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|Tot	MapperNotifierActionRunner	2000	opdconsultations:all|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|Tot	MapperNotifierActionRunner	2000	opdconsultations:all|Tot	CalculatorActionRunner	NOTIFY
+
+opdconsultations:all|Tot	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute|NC|Tot	X	ADD	NOTIFY	opdconsultations:acute|FUP|Tot	X	ADD	NOTIFY	opdconsultations:chronic|NC|Tot	X	ADD	NOTIFY	opdconsultations:chronic|FUP|Tot	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|Tot	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|Tot	X	ADD
+
+// CONSULTATIONS - Columns ***************************
+// opd_consultations
+opdconsultations:acute|NC|<5y|M	MapperNotifierActionRunner	2000	opdconsultations:acute|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|NC|<5y|F	MapperNotifierActionRunner	2000	opdconsultations:acute|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|NC|5y-14y|M	MapperNotifierActionRunner	2000	opdconsultations:acute|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|NC|5y-14y|F	MapperNotifierActionRunner	2000	opdconsultations:acute|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|NC|15y-49y|M	MapperNotifierActionRunner	2000	opdconsultations:acute|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|NC|15y-49y|F	MapperNotifierActionRunner	2000	opdconsultations:acute|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|NC|>=50y|M	MapperNotifierActionRunner	2000	opdconsultations:acute|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|NC|>=50y|F	MapperNotifierActionRunner	2000	opdconsultations:acute|NC|Tot	CalculatorActionRunner	NOTIFY
+
+opdconsultations:acute|NC|Tot	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute|NC|<5y|M	X	ADD	NOTIFY	opdconsultations:acute|NC|<5y|F	X	ADD	NOTIFY	opdconsultations:acute|NC|5y-14y|M	X	ADD	NOTIFY	opdconsultations:acute|NC|5y-14y|F	X	ADD	NOTIFY	opdconsultations:acute|NC|15y-49y|M	X	ADD	NOTIFY	opdconsultations:acute|NC|15y-49y|F	X	ADD	NOTIFY	opdconsultations:acute|NC|>=50y|M	X	ADD	NOTIFY	opdconsultations:acute|NC|>=50y|F	X	ADD
+
+
+// opd_consultations
+opdconsultations:acute|FUP|<5y|M	MapperNotifierActionRunner	2000	opdconsultations:acute|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|<5y|F	MapperNotifierActionRunner	2000	opdconsultations:acute|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|5y-14y|M	MapperNotifierActionRunner	2000	opdconsultations:acute|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|5y-14y|F	MapperNotifierActionRunner	2000	opdconsultations:acute|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|15y-49y|M	MapperNotifierActionRunner	2000	opdconsultations:acute|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|15y-49y|F	MapperNotifierActionRunner	2000	opdconsultations:acute|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|>=50y|M	MapperNotifierActionRunner	2000	opdconsultations:acute|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute|FUP|>=50y|F	MapperNotifierActionRunner	2000	opdconsultations:acute|FUP|Tot	CalculatorActionRunner	NOTIFY
+
+opdconsultations:acute|FUP|Tot	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute|FUP|<5y|M	X	ADD	NOTIFY	opdconsultations:acute|FUP|<5y|F	X	ADD	NOTIFY	opdconsultations:acute|FUP|5y-14y|M	X	ADD	NOTIFY	opdconsultations:acute|FUP|5y-14y|F	X	ADD	NOTIFY	opdconsultations:acute|FUP|15y-49y|M	X	ADD	NOTIFY	opdconsultations:acute|FUP|15y-49y|F	X	ADD	NOTIFY	opdconsultations:acute|FUP|>=50y|M	X	ADD	NOTIFY	opdconsultations:acute|FUP|>=50y|F	X	ADD
+
+
+// opd_consultations
+opdconsultations:chronic|NC|<5y|M	MapperNotifierActionRunner	2000	opdconsultations:chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|<5y|F	MapperNotifierActionRunner	2000	opdconsultations:chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|5y-14y|M	MapperNotifierActionRunner	2000	opdconsultations:chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|5y-14y|F	MapperNotifierActionRunner	2000	opdconsultations:chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|15y-49y|M	MapperNotifierActionRunner	2000	opdconsultations:chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|15y-49y|F	MapperNotifierActionRunner	2000	opdconsultations:chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|>=50y|M	MapperNotifierActionRunner	2000	opdconsultations:chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|NC|>=50y|F	MapperNotifierActionRunner	2000	opdconsultations:chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+
+opdconsultations:chronic|NC|Tot	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:chronic|NC|<5y|M	X	ADD	NOTIFY	opdconsultations:chronic|NC|<5y|F	X	ADD	NOTIFY	opdconsultations:chronic|NC|5y-14y|M	X	ADD	NOTIFY	opdconsultations:chronic|NC|5y-14y|F	X	ADD	NOTIFY	opdconsultations:chronic|NC|15y-49y|M	X	ADD	NOTIFY	opdconsultations:chronic|NC|15y-49y|F	X	ADD	NOTIFY	opdconsultations:chronic|NC|>=50y|M	X	ADD	NOTIFY	opdconsultations:chronic|NC|>=50y|F	X	ADD
+
+
+// opd_consultations
+opdconsultations:chronic|FUP|<5y|M	MapperNotifierActionRunner	2000	opdconsultations:chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|<5y|F	MapperNotifierActionRunner	2000	opdconsultations:chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|5y-14y|M	MapperNotifierActionRunner	2000	opdconsultations:chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|5y-14y|F	MapperNotifierActionRunner	2000	opdconsultations:chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|15y-49y|M	MapperNotifierActionRunner	2000	opdconsultations:chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|15y-49y|F	MapperNotifierActionRunner	2000	opdconsultations:chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|>=50y|M	MapperNotifierActionRunner	2000	opdconsultations:chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:chronic|FUP|>=50y|F	MapperNotifierActionRunner	2000	opdconsultations:chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+
+opdconsultations:chronic|FUP|Tot	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:chronic|FUP|<5y|M	X	ADD	NOTIFY	opdconsultations:chronic|FUP|<5y|F	X	ADD	NOTIFY	opdconsultations:chronic|FUP|5y-14y|M	X	ADD	NOTIFY	opdconsultations:chronic|FUP|5y-14y|F	X	ADD	NOTIFY	opdconsultations:chronic|FUP|15y-49y|M	X	ADD	NOTIFY	opdconsultations:chronic|FUP|15y-49y|F	X	ADD	NOTIFY	opdconsultations:chronic|FUP|>=50y|M	X	ADD	NOTIFY	opdconsultations:chronic|FUP|>=50y|F	X	ADD
+
+
+// opd_consultations
+opdconsultations:acute_chronic|NC|<5y|M	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|<5y|F	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|5y-14y|M	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|5y-14y|F	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|15y-49y|M	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|15y-49y|F	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|>=50y|M	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|NC|>=50y|F	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|NC|Tot	CalculatorActionRunner	NOTIFY
+
+opdconsultations:acute_chronic|NC|Tot	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute_chronic|NC|<5y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|<5y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|5y-14y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|5y-14y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|15y-49y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|15y-49y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|>=50y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|NC|>=50y|F	X	ADD
+
+
+// opd_consultations
+opdconsultations:acute_chronic|FUP|<5y|M	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|<5y|F	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|5y-14y|M	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|5y-14y|F	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|15y-49y|M	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|15y-49y|F	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|>=50y|M	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+opdconsultations:acute_chronic|FUP|>=50y|F	MapperNotifierActionRunner	2000	opdconsultations:acute_chronic|FUP|Tot	CalculatorActionRunner	NOTIFY
+
+opdconsultations:acute_chronic|FUP|Tot	CalculatorActionRunner	2001	opd_consultations	NOTIFY	opdconsultations:acute_chronic|FUP|<5y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|<5y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|5y-14y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|5y-14y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|15y-49y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|15y-49y|F	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|>=50y|M	X	ADD	NOTIFY	opdconsultations:acute_chronic|FUP|>=50y|F	X	ADD
+
+// MORBIDITIES - Rows ***************************
+// opd_morbidity_acute
+opdmorbacute:urti|<5y	MapperNotifierActionRunner	2000	opdmorbacute:urti|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:urti|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:urti|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:urti|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:urti|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:urti|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:urti|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:urti|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:urti|<5y	X	ADD	NOTIFY	opdmorbacute:urti|5y-14y	X	ADD	NOTIFY	opdmorbacute:urti|15y-49y	X	ADD	NOTIFY	opdmorbacute:urti|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:lrti|<5y	MapperNotifierActionRunner	2000	opdmorbacute:lrti|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:lrti|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:lrti|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:lrti|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:lrti|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:lrti|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:lrti|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:lrti|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:lrti|<5y	X	ADD	NOTIFY	opdmorbacute:lrti|5y-14y	X	ADD	NOTIFY	opdmorbacute:lrti|15y-49y	X	ADD	NOTIFY	opdmorbacute:lrti|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:diarrhoea_watery|<5y	MapperNotifierActionRunner	2000	opdmorbacute:diarrhoea_watery|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_watery|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:diarrhoea_watery|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_watery|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:diarrhoea_watery|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_watery|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:diarrhoea_watery|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:diarrhoea_watery|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:diarrhoea_watery|<5y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_watery|5y-14y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_watery|15y-49y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_watery|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:diarrhoea_bloody|<5y	MapperNotifierActionRunner	2000	opdmorbacute:diarrhoea_bloody|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_bloody|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:diarrhoea_bloody|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_bloody|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:diarrhoea_bloody|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_bloody|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:diarrhoea_bloody|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:diarrhoea_bloody|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:diarrhoea_bloody|<5y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_bloody|5y-14y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_bloody|15y-49y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_bloody|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:gastrointestinal_acute|<5y	MapperNotifierActionRunner	2000	opdmorbacute:gastrointestinal_acute|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:gastrointestinal_acute|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:gastrointestinal_acute|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:gastrointestinal_acute|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:gastrointestinal_acute|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:gastrointestinal_acute|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:gastrointestinal_acute|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:gastrointestinal_acute|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:gastrointestinal_acute|<5y	X	ADD	NOTIFY	opdmorbacute:gastrointestinal_acute|5y-14y	X	ADD	NOTIFY	opdmorbacute:gastrointestinal_acute|15y-49y	X	ADD	NOTIFY	opdmorbacute:gastrointestinal_acute|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:skin_infection|<5y	MapperNotifierActionRunner	2000	opdmorbacute:skin_infection|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:skin_infection|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:skin_infection|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:skin_infection|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:skin_infection|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:skin_infection|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:skin_infection|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:skin_infection|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:skin_infection|<5y	X	ADD	NOTIFY	opdmorbacute:skin_infection|5y-14y	X	ADD	NOTIFY	opdmorbacute:skin_infection|15y-49y	X	ADD	NOTIFY	opdmorbacute:skin_infection|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:eye_infection|<5y	MapperNotifierActionRunner	2000	opdmorbacute:eye_infection|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:eye_infection|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:eye_infection|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:eye_infection|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:eye_infection|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:eye_infection|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:eye_infection|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:eye_infection|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:eye_infection|<5y	X	ADD	NOTIFY	opdmorbacute:eye_infection|5y-14y	X	ADD	NOTIFY	opdmorbacute:eye_infection|15y-49y	X	ADD	NOTIFY	opdmorbacute:eye_infection|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:ear_infection|<5y	MapperNotifierActionRunner	2000	opdmorbacute:ear_infection|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:ear_infection|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:ear_infection|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:ear_infection|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:ear_infection|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:ear_infection|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:ear_infection|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:ear_infection|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:ear_infection|<5y	X	ADD	NOTIFY	opdmorbacute:ear_infection|5y-14y	X	ADD	NOTIFY	opdmorbacute:ear_infection|15y-49y	X	ADD	NOTIFY	opdmorbacute:ear_infection|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:uti|<5y	MapperNotifierActionRunner	2000	opdmorbacute:uti|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:uti|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:uti|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:uti|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:uti|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:uti|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:uti|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:uti|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:uti|<5y	X	ADD	NOTIFY	opdmorbacute:uti|5y-14y	X	ADD	NOTIFY	opdmorbacute:uti|15y-49y	X	ADD	NOTIFY	opdmorbacute:uti|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:sti|<5y	MapperNotifierActionRunner	2000	opdmorbacute:sti|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:sti|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:sti|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:sti|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:sti|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:sti|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:sti|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:sti|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:sti|<5y	X	ADD	NOTIFY	opdmorbacute:sti|5y-14y	X	ADD	NOTIFY	opdmorbacute:sti|15y-49y	X	ADD	NOTIFY	opdmorbacute:sti|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:musculoskeletal|<5y	MapperNotifierActionRunner	2000	opdmorbacute:musculoskeletal|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:musculoskeletal|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:musculoskeletal|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:musculoskeletal|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:musculoskeletal|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:musculoskeletal|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:musculoskeletal|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:musculoskeletal|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:musculoskeletal|<5y	X	ADD	NOTIFY	opdmorbacute:musculoskeletal|5y-14y	X	ADD	NOTIFY	opdmorbacute:musculoskeletal|15y-49y	X	ADD	NOTIFY	opdmorbacute:musculoskeletal|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:trauma_acci|<5y	MapperNotifierActionRunner	2000	opdmorbacute:trauma_acci|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_acci|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:trauma_acci|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_acci|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:trauma_acci|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_acci|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:trauma_acci|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:trauma_acci|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:trauma_acci|<5y	X	ADD	NOTIFY	opdmorbacute:trauma_acci|5y-14y	X	ADD	NOTIFY	opdmorbacute:trauma_acci|15y-49y	X	ADD	NOTIFY	opdmorbacute:trauma_acci|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:trauma_intent|<5y	MapperNotifierActionRunner	2000	opdmorbacute:trauma_intent|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_intent|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:trauma_intent|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_intent|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:trauma_intent|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_intent|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:trauma_intent|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:trauma_intent|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:trauma_intent|<5y	X	ADD	NOTIFY	opdmorbacute:trauma_intent|5y-14y	X	ADD	NOTIFY	opdmorbacute:trauma_intent|15y-49y	X	ADD	NOTIFY	opdmorbacute:trauma_intent|>=50y	X	ADD
+opdmorbacute:trauma_intent|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:trauma_intent|<5y	X	ADD	NOTIFY	opdmorbacute:trauma_intent|5y-14y	X	ADD	NOTIFY	opdmorbacute:trauma_intent|15y-49y	X	ADD	NOTIFY	opdmorbacute:trauma_intent|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:violence_sexual|<5y	MapperNotifierActionRunner	2000	opdmorbacute:violence_sexual|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:violence_sexual|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:violence_sexual|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:violence_sexual|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:violence_sexual|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:violence_sexual|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:violence_sexual|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:violence_sexual|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:violence_sexual|<5y	X	ADD	NOTIFY	opdmorbacute:violence_sexual|5y-14y	X	ADD	NOTIFY	opdmorbacute:violence_sexual|15y-49y	X	ADD	NOTIFY	opdmorbacute:violence_sexual|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:malnutrition_acute|<5y	MapperNotifierActionRunner	2000	opdmorbacute:malnutrition_acute|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:malnutrition_acute|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:malnutrition_acute|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:malnutrition_acute|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:malnutrition_acute|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:malnutrition_acute|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:malnutrition_acute|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:malnutrition_acute|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:malnutrition_acute|<5y	X	ADD	NOTIFY	opdmorbacute:malnutrition_acute|5y-14y	X	ADD	NOTIFY	opdmorbacute:malnutrition_acute|15y-49y	X	ADD	NOTIFY	opdmorbacute:malnutrition_acute|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:fever_unknown|<5y	MapperNotifierActionRunner	2000	opdmorbacute:fever_unknown|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:fever_unknown|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:fever_unknown|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:fever_unknown|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:fever_unknown|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:fever_unknown|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:fever_unknown|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:fever_unknown|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:fever_unknown|<5y	X	ADD	NOTIFY	opdmorbacute:fever_unknown|5y-14y	X	ADD	NOTIFY	opdmorbacute:fever_unknown|15y-49y	X	ADD	NOTIFY	opdmorbacute:fever_unknown|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:dental|<5y	MapperNotifierActionRunner	2000	opdmorbacute:dental|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:dental|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:dental|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:dental|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:dental|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:dental|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:dental|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:dental|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:dental|<5y	X	ADD	NOTIFY	opdmorbacute:dental|5y-14y	X	ADD	NOTIFY	opdmorbacute:dental|15y-49y	X	ADD	NOTIFY	opdmorbacute:dental|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:unknown|<5y	MapperNotifierActionRunner	2000	opdmorbacute:unknown|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:unknown|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:unknown|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:unknown|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:unknown|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:unknown|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:unknown|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:unknown|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:unknown|<5y	X	ADD	NOTIFY	opdmorbacute:unknown|5y-14y	X	ADD	NOTIFY	opdmorbacute:unknown|15y-49y	X	ADD	NOTIFY	opdmorbacute:unknown|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:other|<5y	MapperNotifierActionRunner	2000	opdmorbacute:other|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:other|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:other|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:other|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:other|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:other|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:other|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:other|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:other|<5y	X	ADD	NOTIFY	opdmorbacute:other|5y-14y	X	ADD	NOTIFY	opdmorbacute:other|15y-49y	X	ADD	NOTIFY	opdmorbacute:other|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:all_general|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_general|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_general|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_general|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_general|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:all_general|<5y	X	ADD	NOTIFY	opdmorbacute:all_general|5y-14y	X	ADD	NOTIFY	opdmorbacute:all_general|15y-49y	X	ADD	NOTIFY	opdmorbacute:all_general|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:measles|<5y	MapperNotifierActionRunner	2000	opdmorbacute:measles|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:measles|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:measles|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:measles|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:measles|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:measles|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:measles|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:measles|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:measles|<5y	X	ADD	NOTIFY	opdmorbacute:measles|5y-14y	X	ADD	NOTIFY	opdmorbacute:measles|15y-49y	X	ADD	NOTIFY	opdmorbacute:measles|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:meningitis_susp|<5y	MapperNotifierActionRunner	2000	opdmorbacute:meningitis_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:meningitis_susp|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:meningitis_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:meningitis_susp|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:meningitis_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:meningitis_susp|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:meningitis_susp|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:meningitis_susp|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:meningitis_susp|<5y	X	ADD	NOTIFY	opdmorbacute:meningitis_susp|5y-14y	X	ADD	NOTIFY	opdmorbacute:meningitis_susp|15y-49y	X	ADD	NOTIFY	opdmorbacute:meningitis_susp|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:malaria_simple|<5y	MapperNotifierActionRunner	2000	opdmorbacute:malaria_simple|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:malaria_simple|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:malaria_simple|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:malaria_simple|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:malaria_simple|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:malaria_simple|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:malaria_simple|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:malaria_simple|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:malaria_simple|<5y	X	ADD	NOTIFY	opdmorbacute:malaria_simple|5y-14y	X	ADD	NOTIFY	opdmorbacute:malaria_simple|15y-49y	X	ADD	NOTIFY	opdmorbacute:malaria_simple|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:leishmaniasis_visceral|<5y	MapperNotifierActionRunner	2000	opdmorbacute:leishmaniasis_visceral|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_visceral|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:leishmaniasis_visceral|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_visceral|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:leishmaniasis_visceral|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_visceral|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:leishmaniasis_visceral|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:leishmaniasis_visceral|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:leishmaniasis_visceral|<5y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_visceral|5y-14y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_visceral|15y-49y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_visceral|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:leishmaniasis_cutaneous|<5y	MapperNotifierActionRunner	2000	opdmorbacute:leishmaniasis_cutaneous|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_cutaneous|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:leishmaniasis_cutaneous|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_cutaneous|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:leishmaniasis_cutaneous|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_cutaneous|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:leishmaniasis_cutaneous|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:leishmaniasis_cutaneous|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:leishmaniasis_cutaneous|<5y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_cutaneous|5y-14y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_cutaneous|15y-49y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_cutaneous|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:hiv_aids|<5y	MapperNotifierActionRunner	2000	opdmorbacute:hiv_aids|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:hiv_aids|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:hiv_aids|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:hiv_aids|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:hiv_aids|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:hiv_aids|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:hiv_aids|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:hiv_aids|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:hiv_aids|<5y	X	ADD	NOTIFY	opdmorbacute:hiv_aids|5y-14y	X	ADD	NOTIFY	opdmorbacute:hiv_aids|15y-49y	X	ADD	NOTIFY	opdmorbacute:hiv_aids|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:tb_susp|<5y	MapperNotifierActionRunner	2000	opdmorbacute:tb_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:tb_susp|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:tb_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:tb_susp|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:tb_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:tb_susp|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:tb_susp|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:tb_susp|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:tb_susp|<5y	X	ADD	NOTIFY	opdmorbacute:tb_susp|5y-14y	X	ADD	NOTIFY	opdmorbacute:tb_susp|15y-49y	X	ADD	NOTIFY	opdmorbacute:tb_susp|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:afp|<5y	MapperNotifierActionRunner	2000	opdmorbacute:afp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:afp|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:afp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:afp|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:afp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:afp|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:afp|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:afp|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:afp|<5y	X	ADD	NOTIFY	opdmorbacute:afp|5y-14y	X	ADD	NOTIFY	opdmorbacute:afp|15y-49y	X	ADD	NOTIFY	opdmorbacute:afp|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:brucellosis_susp|<5y	MapperNotifierActionRunner	2000	opdmorbacute:brucellosis_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:brucellosis_susp|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:brucellosis_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:brucellosis_susp|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:brucellosis_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:brucellosis_susp|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:brucellosis_susp|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:brucellosis_susp|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:brucellosis_susp|<5y	X	ADD	NOTIFY	opdmorbacute:brucellosis_susp|5y-14y	X	ADD	NOTIFY	opdmorbacute:brucellosis_susp|15y-49y	X	ADD	NOTIFY	opdmorbacute:brucellosis_susp|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:typhoid_susp|<5y	MapperNotifierActionRunner	2000	opdmorbacute:typhoid_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:typhoid_susp|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:typhoid_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:typhoid_susp|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:typhoid_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:typhoid_susp|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:typhoid_susp|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:typhoid_susp|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:typhoid_susp|<5y	X	ADD	NOTIFY	opdmorbacute:typhoid_susp|5y-14y	X	ADD	NOTIFY	opdmorbacute:typhoid_susp|15y-49y	X	ADD	NOTIFY	opdmorbacute:typhoid_susp|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:pertussis_susp|<5y	MapperNotifierActionRunner	2000	opdmorbacute:pertussis_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:pertussis_susp|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:pertussis_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:pertussis_susp|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:pertussis_susp|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:pertussis_susp|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:pertussis_susp|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:pertussis_susp|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:pertussis_susp|<5y	X	ADD	NOTIFY	opdmorbacute:pertussis_susp|5y-14y	X	ADD	NOTIFY	opdmorbacute:pertussis_susp|15y-49y	X	ADD	NOTIFY	opdmorbacute:pertussis_susp|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:notifiable_disease_other|<5y	MapperNotifierActionRunner	2000	opdmorbacute:notifiable_disease_other|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:notifiable_disease_other|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:notifiable_disease_other|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:notifiable_disease_other|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:notifiable_disease_other|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:notifiable_disease_other|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:notifiable_disease_other|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:notifiable_disease_other|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:notifiable_disease_other|<5y	X	ADD	NOTIFY	opdmorbacute:notifiable_disease_other|5y-14y	X	ADD	NOTIFY	opdmorbacute:notifiable_disease_other|15y-49y	X	ADD	NOTIFY	opdmorbacute:notifiable_disease_other|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:jaundice_acute_synd|<5y	MapperNotifierActionRunner	2000	opdmorbacute:jaundice_acute_synd|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:jaundice_acute_synd|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:jaundice_acute_synd|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:jaundice_acute_synd|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:jaundice_acute_synd|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:jaundice_acute_synd|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:jaundice_acute_synd|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:jaundice_acute_synd|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:jaundice_acute_synd|<5y	X	ADD	NOTIFY	opdmorbacute:jaundice_acute_synd|5y-14y	X	ADD	NOTIFY	opdmorbacute:jaundice_acute_synd|15y-49y	X	ADD	NOTIFY	opdmorbacute:jaundice_acute_synd|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:hepatitis_a|<5y	MapperNotifierActionRunner	2000	opdmorbacute:hepatitis_a|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_a|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:hepatitis_a|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_a|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:hepatitis_a|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_a|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:hepatitis_a|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:hepatitis_a|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:hepatitis_a|<5y	X	ADD	NOTIFY	opdmorbacute:hepatitis_a|5y-14y	X	ADD	NOTIFY	opdmorbacute:hepatitis_a|15y-49y	X	ADD	NOTIFY	opdmorbacute:hepatitis_a|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:hepatitis_bcde|<5y	MapperNotifierActionRunner	2000	opdmorbacute:hepatitis_bcde|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_bcde|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:hepatitis_bcde|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_bcde|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:hepatitis_bcde|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_bcde|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:hepatitis_bcde|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:hepatitis_bcde|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:hepatitis_bcde|<5y	X	ADD	NOTIFY	opdmorbacute:hepatitis_bcde|5y-14y	X	ADD	NOTIFY	opdmorbacute:hepatitis_bcde|15y-49y	X	ADD	NOTIFY	opdmorbacute:hepatitis_bcde|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+
+// opd_morbidity_acute
+opdmorbacute:mumps|<5y	MapperNotifierActionRunner	2000	opdmorbacute:mumps|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:mumps|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:mumps|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:mumps|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:mumps|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:mumps|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:mumps|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:mumps|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:mumps|<5y	X	ADD	NOTIFY	opdmorbacute:mumps|5y-14y	X	ADD	NOTIFY	opdmorbacute:mumps|15y-49y	X	ADD	NOTIFY	opdmorbacute:mumps|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:rubella|<5y	MapperNotifierActionRunner	2000	opdmorbacute:rubella|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:rubella|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:rubella|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:rubella|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:rubella|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:rubella|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:rubella|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:rubella|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:rubella|<5y	X	ADD	NOTIFY	opdmorbacute:rubella|5y-14y	X	ADD	NOTIFY	opdmorbacute:rubella|15y-49y	X	ADD	NOTIFY	opdmorbacute:rubella|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:scabies|<5y	MapperNotifierActionRunner	2000	opdmorbacute:scabies|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:scabies|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:scabies|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:scabies|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:scabies|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:scabies|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:scabies|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:scabies|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:scabies|<5y	X	ADD	NOTIFY	opdmorbacute:scabies|5y-14y	X	ADD	NOTIFY	opdmorbacute:scabies|15y-49y	X	ADD	NOTIFY	opdmorbacute:scabies|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:syphilis|<5y	MapperNotifierActionRunner	2000	opdmorbacute:syphilis|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:syphilis|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:syphilis|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:syphilis|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:syphilis|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:syphilis|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:syphilis|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:syphilis|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:syphilis|<5y	X	ADD	NOTIFY	opdmorbacute:syphilis|5y-14y	X	ADD	NOTIFY	opdmorbacute:syphilis|15y-49y	X	ADD	NOTIFY	opdmorbacute:syphilis|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:tetanus|<5y	MapperNotifierActionRunner	2000	opdmorbacute:tetanus|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:tetanus|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:tetanus|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:tetanus|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:tetanus|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:tetanus|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:tetanus|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:tetanus|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:tetanus|<5y	X	ADD	NOTIFY	opdmorbacute:tetanus|5y-14y	X	ADD	NOTIFY	opdmorbacute:tetanus|15y-49y	X	ADD	NOTIFY	opdmorbacute:tetanus|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:all_notifiable|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_notifiable|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_notifiable|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_notifiable|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_notifiable|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:all_notifiable|<5y	X	ADD	NOTIFY	opdmorbacute:all_notifiable|5y-14y	X	ADD	NOTIFY	opdmorbacute:all_notifiable|15y-49y	X	ADD	NOTIFY	opdmorbacute:all_notifiable|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:mental_health|<5y	MapperNotifierActionRunner	2000	opdmorbacute:mental_health|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:mental_health|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:mental_health|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:mental_health|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:mental_health|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:mental_health|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:mental_health|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:mental_health|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:mental_health|<5y	X	ADD	NOTIFY	opdmorbacute:mental_health|5y-14y	X	ADD	NOTIFY	opdmorbacute:mental_health|15y-49y	X	ADD	NOTIFY	opdmorbacute:mental_health|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:cncd|<5y	MapperNotifierActionRunner	2000	opdmorbacute:cncd|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:cncd|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:cncd|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:cncd|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:cncd|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:cncd|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:cncd|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:cncd|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:cncd|<5y	X	ADD	NOTIFY	opdmorbacute:cncd|5y-14y	X	ADD	NOTIFY	opdmorbacute:cncd|15y-49y	X	ADD	NOTIFY	opdmorbacute:cncd|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:gynaecology|<5y	MapperNotifierActionRunner	2000	opdmorbacute:gynaecology|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:gynaecology|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:gynaecology|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:gynaecology|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:gynaecology|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:gynaecology|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:gynaecology|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:gynaecology|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:gynaecology|<5y	X	ADD	NOTIFY	opdmorbacute:gynaecology|5y-14y	X	ADD	NOTIFY	opdmorbacute:gynaecology|15y-49y	X	ADD	NOTIFY	opdmorbacute:gynaecology|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:all_separate|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_separate|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_separate|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_separate|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_separate|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:all_separate|<5y	X	ADD	NOTIFY	opdmorbacute:all_separate|5y-14y	X	ADD	NOTIFY	opdmorbacute:all_separate|15y-49y	X	ADD	NOTIFY	opdmorbacute:all_separate|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:all|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:all|<5y	X	ADD	NOTIFY	opdmorbacute:all|5y-14y	X	ADD	NOTIFY	opdmorbacute:all|15y-49y	X	ADD	NOTIFY	opdmorbacute:all|>=50y	X	ADD
+
+// MORBIDITIES - Columns - GENERAL ***************************
+// opd_morbidity_acute
+opdmorbacute:urti|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:lrti|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_watery|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_bloody|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:gastrointestinal_acute|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:skin_infection|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:eye_infection|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:ear_infection|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:uti|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:sti|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:musculoskeletal|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_acci|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_intent|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:violence_sexual|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:malnutrition_acute|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:fever_unknown|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:dental|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:unknown|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:other|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|<5y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_general|<5y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:urti|<5y	X	ADD	NOTIFY	opdmorbacute:lrti|<5y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_watery|<5y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_bloody|<5y	X	ADD	NOTIFY	opdmorbacute:gastrointestinal_acute|<5y	X	ADD	NOTIFY	opdmorbacute:skin_infection|<5y	X	ADD	NOTIFY	opdmorbacute:eye_infection|<5y	X	ADD	NOTIFY	opdmorbacute:ear_infection|<5y	X	ADD	NOTIFY	opdmorbacute:uti|<5y	X	ADD	NOTIFY	opdmorbacute:sti|<5y	X	ADD	NOTIFY	opdmorbacute:musculoskeletal|<5y	X	ADD	NOTIFY	opdmorbacute:trauma_acci|<5y	X	ADD	NOTIFY	opdmorbacute:trauma_intent|<5y	X	ADD	NOTIFY	opdmorbacute:violence_sexual|<5y	X	ADD	NOTIFY	opdmorbacute:malnutrition_acute|<5y	X	ADD	NOTIFY	opdmorbacute:fever_unknown|<5y	X	ADD	NOTIFY	opdmorbacute:dental|<5y	X	ADD	NOTIFY	opdmorbacute:unknown|<5y	X	ADD	NOTIFY	opdmorbacute:other|<5y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:urti|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:lrti|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_watery|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_bloody|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:gastrointestinal_acute|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:skin_infection|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:eye_infection|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:ear_infection|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:uti|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:sti|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:musculoskeletal|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_acci|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_intent|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:violence_sexual|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:malnutrition_acute|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:fever_unknown|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:dental|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:unknown|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:other|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|5y-14y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_general|5y-14y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:urti|5y-14y	X	ADD	NOTIFY	opdmorbacute:lrti|5y-14y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_watery|5y-14y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_bloody|5y-14y	X	ADD	NOTIFY	opdmorbacute:gastrointestinal_acute|5y-14y	X	ADD	NOTIFY	opdmorbacute:skin_infection|5y-14y	X	ADD	NOTIFY	opdmorbacute:eye_infection|5y-14y	X	ADD	NOTIFY	opdmorbacute:ear_infection|5y-14y	X	ADD	NOTIFY	opdmorbacute:uti|5y-14y	X	ADD	NOTIFY	opdmorbacute:sti|5y-14y	X	ADD	NOTIFY	opdmorbacute:musculoskeletal|5y-14y	X	ADD	NOTIFY	opdmorbacute:trauma_acci|5y-14y	X	ADD	NOTIFY	opdmorbacute:trauma_intent|5y-14y	X	ADD	NOTIFY	opdmorbacute:violence_sexual|5y-14y	X	ADD	NOTIFY	opdmorbacute:malnutrition_acute|5y-14y	X	ADD	NOTIFY	opdmorbacute:fever_unknown|5y-14y	X	ADD	NOTIFY	opdmorbacute:dental|5y-14y	X	ADD	NOTIFY	opdmorbacute:unknown|5y-14y	X	ADD	NOTIFY	opdmorbacute:other|5y-14y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:urti|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:lrti|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_watery|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_bloody|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:gastrointestinal_acute|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:skin_infection|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:eye_infection|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:ear_infection|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:uti|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:sti|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:musculoskeletal|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_acci|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_intent|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:violence_sexual|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:malnutrition_acute|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:fever_unknown|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:dental|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:unknown|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:other|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|15y-49y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_general|15y-49y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:urti|15y-49y	X	ADD	NOTIFY	opdmorbacute:lrti|15y-49y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_watery|15y-49y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_bloody|15y-49y	X	ADD	NOTIFY	opdmorbacute:gastrointestinal_acute|15y-49y	X	ADD	NOTIFY	opdmorbacute:skin_infection|15y-49y	X	ADD	NOTIFY	opdmorbacute:eye_infection|15y-49y	X	ADD	NOTIFY	opdmorbacute:ear_infection|15y-49y	X	ADD	NOTIFY	opdmorbacute:uti|15y-49y	X	ADD	NOTIFY	opdmorbacute:sti|15y-49y	X	ADD	NOTIFY	opdmorbacute:musculoskeletal|15y-49y	X	ADD	NOTIFY	opdmorbacute:trauma_acci|15y-49y	X	ADD	NOTIFY	opdmorbacute:trauma_intent|15y-49y	X	ADD	NOTIFY	opdmorbacute:violence_sexual|15y-49y	X	ADD	NOTIFY	opdmorbacute:malnutrition_acute|15y-49y	X	ADD	NOTIFY	opdmorbacute:fever_unknown|15y-49y	X	ADD	NOTIFY	opdmorbacute:dental|15y-49y	X	ADD	NOTIFY	opdmorbacute:unknown|15y-49y	X	ADD	NOTIFY	opdmorbacute:other|15y-49y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:urti|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:lrti|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_watery|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:diarrhoea_bloody|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:gastrointestinal_acute|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:skin_infection|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:eye_infection|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:ear_infection|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:uti|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:sti|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:musculoskeletal|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_acci|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:trauma_intent|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:violence_sexual|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:malnutrition_acute|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:fever_unknown|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:dental|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:unknown|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:other|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_general|>=50y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_general|>=50y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:urti|>=50y	X	ADD	NOTIFY	opdmorbacute:lrti|>=50y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_watery|>=50y	X	ADD	NOTIFY	opdmorbacute:diarrhoea_bloody|>=50y	X	ADD	NOTIFY	opdmorbacute:gastrointestinal_acute|>=50y	X	ADD	NOTIFY	opdmorbacute:skin_infection|>=50y	X	ADD	NOTIFY	opdmorbacute:eye_infection|>=50y	X	ADD	NOTIFY	opdmorbacute:ear_infection|>=50y	X	ADD	NOTIFY	opdmorbacute:uti|>=50y	X	ADD	NOTIFY	opdmorbacute:sti|>=50y	X	ADD	NOTIFY	opdmorbacute:musculoskeletal|>=50y	X	ADD	NOTIFY	opdmorbacute:trauma_acci|>=50y	X	ADD	NOTIFY	opdmorbacute:trauma_intent|>=50y	X	ADD	NOTIFY	opdmorbacute:violence_sexual|>=50y	X	ADD	NOTIFY	opdmorbacute:malnutrition_acute|>=50y	X	ADD	NOTIFY	opdmorbacute:fever_unknown|>=50y	X	ADD	NOTIFY	opdmorbacute:dental|>=50y	X	ADD	NOTIFY	opdmorbacute:unknown|>=50y	X	ADD	NOTIFY	opdmorbacute:other|>=50y	X	ADD
+
+// MORBIDITIES - Columns - NOTIFIABLE ***************************
+// opd_morbidity_acute
+opdmorbacute:measles|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:meningitis_susp|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:malaria_simple|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_visceral|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_cutaneous|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_visceral|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_cutaneous|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:hiv_aids|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:tb_susp|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:afp|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:brucellosis_susp|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:typhoid_susp|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:pertussis_susp|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:notifiable_disease_other|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:jaundice_acute_synd|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_a|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_bcde|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:mumps|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:rubella|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:scabies|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:syphilis|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:tetanus|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_notifiable|<5y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:measles|<5y	X	ADD	NOTIFY	opdmorbacute:meningitis_susp|<5y	X	ADD	NOTIFY	opdmorbacute:malaria_simple|<5y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_visceral|<5y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_cutaneous|<5y	X	ADD	NOTIFY	opdmorbacute:hiv_aids|<5y	X	ADD	NOTIFY	opdmorbacute:tb_susp|<5y	X	ADD	NOTIFY	opdmorbacute:afp|<5y	X	ADD	NOTIFY	opdmorbacute:brucellosis_susp|<5y	X	ADD	NOTIFY	opdmorbacute:typhoid_susp|<5y	X	ADD	NOTIFY	opdmorbacute:pertussis_susp|<5y	X	ADD	NOTIFY	opdmorbacute:notifiable_disease_other|<5y	X	ADD	NOTIFY	opdmorbacute:jaundice_acute_synd|<5y	X	ADD	NOTIFY	opdmorbacute:hepatitis_a|<5y	X	ADD	NOTIFY	opdmorbacute:hepatitis_bcde|<5y	X	ADD	NOTIFY	opdmorbacute:mumps|<5y	X	ADD	NOTIFY	opdmorbacute:rubella|<5y	X	ADD	NOTIFY	opdmorbacute:scabies|<5y	X	ADD	NOTIFY	opdmorbacute:syphilis|<5y	X	ADD	NOTIFY	opdmorbacute:tetanus|<5y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:measles|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:meningitis_susp|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:malaria_simple|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_visceral|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_cutaneous|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:hiv_aids|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:tb_susp|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:afp|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:brucellosis_susp|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:typhoid_susp|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:pertussis_susp|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:notifiable_disease_other|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:jaundice_acute_synd|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_a|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_bcde|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:mumps|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:rubella|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:scabies|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:syphilis|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:tetanus|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_notifiable|5y-14y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:measles|5y-14y	X	ADD	NOTIFY	opdmorbacute:meningitis_susp|5y-14y	X	ADD	NOTIFY	opdmorbacute:malaria_simple|5y-14y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_visceral|5y-14y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_cutaneous|5y-14y	X	ADD	NOTIFY	opdmorbacute:hiv_aids|5y-14y	X	ADD	NOTIFY	opdmorbacute:tb_susp|5y-14y	X	ADD	NOTIFY	opdmorbacute:afp|5y-14y	X	ADD	NOTIFY	opdmorbacute:brucellosis_susp|5y-14y	X	ADD	NOTIFY	opdmorbacute:typhoid_susp|5y-14y	X	ADD	NOTIFY	opdmorbacute:pertussis_susp|5y-14y	X	ADD	NOTIFY	opdmorbacute:notifiable_disease_other|5y-14y	X	ADD	NOTIFY	opdmorbacute:jaundice_acute_synd|5y-14y	X	ADD	NOTIFY	opdmorbacute:hepatitis_a|5y-14y	X	ADD	NOTIFY	opdmorbacute:hepatitis_bcde|5y-14y	X	ADD	NOTIFY	opdmorbacute:mumps|5y-14y	X	ADD	NOTIFY	opdmorbacute:rubella|5y-14y	X	ADD	NOTIFY	opdmorbacute:scabies|5y-14y	X	ADD	NOTIFY	opdmorbacute:syphilis|5y-14y	X	ADD	NOTIFY	opdmorbacute:tetanus|5y-14y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:measles|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:meningitis_susp|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:malaria_simple|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_visceral|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_cutaneous|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:hiv_aids|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:tb_susp|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:afp|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:brucellosis_susp|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:typhoid_susp|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:pertussis_susp|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:notifiable_disease_other|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:jaundice_acute_synd|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_a|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_bcde|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:mumps|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:rubella|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:scabies|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:syphilis|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:tetanus|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_notifiable|15y-49y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:measles|15y-49y	X	ADD	NOTIFY	opdmorbacute:meningitis_susp|15y-49y	X	ADD	NOTIFY	opdmorbacute:malaria_simple|15y-49y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_visceral|15y-49y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_cutaneous|15y-49y	X	ADD	NOTIFY	opdmorbacute:hiv_aids|15y-49y	X	ADD	NOTIFY	opdmorbacute:tb_susp|15y-49y	X	ADD	NOTIFY	opdmorbacute:afp|15y-49y	X	ADD	NOTIFY	opdmorbacute:brucellosis_susp|15y-49y	X	ADD	NOTIFY	opdmorbacute:typhoid_susp|15y-49y	X	ADD	NOTIFY	opdmorbacute:pertussis_susp|15y-49y	X	ADD	NOTIFY	opdmorbacute:notifiable_disease_other|15y-49y	X	ADD	NOTIFY	opdmorbacute:jaundice_acute_synd|15y-49y	X	ADD	NOTIFY	opdmorbacute:hepatitis_a|15y-49y	X	ADD	NOTIFY	opdmorbacute:hepatitis_bcde|15y-49y	X	ADD	NOTIFY	opdmorbacute:mumps|15y-49y	X	ADD	NOTIFY	opdmorbacute:rubella|15y-49y	X	ADD	NOTIFY	opdmorbacute:scabies|15y-49y	X	ADD	NOTIFY	opdmorbacute:syphilis|15y-49y	X	ADD	NOTIFY	opdmorbacute:tetanus|15y-49y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:measles|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:meningitis_susp|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:malaria_simple|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_visceral|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:leishmaniasis_cutaneous|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:hiv_aids|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:tb_susp|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:afp|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:brucellosis_susp|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:typhoid_susp|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:pertussis_susp|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:notifiable_disease_other|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:jaundice_acute_synd|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_a|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:hepatitis_bcde|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:mumps|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:rubella|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:scabies|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:syphilis|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:tetanus|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_notifiable|>=50y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:measles|>=50y	X	ADD	NOTIFY	opdmorbacute:meningitis_susp|>=50y	X	ADD	NOTIFY	opdmorbacute:malaria_simple|>=50y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_visceral|>=50y	X	ADD	NOTIFY	opdmorbacute:leishmaniasis_cutaneous|>=50y	X	ADD	NOTIFY	opdmorbacute:hiv_aids|>=50y	X	ADD	NOTIFY	opdmorbacute:tb_susp|>=50y	X	ADD	NOTIFY	opdmorbacute:afp|>=50y	X	ADD	NOTIFY	opdmorbacute:brucellosis_susp|>=50y	X	ADD	NOTIFY	opdmorbacute:typhoid_susp|>=50y	X	ADD	NOTIFY	opdmorbacute:pertussis_susp|>=50y	X	ADD	NOTIFY	opdmorbacute:notifiable_disease_other|>=50y	X	ADD	NOTIFY	opdmorbacute:jaundice_acute_synd|>=50y	X	ADD	NOTIFY	opdmorbacute:hepatitis_a|>=50y	X	ADD	NOTIFY	opdmorbacute:hepatitis_bcde|>=50y	X	ADD	NOTIFY	opdmorbacute:mumps|>=50y	X	ADD	NOTIFY	opdmorbacute:rubella|>=50y	X	ADD	NOTIFY	opdmorbacute:scabies|>=50y	X	ADD	NOTIFY	opdmorbacute:syphilis|>=50y	X	ADD	NOTIFY	opdmorbacute:tetanus|>=50y	X	ADD
+
+// MORBIDITIES - Columns - SEPARATE ***************************
+// opd_morbidity_acute
+opdmorbacute:mental_health|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:mups|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:cncd|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:gynaecology|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|<5y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_separate|<5y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:mental_health|<5y	X	ADD	NOTIFY	opdmorbacute:mups|<5y	X	ADD	NOTIFY	opdmorbacute:cncd|<5y	X	ADD	NOTIFY	opdmorbacute:gynaecology|<5y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:mental_health|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:cncd|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:gynaecology|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|5y-14y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_separate|5y-14y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:mental_health|5y-14y	X	ADD	NOTIFY	opdmorbacute:cncd|5y-14y	X	ADD	NOTIFY	opdmorbacute:gynaecology|5y-14y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:mental_health|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:cncd|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:gynaecology|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|15y-49y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_separate|15y-49y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:mental_health|15y-49y	X	ADD	NOTIFY	opdmorbacute:cncd|15y-49y	X	ADD	NOTIFY	opdmorbacute:gynaecology|15y-49y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:mental_health|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:cncd|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:gynaecology|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all_separate|>=50y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all_separate|>=50y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:mental_health|>=50y	X	ADD	NOTIFY	opdmorbacute:cncd|>=50y	X	ADD	NOTIFY	opdmorbacute:gynaecology|>=50y	X	ADD
+
+// MORBIDITIES - Columns - TOTALS ***************************
+// opd_morbidity_acute
+opdmorbacute:all_general|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_notifiable|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all|<5y	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_separate|<5y	MapperNotifierActionRunner	2000	opdmorbacute:all|<5y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all|<5y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:all_general|<5y	X	ADD	NOTIFY	opdmorbacute:all_notifiable|<5y	X	ADD	NOTIFY	opdmorbacute:all_separate|<5y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:all_general|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_notifiable|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all|5y-14y	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_separate|5y-14y	MapperNotifierActionRunner	2000	opdmorbacute:all|5y-14y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all|5y-14y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:all_general|5y-14y	X	ADD	NOTIFY	opdmorbacute:all_notifiable|5y-14y	X	ADD	NOTIFY	opdmorbacute:all_separate|5y-14y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:all_general|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_notifiable|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all|15y-49y	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_separate|15y-49y	MapperNotifierActionRunner	2000	opdmorbacute:all|15y-49y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all|15y-49y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:all_general|15y-49y	X	ADD	NOTIFY	opdmorbacute:all_notifiable|15y-49y	X	ADD	NOTIFY	opdmorbacute:all_separate|15y-49y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:all_general|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_notifiable|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all|>=50y	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_separate|>=50y	MapperNotifierActionRunner	2000	opdmorbacute:all|>=50y	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all|>=50y	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:all_general|>=50y	X	ADD	NOTIFY	opdmorbacute:all_notifiable|>=50y	X	ADD	NOTIFY	opdmorbacute:all_separate|>=50y	X	ADD
+
+
+// opd_morbidity_acute
+opdmorbacute:all_general|Tot	MapperNotifierActionRunner	2000	opdmorbacute:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_notifiable|Tot	MapperNotifierActionRunner	2000	opdmorbacute:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbacute:all_separate|Tot	MapperNotifierActionRunner	2000	opdmorbacute:all|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbacute:all|Tot	CalculatorActionRunner	2001	opd_morbidity_acute	NOTIFY	opdmorbacute:all_general|Tot	X	ADD	NOTIFY	opdmorbacute:all_notifiable|Tot	X	ADD	NOTIFY	opdmorbacute:all_separate|Tot	X	ADD
+
+// NCDs - Rows ***************************
+// opd_morbidity_ncd
+opdmorbchronic:arterial_hypertension|NC	MapperNotifierActionRunner	2000	opdmorbchronic:arterial_hypertension|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:arterial_hypertension|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:arterial_hypertension|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:arterial_hypertension|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:arterial_hypertension|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:arterial_hypertension|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:arterial_hypertension|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:arterial_hypertension|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:arterial_hypertension|NC	X	ADD	NOTIFY	opdmorbchronic:arterial_hypertension|under_tt	X	ADD	NOTIFY	opdmorbchronic:arterial_hypertension|FUP	X	ADD	NOTIFY	opdmorbchronic:arterial_hypertension|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:diabetes1|NC	MapperNotifierActionRunner	2000	opdmorbchronic:diabetes1|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes1|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:diabetes1|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes1|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:diabetes1|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes1|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:diabetes1|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:diabetes1|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:diabetes1|NC	X	ADD	NOTIFY	opdmorbchronic:diabetes1|under_tt	X	ADD	NOTIFY	opdmorbchronic:diabetes1|FUP	X	ADD	NOTIFY	opdmorbchronic:diabetes1|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:diabetes2|NC	MapperNotifierActionRunner	2000	opdmorbchronic:diabetes2|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes2|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:diabetes2|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes2|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:diabetes2|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes2|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:diabetes2|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:diabetes2|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:diabetes2|NC	X	ADD	NOTIFY	opdmorbchronic:diabetes2|under_tt	X	ADD	NOTIFY	opdmorbchronic:diabetes2|FUP	X	ADD	NOTIFY	opdmorbchronic:diabetes2|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:arterial_hypertension_diabetes|NC	MapperNotifierActionRunner	2000	opdmorbchronic:arterial_hypertension_diabetes|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:arterial_hypertension_diabetes|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:arterial_hypertension_diabetes|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:arterial_hypertension_diabetes|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:arterial_hypertension_diabetes|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:arterial_hypertension_diabetes|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:arterial_hypertension_diabetes|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:arterial_hypertension_diabetes|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:arterial_hypertension_diabetes|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:arterial_hypertension_diabetes|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:arterial_hypertension_diabetes|NC	X	ADD	NOTIFY	opdmorbchronic:arterial_hypertension_diabetes|under_tt	X	ADD	NOTIFY	opdmorbchronic:arterial_hypertension_diabetes|FUP	X	ADD	NOTIFY	opdmorbchronic:arterial_hypertension_diabetes|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:cvd_other|NC	MapperNotifierActionRunner	2000	opdmorbchronic:cvd_other|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cvd_other|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:cvd_other|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cvd_other|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:cvd_other|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cvd_other|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:cvd_other|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:cvd_other|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:cvd_other|NC	X	ADD	NOTIFY	opdmorbchronic:cvd_other|under_tt	X	ADD	NOTIFY	opdmorbchronic:cvd_other|FUP	X	ADD	NOTIFY	opdmorbchronic:cvd_other|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:copd_asthma|NC	MapperNotifierActionRunner	2000	opdmorbchronic:copd_asthma|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:copd_asthma|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:copd_asthma|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:copd_asthma|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:copd_asthma|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:copd_asthma|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:copd_asthma|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:copd_asthma|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:copd_asthma|NC	X	ADD	NOTIFY	opdmorbchronic:copd_asthma|under_tt	X	ADD	NOTIFY	opdmorbchronic:copd_asthma|FUP	X	ADD	NOTIFY	opdmorbchronic:copd_asthma|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:thyroid|NC	MapperNotifierActionRunner	2000	opdmorbchronic:thyroid|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:thyroid|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:thyroid|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:thyroid|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:thyroid|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:thyroid|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:thyroid|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:thyroid|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:thyroid|NC	X	ADD	NOTIFY	opdmorbchronic:thyroid|under_tt	X	ADD	NOTIFY	opdmorbchronic:thyroid|FUP	X	ADD	NOTIFY	opdmorbchronic:thyroid|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:liver_biliar|NC	MapperNotifierActionRunner	2000	opdmorbchronic:liver_biliar|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:liver_biliar|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:liver_biliar|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:liver_biliar|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:liver_biliar|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:liver_biliar|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:liver_biliar|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:liver_biliar|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:liver_biliar|NC	X	ADD	NOTIFY	opdmorbchronic:liver_biliar|under_tt	X	ADD	NOTIFY	opdmorbchronic:liver_biliar|FUP	X	ADD	NOTIFY	opdmorbchronic:liver_biliar|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:gastrointestinal_chronic|NC	MapperNotifierActionRunner	2000	opdmorbchronic:gastrointestinal_chronic|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:gastrointestinal_chronic|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:gastrointestinal_chronic|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:gastrointestinal_chronic|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:gastrointestinal_chronic|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:gastrointestinal_chronic|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:gastrointestinal_chronic|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:gastrointestinal_chronic|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:gastrointestinal_chronic|NC	X	ADD	NOTIFY	opdmorbchronic:gastrointestinal_chronic|under_tt	X	ADD	NOTIFY	opdmorbchronic:gastrointestinal_chronic|FUP	X	ADD	NOTIFY	opdmorbchronic:gastrointestinal_chronic|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:cancer|NC	MapperNotifierActionRunner	2000	opdmorbchronic:cancer|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cancer|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:cancer|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cancer|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:cancer|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cancer|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:cancer|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:cancer|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:cancer|NC	X	ADD	NOTIFY	opdmorbchronic:cancer|under_tt	X	ADD	NOTIFY	opdmorbchronic:cancer|FUP	X	ADD	NOTIFY	opdmorbchronic:cancer|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:rheumatoid_degenerative|NC	MapperNotifierActionRunner	2000	opdmorbchronic:rheumatoid_degenerative|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:rheumatoid_degenerative|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:rheumatoid_degenerative|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:rheumatoid_degenerative|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:rheumatoid_degenerative|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:rheumatoid_degenerative|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:rheumatoid_degenerative|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:rheumatoid_degenerative|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:rheumatoid_degenerative|NC	X	ADD	NOTIFY	opdmorbchronic:rheumatoid_degenerative|under_tt	X	ADD	NOTIFY	opdmorbchronic:rheumatoid_degenerative|FUP	X	ADD	NOTIFY	opdmorbchronic:rheumatoid_degenerative|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:neurologic|NC	MapperNotifierActionRunner	2000	opdmorbchronic:neurologic|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:neurologic|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:neurologic|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:neurologic|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:neurologic|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:neurologic|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:neurologic|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:neurologic|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:neurologic|NC	X	ADD	NOTIFY	opdmorbchronic:neurologic|under_tt	X	ADD	NOTIFY	opdmorbchronic:neurologic|FUP	X	ADD	NOTIFY	opdmorbchronic:neurologic|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:renal|NC	MapperNotifierActionRunner	2000	opdmorbchronic:renal|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:renal|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:renal|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:renal|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:renal|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:renal|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:renal|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:renal|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:renal|NC	X	ADD	NOTIFY	opdmorbchronic:renal|under_tt	X	ADD	NOTIFY	opdmorbchronic:renal|FUP	X	ADD	NOTIFY	opdmorbchronic:renal|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:substance_abuse|NC	MapperNotifierActionRunner	2000	opdmorbchronic:substance_abuse|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:substance_abuse|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:substance_abuse|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:substance_abuse|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:substance_abuse|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:substance_abuse|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:substance_abuse|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:substance_abuse|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:substance_abuse|NC	X	ADD	NOTIFY	opdmorbchronic:substance_abuse|under_tt	X	ADD	NOTIFY	opdmorbchronic:substance_abuse|FUP	X	ADD	NOTIFY	opdmorbchronic:substance_abuse|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:congenital_disorder|NC	MapperNotifierActionRunner	2000	opdmorbchronic:congenital_disorder|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:congenital_disorder|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:congenital_disorder|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:congenital_disorder|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:congenital_disorder|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:congenital_disorder|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:congenital_disorder|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:congenital_disorder|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:congenital_disorder|NC	X	ADD	NOTIFY	opdmorbchronic:congenital_disorder|under_tt	X	ADD	NOTIFY	opdmorbchronic:congenital_disorder|FUP	X	ADD	NOTIFY	opdmorbchronic:congenital_disorder|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:ncd_other|NC	MapperNotifierActionRunner	2000	opdmorbchronic:ncd_other|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:ncd_other|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:ncd_other|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:ncd_other|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:ncd_other|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:ncd_other|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:ncd_other|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:ncd_other|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:ncd_other|NC	X	ADD	NOTIFY	opdmorbchronic:ncd_other|under_tt	X	ADD	NOTIFY	opdmorbchronic:ncd_other|FUP	X	ADD	NOTIFY	opdmorbchronic:ncd_other|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:all|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:all|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:all|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbchronic:all|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:all|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:all|NC	X	ADD	NOTIFY	opdmorbchronic:all|under_tt	X	ADD	NOTIFY	opdmorbchronic:all|FUP	X	ADD	NOTIFY	opdmorbchronic:all|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbmh:mental_common|NC	MapperNotifierActionRunner	2000	opdmorbmh:mental_common|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:mental_common|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:mental_common|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:mental_common|FUP	MapperNotifierActionRunner	2000	opdmorbmh:mental_common|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:mental_common|decomp	MapperNotifierActionRunner	2000	opdmorbmh:mental_common|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbmh:mental_common|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbmh:mental_common|NC	X	ADD	NOTIFY	opdmorbmh:mental_common|under_tt	X	ADD	NOTIFY	opdmorbmh:mental_common|FUP	X	ADD	NOTIFY	opdmorbmh:mental_common|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbmh:mood_disorders|NC	MapperNotifierActionRunner	2000	opdmorbmh:mood_disorders|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:mood_disorders|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:mood_disorders|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:mood_disorders|FUP	MapperNotifierActionRunner	2000	opdmorbmh:mood_disorders|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:mood_disorders|decomp	MapperNotifierActionRunner	2000	opdmorbmh:mood_disorders|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbmh:mood_disorders|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbmh:mood_disorders|NC	X	ADD	NOTIFY	opdmorbmh:mood_disorders|under_tt	X	ADD	NOTIFY	opdmorbmh:mood_disorders|FUP	X	ADD	NOTIFY	opdmorbmh:mood_disorders|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbmh:personality_disorder|NC	MapperNotifierActionRunner	2000	opdmorbmh:personality_disorder|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:personality_disorder|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:personality_disorder|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:personality_disorder|FUP	MapperNotifierActionRunner	2000	opdmorbmh:personality_disorder|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:personality_disorder|decomp	MapperNotifierActionRunner	2000	opdmorbmh:personality_disorder|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbmh:personality_disorder|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbmh:personality_disorder|NC	X	ADD	NOTIFY	opdmorbmh:personality_disorder|under_tt	X	ADD	NOTIFY	opdmorbmh:personality_disorder|FUP	X	ADD	NOTIFY	opdmorbmh:personality_disorder|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbmh:schizophrenia|NC	MapperNotifierActionRunner	2000	opdmorbmh:schizophrenia|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:schizophrenia|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:schizophrenia|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:schizophrenia|FUP	MapperNotifierActionRunner	2000	opdmorbmh:schizophrenia|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:schizophrenia|decomp	MapperNotifierActionRunner	2000	opdmorbmh:schizophrenia|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbmh:schizophrenia|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbmh:schizophrenia|NC	X	ADD	NOTIFY	opdmorbmh:schizophrenia|under_tt	X	ADD	NOTIFY	opdmorbmh:schizophrenia|FUP	X	ADD	NOTIFY	opdmorbmh:schizophrenia|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbmh:mental_severe|NC	MapperNotifierActionRunner	2000	opdmorbmh:mental_severe|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:mental_severe|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:mental_severe|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:mental_severe|FUP	MapperNotifierActionRunner	2000	opdmorbmh:mental_severe|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:mental_severe|decomp	MapperNotifierActionRunner	2000	opdmorbmh:mental_severe|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbmh:mental_severe|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbmh:mental_severe|NC	X	ADD	NOTIFY	opdmorbmh:mental_severe|under_tt	X	ADD	NOTIFY	opdmorbmh:mental_severe|FUP	X	ADD	NOTIFY	opdmorbmh:mental_severe|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbmh:substance_abuse|NC	MapperNotifierActionRunner	2000	opdmorbmh:substance_abuse|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:substance_abuse|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:substance_abuse|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:substance_abuse|FUP	MapperNotifierActionRunner	2000	opdmorbmh:substance_abuse|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:substance_abuse|decomp	MapperNotifierActionRunner	2000	opdmorbmh:substance_abuse|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbmh:substance_abuse|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbmh:substance_abuse|NC	X	ADD	NOTIFY	opdmorbmh:substance_abuse|under_tt	X	ADD	NOTIFY	opdmorbmh:substance_abuse|FUP	X	ADD	NOTIFY	opdmorbmh:substance_abuse|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbmh:all|NC	MapperNotifierActionRunner	2000	opdmorbmh:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:all|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:all|FUP	MapperNotifierActionRunner	2000	opdmorbmh:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:all|decomp	MapperNotifierActionRunner	2000	opdmorbmh:all|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbmh:all|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbmh:all|NC	X	ADD	NOTIFY	opdmorbmh:all|under_tt	X	ADD	NOTIFY	opdmorbmh:all|FUP	X	ADD	NOTIFY	opdmorbmh:all|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbncd:all|NC	MapperNotifierActionRunner	2000	opdmorbncd:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbncd:all|under_tt	MapperNotifierActionRunner	2000	opdmorbncd:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbncd:all|FUP	MapperNotifierActionRunner	2000	opdmorbncd:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbncd:all|decomp	MapperNotifierActionRunner	2000	opdmorbncd:all|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbncd:all|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbncd:all|NC	X	ADD	NOTIFY	opdmorbncd:all|under_tt	X	ADD	NOTIFY	opdmorbncd:all|FUP	X	ADD	NOTIFY	opdmorbncd:all|decomp	X	ADD
+
+
+// NCDs - Columns - CHRONIC***************************
+// opd_morbidity_ncd
+opdmorbchronic:arterial_hypertension|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes1|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes2|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:arterial_hypertension_diabetes|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cvd_other|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:copd_asthma|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cvd_other|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:copd_asthma|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:thyroid|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:liver_biliar|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:gastrointestinal_chronic|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cancer|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:rheumatoid_degenerative|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:neurologic|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:renal|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:substance_abuse|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:congenital_disorder|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbchronic:ncd_other|NC	MapperNotifierActionRunner	2000	opdmorbchronic:all|NC	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:all|NC	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:arterial_hypertension|NC	X	ADD	NOTIFY	opdmorbchronic:diabetes1|NC	X	ADD	NOTIFY	opdmorbchronic:diabetes2|NC	X	ADD	NOTIFY	opdmorbchronic:arterial_hypertension_diabetes|NC	X	ADD	NOTIFY	opdmorbchronic:cvd_other|NC	X	ADD	NOTIFY	opdmorbchronic:copd_asthma|NC	X	ADD	NOTIFY	opdmorbchronic:thyroid|NC	X	ADD	NOTIFY	opdmorbchronic:liver_biliar|NC	X	ADD	NOTIFY	opdmorbchronic:gastrointestinal_chronic|NC	X	ADD	NOTIFY	opdmorbchronic:cancer|NC	X	ADD	NOTIFY	opdmorbchronic:rheumatoid_degenerative|NC	X	ADD	NOTIFY	opdmorbchronic:neurologic|NC	X	ADD	NOTIFY	opdmorbchronic:renal|NC	X	ADD	NOTIFY	opdmorbchronic:substance_abuse|NC	X	ADD	NOTIFY	opdmorbchronic:congenital_disorder|NC	X	ADD	NOTIFY	opdmorbchronic:ncd_other|NC	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:arterial_hypertension|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes1|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes2|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:arterial_hypertension_diabetes|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cvd_other|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:copd_asthma|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:thyroid|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:liver_biliar|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:gastrointestinal_chronic|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cancer|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:rheumatoid_degenerative|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:neurologic|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:renal|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:substance_abuse|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:congenital_disorder|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbchronic:ncd_other|under_tt	MapperNotifierActionRunner	2000	opdmorbchronic:all|under_tt	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:all|under_tt	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:arterial_hypertension|under_tt	X	ADD	NOTIFY	opdmorbchronic:diabetes1|under_tt	X	ADD	NOTIFY	opdmorbchronic:diabetes2|under_tt	X	ADD	NOTIFY	opdmorbchronic:arterial_hypertension_diabetes|under_tt	X	ADD	NOTIFY	opdmorbchronic:cvd_other|under_tt	X	ADD	NOTIFY	opdmorbchronic:copd_asthma|under_tt	X	ADD	NOTIFY	opdmorbchronic:thyroid|under_tt	X	ADD	NOTIFY	opdmorbchronic:liver_biliar|under_tt	X	ADD	NOTIFY	opdmorbchronic:gastrointestinal_chronic|under_tt	X	ADD	NOTIFY	opdmorbchronic:cancer|under_tt	X	ADD	NOTIFY	opdmorbchronic:rheumatoid_degenerative|under_tt	X	ADD	NOTIFY	opdmorbchronic:neurologic|under_tt	X	ADD	NOTIFY	opdmorbchronic:renal|under_tt	X	ADD	NOTIFY	opdmorbchronic:substance_abuse|under_tt	X	ADD	NOTIFY	opdmorbchronic:congenital_disorder|under_tt	X	ADD	NOTIFY	opdmorbchronic:ncd_other|under_tt	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:arterial_hypertension|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes1|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes2|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:arterial_hypertension_diabetes|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cvd_other|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:copd_asthma|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:thyroid|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:liver_biliar|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:gastrointestinal_chronic|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cancer|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:rheumatoid_degenerative|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:neurologic|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:renal|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:substance_abuse|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:congenital_disorder|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbchronic:ncd_other|FUP	MapperNotifierActionRunner	2000	opdmorbchronic:all|FUP	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:all|FUP	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:arterial_hypertension|FUP	X	ADD	NOTIFY	opdmorbchronic:diabetes1|FUP	X	ADD	NOTIFY	opdmorbchronic:diabetes2|FUP	X	ADD	NOTIFY	opdmorbchronic:arterial_hypertension_diabetes|FUP	X	ADD	NOTIFY	opdmorbchronic:cvd_other|FUP	X	ADD	NOTIFY	opdmorbchronic:copd_asthma|FUP	X	ADD	NOTIFY	opdmorbchronic:thyroid|FUP	X	ADD	NOTIFY	opdmorbchronic:liver_biliar|FUP	X	ADD	NOTIFY	opdmorbchronic:gastrointestinal_chronic|FUP	X	ADD	NOTIFY	opdmorbchronic:cancer|FUP	X	ADD	NOTIFY	opdmorbchronic:rheumatoid_degenerative|FUP	X	ADD	NOTIFY	opdmorbchronic:neurologic|FUP	X	ADD	NOTIFY	opdmorbchronic:renal|FUP	X	ADD	NOTIFY	opdmorbchronic:substance_abuse|FUP	X	ADD	NOTIFY	opdmorbchronic:congenital_disorder|FUP	X	ADD	NOTIFY	opdmorbchronic:ncd_other|FUP	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:arterial_hypertension|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes1|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:diabetes2|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:arterial_hypertension_diabetes|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cvd_other|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:copd_asthma|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:thyroid|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:liver_biliar|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:gastrointestinal_chronic|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:cancer|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:rheumatoid_degenerative|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:neurologic|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:renal|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:substance_abuse|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:congenital_disorder|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbchronic:ncd_other|decomp	MapperNotifierActionRunner	2000	opdmorbchronic:all|decomp	CalculatorActionRunner	NOTIFY
+
+opdmorbchronic:all|decomp	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:arterial_hypertension|decomp	X	ADD	NOTIFY	opdmorbchronic:diabetes1|decomp	X	ADD	NOTIFY	opdmorbchronic:diabetes2|decomp	X	ADD	NOTIFY	opdmorbchronic:arterial_hypertension_diabetes|decomp	X	ADD	NOTIFY	opdmorbchronic:cvd_other|decomp	X	ADD	NOTIFY	opdmorbchronic:copd_asthma|decomp	X	ADD	NOTIFY	opdmorbchronic:thyroid|decomp	X	ADD	NOTIFY	opdmorbchronic:liver_biliar|decomp	X	ADD	NOTIFY	opdmorbchronic:gastrointestinal_chronic|decomp	X	ADD	NOTIFY	opdmorbchronic:cancer|decomp	X	ADD	NOTIFY	opdmorbchronic:rheumatoid_degenerative|decomp	X	ADD	NOTIFY	opdmorbchronic:neurologic|decomp	X	ADD	NOTIFY	opdmorbchronic:renal|decomp	X	ADD	NOTIFY	opdmorbchronic:substance_abuse|decomp	X	ADD	NOTIFY	opdmorbchronic:congenital_disorder|decomp	X	ADD	NOTIFY	opdmorbchronic:ncd_other|decomp	X	ADD
+
+// NCDs - Columns - MENTAL***************************
+// opd_morbidity_ncd
+opdmorbmh:mental_common|NC	MapperNotifierActionRunner	2000	opdmorbmh:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbmh:mood_disorders|NC	MapperNotifierActionRunner	2000	opdmorbmh:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbmh:personality_disorder|NC	MapperNotifierActionRunner	2000	opdmorbmh:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbmh:schizophrenia|NC	MapperNotifierActionRunner	2000	opdmorbmh:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbmh:mental_severe|NC	MapperNotifierActionRunner	2000	opdmorbmh:all|NC	CalculatorActionRunner	NOTIFY
+opdmorbmh:substance_abuse|NC	MapperNotifierActionRunner	2000	opdmorbmh:all|NC	CalculatorActionRunner	NOTIFY
+
+opdmorbmh:all|NC	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbmh:mental_common|NC	X	ADD	NOTIFY	opdmorbmh:mood_disorders|NC	X	ADD	NOTIFY	opdmorbmh:personality_disorder|NC	X	ADD	NOTIFY	opdmorbmh:schizophrenia|NC	X	ADD	NOTIFY	opdmorbmh:mental_severe|NC	X	ADD	NOTIFY	opdmorbmh:substance_abuse|NC	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbmh:mental_common|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbmh:mood_disorders|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbmh:personality_disorder|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbmh:schizophrenia|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbmh:mental_severe|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbmh:substance_abuse|under_tt	MapperNotifierActionRunner	2000	opdmorbmh:all|under_tt	CalculatorActionRunner	NOTIFY
+
+opdmorbmh:all|under_tt	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbmh:mental_common|under_tt	X	ADD	NOTIFY	opdmorbmh:mood_disorders|under_tt	X	ADD	NOTIFY	opdmorbmh:personality_disorder|under_tt	X	ADD	NOTIFY	opdmorbmh:schizophrenia|under_tt	X	ADD	NOTIFY	opdmorbmh:mental_severe|under_tt	X	ADD	NOTIFY	opdmorbmh:substance_abuse|under_tt	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbmh:mental_common|FUP	MapperNotifierActionRunner	2000	opdmorbmh:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbmh:mood_disorders|FUP	MapperNotifierActionRunner	2000	opdmorbmh:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbmh:personality_disorder|FUP	MapperNotifierActionRunner	2000	opdmorbmh:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbmh:schizophrenia|FUP	MapperNotifierActionRunner	2000	opdmorbmh:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbmh:mental_severe|FUP	MapperNotifierActionRunner	2000	opdmorbmh:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbmh:substance_abuse|FUP	MapperNotifierActionRunner	2000	opdmorbmh:all|FUP	CalculatorActionRunner	NOTIFY
+
+opdmorbmh:all|FUP	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbmh:mental_common|FUP	X	ADD	NOTIFY	opdmorbmh:mood_disorders|FUP	X	ADD	NOTIFY	opdmorbmh:personality_disorder|FUP	X	ADD	NOTIFY	opdmorbmh:schizophrenia|FUP	X	ADD	NOTIFY	opdmorbmh:mental_severe|FUP	X	ADD	NOTIFY	opdmorbmh:substance_abuse|FUP	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbmh:mental_common|decomp	MapperNotifierActionRunner	2000	opdmorbmh:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbmh:mood_disorders|decomp	MapperNotifierActionRunner	2000	opdmorbmh:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbmh:personality_disorder|decomp	MapperNotifierActionRunner	2000	opdmorbmh:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbmh:schizophrenia|decomp	MapperNotifierActionRunner	2000	opdmorbmh:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbmh:mental_severe|decomp	MapperNotifierActionRunner	2000	opdmorbmh:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbmh:substance_abuse|decomp	MapperNotifierActionRunner	2000	opdmorbmh:all|decomp	CalculatorActionRunner	NOTIFY
+
+opdmorbmh:all|decomp	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbmh:mental_common|decomp	X	ADD	NOTIFY	opdmorbmh:mood_disorders|decomp	X	ADD	NOTIFY	opdmorbmh:personality_disorder|decomp	X	ADD	NOTIFY	opdmorbmh:schizophrenia|decomp	X	ADD	NOTIFY	opdmorbmh:mental_severe|decomp	X	ADD	NOTIFY	opdmorbmh:substance_abuse|decomp	X	ADD
+
+// NCDs - Columns - TOTALS***************************
+// opd_morbidity_ncd
+opdmorbchronic:all|under_tt	MapperNotifierActionRunner	2000	opdmorbncd:all|under_tt	CalculatorActionRunner	NOTIFY
+opdmorbmh:all|under_tt	MapperNotifierActionRunner	2000	opdmorbncd:all|under_tt	CalculatorActionRunner	NOTIFY
+
+opdmorbncd:all|under_tt	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:all|under_tt	X	ADD	NOTIFY	opdmorbmh:all|under_tt	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:all|FUP	MapperNotifierActionRunner	2000	opdmorbncd:all|FUP	CalculatorActionRunner	NOTIFY
+opdmorbmh:all|FUP	MapperNotifierActionRunner	2000	opdmorbncd:all|FUP	CalculatorActionRunner	NOTIFY
+
+opdmorbncd:all|FUP	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:all|FUP	X	ADD	NOTIFY	opdmorbmh:all|FUP	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:all|decomp	MapperNotifierActionRunner	2000	opdmorbncd:all|decomp	CalculatorActionRunner	NOTIFY
+opdmorbmh:all|decomp	MapperNotifierActionRunner	2000	opdmorbncd:all|decomp	CalculatorActionRunner	NOTIFY
+
+opdmorbncd:all|decomp	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:all|decomp	X	ADD	NOTIFY	opdmorbmh:all|decomp	X	ADD
+
+
+// opd_morbidity_ncd
+opdmorbchronic:all|Tot	MapperNotifierActionRunner	2000	opdmorbncd:all|Tot	CalculatorActionRunner	NOTIFY
+opdmorbmh:all|Tot	MapperNotifierActionRunner	2000	opdmorbncd:all|Tot	CalculatorActionRunner	NOTIFY
+
+opdmorbncd:all|Tot	CalculatorActionRunner	2001	opd_morbidity_ncd	NOTIFY	opdmorbchronic:all|Tot	X	ADD	NOTIFY	opdmorbmh:all|Tot	X	ADD
+
+// DRESSING - Rows***************************
+// opd_dressing
+opddressing:wounds|NC|<5y	MapperNotifierActionRunner	2000	opddressing:wounds|NC|Tot	CalculatorActionRunner	NOTIFY
+opddressing:wounds|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:wounds|NC|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:wounds|NC|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:wounds|NC|<5y	X	ADD	NOTIFY	opddressing:wounds|NC|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:burns|NC|<5y	MapperNotifierActionRunner	2000	opddressing:burns|NC|Tot	CalculatorActionRunner	NOTIFY
+opddressing:burns|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:burns|NC|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:burns|NC|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:burns|NC|<5y	X	ADD	NOTIFY	opddressing:burns|NC|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:abcess|NC|<5y	MapperNotifierActionRunner	2000	opddressing:abcess|NC|Tot	CalculatorActionRunner	NOTIFY
+opddressing:abcess|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:abcess|NC|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:abcess|NC|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:abcess|NC|<5y	X	ADD	NOTIFY	opddressing:abcess|NC|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:sutures|NC|<5y	MapperNotifierActionRunner	2000	opddressing:sutures|NC|Tot	CalculatorActionRunner	NOTIFY
+opddressing:sutures|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:sutures|NC|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:sutures|NC|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:sutures|NC|<5y	X	ADD	NOTIFY	opddressing:sutures|NC|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:bullets|NC|<5y	MapperNotifierActionRunner	2000	opddressing:bullets|NC|Tot	CalculatorActionRunner	NOTIFY
+opddressing:bullets|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:bullets|NC|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:bullets|NC|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:bullets|NC|<5y	X	ADD	NOTIFY	opddressing:bullets|NC|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:other|NC|<5y	MapperNotifierActionRunner	2000	opddressing:other|NC|Tot	CalculatorActionRunner	NOTIFY
+opddressing:other|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:other|NC|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:other|NC|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:other|NC|<5y	X	ADD	NOTIFY	opddressing:other|NC|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:all|NC|<5y	MapperNotifierActionRunner	2000	opddressing:all|NC|Tot	CalculatorActionRunner	NOTIFY
+opddressing:all|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:all|NC|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:all|NC|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:all|NC|<5y	X	ADD	NOTIFY	opddressing:all|NC|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:wounds|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:wounds|FUP|Tot	CalculatorActionRunner	NOTIFY
+// opd_dressing
+opddressing:wounds|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:wounds|FUP|Tot	CalculatorActionRunner	NOTIFY
+opddressing:wounds|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:wounds|FUP|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:wounds|FUP|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:wounds|FUP|<5y	X	ADD	NOTIFY	opddressing:wounds|FUP|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:burns|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:burns|FUP|Tot	CalculatorActionRunner	NOTIFY
+opddressing:burns|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:burns|FUP|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:burns|FUP|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:burns|FUP|<5y	X	ADD	NOTIFY	opddressing:burns|FUP|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:abcess|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:abcess|FUP|Tot	CalculatorActionRunner	NOTIFY
+opddressing:abcess|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:abcess|FUP|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:abcess|FUP|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:abcess|FUP|<5y	X	ADD	NOTIFY	opddressing:abcess|FUP|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:sutures|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:sutures|FUP|Tot	CalculatorActionRunner	NOTIFY
+opddressing:sutures|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:sutures|FUP|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:sutures|FUP|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:sutures|FUP|<5y	X	ADD	NOTIFY	opddressing:sutures|FUP|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:bullets|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:bullets|FUP|Tot	CalculatorActionRunner	NOTIFY
+opddressing:bullets|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:bullets|FUP|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:bullets|FUP|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:bullets|FUP|<5y	X	ADD	NOTIFY	opddressing:bullets|FUP|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:other|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:other|FUP|Tot	CalculatorActionRunner	NOTIFY
+opddressing:other|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:other|FUP|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:other|FUP|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:other|FUP|<5y	X	ADD	NOTIFY	opddressing:other|FUP|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:all|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|Tot	CalculatorActionRunner	NOTIFY
+opddressing:all|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:all|FUP|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:all|FUP|<5y	X	ADD	NOTIFY	opddressing:all|FUP|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:wounds|NC|Tot	MapperNotifierActionRunner	2000	opddressing:wounds|Tot	CalculatorActionRunner	NOTIFY
+opddressing:wounds|FUP|Tot	MapperNotifierActionRunner	2000	opddressing:wounds|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:wounds|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:wounds|NC|Tot	X	ADD	NOTIFY	opddressing:wounds|FUP|Tot	X	ADD
+
+
+// opd_dressing
+opddressing:burns|NC|Tot	MapperNotifierActionRunner	2000	opddressing:burns|Tot	CalculatorActionRunner	NOTIFY
+opddressing:burns|FUP|Tot	MapperNotifierActionRunner	2000	opddressing:burns|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:burns|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:burns|NC|Tot	X	ADD	NOTIFY	opddressing:burns|FUP|Tot	X	ADD
+
+
+// opd_dressing
+opddressing:abcess|NC|Tot	MapperNotifierActionRunner	2000	opddressing:abcess|Tot	CalculatorActionRunner	NOTIFY
+opddressing:abcess|FUP|Tot	MapperNotifierActionRunner	2000	opddressing:abcess|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:abcess|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:abcess|NC|Tot	X	ADD	NOTIFY	opddressing:abcess|FUP|Tot	X	ADD
+
+
+// opd_dressing
+opddressing:sutures|NC|Tot	MapperNotifierActionRunner	2000	opddressing:sutures|Tot	CalculatorActionRunner	NOTIFY
+opddressing:sutures|FUP|Tot	MapperNotifierActionRunner	2000	opddressing:sutures|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:sutures|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:sutures|NC|Tot	X	ADD	NOTIFY	opddressing:sutures|FUP|Tot	X	ADD
+
+
+// opd_dressing
+opddressing:bullets|NC|Tot	MapperNotifierActionRunner	2000	opddressing:bullets|Tot	CalculatorActionRunner	NOTIFY
+opddressing:bullets|FUP|Tot	MapperNotifierActionRunner	2000	opddressing:bullets|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:bullets|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:bullets|NC|Tot	X	ADD	NOTIFY	opddressing:bullets|FUP|Tot	X	ADD
+
+
+// opd_dressing
+opddressing:other|NC|Tot	MapperNotifierActionRunner	2000	opddressing:other|Tot	CalculatorActionRunner	NOTIFY
+opddressing:other|FUP|Tot	MapperNotifierActionRunner	2000	opddressing:other|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:other|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:other|NC|Tot	X	ADD	NOTIFY	opddressing:other|FUP|Tot	X	ADD
+
+
+// opd_dressing
+opddressing:all|NC|Tot	MapperNotifierActionRunner	2000	opddressing:all|Tot	CalculatorActionRunner	NOTIFY
+opddressing:all|FUP|Tot	MapperNotifierActionRunner	2000	opddressing:all|Tot	CalculatorActionRunner	NOTIFY
+
+opddressing:all|Tot	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:all|NC|Tot	X	ADD	NOTIFY	opddressing:all|FUP|Tot	X	ADD
+
+// DRESSING - Columns***************************
+// opd_dressing
+opddressing:wounds|NC|<5y	MapperNotifierActionRunner	2000	opddressing:all|NC|<5y	CalculatorActionRunner	NOTIFY
+opddressing:burns|NC|<5y	MapperNotifierActionRunner	2000	opddressing:all|NC|<5y	CalculatorActionRunner	NOTIFY
+opddressing:abcess|NC|<5y	MapperNotifierActionRunner	2000	opddressing:all|NC|<5y	CalculatorActionRunner	NOTIFY
+opddressing:sutures|NC|<5y	MapperNotifierActionRunner	2000	opddressing:all|NC|<5y	CalculatorActionRunner	NOTIFY
+opddressing:bullets|NC|<5y	MapperNotifierActionRunner	2000	opddressing:all|NC|<5y	CalculatorActionRunner	NOTIFY
+opddressing:other|NC|<5y	MapperNotifierActionRunner	2000	opddressing:all|NC|<5y	CalculatorActionRunner	NOTIFY
+
+opddressing:all|NC|<5y	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:wounds|NC|<5y	X	ADD	NOTIFY	opddressing:burns|NC|<5y	X	ADD	NOTIFY	opddressing:abcess|NC|<5y	X	ADD	NOTIFY	opddressing:sutures|NC|<5y	X	ADD	NOTIFY	opddressing:bullets|NC|<5y	X	ADD	NOTIFY	opddressing:other|NC|<5y	X	ADD
+
+
+// opd_dressing
+opddressing:wounds|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:all|NC|>=5y	CalculatorActionRunner	NOTIFY
+opddressing:burns|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:all|NC|>=5y	CalculatorActionRunner	NOTIFY
+opddressing:abcess|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:all|NC|>=5y	CalculatorActionRunner	NOTIFY
+opddressing:sutures|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:all|NC|>=5y	CalculatorActionRunner	NOTIFY
+opddressing:bullets|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:all|NC|>=5y	CalculatorActionRunner	NOTIFY
+opddressing:other|NC|>=5y	MapperNotifierActionRunner	2000	opddressing:all|NC|>=5y	CalculatorActionRunner	NOTIFY
+
+opddressing:all|NC|>=5y	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:wounds|NC|>=5y	X	ADD	NOTIFY	opddressing:burns|NC|>=5y	X	ADD	NOTIFY	opddressing:abcess|NC|>=5y	X	ADD	NOTIFY	opddressing:sutures|NC|>=5y	X	ADD	NOTIFY	opddressing:bullets|NC|>=5y	X	ADD	NOTIFY	opddressing:other|NC|>=5y	X	ADD
+
+
+// opd_dressing
+opddressing:wounds|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|<5y	CalculatorActionRunner	NOTIFY
+opddressing:burns|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|<5y	CalculatorActionRunner	NOTIFY
+opddressing:abcess|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|<5y	CalculatorActionRunner	NOTIFY
+opddressing:sutures|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|<5y	CalculatorActionRunner	NOTIFY
+opddressing:bullets|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|<5y	CalculatorActionRunner	NOTIFY
+opddressing:other|FUP|<5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|<5y	CalculatorActionRunner	NOTIFY
+
+opddressing:all|FUP|<5y	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:wounds|FUP|<5y	X	ADD	NOTIFY	opddressing:burns|FUP|<5y	X	ADD	NOTIFY	opddressing:abcess|FUP|<5y	X	ADD	NOTIFY	opddressing:sutures|FUP|<5y	X	ADD	NOTIFY	opddressing:bullets|FUP|<5y	X	ADD	NOTIFY	opddressing:other|FUP|<5y	X	ADD
+
+
+// opd_dressing
+opddressing:wounds|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|>=5y	CalculatorActionRunner	NOTIFY
+opddressing:burns|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|>=5y	CalculatorActionRunner	NOTIFY
+opddressing:abcess|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|>=5y	CalculatorActionRunner	NOTIFY
+opddressing:sutures|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|>=5y	CalculatorActionRunner	NOTIFY
+opddressing:bullets|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|>=5y	CalculatorActionRunner	NOTIFY
+opddressing:other|FUP|>=5y	MapperNotifierActionRunner	2000	opddressing:all|FUP|>=5y	CalculatorActionRunner	NOTIFY
+
+opddressing:all|FUP|>=5y	CalculatorActionRunner	2001	opd_dressing	NOTIFY	opddressing:wounds|FUP|>=5y	X	ADD	NOTIFY	opddressing:burns|FUP|>=5y	X	ADD	NOTIFY	opddressing:abcess|FUP|>=5y	X	ADD	NOTIFY	opddressing:sutures|FUP|>=5y	X	ADD	NOTIFY	opddressing:bullets|FUP|>=5y	X	ADD	NOTIFY	opddressing:other|FUP|>=5y	X	ADD
+
+// MALNUTRITION - Rows***************************
+// opd_malnutrition
+opdnutscreening:muac_red|<5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_red|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:muac_red|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_red|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:muac_red|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:muac_red|<5y	X	ADD	NOTIFY	opdnutscreening:muac_red|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:muac_orange|<5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_orange|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:muac_orange|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_orange|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:muac_orange|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:muac_orange|<5y	X	ADD	NOTIFY	opdnutscreening:muac_orange|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:muac_yellow|<5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_yellow|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:muac_yellow|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_yellow|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:muac_yellow|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:muac_yellow|<5y	X	ADD	NOTIFY	opdnutscreening:muac_yellow|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:muac_green|<5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_green|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:muac_green|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_green|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:muac_green|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:muac_green|<5y	X	ADD	NOTIFY	opdnutscreening:muac_green|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:muac_all|<5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_all|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:muac_all|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_all|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:muac_all|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:muac_all|<5y	X	ADD	NOTIFY	opdnutscreening:muac_all|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:oedema_3|<5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_3|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:oedema_3|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_3|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:oedema_3|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:oedema_3|<5y	X	ADD	NOTIFY	opdnutscreening:oedema_3|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:oedema_2|<5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_2|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:oedema_2|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_2|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:oedema_2|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:oedema_2|<5y	X	ADD	NOTIFY	opdnutscreening:oedema_2|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:oedema_1|<5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_1|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:oedema_1|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_1|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:oedema_1|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:oedema_1|<5y	X	ADD	NOTIFY	opdnutscreening:oedema_1|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:oedema_0|<5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_0|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:oedema_0|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_0|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:oedema_0|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_0|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:oedema_0|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:oedema_0|<5y	X	ADD	NOTIFY	opdnutscreening:oedema_0|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:oedema_all|<5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_all|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:oedema_all|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_all|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:oedema_all|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:oedema_all|<5y	X	ADD	NOTIFY	opdnutscreening:oedema_all|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:zscore_minus3|<5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_minus3|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:zscore_minus3|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_minus3|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:zscore_minus3|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:zscore_minus3|<5y	X	ADD	NOTIFY	opdnutscreening:zscore_minus3|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:zscore_3_to_2|<5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_3_to_2|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:zscore_3_to_2|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_3_to_2|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:zscore_3_to_2|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:zscore_3_to_2|<5y	X	ADD	NOTIFY	opdnutscreening:zscore_3_to_2|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:zscore_2more|<5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_2more|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:zscore_2more|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_2more|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:zscore_2more|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:zscore_2more|<5y	X	ADD	NOTIFY	opdnutscreening:zscore_2more|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:zscore_all|<5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_all|Tot	CalculatorActionRunner	NOTIFY
+opdnutscreening:zscore_all|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_all|Tot	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:zscore_all|Tot	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:zscore_all|<5y	X	ADD	NOTIFY	opdnutscreening:zscore_all|>=5y	X	ADD
+
+// MALNUTRITION - Columns***************************
+// opd_malnutrition
+opdnutscreening:muac_red|<5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_all|<5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:muac_orange|<5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_all|<5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:muac_yellow|<5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_all|<5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:muac_green|<5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_all|<5y	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:muac_all|<5y	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:muac_red|<5y	X	ADD	NOTIFY	opdnutscreening:muac_orange|<5y	X	ADD	NOTIFY	opdnutscreening:muac_yellow|<5y	X	ADD	NOTIFY	opdnutscreening:muac_green|<5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:oedema_3|<5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_all|<5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:oedema_2|<5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_all|<5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:oedema_1|<5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_all|<5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:oedema_0|<5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_all|<5y	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:oedema_all|<5y	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:oedema_3|<5y	X	ADD	NOTIFY	opdnutscreening:oedema_2|<5y	X	ADD	NOTIFY	opdnutscreening:oedema_1|<5y	X	ADD	NOTIFY	opdnutscreening:oedema_0|<5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:muac_red|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_all|>=5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:muac_orange|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_all|>=5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:muac_yellow|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_all|>=5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:muac_green|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:muac_all|>=5y	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:muac_all|>=5y	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:muac_red|>=5y	X	ADD	NOTIFY	opdnutscreening:muac_orange|>=5y	X	ADD	NOTIFY	opdnutscreening:muac_yellow|>=5y	X	ADD	NOTIFY	opdnutscreening:muac_green|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:oedema_3|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_all|>=5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:oedema_2|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_all|>=5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:oedema_1|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_all|>=5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:oedema_0|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:oedema_all|>=5y	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:oedema_all|>=5y	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:oedema_3|>=5y	X	ADD	NOTIFY	opdnutscreening:oedema_2|>=5y	X	ADD	NOTIFY	opdnutscreening:oedema_1|>=5y	X	ADD	NOTIFY	opdnutscreening:oedema_0|>=5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:zscore_minus3|<5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_all|<5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:zscore_3_to_2|<5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_all|<5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:zscore_2more|<5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_all|<5y	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:zscore_all|<5y	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:zscore_minus3|<5y	X	ADD	NOTIFY	opdnutscreening:zscore_3_to_2|<5y	X	ADD	NOTIFY	opdnutscreening:zscore_2more|<5y	X	ADD
+
+
+// opd_malnutrition
+opdnutscreening:zscore_minus3|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_all|>=5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:zscore_3_to_2|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_all|>=5y	CalculatorActionRunner	NOTIFY
+opdnutscreening:zscore_2more|>=5y	MapperNotifierActionRunner	2000	opdnutscreening:zscore_all|>=5y	CalculatorActionRunner	NOTIFY
+
+opdnutscreening:zscore_all|>=5y	CalculatorActionRunner	2001	opd_malnutrition	NOTIFY	opdnutscreening:zscore_minus3|>=5y	X	ADD	NOTIFY	opdnutscreening:zscore_3_to_2|>=5y	X	ADD	NOTIFY	opdnutscreening:zscore_2more|>=5y	X	ADD
+
+// VACCINATION- Rows***************************
+// opd_vacci_children
+vacci_routine:bcg|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:bcg|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:bcg|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:bcg|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:bcg|>=60m	MapperNotifierActionRunner	2000	vacci_routine:bcg|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:bcg|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:bcg|0m-11m	X	ADD	NOTIFY	vacci_routine:bcg|12m-59m	X	ADD	NOTIFY	vacci_routine:bcg|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:dpt1|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:dpt1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:dpt1|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:dpt1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:dpt1|>=60m	MapperNotifierActionRunner	2000	vacci_routine:dpt1|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:dpt1|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:dpt1|0m-11m	X	ADD	NOTIFY	vacci_routine:dpt1|12m-59m	X	ADD	NOTIFY	vacci_routine:dpt1|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:dpt2|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:dpt2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:dpt2|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:dpt2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:dpt2|>=60m	MapperNotifierActionRunner	2000	vacci_routine:dpt2|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:dpt2|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:dpt2|0m-11m	X	ADD	NOTIFY	vacci_routine:dpt2|12m-59m	X	ADD	NOTIFY	vacci_routine:dpt2|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:dpt3|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:dpt3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:dpt3|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:dpt3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:dpt3|>=60m	MapperNotifierActionRunner	2000	vacci_routine:dpt3|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:dpt3|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:dpt3|0m-11m	X	ADD	NOTIFY	vacci_routine:dpt3|12m-59m	X	ADD	NOTIFY	vacci_routine:dpt3|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:dptbooster|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:dptbooster|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:dptbooster|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:dptbooster|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:dptbooster|>=60m	MapperNotifierActionRunner	2000	vacci_routine:dptbooster|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:dptbooster|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:dptbooster|0m-11m	X	ADD	NOTIFY	vacci_routine:dptbooster|12m-59m	X	ADD	NOTIFY	vacci_routine:dptbooster|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:pentavalent1|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:pentavalent1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pentavalent1|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:pentavalent1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pentavalent1|>=60m	MapperNotifierActionRunner	2000	vacci_routine:pentavalent1|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:pentavalent1|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:pentavalent1|0m-11m	X	ADD	NOTIFY	vacci_routine:pentavalent1|12m-59m	X	ADD	NOTIFY	vacci_routine:pentavalent1|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:pentavalent2|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:pentavalent2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pentavalent2|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:pentavalent2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pentavalent2|>=60m	MapperNotifierActionRunner	2000	vacci_routine:pentavalent2|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:pentavalent2|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:pentavalent2|0m-11m	X	ADD	NOTIFY	vacci_routine:pentavalent2|12m-59m	X	ADD	NOTIFY	vacci_routine:pentavalent2|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:pentavalent3|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:pentavalent3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pentavalent3|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:pentavalent3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pentavalent3|>=60m	MapperNotifierActionRunner	2000	vacci_routine:pentavalent3|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:pentavalent3|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:pentavalent3|0m-11m	X	ADD	NOTIFY	vacci_routine:pentavalent3|12m-59m	X	ADD	NOTIFY	vacci_routine:pentavalent3|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:pentavalentbooster|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:pentavalentbooster|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pentavalentbooster|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:pentavalentbooster|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pentavalentbooster|>=60m	MapperNotifierActionRunner	2000	vacci_routine:pentavalentbooster|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:pentavalentbooster|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:pentavalentbooster|0m-11m	X	ADD	NOTIFY	vacci_routine:pentavalentbooster|12m-59m	X	ADD	NOTIFY	vacci_routine:pentavalentbooster|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:ipv1|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:ipv1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:ipv1|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:ipv1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:ipv1|>=60m	MapperNotifierActionRunner	2000	vacci_routine:ipv1|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:ipv1|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:ipv1|0m-11m	X	ADD	NOTIFY	vacci_routine:ipv1|12m-59m	X	ADD	NOTIFY	vacci_routine:ipv1|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:ipv2|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:ipv2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:ipv2|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:ipv2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:ipv2|>=60m	MapperNotifierActionRunner	2000	vacci_routine:ipv2|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:ipv2|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:ipv2|0m-11m	X	ADD	NOTIFY	vacci_routine:ipv2|12m-59m	X	ADD	NOTIFY	vacci_routine:ipv2|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:ipv3|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:ipv3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:ipv3|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:ipv3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:ipv3|>=60m	MapperNotifierActionRunner	2000	vacci_routine:ipv3|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:ipv3|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:ipv3|0m-11m	X	ADD	NOTIFY	vacci_routine:ipv3|12m-59m	X	ADD	NOTIFY	vacci_routine:ipv3|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:polio1|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:polio1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:polio1|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:polio1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:polio1|>=60m	MapperNotifierActionRunner	2000	vacci_routine:polio1|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:polio1|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:polio1|0m-11m	X	ADD	NOTIFY	vacci_routine:polio1|12m-59m	X	ADD	NOTIFY	vacci_routine:polio1|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:polio2|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:polio2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:polio2|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:polio2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:polio2|>=60m	MapperNotifierActionRunner	2000	vacci_routine:polio2|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:polio2|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:polio2|0m-11m	X	ADD	NOTIFY	vacci_routine:polio2|12m-59m	X	ADD	NOTIFY	vacci_routine:polio2|>=60m	X	ADD
+
+vacci_routine:polio2|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:polio2|0m-11m	X	ADD	NOTIFY	vacci_routine:polio2|12m-59m	X	ADD	NOTIFY	vacci_routine:polio2|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:polio3|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:polio3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:polio3|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:polio3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:polio3|>=60m	MapperNotifierActionRunner	2000	vacci_routine:polio3|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:polio3|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:polio3|0m-11m	X	ADD	NOTIFY	vacci_routine:polio3|12m-59m	X	ADD	NOTIFY	vacci_routine:polio3|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:poliobooster|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:poliobooster|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:poliobooster|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:poliobooster|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:poliobooster|>=60m	MapperNotifierActionRunner	2000	vacci_routine:poliobooster|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:poliobooster|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:poliobooster|0m-11m	X	ADD	NOTIFY	vacci_routine:poliobooster|12m-59m	X	ADD	NOTIFY	vacci_routine:poliobooster|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:measles|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:measles|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:measles|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:measles|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:measles|>=60m	MapperNotifierActionRunner	2000	vacci_routine:measles|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:measles|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:measles|0m-11m	X	ADD	NOTIFY	vacci_routine:measles|12m-59m	X	ADD	NOTIFY	vacci_routine:measles|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:yfever|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:yfever|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:yfever|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:yfever|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:yfever|>=60m	MapperNotifierActionRunner	2000	vacci_routine:yfever|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:yfever|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:yfever|0m-11m	X	ADD	NOTIFY	vacci_routine:yfever|12m-59m	X	ADD	NOTIFY	vacci_routine:yfever|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:hepb1|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:hepb1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hepb1|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:hepb1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hepb1|>=60m	MapperNotifierActionRunner	2000	vacci_routine:hepb1|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:hepb1|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:hepb1|0m-11m	X	ADD	NOTIFY	vacci_routine:hepb1|12m-59m	X	ADD	NOTIFY	vacci_routine:hepb1|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:hepb2|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:hepb2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hepb2|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:hepb2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hepb2|>=60m	MapperNotifierActionRunner	2000	vacci_routine:hepb2|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:hepb2|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:hepb2|0m-11m	X	ADD	NOTIFY	vacci_routine:hepb2|12m-59m	X	ADD	NOTIFY	vacci_routine:hepb2|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:hepb3|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:hepb3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hepb3|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:hepb3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hepb3|>=60m	MapperNotifierActionRunner	2000	vacci_routine:hepb3|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:hepb3|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:hepb3|0m-11m	X	ADD	NOTIFY	vacci_routine:hepb3|12m-59m	X	ADD	NOTIFY	vacci_routine:hepb3|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:hepb4|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:hepb4|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hepb4|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:hepb4|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hepb4|>=60m	MapperNotifierActionRunner	2000	vacci_routine:hepb4|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:hepb4|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:hepb4|0m-11m	X	ADD	NOTIFY	vacci_routine:hepb4|12m-59m	X	ADD	NOTIFY	vacci_routine:hepb4|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:hib1|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:hib1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hib1|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:hib1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hib1|>=60m	MapperNotifierActionRunner	2000	vacci_routine:hib1|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:hib1|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:hib1|0m-11m	X	ADD	NOTIFY	vacci_routine:hib1|12m-59m	X	ADD	NOTIFY	vacci_routine:hib1|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:hib2|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:hib2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hib2|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:hib2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hib2|>=60m	MapperNotifierActionRunner	2000	vacci_routine:hib2|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:hib2|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:hib2|0m-11m	X	ADD	NOTIFY	vacci_routine:hib2|12m-59m	X	ADD	NOTIFY	vacci_routine:hib2|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:hib3|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:hib3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hib3|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:hib3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:hib3|>=60m	MapperNotifierActionRunner	2000	vacci_routine:hib3|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:hib3|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:hib3|0m-11m	X	ADD	NOTIFY	vacci_routine:hib3|12m-59m	X	ADD	NOTIFY	vacci_routine:hib3|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:pcv1|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:pcv1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pcv1|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:pcv1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pcv1|>=60m	MapperNotifierActionRunner	2000	vacci_routine:pcv1|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:pcv1|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:pcv1|0m-11m	X	ADD	NOTIFY	vacci_routine:pcv1|12m-59m	X	ADD	NOTIFY	vacci_routine:pcv1|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:pcv2|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:pcv2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pcv2|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:pcv2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pcv2|>=60m	MapperNotifierActionRunner	2000	vacci_routine:pcv2|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:pcv2|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:pcv2|0m-11m	X	ADD	NOTIFY	vacci_routine:pcv2|12m-59m	X	ADD	NOTIFY	vacci_routine:pcv2|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:pcv3|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:pcv3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pcv3|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:pcv3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pcv3|>=60m	MapperNotifierActionRunner	2000	vacci_routine:pcv3|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:pcv3|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:pcv3|0m-11m	X	ADD	NOTIFY	vacci_routine:pcv3|12m-59m	X	ADD	NOTIFY	vacci_routine:pcv3|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:pcv4|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:pcv4|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pcv4|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:pcv4|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pcv4|>=60m	MapperNotifierActionRunner	2000	vacci_routine:pcv4|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:pcv4|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:pcv4|0m-11m	X	ADD	NOTIFY	vacci_routine:pcv4|12m-59m	X	ADD	NOTIFY	vacci_routine:pcv4|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:pcvbooster|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:pcvbooster|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pcvbooster|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:pcvbooster|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:pcvbooster|>=60m	MapperNotifierActionRunner	2000	vacci_routine:pcvbooster|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:pcvbooster|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:pcvbooster|0m-11m	X	ADD	NOTIFY	vacci_routine:pcvbooster|12m-59m	X	ADD	NOTIFY	vacci_routine:pcvbooster|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:rotavirus1|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:rotavirus1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rotavirus1|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:rotavirus1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rotavirus1|>=60m	MapperNotifierActionRunner	2000	vacci_routine:rotavirus1|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:rotavirus1|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:rotavirus1|0m-11m	X	ADD	NOTIFY	vacci_routine:rotavirus1|12m-59m	X	ADD	NOTIFY	vacci_routine:rotavirus1|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:rotavirus2|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:rotavirus2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rotavirus2|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:rotavirus2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rotavirus2|>=60m	MapperNotifierActionRunner	2000	vacci_routine:rotavirus2|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:rotavirus2|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:rotavirus2|0m-11m	X	ADD	NOTIFY	vacci_routine:rotavirus2|12m-59m	X	ADD	NOTIFY	vacci_routine:rotavirus2|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:rotavirus3|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:rotavirus3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rotavirus3|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:rotavirus3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rotavirus3|>=60m	MapperNotifierActionRunner	2000	vacci_routine:rotavirus3|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:rotavirus3|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:rotavirus3|0m-11m	X	ADD	NOTIFY	vacci_routine:rotavirus3|12m-59m	X	ADD	NOTIFY	vacci_routine:rotavirus3|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:rabies1|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:rabies1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rabies1|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:rabies1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rabies1|>=60m	MapperNotifierActionRunner	2000	vacci_routine:rabies1|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:rabies1|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:rabies1|0m-11m	X	ADD	NOTIFY	vacci_routine:rabies1|12m-59m	X	ADD	NOTIFY	vacci_routine:rabies1|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:rabies2|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:rabies2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rabies2|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:rabies2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rabies2|>=60m	MapperNotifierActionRunner	2000	vacci_routine:rabies2|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:rabies2|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:rabies2|0m-11m	X	ADD	NOTIFY	vacci_routine:rabies2|12m-59m	X	ADD	NOTIFY	vacci_routine:rabies2|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:rabies3|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:rabies3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rabies3|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:rabies3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rabies3|>=60m	MapperNotifierActionRunner	2000	vacci_routine:rabies3|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:rabies3|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:rabies3|0m-11m	X	ADD	NOTIFY	vacci_routine:rabies3|12m-59m	X	ADD	NOTIFY	vacci_routine:rabies3|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:rabies4|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:rabies4|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rabies4|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:rabies4|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rabies4|>=60m	MapperNotifierActionRunner	2000	vacci_routine:rabies4|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:rabies4|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:rabies4|0m-11m	X	ADD	NOTIFY	vacci_routine:rabies4|12m-59m	X	ADD	NOTIFY	vacci_routine:rabies4|>=60m	X	ADD
+
+
+// opd_vacci_children
+vacci_routine:rabiesbooster|0m-11m	MapperNotifierActionRunner	2000	vacci_routine:rabiesbooster|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rabiesbooster|12m-59m	MapperNotifierActionRunner	2000	vacci_routine:rabiesbooster|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:rabiesbooster|>=60m	MapperNotifierActionRunner	2000	vacci_routine:rabiesbooster|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:rabiesbooster|Tot	CalculatorActionRunner	2001	opd_vacci_children	NOTIFY	vacci_routine:rabiesbooster|0m-11m	X	ADD	NOTIFY	vacci_routine:rabiesbooster|12m-59m	X	ADD	NOTIFY	vacci_routine:rabiesbooster|>=60m	X	ADD
+
+
+// opd_vacci_tetanus
+vacci_routine:tt1|pregnant	MapperNotifierActionRunner	2000	vacci_routine:tt1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:tt1|15y-45y	MapperNotifierActionRunner	2000	vacci_routine:tt1|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:tt1|wounded	MapperNotifierActionRunner	2000	vacci_routine:tt1|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:tt1|Tot	CalculatorActionRunner	2001	opd_vacci_tetanus	NOTIFY	vacci_routine:tt1|pregnant	X	ADD	NOTIFY	vacci_routine:tt1|15y-45y	X	ADD	NOTIFY	vacci_routine:tt1|wounded	X	ADD
+
+vacci_routine:tt1|Tot	CalculatorActionRunner	2001	opd_vacci_tetanus	NOTIFY	vacci_routine:tt1|pregnant	X	ADD	NOTIFY	vacci_routine:tt1|15y-45y	X	ADD	NOTIFY	vacci_routine:tt1|wounded	X	ADD
+
+
+// opd_vacci_tetanus
+vacci_routine:tt2|pregnant	MapperNotifierActionRunner	2000	vacci_routine:tt2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:tt2|15y-45y	MapperNotifierActionRunner	2000	vacci_routine:tt2|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:tt2|wounded	MapperNotifierActionRunner	2000	vacci_routine:tt2|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:tt2|Tot	CalculatorActionRunner	2001	opd_vacci_tetanus	NOTIFY	vacci_routine:tt2|pregnant	X	ADD	NOTIFY	vacci_routine:tt2|15y-45y	X	ADD	NOTIFY	vacci_routine:tt2|wounded	X	ADD
+
+
+// opd_vacci_tetanus
+vacci_routine:tt3|pregnant	MapperNotifierActionRunner	2000	vacci_routine:tt3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:tt3|15y-45y	MapperNotifierActionRunner	2000	vacci_routine:tt3|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:tt3|wounded	MapperNotifierActionRunner	2000	vacci_routine:tt3|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:tt3|Tot	CalculatorActionRunner	2001	opd_vacci_tetanus	NOTIFY	vacci_routine:tt3|pregnant	X	ADD	NOTIFY	vacci_routine:tt3|15y-45y	X	ADD	NOTIFY	vacci_routine:tt3|wounded	X	ADD
+
+
+// opd_vacci_tetanus
+vacci_routine:tt4|pregnant	MapperNotifierActionRunner	2000	vacci_routine:tt4|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:tt4|15y-45y	MapperNotifierActionRunner	2000	vacci_routine:tt4|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:tt4|Tot	CalculatorActionRunner	2001	opd_vacci_tetanus	NOTIFY	vacci_routine:tt4|pregnant	X	ADD	NOTIFY	vacci_routine:tt4|15y-45y	X	ADD
+
+
+// opd_vacci_tetanus
+vacci_routine:tt5|pregnant	MapperNotifierActionRunner	2000	vacci_routine:tt5|Tot	CalculatorActionRunner	NOTIFY
+vacci_routine:tt5|15y-45y	MapperNotifierActionRunner	2000	vacci_routine:tt5|Tot	CalculatorActionRunner	NOTIFY
+
+vacci_routine:tt5|Tot	CalculatorActionRunner	2001	opd_vacci_tetanus	NOTIFY	vacci_routine:tt5|pregnant	X	ADD	NOTIFY	vacci_routine:tt5|15y-45y	X	ADD
+
+// REPRO- ANC***************************
+// opd_antenatal
+opdrepro:anc|1	MapperNotifierActionRunner	2000	opdrepro:anc|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:anc|other	MapperNotifierActionRunner	2000	opdrepro:anc|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:anc|Tot	CalculatorActionRunner	2001	opd_antenatal	NOTIFY	opdrepro:anc|1	X	ADD	NOTIFY	opdrepro:anc|other	X	ADD
+
+// REPRO- PNC***************************
+// opd_postnatal
+opdrepro:pnc|1	MapperNotifierActionRunner	2000	opdrepro:pnc|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:pnc|other	MapperNotifierActionRunner	2000	opdrepro:pnc|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:pnc|Tot	CalculatorActionRunner	2001	opd_postnatal	NOTIFY	opdrepro:pnc|1	X	ADD	NOTIFY	opdrepro:pnc|other	X	ADD
+
+// REPRO- Planning - Rows***************************
+// opd_family_planning
+opdrepro:fp_injection|NC	MapperNotifierActionRunner	2000	opdrepro:fp_injection|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_injection|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_injection|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_injection|stop	MapperNotifierActionRunner	2000	opdrepro:fp_injection|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:fp_injection|Tot	CalculatorActionRunner	2001	opd_family_planning	NOTIFY	opdrepro:fp_injection|NC	X	ADD	NOTIFY	opdrepro:fp_injection|FUP	X	ADD	NOTIFY	opdrepro:fp_injection|stop	X	ADD
+
+
+// opd_family_planning
+opdrepro:fp_oral|NC	MapperNotifierActionRunner	2000	opdrepro:fp_oral|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_oral|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_oral|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_oral|stop	MapperNotifierActionRunner	2000	opdrepro:fp_oral|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:fp_oral|Tot	CalculatorActionRunner	2001	opd_family_planning	NOTIFY	opdrepro:fp_oral|NC	X	ADD	NOTIFY	opdrepro:fp_oral|FUP	X	ADD	NOTIFY	opdrepro:fp_oral|stop	X	ADD
+
+
+// opd_family_planning
+opdrepro:fp_iud|NC	MapperNotifierActionRunner	2000	opdrepro:fp_iud|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_iud|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_iud|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_iud|stop	MapperNotifierActionRunner	2000	opdrepro:fp_iud|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:fp_iud|Tot	CalculatorActionRunner	2001	opd_family_planning	NOTIFY	opdrepro:fp_iud|NC	X	ADD	NOTIFY	opdrepro:fp_iud|FUP	X	ADD	NOTIFY	opdrepro:fp_iud|stop	X	ADD
+
+
+// opd_family_planning
+opdrepro:fp_condom|NC	MapperNotifierActionRunner	2000	opdrepro:fp_condom|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_condom|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_condom|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_condom|stop	MapperNotifierActionRunner	2000	opdrepro:fp_condom|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:fp_condom|Tot	CalculatorActionRunner	2001	opd_family_planning	NOTIFY	opdrepro:fp_condom|NC	X	ADD	NOTIFY	opdrepro:fp_condom|FUP	X	ADD	NOTIFY	opdrepro:fp_condom|stop	X	ADD
+
+
+// opd_family_planning
+opdrepro:fp_implant|NC	MapperNotifierActionRunner	2000	opdrepro:fp_implant|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_implant|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_implant|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_implant|stop	MapperNotifierActionRunner	2000	opdrepro:fp_implant|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:fp_implant|Tot	CalculatorActionRunner	2001	opd_family_planning	NOTIFY	opdrepro:fp_implant|NC	X	ADD	NOTIFY	opdrepro:fp_implant|FUP	X	ADD	NOTIFY	opdrepro:fp_implant|stop	X	ADD
+
+
+// opd_family_planning
+opdrepro:fp_surgery|NC	MapperNotifierActionRunner	2000	opdrepro:fp_surgery|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_surgery|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_surgery|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_surgery|stop	MapperNotifierActionRunner	2000	opdrepro:fp_surgery|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:fp_surgery|Tot	CalculatorActionRunner	2001	opd_family_planning	NOTIFY	opdrepro:fp_surgery|NC	X	ADD	NOTIFY	opdrepro:fp_surgery|FUP	X	ADD	NOTIFY	opdrepro:fp_surgery|stop	X	ADD
+
+
+// opd_family_planning
+opdrepro:fp_other|NC	MapperNotifierActionRunner	2000	opdrepro:fp_other|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_other|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_other|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_other|stop	MapperNotifierActionRunner	2000	opdrepro:fp_other|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:fp_other|Tot	CalculatorActionRunner	2001	opd_family_planning	NOTIFY	opdrepro:fp_other|NC	X	ADD	NOTIFY	opdrepro:fp_other|FUP	X	ADD	NOTIFY	opdrepro:fp_other|stop	X	ADD
+
+
+// opd_family_planning
+opdrepro:fp_all|NC	MapperNotifierActionRunner	2000	opdrepro:fp_all|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_all|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_all|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fp_all|stop	MapperNotifierActionRunner	2000	opdrepro:fp_all|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:fp_all|Tot	CalculatorActionRunner	2001	opd_family_planning	NOTIFY	opdrepro:fp_all|NC	X	ADD	NOTIFY	opdrepro:fp_all|FUP	X	ADD	NOTIFY	opdrepro:fp_all|stop	X	ADD
+
+// REPRO- Planning - Columns***************************
+// opd_family_planning
+opdrepro:fp_injection|NC	MapperNotifierActionRunner	2000	opdrepro:fp_all|NC	CalculatorActionRunner	NOTIFY
+opdrepro:fp_oral|NC	MapperNotifierActionRunner	2000	opdrepro:fp_all|NC	CalculatorActionRunner	NOTIFY
+opdrepro:fp_iud|NC	MapperNotifierActionRunner	2000	opdrepro:fp_all|NC	CalculatorActionRunner	NOTIFY
+opdrepro:fp_condom|NC	MapperNotifierActionRunner	2000	opdrepro:fp_all|NC	CalculatorActionRunner	NOTIFY
+opdrepro:fp_implant|NC	MapperNotifierActionRunner	2000	opdrepro:fp_all|NC	CalculatorActionRunner	NOTIFY
+opdrepro:fp_surgery|NC	MapperNotifierActionRunner	2000	opdrepro:fp_all|NC	CalculatorActionRunner	NOTIFY
+opdrepro:fp_other|NC	MapperNotifierActionRunner	2000	opdrepro:fp_all|NC	CalculatorActionRunner	NOTIFY
+
+opdrepro:fp_all|NC	CalculatorActionRunner	2001	opd_family_planning	NOTIFY	opdrepro:fp_injection|NC	X	ADD	NOTIFY	opdrepro:fp_oral|NC	X	ADD	NOTIFY	opdrepro:fp_iud|NC	X	ADD	NOTIFY	opdrepro:fp_condom|NC	X	ADD	NOTIFY	opdrepro:fp_implant|NC	X	ADD	NOTIFY	opdrepro:fp_surgery|NC	X	ADD	NOTIFY	opdrepro:fp_other|NC	X	ADD
+
+
+// opd_family_planning
+opdrepro:fp_injection|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_all|FUP	CalculatorActionRunner	NOTIFY
+opdrepro:fp_oral|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_all|FUP	CalculatorActionRunner	NOTIFY
+opdrepro:fp_iud|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_all|FUP	CalculatorActionRunner	NOTIFY
+opdrepro:fp_condom|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_all|FUP	CalculatorActionRunner	NOTIFY
+opdrepro:fp_implant|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_all|FUP	CalculatorActionRunner	NOTIFY
+opdrepro:fp_surgery|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_all|FUP	CalculatorActionRunner	NOTIFY
+opdrepro:fp_other|FUP	MapperNotifierActionRunner	2000	opdrepro:fp_all|FUP	CalculatorActionRunner	NOTIFY
+
+opdrepro:fp_all|FUP	CalculatorActionRunner	2001	opd_family_planning	NOTIFY	opdrepro:fp_injection|FUP	X	ADD	NOTIFY	opdrepro:fp_oral|FUP	X	ADD	NOTIFY	opdrepro:fp_iud|FUP	X	ADD	NOTIFY	opdrepro:fp_condom|FUP	X	ADD	NOTIFY	opdrepro:fp_implant|FUP	X	ADD	NOTIFY	opdrepro:fp_surgery|FUP	X	ADD	NOTIFY	opdrepro:fp_other|FUP	X	ADD
+
+
+// opd_family_planning
+opdrepro:fp_injection|stop	MapperNotifierActionRunner	2000	opdrepro:fp_all|stop	CalculatorActionRunner	NOTIFY
+opdrepro:fp_oral|stop	MapperNotifierActionRunner	2000	opdrepro:fp_all|stop	CalculatorActionRunner	NOTIFY
+opdrepro:fp_iud|stop	MapperNotifierActionRunner	2000	opdrepro:fp_all|stop	CalculatorActionRunner	NOTIFY
+opdrepro:fp_condom|stop	MapperNotifierActionRunner	2000	opdrepro:fp_all|stop	CalculatorActionRunner	NOTIFY
+opdrepro:fp_implant|stop	MapperNotifierActionRunner	2000	opdrepro:fp_all|stop	CalculatorActionRunner	NOTIFY
+opdrepro:fp_surgery|stop	MapperNotifierActionRunner	2000	opdrepro:fp_all|stop	CalculatorActionRunner	NOTIFY
+opdrepro:fp_other|stop	MapperNotifierActionRunner	2000	opdrepro:fp_all|stop	CalculatorActionRunner	NOTIFY
+
+opdrepro:fp_all|stop	CalculatorActionRunner	2001	opd_family_planning	NOTIFY	opdrepro:fp_injection|stop	X	ADD	NOTIFY	opdrepro:fp_oral|stop	X	ADD	NOTIFY	opdrepro:fp_iud|stop	X	ADD	NOTIFY	opdrepro:fp_condom|stop	X	ADD	NOTIFY	opdrepro:fp_implant|stop	X	ADD	NOTIFY	opdrepro:fp_surgery|stop	X	ADD	NOTIFY	opdrepro:fp_other|stop	X	ADD
+
+// REPRO- Not pregnant - Rows***************************
+// opd_repro_not_pregnant
+opdrepro:post_abortion_infection|NC	MapperNotifierActionRunner	2000	opdrepro:post_abortion_infection|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:post_abortion_infection|FUP	MapperNotifierActionRunner	2000	opdrepro:post_abortion_infection|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:post_abortion_infection|Tot	CalculatorActionRunner	2001	opd_repro_not_pregnant	NOTIFY	opdrepro:post_abortion_infection|NC	X	ADD	NOTIFY	opdrepro:post_abortion_infection|FUP	X	ADD
+
+
+// opd_repro_not_pregnant
+opdrepro:uti|NC	MapperNotifierActionRunner	2000	opdrepro:uti|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:uti|FUP	MapperNotifierActionRunner	2000	opdrepro:uti|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:uti|Tot	CalculatorActionRunner	2001	opd_repro_not_pregnant	NOTIFY	opdrepro:uti|NC	X	ADD	NOTIFY	opdrepro:uti|FUP	X	ADD
+
+
+// opd_repro_not_pregnant
+opdrepro:menstrual_disorder|NC	MapperNotifierActionRunner	2000	opdrepro:menstrual_disorder|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:menstrual_disorder|FUP	MapperNotifierActionRunner	2000	opdrepro:menstrual_disorder|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:menstrual_disorder|Tot	CalculatorActionRunner	2001	opd_repro_not_pregnant	NOTIFY	opdrepro:menstrual_disorder|NC	X	ADD	NOTIFY	opdrepro:menstrual_disorder|FUP	X	ADD
+
+
+// opd_repro_not_pregnant
+opdrepro:abortion|NC	MapperNotifierActionRunner	2000	opdrepro:abortion|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:abortion|FUP	MapperNotifierActionRunner	2000	opdrepro:abortion|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:abortion|Tot	CalculatorActionRunner	2001	opd_repro_not_pregnant	NOTIFY	opdrepro:abortion|NC	X	ADD	NOTIFY	opdrepro:abortion|FUP	X	ADD
+
+
+// opd_repro_not_pregnant
+opdrepro:genital_infection|NC	MapperNotifierActionRunner	2000	opdrepro:genital_infection|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:genital_infection|FUP	MapperNotifierActionRunner	2000	opdrepro:genital_infection|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:genital_infection|Tot	CalculatorActionRunner	2001	opd_repro_not_pregnant	NOTIFY	opdrepro:genital_infection|NC	X	ADD	NOTIFY	opdrepro:genital_infection|FUP	X	ADD
+
+
+// opd_repro_not_pregnant
+opdrepro:fistula|NC	MapperNotifierActionRunner	2000	opdrepro:fistula|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:fistula|FUP	MapperNotifierActionRunner	2000	opdrepro:fistula|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:fistula|Tot	CalculatorActionRunner	2001	opd_repro_not_pregnant	NOTIFY	opdrepro:fistula|NC	X	ADD	NOTIFY	opdrepro:fistula|FUP	X	ADD
+
+
+// opd_repro_not_pregnant
+opdrepro:other|NC	MapperNotifierActionRunner	2000	opdrepro:other|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:other|FUP	MapperNotifierActionRunner	2000	opdrepro:other|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:other|Tot	CalculatorActionRunner	2001	opd_repro_not_pregnant	NOTIFY	opdrepro:other|NC	X	ADD	NOTIFY	opdrepro:other|FUP	X	ADD
+
+
+// opd_repro_not_pregnant
+opdrepro:consult_not_pregnant_all|NC	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|Tot	CalculatorActionRunner	NOTIFY
+opdrepro:consult_not_pregnant_all|FUP	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|Tot	CalculatorActionRunner	NOTIFY
+
+opdrepro:consult_not_pregnant_all|Tot	CalculatorActionRunner	2001	opd_repro_not_pregnant	NOTIFY	opdrepro:consult_not_pregnant_all|NC	X	ADD	NOTIFY	opdrepro:consult_not_pregnant_all|FUP	X	ADD
+
+opdrepro:consult_not_pregnant_all|Tot	CalculatorActionRunner	2001	opd_repro_not_pregnant	NOTIFY	opdrepro:consult_not_pregnant_all|NC	X	ADD	NOTIFY	opdrepro:consult_not_pregnant_all|FUP	X	ADD
+
+// REPRO- Not pregnant - Columns***************************
+// opd_repro_not_pregnant
+opdrepro:post_abortion_infection|NC	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|NC	CalculatorActionRunner	NOTIFY
+opdrepro:uti|NC	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|NC	CalculatorActionRunner	NOTIFY
+opdrepro:menstrual_disorder|NC	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|NC	CalculatorActionRunner	NOTIFY
+opdrepro:abortion|NC	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|NC	CalculatorActionRunner	NOTIFY
+opdrepro:genital_infection|NC	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|NC	CalculatorActionRunner	NOTIFY
+opdrepro:fistula|NC	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|NC	CalculatorActionRunner	NOTIFY
+opdrepro:other|NC	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|NC	CalculatorActionRunner	NOTIFY
+
+opdrepro:consult_not_pregnant_all|NC	CalculatorActionRunner	2001	opd_repro_not_pregnant	NOTIFY	opdrepro:post_abortion_infection|NC	X	ADD	NOTIFY	opdrepro:uti|NC	X	ADD	NOTIFY	opdrepro:menstrual_disorder|NC	X	ADD	NOTIFY	opdrepro:abortion|NC	X	ADD	NOTIFY	opdrepro:genital_infection|NC	X	ADD	NOTIFY	opdrepro:fistula|NC	X	ADD	NOTIFY	opdrepro:other|NC	X	ADD
+
+
+// opd_repro_not_pregnant
+opdrepro:post_abortion_infection|FUP	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|FUP	CalculatorActionRunner	NOTIFY
+opdrepro:uti|FUP	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|FUP	CalculatorActionRunner	NOTIFY
+opdrepro:menstrual_disorder|FUP	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|FUP	CalculatorActionRunner	NOTIFY
+opdrepro:abortion|FUP	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|FUP	CalculatorActionRunner	NOTIFY
+opdrepro:genital_infection|FUP	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|FUP	CalculatorActionRunner	NOTIFY
+opdrepro:fistula|FUP	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|FUP	CalculatorActionRunner	NOTIFY
+opdrepro:other|FUP	MapperNotifierActionRunner	2000	opdrepro:consult_not_pregnant_all|FUP	CalculatorActionRunner	NOTIFY
+
+opdrepro:consult_not_pregnant_all|FUP	CalculatorActionRunner	2001	opd_repro_not_pregnant	NOTIFY	opdrepro:post_abortion_infection|FUP	X	ADD	NOTIFY	opdrepro:uti|FUP	X	ADD	NOTIFY	opdrepro:menstrual_disorder|FUP	X	ADD	NOTIFY	opdrepro:abortion|FUP	X	ADD	NOTIFY	opdrepro:genital_infection|FUP	X	ADD	NOTIFY	opdrepro:fistula|FUP	X	ADD	NOTIFY	opdrepro:other|FUP	X	ADD

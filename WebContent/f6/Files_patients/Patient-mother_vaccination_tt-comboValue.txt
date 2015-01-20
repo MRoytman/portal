@@ -1,0 +1,12 @@
+1	Not vaccinated	en
+2	TT1	en
+3	TT2	en
+4	TT3	en
+5	TT4	en
+6	≥TT5	en
+1	Non vaccinée	fr
+2	TT1	fr
+3	TT2	fr
+4	TT3	fr
+5	TT4	fr
+6	≥TT5	fr

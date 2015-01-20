@@ -1,0 +1,14 @@
+1	ICU	en
+2	OBGYN	en
+3	Pediatric	en
+4	Neonatal	en
+5	Surgery	en
+6	Internal Medicine	en
+other	Other	en
+1	UCI	es
+2	Gine-obst	es
+3	Pediatria	es
+4	Neonatologia	es
+5	Cirugi	es
+6	Medicina Interna	es
+other	Otros	es

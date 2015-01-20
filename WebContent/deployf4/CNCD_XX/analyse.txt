@@ -1,0 +1,117 @@
+Considéreation DB
+====================
+
+
+- il existe 2 db, l'admin et celle de l'entryform.
+- lors de l'éxécution admin, les entités sont définies pour l'entryform.
+- il faut donc que la db admin aie les mm identifiants que celle de l'entry form.
+- la db admin va également servir les mm uses cases que l'entry form (import des données).
+
+initialisation
+--------------
+Lors de la création db il faut insérer toutes les valeurs pour la table AllCountries.
+Cette étape est faite par l'init du wizard admin.
+
+-A VOIR------------------------- les changements dans la db se font UNIQUEMENT par le contenu du fichier liquibase.xml
+	la db n'est donc jamais reconstruite (utilisation de USE_OR_CREATE_DB). Pour qu'elle soit reconstruite, 
+	en fait il faudrait la supprimer du répertoire.
+
+	TABLES (supplémentaires) DE L'ADMIN
+	--------------------
+- AllCountries
+- SELECTEDCOUNTRIES (table of ids of ALLCOUNTRIES)
+
+
+
+Fonctionnement du wizard
+=======================
+
+initialisation de l'admin
+--------------
+* construction des tables de AllCountries et country localisation
+	- lecture du ficher list_countries.csv
+	-> création db + init tables
+	
+	
+AdminParamCountriesPanel.getContentPanel() se charge à l'initialisation avant d'être visible.
+Ce n'est donc pas ce code qui s'éxécute lors de l'affichage ni de la transition.
+	- les listes des countries doivent se charger en fonction du fichier de configuration.
+	- lors du déroulement de l'application les listes doivent se raffraichir à partir des données internes au Wizard -> création AdminWizard.
+	
+	
+Navigation  de l'admin - mise à jour du modèle
+-----------
+- Après l'initialisation, tout changement est répercuté dans un objet de config.
+	LATER: cet objet de configuration, pour l'instant unique, pourra se trouver dupliqué dans le futur pour différents terrains
+	Si utilisateur fait "Cancel" la configuration initiale ne change pas.
+	Sinon sauvegarde de la config en db et dans le fichier entryFormConfig.xml
+
+
+initialisation de l'entryform
+-------------------------
+- lecture du fichier entryFormConfig.xml
+- les modification des entités doivent se répercuter dans la db.
+
+
+initialisation de l'entryform FormPanel
+-------------------------
+* new Entity
+	=> get model:	FormPanel	-> getModel() -> MyTableModel.buildModel() -> ConfigurationManagerImpl.getQuestionIdTypes()
+* modify Entity
+	=> FormPanel	-> getModel() -> MyTableModel.buildModel() -> ConfigurationManagerImpl.getQuestionIdTypes()
+	=> finder : findEntity(id/name) -> Collection<KeyValue<id, value> 
+	=> fill model:	for each id in model, set value model from collection.
+
+
+
+Modele du wizard
+=======================
+Entity List Manager Base ?
+--------------------------
+	- en charge de construire un table model en fonction de divers critères
+		- valeur de colonne de l'entité
+		- operation d'aggrégation sur plusieurs lignes
+=> pas l'air possible de factoriser tout cela dans une classe ancetre.		
+
+Entity Form
+--------------------------
+	- associé à une entité déjà créée, mais pas forcément sauvegardée.
+	- associé à un KeyValueTableModel
+	
+	- Une nouvelle entrée empêche la modification des autres. 
+	- L'état 'nouvelle entrée' se termine après un save. 
+	- Un flag est mis dans le configuration manager car sinon l'information se perd lorsqu'on passe à l'écran du patient et que l'on revient à la liste des patients.
+
+Entity Form List
+-------------------------
+- pour la liste des patients, il faut un mapping entre les concepts id et les attributs des patients.
+- les concepts id ne doivent pas être affichés s'ils se retrouvent dans les attributs patients.
+
+
+
+fonctionnement du cache de la liste patient
+-------------------------
+Des PatientModelData représentent la liste patient.
+Ils sont issus d'une recherche de PatientContext.
+Il est donc possible de lier chaque PatientModelData à son patient ID technique.
+Il est possible de lier le numéro de la liste avec le  patient ID technique.
+Ce  patient ID technique peut servir pour la gestion du cache patient.
+Si cet Id technique n'existe pas, le patient venant d'être créer, la valeur du null sera utilisée comme clef pour la cache patient.
+
+
+
+fonctionnement du cache de la liste patient
+-------------------------
+
+
+/////////////////////// contraintes connues
+- un patient ne peut être défini sur plus d'un carecenter, la contrainte d'intégrité sur l'id pose probleme (testé)
+
+
+////////////////////////////////////////			
+----LINKS----
+			Perf embedded db:	http://www.jpab.org/All/All/All.html
+			JPA	annotations		:		http://java.sun.com/developer/technicalArticles/J2SE/Desktop/persistenceapi/
+			JPQL Language Reference:	http://openjpa.apache.org/builds/1.0.1/apache-openjpa-1.0.1/docs/manual/jpa_langref.html
+						:	http://docs.jboss.org/hibernate/entitymanager/3.5/reference/en/html/queryhql.html
+			

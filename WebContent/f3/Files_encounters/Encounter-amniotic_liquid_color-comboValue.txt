@@ -1,0 +1,8 @@
+1	clear	en
+2	tinted	en
+3	meconium	en
+4	unknown	en
+1	clair	fr
+2	teinté	fr
+3	méconial	fr
+4	inconnu	fr

@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>MSF App portal</title>
+<link rel="stylesheet" href="template2.css" type="text/css" media="all" />
+<style>
+.appLinks { //
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	border-style: none; // solid; //
+	border-color: red; //
+	border-width: 1px;
+}
+
+.appLinks table {
+	margin: 10px auto auto auto;
+	padding: 10px;
+}
+
+.appLinks table col {
+	background-color: #CCDBDA;
+}
+
+.appLinks table col:first-child {
+	background-color: #CCC;
+}
+
+.appLinks table tr td {
+	height: 30px;
+	padding: 1em;
+}
+
+.appLinks table tr td:first-child {
+	font-size: 22px;
+}
+</style>
+
+</head>
+<body>
+	<header>
+		<div id='header'>
+			<ol>
+				<li id="headerLeft">
+					<p>
+						<img id='msfLogo' src="head_logo_msf.gif"
+							alt="head_logo_msf.gif" />
+					</p>
+				</li>
+				<li id="headerCenter">
+					<h2 id='title'>
+						MSF - Medical data
+						</h1>
+						<h2>Lebanon - CNCD</h2>
+						<h2>Field part</h2>
+				</li>
+				<li id="headerRight">
+					<div style="height: 100%;">
+						<input type="text" id="clock" style="padding: 0em;" />
+
+					</div>
+				</li>
+			</ol>
+		</div>
+	</header>
+	<section id="contents">
+		<article>
+			<h3>Introduction</h3>
+			You will find below all the necessary information to manage the data
+			collection. Patient data collection is needed to run statistics
+			reports. Please read carefully this page to get familiar with the
+			concepts.
+
+		</article>
+		<article>
+			<h3>Installation prerequisites</h3>
+			<div class='opGuide'>
+				<ul>
+					<li><b>Before</b> running the data entry form software, make
+						sure you have received the configuration file named
+						"entryFormConfig.xml". This file must have been sent to you by a
+						coordination manager prior to installation (the software won't
+						work otherwise). and must be located under the directory: <br>
+						"D:\". <br> <b>Note:</b> It should be noted that the computer should
+						have a drive named D with sufficient space (5Mb is a minimum
+						requirement).</li>
+				</ul>
+			</div>
+		</article>
+		<article>
+			<h3>The provided tools allow to:</h3>
+			<div class='opGuide'>
+				<ul>
+					<li>Enter patients and consultations data in the database.</li>
+					<li>Export data from the database to the 'Head Quarter'.</li>
+					<li>Show statistics.</li>
+
+				</ul>
+			</div>
+		</article>
+
+		<article>
+			<h3>Quick user guide</h3>
+			<div class='opGuide'>
+				<ul>
+					<li>To start the data entry form software, click on the 'Data
+						entry form' button.</li>
+					<li>To start the export software, click on the 'Data export'
+						button. Exporting the collected data is a mandatory step to build
+						the statistics.</li>
+				</ul>
+			</div>
+		</article>
+
+
+		<article>
+
+			<h3>Terminology/Definitions</h3>
+			<ul>
+				<li><b>Console window:</b> A window in which system messages
+					are printed.<br> Note: The console window only appears if it
+					has been configured as 'show console' in the java part of the
+					control panel. If the console window appears on screen, it can be
+					minimized, but not closed as it can be used to communicate potential error
+					messages.<br> <img id='consoleImg'
+					src="../images/prtscrn_console.jpg" alt="prtscrn_console.jpg" /></li>
+				<li><b>MSF application:</b> Any application that can be started
+					with one of the links in paragraph below.</li>
+
+			</ul>
+		</article>
+
+		<article>
+			<h3>Installation or start of an MSF application</h3>
+			<div id="links">
+
+				<ul>
+					<li><b>Before starting:</b> Make sure the application (nor its
+						java console) is not already started. If it is the case, kill the
+						window(s) first.</li>
+
+					<li><b>Starting an MSF application:</b> Once you have clicked
+						on any of the links proposed below, you will see a serie of dialog
+						boxes appearing on screen. One of them entitled "Warning-Security"
+						will ask you to confirm the run. Before clicking on the "Run"
+						button, check the "Always trust content from this publisher". <br>
+						<img id='downloadImg' src="../images/prtscrn_download.jpg"
+						alt="prtscrn_download.jpg" /><br> <img
+						id='downloadWarningImg' src="../images/prtscrn_warning.jpg"
+						alt="prtscrn_warning.jpg" /><br> At the time the software is
+						installed, after few minutes (depending on the power of the
+						running machine and connectivity), the application windows is
+						displayed. If the <i>java console</i> is enabled, it will appear
+						too.</li>
+
+
+					<li><b>Passwords:</b>Sensitive <i>MSF application</i>s are
+						password protected. If you are entitled for using one of these,
+						you will be given a user&password information.</li>
+
+
+				</ul>
+			</div>
+		</article>
+
+		<article>
+			<h3>MSF Application links</h3>
+			<div class='appLinks'>
+				<table>
+					<col style="" />
+					<col />
+
+
+					<tr>
+						<td><a
+							href="http://ftp.ocg.msf.org/webstart/CNCD_LB/IPDEntryForm3.0.jnlp"
+							target="_blank">Data entry form</a></td>
+						<td><a
+							href="http://ftp.ocg.msf.org/webstart/USER_GUIDE_ENTRY_FORM_USER_V_1.2.pdf"
+							target="_blank">User guide</a></td>
+					</tr>
+
+					<tr>
+						<td><a
+							href="http://ftp.ocg.msf.org/webstart/CNCD_LB/IPDImpExp1.6.jnlp"
+							target="_blank">Data export</a></td>
+						<td><a
+							href="http://ftp.ocg.msf.org/webstart/Java medical Project Empty.pdf"
+							target="_blank">User guide</a></td>
+					</tr>
+
+					<tr>
+						<td><a href="https://qv.ocg.msf.org/qlikview/index.htm"
+							target="_blank">Statistics</a></td>
+						<td><a
+							href="http://ftp.ocg.msf.org/webstart/Java medical Project Empty.pdf"
+							target="_blank">User guide</a></td>
+					</tr>
+
+				</table>
+			</div>
+		</article>
+
+		<article>
+			<div>
+				<h3>For more information</h3>
+				<h5>Project background:</h5>
+				Your can consult the presentation <a
+					href="http://ftp.ocg.msf.org/webstart/Java based applications.pps"
+					target="_blank">Introduction to Java based applications needed
+					for MSF medical analysis</a> for project history.
+			</div>
+		</article>
+
+	</section>
+
+	<footer>
+		<input type="text" id="clock" style="position: absolute; right: 0;" />
+	</footer>
+	<script>
+		self.setInterval(function() {
+			refreshPage()
+		}, 60000);
+		function refreshPage() {
+			var d = new Date();
+			var t = d.toString();
+			document.getElementById("clock").value = t;
+			location.reload();
+		}
+	</script>
+
+</body>
+</html>

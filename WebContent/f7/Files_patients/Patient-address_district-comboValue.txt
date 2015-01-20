@@ -1,0 +1,20 @@
+1	District 01	en
+2	District 02	en
+3	District 03	en
+4	District 04	en
+5	District 05	en
+6	District 06	en
+7	District 07	en
+8	District 08	en
+9	unknown	en
+10	other	en
+1	District 01	fr
+2	District 02	fr
+3	District 03	fr
+4	District 04	fr
+5	District 05	fr
+6	District 06	fr
+7	District 07	fr
+8	District 08	fr
+9	inconnu	fr
+10	autre	fr

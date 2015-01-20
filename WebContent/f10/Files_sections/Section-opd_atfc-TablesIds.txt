@@ -1,0 +1,28 @@
+SectionTable	atfc_admissions	4	10
+atfc:admission|transferred|itfc|Label	Label1<COL>atfc:admission|transferred|itfc	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:admission|transferred|atfc|Label	Label1<COL>atfc:admission|transferred|atfc	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:admission|spontaneous|Label	Label1<COL>atfc:admission|spontaneous	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:title25|Label	Label1<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:admission|referred|chw|Label	Label1<COL>atfc:admission|referred|chw	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:admission|referred|smc|Label	Label1<COL>atfc:admission|referred|smc	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:admission|referred|tfc_non_msf|Label	Label1<COL>atfc:admission|referred|tfc_non_msf	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:admission|referred|clinic|Label	Label1<COL>atfc:admission|referred|clinic	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:admission|other|Label	Label1<COL>atfc:admission|other	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:admission|all|Label	Label1<COL>atfc:admission|all	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+SectionSeparator
+SectionTable	atfc_discharges	4	12
+atfc:discharge|cured|Label	Label1<COL>atfc:discharge|cured	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:discharge|dead|Label	Label1<COL>atfc:discharge|dead	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:discharge|defaulter|Label	Label1<COL>atfc:discharge|defaulter	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:discharge|non_responding|Label	Label1<COL>atfc:discharge|non_responding	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:title44|Label	Label1<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:discharge|referred|atfc_msf|Label	Label1<COL>atfc:discharge|referred|atfc_msf	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:discharge|referred|atfc_non_msf|Label	Label1<COL>atfc:discharge|referred|atfc_non_msf	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:discharge|referred|itfc|Label	Label1<COL>atfc:discharge|referred|itfc	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:discharge|on_demand|Label	Label1<COL>atfc:discharge|on_demand	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:discharge|cheating|Label	Label1<COL>atfc:discharge|cheating	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:discharge|other|Label	Label1<COL>atfc:discharge|other	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2
+atfc:discharge|all|Label	Label1<COL>atfc:discharge|all	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2
+SectionSeparator
+SectionTable	atfc_comments	2	1
+atfc:comments|Label	Label1<COL>atfc:comments	Coded

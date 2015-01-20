@@ -1,0 +1,4 @@
+1	alive	en
+2	stillbirth	en
+1	vivant	fr
+2	mort-né	fr

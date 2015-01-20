@@ -1,0 +1,8 @@
+1	< 1h	en
+2	> 1h - =< 24h	en
+3	> 24h - < 7 days	en
+4	>= 7 days	en
+1	< 1h	fr
+2	> 1h - =< 24h	fr
+3	> 24h - < 7 jours	fr
+4	>= 7 jours	fr

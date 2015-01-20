@@ -1,0 +1,21 @@
+1	Still under treatment	en
+2	Treatment completed	en
+3	Referred	en
+4	Discharged	en
+5	Deceased	en
+6	Defaulter	en
+7	Other	en
+1	Encore en traitement	fr
+2	Traitement terminé	fr
+3	Référé	fr
+4	Décharge	fr
+5	Décédé	fr
+6	Abandon	fr
+7	Autre	fr
+1	En tratamiento	es
+2	Tratamiento terminado	es
+3	Referido	es
+4	Salida	es
+5	Fallecido	es
+6	Abandono	es
+7	Otro	es

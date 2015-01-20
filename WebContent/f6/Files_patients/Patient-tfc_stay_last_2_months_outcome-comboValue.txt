@@ -1,0 +1,8 @@
+1	Cured	en
+9	Defaulter	en
+other	Other	en
+unknown	Unknown	en
+1	Guéri	fr
+9	Abandon	fr
+other	Autre	fr
+unknown	Inconnu	fr

@@ -1,0 +1,435 @@
+-- get STATISTICS
+
+-- SQL SERVER, group by country, country code, care center
+select COUNT(*) as 'Count patient per context', sc.SELCTY_Code, prj.PRJ_CODE, cc.CCAR_CODE 
+from patientcontext pc
+inner join SelectCountries sc on pc.PAC_SELCTY = sc.SELCTY_id
+inner join PROJECT prj on pc.PAC_SELPRJ  = prj.PRJ_ID
+inner join CARECENTER cc on pc.PAC_SELCCAR = cc.CCAR_ID
+group by sc.SELCTY_Code, prj.PRJ_CODE, cc.CCAR_CODE
+order by sc.SELCTY_Code, prj.PRJ_CODE, cc.CCAR_CODE desc
+;
+
+--------
+SELECT count(*) FROM PATIENT pat
+where pat.pat_retired = false;
+
+select (SELECT count(*) FROM PATIENTCONTEXT) as PATCON , (SELECT count(*) FROM PATIENT)  as PAT, (SELECT count(*) FROM PATIENTIDENTIFIER ) AS PATID ,   (SELECT count(*) FROM PATIENTIDVALUE ) AS PATATT, (SELECT count(*) FROM ENCOUNTER) as ENC , (SELECT count(*) FROM CONCEPTIDVALUE) as ENCCON
+;
+PATCON  	PAT  	PATID  	PATATT  	ENC  	ENCCON  
+99	99	99	315	99	851
+PATCON  	PAT  	PATID  	PATATT  	ENC  	ENCCON  
+103	103	103	319	101	855
+PATCON  	PAT  	PATID  	PATATT  	ENC  	ENCCON  
+103	103	103	335	103	905
+
+SELECT patientId, conceptCount
+from
+(
+select   count(civ.CIV_ID) as conceptCount,  enc.ENC_ID, patId.PID_IDENTIFIER as patientId
+ from ENCOUNTER  enc
+inner join Patient pat on enc.ENC_PATIENT = pat.PAT_id
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+left outer join  CONCEPTIDVALUE civ on  civ.CIV_ENCOUNTER = enc.ENC_id
+group by  patId.PID_IDENTIFIER,  enc.ENC_ID 
+)
+group by  patientId
+order by  patientId
+;
+
+
+-- retired patient and encounters
+select
+(
+SELECT count(*) FROM PATIENT pat
+where
+ pat.PAT_RETIRED=true
+) as RETPAT,
+(
+SELECT count(*) FROM ENCOUNTER enc
+where
+ enc.ENC_RETIRED=true
+) as RETENC
+;
+
+SELECT cnt
+from
+(
+SELECT COUNT(*)  cnt
+  FROM PATIENTCONTEXT , Patient
+)
+;
+
+-------------------------------------- patient, country, project, carecenter 
+
+select DISTINCT pat.PAT_ID, sc.SELCTY_CODE , prj.PRJ_CODE,  prj.PRJ_NAME ,  cc.CCAR_CODE, cc.CCAR_NAME     
+from PATIENTCONTEXT patCon
+inner join PATIENT pat ON patCon.PAC_PATIENT = pat.PAT_ID  
+inner join SELECTCOUNTRIES sc ON patCon.PAC_SELCTY = sc.SELCTY_ID 
+inner join PROJECT prj on patCon.PAC_SELPRJ  = prj.PRJ_ID
+inner join CARECENTER cc on patCon.PAC_SELCCAR = cc.CCAR_ID
+where 
+sc.SELCTY_RETIRED = false and
+prj.PRJ_RETIRED  = false and
+cc.CCAR_RETIRED  = false
+;
+
+
+------------------------
+
+-- get patient project + care center
+select
+patId.PID_IDENTIFIER, prj.PRJ_NAME , cc.CCAR_NAME , pat.pat_name, pat.pat_firstname
+from PatientContext patCon
+inner join Patient pat on patCon.PAC_Patient = pat.PAT_id
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+inner join  Project prj on  patCon.PAC_SELPRJ = prj.PRJ_ID
+inner join  CARECENTER cc on  patCon.PAC_SELCCAR  = cc.CCAR_ID  
+where
+ pat.PAT_RETIRED=true
+ and patId.PID_IDENTIFIER like '%5491a%'
+
+;
+
+-- select patient + encounters
+select
+patId.PID_IDENTIFIER, pat.pat_name, pat.pat_firstname, enc.enc_date
+from PatientContext patCon
+inner join Patient pat on patCon.PAC_Patient = pat.PAT_id
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+left outer join Encounter enc on enc.ENC_Patient=pat.PAT_id
+where
+ pat.PAT_RETIRED=false
+ and patId.PID_IDENTIFIER='id7';
+;
+--(sqlserver) select patient + encounters
+select
+patId.PID_CONTEXTID, pat.pat_name, pat.pat_firstname, enc.enc_date, enc.ENC_TYPE
+from PatientContext patCon
+inner join Patient pat on patCon.PAC_Patient = pat.PAT_id
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+left outer join Encounter enc on enc.ENC_Patient=pat.PAT_id
+where
+-- pat.PAT_RETIRED=1 and
+ patId.PID_CONTEXTID like '%5491a%'
+;
+
+-- get patient project + care center + piv
+select
+prj.PRJ_NAME , cc.CCAR_NAME , patId.PID_IDENTIFIER, piv.PIV_CONCEPT_VAL
+from PatientContext patCon
+inner join Patient pat on patCon.PAC_Patient = pat.PAT_id
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+inner join  Project prj on  patCon.PAC_SELPRJ = prj.PRJ_ID
+inner join  CARECENTER cc on  patCon.PAC_SELCCAR  = cc.CCAR_ID 
+left outer join  PATIENTIDVALUE piv on  piv.PIV_Patient = pat.PAT_id
+where
+ and pat.PAT_INDEX =1;
+;
+
+-- list patient concepts
+select patId.PID_IDENTIFIER as patientId,  piv.PIV_CONCEPT_ID as conceptPatId ,   piv.PIV_CONCEPT_VAL 
+from PatientContext patCon
+inner join Patient pat on patCon.PAC_Patient = pat.PAT_id
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+left outer join  PATIENTIDVALUE piv on  piv.PIV_Patient = pat.PAT_id
+where
+ patId.PID_IDENTIFIER='27.11.2012';
+
+--(NON! NE PAS MELANGER!) select patient + PATIENTIDVALUE + encounters + CONCEPTIDVALUE
+--select
+-- piv.PIV_ID
+--from PatientContext patCon
+--inner join Patient pat on patCon.PAC_Patient = pat.PAT_id
+--inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+--left outer join  PATIENTIDVALUE piv on  piv.PIV_Patient = pat.PAT_id
+--left outer join Encounter enc on enc.ENC_Patient=pat.PAT_id
+--left outer join  CONCEPTIDVALUE civ on  civ.CIV_ENCOUNTER = enc.ENC_id
+--where
+-- patId.PID_IDENTIFIER='id7';
+;
+
+-- list encounter concepts by patient
+-- select PATIENTIDVALUE + encounters + CONCEPTIDVALUE
+select
+patId.PID_IDENTIFIER as patientId , enc.ENC_ID as encounterId,  civ.CIV_CONCEPT_ID, civ.CIV_CONCEPT_VAL 
+from PatientContext patCon
+inner join Patient pat on patCon.PAC_Patient = pat.PAT_id
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+left outer join Encounter enc on enc.ENC_Patient=pat.PAT_id
+left outer join  CONCEPTIDVALUE civ on  civ.CIV_ENCOUNTER = enc.ENC_id
+--where
+ --patId.PID_IDENTIFIER='ZH001';
+;
+
+
+select
+patId.PID_IDENTIFIER, pat.pat_name, pat.pat_firstname , piv.PIV_CONCEPT_ID, piv.PIV_CONCEPT_VAL, enc.enc_date, enc.ENC_TYPE, enc.ENC_RETIRED , civ.CIV_CONCEPT_ID, civ.CIV_CONCEPT_VAL 
+from PatientContext patCon
+inner join Patient pat on patCon.PAC_Patient = pat.PAT_id
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+left outer join  PATIENTIDVALUE piv on  piv.PIV_Patient = pat.PAT_id
+left outer join Encounter enc on enc.ENC_Patient=pat.PAT_id
+left outer join  CONCEPTIDVALUE civ on  civ.CIV_ENCOUNTER = enc.ENC_id
+;
+
+--(NON! NE PAS MELANGER  LES PATIENTS CONCEPTS ET LES ENCOUNTER CONCEPTS!)
+----------------------------------------------- ENCOUNTER COUNTS PER PATIENT
+select   count(ENC_ID ), enc.ENC_PATIENT, pat.PAT_NAME  
+ from ENCOUNTER  enc
+inner join Patient pat on enc.ENC_PATIENT = pat.PAT_id
+group by  ENC_PATIENT
+order by count(ENC_ID ) desc;
+
+select   count(ENC_ID ), enc.ENC_PATIENT, patId.PID_IDENTIFIER 
+ from ENCOUNTER  enc
+inner join Patient pat on enc.ENC_PATIENT = pat.PAT_id
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+group by  pat.PAT_ID 
+order by  patId.PID_IDENTIFIER 
+
+-----------------------------------------------  PER PATIENT CONCEPT COUNTS
+select     patId.PID_IDENTIFIER , count(piv.PIV_ID ) as conceptPatCount
+ from Patient pat 
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+left outer join  PATIENTIDVALUE piv on  piv.PIV_Patient = pat.PAT_id
+group by  pat.PAT_ID 
+order by  patId.PID_IDENTIFIER 
+;
+-----------------------------------------------  PER PATIENT ENCOUNTER CONCEPT COUNTS
+
+select patientId ,  count(conceptId) as conceptCount
+from
+(
+select   patId.PID_IDENTIFIER as patientId, enc.ENC_ID as encounterId,  civ.CIV_CONCEPT_ID as conceptId, civ.CIV_CONCEPT_VAL 
+from PatientContext patCon
+inner join Patient pat on patCon.PAC_Patient = pat.PAT_id
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+left outer join Encounter enc on enc.ENC_Patient=pat.PAT_id
+left outer join  CONCEPTIDVALUE civ on  civ.CIV_ENCOUNTER = enc.ENC_id
+--where
+ --patId.PID_IDENTIFIER='ZH001';
+)
+group by  encounterId, patientId
+order by  patientId
+;
+
+----------------------------------------------- ENCOUNTER COUNTS PER PATIENT
+select count(*), pat.PAT_INDEX, pat.PAT_NAME    from ENCOUNTER enc
+inner join Patient pat on enc.ENC_PATIENT = pat.PAT_id
+where enc.enc_retired = 0
+group by enc.ENC_PATIENT 
+--having count(*) >=2
+order by count(*) desc;
+
+
+-----------------------------------------------TO DELETE EVERYTHING FROM A PATIENT --START
+-- delete des PATIENTIDVALUE
+DELETE FROM PATIENTIDVALUE piv
+WHERE piv.piv_id IN (
+select
+ piv.PIV_ID
+from PatientContext patCon
+inner join Patient pat on patCon.PAC_Patient = pat.PAT_id
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+left outer join  PATIENTIDVALUE piv on  piv.PIV_Patient = pat.PAT_id
+left outer join Encounter enc on enc.ENC_Patient=pat.PAT_id
+left outer join  CONCEPTIDVALUE civ on  civ.CIV_ENCOUNTER = enc.ENC_id
+where
+ patId.PID_IDENTIFIER='id7'
+)
+;
+
+-- delete patientcontext
+DELETE FROM PatientContext patCon
+WHERE patCon.PAC_Patient  IN (
+select
+patCon.PAC_Patient 
+from PatientContext patCon
+inner join Patient pat on patCon.PAC_Patient = pat.PAT_id
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+where
+ patId.PID_IDENTIFIER='id7'
+)
+;
+
+-- delete concepts
+DELETE FROM  ConceptIdValue  
+WHERE  CIV_id  IN (
+select civ.CIV_id from ConceptIdValue civ
+inner join Encounter enc on civ.CIV_Encounter = enc.ENC_id
+where
+enc.ENC_id = 675
+)
+;
+
+-- delete concepts
+DELETE FROM Encounter
+where
+ENC_id = 675
+;
+
+
+-- delete PatientIdentifier
+DELETE FROM  PatientIdentifier patId
+WHERE patId.PID_Patient  IN (
+select
+ patId.PID_Patient
+from  PatientIdentifier patId
+where
+ patId.PID_IDENTIFIER='id7'
+)
+;
+
+-- delete patient with pat id null
+DELETE FROM Patient pat
+WHERE pat.PAT_id  IN (
+select
+ pat.Pat_id
+from  Patient pat
+left outer join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+left outer join Encounter enc on enc.ENC_Patient=pat.PAT_id
+where
+patId.PID_Patient is null
+)
+;
+
+-----------------------------------------------TO DELETE EVERYTHING FROM A PATIENT --END
+
+-----------------------------------------------(1) TO UPDATE (undelete) ANY ENCOUNTER FROM A PATIENT --START
+update encounter 
+set ENC_RETIRED = false
+WHERE ENC_PATIENT   IN (
+select
+pat.PAT_id
+FROM Patient pat
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+where
+ patId.PID_IDENTIFIER='id1'
+)
+-----------------------------------------------TO UPDATE ANY ENCOUNTER FROM A PATIENT --END
+
+
+-----------------------------------------------(2) TO UPDATE (undelete) ANY ENCOUNTER FROM A PATIENT --START
+update encounter 
+set ENC_RETIRED = false
+WHERE ENC_PATIENT   IN (
+select
+pat.PAT_id
+FROM Patient pat
+inner join  PatientIdentifier patId on  patId.PID_Patient = pat.PAT_id
+left outer join Encounter enc on enc.ENC_Patient=pat.PAT_id
+where
+ patId.PID_IDENTIFIER = 'qq1'
+ and  enc.ENC_TYPE = 'SGBV_Main_medical_consultation'
+)
+-----------------------------------------------TO UPDATE ANY ENCOUNTER FROM A PATIENT --END
+
+
+------------- DIVERS----ajout d'un champ non null dans table patient (avec données déjà existantes)
+
+ALTER TABLE PATIENT ADD PAT_INDEX INteger
+
+update patient pat set pat.PAT_INDEX = pat.pat.id
+
+ALTER TABLE PATIENT ALTER COLUMN PAT_INDEX SET NOT NULL;
+
+
+----------------------////////////////////////////  RETIRED ITEMS
+
+------------------- LIST OF RETIRED COUNTRIES
+select DISTINCT sc.SELCTY_ID, sc.SELCTY_CODE,  sc.SELCTY_RETIRED     from PATIENTCONTEXT patCon
+inner join SELECTCOUNTRIES sc ON patCon.PAC_SELCTY = sc.SELCTY_ID 
+inner join PROJECT prj on patCon.PAC_SELPRJ  = prj.PRJ_ID
+inner join CARECENTER cc on patCon.PAC_SELCCAR = cc.CCAR_ID
+where
+ sc.SELCTY_RETIRED = true
+ ;
+
+------------------- LIST OF RETIRED CARE CENTERS FOR SPECIFIED COUNTRY
+select DISTINCT  cc.CCAR_ID, cc.CCAR_NAME , cc.CCAR_RETIRED    from PATIENTCONTEXT patCon
+inner join SELECTCOUNTRIES sc ON patCon.PAC_SELCTY = sc.SELCTY_ID 
+inner join PROJECT prj on patCon.PAC_SELPRJ  = prj.PRJ_ID
+inner join CARECENTER cc on patCon.PAC_SELCCAR = cc.CCAR_ID
+where
+ sc.SELCTY_RETIRED = true and sc.SELCTY_CODE = 'HN'
+ ;
+
+------------------- LIST OF RETIRED PROJECTS FOR SPECIFIED COUNTRY
+select DISTINCT  prj.PRJ_ID, prj.PRJ_NAME , prj.PRJ_RETIRED     from PATIENTCONTEXT patCon
+inner join SELECTCOUNTRIES sc ON patCon.PAC_SELCTY = sc.SELCTY_ID 
+inner join PROJECT prj on patCon.PAC_SELPRJ  = prj.PRJ_ID
+inner join CARECENTER cc on patCon.PAC_SELCCAR = cc.CCAR_ID
+where
+ sc.SELCTY_RETIRED = true and sc.SELCTY_CODE = 'HN'
+ ;
+------------------------- UPDATE CARE CENTERS
+update CARECENTER cc  set cc.CCAR_RETIRED = false
+where cc.CCAR_ID in 
+(
+select DISTINCT  cc.CCAR_ID   from PATIENTCONTEXT patCon
+inner join SELECTCOUNTRIES sc ON patCon.PAC_SELCTY = sc.SELCTY_ID 
+inner join PROJECT prj on patCon.PAC_SELPRJ  = prj.PRJ_ID
+inner join CARECENTER cc on patCon.PAC_SELCCAR = cc.CCAR_ID
+where
+ sc.SELCTY_RETIRED = true and sc.SELCTY_CODE = 'HN'
+)
+ ;
+
+------------------------- UPDATE PROJECTS
+update PROJECT prj  set prj.PRJ_RETIRED  = false
+where prj.PRJ_ID  in 
+(
+select DISTINCT  prj.PRJ_ID     from PATIENTCONTEXT patCon
+inner join SELECTCOUNTRIES sc ON patCon.PAC_SELCTY = sc.SELCTY_ID 
+inner join PROJECT prj on patCon.PAC_SELPRJ  = prj.PRJ_ID
+inner join CARECENTER cc on patCon.PAC_SELCCAR = cc.CCAR_ID
+where
+ sc.SELCTY_RETIRED = true and sc.SELCTY_CODE = 'HN'
+)
+ ;
+
+------------------------- UPDATE SELECTCOUNTRIES 
+
+update SELECTCOUNTRIES sc  set sc.SELCTY_RETIRED = false
+where sc.SELCTY_ID   in 
+(
+select DISTINCT   sc.SELCTY_ID   from PATIENTCONTEXT patCon
+inner join SELECTCOUNTRIES sc ON patCon.PAC_SELCTY = sc.SELCTY_ID 
+where
+ sc.SELCTY_RETIRED = true and sc.SELCTY_CODE = 'HN'
+)
+
+----------------------////////////////////////////  END RETIRED ITEMS
+use MED_DWH;
+drop table dbo.PATIENTIDVALUE;
+drop table dbo.PatientContext;
+drop table dbo.PatientIdentifier;
+drop table dbo.ConceptIdValue;
+drop table dbo.Encounter;
+drop table dbo.Project_CareCenter;
+drop table dbo.SelectCountries_Project;
+drop table dbo.SelectCountries;
+drop table dbo.CareCenter;
+drop table dbo.Project;
+drop table dbo.Patient;
+drop table dbo.AllCountries_loc;
+drop table dbo.AllCountries;
+
+----
+use MED_DWH;
+
+DELETE FROM dbo.PatientIdValue;
+-- delete patientcontext
+DELETE FROM dbo.PatientContext;
+
+
+-- delete PatientIdentifier
+DELETE FROM  dbo.PatientIdentifier;
+
+DELETE FROM dbo.ConceptIdValue;
+
+DELETE FROM dbo.Encounter;
+
+-- delete patient with pat id null
+DELETE FROM dbo.Patient;

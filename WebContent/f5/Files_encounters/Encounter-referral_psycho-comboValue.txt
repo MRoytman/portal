@@ -1,0 +1,36 @@
+1	Medical Focal Point	en
+2	Other psychologist	en
+3	Psychiatrist	en
+4	Social worker	en
+5	Legal advisor	en
+6	Group counselling	en
+7	Hospital Mario Mendoya	en
+8	Hospital Santa Rosita	en
+9	IHADF	en
+11	MSF social worker	en
+12	Social worker of health centre	en
+10	Other	en
+1	Medical Focal Point	fr
+2	Autre psychologue	fr
+3	Psychiatre	fr
+4	Assistant social	fr
+5	Conseiller juridique	fr
+6	Suivi en groupe	fr
+7	Hospital Mario Mendoya	fr
+8	Hospital Santa Rosita	fr
+9	IHADF	fr
+11	Travailleur social MSF	fr
+12	Travailleur social centre de santé	fr
+10	Autre	fr
+1	Médico punto focal	es
+2	Otro psycólogo	es
+3	Psiquiatra	es
+4	Asistente social	es
+5	Consejero legal	es
+6	Asesoramiento de grupo	es
+7	Hospital Mario Mendoya	es
+8	Hospital Santa Rosita	es
+9	IHADF	es
+11	Trabajador social MSF	es
+12	Trabajador social CS	es
+10	Otro	es

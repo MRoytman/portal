@@ -1,0 +1,8 @@
+1	no TB	en
+2	PTB M+	en
+3	PTB M-	en
+4	EPTB	en
+1	pas de TB	fr
+2	PTB M+	fr
+3	PTB M-	fr
+4	EPTB	fr

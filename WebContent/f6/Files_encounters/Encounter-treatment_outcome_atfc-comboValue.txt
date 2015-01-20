@@ -1,0 +1,22 @@
+1	Cured	en
+2	Deceased	en
+3	Defaulter	en
+4	Non-responding	en
+10	Transferred to ITFC (stagnant weight)	en
+11	Transferred to ITFC (severe pathology)	en
+12	Referred to MSF ATFC	en
+13	Referred to non-MSF ATFC	en
+5	Referal to another structure	en
+6	Discharge on demand	en
+other	Other	en
+1	Guéri	fr
+2	Décès	fr
+3	Abandon	fr
+4	Non-répondant	fr
+10	Référé vers CRENI (poids stagnant)	fr
+11	Référé vers CRENI (pathologie lourde)	fr
+12	Référé vers CRENAS MSF	fr
+13	Référé vers CRENAS non-MSF	fr
+5	Sortie sur demande	fr
+6	Tricherie	fr
+other	Autre	fr

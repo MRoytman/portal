@@ -1,0 +1,100 @@
+sex	0) Sex	en
+sex	Sexe	fr
+_title_01P	STAY IN THE HOSPITAL	en
+_title_01P	SEJOUR DANS L'HOPITAL	fr
+admission_date	Date of first contact with the structure	en
+admission_date	Date de premier contact avec la structure	fr
+admission_time	          time (mm:hh)	en
+admission_time	          heure (mm:hh)	fr
+discharge_date	Discharge date	en
+discharge_date	Date de sortie	fr
+_title_02P	 	en
+_title_02P	 	fr
+_title_03P	PLACE OF ORIGIN	en
+_title_03P	LIEU D'ORIGINE	fr
+address_village	Address (town, village or area)	en
+address_village	Adresse (ville, village ou quartier)	fr
+address_village_other	          if 'other', specify:	en
+address_village_other	          si 'autre', préciser:	fr
+address_district	District	en
+address_district	District	fr
+address_district_other	          if 'other', specify:	en
+address_district_other	          si 'autre', préciser:	fr
+_title_04P	 	en
+_title_04P	 	fr
+_title_05P	ADMISSION	en
+_title_05P	ADMISSION	fr
+referred_in	1) Transferred to MSF	en
+referred_in	1) Transféré vers MSF	fr
+referred_by	          by whom / from where	en
+referred_by	          par qui / depuis où	fr
+hospitalization_cause	2) Reason for seeking cares or motive for transfer	en
+hospitalization_cause	2) Motif de recours aux soins ou motif de transfert	fr
+hospitalization_cause_other	          if 'other', specify:	en
+hospitalization_cause_other	          si 'autre', préciser:	fr
+_title_06P	 	en
+_title_06P	 	fr
+_title_07P	DIAGNOSIS	en
+_title_07P	DIAGNOSTIC	fr
+diagnosis_final_main	3) Final main diagnosis	en
+diagnosis_final_main	3) Diagnostic final principal	fr
+diagnosis_final_main_other	          if 'other', specify:	en
+diagnosis_final_main_other	          si 'autre', préciser:	fr
+diagnosis_final_secondary_1	4) Final secondary diagnosis 1	en
+diagnosis_final_secondary_1	4) Diagnostic final secondaire 1	fr
+diagnosis_final_secondary_2	    Final secondary diagnosis 2	en
+diagnosis_final_secondary_2	    Diagnostic final secondaire 2	fr
+diagnosis_final_secondary_other	          if 'other', specify:	en
+diagnosis_final_secondary_other	          si 'autre', préciser:	fr
+_title_08P	 	en
+_title_08P	 	fr
+complications_during_treatment_1	5) Complication during hospitalisation 1	en
+complications_during_treatment_1	5) Complication pendant l'hospitalisation 1	fr
+complications_during_treatment_2	    Complication during hospitalisation 2	en
+complications_during_treatment_2	    Complication pendant l'hospitalisation 2	fr
+complications_during_treatment_3	    Complication during hospitalisation 3	en
+complications_during_treatment_3	    Complication pendant l'hospitalisation 3	fr
+complications_during_treatment_other	          if 'other', specify:	en
+complications_during_treatment_other	          si 'autre', préciser:	fr
+_title_09P	 	en
+_title_09P	 	fr
+_title_10P	OUTCOME / DISCHARGE	en
+_title_10P	RESULTAT / SORTIE	fr
+treatment_outcome	6) Hospitalisation outcome	en
+treatment_outcome	6) Résultat de l'hospitalisation	fr
+referral_external_place_1	7) Referred to where	en
+referral_external_place_1	7) Référé vers où	fr
+referral_external_cause	8) Cause of referral	en
+referral_external_cause	8) Motif de référence	fr
+death_time	9) Death time (hh:mm)	en
+death_time	9) Heure de décès (hh:mm)	fr
+death_48h	     Death < 48h / >48h	en
+death_48h	     Décès < 48h / >48h	fr
+death_cause	10) Death cause	en
+death_cause	10) Cause de décès	fr
+death_cause_other	          if 'other', specify:	en
+death_cause_other	          si 'autre', préciser:	fr
+death_unit	11) Place / service of death	en
+death_unit	11) Lieu / unité du décès	fr
+_title_11P	 	en
+_title_11P	 	fr
+_title_12P	FOLLOW-UP	en
+_title_12P	SUIVI	fr
+fup_needed	12) Follow-up needed	en
+fup_needed	12) Besoin de suivi	fr
+fup_by	13) Follow-up by whom	en
+fup_by	13) Suivi par qui	fr
+fup_date_first	14) Date of first follow-up	en
+fup_date_first	14) Date du premier suivi	fr
+_title_13P	15) Treatment at discharge	en
+_title_13P	15) Traitement à la sortie	fr
+treatment_at_discharge_1	1.	en
+treatment_at_discharge_1	1.	fr
+treatment_at_discharge_2	2.	en
+treatment_at_discharge_2	2.	fr
+treatment_at_discharge_3	3.	en
+treatment_at_discharge_3	3.	fr
+_title_14P	 	en
+_title_14P	 	fr
+comments	Comments	en
+comments	Commentaires	fr

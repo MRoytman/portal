@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>MSF App portal</title>
+<link rel="stylesheet" href="template2.css" type="text/css" media="all" />
+<style>
+.appLinks { //
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	border-style: none; // solid; //
+	border-color: red; //
+	border-width: 1px;
+}
+
+.appLinks table {
+	margin: 10px auto auto auto;
+	padding: 10px;
+}
+
+.appLinks table col {
+	background-color: #CCDBDA;
+}
+
+.appLinks table col:first-child {
+	background-color: #CCC;
+}
+
+.appLinks table tr td {
+	height: 30px;
+	padding: 1em;
+}
+
+.appLinks table tr td:first-child {
+	font-size: 22px;
+}
+</style>
+
+</head>
+<body>
+	<header>
+		<div id='header'>
+			<ol>
+				<li id="headerLeft">
+					<p>
+						<img id='msfLogo' src="head_logo_msf.gif"
+							alt="head_logo_msf.gif" />
+					</p>
+				</li>
+				<li id="headerCenter">
+					<h2 id='title'>
+						MSF - Données médicales
+						</h1>
+						<h2>Lebanon - CNCD</h2>
+						<h2>Partie terrains</h2>
+				</li>
+				<li id="headerRight">
+					<div style="height: 100%;">
+						<input type="text" id="clock" style="padding: 0em;" />
+
+					</div>
+				</li>
+			</ol>
+		</div>
+	</header>
+	<section id="contents">
+		<article>
+			<h3>Introduction</h3>
+			Vous trouverez ci-dessous toutes les informations necessaires pour
+			gérer la collecte de données. La collecte des données patient servira
+			à l'établissement des rapports de statistiques. Lire avec attention
+			toutes les informations de cette page pour comprendre les opérations
+			à éffectuer.
+		</article>
+
+		<article>
+			<h3>Prérequis d'installation</h3>
+			<div class='opGuide'>
+				<ul>
+					<li><b>Avant</b> de lancer le logiciel de saisie de données,
+						assurez vous d'avoir reçu le fichier de configuration
+						"entryFormConfig.xml". Sans ce fichier le logiciel ne pourra pas
+						démarrer. Celui-ci doit vous avoir été fourni par un manager au
+						niveau de la coordination MSF et doit être installé à
+						l'emplacement suivant:<br> "D:\". <br> <b>Note:</b>  L'ordinateur
+						doit donc posséder un disque D et disposer de suffisament de place
+						(au moins 5Mb).</li>
+				</ul>
+			</div>
+		</article>
+		<article>
+			<h3>Les outils à disposition permettent les actions suivantes:</h3>
+			<div class='opGuide'>
+				<ul>
+					<li>Saisir des informations de patients et de consultations
+						dans la base de donnée.</li>
+					<li>Exporter des données de la base de donnée vers le 'Head
+						Quarter'.</li>
+					<li>Consulter des statistiques.</li>
+
+				</ul>
+			</div>
+		</article>
+
+		<article>
+			<h3>Guide rapide d'utilisation</h3>
+			<div class='opGuide'>
+				<ul>
+					<li>Pour lancer le logiciel de saisie des données, cliquer sur
+						le bouton 'Collecte des données'.</li>
+					<li>Pour lancer le logiciel d'export des données, cliquer sur
+						le bouton 'Export des données'. L'export des données est un
+						passage obligé pour produire les statistiques.</li>
+				</ul>
+			</div>
+		</article>
+
+		<article>
+			<h3>Terminologie/Définitions</h3>
+			<ul>
+				<li><b>Console java:</b> Une fenêtre dans laquelle les messages
+					système sont envoyés. <br> Note: Cette fenêtre apparait
+					seulement si l'option 'show console' a été configurée dans la
+					partie java du 'control panel' de Windows. Donc si elle apparait,
+					cette fenêtre peut être minimisée, mais ne doit pas être fermée car
+					elle peut être utilisée pour communiquer des messages d'erreur potentiel.<br>
+					<img id='consoleImg' src="../images/prtscrn_console.jpg"
+					alt="prtscrn_console.jpg" /></li>
+				<li><b>MSF application:</b> Tout logiciel MSF qui est lancé à
+					partir d'un des liens accessible sur ce site.</li>
+
+			</ul>
+		</article>
+
+		<article>
+			<h3>Installation ou démarrage d'une application MSF</h3>
+			<div id="links">
+
+				<ul>
+					<li><b>Avant le démarrage:</b> Il faut s'assurer que
+						l'application (ainsi que la console java) n'est pas déjà lancée.
+						Si c'est le cas, il faut (les) l'arrêter.</li>
+					<li><b>Installation ou démarrage:</b> Le fait de cliquer sur
+						un lien démarre l'application. La première fois, cela va
+						également installer le logiciel et mettre un raccourci sur le
+						bureau de l'ordinateur. Lors du lancement plusieurs boites de
+						dialogue apparaitront successivement. L'une d'entre elle,
+						intitulée "Warning-Security" vous demandera la confirmation du
+						lancement de l'application. Avant de cliquer sur le boutton "Run",
+						cochez la case "Always trust content from this publisher". <br>
+						<img id='downloadImg' src="../images/prtscrn_download.jpg"
+						alt="prtscrn_download.jpg" /><br> <img
+						id='downloadWarningImg' src="../images/prtscrn_warning.jpg"
+						alt="prtscrn_warning.jpg" /><br> Lorsque le logiciel est
+						installé, la fenêtre de l'application apparaitra après quelques
+						minutes (selon la puissance de la machine et de la connectivité).
+						Si la fenêtre de la <i>console java</i> est autorisée, elle
+						apparaitra également.<br></li>
+
+					<li><b>Mots de passes:</b> Les <i>applications MSF</i>
+						'sensibles' sont protégées par mots de passe. Un mot de passe vous
+						sera communiqué si vous êtes autorisé à utiliser l'application en
+						question.</li>
+
+				</ul>
+			</div>
+		</article>
+		<article>
+			<h3>Liens vers les applications MSF</h3>
+			<div class='appLinks'>
+				<table>
+					<col style="" />
+					<col />
+
+					<tr>
+						<td><a
+							href="http://ftp.ocg.msf.org/webstart/CNCD_LB/IPDEntryForm3.0.jnlp"
+							target="_blank">Saisie des données
+							</a></td>
+						<td><a
+							href="http://ftp.ocg.msf.org/webstart/USER_GUIDE_ENTRY_FORM_USER_V_1.2.pdf"
+							target="_blank">User guide</a></td>
+					</tr>
+
+					<tr>
+						<td><a
+							href="http://ftp.ocg.msf.org/webstart/CNCD_LB/IPDImpExp1.6.jnlp"
+							target="_blank">Export des données</a></td>
+						<td><a
+							href="http://ftp.ocg.msf.org/webstart/Java medical Project Empty.pdf"
+							target="_blank">Guide d'utilisation</a></td>
+					</tr>
+
+					<tr>
+						<td><a href="https://qv.ocg.msf.org/qlikview/index.htm"
+							target="_blank">Statistiques</a></td>
+						<td><a
+							href="http://ftp.ocg.msf.org/webstart/Java medical Project Empty.pdf"
+							target="_blank">Guide d'utilisation</a></td>
+					</tr>
+
+				</table>
+			</div>
+		</article>
+
+		<article>
+			<div>
+				<h3>Pour plus d'information</h3>
+				<h5>Historique du projet:</h5>
+				Vous pouvez consulter la présentation <a
+					href="http://ftp.ocg.msf.org/webstart/Java based applications.pps"
+					target="_blank">Introduction to Java based applications needed
+					for MSF medical analysis</a> (en anglais).
+			</div>
+		</article>
+
+	</section>
+
+	<footer>
+		<input type="text" id="clock" style="position: absolute; right: 0;" />
+	</footer>
+	<script>
+		self.setInterval(function() {
+			refreshPage()
+		}, 60000);
+		function refreshPage() {
+			var d = new Date();
+			var t = d.toString();
+			document.getElementById("clock").value = t;
+			location.reload();
+		}
+	</script>
+
+</body>
+</html>

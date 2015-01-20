@@ -1,0 +1,98 @@
+sex	Sex	en
+sex	Sexe	fr
+_title_NUTP003	DEMOGRAPHIC DATA	en
+_title_NUTP003	DONNEES DEMOGRAPHIQUES	fr
+age_in_months	Age in months	en
+age_in_months	Age en mois	fr
+origin_nearest_health_centre	Nearest clinic	en
+origin_nearest_health_centre	Centre de santé le plus proche	fr
+_title_NUTP006	 	en
+_title_NUTP006	 	fr
+_title_NUTP007	ADMISSION	en
+_title_NUTP007	ADMISSION	fr
+admission_type	Referred or spontaneous patient	en
+admission_type	Patient référé / spontané	fr
+referred_by	          if referred, by whom / from where	en
+referred_by	          si référé, par qui / depuis où	fr
+_title_NUTP010	 	en
+_title_NUTP010	 	fr
+_title_NUTP011	Condition at admission	en
+_title_NUTP011	Etat de santé à l'admission	fr
+height_cm	Height  (in cm)	en
+height_cm	Taille  (en cm)	fr
+admission_weight_height	Weight / height	en
+admission_weight_height	Poids / taille	fr
+admission_muac_mm	MUAC  (mm)	en
+admission_muac_mm	MUAC  (mm)	fr
+admission_oedema	Oedema	en
+admission_oedema	Oedèmes	fr
+_title_NUTP016	 	en
+_title_NUTP016	 	fr
+admission_rdt_malaria	Malaria test at admission	en
+admission_rdt_malaria	Test paludisme à l'admission	fr
+_title_NUTP018	 	en
+_title_NUTP018	 	fr
+_title_NUTP019	HISTORY	en
+_title_NUTP019	HISTORIQUE	fr
+tfc_stay_last_2_months	Seen in MSF nut. program during last 2 months	en
+tfc_stay_last_2_months	Vu dans le prog. nut. MSF dans les 2 derniers mois	fr
+tfc_stay_last_2_months_outcome	          if yes - outcome:	en
+tfc_stay_last_2_months_outcome	          si oui - résultat:	fr
+_title_NUTP022	SMC	en
+_title_NUTP022	CPS	fr
+smc_1	1st	en
+smc_1	1er	fr
+smc_2	2nd	en
+smc_2	2ème	fr
+smc_3	3rd	en
+smc_3	3ème	fr
+smc_4	4th	en
+smc_4	4ème	fr
+smc_not_current_year	Not this year	en
+smc_not_current_year	Pas cette année	fr
+smc_unknown	Unknown	en
+smc_unknown	Inconnu	fr
+_title_NUTP029	 	en
+_title_NUTP029	 	fr
+_title_NUTP030	VACCINAL STATUS at discharge	en
+_title_NUTP030	STATUT VACCINAL à la sortie	fr
+vaccinal_status_card	Vaccination card	en
+vaccinal_status_card	Carte de vaccination	fr
+vaccination_pentavalent	Pentavalent	en
+vaccination_pentavalent	Pentavalent	fr
+vaccination_pentavalent_last_dose_in_hosp	          Last dose given on site	en
+vaccination_pentavalent_last_dose_in_hosp	          Dernière dose sur site	fr
+vaccination_afp	AFP	en
+vaccination_afp	Polio	fr
+vaccination_afp_last_dose_in_hosp	          Last dose given on site	en
+vaccination_afp_last_dose_in_hosp	          Dernière dose sur site	fr
+vaccination_measles	Measles	en
+vaccination_measles	Rougeole	fr
+vaccination_measles_last_dose_in_hosp	          Last dose given on site	en
+vaccination_measles_last_dose_in_hosp	          Dernière dose sur site	fr
+vaccination_pcv	PCV	en
+vaccination_pcv	PCV	fr
+vaccination_pcv_last_dose_in_hosp	          Last dose given on site	en
+vaccination_pcv_last_dose_in_hosp	          Dernière dose sur site	fr
+vaccination_rotavirus	Rotavirus	en
+vaccination_rotavirus	Rotavirus	fr
+vaccination_rotavirus_last_dose_in_hosp	          Last dose given on site	en
+vaccination_rotavirus_last_dose_in_hosp	          Dernière dose sur site	fr
+mother_vaccination_tt	Antitetanus vaccination of the mother	en
+mother_vaccination_tt	Vaccin antitétanique de la mère	fr
+mother_vaccination_tt_last_dose_in_hosp	          Last dose given on site	en
+mother_vaccination_tt_last_dose_in_hosp	          Dernière dose sur site	fr
+_title_NUTP044	 	en
+_title_NUTP044	 	fr
+_title_NUTP045	LAST MEASUREMENTS (before discharge)	en
+_title_NUTP045	DERNIERES MESURES (avant sortie)	fr
+discharge_height_cm	Height  (in cm)	en
+discharge_height_cm	Taille  (en cm)	fr
+discharge_muac_mm	MUAC  (mm)	en
+discharge_muac_mm	MUAC  (mm)	fr
+_title_NUTP048	 	en
+_title_NUTP048	 	fr
+comments	Comments	en
+comments	Commentaires	fr
+_title_NUTP050	 	en
+_title_NUTP050	 	fr

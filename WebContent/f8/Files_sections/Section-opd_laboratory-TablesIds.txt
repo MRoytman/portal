@@ -1,0 +1,63 @@
+SectionTable	opd_lab_routine	6	7
+opdlab_1:title01|Label	Title2<COL>opdlab_1:title01|done	Title2<COL>opdlab_1:title01|positive	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:rdt_malaria|Label	Label1<COL>opdlab:rdt_malaria|done	Numeric<COL>opdlab:rdt_malaria|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:smear_malaria|Label	Label1<COL>opdlab:smear_malaria|done	Numeric<COL>opdlab:smear_malaria|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:smear_tb|Label	Label1<COL>opdlab:smear_tb|done	Numeric<COL>opdlab:smear_tb|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:urine_test|Label	Label1<COL>opdlab:urine_test|done	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:stools_test|Label	Label1<COL>opdlab:stools_test|done	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:hemoglobin_test|Label	Label1<COL>opdlab:hemoglobin_test|done	Numeric<COL>opdlab:hemoglobin_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+SectionSeparator
+SectionTable	opd_lab_exams	6	4
+opdlab_2:title01|Label	Title2<COL>opdlab_1:title01|done	Title2<COL>opdlab_1:title01|positive	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdexams:ecg|Label	Label1<COL>opdexams:ecg|done	Numeric<COL>opdexams:ecg|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdexams:ultrasound|Label	Label1<COL>opdexams:ultrasound|done	Numeric<COL>opdexams:ultrasound|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdexams:radiology|Label	Label1<COL>opdexams:radiology|done	Numeric<COL>opdexams:radiology|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+SectionSeparator
+SectionTable	opd_lab_pregnant	6	3
+opdlab_3:title01|Label	Title2<COL>opdlab_1:title01|done	Title2<COL>opdlab_1:title01|positive	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:syphilis_test|pregnant|Label	Label1<COL>opdlab:syphilis_test|pregnant|done	Numeric<COL>opdlab:syphilis_test|pregnant|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:hemoglobin_test|pregnant|Label	Label1<COL>opdlab:hemoglobin_test|pregnant|done	Numeric<COL>opdlab:hemoglobin_test|pregnant|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+SectionSeparator
+SectionTable	opd_lab_transfusions	6	2
+opdlab:blood_transfusions_required|Label	Label1<COL>opdlab:blood_transfusions_required	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:blood_transfusions_provided|Label	Label1<COL>opdlab:blood_transfusions_provided	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+SectionSeparator
+SectionTable	opd_lab_blood_donors_test	6	11
+opdlab_5:title01|Label	Title2<COL>opdlab_1:title01|done	Title2<COL>opdlab_1:title01|positive	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:hiv_test_first|blood_donors|Label	Label1<COL>opdlab:hiv_test_first|blood_donors|done	Numeric<COL>opdlab:hiv_test_first|blood_donors|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:hiv_test_second|blood_donors|Label	Label1<COL>opdlab:hiv_test_second|blood_donors|done	Numeric<COL>opdlab:hiv_test_second|blood_donors|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:hebb_test|blood_donors|Label	Label1<COL>opdlab:hebb_test|blood_donors|done	Numeric<COL>opdlab:hebb_test|blood_donors|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:hebc_test|blood_donors|Label	Label1<COL>opdlab:hebc_test|blood_donors|done	Numeric<COL>opdlab:hebc_test|blood_donors|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:syphilis_test|blood_donors|Label	Label1<COL>opdlab:syphilis_test|blood_donors|done	Numeric<COL>opdlab:syphilis_test|blood_donors|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:hemoglobin_test|blood_donors|Label	Label1<COL>opdlab:hemoglobin_test|blood_donors|done	Numeric<COL>opdlab:hemoglobin_test|blood_donors|done	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab_5:title07|Label	Title2<COL>opdlab_5:title07|done	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:blood_donors_screened|Label	Label1<COL>opdlab:blood_donors_screened	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:blood_donors_available|Label	Label1<COL>opdlab:blood_donors_available	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+SectionSeparator
+SectionTable	opd_lab_vct	6	5
+opdlab:hiv_test_first|vct|Label	Label1<COL>opdlab:hiv_test_first|vct	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:hiv_test_second|vct|Label	Label1<COL>opdlab:hiv_test_second|vct	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:hiv_test_discordant|vct|Label	Label1<COL>opdlab:hiv_test_discordant|vct	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:hiv_test_redone|vct|Label	Label1<COL>opdlab:hiv_test_redone|vct	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:hiv_test_discordant_2|vct|Label	Label1<COL>opdlab:hiv_test_discordant_2|vct	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+SectionSeparator
+SectionTable	opd_lab_other_tests	6	18
+opdlab_7:title01|Label	Title2<COL>opdlab_1:title01|done	Title2<COL>opdlab_1:title01|positive	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:cbc_test|Label	Label1<COL>opdlab:cbc_test|done	Numeric<COL>opdlab:cbc_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:tsh_test|Label	Label1<COL>opdlab:tsh_test|done	Numeric<COL>opdlab:tsh_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:wright_test|Label	Label1<COL>opdlab:wright_test|done	Numeric<COL>opdlab:wright_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:hepatitis_antib_test|Label	Label1<COL>opdlab:hepatitis_antib_test|done	Numeric<COL>opdlab:hepatitis_antib_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:crp_test|Label	Label1<COL>opdlab:crp_test|done	Numeric<COL>opdlab:crp_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:k_test|Label	Label1<COL>opdlab:k_test|done	Numeric<COL>opdlab:k_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:creatinine_test|Label	Label1<COL>opdlab:creatinine_test|done	Numeric<COL>opdlab:creatinine_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:urine_test|other|Label	Label1<COL>opdlab:urine_test|other|done	Numeric<COL>opdlab:urine_test|other|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:widal_test|Label	Label1<COL>opdlab:widal_test|done	Numeric<COL>opdlab:widal_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:sgpt_sgot_test|Label	Label1<COL>opdlab:sgpt_sgot_test|done	Numeric<COL>opdlab:sgpt_sgot_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:stool_microscopy_test|Label	Label1<COL>opdlab:stool_microscopy_test|done	Numeric<COL>opdlab:stool_microscopy_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:bilirubin_test|Label	Label1<COL>opdlab:bilirubin_test|done	Numeric<COL>opdlab:bilirubin_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:urine_culture_test|Label	Label1<COL>opdlab:urine_culture_test|done	Numeric<COL>opdlab:urine_culture_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:rose_bengal_test|Label	Label1<COL>opdlab:rose_bengal_test|done	Numeric<COL>opdlab:rose_bengal_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:esr_test|Label	Label1<COL>opdlab:esr_test|done	Numeric<COL>opdlab:esr_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:pregnancy_test|Label	Label1<COL>opdlab:pregnancy_test|done	Numeric<COL>opdlab:pregnancy_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdlab:other_test|Label	Label1<COL>opdlab:other_test|done	Numeric<COL>opdlab:other_test|positive	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2

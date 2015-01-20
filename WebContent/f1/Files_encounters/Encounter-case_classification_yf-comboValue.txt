@@ -1,0 +1,10 @@
+1	suspected	en
+5	probable	en
+2	confirmed	en
+3	alternative diagnosis	en
+4	unknown	en
+1	suspecté	fr
+5	probable	fr
+2	confirmé	fr
+3	autre diagnostic	fr
+4	inconnu	fr

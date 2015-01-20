@@ -1,0 +1,6 @@
+1	no	en
+2	yes, in emergency	en
+3	yes, programmed	en
+1	non	fr
+2	oui, en urgence	fr
+3	oui, programmée	fr

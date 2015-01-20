@@ -1,0 +1,48 @@
+1	None	en
+2	Depression	en
+3	Anxiety	en
+4	Somatoform disorders	en
+5	Psychosis	en
+6	Substance abuse (due to use of alcohol)	en
+7	Substance abuse (due to use of illicit drug)	en
+8	Personality disorder	en
+9	Bipolar disorder	en
+10	Eating disorder	en
+11	Sexual/relational problems	en
+12	Childhood emotional/conduct disorder	en
+13	ADHD	en
+14	Epilepsy	en
+15	PTSD	en
+16	Others	en
+1	Aucun	fr
+2	Dépression	fr
+3	Anxiété	fr
+4	Troubles somatoformes	fr
+5	Psychose	fr
+6	Abus de substance (dû à l'alcool)	fr
+7	Abus de substance (dû à des drogues illicites)	fr
+8	Trouble de la personnalité	fr
+9	Trouble bipolaire	fr
+10	Trouble de l'alimentation	fr
+11	Problèmes sexuels/relationnels	fr
+12	Troubles émotionnels/du comportement liés à l'enfance	fr
+13	ADHD	fr
+14	Epilepsie	fr
+15	PTSD	fr
+16	Autre	fr
+1	Ningun	es
+2	Depresión	es
+3	Ansiedad	es
+4	Trastoronos somatoformos	es
+5	Trastorono psicótico	es
+6	Abuso de sustancias (debido al consumo de alcohol)	es
+7	Abuso de sustancias (debido al consumo de drogas ilícitas)	es
+8	Trastorno de la personalidad	es
+9	Trastorno bipolar	es
+10	Trastorno de la alimentación	es
+11	Trastornos sexuales/relacionales	es
+12	Trastorno de la personalidad y del comportamiento del niño	es
+13	ADHD	es
+14	Epilepsia	es
+15	PTSD	es
+16	Otro	es

@@ -1,0 +1,8 @@
+1	Artesunate	en
+2	Coartem	en
+3	Arthemeter	en
+other	Other	en
+1	Artesunate	fr
+2	Coartem	fr
+3	Arthemeter	fr
+other	Autre	fr

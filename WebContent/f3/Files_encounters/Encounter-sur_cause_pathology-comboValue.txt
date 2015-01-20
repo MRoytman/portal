@@ -1,0 +1,6 @@
+1	Acute abdominal	en
+2	Periphera pathology	en
+3	Other	en
+1	Abdomen aigü	fr
+2	Lésion périphérique	fr
+3	Autre	fr

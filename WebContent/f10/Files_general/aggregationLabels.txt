@@ -1,0 +1,2 @@
+nutrition_agg	Nutrition	en
+nutrition_agg	Nutrition	fr

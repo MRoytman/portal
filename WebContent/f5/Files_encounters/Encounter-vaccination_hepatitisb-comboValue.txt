@@ -1,0 +1,15 @@
+1	Yes	en
+2	Refused	en
+3	Postponed	en
+4	Not Necessary	en
+5	Covered	en
+1	Oui	fr
+2	Refusé	fr
+3	Reporté	fr
+4	Pas nécessaire	fr
+5	Couvert	fr
+1	Sí	es
+2	Rechazado	es
+3	Postpuesto	es
+4	No necesario	es
+5	Cubierto	es

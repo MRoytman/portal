@@ -1,0 +1,12 @@
+1	Head	en
+2	Abdomen	en
+3	Chest	en
+4	Back	en
+5	Extremities	en
+6	Multiple Injury Locations	en
+1	Cabeza	es
+2	Abdomen	es
+3	Torax	es
+4	Espalda	es
+5	Extremidades	es
+6	Lesiones Multiples	es

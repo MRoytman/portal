@@ -1,0 +1,8 @@
+1	Private Vehicle	en
+2	Taxi or Bus	en
+3	Ambulance/Police/Fire	en
+other	Other	en
+1	Vehiculo privado	es
+2	Autobus o Taxi	es
+3	Ambulancia/Policia/Bomberos	es
+other	Otros	es

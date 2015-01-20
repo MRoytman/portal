@@ -1,0 +1,10 @@
+1	Clinic	en
+2	Home	en
+3	Group	en
+4	School	en
+other	Other	en
+1	Clinique	fr
+2	Domicile	fr
+3	Séance de groupe	fr
+4	Ecole	fr
+other	autre	fr

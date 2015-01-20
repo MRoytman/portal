@@ -1,0 +1,10 @@
+1	Mutual agreement	en
+2	Patient's decision	en
+3	No psychological complaint	en
+4	Defaulter	en
+other	Other	en
+1	Accord mutuel	fr
+2	Décision du patient	fr
+3	Pas de plainte psychologique	fr
+4	Abandon	fr
+other	Autre	fr

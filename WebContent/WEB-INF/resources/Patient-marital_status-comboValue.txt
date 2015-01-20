@@ -1,0 +1,10 @@
+1	Single	en
+1	célibataire	fr
+2	Married	en
+2	marié-e	fr
+3	Divorced / separated	en
+3	séparé-e / divorcé-e	fr
+4	Widowed	en
+4	veuf/veuve	fr
+unknown	Unknown	en
+unknown	inconnu	fr

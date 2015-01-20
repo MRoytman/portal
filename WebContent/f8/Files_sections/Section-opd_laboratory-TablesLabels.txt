@@ -1,0 +1,106 @@
+opdlab_1:title01|Label	Type of test	en
+opdlab:rdt_malaria|Label	Malaria rapid tests	en
+opdlab:smear_malaria|Label	Malaria smears	en
+opdlab:smear_tb|Label	TB smears	en
+opdlab:urine_test|Label	Urine	en
+opdlab:stools_test|Label	Stools	en
+opdlab:hemoglobin_test|Label	Hemoglobin	en
+opdlab_1:title01|done	Done	en
+opdlab_1:title01|positive	Positive/abnormal	en
+_title_blank	 	en
+opdlab_2:title01|Label	Type of exam	en
+opdexams:ecg|Label	ECG	en
+opdexams:ultrasound|Label	Ultrasound	en
+opdexams:radiology|Label	Radiology	en
+opdlab_3:title01|Label	Type of test	en
+opdlab:syphilis_test|pregnant|Label	Syphilis	en
+opdlab:hemoglobin_test|pregnant|Label	Hemoglobin	en
+opdlab:blood_transfusions_required|Label	Transfusions required	en
+opdlab:blood_transfusions_provided|Label	Transfusions provided	en
+opdlab_5:title01|Label	Tests for blood donors	en
+opdlab:hiv_test_first|blood_donors|Label	HIV first tests	en
+opdlab:hiv_test_second|blood_donors|Label	HIV second tests	en
+opdlab:hebb_test|blood_donors|Label	Hepatitis B tests	en
+opdlab:hebc_test|blood_donors|Label	Hepatitis C tests	en
+opdlab:syphilis_test|blood_donors|Label	Syphilis tests	en
+opdlab:hemoglobin_test|blood_donors|Label	Hemoglobin	en
+opdlab_5:title07|Label	Blood donors	en
+opdlab:blood_donors_screened|Label	Blood donors screened	en
+opdlab:blood_donors_available|Label	Compatible blood donors available	en
+opdlab_5:title07|done	N	en
+opdlab:hiv_test_first|vct|Label	HIV first tests (VCT)	en
+opdlab:hiv_test_second|vct|Label	HIV second tests (VCT)	en
+opdlab:hiv_test_discordant|vct|Label	HIV discordant tests	en
+opdlab:hiv_test_redone|vct|Label	HIV tests redone because discordant	en
+opdlab:hiv_test_discordant_2|vct|Label	HIV tests redone and still discordant	en
+opdlab_7:title01|Label	Type of test	en
+opdlab:cbc_test|Label	CBC	en
+opdlab:tsh_test|Label	TSH	en
+opdlab:wright_test|Label	Wright	en
+opdlab:hepatitis_antib_test|Label	Hepatitis antib.	en
+opdlab:crp_test|Label	CRP	en
+opdlab:k_test|Label	K	en
+opdlab:creatinine_test|Label	Creatinine	en
+opdlab:urine_test|other|Label	Urine	en
+opdlab:widal_test|Label	Widal	en
+opdlab:sgpt_sgot_test|Label	SGPT/SGOT	en
+opdlab:stool_microscopy_test|Label	Stool microscopy	en
+opdlab:bilirubin_test|Label	Bilirubin	en
+opdlab:urine_culture_test|Label	Urine culture	en
+opdlab:rose_bengal_test|Label	Rose-Bengal	en
+opdlab:esr_test|Label	ESR	en
+opdlab:pregnancy_test|Label	Pregnancy	en
+opdlab:other_test|Label	Other	en
+opdlab_1:title01|Label	Type de test	fr
+opdlab:rdt_malaria|Label	Test rapide paludisme	fr
+opdlab:smear_malaria|Label	Frottis paludisme	fr
+opdlab:smear_tb|Label	Frottis TB	fr
+opdlab:urine_test|Label	Urine	fr
+opdlab:stools_test|Label	Selles	fr
+opdlab:hemoglobin_test|Label	Hémoglobine	fr
+opdlab_1:title01|done	Fait	fr
+opdlab_1:title01|positive	Positif/anormal	fr
+_title_blank	 	fr
+opdlab_2:title01|Label	Type d'examen	fr
+opdexams:ecg|Label	ECG	fr
+opdexams:ultrasound|Label	Ultrason	fr
+opdexams:radiology|Label	Ragiologie	fr
+opdlab_3:title01|Label	Type de test	fr
+opdlab:syphilis_test|pregnant|Label	Syphilis	fr
+opdlab:hemoglobin_test|pregnant|Label	Hémoglobine	fr
+opdlab:blood_transfusions_required|Label	Transfusions demandées	fr
+opdlab:blood_transfusions_provided|Label	Transfusions réalisées	fr
+opdlab_5:title01|Label	Total	fr
+opdlab:hiv_test_first|blood_donors|Label	Premier test VIH	fr
+opdlab:hiv_test_second|blood_donors|Label	Deuxième test VIH	fr
+opdlab:hebb_test|blood_donors|Label	Test Hépatite B	fr
+opdlab:hebc_test|blood_donors|Label	Test Hépatite C	fr
+opdlab:syphilis_test|blood_donors|Label	Tests syphilis	fr
+opdlab:hemoglobin_test|blood_donors|Label	Hémoglobine	fr
+opdlab_5:title07|Label	Donneurs de sang	fr
+opdlab:blood_donors_screened|Label	Donneurs de sang screenés	fr
+opdlab:blood_donors_available|Label	Donneurs compatibles disponibles	fr
+opdlab_5:title07|done	N	fr
+opdlab:hiv_test_first|vct|Label	Premier test VIH (VCT)	fr
+opdlab:hiv_test_second|vct|Label	Deuxième test VIH (VCT)	fr
+opdlab:hiv_test_discordant|vct|Label	Test VIH discordants	fr
+opdlab:hiv_test_redone|vct|Label	Test VIH refaits car discordants	fr
+opdlab:hiv_test_discordant_2|vct|Label	Test VIH refaits et encore discordants	fr
+opdlab_7:title01|Label	Type de test	fr
+opdlab:cbc_test|Label	CBC	fr
+opdlab:tsh_test|Label	TSH	fr
+opdlab:wright_test|Label	Wright	fr
+opdlab:hepatitis_antib_test|Label	Hépatite antib.	fr
+opdlab:crp_test|Label	CRP	fr
+opdlab:k_test|Label	K	fr
+opdlab:creatinine_test|Label	Créatinine	fr
+opdlab:urine_test|other|Label	Urine	fr
+opdlab:widal_test|Label	Widal	fr
+opdlab:sgpt_sgot_test|Label	SGPT/SGOT	fr
+opdlab:stool_microscopy_test|Label	Microscopie selles	fr
+opdlab:bilirubin_test|Label	Bilirubine	fr
+opdlab:urine_culture_test|Label	Culture urine	fr
+opdlab:rose_bengal_test|Label	Rose-Bengal	fr
+opdlab:esr_test|Label	ESR	fr
+opdlab:pregnancy_test|Label	Grossesse	fr
+opdlab:other_test|Label	Autre	fr

@@ -1,0 +1,6 @@
+1	Done	en
+2	Not done	en
+1	Fait	fr
+2	Pas fait	fr
+1	Hecho	es
+2	No hecho	es

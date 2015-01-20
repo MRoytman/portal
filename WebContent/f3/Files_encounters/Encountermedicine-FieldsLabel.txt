@@ -1,0 +1,136 @@
+_title_med_01	MEDICAL HISTORY	en
+_title_med_01	ANTECEDENTS	fr
+_title_med_02	Medical antecedents	en
+_title_med_02	Antécédents médicaux	fr
+antecedents_htn	HTN	en
+antecedents_htn	HTA	fr
+antecedents_diabetes	Diabetes	en
+antecedents_diabetes	Diabètes	fr
+antecedents_cva	CVA	en
+antecedents_cva	AVC	fr
+antecedents_hiv	HIV	en
+antecedents_hiv	VIH	fr
+antecedents_tb	TB	en
+antecedents_tb	TB	fr
+antecedents_med_edical_specify	Other medical antecedents:	en
+antecedents_med_edical_specify	Autres antécédents médicaux:	fr
+_title_med_03	Surgical antecedents	en
+_title_med_03	Antécédents chirurgicaux	fr
+antecedents_csection	C-Section	en
+antecedents_csection	Césarienne	fr
+antecedents_surgical_other	Other surgical antecedents:	en
+antecedents_surgical_other	Autres antécédents chirurgicaux:	fr
+_title_med_04	Obstetric antecedents	en
+_title_med_04	Antédécents obstétriques	fr
+antecedents_gestity	Number of pregnancies	en
+antecedents_gestity	Gestité	fr
+antecedents_parity	Number of deliveries	en
+antecedents_parity	Parité	fr
+_title_med_05	 	en
+_title_med_05	 	fr
+antecedents_chronic_treatment_specify	Chronique treatment:	en
+antecedents_chronic_treatment_specify	Traitement chronique:	fr
+_title_med_06	 	en
+_title_med_06	 	fr
+_title_med_07	Clinical examination at admission	en
+_title_med_07	Examen d'entrée / d'admission	fr
+medicine_emergency	Degree of emergency	en
+medicine_emergency	Degré d'urgence	fr
+_title_med_08	Vital signs:	en
+_title_med_08	Signes cliniques:	fr
+coma	Coma	en
+coma	Coma	fr
+abp_diastolic	Arterial Blood Pressure (ABP) mmHg - diastolic:	en
+abp_diastolic	Tension Artérielle (TA) mmHg - diastolique:	fr
+abp_systolic	               systolic:	en
+abp_systolic	               systolique:	fr
+pulse	Pulse	en
+pulse	Pouls	fr
+respiratory_rate	Respiratory Rate (RR)	en
+respiratory_rate	Rythme Respiraoire (RR)	fr
+temperature	Temperature (°C)	en
+temperature	Température (°C)	fr
+_title_med_09	Laboratory	en
+_title_med_09	Laboratoire	fr
+hemoglobin_gdl	Hemoglobin (g/dl)	en
+hemoglobin_gdl	Hémoglobine (g/dl)	fr
+glycaemia	Glycaemia (g/dl)	en
+glycaemia	Glycémie (g/dl)	fr
+proteinuria	Proteinuria (g/24h)	en
+proteinuria	Protéinurie (g/24h)	fr
+creatinine	Creatinine	en
+creatinine	Créatinine	fr
+_title_med_10	 	en
+_title_med_10	 	fr
+_title_med_11	TREATMENTS GIVEN	en
+_title_med_11	TRAITEMENTS DONNES	fr
+treatment_oxygen_therapy	Oxygen therapy	en
+treatment_oxygen_therapy	Oxygénothérapie	fr
+treatment_oxygen_therapy_duration	          duration (hh:mm)	en
+treatment_oxygen_therapy_duration	          durée (hh:mm)	fr
+treatment_antibiotherapy_line1	Antibiotherapy - 1st line	en
+treatment_antibiotherapy_line1	Antibiothérapie - 1ère ligne	fr
+treatment_antibiotherapy_line2	          2nd line	en
+treatment_antibiotherapy_line2	          2ème ligne	fr
+treatment_antibiotherapy_duration	          duration (days)	en
+treatment_antibiotherapy_duration	          durée (jours)	fr
+treatment_blood_transfusion	Blood transfusion	en
+treatment_blood_transfusion	Transfusion sanguine	fr
+treatment_blood_transfusion_bags_nb	          nb of blood bags given	en
+treatment_blood_transfusion_bags_nb	          nb de proches de sang données	fr
+treatment_antitb	TB treatment	en
+treatment_antitb	Antituberculeux	fr
+treatment_antiemetics	Anti emetics	en
+treatment_antiemetics	Antiémétiques	fr
+treatment_rehydration_2000mld	Rehydration > 2000 ml/d	en
+treatment_rehydration_2000mld	Réhydratation > 2000 ml/j	fr
+treatment_antihtn	Anti hypertensive drugs	en
+treatment_antihtn	Anti hypertensifs	fr
+treatment_vasodilatator	Vaso-dilatators	en
+treatment_vasodilatator	Vasodilatateurs	fr
+treatment_anticoagulant	Anticoagulants	en
+treatment_anticoagulant	Anticoagulants	fr
+treatment_insulin	Insulin	en
+treatment_insulin	Insuline	fr
+treatment_antidiabetes_oral	Oral anti-diabetics	en
+treatment_antidiabetes_oral	Antidiabétiques oraux	fr
+treatment_antiinflamatory	Non Steroidal Anti-Inflammatory	en
+treatment_antiinflamatory	Anti inflammatoires	fr
+treatment_morphinomimetica	Morphinomimetica	en
+treatment_morphinomimetica	Morphino-mimétiques	fr
+treatment_physiotherapy_resp	Physiotherapy respiratory	en
+treatment_physiotherapy_resp	Physiothérapie respiratoire	fr
+treatment_physiotherapy	Physiotherapy motricity	en
+treatment_physiotherapy	Physiothérapie motrice	fr
+treatment_phsychotherapy	Psychology session	en
+treatment_phsychotherapy	Séance de psychologie	fr
+treatment_other1	Other treatment - 1:	en
+treatment_other1	Autre traitement - 1:	fr
+treatment_other2	Other treatment - 2:	en
+treatment_other2	Autre traitement - 2:	fr
+treatment_other3	Other treatment - 3:	en
+treatment_other3	Autre traitement - 3:	fr
+_title_med_12	 	en
+_title_med_12	 	fr
+_title_med_13	Other complications/ conditions during admission	en
+_title_med_13	Autres complications / problèmes durant l’hospitalisation	fr
+complication_rti	Infections respiratoires	en
+complication_rti	Insuffisance respiratoire	fr
+complication_diabetic_decompensation	Diabetic decompensation	en
+complication_diabetic_decompensation	Décompensation diabétique	fr
+complication_hypertensive_crisis	Hypertensive crisis	en
+complication_hypertensive_crisis	Crise hypertensive	fr
+complication_cardiac_ecompensation	Cardiac decompensation	en
+complication_cardiac_ecompensation	Décompensation cardiaque	fr
+complication_coma	Coma	en
+complication_coma	Coma	fr
+complication_renal_insufficiency	Renal insufficiency	en
+complication_renal_insufficiency	Insuffisance rénale	fr
+complication_hepatic_insufficiency	Hepatic insufficiency	en
+complication_hepatic_insufficiency	Insuffisance hépatique	fr
+complication_other1	Other complication 1	en
+complication_other1	Autre complication 1	fr
+complication_other2	Other complication 2	en
+complication_other2	Autre complication 2	fr
+complication_other3	Other complication 3	en
+complication_other3	Autre complication 3	fr

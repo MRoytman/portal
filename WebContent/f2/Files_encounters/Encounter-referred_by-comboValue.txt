@@ -1,0 +1,16 @@
+3	MSF medical team	en
+4	MSF CHW	en
+5	School	en
+6	Family / friends	en
+7	Himself	en
+8	Patient (MSF)	en
+9	NGO	en
+other	Other	en
+3	Equipe médicale MSF	fr
+4	Travailleur/se de santé communautaire	fr
+5	Ecole	fr
+6	Famille / amis	fr
+7	Lui-même	fr
+8	Patient (MSF)	fr
+9	ONG	fr
+other	Autre	fr

@@ -1,0 +1,6 @@
+1	mild	en
+2	moderate	en
+3	severe	en
+1	léger	fr
+2	modéré	fr
+3	sévère	fr

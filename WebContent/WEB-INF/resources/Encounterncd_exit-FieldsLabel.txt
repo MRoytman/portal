@@ -1,0 +1,12 @@
+_title_NCDE3002	EXIT FROM CNDC PROGRAM	en
+_title_NCDE3002	SORTIE DU PROGRAMME MNT	fr
+_title_NCDE3003	 	en
+_title_NCDE3003	 	fr
+ncd_exit	Type of exit	en
+ncd_exit	Type de sortie	fr
+_title_NCDE3005	 	en
+_title_NCDE3005	 	fr
+comments	Comments	en
+comments	Commentaires	fr
+_title_NCDE2007	 	en
+_title_NCDE2007	 	fr

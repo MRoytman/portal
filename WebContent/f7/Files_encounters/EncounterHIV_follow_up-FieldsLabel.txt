@@ -1,0 +1,68 @@
+_title_hivfup_01	FOLLOW-UP	en
+_title_hivfup_01	SUIVI	fr
+hiv_fup_consultation_on_time	Patient's coming	en
+hiv_fup_consultation_on_time	Venue du patient	fr
+hiv_fup_no_change	Is going well or minor problem = no change	en
+hiv_fup_no_change	Va bien ou problème mineur = pas de changement	fr
+weight_kg	Weight (in Kg)	en
+weight_kg	Poids (en Kg)	fr
+_title_hivfup_02	 	en
+_title_hivfup_02	 	fr
+_title_hivfup_03	LAB EXAMS	en
+_title_hivfup_03	EXAMENS DE LABORATOIRE	fr
+haemoglobin_g_dl	Hb (in g/dl)	en
+haemoglobin_g_dl	Hb (en g/dl)	fr
+creatinine_clearance	clearance creatininemia (in ml/min)	en
+creatinine_clearance	clairance de la créatinine (en ml/min)	fr
+cd4	CD4	en
+cd4	CD4	fr
+lab_analysis_other	Other significant result	en
+lab_analysis_other	Autre résultat significatif	fr
+_title_hivfup_04	 	en
+_title_hivfup_04	 	fr
+_title_hivfup_05	CLINICAL EVALUATION	en
+_title_hivfup_05	EVALUATION CLINIQUE	fr
+hiv_oi_new_stage	Grade of eventual new OI	en
+hiv_oi_new_stage	Grade des éventuelles nouvelles IO	fr
+hiv_tb_coinfection_new	New diagnosis of TB	en
+hiv_tb_coinfection_new	TB nouvellement diagnostiquée	fr
+hiv_intercurrent_condition_severe	Severe intercurrent condition but no OI	en
+hiv_intercurrent_condition_severe	Maladie concomitante sévère (pas IO)	fr
+hiv_drug_side_effect	Drug side effect	en
+hiv_drug_side_effect	Effets secondaires médicamenteux	fr
+_title_hivfup_06	 	en
+_title_hivfup_06	 	fr
+_title_hivfup_07	TREATMENT	en
+_title_hivfup_07	TRAITEMENT	fr
+hiv_arv_regimen_1	ARV treatment - regimen	en
+hiv_arv_regimen_1	Traitement ARV - régime	fr
+hiv_arv_event_1	          event	en
+hiv_arv_event_1	          événement	fr
+hiv_arv_regimen_2	ARV treatment - regimen	en
+hiv_arv_regimen_2	Traitement ARV - régime	fr
+hiv_arv_event_2	          event	en
+hiv_arv_event_2	          événement	fr
+tb_treatment_category_1	TB treatment - category	en
+tb_treatment_category_1	Traitement TB - catégorie	fr
+tb_treatment_event_1	          event	en
+tb_treatment_event_1	          événement	fr
+tb_treatment_category_2	TB treatment - category	en
+tb_treatment_category_2	Traitement TB - catégorie	fr
+tb_treatment_event_2	          event	en
+tb_treatment_event_2	          événement	fr
+prophylaxis_ipt	Isoniazid Prophylaxis Traitement (IPT)	en
+prophylaxis_ipt	Traitement prophylactique à l'isionazide (IPT)	fr
+prophylaxis_cotrimoxazole	CTX prophylaxis	en
+prophylaxis_cotrimoxazole	Prophylaxie au CTX	fr
+rutf_rusf	Nutritional supplementation (RUTF/RUSF)	en
+rutf_rusf	Supplémentation nutritionnelle (RUTF/RUSF)	fr
+_title_hivfup_08	 	en
+_title_hivfup_08	 	fr
+_title_hivfup_09	COUNSELLING	en
+_title_hivfup_09	CONSEIL	fr
+observance_problem	Problem of observance this month	en
+observance_problem	Problème d'observance pendant le mois	fr
+appointment_next_date	Date of next appointment	en
+appointment_next_date	Date du prochain rendez-vos	fr
+comments	Comments	en
+comments	Commentaires	fr

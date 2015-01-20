@@ -1,0 +1,66 @@
+- trouver une technologie de db embarquée
+	-> h2
+- choisir une technologie adéquate pour mettre à jour la db avec les inombrables changements que l'on peut attendre
+	-> liquibase
+- trouver un moyen d'appler à partir de java
+	-> ok, fait classe de test
+
+- creation des entités country, project, carecenter avec ids
+	- ces entités sont destinées à la configuration.
+	- elle devront être créées dans la db embarquée lors de la création de l'application.
+
+- une table des pays de référence doit Être créée et disponible pour tout ajout de pays dans la configuration (admin).
+	- donc le programme d'admin doit checker la présence du fichier adminConfig.xml
+	- le programme de saisie n'aura pas les mêmes données dans le fichier adminConfig.xml
+	
+	
+	
+	Les césures/break down.....-> voir cahier
+	
+- production de 2 jars (admin entryform) à partir du mm pom
+- production du fichier dicoAllCountriesConfig.xml
+- intégration du fichier dicoAllCountriesConfig.xml à la configuration.
+
+- recherche d'un composant dual list pour la sélection des countries.
+- intégration du composant avec le fichier général des countries dicoAllCountriesConfig.xml
+- mise au point, intégration du nouveau composant comme 2ieme étape dans le wizard.
+- mise au point de l'admin en java web start.
+
+- convertion du project à jpa
+	download EclipseLink 2.4.0 Installer  pour les jars (http://www.eclipse.org/eclipselink/downloads/)
+	convertion du projet eclipse avec utilisation du wizard après avoir ajouté dans windows-pref une user library  basée sur les jars eclipselink.jar et  javax.persistence_*.jar
+
+- réalisation d'un projet test pour jpa (http://www.vogella.com/articles/JavaPersistenceAPI/article.html)
+	test avec succes sur db h2, création et maj table todo.
+	test avec succes sur db h2, création et maj relationel table family, person...
+	
+- intégration du fichier list_countries.csv par la techno JPA (gestion des relations country <-> countryname)
+	au lieu de la production du dicoAllCountriesConfig.xml par liquibase pour la configuration des allcountries.
+
+- Utilisation de spring jpa -> http://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-part-one-configuration/
+		gdt.jar inclu ceci (équivalent au pom du tutorial pour spring ?)
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring</artifactId>
+				<version>2.5.6</version>
+			</dependency>
+			
+-  use configurationManager for AdminConfigLoader.getDefaultLanguage()	
+
+- test de la gestion maven des modules (initié car pensant pouvoir mettre un persistence.xml à plusieurs sous projets).
+	la réalisation avec cette version d'éclipse n'est pas un plein succès.
+	si B est un module de A et que B fait reference à A il y a un problème de dépendence car eclipse n'intègre pas A dans le classpathentry de B (ni l'inverse).
+		-> Workaround: il faut ajouter le projet A dans le path de B. (pourtant cela semble être ok avec openmrs)
+		->		il faut intégrer A comme dependency dans le pom B. (parent ne suffit pas)
+		-> pour install maven, il faut bien faire un install de A avant celui de B.
+		
+		
+- modification du projet test jpa pour tester la gestion programmatique des paramètres des 2 DBs.
+			
+			----TODO----PENDING----
+			
+					// TODO.......
+					
+	- disable du next si changement de la liste des concepts encounter ou patient
+
+			voir db admin fichier de trace...exceptions

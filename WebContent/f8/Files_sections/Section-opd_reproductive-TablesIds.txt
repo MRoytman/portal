@@ -1,0 +1,47 @@
+SectionTable	opd_antenatal	5	7
+opdrepro:title22|Label	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:anc|1|Label	Label1<COL>opdrepro:anc|1	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:anc|other|Label	Label1<COL>opdrepro:anc|other	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:anc|Tot|Label	Label1<COL>opdrepro:anc|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:title26|Label	Label1<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:voucher|Label	Label1<COL>opdrepro:voucher	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:plan_delivery|Label	Label1<COL>opdrepro:plan_delivery	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+SectionSeparator
+SectionTable	opd_pregnancy	5	4
+opdrepro:title37|Label	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:sp2|Label	Label1<COL>opdrepro:sp2	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:bednets|Label	Label1<COL>opdrepro:bednets	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:safe_delivery_kit|Label	Label1<COL>opdrepro:safe_delivery_kit	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+SectionSeparator
+SectionTable	opd_postnatal	5	9
+opdrepro:title49|Label	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:pnc|1|Label	Label1<COL>opdrepro:pnc|1	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:pnc|other|Label	Label1<COL>opdrepro:pnc|other	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:pnc|Tot|Label	Label1<COL>opdrepro:pnc|Tot	Calculated<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:title53|Label	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:nvd|Label	Label1<COL>opdrepro:nvd	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:cs|Label	Label1<COL>opdrepro:cs	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:neonatal_death|Label	Label1<COL>opdrepro:neonatal_death	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+opdrepro:complication|Label	Label1<COL>opdrepro:complication	Numeric<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+SectionSeparator
+SectionTable	opd_family_planning	5	9
+opdrepro:title66|Label	Title2<COL>opdrepro:title66|NC	Title2<COL>opdrepro:title66|FUP	Title2<COL>opdrepro:title66|stop	Title2<COL>opdrepro:title66|Tot	Title2
+opdrepro:fp_injection|Label	Label1<COL>opdrepro:fp_injection|NC	Numeric<COL>opdrepro:fp_injection|FUP	Numeric<COL>opdrepro:fp_injection|stop	Numeric<COL>opdrepro:fp_injection|Tot	Calculated
+opdrepro:fp_oral|Label	Label1<COL>opdrepro:fp_oral|NC	Numeric<COL>opdrepro:fp_oral|FUP	Numeric<COL>opdrepro:fp_oral|stop	Numeric<COL>opdrepro:fp_oral|Tot	Calculated
+opdrepro:fp_iud|Label	Label1<COL>opdrepro:fp_iud|NC	Numeric<COL>opdrepro:fp_iud|FUP	Numeric<COL>opdrepro:fp_iud|stop	Numeric<COL>opdrepro:fp_iud|Tot	Calculated
+opdrepro:fp_condom|Label	Label1<COL>opdrepro:fp_condom|NC	Numeric<COL>opdrepro:fp_condom|FUP	Numeric<COL>opdrepro:fp_condom|stop	Numeric<COL>opdrepro:fp_condom|Tot	Calculated
+opdrepro:fp_implant|Label	Label1<COL>opdrepro:fp_implant|NC	Numeric<COL>opdrepro:fp_implant|FUP	Numeric<COL>opdrepro:fp_implant|stop	Numeric<COL>opdrepro:fp_implant|Tot	Calculated
+opdrepro:fp_surgery|Label	Label1<COL>opdrepro:fp_surgery|NC	Numeric<COL>opdrepro:fp_surgery|FUP	Numeric<COL>opdrepro:fp_surgery|stop	Numeric<COL>opdrepro:fp_surgery|Tot	Calculated
+opdrepro:fp_other|Label	Label1<COL>opdrepro:fp_other|NC	Numeric<COL>opdrepro:fp_other|FUP	Numeric<COL>opdrepro:fp_other|stop	Numeric<COL>opdrepro:fp_other|Tot	Calculated
+opdrepro:fp_all|Label	Label1<COL>opdrepro:fp_all|NC	Calculated<COL>opdrepro:fp_all|FUP	Calculated<COL>opdrepro:fp_all|stop	Calculated<COL>opdrepro:fp_all|Tot	Calculated
+SectionSeparator
+SectionTable	opd_repro_not_pregnant	5	9
+opdrepro:title83|Label	Title2<COL>opdrepro:title83|NC	Title2<COL>opdrepro:title83|FUP	Title2<COL>opdrepro:title83|Tot	Title2<COL>_title_blank	Title2
+opdrepro:post_abortion_infection|Label	Label1<COL>opdrepro:post_abortion_infection|NC	Numeric<COL>opdrepro:post_abortion_infection|FUP	Numeric<COL>opdrepro:post_abortion_infection|Tot	Calculated<COL>_title_blank	Title2
+opdrepro:uti|Label	Label1<COL>opdrepro:uti|NC	Numeric<COL>opdrepro:uti|FUP	Numeric<COL>opdrepro:uti|Tot	Calculated<COL>_title_blank	Title2
+opdrepro:menstrual_disorder|Label	Label1<COL>opdrepro:menstrual_disorder|NC	Numeric<COL>opdrepro:menstrual_disorder|FUP	Numeric<COL>opdrepro:menstrual_disorder|Tot	Calculated<COL>_title_blank	Title2
+opdrepro:abortion|Label	Label1<COL>opdrepro:abortion|NC	Numeric<COL>opdrepro:abortion|FUP	Numeric<COL>opdrepro:abortion|Tot	Calculated<COL>_title_blank	Title2
+opdrepro:genital_infection|Label	Label1<COL>opdrepro:genital_infection|NC	Numeric<COL>opdrepro:genital_infection|FUP	Numeric<COL>opdrepro:genital_infection|Tot	Calculated<COL>_title_blank	Title2
+opdrepro:fistula|Label	Label1<COL>opdrepro:fistula|NC	Numeric<COL>opdrepro:fistula|FUP	Numeric<COL>opdrepro:fistula|Tot	Calculated<COL>_title_blank	Title2
+opdrepro:other|Label	Label1<COL>opdrepro:other|NC	Numeric<COL>opdrepro:other|FUP	Numeric<COL>opdrepro:other|Tot	Calculated<COL>_title_blank	Title2
+opdrepro:consult_not_pregnant_all|Label	Label1<COL>opdrepro:consult_not_pregnant_all|NC	Calculated<COL>opdrepro:consult_not_pregnant_all|FUP	Calculated<COL>opdrepro:consult_not_pregnant_all|Tot	Calculated<COL>_title_blank	Title2

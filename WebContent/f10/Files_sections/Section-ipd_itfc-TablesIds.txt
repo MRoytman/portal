@@ -1,0 +1,38 @@
+SectionTable	itfc_admissions	4	15
+itfc:title22|Label	Label1<COL>itfc:title22|6m-59m	Title2<COL>itfc:title22|1m-5m	Title2<COL>itfc:title22|Tot	Title2
+itfc:admission|all|Label	Label1<COL>itfc:admission|all|6m-59m	Calculated<COL>itfc:admission|all|1m-5m	Calculated<COL>itfc:admission|all|Tot	Calculated
+itfc:title24|Label	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+itfc:admission|old|transferred|atfc|Label	Label1<COL>itfc:admission|old|transferred|atfc|6m-59m	Numeric<COL>itfc:admission|old|transferred|atfc|1m-5m	Numeric<COL>itfc:admission|old|transferred|atfc|Tot	Calculated
+itfc:admission|new|spontaneous|Label	Label1<COL>itfc:admission|new|spontaneous|6m-59m	Numeric<COL>itfc:admission|new|spontaneous|1m-5m	Numeric<COL>itfc:admission|new|spontaneous|Tot	Calculated
+itfc:title27|Label	Label1<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+itfc:admission|new|referred|atfc_msf|Label	Label1<COL>itfc:admission|new|referred|atfc_msf|6m-59m	Numeric<COL>itfc:admission|new|referred|atfc_msf|1m-5m	Numeric<COL>itfc:admission|new|referred|atfc_msf|Tot	Calculated
+itfc:admission|new|referred|tfc_non_msf|Label	Label1<COL>itfc:admission|new|referred|tfc_non_msf|6m-59m	Numeric<COL>itfc:admission|new|referred|tfc_non_msf|1m-5m	Numeric<COL>itfc:admission|new|referred|tfc_non_msf|Tot	Calculated
+itfc:admission|new|referred|moh_clinic|Label	Label1<COL>itfc:admission|new|referred|moh_clinic|6m-59m	Numeric<COL>itfc:admission|new|referred|moh_clinic|1m-5m	Numeric<COL>itfc:admission|new|referred|moh_clinic|Tot	Calculated
+itfc:admission|new|referred|hospital|Label	Label1<COL>itfc:admission|new|referred|hospital|6m-59m	Numeric<COL>itfc:admission|new|referred|hospital|1m-5m	Numeric<COL>itfc:admission|new|referred|hospital|Tot	Calculated
+itfc:admission|new|referred|other|Label	Label1<COL>itfc:admission|new|referred|other|6m-59m	Numeric<COL>itfc:admission|new|referred|other|1m-5m	Numeric<COL>itfc:admission|new|referred|other|Tot	Calculated
+_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+itfc:title34|Label	Label1<COL>itfc:title22|6m-59m	Title2<COL>itfc:title22|1m-5m	Title2<COL>itfc:title22|Tot	Title2
+itfc:rdt_malaria|done|Label	Label1<COL>itfc:rdt_malaria|done|6m-59m	Numeric<COL>itfc:rdt_malaria|done|1m-5m	Numeric<COL>itfc:rdt_malaria|done|Tot	Calculated
+itfc:rdt_malaria|positive|Label	Label1<COL>itfc:rdt_malaria|positive|6m-59m	Numeric<COL>itfc:rdt_malaria|positive|1m-5m	Numeric<COL>itfc:rdt_malaria|positive|Tot	Calculated
+SectionSeparator
+SectionTable	itfc_discharges	4	12
+itfc:title46|Label	Label1<COL>itfc:title22|6m-59m	Label1<COL>itfc:title22|1m-5m	Title2<COL>itfc:title22|Tot	Title2
+itfc:discharge|all|Label	Label1<COL>itfc:discharge|all|6m-59m	Calculated<COL>itfc:discharge|all|1m-5m	Calculated<COL>itfc:discharge|all|Tot	Calculated
+itfc:title48|Label	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2<COL>_title_blank	Title2
+itfc:discharge|cured|Label	Label1<COL>itfc:discharge|cured|6m-59m	Numeric<COL>itfc:discharge|cured|1m-5m	Numeric<COL>itfc:discharge|cured|Tot	Calculated
+itfc:discharge|stabilized|referred|atfc_msf|Label	Label1<COL>itfc:discharge|stabilized|referred|atfc_msf|6m-59m	Numeric<COL>itfc:discharge|stabilized|referred|atfc_msf|1m-5m	Numeric<COL>itfc:discharge|stabilized|referred|atfc_msf|Tot	Calculated
+itfc:discharge|stabilized|referred|atfc_non_msf|Label	Label1<COL>itfc:discharge|stabilized|referred|atfc_non_msf|6m-59m	Numeric<COL>itfc:discharge|stabilized|referred|atfc_non_msf|1m-5m	Numeric<COL>itfc:discharge|stabilized|referred|atfc_non_msf|Tot	Calculated
+itfc:discharge|non_responding|Label	Label1<COL>itfc:discharge|non_responding|6m-59m	Numeric<COL>itfc:discharge|non_responding|1m-5m	Numeric<COL>itfc:discharge|non_responding|Tot	Calculated
+itfc:discharge|dead|Label	Label1<COL>itfc:discharge|dead|6m-59m	Numeric<COL>itfc:discharge|dead|1m-5m	Numeric<COL>itfc:discharge|dead|Tot	Calculated
+itfc:discharge|defaulter|Label	Label1<COL>itfc:discharge|defaulter|6m-59m	Numeric<COL>itfc:discharge|defaulter|1m-5m	Numeric<COL>itfc:discharge|defaulter|Tot	Calculated
+itfc:discharge|referred|hospital|Label	Label1<COL>itfc:discharge|referred|hospital|6m-59m	Numeric<COL>itfc:discharge|referred|hospital|1m-5m	Numeric<COL>itfc:discharge|referred|hospital|Tot	Calculated
+itfc:discharge|on_demand|Label	Label1<COL>itfc:discharge|on_demand|6m-59m	Numeric<COL>itfc:discharge|on_demand|1m-5m	Numeric<COL>itfc:discharge|on_demand|Tot	Calculated
+itfc:discharge|other|Label	Label1<COL>itfc:discharge|other|6m-59m	Numeric<COL>itfc:discharge|other|1m-5m	Numeric<COL>itfc:discharge|other|Tot	Calculated
+SectionSeparator
+SectionTable	itfc_under_treatment	4	3
+itfc:under_tt|non_responding|Label	Label1<COL>itfc:title22|6m-59m	Title2<COL>itfc:title22|1m-5m	Title2<COL>itfc:title22|Tot	Title2
+itfc:patients_under_tt|first_day_week|Label	Label1<COL>itfc:patients_under_tt|first_day_week|6m-59m	Numeric<COL>itfc:patients_under_tt|first_day_week|1m-5m	Numeric<COL>itfc:patients_under_tt|first_day_week|Tot	Calculated
+itcf:patients_under_tt|last_day_week|Label	Label1<COL>itcf:patients_under_tt|last_day_week|6m-59m	Numeric<COL>itcf:patients_under_tt|last_day_week|1m-5m	Numeric<COL>itcf:patients_under_tt|last_day_week|Tot	Calculated
+SectionSeparator
+SectionTable	itfc_comments	2	1
+itfc:comments|Label	Label1<COL>itfc:comments	Numeric
