@@ -42,15 +42,15 @@ public class WritePDFServlet extends HttpServlet{
     
     /** EncounterType file */
     private static final String STR_ENCOUNTERTYPE           = "EncounterType";
-    private static String STR_WEB_INFO_DIR            		= "/WEB-INF/resources/";
+    private static String STR_WEB_INFO_DIR                  = "/WEB-INF/resources/";
     private static final String STR_PDF_FOLDER              = "/pdf/";
     private static final String STR_PROPERTIES_FILE_NAME    = "defaultProperties.properties";
     private static final String STR_TXT_FILE_TYPE           = ".txt";
     private static final String STR_PDF_FILE_TYPE           = ".pdf";
     private static final String STR_RADIO_BUTTON_IMAGE      = "ui_radio_button_uncheck.png";
     private static final String STR_LOGO_IMAGE              = "head_logo_msf.gif";
-    private static String STR_PDF_FILE_NAME           = "results";
-
+    private static String STR_PDF_FILE_NAME                 = "results";
+    
     private static final String STR_PATIENT                                 = "Patient";
     private static final String STR_TITLE                                   = "_title_";
     private static final String STR_MAIN_TITLE                              = "_main_title_";
@@ -62,73 +62,74 @@ public class WritePDFServlet extends HttpServlet{
     private static final String STR_ORIGIN_NATIONALITY_OTHER_DETAIL         = "origin_nationality_other_detail";
     private static final String STR_PATIENT_INFORMATION                     = "PATIENT INFORMATION";
     private static final String STR_DISEASE_INFORMATION                     = "DISEASE INFORMATION";
-
+    
     private static final String STR_FIELDS_ID_TYPE          = "-FieldsIdType";
     private static final String STR_FIELDS_LABEL            = "-FieldsLabel";
-
+    
     private static final String STR_ENLISH_LANGUAGE         = "en";
     private static final String STR_FRANCE_LANGUAGE         = "fr";
-
+    
     /** Properties PDF file */
     private static final Font largeBold = new Font(Font.FontFamily.TIMES_ROMAN, 18, Font.BOLD);
     private static final Font normalBold = new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.BOLD);
     private static final Font smallNormal = new Font(Font.FontFamily.TIMES_ROMAN, 10, Font.NORMAL);
-
+    
     /** Constant */
     public static final String ENCODE_UTF8  = "UTF-8";
     public static final String SPACE        = "\\s+";
     public static final String UNDERSCORE   = "_";
-
+    
     /** Patient nation */
     private String patientNation;
-
+    
     /**
      * @see HttpServlet#HttpServlet()
      */
     public WritePDFServlet() {
         super();
     }
-
+    
     /**
      * @see Servlet#init(ServletConfig)
      */
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
     }
-
+    
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        
     }
-
+    
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	
-    	STR_WEB_INFO_DIR = request.getParameter("pathPDF");//taivd add
+        
+        STR_WEB_INFO_DIR = request.getParameter("pathPDF");//taivd add
         HeaderFooter hd=new HeaderFooter();
-//    	STR_PDF_FILE_NAME = hd.getAppName(request);
-    	response.setContentType("text/html");
-
+        //STR_PDF_FILE_NAME = hd.getAppName(request);
+        response.setContentType("text/html");
+        
         // Get path contain defaultProperties.properties file
         String pathPropertiesFile = getServletContext().getRealPath(STR_WEB_INFO_DIR + STR_PROPERTIES_FILE_NAME);
-
+        
         // Read file and write PDF file
         readFilesAndWritePdfFile(pathPropertiesFile, ENCODE_UTF8);
-
+        
         // Write file name download in JSP
         PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<body>");
-
+        
         hd.printHeader(request,response);
         
         String pathPdfFile = getServletContext().getRealPath(STR_PDF_FOLDER + STR_PDF_FILE_NAME + STR_PDF_FILE_TYPE);
         System.out.println(pathPdfFile);
         if (isFile(pathPdfFile)) {
-        	out.println("<center><table><tr><td>"+request.getParameter("htmlBack"));
+            out.println("<center><table><tr><td>"+request.getParameter("htmlBack"));
             out.println("</td><td><a href='" + getServletContext().getContextPath() + STR_PDF_FOLDER + STR_PDF_FILE_NAME + STR_PDF_FILE_TYPE + "' target=\"_blank\">");
             out.println("<input type=\"submit\"  value=\"DOWNLOAD PDF\" >");
             out.println("</a></td></tr></table></center>");
@@ -141,7 +142,7 @@ public class WritePDFServlet extends HttpServlet{
         out.println("</body>");
         out.println("</html>"); 
     }
-
+    
     /**
      * Read file and create PDF file
      * 
@@ -226,7 +227,7 @@ public class WritePDFServlet extends HttpServlet{
             creatPDFFile(contents, pathFile);
         }
     }
-
+    
     /**
      * Check file direction correct
      * 
@@ -238,7 +239,7 @@ public class WritePDFServlet extends HttpServlet{
         File file = new File(path);
         return (file.exists() && file.isFile());
     }
-
+    
     /**
      * Check string empty
      *
@@ -249,7 +250,7 @@ public class WritePDFServlet extends HttpServlet{
         if (str == null || str.length() == 0) return true;
         return false;
     }
-
+    
     /**
      * Creative file name
      *
@@ -264,7 +265,7 @@ public class WritePDFServlet extends HttpServlet{
         str = str.split(SPACE)[0];
         return str;
     }
-
+    
     /**
      * Read content file
      * 
@@ -298,16 +299,14 @@ public class WritePDFServlet extends HttpServlet{
             br = new BufferedReader(isr);
             String line;
             String strStartFile = STR_ENCOUNTER;
-
+            
             if (isPatient) {
                 strStartFile = STR_PATIENT;
                 // Add info
-                String[] arr = {
-                                "Identification number",
+                String[] arr = {"Identification number",
                                 "Firstname",
                                 "Name",
-                                ""
-                                };
+                                ""};
                 for (int i = 0; i < arr.length; i++) {
                     comboValMap = new HashMap<String, ArrayList<String>>();
                     comboValMap.put(arr[i], new ArrayList<String>());
@@ -360,9 +359,8 @@ public class WritePDFServlet extends HttpServlet{
                     oldContents.add(comboValMap);
                 }
             }
-
+            
         }catch(Exception e){
-
         }finally{
             try{
                 if(br != null) br.close();
@@ -372,7 +370,7 @@ public class WritePDFServlet extends HttpServlet{
         }
         return oldContents;
     }
-
+    
     /**
      * Read file comboValue
      * 
@@ -397,25 +395,23 @@ public class WritePDFServlet extends HttpServlet{
                 if (!line.endsWith(language)) {
                     continue;
                 }
+                
                 String[] idLabels = line.split(SPACE);
                 if (idLabels.length < 2) continue;
                 String strCombo = line.substring(idLabels[0].length(), line.length() - language.length());
                 comboValues.add(strCombo.trim().replace("--", "-"));
             }
-
         }catch(Exception e){
-
         }finally{
             try{
                 if(br != null) br.close();
                 if(isr != null) isr.close();
                 if(fis != null) fis.close();
-            }catch(Exception e){
-            }
+            }catch(Exception e){}
         }
         return comboValues;
     }
-
+    
     /**
      * Create map key: {id}, value: {label}, language is en or fr
      * 
@@ -426,7 +422,7 @@ public class WritePDFServlet extends HttpServlet{
      */
     private HashMap<String, String> createIdLabelMap(String path, String language) throws FileNotFoundException {
         if(!isFile(path)) return new HashMap<String, String>();
-
+        
         HashMap<String, String> idLabelMap = new HashMap<String, String>();
         FileInputStream fis = new FileInputStream(path);
         InputStreamReader isr = null;
@@ -466,7 +462,7 @@ public class WritePDFServlet extends HttpServlet{
         }
         return idLabelMap;
     }
-
+    
     /**
      * Create PDF file
      *
@@ -487,7 +483,7 @@ public class WritePDFServlet extends HttpServlet{
             document.open();
             // step 4
             String imageUrl = getServletContext().getRealPath(STR_PDF_FOLDER + STR_LOGO_IMAGE);
-
+            
             Image image = Image.getInstance(imageUrl);
             //image.scaleAbsolute(100f, 100f);
             //image.setAbsolutePosition(5f, 700f);
@@ -501,7 +497,7 @@ public class WritePDFServlet extends HttpServlet{
             e.printStackTrace();
         }
     }
-
+    
     /**
      * Add content for PDF file
      *
@@ -521,7 +517,7 @@ public class WritePDFServlet extends HttpServlet{
         PdfPCell cell;
         // Direction radio button image
         String pathRadioImage = getServletContext().getRealPath(STR_PDF_FOLDER + STR_RADIO_BUTTON_IMAGE);
-
+        
         for (HashMap<String, ArrayList<String>> hashMap : contentMaps) {
             for (Map.Entry<String, ArrayList<String>> contentSet : hashMap.entrySet()) {
                 String labelId = contentSet.getKey();

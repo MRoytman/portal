@@ -15,28 +15,28 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/CreateGeneral")
 public class CreateGeneral extends HttpServlet {
     private static final long serialVersionUID = 1L;
-
+    
     /**
      * @see HttpServlet#HttpServlet()
      */
     public CreateGeneral() {
         super();
     }
-
+    
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
      *      response)
      */
     protected void doGet(HttpServletRequest request,
-            HttpServletResponse response) throws ServletException, IOException {
+                            HttpServletResponse response) throws ServletException, IOException {
     }
-
+    
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
      *      response)
      */
     protected void doPost(HttpServletRequest request,
-            HttpServletResponse response) throws ServletException, IOException {
+                            HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(true);
         
         // Get direction of resources folder for edit form
@@ -88,5 +88,4 @@ public class CreateGeneral extends HttpServlet {
             response.sendRedirect("f0.jsp");
         }
     }
-
 }

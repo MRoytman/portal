@@ -40,12 +40,13 @@
         File[] listOfFolders = folder.listFiles();
         
         for(int i = 0; i < listOfFolders.length; i++){
-        	
-        	File currentFolder = listOfFolders[i];
-        	if (currentFolder.getName().compareToIgnoreCase("logs") == 0)
-        		continue;           	
-        	
-            String folderName = currentFolder.getName();        	
+            
+            File currentFolder = listOfFolders[i];
+            if(currentFolder.getName().compareToIgnoreCase("logs") == 0){
+                continue;
+            }
+            
+            String folderName = currentFolder.getName();
             if(currentFolder.isDirectory()){
                 if(!isResource){
         %>

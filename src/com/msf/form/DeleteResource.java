@@ -24,13 +24,13 @@ public class DeleteResource extends HttpServlet {
     public DeleteResource() {
         super();
     }
-
+    
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     }
-
+    
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
