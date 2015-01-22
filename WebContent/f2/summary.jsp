@@ -87,21 +87,14 @@
 
 	<table>
 		<tr>
-			<td><a href="./f2.jsp"><input type="button" value="Back"></a>
+			<td>
+                <a href="./f2.jsp"><input type="button" value="Back"></a>
 			</td>
-					<td>
-			<form action="../waiting.jsp" id="newJar" name="newJar" method="post">
-				<input type="submit" value="Generate Java Form">
-			</form>
-		</td>
-		<td>
-			<form action="../WritePDFServlet" method="post">
-				<input type="hidden" name="pathPDF" value="/deployf2/resources/">
-				<input type="hidden" name="htmlBack" value='<a href="<%=getURL%>"><input type="button"  value="Back" ></a>'>
-				<input type="submit" value="Generate PDF">
-			</form>
-		</td>
-
+			<td>
+				<form action="../waiting.jsp" id="newJar" name="newJar" method="post">
+					<input type="submit" value="Generate Java Form">
+				</form>
+            </td>
 		</tr>
 	</table>
 

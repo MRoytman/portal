@@ -17,43 +17,27 @@
         <title>MSF| Choose Form</title>
     </head>
     <%@include file="./welcome.jsp"%>
-    <%--
-    <%
-    String countryCode = (String)session.getAttribute("CountryCode");
-    String countryName = (String)session.getAttribute("CountryName");
-    if (countryCode != null) {
-    %>
-        <center>
-               <h2>Selected country: <%=countryName%></h2>
-        </center>
-    <%
-    }
-    %>
-    --%>
     <center>
         <%@include file="./bigger.jsp"%>
         <%
         // Get formType
-        String getURL = request.getRequestURL().toString();
         boolean isResource = false;
         %>
         <table>
         <%
         
         String realPath = getServletContext().getRealPath("/");
-        String urlServer = CommonCode.readFileProp(realPath, "msfform.properties", "urlServer") + "/ftpmsf/";
         String dirFtpMsf = realPath.replace("MSFForm", "ftpmsf");
         
-        //String dirFtpMsf = "E:/work/ftpmsf/";
         File folder = new File(dirFtpMsf);
         File[] listOfFolders = folder.listFiles();
         
         for(int i = 0; i < listOfFolders.length; i++){
-        	
-        	File currentFolder = listOfFolders[i];
-        	if (currentFolder.getName().compareToIgnoreCase("logs") == 0)
-        		continue;        	
-        	
+            File currentFolder = listOfFolders[i];
+            if(currentFolder.getName().compareToIgnoreCase("logs") == 0){
+                continue;
+            }
+            
             if(currentFolder.isDirectory()){
                 if(!isResource){
         %>
@@ -69,7 +53,7 @@
                 <td><%=currentFolder.getName()%></td>
         <%
                 String dirFile = dirFtpMsf + currentFolder.getName();
-		        String dirFileX =  "/ftpmsf/" + currentFolder.getName();
+                String dirFileX =  "/ftpmsf/" + currentFolder.getName();
                 File file = new File(dirFile);
                 File[] listOfFiles = file.listFiles();
                 for(int j = 0; j < listOfFiles.length; j++){
@@ -90,7 +74,6 @@
                               <td>
                                    <a href="<%=dirFileX + "/" + listOfFiles[j].getName()%>">
                                        PDF File Link
-                                       
                                    </a>
                                </td>
         <%

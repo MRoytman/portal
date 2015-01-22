@@ -7,7 +7,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,6 +19,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
@@ -33,7 +33,6 @@ import com.itextpdf.text.Rectangle;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
-import com.msf.gui.HeaderFooter;
 
 
 @WebServlet("/WritePDFServlet")
@@ -41,33 +40,32 @@ public class WritePDFServlet extends HttpServlet{
     private static final long serialVersionUID = 1L;
     
     /** EncounterType file */
-    private static final String STR_ENCOUNTERTYPE           = "EncounterType";
-    private static String STR_WEB_INFO_DIR                  = "/WEB-INF/resources/";
-    private static final String STR_PDF_FOLDER              = "/pdf/";
-    private static final String STR_PROPERTIES_FILE_NAME    = "defaultProperties.properties";
-    private static final String STR_TXT_FILE_TYPE           = ".txt";
-    private static final String STR_PDF_FILE_TYPE           = ".pdf";
-    private static final String STR_RADIO_BUTTON_IMAGE      = "ui_radio_button_uncheck.png";
-    private static final String STR_LOGO_IMAGE              = "head_logo_msf.gif";
-    private static String STR_PDF_FILE_NAME                 = "results";
+    private static final String STR_ENCOUNTERTYPE                   = "EncounterType";
+    private static final String STR_RESOURCES_FOLDER                = "/resources/";
+    private static final String STR_PDF_FOLDER                      = "/pdf/";
+    private static final String STR_PROPERTIES_FILE_NAME            = "defaultProperties.properties";
+    private static final String STR_TXT_FILE_TYPE                   = ".txt";
+    private static final String STR_PDF_FILE_TYPE                   = ".pdf";
+    private static final String STR_RADIO_BUTTON_IMAGE              = "ui_radio_button_uncheck.png";
+    private static final String STR_LOGO_IMAGE                      = "head_logo_msf.gif";
     
-    private static final String STR_PATIENT                                 = "Patient";
-    private static final String STR_TITLE                                   = "_title_";
-    private static final String STR_MAIN_TITLE                              = "_main_title_";
-    private static final String STR_ENCOUNTER                               = "Encounter";
-    private static final String STR_COMBOVALUE                              = "comboValue";
-    private static final String STR_COMMENTS                                = "Comments";
-    private static final String STR_COUNTRY_DEPLOY_SHORT_NAME               = "countryDeployShortName";
-    private static final String STR_ORIGIN_NATIONALITY                      = "origin_nationality";
-    private static final String STR_ORIGIN_NATIONALITY_OTHER_DETAIL         = "origin_nationality_other_detail";
-    private static final String STR_PATIENT_INFORMATION                     = "PATIENT INFORMATION";
-    private static final String STR_DISEASE_INFORMATION                     = "DISEASE INFORMATION";
+    private static final String STR_PATIENT                         = "Patient";
+    private static final String STR_TITLE                           = "_title_";
+    private static final String STR_MAIN_TITLE                      = "_main_title_";
+    private static final String STR_ENCOUNTER                       = "Encounter";
+    private static final String STR_COMBOVALUE                      = "comboValue";
+    private static final String STR_COMMENTS                        = "Comments";
+    private static final String STR_COUNTRY_DEPLOY_SHORT_NAME       = "countryDeployShortName";
+    private static final String STR_ORIGIN_NATIONALITY              = "origin_nationality";
+    private static final String STR_ORIGIN_NATIONALITY_OTHER_DETAIL = "origin_nationality_other_detail";
+    private static final String STR_PATIENT_INFORMATION             = "PATIENT INFORMATION";
+    private static final String STR_DISEASE_INFORMATION             = "DISEASE INFORMATION";
     
-    private static final String STR_FIELDS_ID_TYPE          = "-FieldsIdType";
-    private static final String STR_FIELDS_LABEL            = "-FieldsLabel";
+    private static final String STR_FIELDS_ID_TYPE                  = "-FieldsIdType";
+    private static final String STR_FIELDS_LABEL                    = "-FieldsLabel";
     
-    private static final String STR_ENLISH_LANGUAGE         = "en";
-    private static final String STR_FRANCE_LANGUAGE         = "fr";
+    private static final String STR_ENLISH_LANGUAGE                 = "en";
+    private static final String STR_FRANCE_LANGUAGE                 = "fr";
     
     /** Properties PDF file */
     private static final Font largeBold = new Font(Font.FontFamily.TIMES_ROMAN, 18, Font.BOLD);
@@ -75,12 +73,15 @@ public class WritePDFServlet extends HttpServlet{
     private static final Font smallNormal = new Font(Font.FontFamily.TIMES_ROMAN, 10, Font.NORMAL);
     
     /** Constant */
-    public static final String ENCODE_UTF8  = "UTF-8";
-    public static final String SPACE        = "\\s+";
-    public static final String UNDERSCORE   = "_";
+    public static final String ENCODE_UTF8 = "UTF-8";
+    public static final String SPACE       = "\\s+";
+    public static final String UNDERSCORE  = "_";
     
-    /** Patient nation */
     private String patientNation;
+    private String strTypeForm;
+    private String strCountryCode;
+    private String strAppFolder;
+    private String pathResources;
     
     /**
      * @see HttpServlet#HttpServlet()
@@ -107,40 +108,47 @@ public class WritePDFServlet extends HttpServlet{
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        
-        STR_WEB_INFO_DIR = request.getParameter("pathPDF");//taivd add
-        HeaderFooter hd=new HeaderFooter();
-        //STR_PDF_FILE_NAME = hd.getAppName(request);
-        response.setContentType("text/html");
-        
-        // Get path contain defaultProperties.properties file
-        String pathPropertiesFile = getServletContext().getRealPath(STR_WEB_INFO_DIR + STR_PROPERTIES_FILE_NAME);
-        
-        // Read file and write PDF file
-        readFilesAndWritePdfFile(pathPropertiesFile, ENCODE_UTF8);
-        
-        // Write file name download in JSP
-        PrintWriter out = response.getWriter();
-        out.println("<html>");
-        out.println("<body>");
-        
-        hd.printHeader(request,response);
-        
-        String pathPdfFile = getServletContext().getRealPath(STR_PDF_FOLDER + STR_PDF_FILE_NAME + STR_PDF_FILE_TYPE);
-        System.out.println(pathPdfFile);
-        if (isFile(pathPdfFile)) {
-            out.println("<center><table><tr><td>"+request.getParameter("htmlBack"));
-            out.println("</td><td><a href='" + getServletContext().getContextPath() + STR_PDF_FOLDER + STR_PDF_FILE_NAME + STR_PDF_FILE_TYPE + "' target=\"_blank\">");
-            out.println("<input type=\"submit\"  value=\"DOWNLOAD PDF\" >");
-            out.println("</a></td></tr></table></center>");
-            out.println("<br>");
-            getServletContext().getContextPath();
-        } else {
-            out.println("NO PDF FILE");
+        HttpSession session = request.getSession(true);
+        // Check user login
+        if(!isEmpty(session.getAttribute("username").toString().trim())){
+            strTypeForm = session.getAttribute("typeForm").toString();
+            strCountryCode = session.getAttribute("CountryCode").toString();
+            strAppFolder = strTypeForm + "_" + strCountryCode;
+            pathResources = strAppFolder + STR_RESOURCES_FOLDER;
+            
+            // Get path contain defaultProperties.properties file
+            String pathPropertiesFile = getServletContext().getRealPath(pathResources + STR_PROPERTIES_FILE_NAME);
+            // Replace MSFForm text to fptmsf text
+            pathPropertiesFile = replaceMSFFormToFtpmsf(pathPropertiesFile);
+            
+            // Read file of resources folder and write PDF file
+            readFilesAndWritePdfFile(pathPropertiesFile);
+            
+            response.sendRedirect("result.jsp");
+        }else{
+            response.sendRedirect("index.jsp");
         }
-        hd.printFooter(request,response);
-        out.println("</body>");
-        out.println("</html>"); 
+    }
+    
+    /**
+     * Replace from {MSFForm} text to {ftpmsf} text of path
+     * 
+     * @param path
+     * @return String
+     */
+    private String replaceMSFFormToFtpmsf(String path){
+        if(isEmpty(path)) return null;
+        return path.replace("MSFForm", "ftpmsf");
+    }
+    
+    /**
+     * Read file and create PDF file
+     * 
+     * @param path
+     * @throws FileNotFoundException
+     */
+    private void readFilesAndWritePdfFile(String path) throws FileNotFoundException{
+        readFilesAndWritePdfFile(path, ENCODE_UTF8);
     }
     
     /**
@@ -152,7 +160,6 @@ public class WritePDFServlet extends HttpServlet{
      */
     private void readFilesAndWritePdfFile(String path,
                                           String encode) throws FileNotFoundException{
-        
         if (!isFile(path)) return;
         
         ArrayList<HashMap<String, ArrayList<String>>> contents = new ArrayList<HashMap<String, ArrayList<String>>>();
@@ -176,8 +183,8 @@ public class WritePDFServlet extends HttpServlet{
                         patientNation = "";
                     }
                     
-                    // Read PATIENT file
-                    pathFile = getServletContext().getRealPath(STR_WEB_INFO_DIR + STR_PATIENT);
+                    // Read patient file
+                    pathFile = replaceMSFFormToFtpmsf(getServletContext().getRealPath(pathResources + STR_PATIENT));
                     
                     // Add main title is PATIENT INFORMATION
                     HashMap<String, ArrayList<String>> hashMap = new HashMap<String, ArrayList<String>>();
@@ -205,8 +212,9 @@ public class WritePDFServlet extends HttpServlet{
                     contents.add(hashMap);
                 }
                 
-                // Create direction file
-                pathFile = getServletContext().getRealPath(STR_WEB_INFO_DIR + fileName);
+                // Create direction of type file
+                pathFile = replaceMSFFormToFtpmsf(getServletContext().getRealPath(pathResources + fileName));
+                
                 // Get content file
                 contents = readTextFile(pathFile, contents, false, ENCODE_UTF8);
                 
@@ -223,7 +231,8 @@ public class WritePDFServlet extends HttpServlet{
         
         // Write PDF file
         if (contents.size() != 0) {
-            pathFile = getServletContext().getRealPath(STR_PDF_FOLDER + STR_PDF_FILE_NAME + STR_PDF_FILE_TYPE);
+            String pdfFileName = strAppFolder + STR_PDF_FILE_TYPE;
+            pathFile = replaceMSFFormToFtpmsf(getServletContext().getRealPath(strAppFolder + "/" + pdfFileName));
             creatPDFFile(contents, pathFile);
         }
     }
@@ -326,6 +335,7 @@ public class WritePDFServlet extends HttpServlet{
                         oldContents.add(comboValMap);
                         continue;
                     }
+                    
                     if (id.equals(STR_ORIGIN_NATIONALITY_OTHER_DETAIL)) {
                         comboValMap.put(idLabelMap.get(id), new ArrayList<String>());
                         oldContents.add(comboValMap);
@@ -334,7 +344,6 @@ public class WritePDFServlet extends HttpServlet{
                 }
                 
                 if (idLabelMap.containsKey(id)) {
-                    
                     // Add five line empty for comments component
                     if (idLabelMap.get(id).equals(STR_COMMENTS)) {
                         ArrayList<String> comboVals = new ArrayList<String>();
@@ -347,19 +356,20 @@ public class WritePDFServlet extends HttpServlet{
                     }
                     
                     // Get value from comboValue file
-                    String pathComboFile = getServletContext().getRealPath(STR_WEB_INFO_DIR
+                    String pathComboFile = getServletContext().getRealPath(pathResources
                                                                             + strStartFile
                                                                             + "-"
                                                                             + id
                                                                             + "-"
                                                                             + STR_COMBOVALUE
                                                                             + STR_TXT_FILE_TYPE);
+                    // Replace MSFForm text to fptmsf text
+                    pathComboFile = replaceMSFFormToFtpmsf(pathComboFile);
                     ArrayList<String> comboVals = readComboFile(pathComboFile, STR_ENLISH_LANGUAGE);
                     comboValMap.put(idLabelMap.get(id), comboVals);
                     oldContents.add(comboValMap);
                 }
             }
-            
         }catch(Exception e){
         }finally{
             try{
@@ -433,7 +443,6 @@ public class WritePDFServlet extends HttpServlet{
             String line;
             
             while((line = br.readLine()) != null){
-            
                 if (!line.endsWith(language)) continue;
                 
                 // Get key: {id} value: {label}, if label empty value: {id}
@@ -471,6 +480,7 @@ public class WritePDFServlet extends HttpServlet{
      */
     private void creatPDFFile(ArrayList<HashMap<String, ArrayList<String>>> contentMaps, String path){
         if(contentMaps.size() == 0 || isEmpty(path)) return;
+        
         try {
             // step 1
             Document document = new Document();

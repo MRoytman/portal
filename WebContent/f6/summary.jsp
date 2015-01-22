@@ -115,13 +115,6 @@
 					<input type="submit" value="Generate Java Form">
 				</form>
 			</td>
-			<td>
-				<form action="../WritePDFServlet" method="post">
-					<input type="hidden" name="pathPDF" value="/deployf6/resources/">
-					<input type="hidden" name="htmlBack" value='<a href="<%=getURL%>"><input type="button"  value="Back" ></a>'>
-					<input type="submit" value="Generate PDF">
-				</form>
-			</td>
 		</tr>
 	</table>
 
