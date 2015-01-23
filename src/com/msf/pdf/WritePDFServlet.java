@@ -68,9 +68,9 @@ public class WritePDFServlet extends HttpServlet{
     private static final String STR_FRANCE_LANGUAGE                 = "fr";
     
     /** Properties PDF file */
-    private static final Font largeBold = new Font(Font.FontFamily.TIMES_ROMAN, 18, Font.BOLD);
-    private static final Font normalBold = new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.BOLD);
-    private static final Font smallNormal = new Font(Font.FontFamily.TIMES_ROMAN, 10, Font.NORMAL);
+    private static final Font largeBold = new Font(Font.FontFamily.TIMES_ROMAN, 14, Font.BOLD);
+    private static final Font normalBold = new Font(Font.FontFamily.TIMES_ROMAN, 10, Font.BOLD);
+    private static final Font smallNormal = new Font(Font.FontFamily.TIMES_ROMAN, 8, Font.NORMAL);
     
     /** Constant */
     public static final String ENCODE_UTF8 = "UTF-8";
@@ -522,6 +522,8 @@ public class WritePDFServlet extends HttpServlet{
         // a table with four columns
         PdfPTable table = new PdfPTable(4);
         float[] relativeWidths = {1, 15, 1, 17};
+        float heightRow = 14.5f;
+        float titleHeightRow = 18f;
         table.setWidths(relativeWidths);
         // the cell object
         PdfPCell cell;
@@ -536,7 +538,7 @@ public class WritePDFServlet extends HttpServlet{
                 
                 if (labelId.startsWith(STR_MAIN_TITLE)) {
                     cell = new PdfPCell(new Paragraph(labelId.replace(STR_MAIN_TITLE, ""), largeBold));
-                    cell.setFixedHeight(25f);
+                    cell.setFixedHeight(titleHeightRow);
                     cell.setBorderWidthBottom(Rectangle.NO_BORDER);
                     cell.setColspan(4);
                     cell.setHorizontalAlignment(Element.ALIGN_CENTER);
@@ -546,7 +548,7 @@ public class WritePDFServlet extends HttpServlet{
                 
                 if (labelId.startsWith(STR_TITLE)) {
                     cell = new PdfPCell(new Paragraph(labelId.replace(STR_TITLE, ""), normalBold));
-                    cell.setFixedHeight(20f);
+                    cell.setFixedHeight(heightRow);
                     cell.setBorderWidthBottom(Rectangle.NO_BORDER);
                     cell.setColspan(4);
                     cell.setHorizontalAlignment(Element.ALIGN_CENTER);
@@ -555,7 +557,7 @@ public class WritePDFServlet extends HttpServlet{
                 }
                 
                 cell = new PdfPCell(new Paragraph(labelId, normalBold));
-                cell.setFixedHeight(20f);
+                cell.setFixedHeight(heightRow);
                 
                 if (size == 0) {
                     cell.setColspan(2);
@@ -590,7 +592,7 @@ public class WritePDFServlet extends HttpServlet{
                         cell = new PdfPCell(image, false);
                     }
                     
-                    cell.setFixedHeight(20f);
+                    cell.setFixedHeight(heightRow);
                     cell.setHorizontalAlignment(Element.ALIGN_RIGHT);
                     cell.setBorderWidthTop(Rectangle.NO_BORDER);
                     
