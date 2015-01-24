@@ -80,6 +80,7 @@
                             <input type="submit" value="Edit"/>
                             <input type="hidden" name="selectForm" value="f<%=formNumber%>">
                             <input type="hidden" name="f<%=formNumber%>" value="<%=formName%>">
+                            <input type="hidden" name="appFolder" value="<%=folderName%>">
                             <input type="hidden" name="dirResources" value="<%=dirFtpMsf + folderName + "/resources/"%>">
                         </form>
                     <td>

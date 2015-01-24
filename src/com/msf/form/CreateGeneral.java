@@ -45,6 +45,12 @@ public class CreateGeneral extends HttpServlet {
             session.setAttribute("dirResources", dirResources);
         }
         
+        // Get app folder for edit form
+        String appFolder = request.getParameter("appFolder");
+        if(appFolder != null && appFolder.length() != 0){// Edit form
+            session.setAttribute("appFolder", appFolder);
+        }
+        
         String folder = request.getParameter("selectForm");
         if (folder != null && folder.length() != 0) {
             session.setAttribute("selectedForm", folder);

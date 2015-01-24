@@ -78,8 +78,6 @@ public class WritePDFServlet extends HttpServlet{
     public static final String UNDERSCORE  = "_";
     
     private String patientNation;
-    private String strTypeForm;
-    private String strCountryCode;
     private String strAppFolder;
     private String pathResources;
     
@@ -111,9 +109,16 @@ public class WritePDFServlet extends HttpServlet{
         HttpSession session = request.getSession(true);
         // Check user login
         if(!isEmpty(session.getAttribute("username").toString().trim())){
-            strTypeForm = session.getAttribute("typeForm").toString();
-            strCountryCode = session.getAttribute("CountryCode").toString();
-            strAppFolder = strTypeForm + "_" + strCountryCode;
+            String appFolder = (String) session.getAttribute("appFolder");
+            
+            if(appFolder != null && appFolder.length() != 0){// Edit form
+                strAppFolder = appFolder;
+            }else{// Add new form
+                String strTypeForm = (String) session.getAttribute("typeForm");
+                String strCountryCode = (String) session.getAttribute("CountryCode");
+                strAppFolder = strTypeForm + UNDERSCORE + strCountryCode;
+            }
+            
             pathResources = strAppFolder + STR_RESOURCES_FOLDER;
             
             // Get path contain defaultProperties.properties file
