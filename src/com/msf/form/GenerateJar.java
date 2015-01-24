@@ -115,9 +115,9 @@ public class GenerateJar extends HttpServlet {
                 CommonCode.replaceString(dirDes, strOld, strNew);
                 CommonCode.copyFile("ncdform.sh", dirDes, dirSh);
                 
-                //logger.info("Start to run the ncdform.sh");
-//                Runtime.getRuntime().exec("sh ncdform.sh", null, dirSh);
-                /*
+                logger.info("Start to run the ncdform.sh");
+                Runtime.getRuntime().exec("sh ncdform.sh", null, dirSh);
+                
                 try {
                     boolean x1 = true;
                     int i = 1;
@@ -136,7 +136,6 @@ public class GenerateJar extends HttpServlet {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                */
             }
             
             if ("f8".compareToIgnoreCase(folder) == 0
