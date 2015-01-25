@@ -47,9 +47,9 @@ Request<br>IT Support
 </tr>
 <tr>
 <td  style="text-align:center"><a href="./pageNotAvaialble.jsp"><input type="submit"  value="ENTER" ></a></td>
-<td  style="text-align:center"><a href="http://ecampus.msf.org/moodlemsf/"><input type="submit"  value="ENTER" ></a></td>
+<td  style="text-align:center"><a href="http://ecampus.msf.org/moodlemsf/" target="_blank"><input type="submit"  value="ENTER" ></a></td>
 <td  style="text-align:center"><a href="./login.jsp"><input type="submit"  value="ENTER" ></a></td>
-<td  style="text-align:center"><a href="https://qv.ocg.msf.org/qlikview/index.htm"><input type="submit"  value="ENTER" ></a></td>
+<td  style="text-align:center"><a href="https://qv.ocg.msf.org/qlikview/index.htm" target="_blank"><input type="submit"  value="ENTER" ></a></td>
 <td  style="text-align:center"><a href="emailSend.jsp"><input type="submit"  value="ENTER" ></a></td>
 </tr>
 </table>

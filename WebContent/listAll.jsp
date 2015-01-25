@@ -8,6 +8,8 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="com.msf.form.data.FormType"%>
 <%@page import="com.msf.form.CommonCode"%>
+<%@page import="java.util.Date"%>
+<%@page import="java.text.SimpleDateFormat"%>
 
 <%@page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -22,7 +24,10 @@
         <%
         // Get formType
         boolean isResource = false;
+
+        
         %>
+		<p><font size="5"><strong>List of existing Java Forms and PDF files for downloading</strong></font></p>
         <table>
         <%
         
@@ -40,28 +45,31 @@
             
             if(currentFolder.isDirectory()){
                 if(!isResource){
-        %>
-            <tr>
-                <td>
-                    <u><strong>List of existing Java Forms and PDF files for download</strong></u>
-                </td>
-            </tr>
-        <%
                 }
-        %>
-            <tr>
-                <td><%=currentFolder.getName()%></td>
-        <%
-                String dirFile = dirFtpMsf + currentFolder.getName();
-                String dirFileX =  "/ftpmsf/" + currentFolder.getName();
-                File file = new File(dirFile);
-                File[] listOfFiles = file.listFiles();
+                String unixAppFolder = dirFtpMsf + currentFolder.getName();
+                String urlAppFolder =  "/ftpmsf/" + currentFolder.getName();
+                File appFolder = new File(unixAppFolder);
+                Date dd = new Date(appFolder.lastModified());
+                SimpleDateFormat sdfDestination = new SimpleDateFormat("ha, dd.MM.yyyy");
+                // parse the date into another format
+                String strDate = sdfDestination.format(dd);
+                
+                %>
+                <tr>
+                    <td><%=currentFolder.getName()%></td>
+                    <td> Created at: <%=strDate%></td>
+                    
+                <%
+                
+                
+                File[] listOfFiles = appFolder.listFiles();
                 for(int j = 0; j < listOfFiles.length; j++){
+                	String fileName = listOfFiles[j].getName();
                     if(listOfFiles[j].isFile()){
-                       if(listOfFiles[j].getName().endsWith("instruction2_en.html")){
+                       if(fileName.endsWith("instruction2_en.html")){
         %>
                            <td>
-                               <a href="<%=dirFileX + "/" + "instruction2_en.html"%>">
+                               <a href="<%=urlAppFolder + "/" + "instruction2_en.html"%>" target="_blank">
                                    App Link
                                </a>
                            </td>
@@ -69,10 +77,10 @@
                            <td></td>
         <%
                        }
-                       if(listOfFiles[j].getName().endsWith("pdf")){
+                       if(fileName.endsWith("pdf")){
         %>
                               <td>
-                                   <a href="<%=dirFileX + "/" + listOfFiles[j].getName()%>">
+                                   <a href="<%=urlAppFolder + "/" + fileName%>" target="_blank">
                                        PDF File Link
                                    </a>
                                </td>

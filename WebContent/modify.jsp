@@ -8,6 +8,9 @@
 <%@page import="java.io.BufferedReader"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="com.msf.form.data.FormType"%>
+<%@page import="java.util.Date"%>
+<%@page import="java.text.SimpleDateFormat"%>
+
 <%@page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -30,6 +33,7 @@
         
         boolean isResource = false;
         %>
+		<p><font size="5"><strong>List of existing Java Forms for modifying</strong></font></p>
         <table>
         <%
         
@@ -47,19 +51,17 @@
             }
             
             String folderName = currentFolder.getName();
+            
+            Date dd = new Date(currentFolder.lastModified());
+            SimpleDateFormat sdfDestination = new SimpleDateFormat("ha, dd.MM.yyyy");
+            // parse the date into another format
+            String strDate = sdfDestination.format(dd);
+            
             if(currentFolder.isDirectory()){
-                if(!isResource){
-        %>
-                <tr>
-                    <td>
-                        <u><strong>List of existing Java Forms for modifying</strong></u>
-                    </td>
-                </tr>
-        <%
-                }
         %>
                 <tr>
                     <td><%=folderName%></td>
+	                <td> Created at: <%=strDate%></td>
         <%
                 // Check resources folder existed in {folderName}
                 File dirResources = new File(dirFtpMsf + folderName + "/resources");
@@ -84,12 +86,13 @@
                             <input type="hidden" name="dirResources" value="<%=dirFtpMsf + folderName + "/resources/"%>">
                         </form>
                     <td>
-                    <td>
+                    
+                    <!-- td>
                         <form action="DeleteResource" method="post" style="display: inline-block;">
                             <input type="submit" value="Delete"/>
                             <input type="hidden" id="delete_form" name="deleteForm" value="<%=dirFtpMsf + folderName + "/resources"%>"/>
                         </form>
-                    </td>
+                    </td -->
         <%
                     }
                 }
@@ -104,7 +107,7 @@
         <%
         if(!isResource){
         %>
-            <h2>Resource not found</h2>
+            <h2>Sorry, the resources not found</h2>
         <%
         }
         %>
