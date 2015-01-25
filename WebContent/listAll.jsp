@@ -56,7 +56,7 @@
                 
                 %>
                 <tr>
-                    <td><%=currentFolder.getName()%></td>
+                    <td><strong><%=currentFolder.getName()%><strong></td>
                     <td> Created at: <%=strDate%></td>
                     
                 <%

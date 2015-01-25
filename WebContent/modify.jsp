@@ -60,7 +60,7 @@
             if(currentFolder.isDirectory()){
         %>
                 <tr>
-                    <td><%=folderName%></td>
+                    <td><strong><%=folderName%><strong></td>
 	                <td> Created at: <%=strDate%></td>
         <%
                 // Check resources folder existed in {folderName}
