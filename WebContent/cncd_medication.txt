@@ -1,0 +1,124 @@
+﻿NCDLB001	Acenocoumarol -- Sintrom 4	en
+NCDLB001	Acenocoumarol -- Sintrom 4	fr
+NCDLB002	Acetazolamide -- Apo- Acetazolamid 250 mg	en
+NCDLB002	Acetazolamide -- Apo- Acetazolamid 250 mg	fr
+NCDLB003	Allopurinol -- Apo-Allopurinol 300 mg	en
+NCDLB003	Allopurinol -- Apo-Allopurinol 300 mg	fr
+NCDLB004	Aminophylline -- Aminophylline 100 mg	en
+NCDLB004	Aminophylline -- Aminophylline 100 mg	fr
+NCDLB005	Amiodarone -- Cordarone 200 mg	en
+NCDLB005	Amiodarone -- Cordarone 200 mg	fr
+NCDLB006	Amlodipine -- Amlocard 5 mg	en
+NCDLB006	Amlodipine -- Amlocard 5 mg	fr
+NCDLB007	Aspirin -- Aspicot 100 mg	en
+NCDLB007	Aspirin -- Aspicot 100 mg	fr
+NCDLB008	Atenolol -- Apo-Atenolol 50 mg	en
+NCDLB008	Atenolol -- Apo-Atenolol 50 mg	fr
+NCDLB009	Beclomethason -- Clenil 250 inh	en
+NCDLB009	Beclomethason -- Clenil 250 inh	fr
+NCDLB010	Bisoprolol Fumarate -- Biscor 5 mg	en
+NCDLB010	Bisoprolol Fumarate -- Biscor 5 mg	fr
+NCDLB011	Captopril -- Captace 25 mg	en
+NCDLB011	Captopril -- Captace 25 mg	fr
+NCDLB012	Captopril -- Captace 50 mg	en
+NCDLB012	Captopril -- Captace 50 mg	fr
+NCDLB013	Carbamazepine -- Apo-Carbamazepine 200	en
+NCDLB013	Carbamazepine -- Apo-Carbamazepine 200	fr
+NCDLB014	Carbamazepine -- Carbamazepine suspension	en
+NCDLB014	Carbamazepine -- Carbamazepine suspension	fr
+NCDLB015	Carbidopa -- Sinemet	en
+NCDLB015	Carbidopa -- Sinemet	fr
+NCDLB016	Clopidogrel -- Apo-Clopidogrel 75 mg	en
+NCDLB016	Clopidogrel -- Apo-Clopidogrel 75 mg	fr
+NCDLB017	Digoxin -- Lanoxin 0.25 mg	en
+NCDLB017	Digoxin -- Lanoxin 0.25 mg	fr
+NCDLB018	Diltiazem -- Zaldem 60 mg	en
+NCDLB018	Diltiazem -- Zaldem 60 mg	fr
+NCDLB019	Dipyridamole -- Apo-Dipyridamol 75 mg	en
+NCDLB019	Dipyridamole -- Apo-Dipyridamol 75 mg	fr
+NCDLB020	Enalapril -- Enalapril 20mg	en
+NCDLB020	Enalapril -- Enalapril 20mg	fr
+NCDLB021	Enalapril -- Renitec 5 mg	en
+NCDLB021	Enalapril -- Renitec 5 mg	fr
+NCDLB022	Fenofibrate -- Apo-Feno-Micro 200 mg	en
+NCDLB022	Fenofibrate -- Apo-Feno-Micro 200 mg	fr
+NCDLB023	Flixotide -- Fluticasone, 60 puffs, 125mcg/puff	en
+NCDLB023	Flixotide -- Fluticasone, 60 puffs, 125mcg/puff	fr
+NCDLB024	Flixotide -- Fluticasone, 60 puffs, 250mcg/puff	en
+NCDLB024	Flixotide -- Fluticasone, 60 puffs, 250mcg/puff	fr
+NCDLB025	Flixotide -- Fluticasone, 60 puffs, 50mcg/puff	en
+NCDLB025	Flixotide -- Fluticasone, 60 puffs, 50mcg/puff	fr
+NCDLB026	Furosemide -- Apo-Furosemide 40 mg	en
+NCDLB026	Furosemide -- Apo-Furosemide 40 mg	fr
+NCDLB027	Glibenclamide -- GlybenClamide 5 mg	en
+NCDLB027	Glibenclamide -- GlybenClamide 5 mg	fr
+NCDLB028	Glibenclamide/Metfornin -- Glystor plus 5/500 mg	en
+NCDLB028	Glibenclamide/Metfornin -- Glystor plus 5/500 mg	fr
+NCDLB029	Gliclazide -- Glyzid 60 mg	en
+NCDLB029	Gliclazide -- Glyzid 60 mg	fr
+NCDLB030	Glimepiride -- Diameril 1 mg	en
+NCDLB030	Glimepiride -- Diameril 1 mg	fr
+NCDLB031	Glimepiride -- Diameril 2 mg	en
+NCDLB031	Glimepiride -- Diameril 2 mg	fr
+NCDLB032	Glimepiride -- Diameril 3 mg	en
+NCDLB032	Glimepiride -- Diameril 3 mg	fr
+NCDLB033	Glimepiride -- Diameril 4 mg	en
+NCDLB033	Glimepiride -- Diameril 4 mg	fr
+NCDLB034	Hydrochlorothiazide -- Esidrex 100 mg	en
+NCDLB034	Hydrochlorothiazide -- Esidrex 100 mg	fr
+NCDLB035	Indapamide -- Fludex LP 1.5 mg	en
+NCDLB035	Indapamide -- Fludex LP 1.5 mg	fr
+NCDLB036	Insulin regular -- Actrapid	en
+NCDLB036	Insulin regular -- Actrapid	fr
+NCDLB037	Insulin, 100 IU/ml, Biphasic 30, human, 10 ml	en
+NCDLB037	Insulin, 100 IU/ml, Biphasic 30, human, 10 ml	fr
+NCDLB038	Insuline NPH	en
+NCDLB038	Insuline NPH	fr
+NCDLB039	Ipratropium bromide -- Ipratropium bromide	en
+NCDLB039	Ipratropium bromide -- Ipratropium bromide	fr
+NCDLB040	Isosorbide dinitrate -- Isoket 10 mg tab	en
+NCDLB040	Isosorbide dinitrate -- Isoket 10 mg tab	fr
+NCDLB041	Levothyroxine -- Eltroxin 100 mcg	en
+NCDLB041	Levothyroxine -- Eltroxin 100 mcg	fr
+NCDLB042	Losartan -- Losanet 100mg	en
+NCDLB042	Losartan -- Losanet 100mg	fr
+NCDLB043	Losartan -- Losanet 50 mg	en
+NCDLB043	Losartan -- Losanet 50 mg	fr
+NCDLB044	Losartan/Hydrocholothiazide -- Losarnet H 50/12.5 mg	en
+NCDLB044	Losartan/Hydrocholothiazide -- Losarnet H 50/12.5 mg	fr
+NCDLB045	Metformin -- Glystor 500 mg	en
+NCDLB045	Metformin -- Glystor 500 mg	fr
+NCDLB046	Metformin hydrochloride, 1000 mg	en
+NCDLB046	Metformin hydrochloride, 1000 mg	fr
+NCDLB047	Methyldopa -- Aldomet 250 mg	en
+NCDLB047	Methyldopa -- Aldomet 250 mg	fr
+NCDLB048	Nifedipine -- Adalat 20 mg - Nifedipine	en
+NCDLB048	Nifedipine -- Adalat 20 mg - Nifedipine	fr
+NCDLB049	Phenytoin -- Epanutin 100 mg	en
+NCDLB049	Phenytoin -- Epanutin 100 mg	fr
+NCDLB050	Propranolol -- Probetol 40 mg	en
+NCDLB050	Propranolol -- Probetol 40 mg	fr
+NCDLB051	Salbutamol -- Salbuamol 2 mg	en
+NCDLB051	Salbutamol -- Salbuamol 2 mg	fr
+NCDLB052	Salbutamol -- Ventoline 100 mcg Inhaler	en
+NCDLB052	Salbutamol -- Ventoline 100 mcg Inhaler	fr
+NCDLB053	Salbutamol -- Ventoline sol. 5mg/ml	en
+NCDLB053	Salbutamol -- Ventoline sol. 5mg/ml	fr
+NCDLB054	Simvastatin -- Stavine 10 mg	en
+NCDLB054	Simvastatin -- Stavine 10 mg	fr
+NCDLB055	Simvastatin -- Stavine 20 mg	en
+NCDLB055	Simvastatin -- Stavine 20 mg	fr
+NCDLB056	Spironolactone -- Aldactone 25mg	en
+NCDLB056	Spironolactone -- Aldactone 25mg	fr
+NCDLB057	Telmisartan -- Telmicard 40	en
+NCDLB057	Telmisartan -- Telmicard 40	fr
+NCDLB058	Telmisartan -- Telmicard 80	en
+NCDLB058	Telmisartan -- Telmicard 80	fr
+NCDLB059	Telmisartan/Hydrochlorothiazide -- Telmicard Plus	en
+NCDLB059	Telmisartan/Hydrochlorothiazide -- Telmicard Plus	fr
+NCDLB060	Valproic acid -- Depakine 200 mg	en
+NCDLB060	Valproic acid -- Depakine 200 mg	fr
+NCDLB061	Valproic acid -- Valproic acid 500mg	en
+NCDLB061	Valproic acid -- Valproic acid 500mg	fr
+NCDLB062	Verapamil hydrochloride -- Isoptin 80mg	en
+NCDLB062	Verapamil hydrochloride -- Isoptin 80mg	fr
