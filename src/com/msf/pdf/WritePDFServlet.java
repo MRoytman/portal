@@ -74,7 +74,7 @@ public class WritePDFServlet extends HttpServlet{
     /** Properties PDF file */
     private static final Font largeBold = new Font(Font.FontFamily.TIMES_ROMAN, 14, Font.BOLD);
     private static final Font normalBold = new Font(Font.FontFamily.TIMES_ROMAN, 10, Font.BOLD);
-    private static final Font smallNormal = new Font(Font.FontFamily.TIMES_ROMAN, 7.9f, Font.NORMAL);
+    private static final Font smallNormal = new Font(Font.FontFamily.TIMES_ROMAN, 8.5f, Font.NORMAL);
     
     /** Constant */
     public static final String ENCODE_UTF8 = "UTF-8";
@@ -459,8 +459,8 @@ public class WritePDFServlet extends HttpServlet{
                 if(idLabels.length < 2) continue;
                 
                 // Get label value: weight_kg Weight (kg) en -> Weight (kg)
-                String label = line.substring(idLabels[0].length(), line.length() - language.length());
-                if(label.trim().length() == 0){
+                String label = line.substring(idLabels[0].length(), line.length() - language.length()).trim();
+                if(label.length() == 0){
                      if (idLabels[0].startsWith(UNDERSCORE)) continue; // title empty
                     // Put key and value -> key: {id}, value: {id}
                     idLabelMap.put(idLabels[0], idLabels[0]);
@@ -480,9 +480,9 @@ public class WritePDFServlet extends HttpServlet{
                         }
                     }
                     
-                    if(idLabels[0].startsWith(UNDERSCORE)) label = STR_TITLE + label.trim(); // title
+                    if(idLabels[0].startsWith(UNDERSCORE)) label = STR_TITLE + label; // title
                     // Put key and value -> key: {id}, value: {label}
-                    idLabelMap.put(idLabels[0], label.trim());
+                    idLabelMap.put(idLabels[0], label);
                 }
             }
         }catch(Exception e){
