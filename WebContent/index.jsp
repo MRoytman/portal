@@ -5,9 +5,9 @@
     <body>
         <div class="main-wrap">
             <div class="title">
-                <div class="txt-title">WELCOM TO MSF</div>
+                <div class="txt-title">Welcome to the MSF OCG Health Information System Web Portal</div>
                 <div class="txt-select">
-                    <span>please select a role from below</span>
+                    <span>Please select a role from below</span>
                 </div>
             </div>
             <ul>
@@ -62,7 +62,7 @@
 	                            </div>
 	                        </li>
                         </a>
-                        <a href="#">
+                        <a href="emailSend.jsp">
 	                        <li class="hq-medical-icon">
 	                            <div class="img">
 	                                <img alt="" src="img/hq_medical/HQMed_Help.png">
@@ -99,7 +99,7 @@
                     <div class="txt">
                         <span>IT Staff</span>
                     </div>
-                </li>
+                </li> 
             </ul>
         </div>
     </body>

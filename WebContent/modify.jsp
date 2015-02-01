@@ -61,7 +61,7 @@
         %>
                 <tr>
                     <td><strong><%=folderName%><strong></td>
-	                <td> Created at: <%=strDate%></td>
+	                <td> created at <%=strDate%></td>
         <%
                 // Check resources folder existed in {folderName}
                 File dirResources = new File(dirFtpMsf + folderName + "/resources");

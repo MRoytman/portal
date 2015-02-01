@@ -57,7 +57,7 @@
                 %>
                 <tr>
                     <td><strong><%=currentFolder.getName()%><strong></td>
-                    <td> Created at: <%=strDate%></td>
+                    <td> created at <%=strDate%></td>
                     
                 <%
                 
@@ -81,7 +81,7 @@
         %>
                               <td>
                                    <a href="<%=urlAppFolder + "/" + fileName%>" target="_blank">
-                                       PDF File Link
+                                       PDF Link
                                    </a>
                                </td>
         <%
