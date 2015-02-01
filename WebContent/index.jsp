@@ -1,57 +1,106 @@
-<%@page import="java.io.File"%>
-<%@page import="java.io.InputStreamReader"%>
-<%@page import="java.net.URL"%>
-<%@page import="java.io.FileReader"%>
-<%@page import="java.io.BufferedReader"%>
-<%@page import="java.util.ArrayList"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-
-
-<script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
-<%@include file="./bigger.jsp" %>
-<div style="background-color: #E5E5E5;height: 120px;"><br>
-<img id='msfLogo' src="./img/head_logo_msf.gif" alt="head_logo_msf.gif" /></div>
-<%@include file="./bigger.jsp" %>
-<br>
-<h1 align="center">MSF OCG	WEB PORTAL</h1>
-<br>
-<table border='1' align="center">
-<tr>
-<td  width="200" height="90"  style="text-align:center"><h2>
-Survey Creation<br>Tool
-</h2><h4>(Mobile Data Collection for Surveys & Surveillance)</h4>
-</td>
-
-<td  width="200" height="90"  style="text-align:center"><h2>
-Training Materials
-</h2><h4>(Desc needed ...)</h4><br>
-</td>
-
-<td  width="200" height="90" style="text-align:center"><h2>
-Database<br>Generator 
-</h2><h4>(Java)</h4><br><br>
-</td>
-
-<td  width="200" height="90"  style="text-align:center"><h2>
-Statistics<br>Dashboards
-</h2><h4>(Qlikview™)</h4><br><br>
-
-</td>
-
-<td  width="200" height="90"  style="text-align:center"><h2>
-Request<br>IT Support
-</h2><h4></h4><br><br><br><br>
-
-</td>
-
-</tr>
-<tr>
-<td  style="text-align:center"><a href="./pageNotAvaialble.jsp"><input type="submit"  value="ENTER" ></a></td>
-<td  style="text-align:center"><a href="http://ecampus.msf.org/moodlemsf/" target="_blank"><input type="submit"  value="ENTER" ></a></td>
-<td  style="text-align:center"><a href="./login.jsp"><input type="submit"  value="ENTER" ></a></td>
-<td  style="text-align:center"><a href="https://qv.ocg.msf.org/qlikview/index.htm" target="_blank"><input type="submit"  value="ENTER" ></a></td>
-<td  style="text-align:center"><a href="emailSend.jsp"><input type="submit"  value="ENTER" ></a></td>
-</tr>
-</table>
-
-<%@include file="./footer.jsp" %>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/home/home.css"/>
+    </head>
+    <body>
+        <div class="main-wrap">
+            <div class="title">
+                <div class="txt-title">WELCOM TO MSF</div>
+                <div class="txt-select">
+                    <span>please select a role from below</span>
+                </div>
+            </div>
+            <ul>
+                <li id="hq-medical" class="home-icon">
+                    <div class="img">
+                        <img alt="" src="img/home/home_hq_medical.png">
+                    </div>
+                    <div class="txt">
+                        <span>HQ Medical</span>
+                    </div>
+                    <ul id="hq-medical-icons">
+                        <a href="./login.jsp">
+	                        <li class="hq-medical-icon">
+	                            <div class="img">
+	                                <img alt="" src="img/hq_medical/HQMed_Database.png">
+	                            </div>
+	                            <div>
+	                                <span>Database</span>
+	                                <div>Generator</div>
+	                            </div>
+	                        </li>
+                        </a>
+                        <a href="./pageNotAvaialble.jsp">
+	                        <li class="hq-medical-icon">
+	                            <div class="img">
+	                                <img alt="" src="img/hq_medical/HQMed_SurveyCreation.png">
+	                            </div>
+	                            <div>
+	                                <span>Survey</span>
+	                                <div>Creation</div>
+	                            </div>
+	                        </li>
+                        </a>
+                        <a href="http://ecampus.msf.org/moodlemsf/" target="_blank">
+	                        <li class="hq-medical-icon">
+	                            <div class="img">
+	                                <img alt="" src="img/hq_medical/HQMed_Training.png">
+	                            </div>
+	                            <div>
+	                                <span>Training</span>
+	                            </div>
+	                        </li>
+                        </a>
+                        <a href="https://qv.ocg.msf.org/qlikview/index.htm" target="_blank">
+	                        <li class="hq-medical-icon">
+	                            <div class="img">
+	                                <img alt="" src="img/hq_medical/HQMed_StatisticsDashboard.png">
+	                            </div>
+	                            <div>
+	                                <span>Statistics</span>
+	                                <div>Dashboard</div>
+	                            </div>
+	                        </li>
+                        </a>
+                        <a href="#">
+	                        <li class="hq-medical-icon">
+	                            <div class="img">
+	                                <img alt="" src="img/hq_medical/HQMed_Help.png">
+	                            </div>
+	                            <div>
+	                                <span>Help Desk</span>
+	                            </div>
+	                        </li>
+                        </a>
+                    </ul>
+                </li>
+                <li id="field-worker-data" class="home-icon">
+                    <div class="img">
+                        <img alt="" src="img/home/home_field_worker_data.png">
+                    </div>
+                    <div class="txt">
+                        <span>Field Worker:</span>
+                        <div>Data</div>
+                    </div>
+                </li>
+                <li id="field-worker-medical" class="home-icon">
+                    <div class="img">
+                        <img alt="" src="img/home/home_field_worker_medical.png">
+                    </div>
+                    <div class="txt">
+                        <span>Field Worker:</span>
+                        <div>Medical</div>
+                    </div>
+                </li>
+                <li id="it-staff" class="home-icon">
+                    <div class="img">
+                        <img alt="" src="img/home/home_it_staff.png">
+                    </div>
+                    <div class="txt">
+                        <span>IT Staff</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
