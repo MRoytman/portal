@@ -10,13 +10,13 @@
 <%@include file="../header2.jsp" %>
 <center><h2>Summary of selected fields</h2></center>
  <%
- 	String jspPath = session.getAttribute("resourcePath").toString();
-	File dirMasterFile=new File(jspPath);
-	if (!dirMasterFile.exists()) {
-		dirMasterFile.mkdirs();
-		out.print("First time: need to copy the resources.");
-	}else{
-	 		String fileName0=jspPath+"/AggregatedTheme-nutrition-SectionLabels.txt";
+     String jspPath = session.getAttribute("resourcePath").toString();
+    File dirMasterFile=new File(jspPath);
+    if (!dirMasterFile.exists()) {
+        dirMasterFile.mkdirs();
+        out.print("First time: need to copy the resources.");
+    }else{
+             String fileName0=jspPath+"/AggregatedTheme-nutrition-SectionLabels.txt";
            BufferedReader reader;
            StringBuilder sb;
            String line;
@@ -25,32 +25,36 @@
            out.print("<strong><h2>Aggregated Theme:</h2></strong><h3>");
            reader= new BufferedReader(new FileReader(fileName0));
            while((line = reader.readLine())!= null){
-        	   if("".compareToIgnoreCase(line.trim())!=0){
-	        	   strLabel=line.split("\t")[1].toString().trim();
-	        	   if("".compareToIgnoreCase(strLabel.trim())!=0)
-	               		sb.append(strLabel+"<br>");
-	        	   reader.readLine();//ignore line fr
-        	   }
+               if("".compareToIgnoreCase(line.trim())!=0){
+                   strLabel=line.split("\t")[1].toString().trim();
+                   if("".compareToIgnoreCase(strLabel.trim())!=0)
+                           sb.append(strLabel+"<br>");
+                   reader.readLine();//ignore line fr
+               }
            }
            out.print(sb.toString());
            out.print("</h3>");
            reader.close();
-	}
-	String getURL=request.getRequestURL().toString();
-	
+    }
+    String getURL=request.getRequestURL().toString();
+
 %>
 <hr>
 
-	<table>
-		<tr>
-			<td><a href="./f10.jsp"><input type="button" value="Back"></a>
-			</td>
-			<td>
-				<form action="../waiting.jsp" id="newJar" name="newJar" method="post">
-					<input type="submit" value="Generate Java Form">
-				</form>
-			</td>
-		</tr>
-	</table>
+<div style="display: inline-block;">
+    <a href="./f10.jsp"><input type="button" value="Back"></a>
+</div>
+<div style="display: inline-block;">
+    <form action="../waiting.jsp" id="newJar" name="newJar" method="post">
+        <input type="submit" value="Generate Java Form">
+    </form>
+</div>
+<div style="display: inline-block;">
+    <form action="../WritePDFServlet" method="post">
+        <input type="hidden" name="pathPDF" value="/deployf10/resources/">
+        <input type="hidden" name="htmlBack" value='<a href="<%=getURL%>"><input type="button" value="Back" ></a>'>
+        <input type="submit" value="Generate PDF">
+    </form>
+</div>
 
 <%@include file="../footer2.jsp" %>

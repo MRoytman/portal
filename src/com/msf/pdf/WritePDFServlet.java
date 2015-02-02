@@ -8,6 +8,7 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -35,12 +36,13 @@ import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.msf.form.data.FormType;
+import com.msf.gui.HeaderFooter;
 
 
 @WebServlet("/WritePDFServlet")
 public class WritePDFServlet extends HttpServlet{
     private static final long serialVersionUID = 1L;
-    
+
     /** EncounterType file */
     private static final String STR_ENCOUNTERTYPE                   = "EncounterType";
     private static final String STR_RESOURCES_FOLDER                = "/resources/";
@@ -51,7 +53,7 @@ public class WritePDFServlet extends HttpServlet{
     private static final String STR_RADIO_BUTTON_IMAGE              = "ui_radio_button_uncheck.png";
     private static final String STR_LOGO_IMAGE                      = "head_logo_msf.gif";
     private static final String STR_CNCD_MEDICINE_FILE              = "cncd_medication.txt";
-    
+
     private static final String STR_PATIENT                         = "Patient";
     private static final String STR_TITLE                           = "_title_";
     private static final String STR_MAIN_TITLE                      = "_main_title_";
@@ -64,48 +66,49 @@ public class WritePDFServlet extends HttpServlet{
     private static final String STR_MEDICATION                      = "Medication";
     private static final String STR_PATIENT_INFORMATION             = "PATIENT INFORMATION";
     private static final String STR_DISEASE_INFORMATION             = "DISEASE INFORMATION";
-    
+
     private static final String STR_FIELDS_ID_TYPE                  = "-FieldsIdType";
     private static final String STR_FIELDS_LABEL                    = "-FieldsLabel";
-    
+
     private static final String STR_ENLISH_LANGUAGE                 = "en";
     private static final String STR_FRANCE_LANGUAGE                 = "fr";
-    
+
     /** Properties PDF file */
     private static final Font largeBold = new Font(Font.FontFamily.TIMES_ROMAN, 14, Font.BOLD);
     private static final Font normalBold = new Font(Font.FontFamily.TIMES_ROMAN, 10, Font.BOLD);
     private static final Font smallNormal = new Font(Font.FontFamily.TIMES_ROMAN, 8.5f, Font.NORMAL);
-    
+
     /** Constant */
     public static final String ENCODE_UTF8 = "UTF-8";
     public static final String SPACE       = "\\s+";
     public static final String UNDERSCORE  = "_";
-    
+
     private String patientNation;
     private String strAppFolder;
     private String pathResources;
-    
+    private boolean isPaperForm;
+
     /**
      * @see HttpServlet#HttpServlet()
      */
     public WritePDFServlet() {
         super();
     }
-    
+
     /**
      * @see Servlet#init(ServletConfig)
      */
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
     }
-    
+
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        
+
     }
-    
+
     /**
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
@@ -114,34 +117,109 @@ public class WritePDFServlet extends HttpServlet{
         // Check user login
         if(!isEmpty(session.getAttribute("username").toString().trim())){
             String appFolder = (String) session.getAttribute("appFolder");
-            
+
             if(appFolder != null && appFolder.length() != 0){// Edit form
                 strAppFolder = appFolder;
+                // CNCD_LB => form type is CNCD, country code is LB
+                String strTypeForm = strAppFolder.split(UNDERSCORE)[0];
+                String strCountryCode = strAppFolder.split(UNDERSCORE)[1];
+                String strCountryName = getCountryNameWithCode(session, strCountryCode);
+
+                // Set session when user edit form
+                session.setAttribute("typeForm", strTypeForm);
+                session.setAttribute("CountryCode", strCountryCode);
+                session.setAttribute("CountryName", strCountryName);
             }else{// Add new form
                 String strTypeForm = (String) session.getAttribute("typeForm");
                 String strCountryCode = (String) session.getAttribute("CountryCode");
                 strAppFolder = strTypeForm + UNDERSCORE + strCountryCode;
             }
-            
-            pathResources = strAppFolder + STR_RESOURCES_FOLDER;
-            
-            // Get path contain defaultProperties.properties file
-            String pathPropertiesFile = getServletContext().getRealPath(pathResources + STR_PROPERTIES_FILE_NAME);
-            // Replace MSFForm text to fptmsf text
-            pathPropertiesFile = replaceMSFFormToFtpmsf(pathPropertiesFile);
-            
+
+            // Get PDF path
+            // Check user click Generate Java Form button
+            // or click Generate PDF button
+            String strPathPDF = request.getParameter("pathPDF");
+            String pathPropertiesFile = "";
+
+            if(strPathPDF == null || strPathPDF.length() == 0){// User clicked Generate Java Form button
+                pathResources = strAppFolder + STR_RESOURCES_FOLDER;
+
+                // Get path contain defaultProperties.properties file
+                pathPropertiesFile = getServletContext().getRealPath(pathResources + STR_PROPERTIES_FILE_NAME);
+                // Replace MSFForm text to fptmsf text
+                pathPropertiesFile = replaceMSFFormToFtpmsf(pathPropertiesFile);
+                isPaperForm = false;
+            }else{// User clicked Generate PDF button
+                pathResources = strPathPDF;
+                // Get path contain defaultProperties.properties file
+                pathPropertiesFile = getServletContext().getRealPath(pathResources + STR_PROPERTIES_FILE_NAME);
+                isPaperForm = true;
+            }
+
             // Read file of resources folder and write PDF file
             readFilesAndWritePdfFile(pathPropertiesFile);
-            
-            response.sendRedirect("result.jsp");
-        }else{
+
+            if(isPaperForm){// Clicked Generate PDF button
+                HeaderFooter hd = new HeaderFooter();
+                response.setContentType("text/html");
+                // Write file name download in JSP
+                PrintWriter out = response.getWriter();
+                out.println("<html>");
+                out.println("<body>");
+                hd.printHeader(request,response);
+                String pathPdfFile = getServletContext().getRealPath(STR_PDF_FOLDER + strAppFolder + STR_PDF_FILE_TYPE);
+
+                if(isFile(pathPdfFile)){
+                    out.println("<center><table><tr><td>"+request.getParameter("htmlBack"));
+                    out.println("</td><td><a href='" + getServletContext().getContextPath() + STR_PDF_FOLDER + strAppFolder + STR_PDF_FILE_TYPE + "' target=\"_blank\">");
+                    out.println("<input type=\"submit\"  value=\"DOWNLOAD PDF\" >");
+                    out.println("</a></td></tr></table></center>");
+                    out.println("<br>");
+                    getServletContext().getContextPath();
+                }else{
+                    out.println("Sorry! PDF file not existed");
+                }
+                hd.printFooter(request,response);
+                out.println("</body>");
+                out.println("</html>");
+            }else{// Clicked Generate Java Form button
+                response.sendRedirect("result.jsp");
+            }
+        }else{// No login
             response.sendRedirect("index.jsp");
         }
     }
-    
+
+    /**
+     * Get country name with code country
+     *
+     * @author thaovd
+     * @param session
+     * @param codeCountry
+     * @return
+     * @throws IOException
+     */
+    private String getCountryNameWithCode(HttpSession session, String codeCountry) throws IOException{
+        BufferedReader rdCountry = new BufferedReader(new FileReader(session.getServletContext().getRealPath("/list_countries.csv")));
+        String lineCountry;
+        String[] strSplitCountry;
+        String countryName = "";
+        while((lineCountry = rdCountry.readLine()) != null){
+            // Example: AF   AFG Afghanistan Afghanistan Afganistán  Asia    Southern Asia
+            strSplitCountry = lineCountry.split("\\s+");
+            if(codeCountry.equals(strSplitCountry[0])){ // Example: Code country is  AF
+                countryName = strSplitCountry[2];// Example: Country name is Afghanistan
+                break;
+            }
+        }
+        rdCountry.close();
+
+        return countryName;
+    }
+
     /**
      * Replace from {MSFForm} text to {ftpmsf} text of path
-     * 
+     *
      * @param path
      * @return String
      */
@@ -149,27 +227,27 @@ public class WritePDFServlet extends HttpServlet{
         if(isEmpty(path)) return null;
         return path.replace("MSFForm", "ftpmsf");
     }
-    
+
     /**
      * Read file and create PDF file
-     * 
+     *
      * @param path
      * @throws FileNotFoundException
      */
     private void readFilesAndWritePdfFile(String path) throws FileNotFoundException{
         readFilesAndWritePdfFile(path, ENCODE_UTF8);
     }
-    
+
     /**
      * Read file and create PDF file
-     * 
+     *
      * @param path
      * @param encode
      * @throws FileNotFoundException
      */
     private void readFilesAndWritePdfFile(String path, String encode) throws FileNotFoundException{
         if(!isFile(path)) return;
-        
+
         ArrayList<HashMap<String, ArrayList<String>>> contents = new ArrayList<HashMap<String, ArrayList<String>>>();
         String pathFile = "";
         FileInputStream fis = new FileInputStream(path);
@@ -180,7 +258,7 @@ public class WritePDFServlet extends HttpServlet{
             br = new BufferedReader(isr);
             String line;
             boolean flag = false;
-            
+
             while((line = br.readLine()) != null){
                 // Get nation name and read Patient file
                 if(line.startsWith(STR_COUNTRY_DEPLOY_SHORT_NAME)){
@@ -190,42 +268,47 @@ public class WritePDFServlet extends HttpServlet{
                     }else{
                         patientNation = "";
                     }
-                    
+
                     // Read patient file
-                    pathFile = replaceMSFFormToFtpmsf(getServletContext().getRealPath(pathResources + STR_PATIENT));
-                    
+                    pathFile = getServletContext().getRealPath(pathResources + STR_PATIENT);
+                    if(!isPaperForm){// Generate Java Form
+                        pathFile = replaceMSFFormToFtpmsf(pathFile);
+                    }
+
                     // Add main title is PATIENT INFORMATION
                     HashMap<String, ArrayList<String>> hashMap = new HashMap<String, ArrayList<String>>();
                     hashMap.put(STR_MAIN_TITLE + STR_PATIENT_INFORMATION, new ArrayList<String>());
                     contents.add(hashMap);
-                    
+
                     // Read contents of PATIENT file
                     contents = readTextFile(pathFile, contents, true, ENCODE_UTF8);
                     continue;
                 }
-                
+
                 // Read EncounterType finished
                 if(isEmpty(line) && flag) break;
-                
+
                 // Line not EncounterType
                 if(isEmpty(line) || !line.startsWith(STR_ENCOUNTERTYPE)) continue;
-                
+
                 // Get file name
                 String fileName = createFileName(line);
-                
+
                 if(!flag){
                     // Add main title DISEASE INFORMATION
                     HashMap<String, ArrayList<String>> hashMap = new HashMap<String, ArrayList<String>>();
                     hashMap.put(STR_MAIN_TITLE + STR_DISEASE_INFORMATION, new ArrayList<String>());
                     contents.add(hashMap);
                 }
-                
+
                 // Create direction of type file
-                pathFile = replaceMSFFormToFtpmsf(getServletContext().getRealPath(pathResources + fileName));
-                
+                pathFile = getServletContext().getRealPath(pathResources + fileName);
+                if(!isPaperForm){// Generate Java Form
+                    pathFile = replaceMSFFormToFtpmsf(pathFile);
+                }
                 // Get content file
                 contents = readTextFile(pathFile, contents, false, ENCODE_UTF8);
-                
+
                 flag = true;
             }
         }catch(Exception e){
@@ -236,18 +319,23 @@ public class WritePDFServlet extends HttpServlet{
                 if(fis != null) fis.close();
             }catch(Exception e){}
         }
-        
+
         // Write PDF file
         if(contents.size() != 0){
             String pdfFileName = strAppFolder + STR_PDF_FILE_TYPE;
-            pathFile = replaceMSFFormToFtpmsf(getServletContext().getRealPath(strAppFolder + "/" + pdfFileName));
+            if(!isPaperForm){// Generate Java Form, PDF file was saved in ftpmsf/{typeForm}_{codeCountry} folder
+                pathFile = getServletContext().getRealPath(strAppFolder + "/" + pdfFileName);
+                pathFile = replaceMSFFormToFtpmsf(pathFile);
+            }else{// Generate PDF, PDF file was saved in pdf folder
+                pathFile = getServletContext().getRealPath(STR_PDF_FOLDER + pdfFileName);
+            }
             creatPDFFile(contents, pathFile);
         }
     }
-    
+
     /**
      * Check direction of file is correct
-     * 
+     *
      * @param path
      * @return boolean
      */
@@ -256,7 +344,7 @@ public class WritePDFServlet extends HttpServlet{
         File file = new File(path);
         return (file.exists() && file.isFile());
     }
-    
+
     /**
      * Check  empty string
      *
@@ -267,7 +355,7 @@ public class WritePDFServlet extends HttpServlet{
         if(str == null || str.length() == 0) return true;
         return false;
     }
-    
+
     /**
      * Create file name
      *
@@ -282,14 +370,14 @@ public class WritePDFServlet extends HttpServlet{
         str = str.split(SPACE)[0];
         return str;
     }
-    
+
     /**
      * Read content file
-     * 
+     *
      * @param fis
      * @param encode
      * @return String
-     * @throws FileNotFoundException 
+     * @throws FileNotFoundException
      */
     public ArrayList<HashMap<String, ArrayList<String>>> readTextFile(
             String path,
@@ -300,14 +388,14 @@ public class WritePDFServlet extends HttpServlet{
         String pathId = path + STR_FIELDS_ID_TYPE + STR_TXT_FILE_TYPE;
         // Creative path *.FieldsLabelType.txt file, example: /WEB-INF/resources/Patient-FieldsLabelType.txt
         String pathLabel = path + STR_FIELDS_LABEL + STR_TXT_FILE_TYPE;
-        
+
         if(!isFile(pathId) || !isFile(pathLabel)) return oldContents;
-        
+
         // Get key: {id} and value: {label} map
         HashMap<String, String> idLabelMap = createIdLabelMap(pathLabel, STR_ENLISH_LANGUAGE);
-        
+
         HashMap<String, ArrayList<String>> comboValMap;
-        
+
         FileInputStream fis = new FileInputStream(pathId);
         InputStreamReader isr = null;
         BufferedReader br = null;
@@ -316,7 +404,7 @@ public class WritePDFServlet extends HttpServlet{
             br = new BufferedReader(isr);
             String line;
             String strStartFile = STR_ENCOUNTER;
-            
+
             if(isPatient){
                 strStartFile = STR_PATIENT;
                 // Add info
@@ -330,7 +418,7 @@ public class WritePDFServlet extends HttpServlet{
                     oldContents.add(comboValMap);
                 }
             }
-            
+
             while((line = br.readLine()) != null){
                 comboValMap = new HashMap<String, ArrayList<String>>();
                 String id = line.split(SPACE)[0];
@@ -343,14 +431,14 @@ public class WritePDFServlet extends HttpServlet{
                         oldContents.add(comboValMap);
                         continue;
                     }
-                    
+
                     if(id.equals(STR_ORIGIN_NATIONALITY_OTHER_DETAIL)){
                         comboValMap.put(idLabelMap.get(id), new ArrayList<String>());
                         oldContents.add(comboValMap);
                         continue;
                     }
                 }
-                
+
                 if(idLabelMap.containsKey(id)){
                     // Add five line empty for comments component
                     if(idLabelMap.get(id).equals(STR_COMMENTS)){
@@ -358,12 +446,12 @@ public class WritePDFServlet extends HttpServlet{
                         for(int i = 0; i < 5; i++){
                             comboVals.add("");
                         }
-                        
+
                         comboValMap.put(idLabelMap.get(id), comboVals);
                         oldContents.add(comboValMap);
                         continue;
                     }
-                    
+
                     // Get value from comboValue file
                     String pathComboFile = getServletContext().getRealPath(pathResources
                                                                             + strStartFile
@@ -372,8 +460,10 @@ public class WritePDFServlet extends HttpServlet{
                                                                             + "-"
                                                                             + STR_COMBOVALUE
                                                                             + STR_TXT_FILE_TYPE);
-                    // Replace MSFForm text to fptmsf text
-                    pathComboFile = replaceMSFFormToFtpmsf(pathComboFile);
+                    if(!isPaperForm){// Generate Java Form
+                        // Replace MSFForm text to fptmsf text
+                        pathComboFile = replaceMSFFormToFtpmsf(pathComboFile);
+                    }
                     ArrayList<String> comboVals = readComboFile(pathComboFile, STR_ENLISH_LANGUAGE);
                     comboValMap.put(idLabelMap.get(id), comboVals);
                     oldContents.add(comboValMap);
@@ -389,10 +479,10 @@ public class WritePDFServlet extends HttpServlet{
         }
         return oldContents;
     }
-    
+
     /**
      * Read comboValue file
-     * 
+     *
      * @param path
      * @param language
      * @return
@@ -400,7 +490,7 @@ public class WritePDFServlet extends HttpServlet{
      */
     private ArrayList<String> readComboFile(String path, String language) throws FileNotFoundException {
         if(!isFile(path)) return new ArrayList<String>();
-        
+
         ArrayList<String> comboValues = new ArrayList<String>();
         FileInputStream fis = new FileInputStream(path);
         InputStreamReader isr = null;
@@ -409,12 +499,12 @@ public class WritePDFServlet extends HttpServlet{
             isr = new InputStreamReader(fis , ENCODE_UTF8);
             br = new BufferedReader(isr);
             String line;
-            
+
             while((line = br.readLine()) != null){
                 if(!line.endsWith(language)){
                     continue;
                 }
-                
+
                 String[] idLabels = line.split(SPACE);
                 if(idLabels.length < 2) continue;
                 String strCombo = line.substring(idLabels[0].length(), line.length() - language.length());
@@ -430,10 +520,10 @@ public class WritePDFServlet extends HttpServlet{
         }
         return comboValues;
     }
-    
+
     /**
      * Create map key: {id}, value: {label}, language is en or fr
-     * 
+     *
      * @param path
      * @param language
      * @return
@@ -441,7 +531,7 @@ public class WritePDFServlet extends HttpServlet{
      */
     private HashMap<String, String> createIdLabelMap(String path, String language) throws FileNotFoundException {
         if(!isFile(path)) return new HashMap<String, String>();
-        
+
         HashMap<String, String> idLabelMap = new HashMap<String, String>();
         FileInputStream fis = new FileInputStream(path);
         InputStreamReader isr = null;
@@ -450,14 +540,14 @@ public class WritePDFServlet extends HttpServlet{
             isr = new InputStreamReader(fis , ENCODE_UTF8);
             br = new BufferedReader(isr);
             String line;
-            
+
             while((line = br.readLine()) != null){
                 if(!line.endsWith(language)) continue;
-                
+
                 // Get key: {id} value: {label}, if label empty value: {id}
                 String[] idLabels = line.split(SPACE);
                 if(idLabels.length < 2) continue;
-                
+
                 // Get label value: weight_kg Weight (kg) en -> Weight (kg)
                 String label = line.substring(idLabels[0].length(), line.length() - language.length()).trim();
                 if(label.length() == 0){
@@ -472,14 +562,14 @@ public class WritePDFServlet extends HttpServlet{
                                 idLabelMap.put(idLabels[0], "ncd_fup" + label);
                                 continue;
                             }
-                            
+
                             if(path.contains("ncd_baseline")){
                                 idLabelMap.put(idLabels[0], "ncd_baseline" + label);
                                 continue;
                             }
                         }
                     }
-                    
+
                     if(idLabels[0].startsWith(UNDERSCORE)) label = STR_TITLE + label; // title
                     // Put key and value -> key: {id}, value: {label}
                     idLabelMap.put(idLabels[0], label);
@@ -495,7 +585,7 @@ public class WritePDFServlet extends HttpServlet{
         }
         return idLabelMap;
     }
-    
+
     /**
      * Create PDF file
      *
@@ -504,20 +594,20 @@ public class WritePDFServlet extends HttpServlet{
      */
     private void creatPDFFile(ArrayList<HashMap<String, ArrayList<String>>> contentMaps, String path){
         if(contentMaps.size() == 0 || isEmpty(path)) return;
-        
+
         try{
             // step 1
             Document document = new Document();
             document.setPageSize(PageSize.A4);
             document.setMargins(1f, 1f, 10f, 10f);
             document.setMarginMirroring(true);
-            
+
             // step 2
             PdfWriter.getInstance(document, new FileOutputStream(path));
-            
+
             // step 3
             document.open();
-            
+
             // step 4
             String imageUrl = getServletContext().getRealPath(STR_PDF_FOLDER + STR_LOGO_IMAGE);
             Image image = Image.getInstance(imageUrl);
@@ -525,24 +615,24 @@ public class WritePDFServlet extends HttpServlet{
             //image.setAbsolutePosition(5f, 700f);
             document.add(image);
             document.add(createTable(contentMaps));
-            
+
             // step 5
             document.close();
-            
+
             System.out.println("Done");
         }catch (Exception e){
             e.printStackTrace();
         }
     }
-    
+
     /**
      * Add content for PDF file
      *
      * @param document
      * @param content
      * @throws DocumentException
-     * @throws IOException 
-     * @throws MalformedURLException 
+     * @throws IOException
+     * @throws MalformedURLException
      */
     private PdfPTable createTable(ArrayList<HashMap<String, ArrayList<String>>> contentMaps)
             throws DocumentException, MalformedURLException, IOException {
@@ -557,7 +647,7 @@ public class WritePDFServlet extends HttpServlet{
         PdfPCell cell;
         // Direction radio button image
         String pathRadioImage = getServletContext().getRealPath(STR_PDF_FOLDER + STR_RADIO_BUTTON_IMAGE);
-        
+
         ArrayList<String> ncdBaselineMedicationList = new ArrayList<String>();
         ArrayList<String> ncdFupMedicationList = new ArrayList<String>();
         if(strAppFolder.startsWith(FormType.CNCD.getLabel())){// Check CNCD form
@@ -570,7 +660,7 @@ public class WritePDFServlet extends HttpServlet{
                     if(contentMap.containsKey(ncdBaselineMedication)){
                         ncdBaselineMedicationList.add(ncdBaselineMedication);
                     }
-                    
+
                     String ncdFupMedication = "ncd_fup" + STR_MEDICATION + " " + i; // example: ncd_fupMedication 1
                     // Get medication list of Follow
                     if(contentMap.containsKey(ncdFupMedication)){
@@ -579,7 +669,7 @@ public class WritePDFServlet extends HttpServlet{
                 }
             }
         }
-        
+
         boolean isNcdBaseline = true;
         boolean isNcdFup = true;
         for(HashMap<String, ArrayList<String>> hashMap : contentMaps){
@@ -587,21 +677,21 @@ public class WritePDFServlet extends HttpServlet{
                 String labelId = contentSet.getKey();
                 ArrayList<String> comboVals = contentSet.getValue();
                 int comboboxCount = comboVals.size();
-                
+
                 // CNCD: Baseline Encounter
                 if(ncdBaselineMedicationList.size() > 0){
                     String header = "Prescribed medication";
                     if(labelId.equals(STR_TITLE + header)){
                         continue;
                     }
-                    
+
                     if(labelId.startsWith("ncd_baseline" + STR_MEDICATION)
                             || labelId.contains("Nb per day")){// Check CNCD form
-                        
+
                         if(!isNcdBaseline){// Medication was printed
                             continue;
                         }
-                        
+
                         cell = getNCDMedicationTable(ncdBaselineMedicationList,
                                                     contentMaps,
                                                     STR_CNCD_MEDICINE_FILE,
@@ -612,21 +702,21 @@ public class WritePDFServlet extends HttpServlet{
                         continue;
                     }
                 }
-                
+
                 // CNCD: Follow Encounter
                 if(ncdFupMedicationList.size() > 0){
                     String header = "If change, new medication:";
                     if(labelId.equals(STR_TITLE + header)){
                         continue;
                     }
-                    
+
                     if(labelId.startsWith("ncd_fup" + STR_MEDICATION)
                             || labelId.contains("Nb per day")){// Check CNCD form
-                        
+
                         if(!isNcdFup){// Medication was printed
                             continue;
                         }
-                        
+
                         cell = getNCDMedicationTable(ncdFupMedicationList,
                                                     contentMaps,
                                                     STR_CNCD_MEDICINE_FILE,
@@ -637,7 +727,7 @@ public class WritePDFServlet extends HttpServlet{
                         continue;
                     }
                 }
-                
+
                 // Add main title label
                 if(labelId.startsWith(STR_MAIN_TITLE)){
                     cell = new PdfPCell(new Paragraph(labelId.replace(STR_MAIN_TITLE, ""), largeBold));
@@ -648,7 +738,7 @@ public class WritePDFServlet extends HttpServlet{
                     table.addCell(cell);
                     continue;
                 }
-                
+
                 // Add title label
                 if(labelId.startsWith(STR_TITLE)){
                     cell = new PdfPCell(new Paragraph(labelId.replace(STR_TITLE, ""), normalBold));
@@ -659,10 +749,10 @@ public class WritePDFServlet extends HttpServlet{
                     table.addCell(cell);
                     continue;
                 }
-                
+
                 cell = new PdfPCell(new Paragraph(labelId, normalBold));
                 cell.setFixedHeight(heightRow);
-                
+
                 // Label not contains combobox
                 if(comboboxCount == 0){
                     cell.setColspan(2);
@@ -672,7 +762,7 @@ public class WritePDFServlet extends HttpServlet{
                     table.addCell(cell);
                     continue;
                 }
-                
+
                 // Label contains a combobox
                 if (comboboxCount == 1) {
                     cell.setColspan(2);
@@ -683,62 +773,62 @@ public class WritePDFServlet extends HttpServlet{
                     table.addCell(cell);
                     continue;
                 }
-                
+
                 // Add label
                 cell.setBorderWidthBottom(Rectangle.NO_BORDER);
                 cell.setColspan(4);
                 table.addCell(cell);
-                
+
                 // Add value of comboBox
                 for(int i = 0; i < comboboxCount; i++){
-                    if(comboVals.get(i).equals("")){ // Value comboBox empty not add image 
+                    if(comboVals.get(i).equals("")){ // Value comboBox empty not add image
                         cell = new PdfPCell(new Paragraph(comboVals.get(i)));
                     }else{ // Add radio button image
                         Image image = Image.getInstance(pathRadioImage);
                         image.setAbsolutePosition(20f, 20f);
                         cell = new PdfPCell(image, false);
                     }
-                    
+
                     cell.setFixedHeight(heightRow);
                     cell.setHorizontalAlignment(Element.ALIGN_RIGHT);
                     cell.setBorderWidthTop(Rectangle.NO_BORDER);
-                    
+
                     if((i != comboboxCount - 2) && (i != comboboxCount - 1)){
                         cell.setBorderWidthBottom(Rectangle.NO_BORDER);
                     }
-                    
+
                     if((comboboxCount % 2 != 0) && (i == comboboxCount - 2)){
                         cell.setBorderWidthBottom(Rectangle.NO_BORDER);
                     }
-                    
+
                     if(i % 2 != 0){
                         cell.setBorderWidthLeft(Rectangle.NO_BORDER);
                     }
-                    
+
                     cell.setBorderWidthRight(Rectangle.NO_BORDER);
                     table.addCell(cell);
-                    
+
                     // Add text of comboBox for column
                     cell = new PdfPCell(new Paragraph(comboVals.get(i), smallNormal));
                     cell.setBorderWidthTop(Rectangle.NO_BORDER);
-                    
+
                     if((i != comboboxCount - 2) && (i != comboboxCount - 1)){
                         cell.setBorderWidthBottom(Rectangle.NO_BORDER);
                     }
-                    
+
                     if((comboboxCount % 2 != 0) && (i == comboboxCount - 2)){
                         cell.setBorderWidthBottom(Rectangle.NO_BORDER);
                     }
-                    
+
                     if(i % 2 == 0){
                         cell.setBorderWidthRight(Rectangle.NO_BORDER);
                     }
-                    
+
                     cell.setBorderWidthLeft(Rectangle.NO_BORDER);
                     //cell.setHorizontalAlignment(Element.ALIGN_MIDDLE);
                     table.addCell(cell);
                 }
-                
+
                 // Add empty column, if comboboxCount is odd
                 if(comboboxCount % 2 != 0){
                     cell = new PdfPCell(new Phrase(""));
@@ -751,10 +841,10 @@ public class WritePDFServlet extends HttpServlet{
         }
         return table;
     }
-    
+
     /**
      * Get medicine list of CNCD form
-     * 
+     *
      * @author thaovd
      * @param pathMedicine
      * @param language
@@ -766,7 +856,7 @@ public class WritePDFServlet extends HttpServlet{
         String line;
         ArrayList<String> medicineList = new ArrayList<String>();
         medicineList.add(STR_MEDICATION + " name");
-        
+
         while((line = buff.readLine()) != null){
             if(line.endsWith(language)){
                 // Remove en or fr characters of end line
@@ -778,13 +868,13 @@ public class WritePDFServlet extends HttpServlet{
             }
         }
         buff.close();
-        
+
         return medicineList;
     }
-    
+
     /**
      * Get CNCD medication table
-     * 
+     *
      * @author thaovd
      * @param ncdMedicineList
      * @param pathMedicine
@@ -802,13 +892,13 @@ public class WritePDFServlet extends HttpServlet{
         PdfPTable medicationTable = new PdfPTable(n + 1);
         medicationTable.setWidthPercentage(90);
         float[] columnWidths = new float[n + 1];
-        
+
         // Set size of medicine column
         float medicineColumnWidth = 60f;
-        
+
         // Set size of medication column
         float medicationColumnWidth = 10f;
-        
+
         // Add column size of medication table
         for(int i = 0; i <= n; i++){
             if(i == 0){
@@ -819,21 +909,21 @@ public class WritePDFServlet extends HttpServlet{
             columnWidths[i] = medicationColumnWidth;
         }
         medicationTable.setWidths(columnWidths);
-        
+
         // Add header
         PdfPCell cell = new PdfPCell(new Paragraph(header, normalBold));
         //cell.setHorizontalAlignment(Element.ALIGN_CENTER);
         cell.setColspan(n + 1);
         medicationTable.addCell(cell);
-        
+
         // Get medicine list
         ArrayList<String > medicineList = getMedicineList(pathMedicine, language);
-        
+
         int medicineCount = medicineList.size();
         String medicineName = "";
         String medicationName = "";
         Font font;
-        
+
         for(int i = 0; i < medicineCount; i++){
             for(int j = 0; j <= n; j++){
                 if(i == 0){ // Header of medication table
@@ -853,7 +943,7 @@ public class WritePDFServlet extends HttpServlet{
                     }
                 }
                 medicineName = medicineList.get(i);
-                
+
                 if(j == 0){// Medicine name
                     medicationTable.addCell(new Paragraph(medicineName, font));
                 }else{
@@ -863,19 +953,19 @@ public class WritePDFServlet extends HttpServlet{
                 }
             }
         }
-        
+
         cell = new PdfPCell(medicationTable);
         cell.setRowspan(medicineCount);
         cell.setBorderWidthBottom(Rectangle.NO_BORDER);
         cell.setColspan(4);
         //cell.setHorizontalAlignment(Element.ALIGN_CENTER);
-        
+
         return cell;
     }
-    
+
     /**
      * Check text existed in combobox list
-     * 
+     *
      * @author thaovd
      * @param medicine
      * @param contentMaps
