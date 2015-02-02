@@ -4,6 +4,7 @@
     </head>
     <body>
         <div class="main-wrap">
+        	<p>
             <div class="title">
                 <div class="txt-title">Welcome to the MSF OCG Health Information System Web Portal</div>
                 <div class="txt-select">
