@@ -120,7 +120,7 @@
                         <a href="#">
                             <li class="field-med-icon">
                                 <div class="img">
-                                    <img src="img/field_med/FieldMed_StatisticsDashboard.png">
+                                    <img src="img/field_data/FieldData_Downloads.png">
                                 </div>
                                 <div>
                                     <span>Downloads</span>
