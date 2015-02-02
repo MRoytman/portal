@@ -41,23 +41,20 @@
 %>
 <hr>
 
-    <table>
-        <tr>
-            <td><a href="./f10.jsp"><input type="button" value="Back"></a>
-            </td>
-            <td>
-                <form action="../waiting.jsp" id="newJar" name="newJar" method="post">
-                    <input type="submit" value="Generate Java Form">
-                </form>
-            </td>
-            <td>
-                <form action="../WritePDFServlet" method="post">
-                    <input type="hidden" name="pathPDF" value="/deployf10/resources/">
-                    <input type="hidden" name="htmlBack" value='<a href="<%=getURL%>"><input type="button" value="Back" ></a>'>
-                    <input type="submit" value="Generate PDF">
-                </form>
-            </td>
-        </tr>
-    </table>
+<div style="display: inline-block;">
+    <a href="./f10.jsp"><input type="button" value="Back"></a>
+</div>
+<div style="display: inline-block;">
+    <form action="../waiting.jsp" id="newJar" name="newJar" method="post">
+        <input type="submit" value="Generate Java Form">
+    </form>
+</div>
+<div style="display: inline-block;">
+    <form action="../WritePDFServlet" method="post">
+        <input type="hidden" name="pathPDF" value="/deployf10/resources/">
+        <input type="hidden" name="htmlBack" value='<a href="<%=getURL%>"><input type="button" value="Back" ></a>'>
+        <input type="submit" value="Generate PDF">
+    </form>
+</div>
 
 <%@include file="../footer2.jsp" %>
