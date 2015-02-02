@@ -86,6 +86,16 @@
                         <div>Data</div>
                     </div>
                     <ul id="field-data-icons">
+                        <a href="http://ecampus.msf.org/moodlemsf/" target="_blank">
+                            <li class="field-data-icon">
+                                <div class="img">
+                                    <img alt="" src="img/hq_medical/HQMed_Training.png">
+                                </div>
+                                <div>
+                                    <span>Training</span>
+                                </div>
+                            </li>
+                        </a>
                         <a href="#">
                             <li class="field-data-icon">
                                 <div class="img">
@@ -117,13 +127,24 @@
                         <div>Medical</div>
                     </div>
                     <ul id="field-med-icons">
-                        <a href="#">
+                        <a href="http://ecampus.msf.org/moodlemsf/" target="_blank">
                             <li class="field-med-icon">
                                 <div class="img">
-                                    <img src="img/field_data/FieldData_Downloads.png">
+                                    <img alt="" src="img/hq_medical/HQMed_Training.png">
                                 </div>
                                 <div>
-                                    <span>Downloads</span>
+                                    <span>Training</span>
+                                </div>
+                            </li>
+                        </a>                        
+                        <a href="https://qv.ocg.msf.org/qlikview/index.htm" target="_blank">
+                            <li class="field-med-icon">
+                                <div class="img">
+                                    <img alt="" src="img/hq_medical/HQMed_StatisticsDashboard.png">
+                                </div>
+                                <div>
+                                    <span>Statistics</span>
+                                    <div>Dashboard</div>
                                 </div>
                             </li>
                         </a>
