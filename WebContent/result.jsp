@@ -43,7 +43,7 @@
   }
 </script>
 <%@include file="./bigger.jsp" %>
-<%@include file="./welcome.jsp" %>
+<%@include file="./welcomeForCommon.jsp" %>
 <%@include file="./header2.jsp" %>
  <h1>Form Export</h1>
 <%

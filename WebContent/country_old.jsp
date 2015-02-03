@@ -9,7 +9,7 @@
 
 
 <%@include file="./bigger.jsp" %>
-<%@include file="./welcome.jsp" %>
+<%@include file="./welcomeForCommon.jsp" %>
 
 
 <div style=" position: fixed;top: 40%;left:40%;">

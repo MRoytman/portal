@@ -530,7 +530,7 @@ input[type="button"]
 
 </head>
 
-<%@include file="./welcome.jsp" %>
+<%@include file="./welcomeForCommon.jsp" %>
 <%@include file="./bigger.jsp" %>
 <center><h1>Selected country: ${sessionScope.CountryName}</h1></center>
 <center>

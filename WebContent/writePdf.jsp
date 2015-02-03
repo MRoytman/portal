@@ -1,5 +1,5 @@
 <%@include file="./bigger.jsp" %>
-<%@include file="./welcome.jsp" %>
+<%@include file="./welcomeForCommon.jsp" %>
 
 <br><br>
 <center>

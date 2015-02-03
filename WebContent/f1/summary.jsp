@@ -7,8 +7,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="./popup.jsp"%>
 <%@include file="../bigger.jsp"%>
-<%@include file="../welcome2.jsp"%>
-<%-- <%@include file="../header2.jsp"%> --%>
+<%@include file="../welcomeForForm.jsp" %>
+<%@include file="../header2.jsp"%>
 <center>
     <h2>Summary of selected fields</h2>
 </center>

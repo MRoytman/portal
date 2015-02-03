@@ -9,10 +9,10 @@
 
 <script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
 <%@include file="./bigger.jsp" %>
-<%@include file="./welcome.jsp" %>
+<%@include file="./welcomeForCommon.jsp" %>
 
 <script type="text/javascript">
-        $(document).ready(function () {   
+        $(document).ready(function () {
             $('#countryID').val('LB<msf_value>Lebanon');
         });
 </script>

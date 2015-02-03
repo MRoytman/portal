@@ -6,7 +6,7 @@
 <%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="../bigger.jsp" %>
-<%@include file="../welcome2.jsp" %>
+<%@include file="../welcomeForForm.jsp" %>
 <%@include file="../header2.jsp" %>
 <center><h2>Summary of selected fields</h2></center>
  <%

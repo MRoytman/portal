@@ -14,8 +14,8 @@
 </head>
 <body>
 
-<%@include file="../welcome2.jsp" %>
-<%-- <%@include file="../header2.jsp" %> --%>
+<%@include file="../welcomeForForm.jsp" %>
+<%@include file="../header2.jsp" %>
 
 <form action="../CreateForm" id="newForm" name="newForm" method="post" onsubmit="setLstParam()">
 <input type="hidden" name="msf_language" value="en">

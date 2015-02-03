@@ -1,11 +1,10 @@
 <html lang="en">
+    <%@include file="./headerForCommon.jsp"%>
     <head>
         <link rel="stylesheet" href="css/home/home.css"/>
     </head>
-    <%@include file="./header_new.jsp"%>
     <body>
         <div class="main-wrap">
-        	<p>
             <div class="title">
                 <div class="txt-title-small">MSF OCG Web Portal</div>
                 <div class="txt-select">

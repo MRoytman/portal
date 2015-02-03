@@ -7,7 +7,7 @@
 <title>MSF| Choose Form</title>
 
 </head>
-<%@include file="./welcome.jsp"%>
+<%@include file="./welcomeForCommon.jsp" %>
 <%@include file="./header.jsp"%>
 <center>
 	<%@include file="./bigger.jsp"%>

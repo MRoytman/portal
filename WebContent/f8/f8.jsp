@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<%@include file="../welcome2.jsp" %>
+<%@include file="../welcomeForForm.jsp" %>
 <%@include file="../header2.jsp" %>
 
 <form action="../CreateForm" id="newForm" name="newForm" method="post">

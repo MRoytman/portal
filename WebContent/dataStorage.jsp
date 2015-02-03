@@ -6,7 +6,7 @@ pageEncoding="ISO-8859-1"%>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>MSF| Choose Form</title>
     </head>
-    <%@include file="./welcome.jsp"%>
+    <%@include file="./welcomeForCommon.jsp" %>
     <center>
         <%@include file="./bigger.jsp"%>
         <br>
