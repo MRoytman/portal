@@ -1,13 +1,12 @@
 <html lang="en">
-    <%@include file="./header_new.jsp"%>
     <head>
         <link rel="stylesheet" href="css/home/home.css"/>
     </head>
+    <%@include file="./header_new.jsp"%>
     <body>
         <div class="main-wrap">
         	<p>
             <div class="title">
-                <div class="txt-title-big">HEALTH INFORMATION SYSTEM</div>
                 <div class="txt-title-small">MSF OCG Web Portal</div>
                 <div class="txt-select">
                     <span>Please Select a Role From Below</span>
@@ -140,7 +139,7 @@
                         <a href="https://qv.ocg.msf.org/qlikview/index.htm" target="_blank">
                             <li class="field-med-icon">
                                 <div class="img">
-                                    <img alt="" src="img/hq_medical/HQMed_StatisticsDashboard.png">
+                                    <img alt="" src="img/field_med/FieldMed_StatisticsDashboard.png">
                                 </div>
                                 <div>
                                     <span>Statistics</span>
