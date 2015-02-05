@@ -1,7 +1,18 @@
 package com.msf.form;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -38,19 +49,31 @@ public class CreateGeneral extends HttpServlet {
     protected void doPost(HttpServletRequest request,
                             HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(true);
-        
+
         // Get direction of resources folder for edit form
         String dirResources = request.getParameter("dirResources");
         if(dirResources != null && dirResources.length() != 0){
             session.setAttribute("dirResources", dirResources);
         }
-        
+
         // Get app folder for edit form
         String appFolder = request.getParameter("appFolder");
         if(appFolder != null && appFolder.length() != 0){// Edit form
-            session.setAttribute("appFolder", appFolder);
+            // CNCD_LB => form type is CNCD, country code is LB
+            String strTypeForm = appFolder.split("_")[0];
+            String strCountryCode = appFolder.split("_")[1];
+            String strCountryName = getCountryNameWithCode(session, strCountryCode);
+
+            // Set session when user edit form
+            session.setAttribute("typeForm", strTypeForm);
+            session.setAttribute("CountryCode", strCountryCode);
+            session.setAttribute("CountryName", strCountryName);
+
+            // Set session for project list
+            String dirPropertiesFile = dirResources + "defaultProperties.properties";
+            getProjectsAndSetSession(session, dirPropertiesFile);
         }
-        
+
         String folder = request.getParameter("selectForm");
         if (folder != null && folder.length() != 0) {
             session.setAttribute("selectedForm", folder);
@@ -93,5 +116,67 @@ public class CreateGeneral extends HttpServlet {
         } else {
             response.sendRedirect("f0.jsp");
         }
+    }
+
+    /**
+     * Get country name with code country
+     *
+     * @author thaovd
+     * @param session
+     * @param codeCountry
+     * @return
+     * @throws IOException
+     */
+    private String getCountryNameWithCode(HttpSession session, String codeCountry) throws IOException{
+        BufferedReader rdCountry = new BufferedReader(new FileReader(session.getServletContext().getRealPath("/list_countries.csv")));
+        String lineCountry;
+        String[] strSplitCountry;
+        String countryName = "";
+        while((lineCountry = rdCountry.readLine()) != null){
+            // Example: AF   AFG Afghanistan Afghanistan Afganist�n  Asia    Southern Asia
+            strSplitCountry = lineCountry.split("\\s+");
+            if(codeCountry.equals(strSplitCountry[0])){ // Example: Code country is  AF
+                countryName = strSplitCountry[2];// Example: Country name is Afghanistan
+                break;
+            }
+        }
+        rdCountry.close();
+
+        return countryName;
+    }
+
+    /**
+     * Get projectName and projectCode, set session
+     * 
+     * @author thaovd
+     * @param session
+     * @param path
+     * @throws IOException
+     */
+    private void getProjectsAndSetSession(HttpSession session, String path) throws IOException{
+        if(path == null && path.length() == 0){
+            return;
+        }
+        
+        FileInputStream fis = new FileInputStream(path);
+        InputStreamReader isr = null;
+        BufferedReader br = null;
+        isr = new InputStreamReader(fis , "UTF-8");
+        br = new BufferedReader(isr);
+        String line;
+        List<String> projectNameList = new ArrayList<String>();
+        List<String> projectCodeList = new ArrayList<String>();
+
+        while((line = br.readLine()) != null){
+            if(line.startsWith("CountryCode")){
+                String[] arrProjectInfos = line.split("|");
+                projectNameList.add(arrProjectInfos[1].replace("\\ ", " "));
+                projectCodeList.add(arrProjectInfos[2]);
+            }
+        }
+
+        // Set session of projectName and projectCode
+        session.setAttribute("listProjectNameSS", projectNameList);
+        session.setAttribute("listProjectCodeSS", projectCodeList);
     }
 }

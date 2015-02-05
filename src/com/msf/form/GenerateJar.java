@@ -43,53 +43,36 @@ public class GenerateJar extends HttpServlet {
      */
     protected void doPost(HttpServletRequest request,
                             HttpServletResponse response) throws ServletException, IOException {
-        
         HttpSession session = request.getSession(true);
-        // PrintWriter out = response.getWriter();
-        
         logger.info("Start to generate Apps");
-        
-        String strApp = "";
-        String strType = "";
-        String strCode = "";
-        String strName = "";
-        String appFolder = (String) session.getAttribute("appFolder");
-        
-        if(appFolder != null && appFolder.length() != 0){// Edit form
-            // Example: CNCD_IR => typeForm is CNCD, code country is IR
-            strType = appFolder.split("_")[0];
-            strCode = appFolder.split("_")[1];
-            strName = getCountryNameWithCode(session, strCode);
-            strApp = appFolder;
-        }else{// Add new form
-            strType = (String) session.getAttribute("typeForm");
-            strCode = (String) session.getAttribute("CountryCode");
-            strName = (String) session.getAttribute("CountryName");
-            strApp = strType + "_" + strCode;
-        }
-        
+
+        String strType = (String) session.getAttribute("typeForm");
+        String strCode = (String) session.getAttribute("CountryCode");
+        String strName = (String) session.getAttribute("CountryName");
+        String strApp = strType + "_" + strCode;
+
         if ("".compareToIgnoreCase(session.getAttribute("username").toString().trim()) != 0) {
             String folder = session.getAttribute("selectedForm").toString();
             String strDeployPath = session.getAttribute("deployPath").toString();
             logger.info("DeployPath = " + strDeployPath);
-            
+
             String realPath = getServletContext().getRealPath("/");
             String urlServer = CommonCode.readFileProp(realPath, "msfform.properties", "urlServer");
             String urlApp = urlServer + "/ftpmsf/" + strApp;
-            
+
             File dirSh = new File(strDeployPath + "script/");
             File dirSrc = new File(strDeployPath + "commonFiles/");
             File dirDes = new File(strDeployPath + "ftpmsf/" + strApp + "/");
-            
+
             if (!dirDes.exists()) {
                 dirDes.mkdirs();
             } else {
                 FileUtils.cleanDirectory(dirDes);
             }
-            
+
             ArrayList<String> strOld = new ArrayList<String>();
             ArrayList<String> strNew = new ArrayList<String>();
-            
+
             if ("f1".compareToIgnoreCase(folder) == 0
                     || "f2".compareToIgnoreCase(folder) == 0
                     || "f3".compareToIgnoreCase(folder) == 0
@@ -103,21 +86,21 @@ public class GenerateJar extends HttpServlet {
                 strOld.add("CNDC Lebanon");
                 strOld.add("CNCD_LB");
                 strOld.add("Lebanon");
-                
+
                 strNew.add("http://" + urlApp);
                 strNew.add("http://" + urlApp);
                 strNew.add(strName + " - " + strType);
                 strNew.add(strType + " " + strName);
                 strNew.add(strApp);
                 strNew.add(strName);
-                
+
                 CommonCode.copyDir(dirSrc, dirDes);
                 CommonCode.replaceString(dirDes, strOld, strNew);
                 CommonCode.copyFile("ncdform.sh", dirDes, dirSh);
-                
+
                 logger.info("Start to run the ncdform.sh");
                 Runtime.getRuntime().exec("sh ncdform.sh", null, dirSh);
-                
+
                 try {
                     boolean x1 = true;
                     int i = 1;
@@ -137,7 +120,7 @@ public class GenerateJar extends HttpServlet {
                     e.printStackTrace();
                 }
             }
-            
+
             if ("f8".compareToIgnoreCase(folder) == 0
                     || "f9".compareToIgnoreCase(folder) == 0
                     || "f10".compareToIgnoreCase(folder) == 0) {
@@ -147,22 +130,22 @@ public class GenerateJar extends HttpServlet {
                 strOld.add("AGG OPD Lebanon");
                 strOld.add("AGG_OPD_LB");
                 strOld.add("Lebanon");
-                
+
                 strNew.add("http://" + urlApp);
                 strNew.add("http://" + urlApp);
                 strNew.add(strName + " - " + strType);
                 strNew.add(strType + " " + strName);
                 strNew.add(strApp);
                 strNew.add(strName);
-                
+
                 CommonCode.copyDir(dirSrc, dirDes);
                 CommonCode.replaceString(dirDes, strOld, strNew);
                 CommonCode.copyFile("ncdform.sh", dirDes, dirSh);
-                
+
                 logger.info("Start to run the ncdform.sh");
                 Runtime.getRuntime().exec("sh ncdform.sh", null, dirSh);
                 logger.info("Finished running the ncdform.sh");
-                
+
                 try {
                     boolean x1 = true;
                     int i = 1;
@@ -183,39 +166,12 @@ public class GenerateJar extends HttpServlet {
                     e.printStackTrace();
                 }
             }
-            
+
             session.setAttribute("urlJavaForm", "http://" + urlApp + "/instruction2_en.html");
             response.sendRedirect("writePdf.jsp");
             
         } else {
             response.sendRedirect("index.jsp");
         }
-    }
-    
-    /**
-     * Get country name with code country
-     * 
-     * @author thaovd
-     * @param session
-     * @param codeCountry
-     * @return
-     * @throws IOException
-     */
-    private String getCountryNameWithCode(HttpSession session, String codeCountry) throws IOException{
-        BufferedReader rdCountry = new BufferedReader(new FileReader(session.getServletContext().getRealPath("/list_countries.csv")));
-        String lineCountry;
-        String[] strSplitCountry;
-        String countryName = "";
-        while((lineCountry = rdCountry.readLine()) != null){
-            // Example: AF   AFG Afghanistan Afghanistan Afganistán  Asia    Southern Asia   
-            strSplitCountry = lineCountry.split("\\s+");
-            if(codeCountry.equals(strSplitCountry[0])){ // Example: Code country is  AF
-                countryName = strSplitCountry[2];// Example: Country name is Afghanistan
-                break;
-            }
-        }
-        rdCountry.close();
-        
-        return countryName;
     }
 }

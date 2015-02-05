@@ -116,24 +116,9 @@ public class WritePDFServlet extends HttpServlet{
         HttpSession session = request.getSession(true);
         // Check user login
         if(!isEmpty(session.getAttribute("username").toString().trim())){
-            String appFolder = (String) session.getAttribute("appFolder");
-
-            if(appFolder != null && appFolder.length() != 0){// Edit form
-                strAppFolder = appFolder;
-                // CNCD_LB => form type is CNCD, country code is LB
-                String strTypeForm = strAppFolder.split(UNDERSCORE)[0];
-                String strCountryCode = strAppFolder.split(UNDERSCORE)[1];
-                String strCountryName = getCountryNameWithCode(session, strCountryCode);
-
-                // Set session when user edit form
-                session.setAttribute("typeForm", strTypeForm);
-                session.setAttribute("CountryCode", strCountryCode);
-                session.setAttribute("CountryName", strCountryName);
-            }else{// Add new form
-                String strTypeForm = (String) session.getAttribute("typeForm");
-                String strCountryCode = (String) session.getAttribute("CountryCode");
-                strAppFolder = strTypeForm + UNDERSCORE + strCountryCode;
-            }
+            String strTypeForm = (String) session.getAttribute("typeForm");
+            String strCountryCode = (String) session.getAttribute("CountryCode");
+            strAppFolder = strTypeForm + UNDERSCORE + strCountryCode;
 
             // Get PDF path
             // Check user click Generate Java Form button
@@ -188,33 +173,6 @@ public class WritePDFServlet extends HttpServlet{
         }else{// No login
             response.sendRedirect("index.jsp");
         }
-    }
-
-    /**
-     * Get country name with code country
-     *
-     * @author thaovd
-     * @param session
-     * @param codeCountry
-     * @return
-     * @throws IOException
-     */
-    private String getCountryNameWithCode(HttpSession session, String codeCountry) throws IOException{
-        BufferedReader rdCountry = new BufferedReader(new FileReader(session.getServletContext().getRealPath("/list_countries.csv")));
-        String lineCountry;
-        String[] strSplitCountry;
-        String countryName = "";
-        while((lineCountry = rdCountry.readLine()) != null){
-            // Example: AF   AFG Afghanistan Afghanistan Afganistán  Asia    Southern Asia
-            strSplitCountry = lineCountry.split("\\s+");
-            if(codeCountry.equals(strSplitCountry[0])){ // Example: Code country is  AF
-                countryName = strSplitCountry[2];// Example: Country name is Afghanistan
-                break;
-            }
-        }
-        rdCountry.close();
-
-        return countryName;
     }
 
     /**
