@@ -15,14 +15,24 @@
         font-family: txtFont;
         font-weight: bold;
         text-align: center;
-        margin-top: -79px;
+        margin-top: -90px;
         line-height: 100px;
         color: #414141;
+    }
+
+    body .logo-msf{
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-family: txtFont;
     }
 -->
 </style>
 <div style="background-color: #E5E5E5;height: 100px;">
-    <img id='msfLogo' src="../img/head_logo_msf.gif" alt="head_logo_msf.gif" style="padding-left: 25px; padding-top: 15px;"/>
+    <a href="../" class="logo-msf">
+        <img id='msfLogo' src="../img/head_logo_msf.gif" alt="head_logo_msf.gif" style="padding-left: 25px; padding-top: 9px;"/>
+        <div style="padding-left: 80px; font-size: 16px;">MSF OCG Web Portal</div>
+    </a>
     <div class="header-title">
         HEALTH INFORMATION SYSTEM
     </div>
