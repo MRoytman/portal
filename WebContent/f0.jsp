@@ -8,7 +8,7 @@
 
 </head>
 <%@include file="./welcomeForCommon.jsp" %>
-<%@include file="./header.jsp"%>
+<%@include file="./countryNameLabel.jsp"%>
 <center>
 	<%@include file="./bigger.jsp"%>
 	<form action="CreateGeneral" method="post">
