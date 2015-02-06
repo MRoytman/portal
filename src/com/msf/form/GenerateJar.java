@@ -63,7 +63,7 @@ public class GenerateJar extends HttpServlet {
             File dirSh = new File(strDeployPath + "script/");
             File dirSrc = new File(strDeployPath + "commonFiles/");
             File dirDes = new File(strDeployPath + "ftpmsf/" + strApp + "/");
-
+            
             if (!dirDes.exists()) {
                 dirDes.mkdirs();
             } else {
@@ -101,11 +101,16 @@ public class GenerateJar extends HttpServlet {
                 logger.info("Start to run the ncdform.sh");
                 Runtime.getRuntime().exec("sh ncdform.sh", null, dirSh);
 
+                // This is the folder that contains the final deploy files of the app: /var/lib/tomcat7/webapps/ftpmsf/EPID_CA
+                String strDeployFolder = realPath.replace("MSFForm", "ftpmsf") + "/" + strApp + "/";
+                
+                File dirUrlApp = new File(strDeployFolder);
                 try {
                     boolean x1 = true;
                     int i = 1;
                     while (x1 && i < 50) {
-                        if (CommonCode.checkFile(dirDes, strApp + "EntryForm3.0.jar.pack.gz")) {
+                    	// If this folder exists, meaning that the process is done!                         	
+                        if (CommonCode.checkFolderEmpty(dirUrlApp)) {
                             logger.info("---------------------------------------------------------------");
                             logger.info("::::::: All files have been generated successfully after " + i * 5 + " seconds in " + urlApp);
                             logger.info("---------------------------------------------------------------");

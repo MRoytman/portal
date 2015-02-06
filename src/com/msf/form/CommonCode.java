@@ -217,6 +217,16 @@ public class CommonCode {
 		return false;
 	}
 
+	public static boolean checkFolderEmpty(File givenFolder) {
+		File f = new File(givenFolder.getAbsolutePath());
+		if (f.exists()) {
+			File[] fList = givenFolder.listFiles();
+			if (fList.length > 0)
+				return true;			
+		}
+		return false;
+	}
+
 	public static void replaceString(File dirPath, ArrayList<String> strOld,
 			ArrayList<String> strNew) {
 		BufferedReader reader;

@@ -39,6 +39,10 @@ mkdir AGG_OPD_XX/src/main/resources
 cp resources/* AGG_OPD_XX/src/main/resources/
 echo "Copy resource files to the project folder ... " >> $logpath
 
+##################### REMOVE THE FTPMSF/APP BEFORE DOING ANYTHING
+rm -r $rootPath/ftpmsf/$appName
+
+
 ##################### START COMPILE COMMON PROJECTS
 echo "--------------------------------------------" >> $logpath 
 echo "---- START MAVEN BUILD ---------" >> $logpath 
