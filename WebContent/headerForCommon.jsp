@@ -11,7 +11,7 @@
     }
 
     body .header-title{
-        font-size: 60px;
+        font-size: 40px;
         font-family: txtFont;
         font-weight: bold;
         text-align: center;
@@ -31,7 +31,7 @@
 <div style="background-color: #E5E5E5;height: 100px;">
     <a href="./" class="logo-msf">
         <img id='msfLogo' src="./img/head_logo_msf.gif" alt="head_logo_msf.gif" style="padding-left: 25px; padding-top: 9px;"/>
-        <div style="padding-left: 80px; font-size: 16px;">MSF OCG Web Portal</div>
+        <div style="padding-left: 100px; font-size: 13px;">MSF OCG Web Portal</div>
     </a>
     <div class="header-title">
         HEALTH INFORMATION SYSTEM

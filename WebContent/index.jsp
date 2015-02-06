@@ -13,11 +13,11 @@
             </div>
             <ul>
                 <li id="hq-medical" class="home-icon">
-                    <div class="img">
-                        <img alt="" src="img/home/home_hq_medical.png">
-                    </div>
                     <div class="txt">
                         <span>HQ Medical</span>
+                    </div>
+                    <div class="img">
+                        <img alt="" src="img/home/home_hq_medical.png">
                     </div>
                     <ul id="hq-medical-icons">
                         <a href="./login.jsp">
@@ -76,12 +76,11 @@
                     </ul>
                 </li>
                 <li id="field-worker-data">
+                    <div class="txt">
+                        <span>Field Worker: Data</span>
+                    </div>
                     <div class="img">
                         <img alt="" src="img/home/home_field_worker_data.png">
-                    </div>
-                    <div class="txt">
-                        <span>Field Worker:</span>
-                        <div>Data</div>
                     </div>
                     <ul id="field-data-icons">
                         <a href="http://ecampus.msf.org/moodlemsf/" target="_blank">
@@ -117,12 +116,11 @@
                     </ul>
                 </li>
                 <li id="field-worker-medical">
+                    <div class="txt">
+                        <span>Field Worker: Medical</span>
+                    </div>
                     <div class="img">
                         <img alt="" src="img/home/home_field_worker_medical.png">
-                    </div>
-                    <div class="txt">
-                        <span>Field Worker:</span>
-                        <div>Medical</div>
                     </div>
                     <ul id="field-med-icons">
                         <a href="http://ecampus.msf.org/moodlemsf/" target="_blank">
@@ -159,11 +157,11 @@
                     </ul>
                 </li>
                 <li id="it-staff">
-                    <div class="img">
-                        <img alt="" src="img/home/home_it_staff.png">
-                    </div>
                     <div class="txt">
                         <span>IT Staff</span>
+                    </div>
+                    <div class="img">
+                        <img alt="" src="img/home/home_it_staff.png">
                     </div>
                     <ul id="it-icons">
                         <a href="#">
