@@ -16,7 +16,7 @@
                     <div class="txt">
                         <span>HQ Medical</span>
                     </div>
-                    <div class="img">
+                    <div class="img-home">
                         <img alt="" src="img/home/home_hq_medical.png">
                     </div>
                     <ul id="hq-medical-icons">
@@ -79,7 +79,7 @@
                     <div class="txt">
                         <span>Field Worker: Data</span>
                     </div>
-                    <div class="img">
+                    <div class="img-home">
                         <img alt="" src="img/home/home_field_worker_data.png">
                     </div>
                     <ul id="field-data-icons">
@@ -119,7 +119,7 @@
                     <div class="txt">
                         <span>Field Worker: Medical</span>
                     </div>
-                    <div class="img">
+                    <div class="img-home">
                         <img alt="" src="img/home/home_field_worker_medical.png">
                     </div>
                     <ul id="field-med-icons">
@@ -160,7 +160,7 @@
                     <div class="txt">
                         <span>IT Staff</span>
                     </div>
-                    <div class="img">
+                    <div class="img-home">
                         <img alt="" src="img/home/home_it_staff.png">
                     </div>
                     <ul id="it-icons">

@@ -100,7 +100,7 @@
         <%
         }
         %>
-        <a href="./dataStorage.jsp">
+        <a href="./modify.jsp">
             <input type="button" value="Back"/>
         </a>
     </center>

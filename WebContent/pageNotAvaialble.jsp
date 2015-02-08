@@ -8,7 +8,7 @@
 Sorry, the requested page is not available yet, will be soon provided.<br>Thanks for your patience!
 </h2>
 <br><br><br>
-<a   href="./index.jsp"><input type="button"  value="Back" ></a>
+<a   href="./modify.jsp"><input type="button"  value="Back" ></a>
 </center>
 
 <%@include file="./footer.jsp" %>

@@ -8,11 +8,11 @@
         color: @txt-color;
         margin-bottom: 40px;
         .txt-title-small{
-            font-size: 40px;
+            font-size: 35px;
             font-weight: bold;
         }
         .txt-select{
-            font-size: 25px;
+            font-size: 20px;
         }
     }
 }
@@ -20,9 +20,20 @@ ul{
     display: inline-block;
     padding: 0;
     list-style: none;
+    margin-top: -50px;
+    #hq-medical{
+        .img-home > img{
+            width: 75%;
+        }
+    }
+    #field-worker-data, #field-worker-medical, #it-staff{
+        .img-home > img{
+            width: 65%;
+        }
+    }
     li{
         float: left;
-        width: 297px;
+        width: 250px;
         text-align: center;
         .txt{
             font-family: txtFont;
@@ -54,13 +65,14 @@ ul{
             width: 1165px;
             height: 293px;
             background: url("../../img/hq_medical/HQMed_bg.png") no-repeat;
-            margin-top: 5px;
-            margin-left: 40px;
+            margin-top: 3px;
+            margin-left: 15px;
             li{
                 width: 233px;
             }
             li:hover{
                 background-color: #77aac3;
+                transition: all 0.5s ease 0s;
             }
         }
 
@@ -68,13 +80,14 @@ ul{
             width: 870px;
             height: 294px;
             background: url("../../img/field_data/FieldData_bg.png") no-repeat;
-            margin-top: 48px;
-            margin-left: -275px;
+            margin-top: 27px;
+            margin-left: -295px;
             .field-data-icon{
                 width: 288px;
             }
             li:hover{
                 background-color: #915173;
+                transition: all 0.5s ease 0s;
             }
         }
 
@@ -82,14 +95,15 @@ ul{
             width: 870px;
             height: 294px;
             background: url("../../img/field_med/FieldMed_bg.png") no-repeat;
-            margin-top: 48px;
-            margin-left: -284px;
+            margin-top: 27px;
+            margin-left: -307px;
             .field-med-icon{
                 width: 288px;
                 margin-left: 1px;
             }
             li:hover{
                 background-color: #429373;
+                transition: all 0.5s ease 0s;
             }
         }
 
@@ -97,7 +111,7 @@ ul{
             width: 579px;
             height: 294px;
             background: url("../../img/it/IT_bg.png") no-repeat;
-            margin-top: 48px;
+            margin-top: 27px;
             margin-left: -353px;
             .it-icon{
                 width: 288px;
@@ -105,6 +119,7 @@ ul{
             }
             li:hover{
                 background-color: #E69556;
+                transition: all 0.5s ease 0s;
             }
         }
     }
@@ -119,5 +134,9 @@ ul{
     }
     li:hover #it-icons{
         display: inline-block;
+    }
+    li:hover .img-home > img {
+        opacity: 0.85;
+        transform: scale(0.95);
     }
 }

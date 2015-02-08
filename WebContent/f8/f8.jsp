@@ -30,7 +30,7 @@
 <%@include file="./section8.jsp" %>
 
 <hr>
-<a href="../f0.jsp"><input type="button"  value="Back" ></a>
+<a href="../modify.jsp"><input type="button"  value="Back" ></a>
 <input type="submit"  value="Confirm"></form>
 </body>
 <%@include file="../footer2.jsp" %>

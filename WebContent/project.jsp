@@ -550,7 +550,7 @@ input[type="button"]
                 </tr>
                 <tr>
                     <td>
-                        <a href='./country.jsp'><input type="button" value ="Back"></a>
+                        <a href='./modify.jsp'><input type="button" value ="Back"></a>
                         <input type="submit"  value="Confirm" onclick="submitSelectedRows()">
                     </td>
                 </tr>

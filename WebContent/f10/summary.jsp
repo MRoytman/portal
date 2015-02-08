@@ -42,7 +42,7 @@
 <hr>
 
 <div style="display: inline-block;">
-    <a href="./f10.jsp"><input type="button" value="Back"></a>
+    <a href="../modify.jsp"><input type="button" value="Back"></a>
 </div>
 <div style="display: inline-block;">
     <form action="../waiting.jsp" id="newJar" name="newJar" method="post">
