@@ -110,6 +110,7 @@ public class GenerateJar extends HttpServlet {
                     int i = 1;
                     while (x1 && i < 50) {
                     	// If this folder exists, meaning that the process is done!                         	
+                        Thread.sleep(5000);// 30 sec
                         if (CommonCode.checkFolderEmpty(dirUrlApp)) {
                             logger.info("---------------------------------------------------------------");
                             logger.info("::::::: All files have been generated successfully after " + i * 5 + " seconds in " + urlApp);
@@ -117,7 +118,6 @@ public class GenerateJar extends HttpServlet {
                             break;
                         } else {
                             logger.info("Waiting to generate files ...... counter = " + i);
-                            Thread.sleep(5000);// 30 sec
                         }
                         i++;
                     }

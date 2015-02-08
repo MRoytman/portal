@@ -9,6 +9,11 @@ deployPath="$PWD"  # Path = xxx/MSFForm
 cd ..
 rootPath="$PWD"  # Path = /var/lib/tomcat7/webapps
 
+
+
+##################### REMOVE THE FTPMSF/APP BEFORE DOING ANYTHING
+rm -r $rootPath/ftpmsf/$appName
+
 ##################### CREATE LOG FILES
 mkdir ftpmsf # This is public ftp
 mkdir ftpmsf/logs
@@ -38,11 +43,6 @@ cp resources/* $appName"_backup"/resources/
 mkdir CNCD_XX/src/main/resources
 cp resources/* CNCD_XX/src/main/resources/
 echo "Copy resource files to the project name... " >> $logpath
-
-
-##################### REMOVE THE FTPMSF/APP BEFORE DOING ANYTHING
-rm -r $rootPath/ftpmsf/$appName
-
 
 ##################### START COMPILE COMMON PROJECTS
 echo "--------------------------------------------" >> $logpath 
