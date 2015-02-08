@@ -240,9 +240,7 @@ public class CommonCode {
 				try {
 					sb = new StringBuilder();
 					try {
-						reader = new BufferedReader(new FileReader(
-								dirPath.getAbsolutePath() + "/"
-										+ file.getName()));
+						reader = new BufferedReader(new FileReader(dirPath.getAbsolutePath() + "/" + file.getName()));
 						try {
 							while ((line = reader.readLine()) != null) {
 								sb.append("\n" + line);
