@@ -25,7 +25,7 @@
                                 <div class="img">
                                     <img alt="" src="img/hq_medical/HQMed_Database.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Database</span>
                                     <div>Generator</div>
                                 </div>
@@ -36,7 +36,7 @@
                                 <div class="img">
                                     <img alt="" src="img/hq_medical/HQMed_SurveyCreation.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Survey</span>
                                     <div>Creation</div>
                                 </div>
@@ -47,7 +47,7 @@
                                 <div class="img">
                                     <img alt="" src="img/hq_medical/HQMed_Training.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Training</span>
                                 </div>
                             </li>
@@ -57,7 +57,7 @@
                                 <div class="img">
                                     <img alt="" src="img/hq_medical/HQMed_StatisticsDashboard.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Statistics</span>
                                     <div>Dashboard</div>
                                 </div>
@@ -68,7 +68,7 @@
                                 <div class="img">
                                     <img alt="" src="img/hq_medical/HQMed_Help.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Help Desk</span>
                                 </div>
                             </li>
@@ -88,7 +88,7 @@
                                 <div class="img">
                                     <img alt="" src="img/hq_medical/HQMed_Training.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Training</span>
                                 </div>
                             </li>
@@ -98,7 +98,7 @@
                                 <div class="img">
                                     <img src="img/field_data/FieldData_Downloads.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Downloads</span>
                                 </div>
                             </li>
@@ -108,7 +108,7 @@
                                 <div class="img">
                                     <img src="img/field_data/FieldData_Help.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Help Desk</span>
                                 </div>
                             </li>
@@ -128,7 +128,7 @@
                                 <div class="img">
                                     <img alt="" src="img/hq_medical/HQMed_Training.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Training</span>
                                 </div>
                             </li>
@@ -138,7 +138,7 @@
                                 <div class="img">
                                     <img alt="" src="img/field_med/FieldMed_StatisticsDashboard.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Statistics</span>
                                     <div>Dashboard</div>
                                 </div>
@@ -149,7 +149,7 @@
                                 <div class="img">
                                     <img src="img/field_med/FieldMed_Help.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Help Desk</span>
                                 </div>
                             </li>
@@ -169,7 +169,7 @@
                                 <div class="img">
                                     <img src="img/it/IT_AdminLogin.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Administrative</span>
                                     <div>Login</div>
                                 </div>
@@ -180,7 +180,7 @@
                                 <div class="img">
                                     <img src="img/it/IT_Triage.png">
                                 </div>
-                                <div>
+                                <div class="txt-small">
                                     <span>Help Desk</span>
                                     <div>Triage</div>
                                 </div>
