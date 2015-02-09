@@ -20,14 +20,12 @@ public class Login extends HttpServlet {
      */
     public Login() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
     }
 
     /**
@@ -39,7 +37,22 @@ public class Login extends HttpServlet {
         String password = request.getParameter("pass");
         //PrintWriter out = response.getWriter();
         HttpSession session = request.getSession(true);
-        if (username.toLowerCase().trim().equals("admin") && password.toLowerCase().trim().equals("admin")) {
+        boolean isLoginSuccess = false;
+
+        // User is admin
+        if(username.toLowerCase().trim().equals("admin")
+                && password.toLowerCase().trim().equals("admin")){
+            session.setAttribute("userType", "isAdmin");
+            isLoginSuccess = true;
+        }
+
+        // User is msfuser
+        if(username.toLowerCase().trim().equals("msfuser")
+                && password.toLowerCase().trim().equals("msfuser")){
+            session.setAttribute("userType", "isUser");
+            isLoginSuccess = true;
+        }
+
             /*
             try{
                 String loged= session.getAttribute("username").toString();
@@ -56,8 +69,10 @@ public class Login extends HttpServlet {
                 response.sendRedirect("index.jsp");
             }
             */
+
+        if(isLoginSuccess){
+            // Set user name for session
             session.setAttribute("username", username);
-            
             // Get context path
             String backURL = (String) session.getAttribute("backURL");
             if(backURL != null && backURL.length() != 0){
@@ -65,9 +80,7 @@ public class Login extends HttpServlet {
             }else{
                 response.sendRedirect("dataStorage.jsp");
             }
-            //response.sendRedirect("country.jsp");
-        }
-        else {
+        }else{
             session.setAttribute("Error","Invalid username and password!");
             response.sendRedirect("index.jsp");
        }
