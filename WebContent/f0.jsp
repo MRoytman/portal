@@ -7,6 +7,12 @@
 <title>MSF| Choose Form</title>
 
 </head>
+    <script type="text/javascript">
+        function goBack(){
+            window.history.back();
+        }
+    </script>
+<%@include file="./isAdmin.jsp" %>
 <%@include file="./welcomeForCommon.jsp" %>
 <%@include file="./countryNameLabel.jsp"%>
 <center>
@@ -77,8 +83,10 @@
 			</tr>
 
 			<tr>
-				<td><a href="./modify.jsp"><input type="button"
-						value="Back"></a> <input type="submit" value="Confirm"></td>
+				<td>
+                    <input type="button" value="Back" onclick="goBack();">
+                    <input type="submit" value="Confirm">
+                </td>
 				<td></td>
 			</tr>
 		</table>

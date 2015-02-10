@@ -9,6 +9,7 @@
 
 <script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
 <%@include file="./bigger.jsp" %>
+<%@include file="./isAdmin.jsp" %>
 <%@include file="./welcomeForCommon.jsp" %>
 
 <script type="text/javascript">

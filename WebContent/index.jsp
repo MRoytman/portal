@@ -83,23 +83,34 @@
                         <img alt="" src="img/home/home_field_worker_data.png">
                     </div>
                     <ul id="field-data-icons">
-                        <a href="http://ecampus.msf.org/moodlemsf/" target="_blank">
+                        <a href="#" target="_blank">
                             <li class="field-data-icon">
                                 <div class="img">
-                                    <img alt="" src="img/hq_medical/HQMed_Training.png">
+                                    <img alt="" src="img/field_data/FieldData_Database.png">
                                 </div>
                                 <div class="txt-small">
-                                    <span>Training</span>
+                                    <span>Database</span>
+                                    <div>Generator</div>
                                 </div>
                             </li>
                         </a>
-                        <a href="listAll.jsp">
+                        <a href="#">
                             <li class="field-data-icon">
                                 <div class="img">
-                                    <img src="img/field_data/FieldData_Downloads.png">
+                                    <img src="img/field_data/FieldData_Statistics.png">
                                 </div>
                                 <div class="txt-small">
-                                    <span>Downloads</span>
+                                    <span>Statistics</span>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="http://ecampus.msf.org/moodlemsf/" target="_blank">
+                            <li class="field-data-icon">
+                                <div class="img">
+                                    <img alt="" src="img/field_data/FieldData_Training.png">
+                                </div>
+                                <div class="txt-small">
+                                    <span>Training</span>
                                 </div>
                             </li>
                         </a>
@@ -123,16 +134,6 @@
                         <img alt="" src="img/home/home_field_worker_medical.png">
                     </div>
                     <ul id="field-med-icons">
-                        <a href="http://ecampus.msf.org/moodlemsf/" target="_blank">
-                            <li class="field-med-icon">
-                                <div class="img">
-                                    <img alt="" src="img/hq_medical/HQMed_Training.png">
-                                </div>
-                                <div class="txt-small">
-                                    <span>Training</span>
-                                </div>
-                            </li>
-                        </a>                        
                         <a href="https://qv.ocg.msf.org/qlikview/index.htm" target="_blank">
                             <li class="field-med-icon">
                                 <div class="img">
@@ -141,6 +142,16 @@
                                 <div class="txt-small">
                                     <span>Statistics</span>
                                     <div>Dashboard</div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="http://ecampus.msf.org/moodlemsf/" target="_blank">
+                            <li class="field-med-icon">
+                                <div class="img">
+                                    <img alt="" src="img/field_med/FieldMed_Training.png">
+                                </div>
+                                <div class="txt-small">
+                                    <span>Training</span>
                                 </div>
                             </li>
                         </a>
@@ -167,22 +178,54 @@
                         <a href="#">
                             <li class="it-icon">
                                 <div class="img">
-                                    <img src="img/it/IT_AdminLogin.png">
+                                    <img src="img/it/IT_Admin.png">
                                 </div>
                                 <div class="txt-small">
-                                    <span>Administrative</span>
+                                    <span>Admin</span>
                                     <div>Login</div>
                                 </div>
                             </li>
                         </a>
-                        <a href="emailSend.jsp">
+                        <a href="#">
                             <li class="it-icon">
                                 <div class="img">
-                                    <img src="img/it/IT_Triage.png">
+                                    <img src="img/it/IT_Database.png">
                                 </div>
                                 <div class="txt-small">
-                                    <span>Help Desk</span>
-                                    <div>Triage</div>
+                                    <span>Database</span>
+                                    <div>Admin</div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="it-icon">
+                                <div class="img">
+                                    <img src="img/it/IT_Training.png">
+                                </div>
+                                <div class="txt-small">
+                                    <span>Training</span>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="it-icon">
+                                <div class="img">
+                                    <img src="img/it/IT_Statistics.png">
+                                </div>
+                                <div class="txt-small">
+                                    <span>Statistics</span>
+                                    <div>Dashboard</div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="it-icon">
+                                <div class="img">
+                                    <img src="img/it/IT_Survey.png">
+                                </div>
+                                <div class="txt-small">
+                                    <span>Survey</span>
+                                    <div>Creation</div>
                                 </div>
                             </li>
                         </a>

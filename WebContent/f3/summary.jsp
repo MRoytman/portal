@@ -7,6 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="./popup.jsp" %>
 <%@include file="../bigger.jsp" %>
+<%@include file="../isAdmin.jsp" %>
 <%@include file="../welcomeForForm.jsp" %>
 <%@include file="../header2.jsp" %>
 <center><h2>Summary of selected fields</h2></center>
@@ -173,7 +174,7 @@
 %>
 
 <div style="display: inline-block;">
-    <a href="../modify.jsp"><input type="button" value="Back"></a>
+    <a href="./f3.jsp"><input type="button" value="Back"></a>
 </div>
 <div style="display: inline-block;">
     <form action="../waiting.jsp" id="newJar" name="newJar" method="post">
@@ -187,5 +188,3 @@
         <input type="submit" value="Generate PDF">
     </form>
 </div>
-
-<%@include file="../footer2.jsp" %>

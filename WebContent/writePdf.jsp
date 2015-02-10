@@ -1,4 +1,5 @@
 <%@include file="./bigger.jsp" %>
+<%@include file="./isAdmin.jsp" %>
 <%@include file="./welcomeForCommon.jsp" %>
 
 <br><br>

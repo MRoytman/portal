@@ -13,7 +13,7 @@
 <%@include file="../bigger.jsp" %>
 </head>
 <body>
-
+<%@include file="../isAdmin.jsp" %>
 <%@include file="../welcomeForForm.jsp" %>
 <%@include file="../header2.jsp" %>
 
@@ -23,8 +23,7 @@
 <%@include file="./section1.jsp" %>
 <%@include file="./section2.jsp" %>
 <hr>
-<a    href="../modify.jsp"><input type="button"  value="Back" ></a>
+<a    href="../f0.jsp"><input type="button"  value="Back" ></a>
 <input type="submit"  value="Confirm"></form>
 </body>
-<%@include file="../footer2.jsp" %>
 </html>

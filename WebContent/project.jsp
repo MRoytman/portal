@@ -529,7 +529,7 @@ input[type="button"]
     
 
 </head>
-
+<%@include file="./isAdmin.jsp" %>
 <%@include file="./welcomeForCommon.jsp" %>
 <%@include file="./bigger.jsp" %>
 <center><h1>Selected country: ${sessionScope.CountryName}</h1></center>
@@ -550,7 +550,7 @@ input[type="button"]
                 </tr>
                 <tr>
                     <td>
-                        <a href='./modify.jsp'><input type="button" value ="Back"></a>
+                        <a href='./country.jsp'><input type="button" value ="Back"></a>
                         <input type="submit"  value="Confirm" onclick="submitSelectedRows()">
                     </td>
                 </tr>
