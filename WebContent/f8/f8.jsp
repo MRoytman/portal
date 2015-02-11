@@ -11,6 +11,11 @@
 <title>MSF</title>
 <%@include file="./popup.jsp" %>
 <%@include file="../bigger.jsp" %>
+<script type="text/javascript">
+        function goBack(){
+            window.history.back();
+        }
+</script>
 </head>
 <body>
 <%@include file="../isAdmin.jsp" %>
@@ -30,7 +35,7 @@
 <%@include file="./section8.jsp" %>
 
 <hr>
-<a href="../f0.jsp"><input type="button"  value="Back" ></a>
+<input type="button" value="Back" onclick="goBack();">
 <input type="submit"  value="Confirm"></form>
 </body>
 </html>

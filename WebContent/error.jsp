@@ -6,5 +6,11 @@
     </head>
     <center>
         <h2>Sorry! Page not found.</h2>
+        <%
+        String url = request.getRequestURL().toString();
+        %>
+        <h3>
+            <a href="<%=url.replace("error", "logout")%>">Go home page.</a>
+        </h3>
     </center>
 </html>

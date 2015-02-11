@@ -128,9 +128,9 @@
     //../GenerateJar
 %>
 
-<div style="display: inline-block;">
+<!-- <div style="display: inline-block;">
     <a href="./f5.jsp"><input type="button" value="Back"></a>
-</div>
+</div> -->
 <div style="display: inline-block;">
     <form action="../waiting.jsp" id="newJar" name="newJar" method="post">
         <input type="submit" value="Generate Java Form">
