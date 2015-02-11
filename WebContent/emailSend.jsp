@@ -6,9 +6,7 @@
     
 <script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
 <%@include file="./bigger.jsp" %>
-<div style="background-color: #E5E5E5;height: 120px;"><br>
-<img id='msfLogo' src="./img/head_logo_msf.gif" alt="head_logo_msf.gif" /></div>
-<%@include file="./bigger.jsp" %>    
+<%@include file="./welcomeForCommon.jsp" %>
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
