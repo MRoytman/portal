@@ -105,8 +105,13 @@
             <h2>Resource not found</h2>
         <%
         }
+        String userAdmin = (String) session.getAttribute("userType");
+        if(userAdmin.equals("isAdmin")){
         %>
-        <input type="button" value="Back" onclick="goBack()"/>
+            <input type="button" value="Back" onclick="goBack()"/>
+        <%
+        }
+        %>
     </center>
     <%@include file="./footer.jsp"%>
 </html>
