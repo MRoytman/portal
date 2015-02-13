@@ -47,7 +47,7 @@
                 <th>App link</th>
                 <th>PDF link</th>
         <%
-                if((userType != null && userType.length() != 0) && userType.equals("isAdmin")){
+                if("isAdmin".equals(userType)){
         %>
                 <th>Modify</th>
         <%
@@ -102,7 +102,7 @@
                 }
         %>
         <%
-                if((userType != null && userType.length() != 0) && userType.equals("isAdmin")){
+                if("isAdmin".equals(userType)){
                     // Get form name, ex: NUT_LB => NUT
                     String formName = folderName.split("_")[0];
                     if(formMap.containsKey(formName)){
@@ -134,7 +134,7 @@
             <h2>Resource not found</h2>
         <%
         }
-        if((userType != null && userType.length() != 0) && userType.equals("isAdmin")){
+        if("isAdmin".equals(userType)){
         %>
             <a href="./dataStorage.jsp">
                 <input type="button" value="Back" style="margin-top: 10px;"/>
