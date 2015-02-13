@@ -36,7 +36,7 @@
         }
 
         // Get userType
-        String userType = (String)session.getAttribute("userType");
+        String userType = (String) session.getAttribute("userType");
         boolean isResource = false;
         %>
         <p><font size="5"><strong>List of existing Java Forms and PDF files for downloading</strong></font></p>
@@ -47,7 +47,7 @@
                 <th>App link</th>
                 <th>PDF link</th>
         <%
-                if(userType.equals("isAdmin")){
+                if((userType != null && userType.length() != 0) && userType.equals("isAdmin")){
         %>
                 <th>Modify</th>
         <%
@@ -102,7 +102,7 @@
                 }
         %>
         <%
-                if(userType.equals("isAdmin")){
+                if((userType != null && userType.length() != 0) && userType.equals("isAdmin")){
                     // Get form name, ex: NUT_LB => NUT
                     String formName = folderName.split("_")[0];
                     if(formMap.containsKey(formName)){
@@ -134,8 +134,7 @@
             <h2>Resource not found</h2>
         <%
         }
-        String userAdmin = (String) session.getAttribute("userType");
-        if((userAdmin != null && userAdmin.length() != 0) && userAdmin.equals("isAdmin")){
+        if((userType != null && userType.length() != 0) && userType.equals("isAdmin")){
         %>
             <a href="./dataStorage.jsp">
                 <input type="button" value="Back" style="margin-top: 10px;"/>
