@@ -13,6 +13,7 @@ pageEncoding="ISO-8859-1"%>
     <center>
         <%@include file="./bigger.jsp"%>
         <br>
+        <%--
         <%
         if(userType.equals("isAdmin")){
         %>
@@ -21,7 +22,8 @@ pageEncoding="ISO-8859-1"%>
         </a>
         <%
         }
-        %>
+        %> 
+        --%>
         <a href="./listAll.jsp">
             <input type="submit" value="List all"/>
         </a>
