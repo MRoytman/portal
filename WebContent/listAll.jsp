@@ -42,10 +42,11 @@
         <p><font size="5"><strong>List of existing Java Forms and PDF files for downloading</strong></font></p>
         <table>
             <tr>
-                <th>Type form</th>
+                <th>Name</th>
                 <th>Created at</th>
-                <th>App link</th>
-                <th>PDF link</th>
+                <th>Database Link</th>
+                <th>XML Link</th>
+                <th>Paper Form Link</th>
         <%
                 if("isAdmin".equals(userType)){
         %>
@@ -88,6 +89,9 @@
         %>
                     <td>
                         <a href="<%=urlAppFolder + "/" + "instruction2_en.html"%>" target="_blank">App Link</a>
+                    </td>
+                    <td>
+                        n/a
                     </td>
         <%
                 }
