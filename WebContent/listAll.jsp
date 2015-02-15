@@ -40,17 +40,17 @@
         boolean isResource = false;
         %>
         <p><font size="5"><strong>List of existing Java Forms and PDF files for downloading</strong></font></p>
-        <table>
+        <table class="CSSTableGenerator">
             <tr>
-                <th>Name</th>
-                <th>Created at</th>
-                <th>Database Link</th>
-                <th>XML Link</th>
-                <th>Paper Form Link</th>
+                <td>Name</td>
+                <td>Created at</td>
+                <td>Database Link</td>
+                <td>XML Link</td>
+                <td>Paper Form Link</td>
         <%
                 if("isAdmin".equals(userType)){
         %>
-                <th>Modify</th>
+                <td>Modify</td>
         <%
                 }
         %>
