@@ -44,9 +44,9 @@
             <tr>
                 <td>Name</td>
                 <td>Created at</td>
-                <td>Database Link</td>
-                <td>XML Link</td>
-                <td>Paper Form Link</td>
+                <td>Custom Database Link</td>
+                <td>Data Export Link</td>
+                <td>Paper Form PDF Link</td>
         <%
                 if("isAdmin".equals(userType)){
         %>
