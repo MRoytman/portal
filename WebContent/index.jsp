@@ -175,7 +175,7 @@
                                 </div>
                             </li>
                         </a>
-                        <a href="emailSend.jsp">
+                        <a href="http://sourceforge.net/projects/dotproject/">
                             <li class="it-icon">
                                 <div class="img">
                                     <img src="img/it/IT_Triage.png">
