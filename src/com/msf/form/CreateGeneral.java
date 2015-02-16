@@ -134,7 +134,7 @@ public class CreateGeneral extends HttpServlet {
         String countryName = "";
         while((lineCountry = rdCountry.readLine()) != null){
             // Example: AF   AFG Afghanistan Afghanistan Afganist�n  Asia    Southern Asia
-            strSplitCountry = lineCountry.split("\\s+");
+            strSplitCountry = lineCountry.split("\\t");
             if(codeCountry.equals(strSplitCountry[0])){ // Example: Code country is  AF
                 countryName = strSplitCountry[2];// Example: Country name is Afghanistan
                 break;

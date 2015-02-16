@@ -20,7 +20,7 @@
     <head>
         <link rel="stylesheet" href="css/listAll/listAll.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <title>MSF| Choose Form</title>
+        <title>MSF| List All</title>
     </head>
     <%@include file="./welcomeForCommon.jsp" %>
     <center>
@@ -35,13 +35,27 @@
             formMap.put(formTypes[i].getLabel(), String.valueOf(formTypes[i].getValue()));
         }
 
+        // Create country map with key:{countryCode}, value:{countryName}
+        BufferedReader rdCountry = new BufferedReader(new FileReader(session.getServletContext().getRealPath("/list_countries.csv")));
+        Map<String, String> countryMap = new HashMap<String, String>();
+        String lineCountry;
+        while((lineCountry = rdCountry.readLine()) != null){
+            // Example: AF   AFG Afghanistan Afghanistan Afganist�n  Asia    Southern Asia
+            String[] strSplitCountry = lineCountry.split("\\t");
+            String countryCode = strSplitCountry[0]; // Example: AF
+            String countryName = strSplitCountry[2].toUpperCase(); // Example: Afghanistan
+            countryMap.put(countryCode, countryName);
+        }
+        rdCountry.close();
+
         // Get userType
         String userType = (String) session.getAttribute("userType");
         boolean isResource = false;
         %>
-        <p><font size="5"><strong>List of existing Java Forms and PDF files for downloading</strong></font></p>
+        <p><font size="5"><strong>List of All Custom Tools By Activity Location</strong></font></p>
         <table class="CSSTableGenerator">
             <tr>
+                <td>No</td>
                 <td>Name</td>
                 <td>Created at</td>
                 <td>Custom Database Link</td>
@@ -78,9 +92,20 @@
                 SimpleDateFormat sdfDestination = new SimpleDateFormat("ha, dd.MM.yyyy");
                 // parse the date into another format
                 String strDate = sdfDestination.format(dd);
+                // Get form name, ex: NUT_LB => NUT
+                String formName = folderName.split("_")[0];
+                // Get country code, ex: NUT_LB => LB
+                String countryCode = folderName.split("_")[1];
+
+                // Get country name
+                String countryName = "";
+                if(countryMap.containsKey(countryCode)){
+                    countryName = countryMap.get(countryCode);
+                }
         %>
                 <tr>
-                    <td><strong><%=folderName%><strong></td>
+                    <td><%=i + 1%></td>
+                    <td class="name-col"><strong><%=countryName%> : <%=formName%><strong></td>
                     <td><%=strDate%></td>
         <%
                 String dirAppLink = unixAppFolder + "/" + "instruction2_en.html";
@@ -107,14 +132,12 @@
         %>
         <%
                 if("isAdmin".equals(userType)){
-                    // Get form name, ex: NUT_LB => NUT
-                    String formName = folderName.split("_")[0];
                     if(formMap.containsKey(formName)){
                         String formNumber = formMap.get(formName);
         %>
                     <td>
                         <form action="CreateGeneral" method="post">
-                            <input type="submit" value="Edit"/>
+                            <input type="submit" class="btn-edit" value="Edit"/>
                             <input type="hidden" name="selectForm" value="f<%=formNumber%>">
                             <input type="hidden" name="f<%=formNumber%>" value="<%=formName%>">
                             <input type="hidden" name="appFolder" value="<%=folderName%>">
@@ -141,7 +164,7 @@
         if("isAdmin".equals(userType)){
         %>
             <a href="./dataStorage.jsp">
-                <input type="button" value="Back" style="margin-top: 10px;"/>
+                <input type="button" value="Back" class="btn-back"/>
             </a>
         <%
         }
