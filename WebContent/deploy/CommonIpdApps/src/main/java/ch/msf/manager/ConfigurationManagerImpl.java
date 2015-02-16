@@ -20,6 +20,7 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.namespace.QName;
 
+import ch.msf.buildcountries.LoadCountriesFromExcel;
 import ch.msf.form.FatalException;
 import ch.msf.form.wizard.MSFForm;
 import ch.msf.model.CareCenter;
@@ -605,7 +606,8 @@ public class ConfigurationManagerImpl extends ConfigurationManagerBaseImpl imple
 			String configFileName = getEntryFormConfigFileName(); //TN147
 			inputStream = new FileInputStream(configFileName);
 			_EntryFormConfig = (EntryFormConfig) unmarshaller.unmarshal(inputStream);
-
+			
+			
 			// complete selectedCountries configuration (skiped when saved)
 			for (SelectedCountry selectedCountry : _EntryFormConfig.getSelectedCountries()) {
 				Country country = getAllCountriesManager().getCountry(selectedCountry.getCode());

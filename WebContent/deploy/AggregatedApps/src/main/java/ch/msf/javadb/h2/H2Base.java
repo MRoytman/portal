@@ -183,7 +183,7 @@ public class H2Base {
 
 	public static String getDBUrl(Boolean isAdmin) {
 		// configOverrides.put("javax.persistence.jdbc.url",
-		// "jdbc:h2:D:\\H2DBAdmin;MVCC=TRUE");
+		// "jdbc:h2:C:\\H2DBAdmin;MVCC=TRUE");
 		ConfigurationManagerBaseImpl configurationManager = ServiceHelper.getConfigurationManagerService();
 
 		String url = "jdbc:h2:";

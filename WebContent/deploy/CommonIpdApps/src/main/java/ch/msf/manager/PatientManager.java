@@ -38,5 +38,7 @@ public interface PatientManager {
 	// TN83 entryform:
 	Patient readDBPatientInfo(Patient patient, boolean all);
 
+	//taivd add
+	List<Patient> getAllPatient();
 
 }

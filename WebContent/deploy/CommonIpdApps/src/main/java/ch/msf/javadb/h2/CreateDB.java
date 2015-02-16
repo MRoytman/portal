@@ -10,6 +10,8 @@ import java.util.Properties;
 import ch.msf.buildcountries.LoadCountriesFromExcel;
 import ch.msf.error.ConfigException;
 import ch.msf.form.FatalException;
+import ch.msf.form.wizard.MSFForm;
+import ch.msf.util.IOUtils;
 
 /**
 
@@ -74,11 +76,11 @@ public class CreateDB extends H2Base {
 
 	private boolean buildAllCountriesTables(Properties properties) throws IOException {
 		boolean ret = false;
-
+		//taivd cmt: init country for the first time run
 		// We create the countries tables...
 		String allCountriesFileName = properties.getProperty("allCountriesFileName");
 		if (allCountriesFileName == null)
-			throw new ConfigException(getClass().getName() + "::allCountriesFileName not found!");
+			throw new ConfigException(getClass().getName() + "::allCountriesFileName not found!" );
 
 		LoadCountriesFromExcel app = new LoadCountriesFromExcel();
 		String[] args = new String[1];
@@ -88,9 +90,10 @@ public class CreateDB extends H2Base {
 		} else
 
 			// TN77 (admin)
-			args[0] = properties.get("workspaceresourceCommnon") + allCountriesFileName;
-		// args[0] = allCountriesFileName;
-
+		args[0] = properties.get("workspaceresourceCommnon") + allCountriesFileName;
+		//args[0] =getClass().getProtectionDomain().getCodeSource().getLocation().getPath()+allCountriesFileName;//taivd add, read country at resource
+		
+		System.out.println("Excel path = "+args[0]);
 		app.init(args);
 		app.run(modeJavaWebStart);
 		ret = true;
@@ -101,7 +104,8 @@ public class CreateDB extends H2Base {
 	}
 
 	private void updateLiquibaseDb(
-	/* String changelog, boolean javaWebStart */Properties properties) throws SQLException {
+	/* String changelog, boolean javaWebStart */Properties properties)
+			throws SQLException {
 
 		Statement s = null;
 		ResultSet rs = null;
@@ -119,11 +123,14 @@ public class CreateDB extends H2Base {
 
 			// We create the tables...
 
-			String statementFileName = properties.getProperty("sqlStatementFileName");
+			String statementFileName = properties
+					.getProperty("sqlStatementFileName");
 			if (statementFileName == null)
-				throw new ConfigException(getClass().getName() + "::statementFileName not found!");
+				throw new ConfigException(getClass().getName()
+						+ "::statementFileName not found!");
 			//
-			boolean javaWebStart = new Boolean((Boolean) properties.get("modeJavaWebStart"));
+			boolean javaWebStart = new Boolean(
+					(Boolean) properties.get("modeJavaWebStart"));
 
 			liquibaseUpdate(statementFileName, javaWebStart);
 		}

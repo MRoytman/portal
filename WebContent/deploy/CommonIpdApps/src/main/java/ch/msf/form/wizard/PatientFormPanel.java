@@ -562,9 +562,9 @@ public class PatientFormPanel extends AbstractWizardPanel implements ActionListe
 	 * @return
 	 */
 	private int saveResults() {
-		HashMap<String, String> results = _MyTableModel.getResults();
+		HashMap<String, String> results = _MyTableModel.getResults();//taivd debug save
 		try {
-			Patient currentPatient = getEntryFormConfigurationManager().savePatientAttributes(results, true);
+			Patient currentPatient = getEntryFormConfigurationManager().savePatientAttributes(results, true);//taivd debug save patient here
 			System.out.println("saveResults ok");
 			boolean patientDataSaved = true;
 			getEntryFormConfigurationManager().setPatientDataSaved(patientDataSaved);

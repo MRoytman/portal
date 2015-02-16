@@ -217,7 +217,7 @@ public class MSFForm implements Runnable, CheckBusinessRulesChecker {
 
 		// check if preconfig mode, then install config file automatically
 		if (this instanceof DataEntryFormI) {// (only if it is an entryform)
-			autoInstallConfig();
+			autoInstallConfig();// taivd copy file config to appdir
 		}
 
 		// TN147 check if file exists in the 'well known' directory

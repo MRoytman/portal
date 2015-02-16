@@ -33,7 +33,7 @@ public class CommonConstants {
 	
 	public static final String PROPERTY_FILE_NAME = "defaultProperties.properties";
 	
-	public static final String MSF_BASE_DIR =	"D:\\MSFMedAppData";
+	public static final String MSF_BASE_DIR =	"C:\\MSFMedAppData";
 	
 	public static final String MESSAGES_FILENAME = "localizedMessages.txt";
 	

@@ -10,6 +10,8 @@ import ch.msf.form.ParamException;
 import ch.msf.model.ConceptIdValue;
 import ch.msf.model.Encounter;
 import ch.msf.model.Patient;
+import ch.msf.model.PatientIdValue;
+import ch.msf.model.PatientIdentifier;
 import ch.msf.service.ServiceHelper;
 
 /**
@@ -45,6 +47,22 @@ public class EncounterManagerImpl implements EncounterManager {
 		return retList;
 	}
 
+	//taivd add getAllEncounters
+	@Override
+	public List<Encounter> getAllEncounters() {
+		EntityManager em = getDbManager().startTransaction();
+		List<Encounter> retList =em.createQuery("select e from Encounter e").getResultList();
+
+		if (retList != null)
+			for (Encounter Encounter : retList) {
+				readEncounterInfo(Encounter);
+			}
+
+		getDbManager().endTransaction(em);
+
+		return retList;
+	}
+	
 	/**
 	 * can also return a deleted Encounter
 	 */
@@ -166,7 +184,7 @@ public class EncounterManagerImpl implements EncounterManager {
 		}
 
 	}
-
+	
 	@Override
 	public List<String> getCurrentRoleEncounterIds() {
 		String currentRoleName = ServiceHelper.getPermissionManagerService().getCurrentRole();

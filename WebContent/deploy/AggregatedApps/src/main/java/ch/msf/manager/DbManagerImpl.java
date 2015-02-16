@@ -125,7 +125,7 @@ public class DbManagerImpl implements DbManager {
 			}
 			
 			Map<String, Object> configOverrides = new HashMap<String, Object>();
-			configOverrides.put("javax.persistence.jdbc.url", H2Base.getDBUrl(isAdmin)/*"jdbc:h2:D:\\H2DBAdmin;MVCC=TRUE"*/);
+			configOverrides.put("javax.persistence.jdbc.url", H2Base.getDBUrl(isAdmin)/*"jdbc:h2:C:\\H2DBAdmin;MVCC=TRUE"*/);
 			// in admin tool, do
 			// ALTER USER user1 SET PASSWORD 'newpasswd'
 			configOverrides.put("javax.persistence.jdbc.password", "hndsgbv");

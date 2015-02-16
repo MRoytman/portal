@@ -11,6 +11,7 @@ import java.awt.event.WindowEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.net.URL;
+import java.util.List;
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.PropertyResourceBundle;
@@ -30,6 +31,9 @@ import javax.swing.border.EmptyBorder;
 import ch.msf.CommonConstants;
 import ch.msf.form.FatalException;
 import ch.msf.manager.ConfigurationManager;
+import ch.msf.manager.ExportCSV;
+import ch.msf.model.PatientContext;
+import ch.msf.model.SelectionContext;
 import ch.msf.service.ServiceHelper;
 import ch.msf.util.StackTraceUtil;
 
@@ -393,11 +397,12 @@ public class Wizard extends WindowAdapter implements PropertyChangeListener {
 	 *            The return code.
 	 */
 	void close(int code) {
+		//taivd add button export csv here
 		returnCode = code;
 		// CM my code
 		String errMessCancel = ServiceHelper.getMessageService().getMessage(CommonConstants.MESSAGE_CANCEL);
-		Object[] options = { "OK", errMessCancel };
-		int retCode = 0;
+		Object[] options = {"Export CSV" ,"Exit", errMessCancel };
+		int retCode = 1;//taivd change 0-->1
 
 		ConfigurationManager configurationManager = ServiceHelper.getConfigurationManagerService();
 
@@ -415,6 +420,17 @@ public class Wizard extends WindowAdapter implements PropertyChangeListener {
 			retCode = JOptionPane.showOptionDialog(null, errMess, "Warning", JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[1]);
 		}
 		if (retCode == 0) {
+			// wizardDialog.dispose();
+			// TN125
+			//taivd add export CSV
+			System.out.println("Connect database H2 and export CSV");
+			ExportCSV _ExportCSV=new ExportCSV();
+			_ExportCSV.ExportPatient();
+			_ExportCSV.ExportContext();
+			_ExportCSV.ExportEncounter();
+			
+		}
+		if (retCode == 1) {
 			// wizardDialog.dispose();
 			// TN125
 			WindowEvent closingEvent = new WindowEvent(getDialog(), WindowEvent.WINDOW_CLOSING);

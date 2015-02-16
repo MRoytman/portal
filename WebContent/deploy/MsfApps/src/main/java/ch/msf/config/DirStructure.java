@@ -24,7 +24,7 @@ public class DirStructure {
 			String errMess = "msfApplicationDir is not defined!!";
 			JOptionPane.showMessageDialog(null, errMess, "Fatal error", JOptionPane.ERROR_MESSAGE, null);
 			throw new FatalException(errMess);
-			// msfApplicationDir = "D:\\MSFMedAppData";
+			// msfApplicationDir = "C:\\MSFMedAppData";
 			// dirPath = msfApplicationDir;
 		}
 		dirPath = msfApplicationDir;
@@ -67,7 +67,7 @@ public class DirStructure {
 
 //	public static String getDBUrl(Boolean isAdmin) {
 //		// configOverrides.put("javax.persistence.jdbc.url",
-//		// "jdbc:h2:D:\\H2DBAdmin;MVCC=TRUE");
+//		// "jdbc:h2:C:\\H2DBAdmin;MVCC=TRUE");
 //
 //		String url = "jdbc:h2:";
 //
@@ -98,7 +98,7 @@ public class DirStructure {
 
 	public static String getDBFile(Boolean isAdmin) {
 		// configOverrides.put("javax.persistence.jdbc.url",
-		// "jdbc:h2:D:\\H2DBAdmin;MVCC=TRUE");
+		// "jdbc:h2:C:\\H2DBAdmin;MVCC=TRUE");
 
 		String url = "";
 

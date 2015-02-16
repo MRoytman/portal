@@ -380,10 +380,10 @@ public class EncounterFormPanel extends AbstractWizardPanel implements ActionLis
 	private int saveResults() {
 		HashMap<String, String> results = _MyTableModel.getResults();
 		try {
-			getEntryFormConfigurationManager().saveEncounterAttributes(results, true);
+			getEntryFormConfigurationManager().saveEncounterAttributes(results, true);//taivd debug save IPD here
 			System.out.println("save Encounter Results ok");
 			boolean encounterDataSaved = true;
-			getEntryFormConfigurationManager().setEncounterAttributesDataSaved(encounterDataSaved);/* TN79 */
+			getEntryFormConfigurationManager().setEncounterAttributesDataSaved(encounterDataSaved);/* TN79 */ 
 			getEntryFormConfigurationManager().setEncounterDataSaved(encounterDataSaved);
 			getEntryFormConfigurationManager().setNewEncounterDataInsertion(false);
 

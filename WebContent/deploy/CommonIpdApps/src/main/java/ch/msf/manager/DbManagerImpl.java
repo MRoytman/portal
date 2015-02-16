@@ -140,7 +140,7 @@ public class DbManagerImpl implements DbManager {
 
 			System.out.println("Starting transaction to " + url);//TODO use logger
 
-			configOverrides.put("javax.persistence.jdbc.url", url/* "jdbc:h2:D:\\H2DBAdmin;MVCC=TRUE" */);
+			configOverrides.put("javax.persistence.jdbc.url", url);
 			// in admin tool, do
 			// ALTER USER user1 SET PASSWORD 'newpasswd'
 			configOverrides.put("javax.persistence.jdbc.password", "hndsgbv");

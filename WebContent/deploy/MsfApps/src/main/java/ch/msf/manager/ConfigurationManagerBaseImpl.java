@@ -202,7 +202,7 @@ public class ConfigurationManagerBaseImpl implements ConfigurationManagerBase {
 		if (msfApplicationDir == null)
 			msfApplicationDir = getConfigField("msfApplicationDir");
 		if (msfApplicationDir == null)
-			msfApplicationDir = CommonConstants.MSF_BASE_DIR; // "D:\\MSFMedAppData";
+			msfApplicationDir = CommonConstants.MSF_BASE_DIR; // "C:\\MSFMedAppData";
 
 		return msfApplicationDir;
 	}
@@ -235,7 +235,7 @@ public class ConfigurationManagerBaseImpl implements ConfigurationManagerBase {
 			return false;
 		String applicationShortName = System.getProperty("applicationShortName");
 		if (applicationShortName == null)
-			// applicationShortName = "D:\\MSFMedAppData\\SGBV";
+			// applicationShortName = "C:\\MSFMedAppData\\SGBV";
 			// don't forget to set the value for local testing/devel
 			applicationShortName = getConfigField("applicationShortName");
 

@@ -119,5 +119,5 @@ public class CommonIpdConstants {
 	public static final String ACTION_RULES_VALUECHANGED =	"VALUECHANGED";
 	public static final String ACTION_RULES_NOTIFY =	"NOTIFY";
 	
-//	public static final String MSF_BASE_DIR =	"D:\\MSFMedAppData";
+//	public static final String MSF_BASE_DIR =	"C:\\MSFMedAppData";
 }

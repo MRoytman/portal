@@ -261,21 +261,28 @@ public class PatientManagerImpl implements PatientManager {
 		EntityManager em = getDbManager().startTransaction();
 
 		List<PatientContext> allPatientContext = em.createQuery("select pc from PatientContext pc").getResultList();
-
-		// String strQuery =
-		// "select pc, pat from PatientContext pc join pc._Patient pat ";
-		// String strQuery =
-		// "select pc._Patient from PatientContext pc join pc._Patient pat ";
-
-		// Query qry = em.createQuery(strQuery);
-		//
-		// List<Object> objs = qry.getResultList();
-
+		//read all patient context
 		getDbManager().endTransaction(em);
-
 		return allPatientContext;
 	}
 
+
+
+	//taivd add getAllPatient
+	@Override
+	public List<Patient> getAllPatient() {
+		boolean all = true;
+		EntityManager em = getDbManager().startTransaction();
+		List<Patient> allPatient = em.createQuery("select pc from Patient pc").getResultList();
+		if (allPatient != null) {
+			for (Patient patient : allPatient) {
+				readPatientInfo(patient, all);
+			}
+		}
+		getDbManager().endTransaction(em);
+		return allPatient;
+	}
+	
 	@Override
 	public List<PatientContext> getAllSelectedPatientContext(int yearDate) throws ParamException {
 		EntityManager em = getDbManager().startTransaction();

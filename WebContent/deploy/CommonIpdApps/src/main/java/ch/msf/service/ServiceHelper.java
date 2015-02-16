@@ -91,7 +91,7 @@ public class ServiceHelper implements BeanFactoryAware {
 		init();
 		return (EncounterManager) _BeanFactory.getBean("encounterManager");
 	}
-	
+
 	public static PermissionManager getPermissionManagerService() {
 		init();
 		return (PermissionManager) _BeanFactory.getBean("permissionManager");

@@ -189,6 +189,7 @@ public class H2Base {
 		String url = "jdbc:h2:";
 
 		String appDir = configurationManager.getApplicationDirectory();
+		System.out.println("AppDir = "+appDir);
 		url += appDir;
 
 		url += "\\H2DB";

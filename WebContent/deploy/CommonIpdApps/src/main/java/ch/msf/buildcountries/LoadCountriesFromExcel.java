@@ -24,7 +24,11 @@ public class LoadCountriesFromExcel {
 	private ArrayList<Country> _Countries;
 	private ArrayList<CountryName> _CountriesNames;
 //	private AllCountriesAdminConfig _AllCountriesConfig;
-
+	
+	public String getPathExcel()
+	{
+		return _ConfigFileName;
+	}
 	/**
 	 * @param args
 	 */
@@ -256,10 +260,18 @@ public class LoadCountriesFromExcel {
 	}
 
 	private ArrayList<String> readFile(boolean javaWebStart) {
+		//taivd modify function readFile
 		ArrayList<String> strList = new ArrayList<String>();
 		if (!javaWebStart) {
 
 			IOUtils.loadFile(strList, _ConfigFileName, "UTF-8");
+			
+			//ArrayList<Class> classList = new ArrayList<Class>();//taivd add
+			//classList.add(this.getClass());//taivd add
+			//String strPath = IOUtils.getResource("list_countries.csv", classList).getPath();//taivd add
+			//IOUtils.loadFile(strList, strPath, "UTF-8");//taivd add
+
+			
 		} else {
 
 			ArrayList<Class> classList = new ArrayList<Class>();
