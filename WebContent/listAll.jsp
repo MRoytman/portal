@@ -77,6 +77,7 @@
         File folder = new File(dirFtpMsf);
         File[] listOfFolders = folder.listFiles();
 
+        int count = 1;
         for(int i = 0; i < listOfFolders.length; i++){
             File currentFolder = listOfFolders[i];
             if(currentFolder.getName().compareToIgnoreCase("logs") == 0){
@@ -104,7 +105,7 @@
                 }
         %>
                 <tr>
-                    <td><%=i + 1%></td>
+                    <td><%=count%></td>
                     <td class="name-col"><strong><%=countryName%> : <%=formName%><strong></td>
                     <td><%=strDate%></td>
         <%
@@ -151,6 +152,7 @@
         %>
             </tr>
         <%
+            count++;
             }
         }
         %>
