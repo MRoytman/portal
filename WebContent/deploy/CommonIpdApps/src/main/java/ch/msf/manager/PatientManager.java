@@ -20,6 +20,8 @@ public interface PatientManager {
 
 	List<PatientContext> getAllSelectedPatientContext(Patient patient);
 
+	List<PatientContext> getAllPatientContext(Patient patient);
+	
 	PatientContext getPatientContext(Long patientContextId);
 
 //	List<PatientContext> getAllSelectedPatientContext(SelectionContext patientContext, String date, String idOrName, boolean testOnId) throws ParamException;

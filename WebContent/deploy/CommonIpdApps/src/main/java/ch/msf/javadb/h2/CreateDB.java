@@ -1,5 +1,6 @@
 package ch.msf.javadb.h2;
 
+import java.io.File;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -78,22 +79,24 @@ public class CreateDB extends H2Base {
 		boolean ret = false;
 		//taivd cmt: init country for the first time run
 		// We create the countries tables...
+		/*taivd cmt no need param allCountriesFileName in property
 		String allCountriesFileName = properties.getProperty("allCountriesFileName");
 		if (allCountriesFileName == null)
 			throw new ConfigException(getClass().getName() + "::allCountriesFileName not found!" );
-
+		*/
 		LoadCountriesFromExcel app = new LoadCountriesFromExcel();
 		String[] args = new String[1];
 		boolean modeJavaWebStart = (Boolean) properties.get("modeJavaWebStart");
 		if (modeJavaWebStart) {
-			args[0] = allCountriesFileName;
-		} else
-
+			args[0] = "list_countries.csv";
+		} else{
 			// TN77 (admin)
-		args[0] = properties.get("workspaceresourceCommnon") + allCountriesFileName;
-		//args[0] =getClass().getProtectionDomain().getCodeSource().getLocation().getPath()+allCountriesFileName;//taivd add, read country at resource
-		
-		System.out.println("Excel path = "+args[0]);
+			//args[0] = properties.get("workspaceresourceCommnon") + allCountriesFileName;//taivd cmt
+			
+			args[0] ="MSFMedAppData" +File.separator+"list_countries.csv"; //"MSFMedAppData"+ System.getProperty("file.separator")+allCountriesFileName;//taivd add copy list_countries.csv
+			System.out.println("Excel path = "+args[0]);
+		}
+
 		app.init(args);
 		app.run(modeJavaWebStart);
 		ret = true;

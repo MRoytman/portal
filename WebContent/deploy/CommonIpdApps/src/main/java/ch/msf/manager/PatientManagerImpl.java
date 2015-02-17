@@ -327,11 +327,6 @@ public class PatientManagerImpl implements PatientManager {
 			boolean all = false;// TN83 entryform:
 			for (PatientContext patientContext : allPatientContexts) {
 				readPatientInfo(patientContext.getPatient(), all);
-				// Patient patient2 = patientContext.getPatient();
-				// List<PatientIdValue> patientIdValues =
-				// patient2.getIdValues();
-				// for (PatientIdValue patientIdValue : patientIdValues) {
-				// }
 			}
 		}
 
@@ -340,6 +335,23 @@ public class PatientManagerImpl implements PatientManager {
 		return allPatientContexts;
 	}
 
+	//taivd add 
+	public List<PatientContext> getAllPatientContext(Patient patient)
+	{
+		EntityManager em = getDbManager().startTransaction();
+		List<PatientContext> allPatientContexts = em.createQuery("select pc from PatientContext pc where pc._Patient = :patient")
+				.setParameter("patient", patient).getResultList();
+
+		if (allPatientContexts != null) {
+			boolean all = false;
+			for (PatientContext patientContext : allPatientContexts) {
+				readPatientInfo(patientContext.getPatient(), all);
+			}
+		}
+		getDbManager().endTransaction(em);
+
+		return allPatientContexts;
+	}
 	/**
 	 * // TN141 search on both id and names
 	 * 

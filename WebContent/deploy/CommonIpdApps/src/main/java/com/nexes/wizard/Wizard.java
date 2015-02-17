@@ -425,9 +425,7 @@ public class Wizard extends WindowAdapter implements PropertyChangeListener {
 			//taivd add export CSV
 			System.out.println("Connect database H2 and export CSV");
 			ExportCSV _ExportCSV=new ExportCSV();
-			_ExportCSV.ExportPatient();
-			_ExportCSV.ExportContext();
-			_ExportCSV.ExportEncounter();
+			_ExportCSV.ExportAllDB();
 			
 		}
 		if (retCode == 1) {

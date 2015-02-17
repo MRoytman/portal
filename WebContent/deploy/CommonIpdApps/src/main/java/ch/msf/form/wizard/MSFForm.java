@@ -217,7 +217,7 @@ public class MSFForm implements Runnable, CheckBusinessRulesChecker {
 
 		// check if preconfig mode, then install config file automatically
 		if (this instanceof DataEntryFormI) {// (only if it is an entryform)
-			autoInstallConfig();// taivd copy file config to appdir
+			autoInstallConfig();// taivd copy file config and listcountry.csv to appdir
 		}
 
 		// TN147 check if file exists in the 'well known' directory
@@ -348,18 +348,20 @@ public class MSFForm implements Runnable, CheckBusinessRulesChecker {
 	/**
 	 * TN109 if entryFormConfig.xml exists in deployed config, copy it to the right dir
 	 */
+
 	private void autoInstallConfig() {
 		// read the file resources
 		String resourceName = (String) getProperties().get("configFileName");
-
+		String resourceCountry="list_countries.csv";//taivd add 
 		// get project configuration path
 		String projectConfigFilePathName = getConfigurationFilePathName();
-
+		String strAppDir= getConfigurationManager().getBaseDirectory()+File.separator+resourceCountry;//taivd add copy list_countries.csv
 		URL dbConfigFile = IOUtils.getResource(resourceName, EntryFormConfigurationManagerImpl.class);
 		if (dbConfigFile != null) {
 			System.out.println("Configuration file detected.............Attempting to install it......");
 			try { // TN147
 				boolean ret = ((ResourceManagerImpl) ServiceHelper.getConfigurationManagerService().getResourceManager()).exportResource(resourceName, projectConfigFilePathName);
+				boolean ret2 = ((ResourceManagerImpl) ServiceHelper.getConfigurationManagerService().getResourceManager()).exportResource(resourceCountry, strAppDir);//taivd add copy list_countries.csv
 			} catch (IOException e) {
 				System.out.println("The configuration file could not be installed!");
 				e.printStackTrace();

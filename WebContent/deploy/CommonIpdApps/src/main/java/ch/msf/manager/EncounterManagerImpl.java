@@ -10,8 +10,6 @@ import ch.msf.form.ParamException;
 import ch.msf.model.ConceptIdValue;
 import ch.msf.model.Encounter;
 import ch.msf.model.Patient;
-import ch.msf.model.PatientIdValue;
-import ch.msf.model.PatientIdentifier;
 import ch.msf.service.ServiceHelper;
 
 /**
@@ -46,7 +44,25 @@ public class EncounterManagerImpl implements EncounterManager {
 
 		return retList;
 	}
+	//taivd add getAllEncountersByPatient
+	@Override
+	public List<Encounter> getAllEncountersByPatient(Patient currentPatient) {
+		EntityManager em = getDbManager().startTransaction();
+		String strQuery = "select e from Encounter e join e._Patient pat where pat.id = :patientId order by e._Date";
+		
+		Query qry = em.createQuery(strQuery);
+		qry.setParameter("patientId", currentPatient.getId());
+		List<Encounter> retList = qry.getResultList();
 
+		if (retList != null)
+			for (Encounter Encounter : retList) {
+				readEncounterInfo(Encounter);
+			}
+
+		getDbManager().endTransaction(em);
+		return retList;
+	}
+	
 	//taivd add getAllEncounters
 	@Override
 	public List<Encounter> getAllEncounters() {

@@ -335,7 +335,7 @@ public class CreateFormF4 {
         }
         
         strFile.append("\n\n// USER PWD");
-        strFile.append("\nadminUser adminUser\nadminUserPwd ocgncdlbadmin\nmsfuser msfUser\nmsfUserPwd msfuser");
+        strFile.append("\nadminUser adminUser\nadminUserPwd ocgncdlbadmin\nmsfUser msfuser\nmsfUserPwd msfuser");
         
         strFile.append("\n\n// FIELDS BELOW ARE USED FOR DEVELOPMENT PURPOSES\nallCountriesFileName list_countries.csv");
         strFile.append("\nworkspaceresource H:\\\\devel\\\\workspace64Bits\\\\"+strType+"_"+strCode+"\\\\src\\\\main\\\\resources\\\\");

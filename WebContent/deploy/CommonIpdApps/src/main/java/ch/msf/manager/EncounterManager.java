@@ -15,11 +15,7 @@ public interface EncounterManager {
 	public void removeEncounter(Encounter encounter);
 
 	public List<Encounter> getAllPatientEncounters(Patient currentPatient, boolean retired);
+	public List<Encounter> getAllEncountersByPatient(Patient currentPatient);
 	public List<Encounter> getAllEncounters();
-	/**
-	 * 
-	 * @param currentRoleName
-	 * @return the list of encounter id for the current role 
-	 */
 	List<String> getCurrentRoleEncounterIds();
 }

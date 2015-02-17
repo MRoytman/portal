@@ -47,13 +47,13 @@ public class CreateFormF10 {
         strFile.append("\n\n// AGGREGATED THEMES FORMAT\nAggregatedTheme-nutrition_agg	1	nutrition");
 
         strFile.append("\n\n// USER PWD");
-        strFile.append("\nadminUser adminUser\nadminUserPwd ocgncdlbadmin\nmsfuser msfUser\nmsfUserPwd msfuser");
+        strFile.append("\nadminUser adminUser\nadminUserPwd ocgncdlbadmin\nmsfUser msfuser\nmsfUserPwd msfuser");
         
         strFile.append("\n\n// FIELDS BELOW ARE USED FOR DEVELOPMENT PURPOSES\nallCountriesFileName list_countries.csv");
         strFile.append("\nworkspaceresource H:\\\\devel\\\\workspace64Bits\\\\"+strType+"_"+strCode+"\\\\src\\\\main\\\\resources\\\\");
         strFile.append("\nworkspaceresourceCommnon H:\\\\devel\\\\workspace64Bits\\\\AggregatedApps\\\\src\\\\main\\\\resources\\\\");
         
-        strFile.append("\n\n// devel: network or not\nmixedModeDB false\nmsfApplicationDir D:\\\\MSFMedAppData\n\n// TEST DB\ntestModeDB false");
+        strFile.append("\n\n// devel: network or not\nmixedModeDB false\nmsfApplicationDir C:\\\\MSFMedAppData\n\n// TEST DB\ntestModeDB false");
         
         
         CommonCode.doWrite(dirResource.getPath(), "defaultProperties.properties", strFile.toString());
