@@ -31,7 +31,7 @@ import javax.swing.border.EmptyBorder;
 import ch.msf.CommonConstants;
 import ch.msf.form.FatalException;
 import ch.msf.manager.ConfigurationManager;
-import ch.msf.manager.ExportCSV;
+import ch.msf.manager.ExportCSVf1;
 import ch.msf.model.PatientContext;
 import ch.msf.model.SelectionContext;
 import ch.msf.service.ServiceHelper;
@@ -424,7 +424,7 @@ public class Wizard extends WindowAdapter implements PropertyChangeListener {
 			// TN125
 			//taivd add export CSV
 			System.out.println("Connect database H2 and export CSV");
-			ExportCSV _ExportCSV=new ExportCSV();
+			ExportCSVf1 _ExportCSV=new ExportCSVf1();
 			_ExportCSV.ExportAllDB();
 			
 		}

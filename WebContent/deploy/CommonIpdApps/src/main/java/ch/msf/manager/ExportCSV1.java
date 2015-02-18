@@ -3,6 +3,7 @@ package ch.msf.manager;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.w3c.dom.ls.LSInput;
@@ -15,12 +16,18 @@ import ch.msf.model.PatientIdValue;
 import ch.msf.model.PatientIdentifier;
 import ch.msf.service.ServiceHelper;
 
-public class ExportCSV {
+public class ExportCSV1 {
+	private static final String PRE_EN5 = "Cholera_CTC";
+	private static final String PRE_EN4 = "Cholera_ORS_";
+	private static final String PRE_EN3 = "Yellow_Fever_Case_";
+	private static final String PRE_EN2 = "Measles_malaria_severe_";
+	private static final String PRE_EN1 = "Epidemics_opd_";
+	private static final String PRE_PAT = "Patient_";
 	ConfigurationManagerBaseImpl config = ServiceHelper
 			.getConfigurationManagerService();
 
 	public String getPath(String strFileName) {
-		return config.getMsfApplicationDir() +File.separator+ strFileName;
+		return config.getMsfApplicationDir() + File.separator + strFileName;
 	}
 
 	public void ExportContext() {
@@ -243,114 +250,7 @@ public class ExportCSV {
 			e.printStackTrace();
 		}
 	}
-	public void ExportAllDB() {
 
-		String strFileName = config.getApplicationTitle()+".csv";
-		String strPath = getPath(strFileName);
-		try {
-			FileWriter writer = new FileWriter(strPath);
-			//Patient
-			writer.append("ID Patient");
-			writer.append(',');
-			writer.append("Family Name");
-			writer.append(',');
-			writer.append("First Name");
-			writer.append(',');
-			writer.append("Sex");
-			writer.append(',');
-			writer.append("Birth Date");
-			writer.append(',');
-			//Context
-			writer.append("ID Context");
-			writer.append(',');
-			writer.append("Context name");
-			writer.append(',');
-			writer.append("Selected Country");
-			writer.append(',');
-			writer.append("Selected Care Center");
-			writer.append(',');
-			writer.append("Selected Project");
-			writer.append(',');
-			//Patient Concept
-			writer.append("ID Patient Concept");
-			writer.append(',');
-			writer.append("Value Patient Concept");
-			writer.append(',');
-			//Encounter
-			writer.append("ID Encounter");
-			writer.append(',');
-			writer.append("Date");
-			writer.append(',');
-			writer.append("Type");
-			writer.append(',');
-			writer.append("Status");
-			writer.append(',');
-			//Encounter Concept
-			writer.append("ID Encounter Concept");
-			writer.append(',');
-			writer.append("Value Encounter Concept");
-			writer.append('\n');
-
-			List<Patient> lstPatient = null;
-			List<PatientContext> lstPatientContext = null;
-			List<PatientIdValue> lstPatientConcept = null;
-			List<Encounter> lstEncounter =null;
-			List<ConceptIdValue> lstEncounterConcept =null;
-			Patient pat = new Patient();
-			Encounter encount = new Encounter();
-			PatientContext patContext= new PatientContext();
-			PatientIdValue patConcept= new PatientIdValue();
-			ConceptIdValue enConcept = new ConceptIdValue();
-			
-			lstPatient = ServiceHelper.getPatientManagerService()
-					.getAllPatient();
-
-			
-			for (int i = 0; i < lstPatient.size(); i++){
-				pat=lstPatient.get(i);
-				//Patient - Context
-				lstPatientContext = ServiceHelper.getPatientManagerService().getAllPatientContext(pat);
-				for(int j = 0; j < lstPatientContext.size(); j++){
-					printPatient(writer, pat);
-					patContext = lstPatientContext.get(j);
-					printContext(writer, patContext);
-					printPatConceptNull(writer);
-					printEncouterNull(writer);
-					printEnConceptNull(writer);
-				}
-				//Patient - Concept
-				lstPatientConcept = pat.getIdValues();
-				for(int k=0;k<lstPatientConcept.size();k++){
-					patConcept=lstPatientConcept.get(k);
-					printPatient(writer, pat);
-					printContextNull(writer);
-					printPatConcept(writer,patConcept);
-					printEncouterNull(writer);
-					printEnConceptNull(writer);
-				}
-				//Patient - Encounter - Concept
-				lstEncounter = ServiceHelper.getEncounterManagerService().getAllEncountersByPatient(pat);
-				for(int l=0;l<lstEncounter.size();l++){
-					encount = lstEncounter.get(l);
-					lstEncounterConcept = encount.getIdValues();
-					for(int m= 0;m<lstEncounterConcept.size();m++)
-					{
-						enConcept = lstEncounterConcept.get(m);
-						printPatient(writer, pat);
-						printContextNull(writer);
-						printPatConceptNull(writer);
-						printEncouter(writer, encount);
-						printEnConcept(writer, enConcept);
-						
-					}
-				}
-			}
-			writer.flush();
-			writer.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
 
 	private void printPatConceptNull(FileWriter writer) throws IOException {
 		writer.append("");
@@ -358,12 +258,14 @@ public class ExportCSV {
 		writer.append("");
 		writer.append(',');
 	}
+
 	private void printEnConceptNull(FileWriter writer) throws IOException {
 		writer.append("");
 		writer.append(',');
 		writer.append("");
 		writer.append('\n');
 	}
+
 	private void printEncouterNull(FileWriter writer) throws IOException {
 		writer.append("");
 		writer.append(',');
@@ -387,7 +289,9 @@ public class ExportCSV {
 		writer.append("");
 		writer.append(',');
 	}
-	private void printEncouter(FileWriter writer,Encounter encount) throws IOException {
+
+	private void printEncouter(FileWriter writer, Encounter encount)
+			throws IOException {
 		writer.append(encount.getId().toString());
 		writer.append(',');
 		writer.append(encount.getDate().toString());
@@ -397,20 +301,23 @@ public class ExportCSV {
 		writer.append(String.valueOf(encount.getStatus()));
 		writer.append(',');
 	}
-	
-	private void printPatConcept(FileWriter writer, PatientIdValue patConcept) throws IOException {
+
+	private void printPatConcept(FileWriter writer, PatientIdValue patConcept)
+			throws IOException {
 		writer.append(patConcept.getConceptId());
 		writer.append(',');
 		writer.append(patConcept.getConceptValue());
 		writer.append(',');
 	}
-	
-	private void printEnConcept(FileWriter writer, ConceptIdValue enConcept) throws IOException {
+
+	private void printEnConcept(FileWriter writer, ConceptIdValue enConcept)
+			throws IOException {
 		writer.append(enConcept.getConceptId());
 		writer.append(',');
 		writer.append(enConcept.getConceptValue());
 		writer.append('\n');
 	}
+
 	private void printContext(FileWriter writer, PatientContext patContext)
 			throws IOException {
 		writer.append(patContext.getId().toString());
@@ -437,6 +344,114 @@ public class ExportCSV {
 		writer.append(',');
 		writer.append(pat.getBirthDate().toString());
 		writer.append(',');
+	}
+	public void ExportAllDBByRows() {
+
+		String strFileName = config.getApplicationTitle() + ".csv";
+		String strPath = getPath(strFileName);
+		try {
+			FileWriter writer = new FileWriter(strPath);
+			// Patient
+			writer.append("ID Patient");
+			writer.append(',');
+			writer.append("Family Name");
+			writer.append(',');
+			writer.append("First Name");
+			writer.append(',');
+			writer.append("Sex");
+			writer.append(',');
+			writer.append("Birth Date");
+			writer.append(',');
+			// Context
+			writer.append("ID Context");
+			writer.append(',');
+			writer.append("Context name");
+			writer.append(',');
+			writer.append("Selected Country");
+			writer.append(',');
+			writer.append("Selected Care Center");
+			writer.append(',');
+			writer.append("Selected Project");
+			writer.append(',');
+			// Patient Concept -> columns
+			writer.append("ID Patient Concept");
+			writer.append(',');
+			writer.append("Value Patient Concept");
+			writer.append(',');
+			// Encounter
+			writer.append("ID Encounter");
+			writer.append(',');
+			writer.append("Date");
+			writer.append(',');
+			writer.append("Type");
+			writer.append(',');
+			writer.append("Status");
+			writer.append(',');
+			// Encounter Concept -> columns
+			writer.append("ID Encounter Concept");
+			writer.append(',');
+			writer.append("Value Encounter Concept");
+			writer.append('\n');
+
+			List<Patient> lstPatient = null;
+			List<PatientContext> lstPatientContext = null;
+			List<PatientIdValue> lstPatientConcept = null;
+			List<Encounter> lstEncounter = null;
+			List<ConceptIdValue> lstEncounterConcept = null;
+			Patient pat = new Patient();
+			Encounter encount = new Encounter();
+			PatientContext patContext = new PatientContext();
+			PatientIdValue patConcept = new PatientIdValue();
+			ConceptIdValue enConcept = new ConceptIdValue();
+
+			lstPatient = ServiceHelper.getPatientManagerService()
+					.getAllPatient();
+
+			for (int i = 0; i < lstPatient.size(); i++) {
+				pat = lstPatient.get(i);
+				// Patient - Context
+				lstPatientContext = ServiceHelper.getPatientManagerService()
+						.getAllPatientContext(pat);
+				for (int j = 0; j < lstPatientContext.size(); j++) {
+					printPatient(writer, pat);
+					patContext = lstPatientContext.get(j);
+					printContext(writer, patContext);
+					printPatConceptNull(writer);
+					printEncouterNull(writer);
+					printEnConceptNull(writer);
+				}
+				// Patient - Concept
+				lstPatientConcept = pat.getIdValues();
+				for (int k = 0; k < lstPatientConcept.size(); k++) {
+					patConcept = lstPatientConcept.get(k);
+					printPatient(writer, pat);
+					printContextNull(writer);
+					printPatConcept(writer, patConcept);
+					printEncouterNull(writer);
+					printEnConceptNull(writer);
+				}
+				// Patient - Encounter - Concept
+				lstEncounter = ServiceHelper.getEncounterManagerService()
+						.getAllEncountersByPatient(pat);
+				for (int l = 0; l < lstEncounter.size(); l++) {
+					encount = lstEncounter.get(l);
+					lstEncounterConcept = encount.getIdValues();
+					for (int m = 0; m < lstEncounterConcept.size(); m++) {
+						enConcept = lstEncounterConcept.get(m);
+						printPatient(writer, pat);
+						printContextNull(writer);
+						printPatConceptNull(writer);
+						printEncouter(writer, encount);
+						printEnConcept(writer, enConcept);
+
+					}
+				}
+			}
+			writer.flush();
+			writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }
