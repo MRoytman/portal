@@ -2,6 +2,137 @@
     <%@include file="./headerForCommon.jsp"%>
     <head>
         <link rel="stylesheet" href="css/home/home.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-1.11.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <style type="text/css">
+            @font-face {
+                font-family: fontLogin;
+                src: url(font/MinionPro-It.otf);
+            }
+
+            ::-webkit-input-placeholder {
+                text-align: center;
+                font-family: txtFont;
+                font-size: 18px;
+            }
+
+            :-moz-placeholder { /* Firefox 18- */
+               text-align: center;
+               font-family: txtFont;
+               font-size: 18px;
+            }
+
+            ::-moz-placeholder {  /* Firefox 19+ */
+                text-align: center;
+                font-family: txtFont;
+                font-size: 18px;
+            }
+
+            :-ms-input-placeholder {
+                text-align: center;
+                font-family: txtFont;
+                font-size: 18px;
+            }
+
+            .popup{
+                margin-top: 127px;
+                width: 435px;
+                height: 445px;
+                text-align: center;
+                margin: 0 auto;
+                background: white;
+                border-radius: 5px;
+                border-top: solid 2px #e5e5e5;
+                border-right: solid 2px #e5e5e5;
+            }
+
+            .txt-field{
+                background-color: #cccccc;
+                border: none;
+                border-radius: 3px;
+				height: 50px;
+				width: 300px;
+                font-family: txtFont;
+            }
+
+            .btn-hq-login{
+                width: 300px;
+                height: 55px;
+                font-weight: bold;
+                background-color: #006699;
+                color: #FFF;
+                border: none;
+                border-radius: 3px;
+                border-bottom: 3px solid #005C89;
+                font-size: 25px;
+                font-family: txtFont;
+            }
+            
+            .btn-fd-login{
+                width: 300px;
+                height: 55px;
+                font-weight: bold;
+                background-color: #993366;
+                color: #FFF;
+                border: none;
+                border-radius: 3px;
+                border-bottom: 3px solid #892E5C;
+                font-size: 25px;
+                font-family: txtFont;
+            }
+            
+            .btn-it-login{
+                width: 300px;
+                height: 55px;
+                font-weight: bold;
+                background-color: #CC6600;
+                color: #FFF;
+                border: none;
+                border-radius: 3px;
+                border-bottom: 3px solid #B75C00;
+                font-size: 25px;
+                font-family: txtFont;
+            }
+
+            .title-login{
+                color: #424242;
+                font-weight: bold;
+                font-size: 35px;
+                padding-top: 65px;
+                font-family: myFont;
+            }
+
+            .img-login{
+                width: 435px;
+                margin: 0 auto;
+                text-align: center;
+                top: 55px;
+                position: fixed;
+                z-index: 20000;
+                height: 95px;
+            }
+
+            .img-login > img{
+                height: 85px;
+            }
+
+            .txt-forgot-pwd{
+                color: #006699;
+                font-family: fontLogin;
+                margin-top: 25px;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+            .modal-backdrop{
+                background-color: #3081AA;
+            }
+
+            .modal-backdrop.in {
+                opacity: 0.9;
+            }
+        </style>
     </head>
     <body>
         <div class="main-wrap">
@@ -20,7 +151,7 @@
                         <img alt="" src="img/home/home_hq_medical.png">
                     </div>
                     <ul id="hq-medical-icons">
-                        <a href="./login.jsp">
+                        <a href="#modal-hq-login" id="hq-login" data-toggle="modal">
                             <li class="hq-medical-icon">
                                 <div class="img">
                                     <img alt="" src="img/hq_medical/HQMed_Database.png">
@@ -93,7 +224,7 @@
                                 </div>
                             </li>
                         </a>
-                        <a href="listAll.jsp">
+                        <a href="#modal-fd-login" id="fd-login" data-toggle="modal">
                             <li class="field-data-icon">
                                 <div class="img">
                                     <img src="img/field_data/FieldData_Downloads.png">
@@ -164,7 +295,7 @@
                         <img alt="" src="img/home/home_it_staff.png">
                     </div>
                     <ul id="it-icons">
-                        <a href="#">
+                        <a href="#modal-it-login" id="it-login" data-toggle="modal">
                             <li class="it-icon">
                                 <div class="img">
                                     <img src="img/it/IT_AdminLogin.png">
@@ -190,6 +321,95 @@
                 </li>
             </ul>
         </div>
+        <form method="post" action="Login">
+	        <div class="modal fade" id="modal-hq-login" style="top: 100px;width: 435px;height: 445px;margin: 0 auto;">
+	            <div class="img-login" style="">
+	                <img src="img/login/hqm_key_login.png"/>
+	            </div>
+	            <div class="popup">
+	                <div class="title-login">HQ LOGIN</div>
+	                <br>
+	                <div>
+	                    <input type="text" name="user" class="txt-field" value="" placeholder="Username">
+	                </div>
+	                <br>
+	                <div>
+	                    <input type="password" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
+	                </div>
+	                <br>
+	                <div>
+	                    <input type="submit" class="btn-hq-login" value="LOGIN">
+	                </div>
+	                <div style="margin-top: 25px">
+	                    <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+	                </div>
+	            </div>
+	        </div>
+	    </form>
+	    <form method="post" action="Login">
+	        <div class="modal fade" id="modal-fd-login" style="top: 100px;width: 435px;height: 445px;margin: 0 auto;">
+                <div class="img-login" style="">
+                    <img src="img/login/fd_key_login.png"/>
+                </div>
+                <div class="popup">
+                    <div class="title-login">DATA LOGIN</div>
+                    <br>
+                    <div>
+                        <input type="text" name="user" class="txt-field" value="" placeholder="Username">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="password" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" class="btn-fd-login" value="LOGIN">
+                    </div>
+                    <div style="margin-top: 25px">
+                        <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <form method="post" action="Login">
+            <div class="modal fade" id="modal-it-login" style="top: 100px;width: 435px;height: 445px;margin: 0 auto;">
+                <div class="img-login" style="">
+                    <img src="img/login/its_key_login.png"/>
+                </div>
+                <div class="popup">
+                    <div class="title-login">ADMIN LOGIN</div>
+                    <br>
+                    <div>
+                        <input type="text" name="user" class="txt-field" value="" placeholder="Username">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="password" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" class="btn-it-login" value="LOGIN">
+                    </div>
+                    <div style="margin-top: 25px">
+                        <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                    </div>
+                </div>
+            </div>
+        </form>
     </body>
-    <%@include file="./footer.jsp"%>
+    <script type="text/javascript">
+/* 	    $(document).ready(function(){
+	        $('#hq-login').click(function(){
+	            //$("#hq-medical-icons").css("display", "inline-block");
+	            //changeCSSCLass();
+	        });
+	        
+	           $('.modal-backdrop').click(function(){
+	        	   alert('OK');
+	                $("#hq-medical-icons").css("display", "none");
+	              //  changeCSSCLass();
+	            });
+	        //alert('ko');
+	    }); */
+    </script>
 </html>

@@ -81,8 +81,8 @@ public class Login extends HttpServlet {
                 response.sendRedirect("dataStorage.jsp");
             }
         }else{
-            session.setAttribute("Error","Invalid username and password!");
-            response.sendRedirect("login.jsp");
+            //session.setAttribute("Error","Invalid username and password!");
+            response.sendRedirect("index.jsp");
        }
     }
 }
