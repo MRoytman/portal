@@ -111,26 +111,32 @@
         <%
                 String dirAppLink = unixAppFolder + "/" + "instruction2_en.html";
                 File fileAppLink = new File(dirAppLink);
-                if(fileAppLink.exists()){
         %>
                     <td>
+        <%
+                if(fileAppLink.exists()){
+        %>
                         <a href="<%=urlAppFolder + "/" + "instruction2_en.html"%>" target="_blank">App Link</a>
+        <%
+                }
+        %>
                     </td>
                     <td>
                         n/a
                     </td>
         <%
-                }
                 String dirPDFLink = unixAppFolder + "/" + folderName + ".pdf";
                 File filePDFLink = new File(dirPDFLink);
-                if(filePDFLink.exists()){
         %>
                     <td>
+        <%
+                if(filePDFLink.exists()){
+        %>
                         <a href="<%=urlAppFolder + "/" + folderName + ".pdf"%>" target="_blank"><%=folderName%>.pdf</a>
-                    </td>
         <%
                 }
         %>
+                    </td>
         <%
                 if("isAdmin".equals(userType)){
                     if(formMap.containsKey(formName)){

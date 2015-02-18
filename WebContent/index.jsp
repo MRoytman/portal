@@ -2,9 +2,7 @@
     <%@include file="./headerForCommon.jsp"%>
     <head>
         <link rel="stylesheet" href="css/home/home.css"/>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/jquery-1.11.1.js"></script>
-        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="main-wrap">
@@ -23,7 +21,7 @@
                         <img alt="" src="img/home/home_hq_medical.png">
                     </div>
                     <ul id="hq-medical-icons">
-                        <a href="#modal-hq-login" id="hq-login" data-toggle="modal">
+                        <a id="hq-login">
                             <li class="hq-medical-icon">
                                 <div class="img">
                                     <img alt="" src="img/hq_medical/HQMed_Database.png">
@@ -96,7 +94,7 @@
                                 </div>
                             </li>
                         </a>
-                        <a href="#modal-fd-login" id="fd-login" data-toggle="modal">
+                        <a id="fd-login">
                             <li class="field-data-icon">
                                 <div class="img">
                                     <img src="img/field_data/FieldData_Downloads.png">
@@ -167,7 +165,7 @@
                         <img alt="" src="img/home/home_it_staff.png">
                     </div>
                     <ul id="it-icons">
-                        <a href="#modal-it-login" id="it-login" data-toggle="modal">
+                        <a id="it-login">
                             <li class="it-icon">
                                 <div class="img">
                                     <img src="img/it/IT_AdminLogin.png">
@@ -193,95 +191,116 @@
                 </li>
             </ul>
         </div>
+        <div id="id-popup-modal"></div>
         <form method="post" action="Login">
-            <div class="modal fade" id="modal-hq-login" style="top: 100px;width: 435px;height: 445px;margin: 0 auto;">
-                <div class="img-login" style="">
-                    <img src="img/login/hqm_key_login.png"/>
-                </div>
-                <div class="popup">
-                    <div class="title-login">HQ LOGIN</div>
-                    <br>
-                    <div>
-                        <input type="text" name="user" class="txt-field" value="" placeholder="Username">
+            <div style="margin: 0 auto;text-align: center;height: 445px;">
+                <div id="id-modal-hq-login" style="display: none;">
+                    <div class="img-login" style="">
+                        <img src="img/login/hqm_key_login.png"/>
                     </div>
-                    <br>
-                    <div>
-                        <input type="password" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="submit" class="btn-hq-login" value="LOGIN">
-                    </div>
-                    <div style="margin-top: 25px">
-                        <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                    <div class="popup">
+                        <div class="title-login">HQ LOGIN</div>
+                        <br>
+                        <div>
+                            <input type="text" name="user" class="txt-field" value="" placeholder="Username">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="password" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" class="btn-hq-login" value="LOGIN">
+                        </div>
+                        <div style="margin-top: 25px">
+                            <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </form>
         <form method="post" action="Login">
-            <div class="modal fade" id="modal-fd-login" style="top: 100px;width: 435px;height: 445px;margin: 0 auto;">
-                <div class="img-login" style="">
-                    <img src="img/login/fd_key_login.png"/>
-                </div>
-                <div class="popup">
-                    <div class="title-login">DATA LOGIN</div>
-                    <br>
-                    <div>
-                        <input type="text" name="user" class="txt-field" value="" placeholder="Username">
+            <div style="margin: 0 auto;text-align: center;height: 445px;">
+                <div id="id-modal-fd-login" style="display: none;">
+                    <div class="img-login" style="">
+                        <img src="img/login/fd_key_login.png"/>
                     </div>
-                    <br>
-                    <div>
-                        <input type="password" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="submit" class="btn-fd-login" value="LOGIN">
-                    </div>
-                    <div style="margin-top: 25px">
-                        <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                    <div class="popup">
+                        <div class="title-login">DATA LOGIN</div>
+                        <br>
+                        <div>
+                            <input type="text" name="user" class="txt-field" value="" placeholder="Username">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="password" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" class="btn-fd-login" value="LOGIN">
+                        </div>
+                        <div style="margin-top: 25px">
+                            <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </form>
         <form method="post" action="Login">
-            <div class="modal fade" id="modal-it-login" style="top: 100px;width: 435px;height: 445px;margin: 0 auto;">
-                <div class="img-login" style="">
-                    <img src="img/login/its_key_login.png"/>
-                </div>
-                <div class="popup">
-                    <div class="title-login">ADMIN LOGIN</div>
-                    <br>
-                    <div>
-                        <input type="text" name="user" class="txt-field" value="" placeholder="Username">
+            <div style="margin: 0 auto;text-align: center;height: 445px;">
+                <div id="id-modal-it-login" style="display: none;">
+                    <div class="img-login" style="">
+                        <img src="img/login/its_key_login.png"/>
                     </div>
-                    <br>
-                    <div>
-                        <input type="password" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="submit" class="btn-it-login" value="LOGIN">
-                    </div>
-                    <div style="margin-top: 25px">
-                        <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                    <div class="popup">
+                        <div class="title-login">ADMIN LOGIN</div>
+                        <br>
+                        <div>
+                            <input type="text" name="user" class="txt-field" value="" placeholder="Username">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="password" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" class="btn-it-login" value="LOGIN">
+                        </div>
+                        <div style="margin-top: 25px">
+                            <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </form>
     </body>
     <script type="text/javascript">
-/*         $(document).ready(function(){
+        
+         $(document).ready(function(){
             $('#hq-login').click(function(){
-                //$("#hq-medical-icons").css("display", "inline-block");
-                //changeCSSCLass();
+                $("#id-popup-modal").addClass('class-popup-modal hq');
+                $("#id-modal-hq-login").addClass('class-modal-login');
             });
-            
-               $('.modal-backdrop').click(function(){
-                   alert('OK');
-                    $("#hq-medical-icons").css("display", "none");
-                  //  changeCSSCLass();
-                });
-            //alert('ko');
-        }); */
+
+            $('#fd-login').click(function(){
+                $("#id-popup-modal").addClass('class-popup-modal fd');
+                $("#id-modal-fd-login").addClass('class-modal-login');
+            });
+
+            $('#it-login').click(function(){
+                $("#id-popup-modal").addClass('class-popup-modal it');
+                $("#id-modal-it-login").addClass('class-modal-login');
+            });
+
+            $('#id-popup-modal').click(function(){
+                $("#id-popup-modal").removeClass('class-popup-modal');
+                $("#id-popup-modal").removeClass('hq');
+                $("#id-popup-modal").removeClass('fd');
+                $("#id-popup-modal").removeClass('it');
+                $("#id-modal-hq-login").removeClass('class-modal-login');
+                $("#id-modal-fd-login").removeClass('class-modal-login');
+                $("#id-modal-it-login").removeClass('class-modal-login');
+             });
+        });
     </script>
 </html>

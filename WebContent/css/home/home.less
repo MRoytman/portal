@@ -168,6 +168,9 @@ ul{
 }
 
 .popup{
+    top: 108px;
+    z-index: 1050;
+    position: fixed;
     margin-top: 127px;
     width: 435px;
     height: 445px;
@@ -227,14 +230,14 @@ input[type="submit"]{
     width: 435px;
     margin: 0 auto;
     text-align: center;
-    top: 55px;
+    top: 60px;
     position: fixed;
     z-index: 20000;
     height: 95px;
 }
 
 .img-login > img{
-    height: 85px;
+    height: 90px;
 }
 
 .txt-forgot-pwd{
@@ -245,10 +248,34 @@ input[type="submit"]{
     font-size: 18px;
 }
 
-.modal-backdrop{
-    background-color: #3081AA !important;
+.class-popup-modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    opacity: 0.6 !important;
 }
 
-.modal-backdrop.in {
-    opacity: 0.9 !important;
+.hq{
+    background-color: #006599;
+}
+
+.fd{
+    background-color: #993265;
+}
+
+.it{
+    background-color: #CC6500;
+}
+
+.class-modal-login{
+    top: 100px;
+    width: 435px;
+    height: 445px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1050;
+    display: inline-block !important;
 }
