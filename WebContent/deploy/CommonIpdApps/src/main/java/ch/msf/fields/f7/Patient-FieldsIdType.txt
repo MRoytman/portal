@@ -1,0 +1,22 @@
+sex	Combo-sex	Sex
+age	Numeric
+admission_date	Date
+discharge_date	Date
+address_village	Combo-address_village
+address_village_other	Coded
+address_district	Combo-address_district
+address_district_other	Coded
+patient_phone_number	Coded
+_title_patient_01	Title
+_title_patient_02	Title
+hiv_cohort_id	Coded
+hiv_cohort_quarter	Combo-hiv_cohort_quarter
+hiv_cohort_year	Numeric
+_title_patient_03	Title
+_title_patient_04	Title
+tb_cohort_id	Coded
+_title_patient_05	Title
+_title_patient_06	Title
+pmtct_cohort_id	Coded
+pmtct_enrolment_date	Date
+comments	Coded

@@ -14,15 +14,13 @@ import ch.msf.model.PatientContext;
 import ch.msf.model.PatientIdValue;
 import ch.msf.service.ServiceHelper;
 
-public class ExportCSVf1 {
+public class ExportCSVf2 {
 	
-	String atFolder="/ch/msf/fields/f1/";
+	String atFolder="/ch/msf/fields/f2/";
 	private String strFilePat = "Patient-FieldsIdType.txt";
-	private String strFileEn1 = "EncounterEpidemics_opd-FieldsIdType.txt";
-	private String strFileEn2 = "EncounterMeasles_malaria_severe-FieldsIdType.txt";
-	private String strFileEn3 = "EncounterYellow_Fever_Case-FieldsIdType.txt";
-	private String strFileEn4 = "EncounterCholera_ORS-FieldsIdType.txt";
-	private String strFileEn5 = "EncounterCholera_CTC-FieldsIdType.txt";
+	private String strFileEn1 = "Encountermental_health_main_assessment-FieldsIdType.txt";
+	private String strFileEn2 = "Encountermental_health_fup-FieldsIdType.txt";
+
 
 	ConfigurationManagerBaseImpl config = ServiceHelper
 			.getConfigurationManagerService();
@@ -32,17 +30,13 @@ public class ExportCSVf1 {
 	List<String> strCodeFullPat = rf.readFile(strFilePat,atFolder);
 	List<String> strCodeFullEn1 = rf.readFile(strFileEn1,atFolder);
 	List<String> strCodeFullEn2 = rf.readFile(strFileEn2,atFolder);
-	List<String> strCodeFullEn3 = rf.readFile(strFileEn3,atFolder);
-	List<String> strCodeFullEn4 = rf.readFile(strFileEn4,atFolder);
-	List<String> strCodeFullEn5 = rf.readFile(strFileEn5,atFolder);
+
 
 	List<String> valPrintGeneral = null;
 	List<String> valPrintPatDetail = null;
 	List<String> valPrintEn1Detail = null;
 	List<String> valPrintEn2Detail = null;
-	List<String> valPrintEn3Detail =null;
-	List<String> valPrintEn4Detail = null;
-	List<String> valPrintEn5Detail = null;
+
 
 	
 	List<String> lstIDsDB = new ArrayList<String>();
@@ -157,36 +151,7 @@ public class ExportCSVf1 {
 							}
 							valPrintEn2Detail = sortValueDependOn(strCodeFullEn2);//mapping col and val in DB with header
 						}
-						if (enType.compareToIgnoreCase(getCodeDB(strFileEn3))==0) {
-							initLstDB();
-							for (int l = 0; l < lstEncounterDetailDB.size(); l++) {
-								
-								enDetail = lstEncounterDetailDB.get(l);
-								lstIDsDB.add (enDetail.getConceptId());
-								lstValsDB.add(enDetail.getConceptValue());
-							}
-							valPrintEn3Detail = sortValueDependOn(strCodeFullEn3);//mapping col and val in DB with header
-						}
-						if  (enType.compareToIgnoreCase(getCodeDB(strFileEn4))==0) {
-							initLstDB();
-							for (int l = 0; l < lstEncounterDetailDB.size(); l++) {
-								
-								enDetail = lstEncounterDetailDB.get(l);
-								lstIDsDB.add (enDetail.getConceptId());
-								lstValsDB.add(enDetail.getConceptValue());
-							}
-							valPrintEn4Detail = sortValueDependOn(strCodeFullEn4);//mapping col and val in DB with header
-						}
-						if  (enType.compareToIgnoreCase(getCodeDB(strFileEn5))==0) {
-							initLstDB();
-							for (int l = 0; l < lstEncounterDetailDB.size(); l++) {
-								
-								enDetail = lstEncounterDetailDB.get(l);
-								lstIDsDB.add (enDetail.getConceptId());
-								lstValsDB.add(enDetail.getConceptValue());
-							}
-							valPrintEn5Detail = sortValueDependOn(strCodeFullEn5);//mapping col and val in DB with header
-						}
+						
 
 					}
 					if(valPrintEn1Detail!=null)
@@ -199,22 +164,9 @@ public class ExportCSVf1 {
 					else
 						printNull(writer,strCodeFullEn2.size());
 					
-					if(valPrintEn3Detail!=null)
-						printCol(writer, valPrintEn3Detail);
-					else
-						printNull(writer,strCodeFullEn3.size());
 					
-					if(valPrintEn4Detail!=null)
-						printCol(writer, valPrintEn4Detail);
-					else
-						printNull(writer,strCodeFullEn4.size());
 					
-					if(valPrintEn5Detail!=null)
-						printCol(writer, valPrintEn5Detail);
-					else
-						printNull(writer,strCodeFullEn5.size());
-					
-					valPrintEn1Detail=valPrintEn2Detail=valPrintEn3Detail=valPrintEn4Detail=valPrintEn5Detail=null;
+					valPrintEn1Detail=valPrintEn2Detail=null;
 					writer.append('\n');
 				}
 			}
@@ -291,18 +243,7 @@ public class ExportCSVf1 {
 			writer.append(getPrefix(strFileEn2) + string);
 			writer.append(',');
 		}
-		for (String string : strCodeFullEn3) {
-			writer.append(getPrefix(strFileEn3) + string);
-			writer.append(',');
-		}
-		for (String string : strCodeFullEn4) {
-			writer.append(getPrefix(strFileEn4) + string);
-			writer.append(',');
-		}
-		for (String string : strCodeFullEn5) {
-			writer.append(getPrefix(strFileEn5) + string);
-			writer.append(',');
-		}
+		
 		writer.append('\n');
 	}
 

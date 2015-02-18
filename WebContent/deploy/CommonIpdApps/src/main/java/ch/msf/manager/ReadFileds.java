@@ -7,9 +7,8 @@ import java.util.List;
 
 public class ReadFileds {
 	
-	public  List<String> readFile(String strFile) {
-		String strPath="/ch/msf/fields/f1/";
-		InputStream is= getClass().getResourceAsStream(strPath+strFile);
+	public  List<String> readFile(String strFile,String atFolder) {
+		InputStream is= getClass().getResourceAsStream(atFolder+strFile);
 		int ch;
 		StringBuilder sb = new StringBuilder();
 		try {

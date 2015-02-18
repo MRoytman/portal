@@ -32,6 +32,12 @@ import ch.msf.CommonConstants;
 import ch.msf.form.FatalException;
 import ch.msf.manager.ConfigurationManager;
 import ch.msf.manager.ExportCSVf1;
+import ch.msf.manager.ExportCSVf2;
+import ch.msf.manager.ExportCSVf3;
+import ch.msf.manager.ExportCSVf4;
+import ch.msf.manager.ExportCSVf5;
+import ch.msf.manager.ExportCSVf6;
+import ch.msf.manager.ExportCSVf7;
 import ch.msf.model.PatientContext;
 import ch.msf.model.SelectionContext;
 import ch.msf.service.ServiceHelper;
@@ -424,8 +430,48 @@ public class Wizard extends WindowAdapter implements PropertyChangeListener {
 			// TN125
 			//taivd add export CSV
 			System.out.println("Connect database H2 and export CSV");
-			ExportCSVf1 _ExportCSV=new ExportCSVf1();
-			_ExportCSV.ExportAllDB();
+			try{
+				String appType = configurationManager.getConfigField("applicationShortName").split("_")[0];//taivd add get app type
+				System.out.println("appType = "+appType);
+				
+				if("EPID".compareToIgnoreCase(appType)==0){
+					ExportCSVf1 f=new ExportCSVf1();
+					f.ExportAllDB();
+					System.out.println("EPID Exported");
+				}
+				if("OPD".compareToIgnoreCase(appType)==0){
+					ExportCSVf2 f=new ExportCSVf2();
+					f.ExportAllDB();
+					System.out.println("OPD Exported");
+				}
+				if("IPD".compareToIgnoreCase(appType)==0){
+					ExportCSVf3 f=new ExportCSVf3();
+					f.ExportAllDB();
+					System.out.println("IPD Exported");
+				}
+				if("CNCD".compareToIgnoreCase(appType)==0){
+					ExportCSVf4 f=new ExportCSVf4();
+					f.ExportAllDB();
+					System.out.println("CNCD Exported");
+				}
+				if("SGBV".compareToIgnoreCase(appType)==0){
+					ExportCSVf5 f=new ExportCSVf5();
+					f.ExportAllDB();
+					System.out.println("SGBV Exported");
+				}
+				if("NUT".compareToIgnoreCase(appType)==0){
+					ExportCSVf6 f=new ExportCSVf6();
+					f.ExportAllDB();
+					System.out.println("NUT Exported");
+				}
+				if("HIV".compareToIgnoreCase(appType)==0){
+					ExportCSVf7 f=new ExportCSVf7();
+					f.ExportAllDB();
+					System.out.println("HIV Exported");
+				}
+			}catch(Exception e){
+				e.printStackTrace();
+			}
 			
 		}
 		if (retCode == 1) {

@@ -1,0 +1,20 @@
+sex	Combo-sex	Sex
+_title_NCDP003	Title
+age	Numeric
+origin_nationality	Combo-origin_nationality
+origin_nationality_other_detail	Combo-origin_nationality_other_detail
+patient_phone_number	Coded
+patient_phone_number_2	Coded
+village_origin[codedList]	Combo-village_origin[codedList]
+_title_NCDP010	Title
+marital_status	Combo-marital_status
+occupation	Combo-occupation
+_title_NCDP013	Title
+case_manager_name	Coded
+_title_NCDP015	Title
+_title_NCDP016	Title
+refugee_registration_unhcr	Boolean
+refugee_registration_unrwa	Boolean
+_title_NCDP019	Title
+comments	Coded
+_title_NCDP021	Title

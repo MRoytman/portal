@@ -3,11 +3,7 @@ package ch.msf.manager;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-
-import org.w3c.dom.ls.LSInput;
-
 import ch.msf.model.ConceptIdValue;
 import ch.msf.model.Encounter;
 import ch.msf.model.Patient;
@@ -17,12 +13,6 @@ import ch.msf.model.PatientIdentifier;
 import ch.msf.service.ServiceHelper;
 
 public class ExportCSV1 {
-	private static final String PRE_EN5 = "Cholera_CTC";
-	private static final String PRE_EN4 = "Cholera_ORS_";
-	private static final String PRE_EN3 = "Yellow_Fever_Case_";
-	private static final String PRE_EN2 = "Measles_malaria_severe_";
-	private static final String PRE_EN1 = "Epidemics_opd_";
-	private static final String PRE_PAT = "Patient_";
 	ConfigurationManagerBaseImpl config = ServiceHelper
 			.getConfigurationManagerService();
 
