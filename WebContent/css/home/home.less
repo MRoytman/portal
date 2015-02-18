@@ -39,7 +39,7 @@ ul{
         }
         ul{
             position: relative;
-            z-index: 9999;
+            z-index: 1040;
             display: none;
             font-family: txtFont;
             color: @txt-color;
@@ -136,8 +136,119 @@ ul{
     li:hover #it-icons{
         display: inline-block;
     }
-//    li:hover .img-home > img {
-//        opacity: 0.85;
-//        transform: scale(0.95);
-//    }
+}
+
+@font-face {
+    font-family: fontLogin;
+    src: url(../../font/MinionPro-It.otf);
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    font-family: txtFont;
+    font-size: 35px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+   font-family: txtFont;
+   font-size: 35px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+    font-family: txtFont;
+    font-size: 35px;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+    font-family: txtFont;
+    font-size: 35px;
+}
+
+.popup{
+    margin-top: 127px;
+    width: 435px;
+    height: 445px;
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    border-top: solid 2px #e5e5e5;
+    border-right: solid 2px #e5e5e5;
+}
+
+.txt-field{
+    background-color: #cccccc;
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+    width: 300px;
+    font-family: txtFont;
+    font-size: 35px;
+}
+
+input[type="submit"]{
+    width: 300px;
+    height: 55px;
+    font-weight: bold;
+    color: #FFF;
+    border: none;
+    border-radius: 3px;
+    font-size: 25px;
+    font-family: txtFont;
+}
+
+.btn-hq-login{
+    background-color: #006699;
+    border-bottom: 3px solid #005C89;
+}
+
+.btn-fd-login{
+    background-color: #993366;
+    border-bottom: 3px solid #892E5C;
+}
+
+.btn-it-login{
+    background-color: #CC6600;
+    border-bottom: 3px solid #B75C00;
+}
+
+.title-login{
+    color: #424242;
+    font-weight: bold;
+    font-size: 35px;
+    padding-top: 65px;
+    font-family: myFont;
+}
+
+.img-login{
+    width: 435px;
+    margin: 0 auto;
+    text-align: center;
+    top: 55px;
+    position: fixed;
+    z-index: 20000;
+    height: 95px;
+}
+
+.img-login > img{
+    height: 85px;
+}
+
+.txt-forgot-pwd{
+    color: #006699;
+    font-family: fontLogin;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.modal-backdrop{
+    background-color: #3081AA !important;
+}
+
+.modal-backdrop.in {
+    opacity: 0.9 !important;
 }
