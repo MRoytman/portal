@@ -1,5 +1,7 @@
 package com.msf.form;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -32,12 +34,12 @@ public class Login extends HttpServlet {
      * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO Auto-generated method stub
-        String username = request.getParameter("user");
-        String password = request.getParameter("pass");
-        //PrintWriter out = response.getWriter();
-        HttpSession session = request.getSession(true);
+        Map<String, String[]> userInfo = request.getParameterMap();
+        String username = Arrays.asList(userInfo.get("user")).get(0);
+        String password = Arrays.asList(userInfo.get("pass")).get(0);
+
         boolean isLoginSuccess = false;
+        HttpSession session = request.getSession(true);
 
         // User is admin
         if(username.toLowerCase().trim().equals("admin")
@@ -53,36 +55,21 @@ public class Login extends HttpServlet {
             isLoginSuccess = true;
         }
 
-            /*
-            try{
-                String loged= session.getAttribute("username").toString();
-                if(loged.compareToIgnoreCase(username)==0)
-                {
-                    session.setAttribute("Error","This user is logged in!");
-                    response.sendRedirect("index.jsp");
-                }else
-                {
-                    session.setAttribute("username", username);  
-                    response.sendRedirect("country.jsp");
-                }
-            }catch(Exception e){
-                response.sendRedirect("index.jsp");
-            }
-            */
-
         if(isLoginSuccess){
             // Set user name for session
             session.setAttribute("username", username);
             // Get context path
             String backURL = (String) session.getAttribute("backURL");
             if(backURL != null && backURL.length() != 0){
-                response.sendRedirect(backURL);
+                response.getWriter().write(backURL);
+                //response.sendRedirect(backURL);
             }else{
-                response.sendRedirect("dataStorage.jsp");
+                response.getWriter().write("dataStorage.jsp");
+                //response.sendRedirect("dataStorage.jsp");
             }
+            response.setStatus(200);
         }else{
-            //session.setAttribute("Error","Invalid username and password!");
-            response.sendRedirect("index.jsp");
-       }
+            response.setStatus(400);
+        }
     }
 }
