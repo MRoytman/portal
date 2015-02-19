@@ -2,7 +2,9 @@
     <%@include file="./headerForCommon.jsp"%>
     <head>
         <link rel="stylesheet" href="css/home/home.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/jquery-1.11.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="main-wrap">
@@ -192,87 +194,87 @@
             </ul>
         </div>
         <div id="id-popup-modal"></div>
-        <div style="margin: 0 auto;text-align: center;height: 445px;">
-            <div id="id-modal-hq-login" style="display: none;">
-                <div class="img-login" style="">
-                    <img src="img/login/hqm_key_login.png"/>
-                </div>
-                <div class="popup">
-                    <div class="title-login">HQ LOGIN</div>
-                    <br>
-                    <div class="error-hq"></div>
-                    <br>
-                    <div>
-                        <input type="text" id="user-hq" name="user" class="txt-field" value="" placeholder="Username">
+        <form method="post" action="Login">
+            <div style="margin: 0 auto;text-align: center;height: 445px;">
+                <div id="id-modal-hq-login" style="display: none;">
+                    <div class="img-login" style="">
+                        <img src="img/login/hqm_key_login.png"/>
                     </div>
-                    <br>
-                    <div>
-                        <input type="password" id="pass-hq" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="submit" class="btn-hq-login" value="LOGIN">
-                    </div>
-                    <div style="margin-top: 25px">
-                        <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="margin: 0 auto;text-align: center;height: 445px;">
-            <div id="id-modal-fd-login" style="display: none;">
-                <div class="img-login" style="">
-                    <img src="img/login/fd_key_login.png"/>
-                </div>
-                <div class="popup">
-                    <div class="title-login">DATA LOGIN</div>
-                    <br>
-                    <div class="error-fd"></div>
-                    <br>
-                    <div>
-                        <input type="text" id="user-fd" name="user" class="txt-field" value="" placeholder="Username">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="password" id="pass-fd" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="submit" class="btn-fd-login" value="LOGIN">
-                    </div>
-                    <div style="margin-top: 25px">
-                        <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                    <div class="popup">
+                        <div class="title-login">HQ LOGIN</div>
+                        <br>
+                        <div>
+                            <input type="text" name="user" class="txt-field" value="" placeholder="Username">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="password" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" class="btn-hq-login" value="LOGIN">
+                        </div>
+                        <div style="margin-top: 25px">
+                            <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div style="margin: 0 auto;text-align: center;height: 445px;">
-            <div id="id-modal-it-login" style="display: none;">
-                <div class="img-login" style="">
-                    <img src="img/login/its_key_login.png"/>
-                </div>
-                <div class="popup">
-                    <div class="title-login">ADMIN LOGIN</div>
-                    <br>
-                    <div class="error-it"></div>
-                    <br>
-                    <div>
-                        <input type="text" id="user-it" name="user" class="txt-field" value="" placeholder="Username">
+        </form>
+        <form method="post" action="Login">
+            <div style="margin: 0 auto;text-align: center;height: 445px;">
+                <div id="id-modal-fd-login" style="display: none;">
+                    <div class="img-login" style="">
+                        <img src="img/login/fd_key_login.png"/>
                     </div>
-                    <br>
-                    <div>
-                        <input type="password" id="pass-it" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
-                    </div>
-                    <br>
-                    <div>
-                        <input type="submit" class="btn-it-login" value="LOGIN">
-                    </div>
-                    <div style="margin-top: 25px">
-                        <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                    <div class="popup">
+                        <div class="title-login">DATA LOGIN</div>
+                        <br>
+                        <div>
+                            <input type="text" name="user" class="txt-field" value="" placeholder="Username">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="password" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" class="btn-fd-login" value="LOGIN">
+                        </div>
+                        <div style="margin-top: 25px">
+                            <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
+        <form method="post" action="Login">
+            <div style="margin: 0 auto;text-align: center;height: 445px;">
+                <div id="id-modal-it-login" style="display: none;">
+                    <div class="img-login" style="">
+                        <img src="img/login/its_key_login.png"/>
+                    </div>
+                    <div class="popup">
+                        <div class="title-login">ADMIN LOGIN</div>
+                        <br>
+                        <div>
+                            <input type="text" name="user" class="txt-field" value="" placeholder="Username">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="password" name="pass" class="txt-field" value="" placeholder="* * * * * * * * * * *">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" class="btn-it-login" value="LOGIN">
+                        </div>
+                        <div style="margin-top: 25px">
+                            <a href="#" class="txt-forgot-pwd">Forgot Password?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </body>
     <script type="text/javascript">
         
@@ -301,87 +303,6 @@
                 $("#id-modal-fd-login").removeClass('class-modal-login');
                 $("#id-modal-it-login").removeClass('class-modal-login');
              });
-
-            // Add an event that triggers when the submit
-            // button is pressed.
-            $(".btn-it-login").click(function() {
-                // Get the text from the two inputs.
-                var user = $("#user-it").val();
-                var pass = $("#pass-it").val();
-
-                // Fail if one of the two inputs is empty, as we need
-                // both a band name and albums to make an insertion.
-                if (user === "" || pass === "") {
-                    if($('.error-it').text() === ""){
-                        $('.error-it').append('Invalid username or password');
-                    }
-                    return;
-                }
-
-                // Ajax POST request, similar to the GET request.
-                $.post('Login', {"user": user, "pass": pass},
-                    function(url) { // on success
-                       window.location.href = url;
-                    }).fail(function() { //on failure
-                        if($('.error-it').text() === ""){
-                            $('.error-it').append('Invalid username or password');
-                        }
-                    });
-            });
-
-            // Add an event that triggers when the submit
-            // button is pressed.
-            $(".btn-hq-login").click(function() {
-                // Get the text from the two inputs.
-                var user = $("#user-hq").val();
-                var pass = $("#pass-hq").val();
-
-                // Fail if one of the two inputs is empty, as we need
-                // both a band name and albums to make an insertion.
-                if (user === "" || pass === "") {
-                    if($('.error-hq').text() === ""){
-                        $('.error-hq').append('Invalid username or password');
-                    }
-                    return;
-                }
-
-                // Ajax POST request, similar to the GET request.
-                $.post('Login', {"user": user, "pass": pass},
-                    function(url) { // on success
-                       window.location.href = url;
-                    }).fail(function() { //on failure
-                        if($('.error-hq').text() === ""){
-                            $('.error-hq').append('Invalid username or password');
-                        }
-                    });
-            });
-
-            // Add an event that triggers when the submit
-            // button is pressed.
-            $(".btn-fd-login").click(function() {
-                // Get the text from the two inputs.
-                var user = $("#user-fd").val();
-                var pass = $("#pass-fd").val();
-
-                // Fail if one of the two inputs is empty, as we need
-                // both a band name and albums to make an insertion.
-                if (user === "" || pass === "") {
-                    if($('.error-fd').text() === ""){
-                        $('.error-fd').append('Invalid username or password');
-                    }
-                    return;
-                }
-
-                // Ajax POST request, similar to the GET request.
-                $.post('Login', {"user": user, "pass": pass},
-                    function(url) { // on success
-                       window.location.href = url;
-                    }).fail(function() { //on failure
-                        if($('.error-fd').text() === ""){
-                            $('.error-fd').append('Invalid username or password');
-                        }
-                    });
-            });
         });
     </script>
 </html>
