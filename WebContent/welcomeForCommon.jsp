@@ -17,6 +17,6 @@
         // Get back URL
         String backURL = request.getRequestURL().toString();
         session.setAttribute("backURL", backURL);
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("index.jsp");
      }
  %>
